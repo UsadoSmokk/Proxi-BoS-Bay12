@@ -14,6 +14,7 @@
 #define MUTATION_SPACERES        9 // Can't be harmed via pressure damage.
 #define MUTATION_SKELETON        10
 #define MUTATION_FERAL           11 // Smash objects instead of using them, and unable to use items
+#define MUTATION_NOCLONE        10 //vesta port
 
 // Other Mutations:
 #define mNobreath      100 // No need to breathe.

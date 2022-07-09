@@ -922,6 +922,9 @@
 					if(H.brainmob.mind)
 						H.brainmob.mind.transfer_to(src)
 						qdel(H)
+		for (var/ID in virus2) //vesta port >
+			var/datum/disease2/disease/V = virus2[ID]
+			V.cure(src) // < vesta port
 
 	losebreath = 0
 

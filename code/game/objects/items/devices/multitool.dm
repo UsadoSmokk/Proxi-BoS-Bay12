@@ -21,6 +21,7 @@
 
 	var/buffer_name
 	var/atom/buffer_object
+	var/obj/machinery/clonepod/connecting //vesta port
 
 /obj/item/device/multitool/Destroy()
 	unregister_buffer(buffer_object)

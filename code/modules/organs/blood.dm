@@ -28,7 +28,9 @@
 				"blood_DNA" = dna.unique_enzymes,
 				"blood_colour" = species.get_blood_colour(src),
 				"blood_type" = dna.b_type,
-				"trace_chem" = null
+				"trace_chem" = null,
+				"virus2" = list(), //vesta port
+				"antibodies" = list() //vesta port
 			)
 			B.color = B.data["blood_colour"]
 
@@ -134,6 +136,12 @@
 /mob/living/carbon/proc/inject_blood(var/datum/reagent/blood/injected, var/amount)
 	if (!injected || !istype(injected))
 		return
+	var/list/sniffles = virus_copylist(injected.data["virus2"]) //vesta port start
+	for(var/ID in sniffles)
+		var/datum/disease2/disease/sniffle = sniffles[ID]
+		infect_virus2(src,sniffle,1)
+	if (injected.data["antibodies"] && prob(5))
+		antibodies |= injected.data["antibodies"] //vesta port end
 	var/list/chems = list()
 	chems = injected.data["trace_chem"]
 	for(var/C in chems)
@@ -198,6 +206,10 @@
 /mob/living/carbon/proc/get_blood_data()
 	var/data = list()
 	data["donor"] = weakref(src)
+	if (!data["virus2"]) //vesta port start
+		data["virus2"] = list()
+	data["virus2"] |= virus_copylist(virus2)
+	data["antibodies"] = antibodies //vesta port end
 	data["blood_DNA"] = dna.unique_enzymes
 	data["blood_type"] = dna.b_type
 	data["species"] = species.name
@@ -263,6 +275,10 @@
 			B.blood_DNA[source.data["blood_DNA"]] = source.data["blood_type"]
 		else
 			B.blood_DNA[source.data["blood_DNA"]] = "O+"
+
+	// Update virus information. (vesta port)
+	if(source.data["virus2"])
+		B.virus2 = virus_copylist(source.data["virus2"])
 
 	B.fluorescent  = 0
 	B.set_invisibility(0)
@@ -331,3 +347,12 @@
 	blood_volume_mod = blood_volume_mod + oxygenated_mult - (blood_volume_mod * oxygenated_mult)
 	blood_volume = blood_volume * blood_volume_mod
 	return min(blood_volume, 100)
+
+//vesta port
+/mob/living/carbon/human/proc/cure_virus(var/virus_uuid)
+	if(vessel && virus_uuid)
+		for(var/datum/reagent/blood/B in vessel.reagent_list)
+			var/list/viruses = list()
+			viruses = B.data["virus2"]
+			viruses.Remove("[virus_uuid]")
+			B.data["virus2"] = viruses

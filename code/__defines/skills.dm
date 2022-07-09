@@ -34,3 +34,4 @@
 #define SKILL_MEDICAL       /decl/hierarchy/skill/medical/medical
 #define SKILL_ANATOMY       /decl/hierarchy/skill/medical/anatomy
 #define SKILL_CHEMISTRY     /decl/hierarchy/skill/medical/chemistry
+#define SKILL_VIROLOGY      /decl/hierarchy/skill/medical/medical/virology //vesta port

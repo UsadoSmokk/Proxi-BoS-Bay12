@@ -68,6 +68,9 @@
 		cameras += C
 	return cameras
 
+/area/proc/get_contents() //vesta port
+	return contents
+
 /**
  * Defines the area's atmosphere alert level.
  *

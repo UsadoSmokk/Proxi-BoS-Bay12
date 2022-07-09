@@ -22,6 +22,7 @@
 	var/damage_threshold_value
 	var/healed_threshold = 1
 	var/oxygen_reserve = 6
+	var/clone_source = FALSE //vesta port
 
 /obj/item/organ/internal/brain/robotize()
 	replace_self_with(/obj/item/organ/internal/posibrain)

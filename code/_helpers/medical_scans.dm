@@ -49,6 +49,8 @@
 	scan["genetic"] = H.getCloneLoss()
 	scan["paralysis"] = H.paralysis
 	scan["immune_system"] = H.virus_immunity()
+	if (H.virus2.len) //vesta port
+		scan["virus"] = TRUE
 	scan["worms"] = H.has_brain_worms()
 
 	scan["reagents"] = list()
@@ -252,7 +254,12 @@
 
 		if(scan["worms"])
 			dat += "<tr><td colspan='2'><span class='bad'><center>Large growth detected in frontal lobe, possibly cancerous.</center></span></td></tr>"
-
+		//Viruses (Vesta port)
+		if (scan["virus"])
+			if(skill_level >= SKILL_ADEPT)
+				dat += "<tr><td colspan='2'><span class='bad'><center>Viral pathogen detected in blood stream.</center></span></td></tr>"
+			else
+				dat += "<tr><td colspan='2'><center>Viral pathogen detected in blood stream.</center></td></tr>"
 		//Reagent scan
 		/*
 			<tr><td colspan='2'>Beneficial reagents detected in subject's bloodstream:</td></tr>

@@ -316,7 +316,16 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are an experienced EMT, an experienced nurse, or a medical resident. You know how to treat most illnesses and injuries, though exotic illnesses and unusual injuries may still stump you. You have probably begun to specialize in some sub-field of medicine. In emergencies, you can think fast enough to keep your patients alive, and even when you can't treat a patient, you know how to find someone who can. You can use a full-body scanner, and you know something's off about a patient with an alien parasite or cortical borer.<br>- You can fully operate Sleepers and Body Scanners.<br>- You can apply splints without failing.<br>- You can perform simple surgery steps if you have Experienced Anatomy skill.",
 						"Experienced"		= "You are a senior nurse or paramedic, or a practicing doctor. You know how to use all of the medical devices available to treat a patient. Your deep knowledge of the body and medications will let you diagnose and come up with a course of treatment for most ailments. You can perform a full-body scan thoroughly and find important information.<br>- You can perform all surgery steps safely if you have Experienced Anatomy skill.",
 						"Master"		= "You are an experienced doctor or an expert nurse or EMT. You've seen almost everything there is to see when it comes to injuries and illness and even when it comes to something you haven't seen, you can apply your wide knowledge base to put together a treatment. In a pinch, you can do just about any medicine-related task, but your specialty, whatever it may be, is where you really shine.")
-
+//vesta port start
+/decl/hierarchy/skill/medical/medical/virology
+	ID = "virology"
+	name = "Virology"
+	desc = "This skill implies an understanding of microorganisms and their effects on humans."
+	levels = list( "Untrained"			= "You know that diseases are contagious; you've probably heard you should wash your hands to stop their spread. You know that if you're sick, you can go to Medical and get treatment. <br>- You don't have laboratory training, and will probably cause a viral leak if you try to use machines there.",
+					"Trained"				= "You have training in virology, and can operate the machinery in virology lab safely. You can isolate antibodies and modify viruses. <br>- Can use virology machinery without a risk of viral leak.")
+	prerequisites = list(SKILL_MEDICAL = SKILL_ADEPT)
+	default_max = SKILL_BASIC
+//vesta port end
 /decl/hierarchy/skill/medical/anatomy
 	ID = "anatomy"
 	name = "Anatomy"

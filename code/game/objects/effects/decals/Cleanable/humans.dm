@@ -21,7 +21,9 @@ var/global/list/image/splatter_cache=list()
 	scent_descriptor = SCENT_DESC_ODOR
 
 	var/base_icon = 'icons/effects/blood.dmi'
+	var/list/viruses = list() //vesta port
 	var/basecolor=COLOR_BLOOD_HUMAN // Color when wet.
+	var/list/datum/disease2/disease/virus2 = list() //vesta port
 	var/amount = 5
 	var/drytime
 	var/dryname = "dried blood"
@@ -280,6 +282,7 @@ var/global/list/image/splatter_cache=list()
 	generic_filth = TRUE
 	persistent = TRUE
 	var/dry = FALSE
+	var/list/datum/disease2/disease/virus2 = list() //vesta port
 
 /obj/effect/decal/cleanable/mucus/Initialize()
 	. = ..()
