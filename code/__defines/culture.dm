@@ -28,6 +28,11 @@
 #define FACTION_TEST_SUBJECTS 	"Test Subjects"
 #define FACTION_SPACECOPS		"Sol Federal Police"
 
+//SOVEREIGN LORDANIA (BOS)
+#define FACTION_SOVLORDANIA		"Lordanian Sovereign Systems"
+#define FACTION_LARFLEET		"LSS Fleet"
+#define FACTION_LARMARINES		"Lordanian Marine Corps"
+
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"
 #define HOME_SYSTEM_MARS       "Mars"
@@ -75,6 +80,14 @@
 #define CULTURE_STOK           "Stok Business"
 #define CULTURE_ALIUM          "Mysterious Aliens"
 #define CULTURE_CULTIST        "Blood Cult"
+
+//SOVEREIGN LORDANIA (BOS)
+#define CULTURE_HUMAN_LORDANIAN_WEST "Lordanian, West"
+#define CULTURE_HUMAN_LORDANIAN_EAST "Lordanian, East"
+#define CULTURE_HUMAN_TERSTEN_UP	 "Terstenian, Urban"
+#define CULTURE_HUMAN_TERSTEN_DW	 "Terstenian, Wild"
+#define CULTURE_HUMAN_YUKLID		 "Yuklidian"
+#define CULTURE_HUMAN_LORRIMAN		 "Lorrimanian"
 
 #define RELIGION_OTHER         "Other Religion"
 #define RELIGION_JUDAISM       "Judaism"

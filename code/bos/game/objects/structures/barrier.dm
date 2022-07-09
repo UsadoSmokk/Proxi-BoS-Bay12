@@ -88,9 +88,19 @@
 	else
 		return 1
 
+/obj/structure/barrier/proc/take_damage(amount)
+	health -= amount
+	if(health <= 0)
+		dismantle()
+
+/obj/structure/barrier/proc/dismantle()
+	visible_message("<span class='danger'>The barrier is smashed apart!</span>")
+	material.place_dismantled_product(get_turf(src))
+	qdel(src)
+
 /obj/structure/barrier/attack_hand(mob/living/carbon/human/user as mob)
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-	if(user.species.can_shred(user) && user.a_intent == I_HURT || user.get_species() == SPECIES_XENO)
+	if(user.species.can_shred(user) && user.a_intent == I_HURT)
 		take_damage(20)
 		return
 	if(deployed)
@@ -105,7 +115,7 @@
 
 /obj/structure/barrier/attackby(obj/item/W as obj, mob/user as mob)
 	if(isWelder(W))
-		var/obj/item/weapon/weldingtool/WT = W
+		var/obj/item/weldingtool/WT = W
 		if(health == maxhealth)
 			to_chat(user, "<span class='notice'>\The [src] is fully repaired.</span>")
 			return
@@ -231,7 +241,7 @@
 	icon = 'icons/bos/obj/items.dmi'
 	icon_state = "barrier_hand"
 	w_class = 4
-	health = 200
+	var/health = 200
 
 /obj/item/barrier/proc/turf_check(mob/user as mob)
 	for(var/obj/structure/barrier/D in user.loc.contents)
@@ -257,7 +267,7 @@
 
 /obj/item/barrier/attackby(obj/item/W as obj, mob/user as mob)
 	if(health != 200 && isWelder(W))
-		var/obj/item/weapon/weldingtool/WT = W
+		var/obj/item/weldingtool/WT = W
 		if(!WT.isOn())
 			to_chat(user, "<span class='notice'>The [W] should be turned on firstly.</span>")
 			return

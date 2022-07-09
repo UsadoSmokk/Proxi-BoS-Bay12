@@ -1,4 +1,4 @@
-/obj/item/weapon/gun/projectile/revolver/psirevolver
+/obj/item/gun/projectile/revolver/psirevolver
 	name = "\improper HelTek revolver"
 	icon = 'icons/bos/obj/guns/psirevolver.dmi'
 	icon_state = "psirevolver"

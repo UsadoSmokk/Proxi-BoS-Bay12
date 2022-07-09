@@ -11,7 +11,7 @@
 	var/path = 0
 	var/obj/item/device/assembly/igniter/detonator = null
 	var/list/beakers = new/list()
-	var/list/allowed_containers = list(/obj/item/weapon/reagent_containers/glass/beaker, /obj/item/weapon/reagent_containers/glass/bottle)
+	var/list/allowed_containers = list(/obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/glass/bottle)
 	var/affected_area = 3
 
 /obj/item/mine/chem_mine/Initialize()
@@ -100,7 +100,7 @@
 				SetName("unsecured mine with [beakers.len] containers[detonator?" and detonator":""]")
 			else
 				to_chat(user, "<span class='warning'>\The [W] is empty.</span>")
-	else if(istype(W, /obj/item/device/floor_painter))
+	else if(istype(W, /obj/item/device/paint_sprayer))
 		if(src.anchored)
 			playsound(get_turf(src), 'sound/effects/spray3.ogg', 30, 1, -6)
 			src.alpha = 50
@@ -121,7 +121,7 @@
 	if(!stage || stage<2) return
 
 	var/has_reagents = 0
-	for(var/obj/item/weapon/reagent_containers/glass/G in beakers)
+	for(var/obj/item/reagent_containers/glass/G in beakers)
 		if(G.reagents.total_volume) has_reagents = 1
 
 	active = 0
@@ -130,7 +130,7 @@
 
 	playsound(src.loc, 'sound/effects/bamf.ogg', 50, 1)
 
-	for(var/obj/item/weapon/reagent_containers/glass/G in beakers)
+	for(var/obj/item/reagent_containers/glass/G in beakers)
 		G.reagents.trans_to_obj(src, G.reagents.total_volume)
 
 	if(src.reagents.total_volume)

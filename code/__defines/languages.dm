@@ -7,6 +7,8 @@
 #define LANGUAGE_HUMAN_RUSSIAN   "Pan-Slavic"
 #define LANGUAGE_HUMAN_SELENIAN  "Selenian"
 
+#define LANGUAGE_HUMAN_LORD	  	 "Lordanian" //bos
+
 //Human misc
 #define LANGUAGE_GUTTER         "Gutter"
 #define LANGUAGE_SPACER         "Spacer"

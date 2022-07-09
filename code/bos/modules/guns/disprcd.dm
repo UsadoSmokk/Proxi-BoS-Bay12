@@ -1,4 +1,4 @@
-/obj/item/weapon/rcd/disprcd
+/obj/item/rcd/disprcd
 	name = "disposable RCD"
 	desc = "This simplified version of the Rapid Construction Device can't deconstruct airlocks and has much less capacity. Despite the name, it's not actually disposable."
 	icon = 'icons/bos/obj/tools.dmi'
