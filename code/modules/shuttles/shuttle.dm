@@ -161,13 +161,16 @@
 	for(var/area/A in shuttle_area)
 		testing("Moving [A]")
 		translation += get_turf_translation(get_turf(current_location), get_turf(destination), A.contents)
-	var/old_location = current_location
+//boh start
+	var/obj/effect/shuttle_landmark/old_location = current_location
 	GLOB.shuttle_pre_move_event.raise_event(src, old_location, destination)
 	shuttle_moved(destination, translation)
 	GLOB.shuttle_moved_event.raise_event(src, old_location, destination)
+	if(istype(old_location))
+		old_location.shuttle_departed(src)
 	destination.shuttle_arrived(src)
 	return TRUE
-
+//boh end
 //just moves the shuttle from A to B, if it can be moved
 //A note to anyone overriding move in a subtype. shuttle_moved() must absolutely not, under any circumstances, fail to move the shuttle.
 //If you want to conditionally cancel shuttle launches, that logic must go in short_jump(), long_jump() or attempt_move()

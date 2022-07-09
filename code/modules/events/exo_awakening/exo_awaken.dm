@@ -171,7 +171,7 @@ GLOBAL_LIST_INIT(exo_event_mob_count,list())// a list of all mobs currently spaw
 			else
 				T = pick(area_turfs)
 
-			if (!T || is_edge_turf(T) || T.is_wall() || T.density)
+			if (!T || T.is_wall() || T.density)
 				T = null
 				continue
 

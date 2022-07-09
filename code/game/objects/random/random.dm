@@ -1410,3 +1410,30 @@ var/global/list/random_useful_
 	icon = 'icons/obj/drinks.dmi'
 	icon_state = "cola"
 	spawn_object = /obj/item/reagent_containers/food/drinks/cans/cola
+
+//bodies (boh)
+/obj/random/remains
+	name = "Random Remains"
+	desc = "This is a random body, set of remains or a pile of gibs."
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "remains"
+	spawn_nothing_percentage = 0
+
+/obj/random/remains/spawn_choices()
+	return list(
+		/obj/item/remains/human = 12,
+		/obj/item/remains/xeno = 6,
+		/obj/item/remains/robot = 6,
+		/obj/item/remains/mouse = 6,
+		/obj/item/remains/lizard = 6,
+		/obj/effect/gibspawner/robot = 3,
+		/obj/effect/gibspawner/human = 3,
+		/obj/effect/landmark/corpse/chef = 1,
+		/obj/effect/landmark/corpse/doctor = 1,
+		/obj/effect/landmark/corpse/engineer = 1,
+		/obj/effect/landmark/corpse/scientist = 1,
+		/obj/effect/landmark/corpse/clown = 1,
+		/obj/effect/landmark/corpse/miner = 1,
+		/obj/effect/landmark/corpse/russian = 1,
+		/obj/effect/landmark/corpse/syndicate = 1
+	)

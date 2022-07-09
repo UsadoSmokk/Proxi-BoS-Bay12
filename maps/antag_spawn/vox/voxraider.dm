@@ -6,9 +6,9 @@
 /obj/effect/overmap/visitable/sector/vox_start
 	name = "Empty Space"
 	desc = "Just some empty space, with an irregular sensor echo."
-	in_space = TRUE
+//	in_space = TRUE
 	known = FALSE
-	place_near_main = list(2, 4)
+//	place_near_main = list(2, 4)
 	icon_state = "event"
 	hide_from_reports = TRUE
 	initial_generic_waypoints = list(
