@@ -239,6 +239,8 @@
 
 	var/static/limbs_can_break = TRUE
 
+	var/static/revival_cloning = 1 //vesta
+
 	var/static/revival_brain_life = -1
 
 	var/static/use_loyalty_implants = FALSE
@@ -868,6 +870,8 @@
 		switch(name)
 			if ("health_threshold_dead")
 				health_threshold_dead = value
+				if("revival_cloning") //vesta
+					config.revival_cloning = value
 			if ("revival_brain_life")
 				revival_brain_life = value
 			if ("organ_health_multiplier")

@@ -7,6 +7,8 @@
 		"blood_colour" = COLOR_BLOOD_HUMAN,
 		"trace_chem" = null,
 		"dose_chem" = null,
+		"virus2" = list(), //vesta port
+		"antibodies" = list(),	//vesta port
 		"has_oxy" = 1
 	)
 	name = "Blood"
@@ -34,13 +36,27 @@
 	if(data && data["blood_colour"])
 		color = data["blood_colour"]
 	return
-
+//vesta port start
 /datum/reagent/blood/proc/sync_to(var/mob/living/carbon/C)
 	data = C.get_blood_data()
 	color = data["blood_colour"]
 
+/datum/reagent/blood/mix_data(var/newdata, var/newamount)
+	if(!islist(newdata))
+		return
+	if(!data["virus2"])
+		data["virus2"] = list()
+	data["virus2"] |= newdata["virus2"]
+	if(!data["antibodies"])
+		data["antibodies"] = list()
+	data["antibodies"] |= newdata["antibodies"]
+//vesta port end
+
 /datum/reagent/blood/get_data() // Just in case you have a reagent that handles data differently.
 	var/t = data.Copy()
+	if(t["virus2"]) //vesta port >
+		var/list/v = t["virus2"]
+		t["virus2"] = v.Copy() // < vesta port
 	return t
 
 /datum/reagent/blood/touch_turf(var/turf/simulated/T)
@@ -64,16 +80,46 @@
 		M.adjustToxLoss(removed)
 	if(M.chem_doses[type] > 15)
 		M.adjustToxLoss(removed)
+	if(data && data["virus2"]) //vesta port >
+		var/list/vlist = data["virus2"]
+		if(vlist.len)
+			for(var/ID in vlist)
+				var/datum/disease2/disease/V = vlist[ID]
+				if(V && V.spreadtype == "Contact")
+					infect_virus2(M, V.getcopy())	// < vesta port
 
 /datum/reagent/blood/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		if(H.isSynthetic())
 			return
+	if(data && data["virus2"]) //vesta port >
+		var/list/vlist = data["virus2"]
+		if(vlist.len)
+			for(var/ID in vlist)
+				var/datum/disease2/disease/V = vlist[ID]
+				if(V.spreadtype == "Contact")
+					infect_virus2(M, V.getcopy())
+	if(data && data["antibodies"])
+		M.antibodies |= data["antibodies"]		// < vesta port
 
 /datum/reagent/blood/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	M.inject_blood(src, volume)
 	remove_self(volume)
+
+// pure concentrated antibodies (vesta port)
+/datum/reagent/antibodies
+	data = list("antibodies"=list())
+	name = "Antibodies"
+	taste_description = "slime"
+	reagent_state = LIQUID
+	color = "#0050f0"
+	value = 6
+
+/datum/reagent/antibodies/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(src.data)
+		M.antibodies |= src.data["antibodies"]
+	..()
 
 // Water!
 #define WATER_LATENT_HEAT 9500 // How much heat is removed when applied to a hot turf, in J/unit (9500 makes 120 u of water roughly equivalent to 2L

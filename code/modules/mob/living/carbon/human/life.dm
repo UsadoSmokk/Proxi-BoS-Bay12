@@ -304,7 +304,14 @@
 	if(head && (head.item_flags & ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT))
 		return
 	..()
-
+//vesta port start
+/mob/living/carbon/human/handle_post_breath(datum/gas_mixture/breath)
+	..()
+	//spread some viruses while we are at it
+	if(breath && !internal && virus2.len > 0 && prob(10))
+		for(var/mob/living/carbon/M in view(1,src))
+			src.spread_disease_to(M)
+//vesta port end
 /mob/living/carbon/human/get_breath_from_internal(volume_needed=STD_BREATH_VOLUME)
 	if(internal)
 

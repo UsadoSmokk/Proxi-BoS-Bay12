@@ -108,3 +108,6 @@
 
 /datum/species/proc/get_slowdown(var/mob/living/carbon/human/H)
 	. = (H && H.isSynthetic() ? 0 : slowdown)
+
+/datum/species/proc/get_virus_immune(var/mob/living/carbon/human/H) //vesta port
+	return ((H && H.isSynthetic()) ? 1 : virus_immune)

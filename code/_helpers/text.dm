@@ -214,6 +214,12 @@
 		t = replacetext_char(t, char, repl_chars[char])
 	return t
 
+//Adds 'u' number of zeros ahead of the text 't'
+/proc/add_zero(t, u)
+	while (length(t) < u)
+		t = "0[t]"
+	return t
+
 
 /// Builds a string of padding repeated until its character count meets or exceeds size
 /proc/generate_padding(size, padding)

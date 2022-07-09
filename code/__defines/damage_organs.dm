@@ -5,6 +5,7 @@
 #define INJURY_TYPE_PIERCE  "pierce"
 #define INJURY_TYPE_LASER   "laser"
 #define INJURY_TYPE_SHATTER "shatter"
+#define INJURY_TYPE_CLONE 	"clone"
 
 // Effect types for mobs
 #define EFFECT_STUN     "stun"
@@ -14,6 +15,7 @@
 #define EFFECT_EYE_BLUR "eye_blur"
 #define EFFECT_DROWSY   "drowsy"
 #define EFFECT_PAIN     "pain"
+#define EFFECT_IRRADIATE "irradiate" //vesta
 
 // Damage flags
 #define DAMAGE_FLAG_SHARP     FLAG(0)

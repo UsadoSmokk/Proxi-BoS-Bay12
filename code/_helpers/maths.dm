@@ -1,3 +1,6 @@
+/// LITERALLY NO IDEA WHAT IS THIS
+#define ceil(x) (-round(-(x)))
+
 /// Multiplier for converting degrees to radians
 #define DEG_TO_RAD 0.0174532925
 
