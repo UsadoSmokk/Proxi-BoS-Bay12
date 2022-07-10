@@ -4,7 +4,7 @@
 	icon = 'icons/boh/items/firing_pin.dmi'
 	icon_state = "firing_pin_base"
 	var/emagged = FALSE
-	var/obj/item/weapon/gun/installed_in //The gun we're installed in.
+	var/obj/item/gun/installed_in //The gun we're installed in.
 	var/pin_tag //what the pin is tagged with - use for overlays.
 	var/can_overwrite = TRUE
 

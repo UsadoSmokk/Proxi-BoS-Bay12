@@ -4,9 +4,9 @@
 	pin_tag = "idlock"
 
 /obj/item/firing_pin/id_locked/attackby(obj/item/I as obj, mob/user as mob)
-	if(istype(I, /obj/item/weapon/card/id))
+	if(istype(I, /obj/item/card/id))
 		if(can_overwrite)
-			var/obj/item/weapon/card/id/IDcard = I
+			var/obj/item/card/id/IDcard = I
 			//it's an ID card
 			if(IDcard.access.len) //If it has any accesses on it.
 				req_access = IDcard.access
