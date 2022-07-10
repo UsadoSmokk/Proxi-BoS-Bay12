@@ -1157,3 +1157,6 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 		return matches[1]
 	else
 		return (input("Select a type", "Select Type", matches[1]) as null|anything in matches)
+//boh
+/proc/random_dir()
+	return pick(list(NORTH, EAST, SOUTH, WEST, NORTH|EAST, NORTH|WEST, SOUTH|EAST, SOUTH|WEST))
