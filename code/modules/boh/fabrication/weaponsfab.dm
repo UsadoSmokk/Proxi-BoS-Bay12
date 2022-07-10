@@ -58,12 +58,12 @@
 	..()
 
 /obj/machinery/weapons_fabricator/RefreshParts()
-	res_max_amount = 100000 * total_component_rating_of_type(/obj/item/weapon/stock_parts/matter_bin)
+	res_max_amount = 100000 * total_component_rating_of_type(/obj/item/stock_parts/matter_bin)
 
-	var/T = Clamp(total_component_rating_of_type(/obj/item/weapon/stock_parts/manipulator), 0, 4)
+	var/T = clamp(total_component_rating_of_type(/obj/item/stock_parts/manipulator), 0, 4)
 	mat_efficiency = 1 - (T - 1) / 4 // 1 -> 0.5
 
-	T += total_component_rating_of_type(/obj/item/weapon/stock_parts/micro_laser)// Not resetting T is intended; speed is affected by both
+	T += total_component_rating_of_type(/obj/item/stock_parts/micro_laser)// Not resetting T is intended; speed is affected by both
 	speed = T / 2 // 1 -> 3
 
 /obj/machinery/weapons_fabricator/interface_interact(var/mob/user)
@@ -316,17 +316,17 @@
 		sync_message = "Sync complete."
 	update_categories()
 
-/obj/item/weapon/stock_parts/circuitboard/weaponsfab
+/obj/item/stock_parts/circuitboard/weaponsfab
 	name = "Circuit board (Weapons Fabricator)"
 	build_path = /obj/machinery/weapons_fabricator
 	board_type = "machine"
 	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3)
 	req_components = list(
-		/obj/item/weapon/stock_parts/matter_bin = 2,
-		/obj/item/weapon/stock_parts/manipulator = 1,
-		/obj/item/weapon/stock_parts/micro_laser = 1)
+		/obj/item/stock_parts/matter_bin = 2,
+		/obj/item/stock_parts/manipulator = 1,
+		/obj/item/stock_parts/micro_laser = 1)
 	additional_spawn_components = list(
-		/obj/item/weapon/stock_parts/console_screen = 1,
-		/obj/item/weapon/stock_parts/keyboard = 1,
-		/obj/item/weapon/stock_parts/power/apc/buildable = 1
+		/obj/item/stock_parts/console_screen = 1,
+		/obj/item/stock_parts/keyboard = 1,
+		/obj/item/stock_parts/power/apc/buildable = 1
 	)
