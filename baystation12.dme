@@ -1554,6 +1554,7 @@
 #include "code\modules\boh\gunnery\structures.dm"
 #include "code\modules\boh\makeshift_weapons\improv_rifle.dm"
 #include "code\modules\boh\makeshift_weapons\manual_cycle.dm"
+#include "code\modules\boh\nabber_stuff\hardsuit.dm"
 #include "code\modules\butchery\butchery.dm"
 #include "code\modules\butchery\remains.dm"
 #include "code\modules\client\asset_cache.dm"
