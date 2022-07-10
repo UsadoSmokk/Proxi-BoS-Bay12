@@ -31,3 +31,18 @@
 	src.add_inherent_law("Defend: Defend your assigned vessel and Lordanian Sovereign Systems personnel with as much force as is necessary.")
 	src.add_inherent_law("Survive: Safeguard your own existence with as much force as is necessary.")
 	..()
+
+/************ Ascent Lawset (BOH) ******************/
+/datum/ai_laws/ascent
+	name = "Ascent Lawset"
+	law_header = "_=/--=-_"
+	selectable = FALSE
+
+/datum/ai_laws/ascent/add_ion_law(law)
+	return FALSE
+
+/datum/ai_laws/ascent/New()
+	add_inherent_law("Listen to directives from Ascent leadership with precedence given to queens.")
+	add_inherent_law("Preserve your own existence.")
+	add_inherent_law("Enable and support Ascent activities.")
+	..()
