@@ -264,3 +264,8 @@
 	icon_state = "rocketshell"
 	projectile_type = /obj/item/projectile/missile
 	caliber = CALIBER_ROCKET
+
+/obj/item/ammo_magazine/speedloader/xo
+	labels = list("magnum")
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/pistol/magnum
