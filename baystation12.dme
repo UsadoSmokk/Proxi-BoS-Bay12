@@ -1559,6 +1559,8 @@
 #include "code\modules\boh\nullglass\weapons.dm"
 #include "code\modules\boh\offsite\syndi.dm"
 #include "code\modules\boh\organs\disintegratable.dm"
+#include "code\modules\boh\sd_keyturn\keys.dm"
+#include "code\modules\boh\sd_keyturn\keyterminal.dm"
 #include "code\modules\butchery\butchery.dm"
 #include "code\modules\butchery\remains.dm"
 #include "code\modules\client\asset_cache.dm"

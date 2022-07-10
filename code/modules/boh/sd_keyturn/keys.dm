@@ -1,4 +1,4 @@
-/obj/item/weapon/sd_key
+/obj/item/sd_key
 	name = "self destruct key"
 	desc = "For when the final duty must be performed. The key can only be imprinted by a head of staff, premature activation is not required."
 	icon = 'icons/boh/items/sd_keys.dmi'
@@ -10,23 +10,23 @@
 	var/job_name
 	var/skeleton_key = FALSE //used in the self destruct terminal stuff.
 
-/obj/item/weapon/sd_key/skeleton_key
+/obj/item/sd_key/skeleton_key
 	name = "hacked self destruct key"
 	desc = "A key to the ship's self destruct. It's obviously been hacked extensively."
 	skeleton_key = TRUE
 	ownertag = "skeleton"
 
 
-/obj/item/weapon/sd_key/Initialize()
+/obj/item/sd_key/Initialize()
 	. = ..()
 	update_icon()
 
-/obj/item/weapon/sd_key/examine(mob/user)
+/obj/item/sd_key/examine(mob/user)
 	. = ..()
 	if(owner)
 		to_chat(user, SPAN_NOTICE("It belongs to [owner], [job_name], according to the display."))
 
-/obj/item/weapon/sd_key/attack_self(mob/user)
+/obj/item/sd_key/attack_self(mob/user)
 	var/turf/E = get_turf(user)
 	if(skeleton_key)
 		to_chat(user, SPAN_NOTICE("The circuitry in this thing has been modified extensively. You feel like you don't need to imprint onto it."))
@@ -67,7 +67,7 @@
 			else
 				return
 
-/obj/item/weapon/sd_key/proc/get_imprint(var/datum/job/ownerjob)
+/obj/item/sd_key/proc/get_imprint(var/datum/job/ownerjob)
 	var/imprinttype = ownerjob.type
 	switch(imprinttype)
 		if(/datum/job/captain)
@@ -85,7 +85,7 @@
 	job_name = ownerjob.title
 	update_icon()
 
-/obj/item/weapon/sd_key/on_update_icon()
+/obj/item/sd_key/on_update_icon()
 	if(skeleton_key)
 		overlays += image('icons/boh/items/sd_keys.dmi', "skeleton_key")
 		return //we don't do any of the fancy stuff if we're a skeleton key.

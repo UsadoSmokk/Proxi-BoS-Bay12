@@ -28,6 +28,7 @@ var/global/bomb_set
 	var/previous_level = ""
 	wires = /datum/wires/nuclearbomb
 	var/decl/security_level/original_level
+	var/keyturn_recieved = FALSE //boh
 
 /obj/machinery/nuclearbomb/New()
 	..()

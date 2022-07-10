@@ -7,7 +7,7 @@
 	desc = "A wallmounted terminal for authorizing the self-destruct device's activation."
 	icon = 'icons/boh/obj/key_terminal.dmi'
 	icon_state = "keyturn_terminal"
-	var/obj/item/weapon/sd_key/key //The key that's been inserted into us.
+	var/obj/item/sd_key/key //The key that's been inserted into us.
 	var/state = KEYTERMINAL_STATE_SAFE
 	var/slave = FALSE //we're not the one who initialized the request for a keyturn.
 	var/obj/machinery/sd_keyterminal/master_terminal //used for keyturning gubbins.
@@ -30,8 +30,8 @@
 				name = "[initial(name)] (Alpha)"
 
 /obj/machinery/sd_keyterminal/attackby(obj/item/O as obj, mob/user as mob)
-	if(istype(O, /obj/item/weapon/sd_key))
-		var/obj/item/weapon/sd_key/newkey = O
+	if(istype(O, /obj/item/sd_key))
+		var/obj/item/sd_key/newkey = O
 		insert_key(newkey, user)
 
 /obj/machinery/sd_keyterminal/attack_hand(mob/user)
@@ -61,7 +61,7 @@
 			remove_key(user)
 
 /obj/machinery/sd_keyterminal/proc/insert_key(var/obj/item/O, mob/user)
-	var/obj/item/weapon/sd_key/newkey = O //this assumes the istype is already passed
+	var/obj/item/sd_key/newkey = O //this assumes the istype is already passed
 	to_chat(user, SPAN_NOTICE("You press the key against [src]'s keyslot, waiting for it to check the authentication..."))
 	if(!user.unEquip(newkey, src))
 		return
