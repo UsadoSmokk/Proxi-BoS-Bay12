@@ -82,10 +82,10 @@
 /obj/item/projectile/bullet/rcr
 	name ="incendiary shell"
 	icon_state= "rod"
-	damage_type = BURN
+	damage_type = DAMAGE_BURN
 	damage = 165//It's a rocket and there's so few of them. We'll down this if it's too powerful. Up from 90, which was a tickle cannon.
 	armor_penetration = 65 //not 100, because recoilless rifles don't have that high of a velocity
-	damage_flags = DAM_EDGE | DAM_DISPERSED | DAM_EXPLODE
+	damage_flags = DAMAGE_FLAG_EDGE | DAMAGE_FLAG_DISPERSED | DAMAGE_FLAG_EXPLODE
 
 	on_hit(var/atom/target, var/blocked = 0)
 		explosion(target, 0, 1, 6, 12)
@@ -176,7 +176,7 @@
 	shrapnel_chance_multiplier = 0.1
 	arterial_bleed_chance_multiplier = 0.1
 	penetrating = 1
-	damage_flags = DAM_EDGE
+	damage_flags = DAMAGE_FLAG_EDGE
 
 //holder
 /obj/item/ammo_magazine/shotholder/sabot
