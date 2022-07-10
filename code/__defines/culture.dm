@@ -216,3 +216,8 @@
 #define FACTION_ASCENT_ALATE     "Ascent Alate"
 #define FACTION_ASCENT_SERPENTID "Ascent Serpentid"
 #define RELIGION_KHARMAANI       "Nest-Lineage Veneration"
+
+// Tajaran cultures (boh)
+#define CULTURE_TAJARAN      "The Tajara"
+#define HOME_SYSTEM_TAJARAN  "Rarkajar"
+#define FACTION_TAJARAN      "Tajaran Government"

@@ -27,6 +27,7 @@
 #define LANGUAGE_MANTID_NONVOCAL   "Ascent-Glow"
 #define LANGUAGE_MANTID_VOCAL      "Ascent-Voc"
 #define LANGUAGE_MANTID_BROADCAST  "Worldnet"
+#define LANGUAGE_TAJARAN           "Siik'Maas"
 
 //Antag
 #define LANGUAGE_CULT              "Cult"
