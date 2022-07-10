@@ -1,5 +1,5 @@
 // Rigs and gear themselves.
-/obj/item/weapon/rig/gas
+/obj/item/rig/gas
 	name = "serpentid utility exosuit"
 	icon_override = 'icons/mob/species/nabber/onmob_back_gas.dmi'
 	desc = "An advanced utility exosuit with integrated power supply and atmosphere."
@@ -47,7 +47,7 @@
 		SPECIES_NABBER =       'icons/mob/species/nabber/onmob_suit_gas.dmi'
 		)
 	allowed = list(
-		/obj/item/weapon/storage/
+		/obj/item/storage/
 	)
 
 /obj/item/clothing/gloves/rig/gas

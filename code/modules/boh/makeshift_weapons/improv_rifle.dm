@@ -1,4 +1,4 @@
-/obj/item/weapon/gun/projectile/manualcycle/imprifle
+/obj/item/gun/projectile/manualcycle/imprifle
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns.dmi',
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns.dmi',
@@ -23,7 +23,7 @@
 	accuracy = 0
 
 
-/obj/item/weapon/gun/projectile/manualcycle/imprifle/impriflesawn
+/obj/item/gun/projectile/manualcycle/imprifle/impriflesawn
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns.dmi',
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns.dmi',
@@ -45,14 +45,14 @@
 	max_shells = 3
 	ammo_type =	/obj/item/ammo_casing/rifle
 
-/obj/item/weapon/imprifleframe/imprifleframesawn
+/obj/item/imprifleframe/imprifleframesawn
 	name = "unfinished improvised short rifle"
 	desc = "An almost-complete improvised short rifle."
 	icon = 'icons/boh/items/guns.dmi'
 	icon_state = "308boltsawed"
 	item_state = "sawnshotgun"
 
-/obj/item/weapon/imprifleframe
+/obj/item/imprifleframe
 	name = "improvised rifle stock"
 	desc = "A half-finished improvised rifle."
 	icon = 'icons/boh/items/guns.dmi'
@@ -60,11 +60,11 @@
 	item_state = "sawnshotgun"
 	var/buildstate = 0
 
-/obj/item/weapon/imprifleframe/on_update_icon()
+/obj/item/imprifleframe/on_update_icon()
 	. = ..()
 	icon_state = "308boltframe[buildstate]"
 
-/obj/item/weapon/imprifleframe/examine(mob/user)
+/obj/item/imprifleframe/examine(mob/user)
 	. = ..(user)
 	switch(buildstate)
 		if(1) to_chat(user, "It has an unfinished pipe barrel in place on the wooden furniture.")
@@ -76,7 +76,7 @@
 		if(7) to_chat(user, "It has an unfinished pipe bolt in place.")
 		if(8) to_chat(user, "It has a finished unsecured pipe bolt in place.")
 
-/obj/item/weapon/imprifleframe/attackby(obj/item/W as obj, mob/user as mob)
+/obj/item/imprifleframe/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/pipe))
 		if(buildstate == 0)
 			user.drop_from_inventory(W)
@@ -103,7 +103,7 @@
 			else
 				to_chat(user, "<span class='notice'>You need at least ten segments of cable coil to complete this task.</span>")
 			return
-	else if(istype(W,/obj/item/weapon/screwdriver))
+	else if(istype(W,/obj/item/screwdriver))
 		if(buildstate == 2)
 			to_chat(user, "<span class='notice'>You further secure the barrel to the wooden furniture.</span>")
 			buildstate++
@@ -124,7 +124,7 @@
 			else
 				to_chat(user, "<span class='notice'>You need at least five plasteel sheets to complete this task.</span>")
 			return
-	else if(istype(W,/obj/item/weapon/wrench))
+	else if(istype(W,/obj/item/wrench))
 		if(buildstate == 4)
 			to_chat(user, "<span class='notice'>You secure the reinforced barrel.</span>")
 			buildstate++
@@ -141,34 +141,34 @@
 			else
 				to_chat(user, "<span class='notice'>You need at least ten steel sheets to complete this task.</span>")
 			return
-	else if(istype(W,/obj/item/weapon/weldingtool))
+	else if(istype(W,/obj/item/weldingtool))
 		if(buildstate == 8)
-			var/obj/item/weapon/weldingtool/T = W
+			var/obj/item/weldingtool/T = W
 			if(T.remove_fuel(5,user))
 				if(!src || !T.isOn()) return
 				playsound(src.loc, 'sound/items/Welder2.ogg', 100, 1)
 			to_chat(user, "<span class='notice'>You secure the improvised rifle's various parts.</span>")
-			var/obj/item/weapon/gun/projectile/manualcycle/imprifle/emptymag = new /obj/item/weapon/gun/projectile/manualcycle/imprifle(get_turf(src))
+			var/obj/item/gun/projectile/manualcycle/imprifle/emptymag = new /obj/item/gun/projectile/manualcycle/imprifle(get_turf(src))
 			emptymag.loaded = list()
 			qdel(src)
 		return
-	else if(istype(W,/obj/item/weapon/circular_saw))
+	else if(istype(W,/obj/item/circular_saw))
 		if(buildstate == 8)
 			to_chat(user, "<span class='notice'>You saw the barrel on the unfinished improvised rifle down.</span>")
-			new /obj/item/weapon/imprifleframe/imprifleframesawn(get_turf(src))
+			new /obj/item/imprifleframe/imprifleframesawn(get_turf(src))
 			playsound(src.loc, 'sound/weapons/circsawhit.ogg', 100, 1)
 			qdel(src)
 		return
 	else
-/obj/item/weapon/imprifleframe/imprifleframesawn/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W,/obj/item/weapon/weldingtool))
+/obj/item/imprifleframe/imprifleframesawn/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W,/obj/item/weldingtool))
 		if(buildstate == 0)
-			var/obj/item/weapon/weldingtool/T = W
+			var/obj/item/weldingtool/T = W
 			if(T.remove_fuel(5,user))
 				if(!src || !T.isOn()) return
 				playsound(src.loc, 'sound/items/Welder2.ogg', 100, 1)
 			to_chat(user, "<span class='notice'>You secure the improvised rifle's various parts.</span>")
-			var/obj/item/weapon/gun/projectile/manualcycle/imprifle/impriflesawn/emptymag = new /obj/item/weapon/gun/projectile/manualcycle/imprifle/impriflesawn(get_turf(src))
+			var/obj/item/gun/projectile/manualcycle/imprifle/impriflesawn/emptymag = new /obj/item/gun/projectile/manualcycle/imprifle/impriflesawn(get_turf(src))
 			emptymag.loaded = list()
 			qdel(src)
 		return
