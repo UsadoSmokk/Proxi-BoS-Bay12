@@ -38,6 +38,9 @@
 	//var/list/icon_keys = list()		//keys
 	//var/list/ammo_states = list()	//values
 
+	// You can't unload this firearm! (BOH)
+	var/ununloadable = FALSE
+
 /obj/item/gun/projectile/Initialize()
 	. = ..()
 	if (starts_loaded)

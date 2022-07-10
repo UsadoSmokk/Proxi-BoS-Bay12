@@ -1,9 +1,12 @@
 //////////
 // Project Vial
 /////////
-/obj/item/weapon/reagent_containers/glass/beaker/vial/projectsecret
+/obj/item/reagent_containers/glass/beaker/vial/projectsecret
 	name = "unmarked vial"
-	reagents_to_add = list(/datum/reagent/random = 30)
+
+/obj/item/reagent_containers/glass/beaker/vial/projectsecret/Initialize()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/random = 30)
 
 /////////
 // HF
@@ -37,9 +40,12 @@
 		M.add_chemical_effect(CE_PULSE, 15)
 
 //tempcont
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp
+/obj/item/reagent_containers/glass/beaker/vial/hfp
 	name = "cold vial"
-	reagents_to_add = list(/datum/reagent/toxin/hfp = 30)
+
+/obj/item/reagent_containers/glass/beaker/vial/hfp/Initialize()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/toxin/hfp = 30)
 
 /////////
 // stable slime toxin
@@ -61,17 +67,22 @@
 		H.verbs -= /mob/living/carbon/human/proc/shapeshifter_select_colour
 	H.update_body()
 
-/obj/item/weapon/reagent_containers/glass/beaker/vial/sludge
+/obj/item/reagent_containers/glass/beaker/vial/sludge
 	name = "sticky vial"
-	reagents_to_add = list(/datum/reagent/stableslimetoxin = 1)
+
+/obj/item/reagent_containers/glass/beaker/vial/sludge/Initialize()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/stableslimetoxin = 1)
 
 /////////
 // Zombie Vial
 /////////
-/obj/item/weapon/reagent_containers/glass/beaker/vial/zombie
+/*/obj/item/reagent_containers/glass/beaker/vial/zombie
 	name = "odd vial"
-	reagents_to_add = list(/datum/reagent/toxin/zombie = 30)
 
+/obj/item/reagent_containers/glass/beaker/vial/zombie/Initialize()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/toxin/zombie = 30) */
 /////////
 // Enfluroprobine
 /////////
@@ -113,16 +124,22 @@
 		M.hallucination(50, 50)
 
 //vial
-/obj/item/weapon/reagent_containers/glass/beaker/vial/enfluroprobine
+/obj/item/reagent_containers/glass/beaker/vial/enfluroprobine
 	name = "odd vial"
-	reagents_to_add = list(/datum/reagent/enfluroprobine = 30)
+
+/obj/item/reagent_containers/glass/beaker/vial/enfluroprobine/Initialize()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/enfluroprobine = 30)
 
 /////////
 // VB Vial
 /////////
-/obj/item/weapon/reagent_containers/glass/beaker/vial/vecuronium_bromide
+/obj/item/reagent_containers/glass/beaker/vial/vecuronium_bromide
 	name = "odd vial"
-	reagents_to_add = list(/datum/reagent/vecuronium_bromide = 30)
+
+/obj/item/reagent_containers/glass/beaker/vial/vecuronium_bromide/Initialize()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/vecuronium_bromide = 30)
 
 /////////
 // Coffee OLD

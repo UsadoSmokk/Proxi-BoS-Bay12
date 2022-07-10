@@ -228,3 +228,18 @@
 		to_chat(target, SPAN_WARNING("You feel a wave of heat wash over you!"))
 		L.adjust_fire_stacks(rand(5,8))
 		L.IgniteMob()
+
+//boh
+/obj/item/projectile/missile
+	icon_state = "missile"
+	throwforce = 15
+
+/obj/item/projectile/missile/on_impact(var/atom/target, var/blocked = 0)
+	explosion(target, 0, 2, 2, 4)
+
+/obj/item/projectile/missile/on_hit(atom/target, blocked, def_zone) // Oh no, someone got hit by the RPG.
+	. = ..()
+	if(isliving(target))
+		var/mob/living/L = target
+		to_chat(target, SPAN_WARNING("OH SHI-")) // You've been hit by an RPG!
+		L.gib() // You're dead kiddo.

@@ -19,6 +19,7 @@
 #define CALIBER_SABOT			"sabot"
 #define CALIBER_SKRELL_SHOTGUN	"flechette"
 #define CALIBER_NAILS "nails"
+#define CALIBER_ROCKET	"rocket"
 
 #define HOLD_CASINGS	0 //do not do anything after firing. Manual action, like pump shotguns, or guns that want to define custom behaviour
 #define CLEAR_CASINGS	1 //clear chambered so that the next round will be automatically loaded and fired, but don't drop anything on the floor

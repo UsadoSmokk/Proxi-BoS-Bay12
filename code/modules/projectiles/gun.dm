@@ -114,6 +114,17 @@
 	var/has_safety = TRUE
 	var/safety_icon 	   //overlay to apply to gun based on safety state, if any
 
+	//boh
+	var/has_firing_pin = FALSE
+	var/obj/item/firing_pin/pin //firing pin
+	var/firing_pin_type //what type is our firing pin, if has_firing_pin is true.
+	var/damage_mult = 1
+	// Pen multiplier. adds/subtracts pen. 0 means no pen, higher means more pen, lower less.
+	var/penetration_mod = 0
+	// Falloff modifier. less means less distance falloff, more means more.
+	var/falloff_mod = 0
+	// Does this firemode at full auto? Effectively an autoclicker. Set to true if yes. The gun will keep firing until empty when the mouse is held down.
+
 /obj/item/gun/Initialize()
 	. = ..()
 
@@ -439,6 +450,11 @@
 //does the actual launching of the projectile
 /obj/item/gun/proc/process_projectile(obj/projectile, mob/living/user, atom/target, var/target_zone, var/params=null)
 	var/obj/item/projectile/P = projectile
+	//boh port start
+	P.damage *= damage_mult // Multiplies our projectiles damage.
+	P.armor_penetration += penetration_mod // adds/subtracts from penetration of our projectile.
+	P.distance_falloff += falloff_mod // Adds/subtracts distance falloff of our projectile.
+	//boh port end
 	if(!istype(P))
 		return 0 //default behaviour only applies to true projectiles
 
