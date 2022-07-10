@@ -1,7 +1,7 @@
 /////////
 // Vox Jetpack
 /////////
-/obj/item/weapon/tank/jetpack/nitrogen
+/obj/item/tank/jetpack/nitrogen
 	name = "jump pack"
 	desc = "A belt with tanks of compressed nitrogen for use as propulsion, worn like a backpack. Quite against the name, honestly. \
 	This appears to be a compact unit, meant for integration with something larger."

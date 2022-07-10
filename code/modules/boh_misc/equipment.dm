@@ -46,7 +46,7 @@
 /////////
 // PCarriers / Plates
 //////////
-/obj/item/clothing/accessory/armorplate/shock
+/obj/item/clothing/accessory/armor_plate/shock
 	name = "shock plating"
 	desc = "An incredibly expensive armor plate made of visco-elastic materials, designed to provide the most protection from pure physical harm. \
 	Given how the material functions, it's better for protecting against brute force weapons, rather than bullets. Attaches to a plate carrier."

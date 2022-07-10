@@ -2,7 +2,7 @@
 // Deathsquad
 /////////
 
-/obj/item/weapon/rig/military/deathsquad		//Deathsquad only, considering you're basically unkillable.
+/obj/item/rig/military/deathsquad		//Deathsquad only, considering you're basically unkillable.
 	name = "heavy suit control module"
 	desc = "A heavy, incredibly sleek suit of the best armor available to... well, anyone. Jesus, this is a lot of armor. \
 	You suspect that not even an organized military such as the SCG's would be able to contend with this. \

@@ -8,9 +8,9 @@
 	desc = "A shoulder-mounted micro-explosive dispenser."
 
 	charges = list(
-		list("teargas",   "teargas",   /obj/item/weapon/grenade/chem_grenade/teargas,  12),
-		list("localized frag",   "localized frag",   /obj/item/weapon/grenade/frag/shell,  12),
-		list("EMP (DANGER)",   "EMP (DANGER)",   /obj/item/weapon/grenade/empgrenade,  6),
+		list("teargas",   "teargas",   /obj/item/grenade/chem_grenade/teargas,  12),
+		list("localized frag",   "localized frag",   /obj/item/grenade/frag/shell,  12),
+		list("EMP (DANGER)",   "EMP (DANGER)",   /obj/item/grenade/empgrenade,  6),
 		)
 
 /////////
