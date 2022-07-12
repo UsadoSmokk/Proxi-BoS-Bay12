@@ -380,8 +380,9 @@
 		"Service" = list(jobs = list(), dep = SRV, color = "#cccccc"),
 		"Medical" = list(jobs = list(), dep = MED, color = "#99ffe6"),
 		"Science" = list(jobs = list(), dep = SCI, color = "#e6b3e6", colBreak = 1),
-		"Supply" = list(jobs = list(), dep = SUP, color = "#ead4ae"),
+		"Auxiliary" = list(jobs = list(), dep = SUP, color = "#ead4ae"),
 		"Expedition" = list(jobs = list(), dep = EXP, color = "#ffd699"),
+		"Marines" = list(jobs = list(), dep = INF, color = "#557e38"),
 		"ERROR" = list(jobs = list(), color = "#ffffff", colBreak = 1)
 		)
 
