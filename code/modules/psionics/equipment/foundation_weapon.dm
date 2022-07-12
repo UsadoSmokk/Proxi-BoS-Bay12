@@ -8,6 +8,7 @@
 /obj/item/gun/projectile/revolver/foundation/disrupts_psionics()
 	return FALSE
 
+//boh
 /obj/item/storage/briefcase/foundation
 	name = "\improper Foundation briefcase"
 	desc = "A handsome black leather briefcase embossed with a stylized radio telescope."
@@ -17,8 +18,43 @@
 /obj/item/storage/briefcase/foundation/disrupts_psionics()
 	return FALSE
 
-/obj/item/storage/briefcase/foundation/New()
+/obj/item/storage/briefcase/foundation/revolver/New()
 	..()
-	new /obj/item/ammo_magazine/speedloader/magnum/nullglass(src)
 	new /obj/item/gun/projectile/revolver/foundation(src)
-	make_exact_fit()
+	new /obj/item/ammo_magazine/speedloader/magnum/nullglass(src)
+	new /obj/item/ammo_magazine/speedloader/magnum/nullglass(src)
+	new /obj/item/ammo_magazine/speedloader/magnum/nullglass(src)
+
+/obj/item/storage/secure/briefcase/jerraman
+	name = "secure vial carrier"
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "fbriefcase"
+	item_state = "fbriefcase"
+	desc = "A large briefcase designed to carry vials of chemicals, with a digital locking system."
+	startswith = list(/obj/item/reagent_containers/glass/beaker/vial/jerraman = 5, /obj/item/storage/box/syringes = 1)
+
+/obj/item/storage/secure/briefcase/jerraman/disrupts_psionics()
+	return FALSE
+
+/obj/item/reagent_containers/glass/beaker/vial/jerraman
+	reagents_to_add = list(/datum/reagent/jerraman = 4)
+
+/obj/item/material/coin/nullglass
+	desc = "A coin made of nullglass, used by psions to keep their own powers in check."
+	default_material = MATERIAL_NULLGLASS
+
+/obj/item/material/cross/nullglass
+	desc = "A cross made of nullglass, used by psions to keep their own powers in check."
+	default_material = MATERIAL_NULLGLASS
+
+/obj/item/storage/box/large/psinullers
+	name = "psi dampening items"
+	desc = "Psionic dampening items for willing psions to suppress their powers."
+	icon_state = "largebox"
+	w_class = ITEM_SIZE_LARGE
+	max_w_class = ITEM_SIZE_NORMAL
+	max_storage_space = DEFAULT_LARGEBOX_STORAGE
+	startswith = list(/obj/item/material/coin/nullglass = 7, /obj/item/material/cross/nullglass = 7)
+
+/obj/item/storage/box/large/psinullers/disrupts_psionics()
+	return FALSE

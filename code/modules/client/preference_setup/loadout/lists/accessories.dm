@@ -36,7 +36,7 @@
 	ties["tie"] = /obj/item/clothing/accessory
 	ties["striped tie"] = /obj/item/clothing/accessory/long
 	gear_tweaks += new/datum/gear_tweak/path(ties)
-
+/*
 //proxima code start
 /datum/gear/accessory/ec_sweater
 	display_name = "expeditionary fleece jacket"
@@ -55,7 +55,7 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 //proxima code end
-
+*/
 /datum/gear/accessory/locket
 	display_name = "locket"
 	path = /obj/item/clothing/accessory/locket

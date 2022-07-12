@@ -124,6 +124,7 @@
 	// Falloff modifier. less means less distance falloff, more means more.
 	var/falloff_mod = 0
 	// Does this firemode at full auto? Effectively an autoclicker. Set to true if yes. The gun will keep firing until empty when the mouse is held down.
+	var/acc_mod_base = 1
 
 /obj/item/gun/Initialize()
 	. = ..()
@@ -419,7 +420,7 @@
 	if(!istype(P))
 		return //default behaviour only applies to true projectiles
 
-	var/acc_mod = 0
+	var/acc_mod = acc_mod_base //boh
 	var/stood_still = last_handled
 	//Not keeping gun active will throw off aim (for non-Masters)
 	if(user.skill_check(SKILL_WEAPONS, SKILL_PROF))
