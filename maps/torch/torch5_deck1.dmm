@@ -9035,8 +9035,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced,
@@ -10786,7 +10785,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/window/reinforced{
-	health = 1e+007
+	dir = 1
 	},
 /obj/structure/window/reinforced{
 	dir = 1
@@ -11026,12 +11025,10 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
+	dir = 1
 	},
 /obj/item/storage/box/ammo/pepperball/full,
 /obj/item/storage/box/ammo/solar/rubber,
@@ -12220,8 +12217,7 @@
 /obj/item/shield/riot,
 /obj/item/shield/riot,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/window/reinforced{
 	dir = 1
@@ -14809,8 +14805,7 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
+	dir = 1
 	},
 /obj/item/gun/energy/gun/secure,
 /obj/item/gun/energy/gun/secure,
@@ -16312,7 +16307,7 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced{
-	health = 1e+007
+	dir = 8
 	},
 /obj/item/gun/energy/taser/carbine,
 /obj/item/gun/energy/taser/carbine,
@@ -17242,11 +17237,10 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/window/reinforced{
-	health = 1e+007
+	dir = 1
 	},
 /obj/structure/window/reinforced{
 	dir = 1
@@ -17369,8 +17363,7 @@
 "ewb" = (
 /obj/effect/floor_decal/corner/pink/mono,
 /obj/machinery/body_scanconsole{
-	dir = 1;
-	display_tags = list("med_triage_display","or1_display","or2_display")
+	dir = 1
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
@@ -17456,8 +17449,7 @@
 /area/assembly/robotics)
 "eGb" = (
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -19221,8 +19213,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/item/clothing/accessory/storage/bandolier,
 /obj/item/clothing/accessory/storage/bandolier,
@@ -19479,8 +19470,7 @@
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/item/storage/box/ammo/beanbags/full,
 /obj/item/storage/box/ammo/beanbags/full,
@@ -19553,8 +19543,7 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/item/gun/energy/ionrifle,
 /obj/item/gun/energy/ionrifle,
@@ -19645,15 +19634,12 @@
 	pixel_y = 3
 	},
 /obj/item/storage/box/handcuffs,
-/obj/structure/window/reinforced{
-	health = 1e+007
-	},
+/obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -23557,8 +23543,7 @@
 "mKq" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -23834,8 +23819,7 @@
 /area/teleporter/firstdeck)
 "ngM" = (
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/item/gun/projectile/automatic/sec_smg,
 /obj/item/gun/projectile/automatic/sec_smg,
@@ -25777,9 +25761,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	health = 1e+007
-	},
+/obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -25980,9 +25962,7 @@
 /area/rnd/anom_storage/gas)
 "pDb" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/drinks/bottle/vodka{
-	reagents_to_add = list(/datum/reagent/ethanol/vodka=10)
-	},
+/obj/item/reagent_containers/food/drinks/bottle/vodka,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
 "pEb" = (
@@ -26838,8 +26818,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -27355,8 +27334,7 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/item/gun/energy/ionrifle/small,
 /obj/item/gun/energy/ionrifle,
@@ -27616,8 +27594,7 @@
 /area/security/wing)
 "rmb" = (
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/window/reinforced,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -28108,8 +28085,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/item/ammo_magazine/smg_top/rubber,
 /obj/item/ammo_magazine/smg_top/rubber,
@@ -30192,8 +30168,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/item/barrier,
 /obj/item/barrier,
@@ -30805,8 +30780,7 @@
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/item/gun/projectile/shotgun/pump/beanbag,
 /obj/item/gun/projectile/shotgun/pump/beanbag,
@@ -31588,8 +31562,7 @@
 "wVq" = (
 /obj/effect/floor_decal/industrial/outline/orange,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/window/reinforced{
 	dir = 1
@@ -32053,8 +32026,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark/monotile,

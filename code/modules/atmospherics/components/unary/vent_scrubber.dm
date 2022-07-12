@@ -16,6 +16,7 @@
 	var/hibernate = 0 //Do we even process?
 	var/scrubbing = SCRUBBER_EXCHANGE
 	var/list/scrubbing_gas
+	var/frequency = 1439 //boh
 
 	var/panic = 0 //is this scrubber panicked?
 

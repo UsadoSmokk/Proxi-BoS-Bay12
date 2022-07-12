@@ -1,15 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aa" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod15,
-/turf/space/transit/north,
-/area/space)
 "ct" = (
 /obj/effect/shuttle_landmark/ninja/internim,
 /turf/space/bluespace,
-/area/space)
-"cX" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod16,
-/turf/space/transit/north,
 /area/space)
 "dj" = (
 /obj/effect/shuttle_landmark/transit/scavver_gantry/two,
@@ -42,10 +34,6 @@
 /obj/effect/shuttle_landmark/escape_pod/transit/pod11,
 /turf/space/transit/east,
 /area/space)
-"hh" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod12,
-/turf/space/transit/north,
-/area/space)
 "hV" = (
 /obj/effect/step_trigger/thrower{
 	affect_ghosts = 1;
@@ -53,17 +41,9 @@
 	},
 /turf/space/transit/east,
 /area/space)
-"ka" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod13,
-/turf/space,
-/area/space)
 "lg" = (
 /obj/effect/shuttle_landmark/escape_pod/transit/pod7,
 /turf/space/transit/north,
-/area/space)
-"mv" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod15,
-/turf/space,
 /area/space)
 "nN" = (
 /obj/effect/step_trigger/thrower{
@@ -101,20 +81,12 @@
 	},
 /turf/space/transit/north,
 /area/space)
-"rD" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod17,
-/turf/space/transit/north,
-/area/space)
 "sI" = (
 /obj/effect/step_trigger/thrower{
 	direction = 1;
 	name = "thrower_throwup";
 	tiles = 0
 	},
-/turf/space/transit/north,
-/area/space)
-"vK" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod13,
 /turf/space/transit/north,
 /area/space)
 "vV" = (
@@ -175,18 +147,6 @@
 /turf/space{
 	icon_state = "black"
 	},
-/area/space)
-"Bg" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod12,
-/turf/space,
-/area/space)
-"BG" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod17,
-/turf/space,
-/area/space)
-"BJ" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod9,
-/turf/space,
 /area/space)
 "DN" = (
 /obj/effect/step_trigger/teleporter/random{
@@ -298,10 +258,6 @@
 	},
 /turf/space/transit/north,
 /area/space)
-"RU" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod9,
-/turf/space/transit/north,
-/area/space)
 "Uc" = (
 /turf/space/bluespace,
 /area/space)
@@ -324,10 +280,6 @@
 "WO" = (
 /obj/effect/shuttle_landmark/escape_pod/transit/pod6,
 /turf/space/transit/north,
-/area/space)
-"XQ" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod16,
-/turf/space,
 /area/space)
 "Zi" = (
 /obj/effect/step_trigger/thrower{
@@ -2576,7 +2528,7 @@ dK
 dK
 dK
 qg
-hh
+dK
 dK
 dK
 dK
@@ -2596,7 +2548,7 @@ sI
 dK
 dK
 dK
-aa
+dK
 sI
 dK
 dK
@@ -3384,7 +3336,7 @@ dK
 dK
 dK
 qg
-vK
+dK
 dK
 dK
 dK
@@ -3404,7 +3356,7 @@ sI
 dK
 dK
 dK
-cX
+dK
 sI
 dK
 dK
@@ -4212,7 +4164,7 @@ sI
 dK
 dK
 dK
-rD
+dK
 sI
 dK
 dK
@@ -5630,7 +5582,7 @@ dK
 dK
 dK
 dK
-RU
+dK
 sI
 dK
 dK
@@ -8213,7 +8165,7 @@ Vj
 Vj
 Vj
 Vj
-BJ
+Vj
 Vj
 Vj
 Vj
@@ -10411,7 +10363,6 @@ Vj
 Vj
 Vj
 Vj
-Bg
 Vj
 Vj
 Vj
@@ -10431,7 +10382,8 @@ Vj
 Vj
 Vj
 Vj
-mv
+Vj
+Vj
 Vj
 Vj
 Vj
@@ -12027,7 +11979,6 @@ Vj
 Vj
 Vj
 Vj
-ka
 Vj
 Vj
 Vj
@@ -12047,7 +11998,8 @@ Vj
 Vj
 Vj
 Vj
-XQ
+Vj
+Vj
 Vj
 Vj
 Vj
@@ -13663,7 +13615,7 @@ Vj
 Vj
 Vj
 Vj
-BG
+Vj
 Vj
 Vj
 Vj

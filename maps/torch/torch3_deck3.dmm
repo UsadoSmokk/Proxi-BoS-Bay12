@@ -123,7 +123,6 @@
 	frequency = 1441;
 	icon_state = "map_vent_in";
 	id_tag = "d3sh_out";
-	initial_loc = null;
 	initialize_directions = 1;
 	internal_pressure_bound = 2000;
 	internal_pressure_bound_default = 2000;
@@ -4654,8 +4653,7 @@
 /area/hallway/primary/thirddeck/aft)
 "jj" = (
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/bed/chair/padded/black{
 	dir = 4
@@ -9201,8 +9199,7 @@
 /area/hallway/primary/thirddeck/fore)
 "sP" = (
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -9290,8 +9287,7 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/ship_munition/disperser_charge/mining,
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
@@ -9645,8 +9641,7 @@
 	},
 /obj/structure/closet/crate/munitions/thruster/planet,
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
@@ -14431,8 +14426,7 @@
 /obj/effect/floor_decal/industrial/hatch/orange,
 /obj/structure/ship_munition/disperser_charge/fire,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
@@ -18098,8 +18092,7 @@
 /area/command/gunnery/missiles/inside)
 "Nq" = (
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -18470,8 +18463,7 @@
 /obj/effect/floor_decal/industrial/hatch/red,
 /obj/structure/ship_munition/disperser_charge/explosive,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
@@ -19313,8 +19305,7 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/ship_munition/disperser_charge/s2s,
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
@@ -20558,8 +20549,7 @@
 	},
 /obj/structure/closet/crate/munitions/thruster/hunter,
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
@@ -22049,8 +22039,7 @@
 	},
 /obj/structure/closet/crate/munitions/thruster/point,
 /obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
@@ -23327,8 +23316,7 @@
 /obj/item/tank/jetpack/carbondioxide,
 /obj/item/tank/jetpack/carbondioxide,
 /obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
+	dir = 8
 	},
 /obj/machinery/light/small{
 	dir = 1
@@ -27508,7 +27496,7 @@ aa
 aa
 aa
 aa
-oi
+aa
 aa
 aa
 aa
@@ -27710,7 +27698,7 @@ aa
 aa
 aa
 aa
-aa
+oi
 aa
 aa
 aa
@@ -28137,7 +28125,7 @@ aa
 aa
 aa
 aa
-MA
+aa
 aa
 aa
 aa
@@ -28339,7 +28327,7 @@ aa
 aa
 aa
 aa
-aa
+MA
 aa
 aa
 aa
@@ -31357,6 +31345,208 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(40,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 lg
 Di
 Di
@@ -31468,7 +31658,7 @@ aa
 aa
 aa
 "}
-(40,1,1) = {"
+(41,1,1) = {"
 aa
 aa
 aa
@@ -31670,7 +31860,7 @@ aa
 aa
 aa
 "}
-(41,1,1) = {"
+(42,1,1) = {"
 aa
 aa
 aa
@@ -31872,7 +32062,7 @@ aa
 aa
 aa
 "}
-(42,1,1) = {"
+(43,1,1) = {"
 aa
 aa
 aa
@@ -32074,7 +32264,7 @@ aa
 aa
 aa
 "}
-(43,1,1) = {"
+(44,1,1) = {"
 aa
 aa
 aa
@@ -32276,7 +32466,7 @@ aa
 aa
 aa
 "}
-(44,1,1) = {"
+(45,1,1) = {"
 aa
 aa
 aa
@@ -32478,7 +32668,7 @@ aa
 aa
 aa
 "}
-(45,1,1) = {"
+(46,1,1) = {"
 aa
 aa
 aa
@@ -32680,7 +32870,7 @@ aa
 aa
 aa
 "}
-(46,1,1) = {"
+(47,1,1) = {"
 aa
 aa
 aa
@@ -32882,7 +33072,7 @@ aa
 aa
 aa
 "}
-(47,1,1) = {"
+(48,1,1) = {"
 aa
 aa
 aa
@@ -33084,7 +33274,7 @@ aa
 aa
 aa
 "}
-(48,1,1) = {"
+(49,1,1) = {"
 aa
 aa
 aa
@@ -33286,7 +33476,7 @@ aa
 aa
 aa
 "}
-(49,1,1) = {"
+(50,1,1) = {"
 aa
 aa
 aa
@@ -33488,7 +33678,7 @@ aa
 aa
 aa
 "}
-(50,1,1) = {"
+(51,1,1) = {"
 aa
 aa
 aa
@@ -33690,7 +33880,7 @@ aa
 aa
 aa
 "}
-(51,1,1) = {"
+(52,1,1) = {"
 aa
 aa
 aa
@@ -33892,7 +34082,7 @@ aa
 aa
 aa
 "}
-(52,1,1) = {"
+(53,1,1) = {"
 aa
 aa
 aa
@@ -34094,7 +34284,7 @@ aa
 aa
 aa
 "}
-(53,1,1) = {"
+(54,1,1) = {"
 aa
 aa
 aa
@@ -34296,7 +34486,7 @@ aa
 aa
 aa
 "}
-(54,1,1) = {"
+(55,1,1) = {"
 aa
 aa
 aa
@@ -34498,7 +34688,7 @@ aa
 aa
 aa
 "}
-(55,1,1) = {"
+(56,1,1) = {"
 aa
 aa
 aa
@@ -34700,7 +34890,7 @@ aa
 aa
 aa
 "}
-(56,1,1) = {"
+(57,1,1) = {"
 aa
 aa
 aa
@@ -34902,7 +35092,7 @@ aa
 aa
 aa
 "}
-(57,1,1) = {"
+(58,1,1) = {"
 aa
 aa
 aa
@@ -35104,7 +35294,7 @@ aa
 aa
 aa
 "}
-(58,1,1) = {"
+(59,1,1) = {"
 aa
 aa
 aa
@@ -35306,7 +35496,7 @@ aa
 aa
 aa
 "}
-(59,1,1) = {"
+(60,1,1) = {"
 aa
 aa
 aa
@@ -35508,7 +35698,7 @@ aa
 aa
 aa
 "}
-(60,1,1) = {"
+(61,1,1) = {"
 aa
 aa
 aa
@@ -35710,7 +35900,7 @@ aa
 aa
 aa
 "}
-(61,1,1) = {"
+(62,1,1) = {"
 aa
 aa
 aa
@@ -35912,7 +36102,7 @@ aa
 aa
 aa
 "}
-(62,1,1) = {"
+(63,1,1) = {"
 aa
 aa
 aa
@@ -36114,7 +36304,7 @@ aa
 aa
 aa
 "}
-(63,1,1) = {"
+(64,1,1) = {"
 aa
 aa
 aa
@@ -36316,7 +36506,7 @@ aa
 aa
 aa
 "}
-(64,1,1) = {"
+(65,1,1) = {"
 aa
 aa
 aa
@@ -36518,7 +36708,7 @@ aa
 aa
 aa
 "}
-(65,1,1) = {"
+(66,1,1) = {"
 aa
 aa
 aa
@@ -36720,7 +36910,7 @@ aa
 aa
 aa
 "}
-(66,1,1) = {"
+(67,1,1) = {"
 aa
 aa
 aa
@@ -36922,7 +37112,7 @@ aa
 aa
 aa
 "}
-(67,1,1) = {"
+(68,1,1) = {"
 aa
 aa
 aa
@@ -37124,7 +37314,7 @@ aa
 aa
 aa
 "}
-(68,1,1) = {"
+(69,1,1) = {"
 aa
 aa
 aa
@@ -37326,7 +37516,7 @@ aa
 aa
 aa
 "}
-(69,1,1) = {"
+(70,1,1) = {"
 aa
 aa
 aa
@@ -37528,7 +37718,7 @@ aa
 aa
 aa
 "}
-(70,1,1) = {"
+(71,1,1) = {"
 aa
 aa
 aa
@@ -37730,7 +37920,7 @@ aa
 aa
 aa
 "}
-(71,1,1) = {"
+(72,1,1) = {"
 aa
 aa
 aa
@@ -37932,7 +38122,7 @@ aa
 aa
 aa
 "}
-(72,1,1) = {"
+(73,1,1) = {"
 aa
 aa
 aa
@@ -38134,7 +38324,7 @@ aa
 aa
 aa
 "}
-(73,1,1) = {"
+(74,1,1) = {"
 aa
 aa
 aa
@@ -38336,7 +38526,7 @@ aa
 aa
 aa
 "}
-(74,1,1) = {"
+(75,1,1) = {"
 aa
 aa
 aa
@@ -38538,7 +38728,7 @@ aa
 aa
 aa
 "}
-(75,1,1) = {"
+(76,1,1) = {"
 aa
 aa
 aa
@@ -38740,7 +38930,7 @@ aa
 aa
 aa
 "}
-(76,1,1) = {"
+(77,1,1) = {"
 aa
 aa
 aa
@@ -38942,7 +39132,7 @@ aa
 aa
 aa
 "}
-(77,1,1) = {"
+(78,1,1) = {"
 aa
 aa
 aa
@@ -39144,7 +39334,7 @@ aa
 aa
 aa
 "}
-(78,1,1) = {"
+(79,1,1) = {"
 aa
 aa
 aa
@@ -39346,7 +39536,7 @@ aa
 aa
 aa
 "}
-(79,1,1) = {"
+(80,1,1) = {"
 aa
 aa
 aa
@@ -39548,7 +39738,7 @@ aa
 aa
 aa
 "}
-(80,1,1) = {"
+(81,1,1) = {"
 aa
 aa
 aa
@@ -39750,7 +39940,7 @@ aa
 aa
 aa
 "}
-(81,1,1) = {"
+(82,1,1) = {"
 aa
 aa
 aa
@@ -39952,7 +40142,7 @@ aa
 aa
 aa
 "}
-(82,1,1) = {"
+(83,1,1) = {"
 aa
 aa
 aa
@@ -40154,7 +40344,7 @@ aa
 aa
 aa
 "}
-(83,1,1) = {"
+(84,1,1) = {"
 aa
 aa
 aa
@@ -40356,7 +40546,7 @@ aa
 aa
 aa
 "}
-(84,1,1) = {"
+(85,1,1) = {"
 aa
 aa
 aa
@@ -40558,7 +40748,7 @@ aa
 aa
 aa
 "}
-(85,1,1) = {"
+(86,1,1) = {"
 aa
 aa
 aa
@@ -40760,7 +40950,7 @@ aa
 aa
 aa
 "}
-(86,1,1) = {"
+(87,1,1) = {"
 aa
 aa
 aa
@@ -40962,7 +41152,7 @@ aa
 aa
 aa
 "}
-(87,1,1) = {"
+(88,1,1) = {"
 aa
 aa
 aa
@@ -41164,7 +41354,7 @@ aa
 aa
 aa
 "}
-(88,1,1) = {"
+(89,1,1) = {"
 aa
 aa
 aa
@@ -41366,7 +41556,7 @@ aa
 aa
 aa
 "}
-(89,1,1) = {"
+(90,1,1) = {"
 aa
 aa
 aa
@@ -41568,7 +41758,7 @@ aa
 aa
 aa
 "}
-(90,1,1) = {"
+(91,1,1) = {"
 aa
 aa
 aa
@@ -41770,7 +41960,7 @@ aa
 aa
 aa
 "}
-(91,1,1) = {"
+(92,1,1) = {"
 aa
 aa
 aa
@@ -41972,7 +42162,7 @@ aa
 aa
 aa
 "}
-(92,1,1) = {"
+(93,1,1) = {"
 aa
 aa
 aa
@@ -42174,7 +42364,7 @@ aa
 aa
 aa
 "}
-(93,1,1) = {"
+(94,1,1) = {"
 aa
 aa
 aa
@@ -42376,7 +42566,7 @@ aa
 aa
 aa
 "}
-(94,1,1) = {"
+(95,1,1) = {"
 aa
 aa
 aa
@@ -42578,7 +42768,7 @@ aa
 aa
 aa
 "}
-(95,1,1) = {"
+(96,1,1) = {"
 aa
 aa
 aa
@@ -42780,7 +42970,7 @@ aa
 aa
 aa
 "}
-(96,1,1) = {"
+(97,1,1) = {"
 aa
 aa
 aa
@@ -42982,7 +43172,7 @@ aa
 aa
 aa
 "}
-(97,1,1) = {"
+(98,1,1) = {"
 aa
 aa
 aa
@@ -43184,7 +43374,7 @@ aa
 aa
 aa
 "}
-(98,1,1) = {"
+(99,1,1) = {"
 aa
 aa
 aa
@@ -43386,7 +43576,7 @@ aa
 aa
 aa
 "}
-(99,1,1) = {"
+(100,1,1) = {"
 aa
 aa
 aa
@@ -43588,7 +43778,7 @@ aa
 aa
 aa
 "}
-(100,1,1) = {"
+(101,1,1) = {"
 aa
 aa
 aa
@@ -43790,7 +43980,7 @@ aa
 aa
 aa
 "}
-(101,1,1) = {"
+(102,1,1) = {"
 aa
 aa
 aa
@@ -43992,7 +44182,7 @@ aa
 aa
 aa
 "}
-(102,1,1) = {"
+(103,1,1) = {"
 aa
 aa
 aa
@@ -44194,7 +44384,7 @@ aa
 aa
 aa
 "}
-(103,1,1) = {"
+(104,1,1) = {"
 aa
 aa
 aa
@@ -44396,7 +44586,7 @@ aa
 aa
 aa
 "}
-(104,1,1) = {"
+(105,1,1) = {"
 aa
 aa
 aa
@@ -44598,7 +44788,7 @@ aa
 aa
 aa
 "}
-(105,1,1) = {"
+(106,1,1) = {"
 aa
 aa
 aa
@@ -44800,7 +44990,7 @@ aa
 aa
 aa
 "}
-(106,1,1) = {"
+(107,1,1) = {"
 aa
 aa
 aa
@@ -45002,7 +45192,7 @@ aa
 aa
 aa
 "}
-(107,1,1) = {"
+(108,1,1) = {"
 aa
 aa
 aa
@@ -45204,7 +45394,7 @@ aa
 aa
 aa
 "}
-(108,1,1) = {"
+(109,1,1) = {"
 aa
 aa
 aa
@@ -45406,7 +45596,7 @@ aa
 aa
 aa
 "}
-(109,1,1) = {"
+(110,1,1) = {"
 aa
 aa
 aa
@@ -45608,7 +45798,7 @@ aa
 aa
 aa
 "}
-(110,1,1) = {"
+(111,1,1) = {"
 aa
 aa
 aa
@@ -45810,7 +46000,7 @@ aa
 aa
 aa
 "}
-(111,1,1) = {"
+(112,1,1) = {"
 aa
 aa
 aa
@@ -46012,7 +46202,7 @@ aa
 aa
 aa
 "}
-(112,1,1) = {"
+(113,1,1) = {"
 aa
 aa
 aa
@@ -46214,7 +46404,7 @@ aa
 aa
 aa
 "}
-(113,1,1) = {"
+(114,1,1) = {"
 aa
 aa
 aa
@@ -46416,7 +46606,7 @@ aa
 aa
 aa
 "}
-(114,1,1) = {"
+(115,1,1) = {"
 aa
 aa
 aa
@@ -46618,7 +46808,7 @@ aa
 aa
 aa
 "}
-(115,1,1) = {"
+(116,1,1) = {"
 aa
 aa
 aa
@@ -46820,7 +47010,7 @@ aa
 aa
 aa
 "}
-(116,1,1) = {"
+(117,1,1) = {"
 aa
 aa
 aa
@@ -47022,7 +47212,7 @@ aa
 aa
 aa
 "}
-(117,1,1) = {"
+(118,1,1) = {"
 aa
 aa
 aa
@@ -47224,7 +47414,7 @@ aa
 aa
 aa
 "}
-(118,1,1) = {"
+(119,1,1) = {"
 aa
 aa
 aa
@@ -47426,7 +47616,7 @@ aa
 aa
 aa
 "}
-(119,1,1) = {"
+(120,1,1) = {"
 aa
 aa
 aa
@@ -47628,7 +47818,7 @@ aa
 aa
 aa
 "}
-(120,1,1) = {"
+(121,1,1) = {"
 aa
 aa
 aa
@@ -47830,7 +48020,7 @@ aa
 aa
 aa
 "}
-(121,1,1) = {"
+(122,1,1) = {"
 aa
 aa
 aa
@@ -48032,7 +48222,7 @@ aa
 aa
 aa
 "}
-(122,1,1) = {"
+(123,1,1) = {"
 aa
 aa
 aa
@@ -48234,7 +48424,7 @@ aa
 aa
 aa
 "}
-(123,1,1) = {"
+(124,1,1) = {"
 aa
 aa
 aa
@@ -48436,7 +48626,7 @@ aa
 aa
 aa
 "}
-(124,1,1) = {"
+(125,1,1) = {"
 aa
 aa
 aa
@@ -48638,7 +48828,7 @@ aa
 aa
 aa
 "}
-(125,1,1) = {"
+(126,1,1) = {"
 aa
 aa
 aa
@@ -48840,7 +49030,7 @@ aa
 aa
 aa
 "}
-(126,1,1) = {"
+(127,1,1) = {"
 aa
 aa
 aa
@@ -49042,7 +49232,7 @@ aa
 aa
 aa
 "}
-(127,1,1) = {"
+(128,1,1) = {"
 aa
 aa
 aa
@@ -49244,7 +49434,7 @@ aa
 aa
 aa
 "}
-(128,1,1) = {"
+(129,1,1) = {"
 aa
 aa
 aa
@@ -49446,7 +49636,7 @@ aa
 aa
 aa
 "}
-(129,1,1) = {"
+(130,1,1) = {"
 aa
 aa
 aa
@@ -49648,7 +49838,7 @@ aa
 aa
 aa
 "}
-(130,1,1) = {"
+(131,1,1) = {"
 aa
 aa
 aa
@@ -49850,7 +50040,7 @@ aa
 aa
 aa
 "}
-(131,1,1) = {"
+(132,1,1) = {"
 aa
 aa
 aa
@@ -50052,7 +50242,7 @@ aa
 aa
 aa
 "}
-(132,1,1) = {"
+(133,1,1) = {"
 aa
 aa
 aa
@@ -50254,7 +50444,7 @@ aa
 aa
 aa
 "}
-(133,1,1) = {"
+(134,1,1) = {"
 aa
 aa
 aa
@@ -50456,7 +50646,7 @@ aa
 aa
 aa
 "}
-(134,1,1) = {"
+(135,1,1) = {"
 aa
 aa
 aa
@@ -50658,7 +50848,7 @@ aa
 aa
 aa
 "}
-(135,1,1) = {"
+(136,1,1) = {"
 aa
 aa
 aa
@@ -50860,7 +51050,7 @@ aa
 aa
 aa
 "}
-(136,1,1) = {"
+(137,1,1) = {"
 aa
 aa
 aa
@@ -51062,7 +51252,7 @@ aa
 aa
 aa
 "}
-(137,1,1) = {"
+(138,1,1) = {"
 aa
 aa
 aa
@@ -51264,7 +51454,7 @@ aa
 aa
 aa
 "}
-(138,1,1) = {"
+(139,1,1) = {"
 aa
 aa
 aa
@@ -51466,7 +51656,7 @@ aa
 aa
 aa
 "}
-(139,1,1) = {"
+(140,1,1) = {"
 aa
 aa
 aa
@@ -51668,7 +51858,7 @@ aa
 aa
 aa
 "}
-(140,1,1) = {"
+(141,1,1) = {"
 aa
 aa
 aa
@@ -51870,7 +52060,7 @@ aa
 aa
 aa
 "}
-(141,1,1) = {"
+(142,1,1) = {"
 aa
 aa
 aa
@@ -52072,7 +52262,7 @@ aa
 aa
 aa
 "}
-(142,1,1) = {"
+(143,1,1) = {"
 aa
 aa
 aa
@@ -52274,7 +52464,7 @@ aa
 aa
 aa
 "}
-(143,1,1) = {"
+(144,1,1) = {"
 aa
 aa
 aa
@@ -52476,7 +52666,7 @@ aa
 aa
 aa
 "}
-(144,1,1) = {"
+(145,1,1) = {"
 aa
 aa
 aa
@@ -52678,7 +52868,7 @@ aa
 aa
 aa
 "}
-(145,1,1) = {"
+(146,1,1) = {"
 aa
 aa
 aa
@@ -52880,7 +53070,7 @@ aa
 aa
 aa
 "}
-(146,1,1) = {"
+(147,1,1) = {"
 aa
 aa
 aa
@@ -53082,7 +53272,7 @@ aa
 aa
 aa
 "}
-(147,1,1) = {"
+(148,1,1) = {"
 aa
 aa
 aa
@@ -53179,208 +53369,6 @@ yL
 yL
 yL
 IN
-pS
-pS
-pS
-pS
-pS
-pS
-pS
-pS
-pS
-pS
-pS
-pS
-yL
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-"}
-(148,1,1) = {"
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-JN
-pS
-pS
-pS
 pS
 pS
 pS
@@ -53578,8 +53566,8 @@ aa
 aa
 aa
 aa
-pS
-IN
+aa
+JN
 pS
 pS
 pS
@@ -53979,10 +53967,11 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
 pS
 IN
-yL
-yL
 pS
 pS
 pS
@@ -53999,7 +53988,6 @@ pS
 pS
 pS
 yL
-aa
 aa
 aa
 aa
@@ -54179,8 +54167,12 @@ aa
 aa
 aa
 aa
+aa
+aa
+pS
+IN
 yL
-VC
+yL
 pS
 pS
 pS
@@ -54196,11 +54188,7 @@ pS
 pS
 pS
 pS
-pS
-pS
-pS
-pS
-QL
+yL
 aa
 aa
 aa
@@ -54381,6 +54369,7 @@ aa
 aa
 aa
 aa
+yL
 VC
 pS
 pS
@@ -54401,8 +54390,7 @@ pS
 pS
 pS
 pS
-pS
-yL
+QL
 aa
 aa
 aa
@@ -54987,7 +54975,6 @@ aa
 aa
 aa
 aa
-yL
 VC
 pS
 pS
@@ -55008,7 +54995,8 @@ pS
 pS
 pS
 pS
-QL
+pS
+yL
 aa
 aa
 aa
@@ -55189,12 +55177,8 @@ aa
 aa
 aa
 aa
-aa
-aa
-pS
-IN
 yL
-yL
+VC
 pS
 pS
 pS
@@ -55210,7 +55194,11 @@ pS
 pS
 pS
 pS
-yL
+pS
+pS
+pS
+pS
+QL
 aa
 aa
 aa
@@ -55393,11 +55381,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
 pS
 IN
+yL
+yL
 pS
 pS
 pS
@@ -55414,6 +55401,7 @@ pS
 pS
 pS
 yL
+aa
 aa
 aa
 aa
@@ -55599,7 +55587,7 @@ aa
 aa
 aa
 pS
-QL
+IN
 pS
 pS
 pS
@@ -55800,8 +55788,8 @@ aa
 aa
 aa
 aa
-aa
-yL
+pS
+QL
 pS
 pS
 pS
@@ -56004,12 +55992,12 @@ aa
 aa
 aa
 yL
-yL
-yL
-VC
-yL
-yL
-yL
+pS
+pS
+pS
+pS
+pS
+pS
 pS
 pS
 pS
@@ -56205,22 +56193,22 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-QL
 yL
 yL
 yL
+VC
 yL
 yL
 yL
-yL
-yL
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
 yL
 aa
 aa
@@ -56414,16 +56402,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+QL
+yL
+yL
+yL
+yL
+yL
+yL
+yL
+yL
+yL
 aa
 aa
 aa
@@ -58432,7 +58420,7 @@ aa
 aa
 aa
 aa
-mt
+aa
 aa
 aa
 aa
@@ -58634,7 +58622,7 @@ aa
 aa
 aa
 aa
-aa
+mt
 aa
 aa
 aa
