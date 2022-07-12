@@ -3,6 +3,7 @@
 	#include "torch_announcements.dm"
 	#include "torch_antagonism.dm"
 	#include "torch_areas.dm"
+	#include "torch_define.dm"
 	#include "torch_elevator.dm"
 	#include "torch_events.dm"
 	#include "torch_holodecks.dm"
