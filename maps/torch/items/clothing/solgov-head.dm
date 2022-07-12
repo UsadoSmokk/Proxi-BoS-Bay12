@@ -11,6 +11,9 @@
 	icon_state = "solsoft"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/soft/solgov/veteranhat
 	name = "veteran hat"
@@ -18,21 +21,18 @@
 	icon_state = "cap_veteran"
 
 /obj/item/clothing/head/soft/solgov/expedition
-	name = "\improper Expeditionary Corps cap"
-	desc = "It's a black ballcap bearing the Expeditonary Corps crest."
+	name = "\improper Surveyor Corps cap"
+	desc = "It's a black ballcap bearing the Surveyor Corps crest."
 	icon_state = "expeditionsoft"
-	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
-		)
 
 /obj/item/clothing/head/soft/solgov/expedition/co
-	name = "\improper Expeditionary Corps captain's cap"
-	desc = "It's a black ballcap bearing the Expeditonary Corps crest. The brim has gold trim."
+	name = "\improper Surveyor Corps captain's cap"
+	desc = "It's a black ballcap bearing the Surveyor Corps crest. The brim has gold trim."
 	icon_state = "expeditioncomsoft"
 
 /obj/item/clothing/head/soft/solgov/fleet
 	name = "fleet cap"
-	desc = "It's a navy blue field cap with the SCG Fleet crest in a silver colour."
+	desc = "It's a navy blue field cap with a SolGov Fleet crest in a silver colour."
 	icon_state = "fleetsoft"
 
 /obj/item/clothing/head/solgov/utility
@@ -44,25 +44,33 @@
 		slot_r_hand_str = "helmet",
 		)
 	body_parts_covered = 0
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/solgov/utility/fleet
 	name = "fleet utility cover"
-	desc = "A navy blue utility cover bearing the crest of the SCG Fleet."
+	desc = "A navy blue utility cover bearing the crest of the SolGov Fleet."
+	icon_state = "navyutility"
+
+/obj/item/clothing/head/solgov/utility/fleet/marine
+	name = "navy utility cover"
+	desc = "A navy blue utility cover bearing the crest of the SCG Marine Corp."
 	icon_state = "navyutility"
 
 /obj/item/clothing/head/solgov/utility/army
-	name = "army utility cover"
-	desc = "A green utility cover bearing the crest of the SCG Army."
+	name = "Marine utility cover"
+	desc = "A green utility cover bearing the crest of the SCG Marine Corp."
 	icon_state = "greenutility"
 
 /obj/item/clothing/head/solgov/utility/army/tan
 	name = "tan utility cover"
-	desc = "A tan utility cover bearing the crest of the SCG Army."
+	desc = "A tan utility cover bearing the crest of the SCG Marine Corp."
 	icon_state = "tanutility"
 
 /obj/item/clothing/head/solgov/utility/army/urban
 	name = "urban utility cover"
-	desc = "A grey utility cover bearing the crest of the SCG Army."
+	desc = "A grey utility cover bearing the crest of the SCG Marine Corp."
 	icon_state = "greyutility"
 
 //Service
@@ -77,51 +85,57 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/head/solgov/service/expedition
-	name = "expeditionary peaked cap"
-	desc = "A peaked black uniform cap belonging to the SCG Expeditionary Corps."
+	name = "Surveyor Corps peaked cap"
+	desc = "A peaked black uniform cap belonging to the NT Surveyor Corps."
 	icon_state = "ecdresscap"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
 		)
 
 /obj/item/clothing/head/solgov/service/expedition/command
-	name = "expeditionary officer's peaked cap"
-	desc = "A peaked black uniform cap belonging to the SCG Expeditionary Corps. This one is trimmed in gold."
+	name = "Surveyor Corps officer's peaked cap"
+	desc = "A peaked black uniform cap belonging to the NT Surveyor Corps. This one is trimmed in gold."
 	icon_state = "ecdresscap_ofcr"
 
 /obj/item/clothing/head/solgov/service/expedition/captain
-	name = "expeditionary captain's peaked cap"
-	desc = "A gold-trimmed peaked black uniform cap belonging to a Captain of the SCG Expeditionary Corps."
+	name = "Surveyor Corps captain's peaked cap"
+	desc = "A gold-trimmed peaked black uniform cap belonging to a Captain of the NT Surveyor Corps."
 	icon_state = "ecdresscap_capt"
 
 /obj/item/clothing/head/solgov/service/expedition/senior_command
-	name = "senior expedition officer's peaked cap"
-	desc = "A peaked grey uniform cap belonging to the SCG Expeditionary Corps. This one is trimmed in gold and blue."
+	name = "senior Surveyor Corps officer's peaked cap"
+	desc = "A peaked grey uniform cap belonging to the NT Surveyor Corps. This one is trimmed in gold and blue."
 	icon_state = "greydresscap_senior"
 
 /obj/item/clothing/head/solgov/service/army
 	name = "marine wheel cover"
-	desc = "A green service uniform cover with an SCG Marine crest."
+	desc = "A green service uniform cover with an SCG Marine Corp crest."
 	icon_state = "greenwheelcap"
 
 /obj/item/clothing/head/solgov/service/army/command
 	name = "marine officer's wheel cover"
-	desc = "A green service uniform cover with an SCG Marine crest and gold stripe."
+	desc = "A green service uniform cover with an SCG Marine Corp crest and gold stripe."
 	icon_state = "greenwheelcap_com"
 
 /obj/item/clothing/head/solgov/service/army/garrison
 	name = "marine garrison cap"
-	desc = "A green garrison cap belonging to the SCG Marine."
+	desc = "A green garrison cap belonging to the SCG Marine Corp."
 	icon_state = "greengarrisoncap"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/solgov/service/army/garrison/command
 	name = "marine officer's garrison cap"
-	desc = "A green garrison cap belonging to the SCG Marine. This one has a gold pin."
+	desc = "A green garrison cap belonging to the SCG Marine Corp. This one has a gold pin."
 	icon_state = "greengarrisoncap_com"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/solgov/service/army/campaign
 	name = "campaign cover"
-	desc = "A green campaign cover with an SCG Army crest. Only found on the heads of Drill Sergeants."
+	desc = "A green campaign cover with an SCG Marine Corp crest. Only found on the heads of Drill Sergeants."
 	icon_state = "greendrill"
 
 //Dress
@@ -139,25 +153,28 @@
 	name = "fleet garrison cap"
 	desc = "A white dress uniform cap. The classic sailor's choice."
 	icon_state = "whitegarrisoncap"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/solgov/dress/fleet
 	name = "fleet dress wheel cover"
-	desc = "A white dress uniform cover. This one has an SCG Fleet crest."
+	desc = "A white dress uniform cover. This one has a SolGov Fleet crest."
 	icon_state = "whitepeakcap"
 
 /obj/item/clothing/head/solgov/dress/fleet/command
 	name = "fleet officer's dress wheel cover"
-	desc = "A white dress uniform cover. This one has a gold stripe and an SCG Fleet crest."
+	desc = "A white dress uniform cover. This one has a gold stripe and a SolGov Fleet crest."
 	icon_state = "whitepeakcap_com"
 
 /obj/item/clothing/head/solgov/dress/army
 	name = "marine dress wheel cover"
-	desc = "A white dress uniform cover with an SCG Marine crest."
+	desc = "A white dress uniform cover with an SCG Marine Corp crest."
 	icon_state = "whitewheelcap"
 
 /obj/item/clothing/head/solgov/dress/army/command
 	name = "marine officer's dress wheel cover"
-	desc = "A white dress uniform cover with an SCG Marine crest and gold stripe."
+	desc = "A white dress uniform cover with an SCG Marine Corp crest and gold stripe."
 	icon_state = "whitewheelcap_com"
 
 //Berets
@@ -168,6 +185,10 @@
 	icon_state = "beret_lightblue"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
+
 
 /obj/item/clothing/head/beret/solgov/homeguard
 	name = "home guard beret"
@@ -211,7 +232,7 @@
 
 /obj/item/clothing/head/beret/solgov/diplomatic
 	name = "diplomatic security beret"
-	desc = "A tan beret denoting service in the SCG Army Diplomatic Security Group. For security personnel who are more inclined towards style than safety."
+	desc = "A tan beret denoting service in the SCG Marine Corp Diplomatic Security Group. For security personnel who are more inclined towards style than safety."
 	icon_state = "beret_tan"
 
 /obj/item/clothing/head/beret/solgov/borderguard
@@ -219,186 +240,136 @@
 	desc = "A green beret with a silver emblem, denoting service in the Bureau of Border Security. For border guards who are more inclined towards style than safety."
 	icon_state = "beret_greensilver"
 
-/obj/item/clothing/head/beret/solgov/army
-	name = "marine beret"
-	desc = "A green beret belonging to the SCG Marine. For personnel that are more inclined towards style than safety."
-	icon_state = "beret_army_infantry"
-	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
-	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
-
-/obj/item/clothing/head/beret/solgov/army/orbital
-	name = "orbital assault marine beret"
-	desc = "A blue beret denoting orbital assault marine training. For helljumpers that are more inclined towards style than safety."
-	icon_state = "beret_army_airborne"
-
-/obj/item/clothing/head/beret/solgov/army/elite
-	name = "elite marine beret"
-	desc = "A blue beret with Space Shark denoting special training of Space Carps, an elite secret team consisting of members both Marine Corps and Fleet. They have been declassified after the end of War on Gaia, denouncing their war crimes and failures. For operatives that are more inclined towards style than safety."
-	icon_state = "beret_blue"
-
-/obj/item/clothing/head/beret/solgov/army/airborne
-	name = "airborne marine beret"
-	desc = "An SCG Marine beret carrying insignia of the Airborne Division. For personnel that are more inclined towards style than safety."
-	icon_state = "beret_army_airborne"
-
-/obj/item/clothing/head/beret/solgov/army/infantry
-	name = "marine beret"
-	desc = "An SCG Marine beret carrying insignia of the Marine Corps. For personnel that are more inclined towards style than safety."
-	icon_state = "beret_army_infantry"
-
-/obj/item/clothing/head/beret/solgov/army/logistical_supply
-	name = "logistical supply marine beret"
-	desc = "An SCG Marine beret carrying insignia of the Logistical Marine Support Division. For personnel that are more inclined towards style than safety."
-	icon_state = "beret_army_logistical supply"
-
-/obj/item/clothing/head/beret/solgov/army/engisapper
-	name = "engineering-sapper marine beret"
-	desc = "An SCG Marine beret carrying insignia of the Engineering-Sapper Marine Division. For personnel that are more inclined towards style than safety."
-	icon_state = "beret_army_engisapper"
-
-/obj/item/clothing/head/beret/solgov/army/command
-	name = "command marine beret"
-	desc = "An SCG Marine beret with a golden crest. For personnel that are more inclined towards style than safety."
-	icon_state = "beret_army_command"
-
-/obj/item/clothing/head/beret/solgov/army/medical
-	name = "medical army beret"
-	desc = "An SCG Marine beret with a red crest. For personnel that are more inclined towards style than safety."
-	icon_state = "beret_army_medical"
-
 /obj/item/clothing/head/beret/solgov/expedition
-	name = "expeditionary beret"
-	desc = "A black beret belonging to the SCG Expeditionary Corps. For personnel that are more inclined towards style than safety."
+	name = "Surveyor Corps beret"
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black"
-	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
-		)
 
 /obj/item/clothing/head/beret/solgov/expedition/security
-	name = "expeditionary security beret"
-	desc = "An SCG Expeditionary Corps beret with a security crest. For personnel that are more inclined towards style than safety."
+	name = "Surveyor Corps security beret"
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_security"
 
 /obj/item/clothing/head/beret/solgov/expedition/medical
-	name = "expeditionary medical beret"
-	desc = "An SCG Expeditionary Corps beret with a medical crest. For personnel that are more inclined towards style than safety."
+	name = "Surveyor Corps medical beret"
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_medical"
 
 /obj/item/clothing/head/beret/solgov/expedition/engineering
-	name = "expeditionary engineering beret"
-	desc = "An SCG Expeditionary Corps beret with an engineering crest. For personnel that are more inclined towards style than safety."
+	name = "Surveyor Corps engineering beret"
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_engineering"
 
 /obj/item/clothing/head/beret/solgov/expedition/supply
-	name = "expeditionary supply beret"
-	desc = "An SCG Expeditionary Corps beret with a supply crest. For personnel that are more inclined towards style than safety."
+	name = "Surveyor Corps supply beret"
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_supply"
 
 /obj/item/clothing/head/beret/solgov/expedition/service
-	name = "expeditionary service beret"
-	desc = "An SCG Expeditionary Corps beret with a service crest. For personnel that are more inclined towards style than safety."
+	name = "Surveyor Corps service beret"
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_service"
 
 /obj/item/clothing/head/beret/solgov/expedition/exploration
-	name = "expeditionary exploration beret"
-	desc = "An SCG Expeditionary Corps beret with an exploration crest. For personnel that are more inclined towards style than safety."
+	name = "Surveyor Corps exploration beret"
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_exploration"
 
 /obj/item/clothing/head/beret/solgov/expedition/command
-	name = "expeditionary officer's beret"
-	desc = "An SCG Expeditionary Corps beret with a golden crest. For personnel that are more inclined towards style than safety."
+	name = "Surveyor Corps officer's beret"
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_command"
 
 /obj/item/clothing/head/beret/solgov/expedition/branch
 	name = "\improper Field Operations beret"
-	desc = "An SCG Expeditionary Corps beret carrying the insignia of the Field Operations section. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_fieldOps"
 
 /obj/item/clothing/head/beret/solgov/expedition/branch/observatory
 	name = "\improper Observatory beret"
-	desc = "An SCG Expeditionary Corps beret carrying the insignia of the Observatory section. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_observatory"
 
 /obj/item/clothing/head/beret/solgov/fleet
 	name = "fleet beret"
-	desc = "A navy blue beret belonging to the SCG Fleet. For personnel that are more inclined towards style than safety."
+	desc = "A navy blue beret belonging to the SolGov Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy"
 
 /obj/item/clothing/head/beret/solgov/fleet/security
 	name = "fleet security beret"
-	desc = "An SCG Fleet beret with a security crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a security crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_security"
 
 /obj/item/clothing/head/beret/solgov/fleet/medical
 	name = "fleet medical beret"
-	desc = "An SCG Fleet beret with a medical crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a medical crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_medical"
 
 /obj/item/clothing/head/beret/solgov/fleet/engineering
 	name = "fleet engineering beret"
-	desc = "An SCG Fleet with an engineering crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with an engineering crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_engineering"
 
 /obj/item/clothing/head/beret/solgov/fleet/supply
 	name = "fleet supply beret"
-	desc = "An SCG Fleet beret with a supply crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a supply crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_supply"
 
 /obj/item/clothing/head/beret/solgov/fleet/service
 	name = "fleet service beret"
-	desc = "An SCG Fleet beret with a service crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a service crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_service"
 
 /obj/item/clothing/head/beret/solgov/fleet/exploration
-	name = "fleet exploration beret"
-	desc = "An SCG Fleet beret with an exploration crest. For personnel that are more inclined towards style than safety."
+	name = "fleet explorer beret"
+	desc = "A SolGov Fleet beret with an exploration crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_exploration"
 
 /obj/item/clothing/head/beret/solgov/fleet/command
 	name = "fleet officer's beret"
-	desc = "An SCG Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_command"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress
 	name = "fleet dress beret"
-	desc = "A white SCG Fleet beret. For personnel that are more inclined towards style than safety."
+	desc = "A white SolGov Fleet beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress/command
 	name = "fleet officer's dress beret"
-	desc = "A white SCG Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	desc = "A white SolGov Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim_com"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch
-	name = "first fleet beret"
-	desc = "An SCG Fleet beret carrying the insignia of the First Fleet, the Sol Guard, stationed in Sol. For personnel that are more inclined towards style than safety."
+	name = "Group 40 beret"
+	desc = "A SolGov Fleet beret carrying the insignia of Naval Group 40, an as needed task force operating under short term orders. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_first"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/second
-	name = "second fleet beret"
-	desc = "An SCG Fleet beret carrying the insignia of the Second Fleet, the Home Guard, tasked with defense of Sol territories. For personnel that are more inclined towards style than safety."
+	name = "Border Patrol beret"
+	desc = "A SolGov Fleet beret carrying the insignia of the Naval Border Patrol Group. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_second"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/third
-	name = "third fleet beret"
-	desc = "An SCG Fleet beret carrying the insignia of the Third Fleet, the Border Guard, guarding borders of Sol territory against Vox and pirates. For personnel that are more inclined towards style than safety."
+	name = "Special Operations Group beret"
+	desc = "A SolGov Fleet beret carrying the insignia of the S.O.G. naval organization. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_third"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
-	name = "fourth fleet beret"
-	desc = "An SCG Fleet beret carrying the insignia of the Fourth Fleet, stationed on Skrell border. For personnel that are more inclined towards style than safety."
+	name = "Sol Defense Group beret"
+	desc = "A SolGov Fleet beret carrying the insignia of the S.D.G. which provides internal Solarian space security, from Earth outwards to Alpha-Centurai. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_fourth"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/fifth
-	name = "fifth fleet beret"
-	desc = "An SCG Fleet beret carrying the insignia of the Fifth Fleet, the Quick Reaction Force, recently formed and outfitted with the latest tech. For personnel that are more inclined towards style than safety."
+	name = "NWB beret"
+	desc = "A SolGov beret carrying the insignia of the Non-Conventional Warfare Board. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_fifth"
 
 //ushanka
 
 /obj/item/clothing/head/ushanka/solgov
-	name = "expeditionary fur hat"
-	desc = "An SCG Expeditionary Corps synthfur-lined hat for operating in cold environments."
+	name = "Surveyor Corps fur hat"
+	desc = "A dated Surveyor Corps synthfur-lined hat for operating in cold environments."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	icon_state = "ecushankadown"
@@ -406,26 +377,26 @@
 
 /obj/item/clothing/head/ushanka/solgov/fleet
 	name = "fleet fur hat"
-	desc = "An SCG Fleet synthfur-lined hat for operating in cold environments."
+	desc = "A SolGov Fleet synthfur-lined hat for operating in cold environments."
 	icon_state = "flushankadown"
 	icon_state_up = "flushankaup"
 
 /obj/item/clothing/head/ushanka/solgov/army
-	name = "army fur hat"
-	desc = "An SCG Marine synthfur-lined hat for operating in cold environments."
+	name = "marine fur hat"
+	desc = "An SCG Marine Corp synthfur-lined hat for operating in cold environments."
 	icon_state = "barushankadown"
 	icon_state_up = "barushankaup"
 
 /obj/item/clothing/head/ushanka/solgov/army/green
-	name = "green army fur hat"
-	desc = "An SCG Marine synthfur-lined hat for operating in cold environments."
+	name = "green marine fur hat"
+	desc = "An SCG Marine Corp synthfur-lined hat for operating in cold environments."
 	icon_state = "arushankadown"
 	icon_state_up = "mcushankaup"
 
 //helmets and other such trash
 
 /obj/item/clothing/head/helmet/solgov
-	accessories = list(/obj/item/clothing/accessory/helmet_cover/blue/sol)
+	accessories = list(/obj/item/clothing/accessory/armor/helmet_cover/blue/sol)
 
 /obj/item/clothing/head/helmet/solgov/security
 	name = "security helmet"
@@ -435,16 +406,19 @@
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	accessories = null
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_helmet_unathi.dmi'
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
 		)
 
 /obj/item/clothing/head/helmet/solgov/command
 	name = "command helmet"
-	desc = "A helmet with 'SOL CENTRAL GOVERNMENT' printed on the back in gold lettering."
+	desc = "A helmet with 'SCGF SECURITY' printed on the back in gold lettering."
 	icon_state = "helmet_command"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	accessories = null
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/helmet/solgov/pilot
 	name = "pilot's helmet"
@@ -454,7 +428,7 @@
 
 /obj/item/clothing/head/helmet/solgov/pilot/fleet
 	name = "fleet pilot's helmet"
-	desc = "A pilot's helmet for operating the cockpit in style. This one is worn by members of the SCG Fleet."
+	desc = "A pilot's helmet for operating the cockpit in style. This one is worn by members of the Private Fleet."
 	icon_state = "pilotfleet"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
@@ -505,7 +479,7 @@
 		)
 
 /obj/item/clothing/head/helmet/space/void/medical/alt/sol
-	light_overlay = "helmet_light_green_alt"
+	light_overlay = "helmet_light_alt"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	sprite_sheets = list(

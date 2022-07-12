@@ -2,8 +2,8 @@
 
 /obj/item/card/id/torch
 	name = "identification card"
-	desc = "An identification card issued to personnel aboard the SEV Torch."
-	job_access_type = DEFAULT_JOB_TYPE
+	desc = "An identification card issued to personnel aboard the LRS Antares."
+	job_access_type = /datum/job/assistant
 
 /obj/item/card/id/torch/silver
 	desc = "A silver identification card belonging to heads of staff."
@@ -21,15 +21,15 @@
 
 // SolGov Crew and Contractors
 /obj/item/card/id/torch/crew
-	desc = "An identification card issued to SolGov crewmembers aboard the SEV Torch."
+	desc = "An identification card issued to crewmembers aboard the LRS Antares."
 	color = "#d3e3e1"
 	job_access_type = /datum/job/crew
 	color = "#ccecff"
 
 
 /obj/item/card/id/torch/contractor
-	desc = "An identification card issued to private contractors aboard the SEV Torch."
-	job_access_type = DEFAULT_JOB_TYPE
+	desc = "An identification card issued to private contractors aboard the LRS Antares."
+	job_access_type = /datum/job/assistant
 	color = COLOR_GRAY80
 
 
@@ -40,6 +40,9 @@
 /obj/item/card/id/torch/crew/medical
 	job_access_type = /datum/job/doctor
 	detail_color = COLOR_PALE_BLUE_GRAY
+
+/obj/item/card/id/torch/crew/medical/virology
+	job_access_type = /datum/job/doctor/virologist
 
 /obj/item/card/id/torch/crew/medical/senior
 	job_access_type = /datum/job/senior_doctor
@@ -108,7 +111,7 @@
 	detail_color = COLOR_BROWN
 
 /obj/item/card/id/torch/crew/service //unused
-	job_access_type = DEFAULT_JOB_TYPE
+	job_access_type = /datum/job/assistant
 	detail_color = COLOR_CIVIE_GREEN
 
 /obj/item/card/id/torch/crew/service/janitor
@@ -121,16 +124,32 @@
 	job_access_type = /datum/job/chaplain
 
 /obj/item/card/id/torch/contractor/service //unused
-	job_access_type = DEFAULT_JOB_TYPE
+	job_access_type = /datum/job/assistant
 	detail_color = COLOR_CIVIE_GREEN
+
+/obj/item/card/id/torch/contractor/service/bartender
+	job_access_type = /datum/job/canworker
+
+/obj/item/card/id/torch/crew/service/canworker
+	job_access_type = /datum/job/canworker
 
 
 /obj/item/card/id/torch/crew/representative
-	job_access_type = /datum/job/representative
+	job_access_type = /datum/job/terrep
+	detail_color = COLOR_COMMAND_BLUE
+	extra_details = list("goldstripe")
+
+/obj/item/card/id/torch/crew/terguard
+	job_access_type = /datum/job/terguard
 	detail_color = COLOR_COMMAND_BLUE
 
 /obj/item/card/id/torch/crew/sea
 	job_access_type = /datum/job/sea
+	detail_color = COLOR_COMMAND_BLUE
+	extra_details = list("onegoldstripe")
+
+/obj/item/card/id/torch/crew/sea/marine
+	job_access_type = /datum/job/sea/marine
 	detail_color = COLOR_COMMAND_BLUE
 	extra_details = list("onegoldstripe")
 
@@ -151,21 +170,6 @@
 	job_access_type = /datum/job/nt_pilot
 	detail_color = COLOR_PURPLE
 
-//EC Medic
-/obj/item/card/id/torch/crew/expmed
-	job_access_type = /datum/job/expmed
-	detail_color = COLOR_PURPLE
-
-//EC Engineer
-/obj/item/card/id/torch/crew/expeng
-	job_access_type = /datum/job/expeng
-	detail_color = COLOR_PURPLE
-
-//EC Marine
-/obj/item/card/id/torch/crew/expmar
-	job_access_type = /datum/job/expmar
-	detail_color = COLOR_PURPLE
-
 // EC Science
 /obj/item/card/id/torch/silver/research
 	job_access_type = /datum/job/rd
@@ -173,35 +177,24 @@
 	color = COLOR_WHITE
 
 /obj/item/card/id/torch/crew/research
-	desc = "A card issued to science personnel aboard the SEV Torch."
+	desc = "A card issued to science personnel aboard the LRS Antares."
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_RESEARCH
-
-/obj/item/card/id/torch/crew/research/senior_scientist
-	job_access_type = /datum/job/senior_scientist
-	extra_details = list("onegoldstripe")
 
 /obj/item/card/id/torch/crew/research/scientist
 	job_access_type = /datum/job/scientist
 
-/obj/item/card/id/torch/crew/research/research_guard
-	job_access_type = /datum/job/research_guard
-
 //NanoTrasen and Passengers
 
 /obj/item/card/id/torch/passenger
-	desc = "A card issued to passengers aboard the SEV Torch."
-	job_access_type = DEFAULT_JOB_TYPE
+	desc = "A card issued to passengers aboard the LRS Antares."
+	job_access_type = /datum/job/assistant
 	detail_color = COLOR_PAKISTAN_GREEN
 
 /obj/item/card/id/torch/passenger/research
-	desc = "A card issued to corporate personnel aboard the SEV Torch."
+	desc = "A card issued to corporate personnel aboard the LRS Antares."
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_BOTTLE_GREEN
-
-/obj/item/card/id/torch/passenger/research/senior_scientist
-	job_access_type = /datum/job/senior_scientist
-	extra_details = list("onegoldstripe")
 
 /obj/item/card/id/torch/passenger/research/nt_pilot
 	job_access_type = /datum/job/nt_pilot
@@ -212,14 +205,6 @@
 /obj/item/card/id/torch/passenger/research/mining
 	job_access_type = /datum/job/mining
 
-/obj/item/card/id/torch/passenger/corporate
-	color = COLOR_BOTTLE_GREEN
-	detail_color = COLOR_OFF_WHITE
-
-/obj/item/card/id/torch/passenger/corporate/liaison
-	job_access_type = /datum/job/liaison
-	extra_details = list("onegoldstripe")
-
 //Merchant
 /obj/item/card/id/torch/merchant
 	desc = "An identification card issued to Merchants, indicating their right to sell and buy goods."
@@ -227,11 +212,45 @@
 	color = COLOR_OFF_WHITE
 	detail_color = COLOR_BEIGE
 
-/obj/item/card/id/torch/gold/synth
-	name = "identification card"
-	desc = "A green card given to experimantal EXO's synthetic assistants."
-	item_state = "silver_id"
-	assignment = "Synthetic"
-	color = COLOR_BOTTLE_GREEN
-	detail_color = COLOR_OFF_WHITE
-	job_access_type = /datum/job/captain
+// Hestia IDs
+//ids
+/obj/item/card/id/torch/crew/infantry
+	job_access_type = /datum/job/grunt
+	detail_color = "#429661"
+
+/obj/item/card/id/torch/crew/infantry/infcom
+	job_access_type = /datum/job/squad_lead
+
+/obj/item/card/id/torch/crew/infantry/inftech
+	job_access_type = /datum/job/combat_tech
+	detail_color = COLOR_SUN
+
+/obj/item/card/id/torch/crew/infantry/infmed
+	job_access_type = /datum/job/combat_medic
+	detail_color = COLOR_NAVY_BLUE
+
+//Stowaway
+/obj/item/card/id/torch/stowaway
+	desc = "A card issued to passengers aboard the LRS Antares. Looks like the photo fell off this one."
+	job_access_type = /datum/job/stowaway
+	detail_color = COLOR_PAKISTAN_GREEN
+
+/obj/item/card/id/torch/stowaway/New()
+	..()
+	var/species = SPECIES_HUMAN
+	if(prob(25))
+		species = pick(SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_IPC)
+	var/datum/species/S = all_species[species]
+	var/decl/cultural_info/culture/C = SSculture.get_culture(S.default_cultural_info[TAG_CULTURE])
+	var/gender = pick(MALE,FEMALE)
+	assignment = "Passenger"
+	registered_name = C.get_random_name(gender)
+	sex = capitalize(gender)
+	age = rand(7,77)
+	fingerprint_hash = md5(registered_name)
+	dna_hash = md5(fingerprint_hash)
+	blood_type = RANDOM_BLOOD_TYPE
+//	military_branch = pick(global.mil_branches.spawn_branches_)
+//	military_branch = global.mil_branches.get_branch(military_branch)
+	military_rank = pick(military_branch.spawn_ranks_)
+//	military_rank = global.mil_branches.get_rank(military_branch.name, military_rank)

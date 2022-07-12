@@ -3,12 +3,17 @@
 	desc = "You should never see this."
 	item_icons = list(slot_gloves_str = 'maps/torch/icons/mob/onmob_hands_solgov.dmi')
 	icon = 'maps/torch/icons/obj/obj_hands_solgov.dmi'
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_hands_unathi.dmi'
+		)
 
 /obj/item/clothing/gloves/thick/duty/solgov/eng
 	name = "engineering duty gloves"
 	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely orange accent color."
 	icon_state = "duty_gloves_eng"
 	item_state = "duty_gloves_eng"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
 
 /obj/item/clothing/gloves/thick/duty/solgov/cmd
 	name = "command duty gloves"
@@ -21,12 +26,6 @@
 	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely purple accent color."
 	icon_state = "duty_gloves_exp"
 	item_state = "duty_gloves_exp"
-
-/obj/item/clothing/gloves/thick/duty/solgov/sci
-	name = "science duty gloves"
-	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely heather accent color."
-	icon_state = "duty_gloves_sci"
-	item_state = "duty_gloves_sci"
 
 /obj/item/clothing/gloves/thick/duty/solgov/med
 	name = "medical duty gloves"

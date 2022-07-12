@@ -1,40 +1,45 @@
+/datum/unit_test/station_wires_shall_be_connected
+	exceptions = list(list(80, 107, 1, WEST))
+
 /datum/map/torch
 	// Unit test exemptions
 	apc_test_exempt_areas = list(
 		/area/space = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/exoplanet = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/aquila/maintenance = NO_SCRUBBER|NO_VENT,
 		/area/engineering/atmos/storage = NO_SCRUBBER|NO_VENT,
 		/area/engineering/auxpower = NO_SCRUBBER|NO_VENT,
 		/area/engineering/engine_smes = NO_SCRUBBER|NO_VENT,
-		/area/engineering/fuelbay = NO_SCRUBBER|NO_VENT,
-		/area/engineering/wastetank = NO_SCRUBBER|NO_VENT,
+		/area/engineering/fuelbay = NO_SCRUBBER,
+		/area/engineering/wastetank = NO_SCRUBBER,
+		/area/engineering/shieldbay = NO_SCRUBBER|NO_VENT,
 		/area/hallway/primary/seconddeck/center = NO_SCRUBBER|NO_VENT,
 		/area/holodeck = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/auxsolarbridge = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/auxsolarport = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/auxsolarstarboard = NO_SCRUBBER|NO_VENT,
-		/area/torchexterior = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/maintenance/auxsolarbridge = NO_SCRUBBER,
+		/area/maintenance/auxsolarport = NO_SCRUBBER,
+		/area/maintenance/auxsolarstarboard = NO_SCRUBBER,
+		/area/maintenance/exterior = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance/firstdeck/foreport = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/firstdeck/forestarboard = NO_SCRUBBER|NO_VENT,
+		/area/maintenance/firstdeck/forestarboard = NO_SCRUBBER,
 		/area/maintenance/incinerator = NO_SCRUBBER,
-		/area/maintenance/disposal = NO_SCRUBBER,
-		/area/maintenance/seconddeck/aftport = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/seconddeck/forestarboard = NO_SCRUBBER|NO_VENT,
+		/area/maintenance/seconddeck/aftport = 0,
+		/area/maintenance/seconddeck/forestarboard = NO_SCRUBBER,
 		/area/maintenance/thirddeck/aftstarboard = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/fifthdeck/aftstarboard = NO_SCRUBBER|NO_VENT,
+		/area/maintenance/fifthdeck/aftstarboard = NO_SCRUBBER,
 		/area/maintenance/waterstore = 0,
 		/area/shield = NO_SCRUBBER|NO_VENT,
 		/area/shuttle = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/shuttle/merchant = NO_SCRUBBER|NO_APC,
 		/area/shuttle/petrov = 0,
-		/area/shuttle/petrov/maint = NO_SCRUBBER|NO_VENT,
-		/area/shuttle/escape_pod6/station = NO_SCRUBBER|NO_APC|NO_VENT,
-		/area/shuttle/escape_pod7/station = NO_SCRUBBER|NO_APC|NO_VENT,
-		/area/shuttle/escape_pod8/station = NO_SCRUBBER|NO_APC|NO_VENT,
-		/area/shuttle/escape_pod9/station = NO_SCRUBBER|NO_APC|NO_VENT,
-		/area/shuttle/escape_pod10/station = NO_SCRUBBER|NO_APC|NO_VENT,
-		/area/shuttle/escape_pod11/station = NO_SCRUBBER|NO_APC|NO_VENT,
+		/area/shuttle/petrov/maint = NO_SCRUBBER,
+		/area/shuttle/escape_pod1/station = NO_SCRUBBER|NO_APC,
+		/area/shuttle/escape_pod2/station = NO_SCRUBBER|NO_APC,
+		/area/shuttle/escape_pod3/station = NO_SCRUBBER|NO_APC,
+		/area/shuttle/escape_pod4/station = NO_SCRUBBER|NO_APC,
+		/area/shuttle/escape_pod5/station = NO_SCRUBBER|NO_APC,
+		/area/shuttle/escape_pod6/station = NO_SCRUBBER|NO_APC,
+		/area/maintenance/aux_med = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/solar = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/storage = NO_SCRUBBER|NO_VENT,
 		/area/storage/auxillary/port = 0,
@@ -45,23 +50,26 @@
 		/area/supply = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/thruster = NO_SCRUBBER,
 		/area/turbolift = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/turret_protected/ai = NO_SCRUBBER|NO_VENT,
-		/area/turret_protected/ai_outer_chamber = NO_SCRUBBER|NO_VENT,
+		/area/turret_protected/ai_foyer = NO_SCRUBBER|NO_VENT,
 		/area/vacant/bar = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/vacant = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/vacant/brig = NO_SCRUBBER|NO_VENT,
+//		/area/vacant/brig = NO_SCRUBBER|NO_VENT,
+		/area/vacant/armory = 0,
 		/area/vacant/prototype/control = 0,
 		/area/vacant/prototype/engine = 0,
 		/area/vacant/cargo = NO_SCRUBBER|NO_VENT,
-		/area/vacant/infirmary = NO_SCRUBBER|NO_VENT,
-		/area/vacant/monitoring = NO_SCRUBBER|NO_VENT,
 		/area/vacant/mess = NO_SCRUBBER|NO_VENT|NO_APC,
-	)
+		/area/vacant/armory = NO_APC,
+		/area/command/gunnery/mim = 0,
+		/area/command/gunnery/mim/door = NO_SCRUBBER|NO_VENT,
+		/area/crew_quarters_boh/cabin_main/janitorial = NO_SCRUBBER|NO_VENT,
+		/area/vacant/armory = NO_APC
+	) // FIX THESE LAST 3 LATER
 
 	area_coherency_test_exempt_areas = list(
 		/area/aquila/airlock,
 		/area/centcom/control,
-		/area/torchexterior,
+		/area/maintenance/exterior,
 		/area/space
 	)
 
@@ -91,10 +99,10 @@
 	name = "ZAS: Cargo Bay"
 	area_path = /area/quartermaster/storage
 
-/datum/unit_test/zas_area_test/supply_centcomm
+datum/unit_test/zas_area_test/supply_centcomm
 	name = "ZAS: Supply Shuttle (CentComm)"
 	area_path = /area/supply/dock
 
-/datum/unit_test/zas_area_test/xenobio
+datum/unit_test/zas_area_test/xenobio
 	name = "ZAS: Xenobiology"
 	area_path = /area/rnd/xenobiology

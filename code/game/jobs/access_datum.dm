@@ -148,6 +148,12 @@ var/global/const/access_atmospherics = "ACCESS_ATMOS" //24
 	desc = "Atmospherics"
 	region = ACCESS_REGION_ENGINEERING
 
+/var/global/const/access_bar = "ACCESS_BAR" //25
+/datum/access/bar
+	id = access_bar
+	desc = "Bar"
+	region = ACCESS_REGION_GENERAL
+
 var/global/const/access_janitor = "ACCESS_JANITOR" //26
 /datum/access/janitor
 	id = access_janitor

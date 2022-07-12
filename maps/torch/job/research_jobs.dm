@@ -1,94 +1,84 @@
-/datum/job/senior_scientist
-	title = "Senior Researcher"
+/datum/job/pathfinder
+	title = "Exploration Operations Leader"
 	department = "Science"
-	department_flag = SCI
-
+	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief Science Officer"
-	selection_color = "#633d63"
-	economic_power = 12
-	minimal_player_age = 3
-	minimum_character_age = list(SPECIES_HUMAN = 30)
-	ideal_character_age = 50
-	alt_titles = list(
-		"Research Supervisor")
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
-	)
+	head_position = 1
+	supervisors = "the Research Director"
+	selection_color = "#68099e"
+	minimal_player_age = 4
+	economic_power = 7
+	minimum_character_age = list(SPECIES_HUMAN = 21)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/exploration/pathfinder
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/lord)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1
+		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/scientist
 	)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_EVA         = SKILL_ADEPT,
+	                    SKILL_SCIENCE     = SKILL_ADEPT,
+	                    SKILL_PILOT       = SKILL_BASIC)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+	                    SKILL_SCIENCE     = SKILL_MAX,
+	                    SKILL_COMBAT      = SKILL_EXPERT,
+	                    SKILL_WEAPONS     = SKILL_EXPERT)
+	skill_points = 22
 
 	access = list(
-		access_tox, access_tox_storage, access_maint_tunnels, access_research, access_mining_office,
-		access_mining_station, access_xenobiology, access_xenoarch, access_nanotrasen, access_solgov_crew,
-		access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
-		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_control,
-		access_petrov_maint, access_torch_fax, access_radio_sci, access_radio_exp
+		access_pathfinder, access_explorer, access_eva, access_maint_tunnels, access_bridge, access_emergency_storage,
+		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_research,
+		access_guppy, access_hangar, access_petrov_analysis, access_petrov, access_petrov_maint, access_petrov_helm, access_petrov_toxins, access_petrov_security
 	)
 
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_COMPUTER    = SKILL_BASIC,
-	                    SKILL_FINANCE     = SKILL_BASIC,
-	                    SKILL_BOTANY      = SKILL_BASIC,
-	                    SKILL_ANATOMY     = SKILL_BASIC,
-	                    SKILL_DEVICES     = SKILL_ADEPT,
-	                    SKILL_SCIENCE     = SKILL_ADEPT)
+	software_on_spawn = list(/datum/computer_file/program/deck_management,
+							 /datum/computer_file/program/reports)
 
-	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_DEVICES     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
-	skill_points = 20
-	possible_goals = list(/datum/goal/achievement/notslimefodder)
+/datum/job/pathfinder/get_description_blurb()
+	return "Вы - Руководитель Экспедиционных Работ. Ваша задача - организовывать экспедиции к отдаленным и неисследованным объектам. Вы же и управляете командой Исследователей, удостовреяясь, что вся команда полностью укомплектована. Кроме того, Вы пилотируете Харон, если пилота нет на смене. Отправляясь на задание, убедитесь, что всё, предоставляющее научный интерес будет доставлено в научную лабораторию на корабль."
 
 /datum/job/scientist
 	title = "Scientist"
+	department = "Science"
+	department_flag = SCI
 	total_positions = 6
 	spawn_positions = 6
-	supervisors = "the Chief Science Officer"
+	supervisors = "the Research Director"
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 45
 	minimal_player_age = 0
-	alt_titles = list(
-		"Xenoarcheologist",
+	alt_titles = list(,
 		"Anomalist",
-		"Researcher",
 		"Xenobiologist",
-		"Xenobotanist"
+		"Xenobotanist",
+		"Circuitry Designer",
+		"Chemical Researcher"
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_DEVICES     = SKILL_BASIC,
-	                    SKILL_SCIENCE     = SKILL_ADEPT)
+	                    SKILL_SCIENCE     = SKILL_ADEPT,
+						SKILL_CHEMISTRY   = SKILL_BASIC)
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
+	                    SKILL_SCIENCE     = SKILL_MAX,
+						SKILL_CHEMISTRY   = SKILL_MAX)
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
-		/datum/mil_branch/expeditionary_corps
+		/datum/mil_branch/civilian, /datum/mil_branch/lord
 	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
-		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
+	allowed_ranks = list(,
+		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/scientist
 	)
 
-	access = list(
-		access_tox, access_tox_storage, access_research, access_petrov, access_petrov_helm,
-		access_mining_office, access_mining_station, access_xenobiology, access_guppy_helm,
-		access_xenoarch, access_nanotrasen, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
-		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_control, access_torch_fax,
-		access_petrov_maint, access_radio_sci, access_radio_exp, access_research_storage
-	)
+	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov, access_petrov_helm,
+						access_mining_office, access_mining_station, access_xenobiology, access_guppy_helm,
+						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_solgov_crew, access_hangar,
+						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_robotics, access_robotics_engineering)
 	skill_points = 20
-	possible_goals = list(/datum/goal/achievement/notslimefodder)
 
 /datum/job/scientist_assistant
 	title = "Research Assistant"
@@ -96,11 +86,10 @@
 	department_flag = SCI
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Chief Science Officer and science personnel"
+	supervisors = "the Chief Science Officer, the Workplace Liaison and science personnel"
 	selection_color = "#633d63"
 	economic_power = 3
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 30
 	alt_titles = list(
 		"Custodian" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor,
 		"Testing Assistant" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/testsubject,
@@ -108,70 +97,54 @@
 		"Clerk",
 		"Field Assistant")
 
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist //временно
 	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
-		/datum/mil_branch/expeditionary_corps
+		/datum/mil_branch/civilian, /datum/mil_branch/lord
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
-		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
+		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/scientist
 	)
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
-	access = list(
-		access_tox, access_tox_storage, access_research, access_petrov,
-		access_mining_office, access_mining_station, access_xenobiology, access_guppy_helm,
-		access_xenoarch, access_nanotrasen, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
-		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_control,
-		access_radio_sci, access_radio_exp, access_research_storage
-	)
-	possible_goals = list(/datum/goal/achievement/notslimefodder)
+	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov,
+						access_mining_office, access_mining_station, access_xenobiology,
+						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_solgov_crew, access_guppy, access_hangar,
+						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry)
 
-/datum/job/research_guard
-	title = "Research Guard"
+/datum/job/explorer
+	title = "Field Scientist"
 	department = "Science"
-	department_flag = SCI
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Chief Science Officer"
-	selection_color = "#473d63"
-	economic_power = 5
-	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 26)
-	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/research_guard
-	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/passenger/research_guard/ec
-	)
+	department_flag = EXP
+	total_positions = 5
+	spawn_positions = 5
+	supervisors = "the Commanding Officer, Executive Officer, and Exploration Operations Leader"
+	selection_color = "#68099e"
+	minimum_character_age = list(SPECIES_HUMAN = 18)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
 
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/lord)
+	alt_titles = list(
+		"Explorer" = /decl/hierarchy/outfit/job/torch/crew/exploration/explorer,
+		"Xenoarchaeologist")
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5
+		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/scientist
 	)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
-	                    SKILL_EVA         = SKILL_BASIC,
-	                    SKILL_COMBAT      = SKILL_BASIC,
-	                    SKILL_WEAPONS     = SKILL_ADEPT
-						)
+	min_skill = list(   SKILL_EVA = SKILL_BASIC)
 
-	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+	                    SKILL_SCIENCE     = SKILL_MAX,
+	                    SKILL_COMBAT      = SKILL_EXPERT,
 	                    SKILL_WEAPONS     = SKILL_EXPERT)
-	skill_points = 20
 
-	access = list(
-		access_research_security, access_tox, access_tox_storage, access_maint_tunnels, access_research, access_xenobiology, access_xenoarch, access_nanotrasen, access_solgov_crew,
-		access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
-		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_maint, access_radio_sci
+	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
+		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, access_petrov_analysis, access_petrov, access_petrov_maint
 	)
 
-	software_on_spawn = list(/datum/computer_file/program/camera_monitor)
+	software_on_spawn = list(/datum/computer_file/program/deck_management)
 
-/datum/job/research_guard/get_description_blurb()
-	return "You are a security guard from the Organization of the Expeditionary Corps, which must protect the scientific department and its employees from various threats. Eat donuts, call scientists \"eggheads\"."
+/datum/job/explorer/get_description_blurb()
+	return "Полевой Ученый: Вашим прямым начальством является Руководитель Разведывательных Работ. В Ваши обязанности входит проведение экспериментов на территории исследуемых объектов, поиск артефактов неземного происхождения, анализ возможной флоры и фауны. Скорее всего, Вы столкнетесь с областями высокой опасности, агрессивными формами жизни, или сбойными системами защиты, так что смотрите в оба. \
+	Экспедитор: В Ваши обязанности входит активное исследование объектов, поиск артефактов неземного происхождения, месторождений полезных ископаемых. \
+	Ксеноархеолог: В Ваши обязанности входит проведение раскопок, изучение быта и культуры древних цивилизаций, анализ зловещих иероглифов и рун."

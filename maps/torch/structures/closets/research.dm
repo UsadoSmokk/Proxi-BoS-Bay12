@@ -31,7 +31,6 @@
 		/obj/item/clothing/gloves/latex,
 		/obj/item/clothing/glasses/science,
 		/obj/item/device/radio/headset/heads/torchntdirector,
-		/obj/item/device/radio/headset/heads/torchntdirector/alt,
 		/obj/item/tank/oxygen_emergency_extended,
 		/obj/item/clothing/mask/gas,
 		/obj/item/device/flash,
@@ -42,7 +41,7 @@
 		/obj/item/device/camera,
 		//proxima code start,
 		/obj/item/device/remote_device/research_director,
-		/obj/item/storage/box/encryptionkey/science,
+//		/obj/item/storage/box/encryptionkey/science,
 		//proxima code end,
 		/obj/item/material/clipboard/steel,
 		/obj/item/taperoll/research,
@@ -64,8 +63,7 @@
 	return list(
 		/obj/item/clothing/under/rank/scientist,
 		/obj/item/clothing/suit/storage/toggle/labcoat/science/ec,
-		/obj/item/device/radio/headset/science,
-		/obj/item/device/radio/headset/science/alt,
+		/obj/item/device/radio/headset/torchnanotrasen,
 		/obj/item/clothing/mask/gas,
 		/obj/item/material/clipboard,
 		/obj/item/folder,
@@ -92,8 +90,7 @@
 		/obj/item/clothing/under/rank/scientist,
 		/obj/item/clothing/suit/storage/toggle/labcoat/science,
 		/obj/item/clothing/suit/storage/toggle/labcoat/science/ec,
-		/obj/item/device/radio/headset/science,
-		/obj/item/device/radio/headset/science/alt,
+		/obj/item/device/radio/headset/torchnanotrasen,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/tank/oxygen_emergency_extended,
 		/obj/item/material/clipboard,
@@ -111,7 +108,7 @@
 
 /obj/structure/closet/secure_closet/research_guard
 	name = "Research Guard's locker"
-	req_access = list(access_research_security)
+//	req_access = list(access_research_security)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/science
 
 /obj/structure/closet/secure_closet/research_guard/WillContain()
@@ -122,8 +119,7 @@
 		/obj/item/clothing/head/soft/sec/corp/guard,
 		/obj/item/clothing/head/beret/guard,
 		/obj/item/clothing/accessory/armband/whitered,
-		/obj/item/device/radio/headset/research_guard,
-		/obj/item/device/radio/headset/research_guard/alt,
+		/obj/item/device/radio/headset/torchnanotrasen,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/material/clipboard,
 		/obj/item/folder,
@@ -157,8 +153,7 @@
 /obj/structure/closet/secure_closet/ec_scientist/WillContain()
 	return list(
 		/obj/item/clothing/suit/storage/toggle/labcoat/science/ec,
-		/obj/item/device/radio/headset/science,
-		/obj/item/device/radio/headset/science/alt,
+		/obj/item/device/radio/headset/torchnanotrasen,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/tank/oxygen_emergency_extended,
 		/obj/item/material/clipboard,

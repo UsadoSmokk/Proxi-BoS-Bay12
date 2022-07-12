@@ -1,17 +1,17 @@
-var/global/const/NETWORK_AQUILA      = "Aquila"
-var/global/const/NETWORK_BRIDGE      = "Bridge"
-var/global/const/NETWORK_CHARON     = "Charon"
-var/global/const/NETWORK_EXPEDITION  = "Expedition"
-var/global/const/NETWORK_FIRST_DECK  = "First Deck"
-var/global/const/NETWORK_FOURTH_DECK = "Fourth Deck"
-var/global/const/NETWORK_POD         = "General Utility Pod"
-var/global/const/NETWORK_SECOND_DECK = "Second Deck"
-var/global/const/NETWORK_SUPPLY      = "Supply"
-var/global/const/NETWORK_HANGAR      = "Hangar"
-var/global/const/NETWORK_EXPLO       = "Exploration"
-var/global/const/NETWORK_THIRD_DECK  = "Third Deck"
-var/global/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
-var/global/const/NETWORK_PETROV  = "Petrov"
+var/const/NETWORK_AQUILA      = "SGGS Byakhee"
+var/const/NETWORK_BRIDGE      = "Bridge"
+var/const/NETWORK_CALYPSO     = "SGEV Gaunt"
+var/const/NETWORK_EXPEDITION  = "Expedition"
+var/const/NETWORK_FIRST_DECK  = "First Deck"
+var/const/NETWORK_FOURTH_DECK = "Fourth Deck"
+var/const/NETWORK_POD         = "SGRP Garuda"
+var/const/NETWORK_SECOND_DECK = "Second Deck"
+var/const/NETWORK_SUPPLY      = "Supply"
+var/const/NETWORK_HANGAR      = "Hangar"
+var/const/NETWORK_EXPLO       = "Exploration"
+var/const/NETWORK_THIRD_DECK  = "Third Deck"
+var/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
+var/const/NETWORK_NANOTRASEN  = "NTRL Polyp"
 
 /datum/map/torch/get_network_access(var/network)
 	switch(network)
@@ -19,7 +19,7 @@ var/global/const/NETWORK_PETROV  = "Petrov"
 			return access_aquila
 		if(NETWORK_BRIDGE)
 			return access_heads
-		if(NETWORK_CHARON)
+		if(NETWORK_CALYPSO)
 			return access_expedition_shuttle
 		if(NETWORK_POD)
 			return access_guppy
@@ -29,8 +29,8 @@ var/global/const/NETWORK_PETROV  = "Petrov"
 			return access_hangar
 		if(NETWORK_EXPLO)
 			return access_explorer
-		if(NETWORK_PETROV)
-			return access_petrov
+		if(NETWORK_NANOTRASEN)
+			return access_petrov_security
 	return get_shared_network_access(network) || ..()
 
 /datum/map/torch
@@ -54,9 +54,9 @@ var/global/const/NETWORK_PETROV  = "Petrov"
 		NETWORK_EXPLO,
 		NETWORK_HANGAR,
 		NETWORK_AQUILA,
-		NETWORK_CHARON,
+		NETWORK_CALYPSO,
 		NETWORK_POD,
-		NETWORK_PETROV,
+		NETWORK_NANOTRASEN,
 		NETWORK_ALARM_ATMOS,
 		NETWORK_ALARM_CAMERA,
 		NETWORK_ALARM_FIRE,
@@ -77,7 +77,7 @@ var/global/const/NETWORK_PETROV  = "Petrov"
 	network = list(NETWORK_BRIDGE)
 
 /obj/machinery/camera/network/exploration_shuttle
-	network = list(NETWORK_CHARON)
+	network = list(NETWORK_CALYPSO)
 
 /obj/machinery/camera/network/expedition
 	network = list(NETWORK_EXPEDITION)
@@ -121,8 +121,8 @@ var/global/const/NETWORK_PETROV  = "Petrov"
 /obj/machinery/camera/network/engineering_outpost
 	network = list(NETWORK_ENGINEERING_OUTPOST)
 
-/obj/machinery/camera/network/petrov
-	network = list(NETWORK_PETROV)
+/obj/machinery/camera/network/nanotrasen
+	network = list(NETWORK_NANOTRASEN)
 
 // Motion
 /obj/machinery/camera/motion/engineering_outpost
@@ -184,9 +184,9 @@ var/global/const/NETWORK_PETROV  = "Petrov"
 	_output_on = TRUE
 	_fully_charged = TRUE
 
-var/global/const/NETWORK_COMMAND = "Command"
-var/global/const/NETWORK_ENGINE  = "Engine"
-var/global/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
+var/const/NETWORK_COMMAND = "Command"
+var/const/NETWORK_ENGINE  = "Engine"
+var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 
 /datum/map/proc/get_shared_network_access(var/network)
 	switch(network)
@@ -201,39 +201,15 @@ var/global/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 		num2text(AI_FREQ)    = list(access_synth),
 		num2text(ENT_FREQ)   = list(),
 		num2text(ERT_FREQ)   = list(access_cent_specops),
-		num2text(COMM_FREQ)  = list(access_radio_comm),
-		num2text(ENG_FREQ)   = list(access_radio_eng),
-		num2text(MED_FREQ)   = list(access_radio_med),
-		num2text(MED_I_FREQ) = list(access_radio_med),
-		num2text(SEC_FREQ)   = list(access_radio_sec),
-		num2text(SEC_I_FREQ) = list(access_radio_sec),
-		num2text(SCI_FREQ)   = list(access_radio_sci),
-		num2text(SUP_FREQ)   = list(access_radio_sup),
-		num2text(SRV_FREQ)   = list(access_radio_serv),
-		num2text(EXP_FREQ)   = list(access_radio_exp),
-		num2text(HAIL_FREQ)  = list(),
-	)
-
-/decl/stock_part_preset/radio/receiver/vent_pump/guppy
-	frequency = 1431
-
-/decl/stock_part_preset/radio/event_transmitter/vent_pump/guppy
-	frequency = 1431
-
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/guppy
-	stock_part_presets = list(
-		/decl/stock_part_preset/radio/receiver/vent_pump/guppy = 1,
-		/decl/stock_part_preset/radio/event_transmitter/vent_pump/guppy = 1
-	)
-
-/decl/stock_part_preset/radio/receiver/vent_scrubber/guppy
-	frequency = 1431
-
-/decl/stock_part_preset/radio/event_transmitter/vent_scrubber/guppy
-	frequency = 1431
-
-/obj/machinery/atmospherics/unary/vent_scrubber/guppy
-	stock_part_presets = list(
-		/decl/stock_part_preset/radio/receiver/vent_scrubber/guppy = 1,
-		/decl/stock_part_preset/radio/event_transmitter/vent_scrubber/guppy = 1
+		num2text(COMM_FREQ)  = list(access_heads),
+		num2text(ENG_FREQ)   = list(access_engine_equip, access_atmospherics),
+		num2text(MED_FREQ)   = list(access_medical_equip),
+		num2text(MED_I_FREQ) = list(access_medical_equip),
+		num2text(SEC_FREQ)   = list(access_security),
+		num2text(SEC_I_FREQ) = list(access_security),
+		num2text(INF_FREQ)   = list(access_marines),
+		num2text(SCI_FREQ)   = list(access_tox, access_robotics, access_xenobiology, access_pathfinder),
+		num2text(SUP_FREQ)   = list(access_cargo),
+		num2text(SRV_FREQ)   = list(access_janitor, access_hydroponics),
+		num2text(EXP_FREQ)   = list(access_explorer, access_rd)
 	)

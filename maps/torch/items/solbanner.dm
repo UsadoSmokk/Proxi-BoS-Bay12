@@ -3,7 +3,7 @@
 	icon = 'maps/torch/icons/obj/solbanner.dmi'
 	icon_state = "wood"
 	desc = "A wooden pole bearing a banner of Sol Central Government. Ave."
-	anchored = TRUE
+	anchored = 1
 	obj_flags = OBJ_FLAG_ANCHORABLE
 	layer = ABOVE_HUMAN_LAYER
 
@@ -29,7 +29,7 @@
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "banner_stowed"
 	w_class = ITEM_SIZE_HUGE
-	req_access = list(access_pathfinder)
+	req_access = list(access_solgov_crew)
 
 /obj/item/solbanner/attack_self(mob/living/carbon/human/user)
 	..()
@@ -56,3 +56,4 @@
 			dudename = "[ID.military_rank.name] [dudename]"
 		E.plantedby = "Planted on [stationdate2text()] by [dudename], [user.get_assignment()] of [GLOB.using_map.full_name]."
 		T.visible_message("<span class='notice'>[user] successfully claims this world with \the [E]!</span>")
+

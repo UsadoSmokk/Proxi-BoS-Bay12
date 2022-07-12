@@ -4,7 +4,7 @@
 	l_ear = /obj/item/device/radio/headset
 	shoes = /obj/item/clothing/shoes/black
 	pda_type = /obj/item/modular_computer/pda
-	id_types = list(/obj/item/card/id/torch/passenger)
+	id = /obj/item/card/id/torch/passenger
 
 /decl/hierarchy/outfit/job/torch/passenger/passenger/psychologist
 	name = OUTFIT_JOB_NAME("Passenger - Psychologist")
@@ -30,14 +30,14 @@
 	l_ear = null
 	shoes = /obj/item/clothing/shoes/black
 	pda_type = /obj/item/modular_computer/pda
-	id_types = list(/obj/item/card/id/torch/merchant)
+	id = /obj/item/card/id/torch/merchant
 
 /decl/hierarchy/outfit/job/torch/ert
 	name = OUTFIT_JOB_NAME("ERT - Torch")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat
 	head = /obj/item/clothing/head/beret/solgov/fleet
 	gloves = /obj/item/clothing/gloves/thick
-	id_types = list(/obj/item/card/id/centcom/ERT)
+	id = /obj/item/card/id/centcom/ERT
 	pda_type = /obj/item/modular_computer/pda/ert
 	l_ear = /obj/item/device/radio/headset/ert
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -46,3 +46,18 @@
 	name = OUTFIT_JOB_NAME("ERT Leader - Torch")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat/command
 	head = /obj/item/clothing/head/beret/solgov/fleet/command
+
+
+
+/decl/hierarchy/outfit/job/torch/stowaway
+	name = OUTFIT_JOB_NAME("Stowaway - Torch")
+	pda_type = null
+	l_ear = null
+	l_pocket = /obj/item/wrench
+	r_pocket = /obj/item/crowbar/prybar
+	id = null
+
+/decl/hierarchy/outfit/job/torch/stowaway/post_equip(var/mob/living/carbon/human/H)
+    ..()
+    var/obj/item/card/id/torch/stowaway/ID = new(H.loc)
+    H.equip_to_slot_or_store_or_drop(ID, id_slot)

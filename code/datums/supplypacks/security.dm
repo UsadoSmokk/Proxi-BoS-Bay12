@@ -154,14 +154,14 @@
 	containername = "plasma longarms crate"
 	access = access_armory
 	security_level = SUPPLY_SECURITY_ELEVATED
-
+/*
 /decl/hierarchy/supply_pack/security/plasma/expo
 	name = "Weapons - Plasma assault rifles (Expeditionary Corps)"
 	contains = list(/obj/item/gun/energy/k342/explo = 2,
 					/obj/item/cell/guncell/medium = 6)
 	cost = 130
 	security_level = SUPPLY_SECURITY_ELEVATED
-
+*/
 /decl/hierarchy/supply_pack/security/plasma/stingray
 	name = "Weapons - Plasma sniper rifles"
 	contains = list(/obj/item/gun/energy/k342/sniper = 2,

@@ -1,11 +1,11 @@
 /obj/machinery/uniform_vendor
 	name = "uniform vendor"
 	desc= "A uniform vendor for utility, service, and dress uniforms."
-	icon = 'icons/obj/vending.dmi'
+	icon = 'icons/bos/obj/vending.dmi'
 	icon_state = "uniform"
 	layer = BELOW_OBJ_LAYER
-	anchored = TRUE
-	density = TRUE
+	anchored = 1
+	density = 1
 
 	// Power
 	use_power = 1
@@ -15,7 +15,7 @@
 	var/obj/item/card/id/ID
 	var/list/uniforms = list()
 	var/list/selected_outfit = list()
-	var/static/list/issued_items = list()
+	var/global/list/issued_items = list()
 
 /obj/machinery/uniform_vendor/on_update_icon()
 	if(stat & BROKEN)

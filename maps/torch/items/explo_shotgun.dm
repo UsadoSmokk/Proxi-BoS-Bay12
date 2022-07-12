@@ -6,7 +6,7 @@
 	starts_loaded = 0
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
-	init_firemodes = list(
+	firemodes = list(
 		list(mode_name="fire"),
 		)
 	var/explosion_chance = 50
@@ -47,7 +47,7 @@
 		bulk = bulk + 4
 		update_icon()
 		return 1
-	if(reinforced && isWirecutter(I))
+	if(reinforced && I.IsWirecutter())
 		to_chat(user, SPAN_WARNING("You remove \the [reinforced] that was reinforcing \the [src]."))
 		playsound(src.loc, 'sound/items/Wirecutter.ogg', 25, 1)
 		reinforced.dropInto(loc)
@@ -82,67 +82,27 @@
 			return FALSE
 	return ..()
 
-/obj/item/ammo_magazine/shotholder/net
-	name = "net shell holder"
-	ammo_type = /obj/item/ammo_casing/shotgun/net
-	matter = list(MATERIAL_STEEL = 720)
-	marking_color = COLOR_PALE_PURPLE_GRAY
-
-/obj/item/ammo_casing/shotgun/net
-	name = "net shell"
-	desc = "A net shell."
-	icon_state = "netshell"
-	projectile_type = /obj/item/projectile/bullet/shotgun/beanbag/net
-	matter = list(MATERIAL_STEEL = 180)
-
-/obj/item/projectile/bullet/shotgun/beanbag/net
-	name = "netshell"
-	damage = 5
-	agony = 10
-
-/obj/item/projectile/bullet/shotgun/beanbag/net/on_hit(var/atom/target, var/blocked = 0, var/def_zone = null)
-	var/obj/item/energy_net/safari/net = new(loc)
-	net.try_capture_mob(target)
-	return TRUE
-
 /obj/item/storage/box/ammo/explo_shells
 	name = "box of utility shells"
 	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 1,
-					  /obj/item/ammo_magazine/shotholder/net = 1,
+					  /obj/item/ammo_magazine/shotholder = 1,
 					  /obj/item/ammo_magazine/shotholder/flash = 1)
 
 /obj/structure/closet/secure_closet/explo_gun
 	name = "gun locker"
-	desc = "Wall locker holding the boomstick."
+	desc = "Wall locker holding the boomstick and two locked rifles."
 	req_access = list(access_expedition_shuttle_helm)
 	closet_appearance = /decl/closet_appearance/wall/explo_gun
-	density = FALSE
-	anchored = TRUE
-	wall_mounted = TRUE
+	density = 0
+	anchored = 1
+	wall_mounted = 1
 	storage_types = CLOSET_STORAGE_ITEMS
 
 /obj/structure/closet/secure_closet/explo_gun/WillContain()
 	return list(
 		/obj/item/storage/box/ammo/explo_shells = 3,
-		/obj/item/gun/projectile/shotgun/pump/exploration
-	)
-
-/obj/structure/closet/secure_closet/explo_gun/kasatka
-	desc = "A newly bolted box with the latest development from Nanotrasen"
-	closet_appearance = /decl/closet_appearance/wall/explo_gun_kasatka
-
-/obj/structure/closet/secure_closet/explo_gun/kasatka/WillContain()
-	return list(
-		/obj/item/cell/guncell/medium = 6,
-		/obj/item/gun/energy/k342/explo = 2
-	)
-
-/decl/closet_appearance/wall/explo_gun_kasatka
-	color = COLOR_WHITE
-	decals = null
-	can_lock = 1
-	extra_decals = list(
-		"stripe_outer" = COLOR_PURPLE
+		/obj/item/gun/projectile/shotgun/pump/exploration,
+		/obj/item/gun/energy/laser/exploration = 2
 	)
 
 /decl/closet_appearance/wall/explo_gun
@@ -153,26 +113,20 @@
 		"stripe_outer" = COLOR_PURPLE
 	)
 
-//proxima code start
-/obj/item/gun/energy/k342/explo
-	desc = "K342E Kasatka is the latest plasma weapon created by NanoTrasen. This modification has been designed for Sol Central Government Expeditionary Corps and can fire several types of charges: stunning, lethal and net-mode."
-	icon_state = "kasatka_off"
-	item_state = "kasatka"
-	req_access = list(list("ACCESS_TORCH_EXPLORER"))
-	wielded_item_state = "kasatka-wielded"
-	authorized_modes = list(UNAUTHORIZED, UNAUTHORIZED, UNAUTHORIZED)
-	init_firemodes = list(
-		list(mode_name="stun charge", projectile_type=/obj/item/projectile/plasma/stun, charge_cost=20, fire_delay=4, projectile_color=COLOR_YELLOW),
-		list(mode_name="plasma charge", projectile_type=/obj/item/projectile/plasma, charge_cost=20, fire_delay=4, projectile_color=COLOR_BLUE_LIGHT),
-		list(mode_name="net charge", projectile_type=/obj/item/projectile/plasma/stun/net, charge_cost=150, fire_delay=20, projectile_color=COLOR_GREEN)
+//pathfinder
+/obj/structure/closet/secure_closet/explo_gun/pf
+	desc = "Wall locker holding the Pathfinder's survival sidearm."
+	closet_appearance = /decl/closet_appearance/wall/explo_gun/pf
+	req_access = list(access_pathfinder)
+
+/obj/structure/closet/secure_closet/explo_gun/pf/WillContain()
+	return list(
+		/obj/item/gun/projectile/pistol/sec/pf = 1,
+		/obj/item/ammo_magazine/pistol/double/pepperball = 1
 	)
 
-/obj/item/gun/energy/k342/explo/free_fire()
-	var/my_z = get_z(src)
-	if(!list_find(GLOB.using_map.station_levels, my_z))
-		return TRUE
-	return ..()
-
-/obj/item/gun/energy/k342/explo/prereg
-	authorized_modes = list(AUTHORIZED, AUTHORIZED, ALWAYS_AUTHORIZED)
-//proxima code end
+/decl/closet_appearance/wall/explo_gun/pf
+	extra_decals = list(
+		"stripe_outer" = COLOR_RED,
+		"stripe_inner" = COLOR_PURPLE
+	)

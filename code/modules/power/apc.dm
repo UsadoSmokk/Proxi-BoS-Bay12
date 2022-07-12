@@ -260,6 +260,25 @@
 			else
 				to_chat(user, "The cover is closed.")
 
+/obj/machinery/power/apc/proc/set_light_color(var/color) //just changes the colors of the ship's lighting. (BOH)
+	var/lightmode
+	switch(color)
+		if("red")
+			lightmode = LIGHTMODE_RED
+		if("violet")
+			lightmode = LIGHTMODE_VIOLET
+		if("orange")
+			lightmode = LIGHTMODE_ORANGE
+		if("blue")
+			lightmode = LIGHTMODE_BLUE
+		if("delta")
+			lightmode = LIGHTMODE_DELTA
+		if("reset")
+			lightmode = null
+	for(var/obj/machinery/light/L in area)
+		INVOKE_ASYNC(L, /obj/machinery/light.proc/set_mode, lightmode)
+		CHECK_TICK
+
 
 // update the APC icon to show the three base states
 // also add overlays for indicator lights

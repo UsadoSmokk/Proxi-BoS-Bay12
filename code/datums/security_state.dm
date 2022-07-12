@@ -154,6 +154,7 @@
 	var/up_description
 	var/down_description
 	var/psionic_control_level = PSI_IMPLANT_WARN
+	var/security_level_lightmode //boh
 
 // Called when we're switching from a lower security level to this one.
 /decl/security_level/proc/switching_up_to()
@@ -200,6 +201,14 @@
 	for (var/obj/machinery/rotating_alarm/security_alarm/SA in SSmachines.machinery)
 		if (SA.z in GLOB.using_map.contact_levels)
 			SA.set_alert(name, alarm_level, light_color_alarm)
+	for(var/obj/machinery/power/apc/A in SSmachines.machinery) //boh start
+		if(!(A.z in GLOB.using_map.station_levels))
+			continue
+		var/turf/T = get_turf(A)
+		if(!istype(T.loc,/area/hallway/))
+			continue
+		A.set_light_color(security_level_lightmode)
+		CHECK_TICK			//boh end
 	post_status("alert")
 
 /decl/security_level/default/code_green
