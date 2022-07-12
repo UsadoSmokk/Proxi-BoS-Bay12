@@ -8,19 +8,19 @@
 	base_type = /obj/machinery/vending/medals
 	req_access = list(access_bridge)//Intended for ranking crew to access.
 	products = list(
-	/obj/item/clothing/accessory/medal/solgov/iron/star = 12,
-	/obj/item/clothing/accessory/medal/solgov/iron/sol = 12,
-	/obj/item/clothing/accessory/medal/solgov/bronze/heart = 12,
-	/obj/item/clothing/accessory/medal/solgov/bronze/sol = 12,
-	/obj/item/clothing/accessory/medal/solgov/silver/sword = 12,
-	/obj/item/clothing/accessory/medal/solgov/silver/sol = 12,
-	/obj/item/clothing/accessory/medal/solgov/gold/star = 12,
-	/obj/item/clothing/accessory/medal/solgov/gold/sol = 12,
-	/obj/item/clothing/accessory/medal/solgov/heart = 12,
+	/obj/item/clothing/accessory/medal/lordan/iron/star = 12,
+	/obj/item/clothing/accessory/medal/lordan/iron/sol = 12,
+	/obj/item/clothing/accessory/medal/lordan/bronze/heart = 12,
+	/obj/item/clothing/accessory/medal/lordan/bronze/sol = 12,
+	/obj/item/clothing/accessory/medal/lordan/silver/sword = 12,
+	/obj/item/clothing/accessory/medal/lordan/silver/sol = 12,
+	/obj/item/clothing/accessory/medal/lordan/gold/star = 12,
+	/obj/item/clothing/accessory/medal/lordan/gold/sol = 12,
+	/obj/item/clothing/accessory/medal/lordan/heart = 12,
 	/obj/item/clothing/accessory/medal/silver/nanotrasen = 12,
 	/obj/item/clothing/accessory/medal/bronze/nanotrasen = 12,
 	/obj/item/clothing/accessory/medal/iron/nanotrasen = 12
 	)
 
 
-	contraband = list(/obj/item/clothing/accessory/medal/solgov/gold/crest = 1,/obj/item/clothing/accessory/medal/solgov/gold/sun = 1,/obj/item/clothing/accessory/medal/gold/nanotrasen = 1)
+	contraband = list(/obj/item/clothing/accessory/medal/lordan/gold/crest = 1,/obj/item/clothing/accessory/medal/lordan/gold/sun = 1,/obj/item/clothing/accessory/medal/gold/nanotrasen = 1)

@@ -41,6 +41,8 @@
 	var/idle_valid_values = list(1, 2, 5, 10)
 	var/spinup_delay      = 20
 	var/spinup_counter    = 0
+//boh start
+	var/precharged = FALSE
 
 /obj/machinery/power/shield_generator/on_update_icon()
 	if(running)
@@ -48,6 +50,25 @@
 	else
 		icon_state = "generator0"
 
+/obj/machinery/power/shield_generator/precharged
+	precharged = TRUE
+
+/obj/machinery/power/shield_generator/New()
+	..()
+	connect_to_network()
+
+	mode_list = list()
+	for(var/st in subtypesof(/datum/shield_mode/))
+		var/datum/shield_mode/SM = new st()
+		mode_list.Add(SM)
+
+/obj/machinery/power/shield_generator/Initialize()
+	. = ..()
+	if(precharged)
+		target_radius = 200
+		field_radius = 200
+		current_energy = max_energy
+//boh end
 
 /obj/machinery/power/shield_generator/New()
 	..()
@@ -519,3 +540,15 @@
 			turfs.Add(T)
 
 	return turfs
+
+/////////
+/*
+For the purpose of precharged shield generators, we have the below. (BOH)
+*/
+/////////
+
+/obj/machinery/power/shield_generator/new_icon/
+	icon = 'icons/boh/newshields_64x32.dmi'
+	icon_state = "shield_gen"
+	precharged = TRUE
+	var/width = 2

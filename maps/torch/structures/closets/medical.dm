@@ -34,6 +34,7 @@
 	return list(
 		/obj/item/clothing/suit/bio_suit/cmo,
 		/obj/item/clothing/head/bio_hood/cmo,
+		/obj/item/clothing/shoes/white,
 		/obj/item/clothing/suit/storage/toggle/labcoat/cmo,
 		/obj/item/clothing/suit/storage/toggle/labcoat/cmoalt,
 		/obj/item/device/radio/headset/heads/cmo,
@@ -48,27 +49,27 @@
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/glasses/hud/health,
 		/obj/item/clothing/suit/armor/pcarrier/medium/command,
-		/obj/item/clothing/head/helmet/solgov/command,
-		//proxima code start,
-		/obj/item/device/remote_device/chief_medical_officer,
-		//proxima code end,
+		/obj/item/clothing/head/helmet,
 		/obj/item/device/holowarrant,
 		/obj/item/storage/firstaid/adv,
 		/obj/item/storage/box/armband/med,
-		/obj/item/material/knife/folding/swiss/officer,
-		/obj/item/storage/backpack/dufflebag/med,
+		/obj/item/storage/belt/general,
+		/obj/item/material/knife/folding/swiss,
+		/obj/item/sd_key,
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/medic, /obj/item/storage/backpack/satchel/med)),
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag/med, /obj/item/storage/backpack/messenger/med)),
 		RANDOM_SCRUBS
 	)
-
-/obj/structure/closet/secure_closet/medical_torchsenior
-	name = "physician's locker"
-	req_access = list(access_senmed)
+/obj/structure/closet/secure_closet/medical_viro
+	name = "virologist's locker"
+	req_access = list(access_virology)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical/physician
 
-/obj/structure/closet/secure_closet/medical_torchsenior/WillContain()
+/obj/structure/closet/secure_closet/medical_viro/WillContain()
 	return list(
-		/obj/item/clothing/suit/storage/toggle/labcoat,
-		/obj/item/clothing/suit/surgicalapron,
+		/obj/item/clothing/under/sterile,
+		/obj/item/clothing/suit/storage/toggle/labcoat/virologist,
+		/obj/item/clothing/shoes/white,
 		/obj/item/device/radio/headset/headset_med,
 		/obj/item/device/radio/headset/headset_med/alt,
 		/obj/item/taperoll/medical,
@@ -78,26 +79,59 @@
 		/obj/item/clothing/accessory/stethoscope,
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/glasses/hud/health,
+		/obj/item/device/flash,
 		/obj/item/device/megaphone,
 		/obj/item/storage/firstaid/adv,
-		/obj/item/material/knife/folding/swiss/medic,
-		/obj/item/storage/backpack/dufflebag/med,
+		/obj/item/material/knife/folding/swiss,
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/medic, /obj/item/storage/backpack/satchel/med)),
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag/med, /obj/item/storage/backpack/messenger/med)),
+		RANDOM_SCRUBS = 2
+	)
+
+/obj/structure/closet/secure_closet/medical_torchsenior
+	name = "surgeon's locker"
+	req_access = list(access_senmed)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical/physician
+
+/obj/structure/closet/secure_closet/medical_torchsenior/WillContain()
+	return list(
+		/obj/item/clothing/under/sterile,
+		/obj/item/clothing/suit/storage/toggle/labcoat,
+		/obj/item/clothing/suit/surgicalapron,
+		/obj/item/clothing/shoes/white,
+		/obj/item/device/radio/headset/headset_med,
+		/obj/item/device/radio/headset/headset_med/alt,
+		/obj/item/taperoll/medical,
+		/obj/item/storage/belt/medical,
+		/obj/item/clothing/mask/surgical,
+		/obj/item/device/scanner/health,
+		/obj/item/clothing/accessory/stethoscope,
+		/obj/item/device/flashlight/pen,
+		/obj/item/clothing/glasses/hud/health,
+		/obj/item/device/flash,
+		/obj/item/device/megaphone,
+		/obj/item/storage/firstaid/adv,
+		/obj/item/material/knife/folding/swiss,
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/medic, /obj/item/storage/backpack/satchel/med)),
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag/med, /obj/item/storage/backpack/messenger/med)),
 		RANDOM_SCRUBS = 2
 	)
 
 /obj/structure/closet/secure_closet/medical_torch
-	name = "medical technician's locker"
+	name = "doctor's locker"
 	req_access = list(access_medical_equip)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
 /obj/structure/closet/secure_closet/medical_torch/WillContain()
 	return list(
+		/obj/item/clothing/under/sterile,
 		/obj/item/clothing/accessory/storage/white_vest,
 		/obj/item/clothing/suit/storage/toggle/fr_jacket,
+		/obj/item/clothing/shoes/white,
 		/obj/item/device/radio/headset/headset_med,
 		/obj/item/device/radio/headset/headset_corpsman/alt,
 		/obj/item/taperoll/medical,
-		/obj/item/storage/belt/medical/emt,
+		/obj/item/storage/belt/medical,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/tank/oxygen_emergency_extended,
 		/obj/item/storage/box/autoinjectors,
@@ -106,8 +140,10 @@
 		/obj/item/storage/firstaid/adv,
 		/obj/item/clothing/suit/storage/medical_chest_rig,
 		/obj/item/clothing/head/hardhat/EMS,
-		/obj/item/material/knife/folding/swiss/medic,
-		/obj/item/storage/backpack/dufflebag/med
+		/obj/item/material/knife/folding/swiss,
+		/obj/item/roller,
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/medic, /obj/item/storage/backpack/satchel/med)),
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag/med, /obj/item/storage/backpack/messenger/med))
 	)
 
 /obj/structure/closet/wardrobe/medic_torch

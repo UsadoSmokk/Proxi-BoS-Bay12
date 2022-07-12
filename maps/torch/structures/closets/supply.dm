@@ -23,7 +23,7 @@
 	)
 
 /obj/structure/closet/secure_closet/decktech
-	name = "deck technician's locker"
+	name = "supply technician's locker"
 	req_access = list(access_cargo)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/cargo/worker
 
@@ -44,11 +44,12 @@
 		/obj/item/storage/belt/general,
 		/obj/item/stamp/cargo,
 		/obj/item/stamp/denied,
-		/obj/item/storage/backpack/dufflebag
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack = 75, /obj/item/storage/backpack/satchel/grey = 25)),
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/messenger = 75, /obj/item/storage/backpack/dufflebag = 25))
 	)
 
 /obj/structure/closet/secure_closet/deckofficer
-	name = "deck chief's locker"
+	name = "gunnery chief's locker"
 	req_access = list(access_qm)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/cargo/deck_officer
 
@@ -67,20 +68,17 @@
 		/obj/item/folder/yellow,
 		/obj/item/stack/package_wrap/twenty_five,
 		/obj/item/device/flash,
-		//proxima code start,
-		/obj/item/device/remote_device/quartermaster,
-//		/obj/item/storage/box/encryptionkey/supply,
-		//proxima code end,
 		/obj/item/device/megaphone,
 		/obj/item/device/holowarrant,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol,
+		/obj/item/clothing/suit/armor/pcarrier/light,
 		/obj/item/device/binoculars,
 		/obj/item/storage/belt/general,
-		/obj/item/storage/backpack/dufflebag
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack = 75, /obj/item/storage/backpack/satchel/grey = 25)),
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/messenger = 75, /obj/item/storage/backpack/dufflebag = 25))
 	)
 
 /obj/structure/closet/secure_closet/prospector
-	name = "prospector's locker"
+	name = "field support locker"
 	req_access = list(access_mining)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/cargo
 
@@ -103,5 +101,6 @@
 		/obj/item/device/radio,
 		/obj/item/clothing/glasses/material,
 		/obj/item/clothing/glasses/meson,
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/industrial, /obj/item/storage/backpack/satchel/eng, /obj/item/storage/backpack/messenger/engi)),
 		/obj/item/storage/backpack/dufflebag/eng
 	)
