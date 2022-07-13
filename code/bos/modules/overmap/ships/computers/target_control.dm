@@ -1,4 +1,7 @@
 //Engine control and monitoring console
+/obj/item/stock_parts/circuitboard/missiles
+	name = T_BOARD("target control console")
+	build_path = /obj/machinery/computer/ship/missiles
 
 /obj/machinery/computer/ship/missiles
 	name = "missile control console"
