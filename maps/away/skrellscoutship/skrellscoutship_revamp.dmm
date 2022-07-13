@@ -113,9 +113,6 @@
 	frequency = 1331;
 	id_tag = "xil_dock_pump"
 	},
-/obj/structure/handrai{
-	dir = 4
-	},
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/dock)
 "bm" = (
@@ -372,7 +369,6 @@
 	frequency = 1290;
 	id_tag = "xil_air_pump_out_external"
 	},
-/obj/structure/handrai,
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/maintenance/atmos)
 "et" = (
@@ -1051,18 +1047,6 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/obj/item/clothing/suit/armor/pcarrier/tactical{
-	name = "skrellian plate carrier"
-	},
-/obj/item/clothing/suit/armor/pcarrier/tactical{
-	name = "skrellian plate carrier"
-	},
-/obj/item/clothing/suit/armor/pcarrier/tactical{
-	name = "skrellian plate carrier"
-	},
-/obj/item/clothing/suit/armor/pcarrier/tactical{
-	name = "skrellian plate carrier"
-	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "kW" = (
@@ -1083,6 +1067,10 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
+/obj/item/clothing/suit/armor/pcarrier/medium,
+/obj/item/clothing/suit/armor/pcarrier/medium,
+/obj/item/clothing/suit/armor/pcarrier/medium,
+/obj/item/clothing/suit/armor/pcarrier/medium,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "lt" = (
@@ -1700,7 +1688,6 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellskoutship/observatory)
 "rY" = (
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
 	dir = 1
 	},
@@ -2057,7 +2044,6 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellskoutship/observatory)
 "vV" = (
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
@@ -2075,7 +2061,6 @@
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
 	dir = 1
 	},
@@ -2173,9 +2158,6 @@
 	frequency = 1331;
 	id_tag = "xil_dock_pump_out_external"
 	},
-/obj/structure/handrai{
-	dir = 1
-	},
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/armory)
 "xj" = (
@@ -2219,9 +2201,6 @@
 	frequency = 1331;
 	id_tag = "xil_dock_pump_out_external"
 	},
-/obj/structure/handrai{
-	dir = 1
-	},
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/maintenance/power)
 "xz" = (
@@ -2261,9 +2240,6 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/obj/structure/handrai{
-	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/dock)
@@ -2468,7 +2444,6 @@
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
 "zH" = (
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
@@ -2514,12 +2489,7 @@
 /obj/machinery/atmospherics/portables_connector,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock/alt)
-"zN" = (
-/obj/machinery/porta_turret/ssv,
-/turf/simulated/floor/tiled/skrell/red,
-/area/ship/skrellscoutship/command/armory)
 "zP" = (
-/obj/machinery/porta_turret/ssv,
 /obj/machinery/light/skrell{
 	dir = 1
 	},
@@ -2593,7 +2563,6 @@
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/maintenance/power)
 "Aj" = (
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
@@ -2770,6 +2739,7 @@
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
 "BY" = (
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "Cq" = (
@@ -3446,8 +3416,6 @@
 /area/ship/skrellskoutship/observatory)
 "HH" = (
 /obj/structure/table/rack/dark,
-/obj/item/stack/material/glass/phoronrglass/fifty,
-/obj/item/stack/material/glass/phoronrglass/fifty,
 /obj/item/stack/material/glass/reinforced/fifty,
 /obj/item/stack/material/glass/reinforced/fifty,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -3455,8 +3423,6 @@
 	},
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/glass/fifty,
-/obj/item/stack/material/glass/phoronrglass/fifty,
-/obj/item/stack/material/glass/phoronrglass/fifty,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
@@ -3802,7 +3768,6 @@
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "KU" = (
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced,
 /obj/structure/window/phoronreinforced{
 	dir = 4
@@ -4118,22 +4083,6 @@
 /area/ship/skrellscoutship/maintenance/atmos)
 "Oc" = (
 /obj/structure/table/woodentable/ebony,
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
 /turf/simulated/floor/carpet/purple,
 /area/ship/skrellskoutship/observatory)
 "Om" = (
@@ -4277,7 +4226,6 @@
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/bridge)
 "Qw" = (
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
@@ -4467,7 +4415,6 @@
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/crew/hallway/d2)
 "Rz" = (
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
 	dir = 1
 	},
@@ -4651,7 +4598,6 @@
 	frequency = 1290;
 	id_tag = "xil_air_pump_out_external"
 	},
-/obj/structure/handrai,
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/brig)
 "Ss" = (
@@ -4679,7 +4625,6 @@
 /turf/simulated/floor/reinforced,
 /area/ship/skrellscoutship/maintenance/power)
 "Sy" = (
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced,
 /obj/structure/window/phoronreinforced{
 	dir = 8
@@ -5262,7 +5207,6 @@
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "Xy" = (
-/obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
@@ -5421,7 +5365,6 @@
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/fit)
 "YW" = (
-/obj/machinery/porta_turret/ssv,
 /obj/machinery/light/skrell{
 	dir = 1
 	},
@@ -5444,54 +5387,6 @@
 	id_tag = "xil_cafe";
 	name = "Mess Hall Blast Doors";
 	pixel_y = -26
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
-	},
-/obj/item/reagent_containers/food/snacks/burrito_vegan{
-	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
-	name = "Ka'li'xuq"
 	},
 /obj/structure/closet/crate/freezer,
 /turf/simulated/floor/tiled/skrell/green,
@@ -5518,6 +5413,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship/leader,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "Zs" = (
@@ -5526,6 +5422,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "Zu" = (
@@ -5533,6 +5430,7 @@
 	dir = 4;
 	pixel_x = 24
 	},
+/obj/effect/submap_landmark/spawnpoint/skrellscoutship,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "Zx" = (
@@ -10594,7 +10492,7 @@ zK
 UU
 Tb
 xU
-zN
+zm
 sb
 zm
 Fj
