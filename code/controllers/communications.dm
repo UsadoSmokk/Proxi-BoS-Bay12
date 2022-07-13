@@ -105,6 +105,7 @@ var/global/const/PUBLIC_HIGH_FREQ	= 1489
 var/global/const/RADIO_HIGH_FREQ	= 1600
 
 var/global/const/BOT_FREQ	= 1447
+var/global/const/SKRELL_FREQ = 1598 //boh
 var/global/const/COMM_FREQ = 1353
 var/global/const/ERT_FREQ	= 1345
 var/global/const/AI_FREQ	= 1343
@@ -169,7 +170,8 @@ var/global/list/radiochannels = list(
 	"AI Private"	= AI_FREQ,
 	"Entertainment" = ENT_FREQ,
 	"Medical (I)"	= MED_I_FREQ,
-	"Security (I)"	= SEC_I_FREQ
+	"Security (I)"	= SEC_I_FREQ,
+	"Recon"			= SKRELL_FREQ //boh
 )
 
 var/global/list/channel_color_presets = list(
