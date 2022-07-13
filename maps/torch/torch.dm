@@ -189,6 +189,7 @@
 
 	#include "../away/empty.dmm"
 	#include "../away/rawl/rawl.dm"
+	#include "../away/solship/solship.dm"
 	#include "../away/mining/mining.dm"
 	#include "../away/derelict/derelict.dm"
 	#include "../away/bearcat/bearcat.dm"
