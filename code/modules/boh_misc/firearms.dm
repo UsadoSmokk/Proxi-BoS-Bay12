@@ -135,6 +135,7 @@
 	wielded_item_state = "recoilless_wielded"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
 	ammo_type = /obj/item/ammo_casing/rocket/rcr
+	starts_loaded = 0
 
 /obj/item/gun/projectile/rocket/recoilless/on_update_icon()
 	..()
@@ -277,6 +278,7 @@
 	icon_state = "disposable"
 	 // As a note, you can technically reload these, but you need an admin to spawn you the ammo, which is better than having them spawn you the rocket THEN delete the old one.
 	ammo_type = /obj/item/ammo_casing/oneuse_rocket
+	starts_loaded = 1
 	ununloadable = TRUE
 	var/folded = 1
 

@@ -25,6 +25,7 @@
 	var/paint_color
 	var/base_color // The windows initial color. Used for resetting purposes.
 	var/repair_pending = 0 // Amount of health pending repair once the window is welded
+	var/health //cursed
 	rad_resistance_modifier = 0.5
 	blend_objects = list(/obj/machinery/door, /turf/simulated/wall) // Objects which to blend with
 	noblend_objects = list(/obj/machinery/door/window)
