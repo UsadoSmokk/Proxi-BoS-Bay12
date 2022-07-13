@@ -3337,7 +3337,6 @@
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\_maps.dm"
-#include "maps\random_ruins\exoplanet_ruins\armsfactory\armsfactory.dm"
 #include "maps\torch\map.dm"
 #include "maps\torch\items\rewards.dm"
 #include "maps\torch\items\ziptie.dm"
