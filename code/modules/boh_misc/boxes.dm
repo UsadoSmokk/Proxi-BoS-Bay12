@@ -222,4 +222,3 @@
 	desc = "Box o' flares. Not much else to say."
 	icon_state = "box"
 	startswith = list(/obj/item/device/flashlight/flare = 12)
-

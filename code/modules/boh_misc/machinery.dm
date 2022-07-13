@@ -2,7 +2,7 @@
 // debug apcs
 /////////
 /obj/machinery/power/apc/debug
-	cell_type = /obj/item/weapon/cell/infinite
+	cell_type = /obj/item/cell/infinite
 
 /////////
 // toc apc
@@ -49,15 +49,15 @@
 
 /obj/machinery/chemical_dispenser/tac_coffee/full
 	spawn_cartridges = list(
-			/obj/item/weapon/reagent_containers/chem_disp_cartridge/coffee_old,
-			/obj/item/weapon/reagent_containers/chem_disp_cartridge/cream
+			/obj/item/reagent_containers/chem_disp_cartridge/coffee,
+			/obj/item/reagent_containers/chem_disp_cartridge/cream
 		)
 
 /obj/machinery/chemical_dispenser/tac_coffee/full/good
 	name = "coffee maker"
 	spawn_cartridges = list(
-			/obj/item/weapon/reagent_containers/chem_disp_cartridge/coffee,
-			/obj/item/weapon/reagent_containers/chem_disp_cartridge/cream
+			/obj/item/reagent_containers/chem_disp_cartridge/coffee,
+			/obj/item/reagent_containers/chem_disp_cartridge/cream
 		)
 
 /////////

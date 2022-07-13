@@ -454,3 +454,16 @@
 	muzzle_type = /obj/effect/projectile/laser/blue/muzzle
 	tracer_type = /obj/effect/projectile/laser/blue/tracer
 	impact_type = /obj/effect/projectile/laser/blue/impact
+
+/obj/item/projectile/beam/snipervox //boh
+	name = "sniper beam"
+	icon_state = "xray"
+	fire_sound = 'sound/weapons/marauder.ogg'
+	distance_falloff = 0.50
+	damage = 50
+	armor_penetration = 50
+	stutter = 2
+
+	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
+	tracer_type = /obj/effect/projectile/laser/xray/tracer
+	impact_type = /obj/effect/projectile/laser/xray/impact
