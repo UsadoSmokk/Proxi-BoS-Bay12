@@ -159,6 +159,11 @@
 /obj/item/projectile/beam/pulse/skrell/single
 	damage = 50
 
+/obj/item/projectile/beam/pulse/skrell/single/lance //boh
+	distance_falloff = 0.50
+	damage = 60
+	armor_penetration = 40
+
 /obj/item/projectile/beam/emitter
 	name = "emitter beam"
 	icon_state = "emitter"

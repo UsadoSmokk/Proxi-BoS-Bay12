@@ -227,3 +227,11 @@
 	damage = 10
 	armor_penetration = 35
 	damage_type = DAMAGE_BRUTE
+
+/obj/item/projectile/energy/plasmarifle //boh
+	name = "plasma rifle bolt"
+	icon_state = "plasma_bolt"
+	fire_sound = 'sound/weapons/multiplas_rifle.ogg'
+	damage = 35
+	armor_penetration = 30
+	damage_flags = DAMAGE_BURN

@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/revolver
-	name = "revolver"
-	desc = "The al-Maliki & Mosley Magnum Double Action is a choice revolver for when you absolutely, positively need to put a hole in the other guy."
+	name = "MA Double-Action Revolver" //boh
+	desc = "The Martian Armoury's Double Action is a choice revolver for when you absolutely, positively need to put a hole in the other guy for a low-low price!" //boh
 	icon = 'icons/obj/guns/revolvers.dmi'
 	icon_state = "revolver"
 	item_state = "revolver"
@@ -11,6 +11,7 @@
 	fire_delay = 3  //Revolvers are naturally slower-firing
 	ammo_type = /obj/item/ammo_casing/pistol/magnum
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	fire_sound = 'sound/weapons/gunshot/revolver_medium.ogg' //boh
 	mag_insert_sound = 'sound/weapons/guns/interaction/rev_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/rev_magout.ogg'
 	accuracy = 2
@@ -46,19 +47,19 @@
 	return ..()
 
 /obj/item/gun/projectile/revolver/medium
-	name = "revolver"
+	name = "MA-Blacklist" //boh
 	icon_state = "medium"
 	safety_icon = "medium_safety"
 	caliber = CALIBER_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol
-	desc = "The Lumoco Arms' Solid is a rugged revolver for people who don't keep their guns well-maintained."
+	desc = "One of the few quality firearms from Martian Armoury, the Blacklist is a durable and robust firearm commonly associated with Space-Ranchers!" //boh
 	accuracy = 1
 	bulk = 0
 	fire_delay = 9
 
 /obj/item/gun/projectile/revolver/holdout
-	name = "holdout revolver"
-	desc = "The al-Maliki & Mosley Partner is a concealed-carry revolver made for people who do not trust automatic pistols any more than the people they're dealing with."
+	name = "Lumoco Protector" //boh
+	desc = "The Lumoco Protector is a simple, through robust revolver made for those ladies and gentlemen who wish to classily expunge someone from the census!" //boh
 	icon_state = "holdout"
 	item_state = "pen"
 	caliber = CALIBER_PISTOL_SMALL
@@ -70,8 +71,8 @@
 	fire_delay = 7
 
 /obj/item/gun/projectile/revolver/capgun
-	name = "cap gun"
-	desc = "Looks almost like the real thing! Ages 8 and up."
+	name = "Nanotrasen Capgun" //boh
+	desc = "Looks almost like the real thing! Perfect for getting the kids interested in joining the Military!" //boh
 	icon_state = "revolver-toy"
 	caliber = CALIBER_CAPS
 	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)

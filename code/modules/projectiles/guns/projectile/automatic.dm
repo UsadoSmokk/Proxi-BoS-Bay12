@@ -99,8 +99,8 @@
 		)
 
 /obj/item/gun/projectile/automatic/machine_pistol
-	name = "machine pistol"
-	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with."
+	name = "Hephaestus Vesper" //boh
+	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol. It is respected for it's ability to repaired with little more than a hammer, screwdriver and a hard table!" //boh
 	icon = 'icons/obj/guns/machine_pistol.dmi'
 	icon_state = "mpistolen"
 	safety_icon = "safety"
@@ -134,8 +134,9 @@
 		overlays += image(icon, "ammo_ok")
 
 /obj/item/gun/projectile/automatic/merc_smg
-	name = "submachine gun"
-	desc = "The NanoTrasen C-20r is a lightweight and rapid firing SMG, for when you REALLY need someone dead. Has a 'Per falcis, per pravitas' buttstamp."
+	name = "NanoTrasen C-20r" //boh
+	desc = "The NanoTrasen C-20r is a lightweight and rapid firing SMG. It has a bullpup design and fires 10mm pistol cartridges. This model features an auto-eject and premium \
+	materials used in its construction. A must have for any team of ragtag mercenaries." //boh
 	icon = 'icons/obj/guns/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
@@ -169,8 +170,14 @@
 	else
 		icon_state = "c20r"
 
+/obj/item/gun/projectile/automatic/merc_smg/hacked //boh
+	name = "Nanotrasen C-20b"
+	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
+	Additionally, it does not feature the auto-eject function of the more modern version. It appears, however, that this one has a hacked firing authorization pin."
+	auto_eject = 0
+
 /obj/item/gun/projectile/automatic/assault_rifle
-	name = "assault rifle"
+	name = "STS-35" //boh
 	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. Originally produced by Hephaestus. The serial number has been scratched off."
 	icon = 'icons/obj/guns/assault_rifle.dmi'
 	icon_state = "arifle"
@@ -208,8 +215,9 @@
 		wielded_item_state = "arifle-wielded-empty"
 
 /obj/item/gun/projectile/automatic/sec_smg
-	name = "submachine gun"
-	desc = "The WT-550 Saber is a cheap self-defense weapon, mass-produced by Ward-Takahashi for paramilitary and private use."
+	name = "MA-Sword" //boh
+	desc = "A modernised design based off of the older NanoTrasen made WT-550. This incorporates proper automatic fire, alongside better handling. \
+	Unlike the Pariah, its newer cousin, this does not have nearly the same rate of fire." //boh
 	icon = 'icons/obj/guns/sec_smg.dmi'
 	icon_state = "smg"
 	item_state = "wt550"
@@ -241,8 +249,8 @@
 		overlays += image(icon, "ammo-bad")
 
 /obj/item/gun/projectile/automatic/bullpup_rifle
-	name = "bullpup assault rifle"
-	desc = "The Hephaestus Industries Z8 Bulldog is an older model bullpup carbine. Makes you feel like a space marine when you hold it."
+	name = "Hephaestus Z9 Bulldog" //boh
+	desc = "The Hephaestus Industries Z9 Bulldog is the standard weapon of the Solarian Marines. It's durable yet ergonomic design has proved itself across hundreds of battlefields!" //boh
 	icon = 'icons/obj/guns/bullpup_rifle.dmi'
 	icon_state = "carbine"
 	item_state = "z8carbine"
@@ -319,8 +327,8 @@
 		to_chat(user, "\The [launcher] is empty.")
 
 /obj/item/gun/projectile/automatic/l6_saw
-	name = "light machine gun"
-	desc = "A rather traditionally made L6 SAW with a pleasantly lacquered wooden pistol grip. Has 'Aussec Armoury- 2281' engraved on the reciever." //probably should refluff this
+	name = "Lumoco L6 SAW" //boh
+	desc = "The L6 SAW design produced by Lumoco. This ancient design has remained relevant throughout the rigors of time!" //Refluffed it! (BOH)
 	icon = 'icons/obj/guns/saw.dmi'
 	icon_state = "l6closed50"
 	item_state = "l6closedmag"
@@ -438,3 +446,39 @@
 	else
 		icon_state = "battlerifle-empty"
 		wielded_item_state = "battlerifle-wielded-empty"
+
+/obj/item/gun/projectile/automatic/skrell //boh
+	name = "QX-2 Miniaturized Railgun"
+	desc = "Modeled after VT-3, the Qerr Xira-2 or, as refered in Sol, QX-2, is a miniaturized railgun popular with SDTF squadrons."
+	icon = 'icons/boh/obj/guns/skrell_shotgun.dmi'
+	icon_state = "skrellshotgun"  //not really a shotgun in spite of the naming
+	item_state = "skrellshotgun"
+	safety_icon = "safety"
+	item_icons = list(
+		slot_l_hand_str = 'icons/boh/mob/items/lefthand_guns.dmi',
+		slot_r_hand_str = 'icons/boh/mob/items/righthand_guns.dmi',
+		slot_back_str = 'icons/boh/mob/items/onmob_back.dmi',
+	)
+	move_delay = 2
+	one_hand_penalty = 5
+	fire_delay = 5
+	wielded_item_state = "skrellshotgun-wielded"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK|SLOT_BELT
+	load_method = MAGAZINE
+	obj_flags =  OBJ_FLAG_CONDUCTIBLE
+	caliber = CALIBER_SKRELL_SHOTGUN
+	ammo_type = /obj/item/ammo_casing/skrell_shotgun
+	magazine_type = /obj/item/ammo_magazine/skrell_shotgun
+	allowed_magazines = /obj/item/ammo_magazine/skrell_shotgun
+	bulk = GUN_BULK_RIFLE
+	handle_casings = CLEAR_CASINGS
+	firemodes = list()
+
+/obj/item/gun/projectile/automatic/skrell/on_update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "skrellshotgun-[round(ammo_magazine.stored_ammo.len,4)]"
+	else
+		icon_state = "skrellshotgun"

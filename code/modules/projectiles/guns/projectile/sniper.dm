@@ -1,6 +1,7 @@
 /obj/item/gun/projectile/heavysniper
-	name = "anti-materiel rifle"
-	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to be used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease."
+	name = "Hephaestus Diplomat" //boh
+	desc = "A portable anti-armour rifle fitted with a scope, the HI 'Diplomat' Rifle was originally designed to be used against armoured exosuits. \
+	It's name nearly caused a lawsuit with Martian-Armouries until their Board of Directors began to suffer unfortunate .50 caliber headaches!" //boh
 	icon = 'icons/obj/guns/heavysniper.dmi'
 	icon_state = "heavysniper"
 	item_state = "heavysniper" //sort of placeholder
@@ -80,8 +81,8 @@
 
 
 /obj/item/gun/projectile/heavysniper/boltaction
-	name = "bolt action rifle"
-	desc = "An old bolt action rifle from some forgotten war, still commonplace among farmers and colonists as an anti-varmint rifle."
+	name = "Ancient-Pattern Russ" //boh
+	desc = "An ancient weapon. The Russ is well respected by colonists and farmers in the outer-colonies for it's reliable action and cheap ammo!" //boh
 	icon = 'icons/obj/guns/boltaction.dmi'
 	icon_state = "boltaction"
 	item_state = "boltaction"
@@ -96,6 +97,38 @@
 	recoil_buildup = 4
 	scoped_accuracy = 0
 	wielded_item_state = "boltaction-wielded"
+
+/obj/item/gun/projectile/hornetsniper //boh
+	name = "Nanotrasen Z9R Houndmaster"
+	desc = "The Z9R Houndmaster, is Nanotrasens custom-built weapon for SDF special-forces. Features a onboard targeting suite, upscaled 12mm round and modern materials!"
+	icon = 'icons/boh/obj/guns/hornet.dmi'
+	icon_state = "hornet"
+	item_state = "hornet"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
+	caliber = CALIBER_RIFLE_MILITARY_LARGE
+	screen_shake = 0
+	handle_casings = EJECT_CASINGS
+	load_method = SINGLE_CASING
+	max_shells = 5
+	ammo_type = /obj/item/ammo_casing/rifle/military/large
+	one_hand_penalty = 6
+	accuracy = -4
+	bulk = 8
+	scoped_accuracy = 11
+	scope_zoom = 2
+	wielded_item_state = "z8carbine-wielded"
+	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
+	fire_delay = 12
+
+/obj/item/gun/projectile/hornetsniper/civ //boh
+	name = "nanotrasen Z9RC Kentucky"
+	desc = "The Z9R Houndmaster, is Nanotrasens custom-built weapon for SDF special-forces. Features a onboard targeting suite, upscaled 12mm round and modern materials! \
+	this particular model is made for the civilian market. Meaning it can only be chambered with a single round and cycled manually."
+	handle_casings = HOLD_CASINGS
+	max_shells = 1
 
 /obj/item/gun/projectile/sniper/garand
 	name = "garand rifle"

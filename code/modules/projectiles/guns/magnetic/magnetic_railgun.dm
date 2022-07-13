@@ -1,6 +1,6 @@
 /obj/item/gun/magnetic/railgun
-	name = "railgun"
-	desc = "The HelTek Arms LM-76 Thunderclap. A portable linear motor cannon produced during the Gaia Conflict for anti-armour and anti-fortification operations. Today, it sees wide use among private militaries, and is a staple on the black market."
+	name = "HellTek Thundergod" //boh
+	desc = "The HelTek Arms Thundergod is a powerful pattern of railgun originally produced for the Human-Unathi War. With a capable battery and fast coils, this weapon has ironically become a favorite amongst Unathi Stormtroops!" //boh
 	icon = 'icons/obj/guns/railgun.dmi'
 	icon_state = "railgun"
 	removable_components = TRUE // Can swap out the capacitor for more shots, or cell for longer usage before recharge
@@ -58,13 +58,14 @@
 	visible_message("<span class='warning'>\The [src] beeps and ejects its empty cartridge.</span>")
 
 /obj/item/gun/magnetic/railgun/mmi
-	desc = "The Mars Military Industries MI-72 Comet. A man-portable mass driver for squad support, anti-armour and destruction of fortifications and emplacements."
+	name = "MI-72 Comet" //boh
+	desc = "The Mars Military Industries MI-72 Comet. A man-portable mass driver for squad support, anti-armour and destruction of fortifications and emplacements." //boh
 	icon = 'icons/obj/guns/railgun_old.dmi'
 	icon_state = "old_railgun"
 
 /obj/item/gun/magnetic/railgun/tcc // Oppa! Should only be available to TCC shock troops or high-budget mercs.
-	name = "advanced railgun"
-	desc = "The HelTek Arms HR-22 Hammerhead. A man-portable helical rail cannon; favorite weapon of Terran shock troops and anti-tank personnel."
+	name = "HelTek Eviction" //boh
+	desc = "The HelTek Arms Eviction is then next evolution in man-portable helical rail cannons! This weapon's pricetag alone has led to it being considered more a legend than a actual firearm!" //boh
 	icon = 'icons/obj/guns/railgun_adv.dmi'
 	icon_state = "railgun-tcc"
 	removable_components = TRUE // Railgunners are expected to be able to completely disassemble and reassemble their weapons in the field. But we don't have that mechanic, so the cell and capacitor will do.
@@ -162,7 +163,7 @@
 
 
 /obj/item/gun/magnetic/railgun/flechette/skrell
-	name = "skrellian rifle"
+	name = "ZT-8 rifle"
 	desc = "The Zquiv*Tzuuli-8, or ZT-8, is a railgun rarely seen by anyone other than those within Skrellian SDTF ranks. The rotary magazine houses a cylinder with individual chambers, that press against the barrel when loaded."
 	icon = 'icons/obj/guns/skrell_rifle.dmi'
 	icon_state = "skrell_rifle"

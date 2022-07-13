@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/shotgun/pump
-	name = "shotgun"
-	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
+	name = "MA-Envoy" //boh
+	desc = "The mass-produced Martian Armoury Envoy is the favourite of police and security forces on many worlds for it's reliable action and generous capacity. Perfect for clearing hallways!" //boh
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
@@ -55,8 +55,8 @@
 	update_icon()
 
 /obj/item/gun/projectile/shotgun/pump/combat
-	name = "combat shotgun"
-	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
+	name = "Hephaestus KS-40" //boh
+	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders." //boh
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
 	wielded_item_state = "cshotgun-wielded"
@@ -74,8 +74,8 @@
 			overlays += I
 
 /obj/item/gun/projectile/shotgun/doublebarrel
-	name = "double-barreled shotgun"
-	desc = "A true classic."
+	name = "MA-Bitch" //boh
+	desc = "Martian Armoury's finest example of el-cheapo firearms. The 'Bitch' was originally called another name, but it's brutal recoil and near indestructability earned it the nickname!" //boh
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
@@ -136,7 +136,7 @@
 
 /obj/item/gun/projectile/shotgun/doublebarrel/sawn
 	name = "sawn-off shotgun"
-	desc = "Omar's coming!"
+	desc = "Because fuck you, fuck the guy behind you and fuck that Dog twenty yards to the right aswell!" //boh
 	icon_state = "sawnshotgun"
 	item_state = "sawnshotgun"
 	wielded_item_state = "sawnshotgun-wielded"

@@ -1,6 +1,6 @@
 /obj/item/gun/energy/gun/small/secure
-	name = "compact smartgun"
-	desc = "Combining the two LAEP90 variants, the secure and compact LAEP90-CS is the next best thing to keeping your security forces on a literal leash."
+	name = "Hephaestus Self Recharging Multipurpose Laser" //boh
+	desc = "The SRML is a part of Hephaestus 'smart' series of firearms. It's incredibly high price-tag has led to it being rarely seen outside of private security forces!" //boh
 	icon = 'icons/obj/guns/small_egun_secure.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
@@ -23,8 +23,8 @@
 	req_access = list(list(access_brig, access_bridge))
 
 /obj/item/gun/energy/gun/secure
-	name = "smartgun"
-	desc = "A more secure LAEP90, the LAEP90-S is designed to please paranoid constituents. Body cam not included."
+	name = "Hephaestus Smartgun" //boh
+	desc = "Hephaestus's 'smart' series of laser-gun. It is designed to please people after rampant claims of abuse by the Solarian Republican Guard! It has a incredibly high pricetag!" //boh
 	icon = 'icons/obj/guns/energy_gun_secure.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
@@ -38,7 +38,7 @@
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED, AUTHORIZED)
 
 /obj/item/gun/energy/revolver/secure
-	name = "smart service revolver"
+	name = "LAER680-S Smart Revolver"
 	desc = "The LAER680-S, a standard issue service revolver commonly used by higher ranking offcers among the SCG. Fitted with an NT1019 chip which allows remote authorization of the weapon's functionality."
 	icon = 'icons/obj/guns/energy_revolver.dmi'
 	icon_state = "energyrevolverstun100"
@@ -55,6 +55,26 @@
 		)
 	req_access = list(list(access_brig, access_heads))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
+
+/obj/item/gun/energy/revolver/secure/inf //boh
+	name = "LAER680-T Smart Revolver"
+	desc = "The LAER680-T, a standard issue service revolver commonly used by higher ranking offcers among the SCG. \
+	Fitted with an NT1019 chip as with the S-model, but unlike the prior model, this one has the less-lethal firing mode restricted."
+	icon = 'icons/obj/guns/energy_revolver.dmi'
+	icon_state = "energyrevolverstun100"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns_secure.dmi',
+		)
+	modifystate = "energyrevolverkill"
+	item_state = null
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="energyrevolverstun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="energyrevolvershock"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="energyrevolverkill"),
+		)
+	req_access = list(list(access_brig, access_heads))
+	authorized_modes = list(UNAUTHORIZED, UNAUTHORIZED, ALWAYS_AUTHORIZED)//Removes the ability for Command to disable the auth on lethal, identically to their other sidearms.
 
 /obj/item/gun/energy/gun/secure/mounted
 	name = "robot energy gun"
@@ -74,7 +94,13 @@
 	. = ..()
 
 /obj/item/gun/energy/laser/secure
-	name = "laser carbine"
-	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
+	name = "Hephaestus G40E-UP" //boh
+	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts." //boh
 	icon_state = "lasersec"
+
+/obj/item/gun/energy/plasmarifle/secure //boh
+	name = "Hephaestus ITER-Mars"
+	desc = "A Hephaestus Industries replica of NT ITER using terran modification to the same rifle. It has less powerful lens than the original making it less accurate and lacks self charging."
 	req_access = list(list(access_brig, access_bridge))
+	accuracy = 0
+	self_recharge = 0

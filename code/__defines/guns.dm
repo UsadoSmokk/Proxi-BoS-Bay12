@@ -9,6 +9,7 @@
 
 #define CALIBER_RIFLE			"5mmR"
 #define CALIBER_RIFLE_MILITARY  "7mmR"
+#define CALIBER_RIFLE_MILITARY_LARGE "12mm" //boh
 #define CALIBER_ANTIMATERIAL    "15mmR"
 
 #define CALIBER_SHOTGUN			"12g"
