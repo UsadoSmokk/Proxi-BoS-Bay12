@@ -1,3 +1,8 @@
+/datum/design/item/weapon //boh
+	build_type = WEAPONSFAB
+	category = "Weapons"
+	time = 300
+
 /datum/design/item/weapon/AssembleDesignName()
 	..()
 	name = "Weapon prototype ([item_name])"
@@ -225,3 +230,35 @@
 	req_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 6)
 	build_path = /obj/item/melee/sword/raiden
 	sort_string = "TBAAI"
+
+/datum/design/item/weapon/milpistol //boh
+	name = "military pistol"
+	id = "militarypistol"
+	req_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)
+	materials = list(MATERIAL_STEEL = 4000)
+	build_path = /obj/item/gun/projectile/pistol/military/alt/solar
+	sort_string = "TCDAB"
+
+/datum/design/item/weapon/beanbagshot //boh
+	name = "beanbag shotgun"
+	id = "bbshot"
+	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_PLASTIC = 6000, MATERIAL_ALUMINIUM = 4000)
+	build_path = /obj/item/gun/projectile/shotgun/pump/beanbag
+	sort_string = "TBDAB"
+
+/datum/design/item/weapon/modded_electrolaser //boh
+	name = "electrolaser carbine"
+	id = "electcarbine"
+	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_PLASTIC = 6000, MATERIAL_ALUMINIUM = 4000, MATERIAL_GLASS = 6000)
+	build_path = /obj/item/gun/energy/taser/carbine
+	sort_string = "TDDAB"
+
+/datum/design/item/weapon/smartgun //boh
+	name = "smartgun"
+	id = "smrtgun"
+	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
+	materials = list(MATERIAL_STEEL = 6000, MATERIAL_PLASTIC = 8000, MATERIAL_ALUMINIUM = 4000)
+	build_path = /obj/item/gun/energy/gun/secure
+	sort_string = "TEDAB"
