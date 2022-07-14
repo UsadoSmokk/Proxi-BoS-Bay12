@@ -7099,12 +7099,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
 "ru" = (
-/obj/effect/floor_decal/corner/brown/half{
-	dir = 1;
-	icon_state = "bordercolorhalf"
-	},
 /obj/structure/sign/poster/antar/stay_warm,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/wall/prepainted,
 /area/hallway/primary/fourthdeck/aft)
 "rv" = (
 /obj/structure/cable{
@@ -20539,10 +20535,9 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/fore)
 "WI" = (
-/obj/structure/catwalk,
 /obj/structure/sign/poster/antar/flag,
-/turf/simulated/floor/shuttle_ceiling/torch/air,
-/area/quartermaster/hangar/top)
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/missiles/storage/lower)
 "WJ" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -41575,8 +41570,8 @@ NM
 SE
 SE
 SE
-Wa
 WI
+gg
 vH
 aA
 Cm
@@ -45820,8 +45815,8 @@ iD
 QS
 YH
 pr
-Xn
 ru
+vj
 th
 WS
 Xn

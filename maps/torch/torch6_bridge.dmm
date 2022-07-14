@@ -45,7 +45,6 @@
 "ai" = (
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal,
-/obj/structure/sign/poster/antar/vo_slavu,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/solrep)
 "aj" = (
@@ -2452,7 +2451,7 @@
 /area/crew_quarters/heads/office/xo)
 "er" = (
 /obj/structure/sign/poster/antar/flag,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "es" = (
 /obj/structure/disposalpipe/segment{
@@ -16191,6 +16190,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
+"Yi" = (
+/obj/structure/sign/poster/antar/vo_slavu,
+/turf/simulated/wall/r_wall/prepainted,
+/area/crew_quarters/heads/office/solrep)
 "Yj" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -24361,8 +24364,8 @@ am
 KB
 BO
 OS
-am
 er
+cR
 CM
 sY
 qO
@@ -28198,7 +28201,7 @@ af
 af
 YI
 aE
-qc
+Yi
 ai
 aJ
 Dg

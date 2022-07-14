@@ -8047,7 +8047,6 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
-/obj/structure/sign/poster/antar/terra,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
 "axD" = (
@@ -24443,12 +24442,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "nUV" = (
-/obj/structure/bed/chair/padded/red,
-/obj/effect/floor_decal/corner/red{
-	dir = 5
-	},
 /obj/structure/sign/poster/antar,
-/turf/simulated/floor/tiled,
+/turf/simulated/wall/r_wall/prepainted,
 /area/security/wing)
 "nVe" = (
 /obj/machinery/power/apc{
@@ -24795,12 +24790,9 @@
 /turf/simulated/floor/plating,
 /area/medical/equipstorage)
 "omp" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
 /obj/structure/sign/poster/antar/corparmy,
-/turf/simulated/floor/tiled,
-/area/hallway/primary/firstdeck/center)
+/turf/simulated/wall/prepainted,
+/area/medical/triage)
 "onM" = (
 /obj/effect/floor_decal/corner/blue,
 /turf/simulated/floor/tiled/dark,
@@ -28954,6 +28946,10 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/mempark)
+"syH" = (
+/obj/structure/sign/poster/antar/terra,
+/turf/simulated/wall/prepainted,
+/area/medical/locker)
 "syI" = (
 /obj/machinery/light_switch{
 	pixel_x = -6;
@@ -42159,8 +42155,8 @@ lKb
 lWb
 qya
 mfb
-aUo
 nUV
+vJO
 auv
 jpt
 vTY
@@ -51252,8 +51248,8 @@ ikr
 kKb
 kSb
 lbb
-leb
 omp
+ycz
 ayg
 azm
 auN
@@ -55696,7 +55692,7 @@ nCb
 cbj
 aub
 uuS
-pWW
+syH
 axB
 jAM
 azT
