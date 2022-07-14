@@ -127,7 +127,9 @@ var/global/list/admin_verbs_fun = list(
 	/datum/admins/proc/ai_hologram_set,
 	/client/proc/toggle_film_grain,
 	/client/proc/cmd_admin_simulate_distant_explosion,
-	/datum/admins/proc/ai_hologram_set
+	/datum/admins/proc/ai_hologram_set,
+	/client/proc/reveal_sensor_map, //boh
+	/client/proc/hide_sensor_map	//boh
 	)
 
 var/global/list/admin_verbs_spawn = list(
@@ -282,7 +284,9 @@ var/global/list/admin_verbs_hideable = list(
 	/client/proc/roll_dices,
 	/proc/possess,
 	/proc/release,
-	/client/proc/cmd_admin_notarget
+	/client/proc/cmd_admin_notarget,
+	/client/proc/reveal_sensor_map, //boh
+	/client/proc/hide_sensor_map //boh
 	)
 var/global/list/admin_verbs_mod = list(
 	/client/proc/cmd_admin_pm_context,	// right-click adminPM interface,
