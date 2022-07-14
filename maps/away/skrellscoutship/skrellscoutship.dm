@@ -110,7 +110,7 @@
 	pda_slot = slot_l_store
 	//l_ear = /obj/item/device/radio/headset/map_preset/skrellscoutship DEPENDS ON skrellradio's new files
 	l_ear = /obj/item/device/radio/headset/skrellian
-	id = /obj/item/card/id/skrellscoutship
+	id_types = list(/obj/item/card/id/skrellscoutship)
 	l_pocket = /obj/item/clothing/accessory/badge/tags/skrell
 	r_pocket = /obj/item/clothing/accessory/skrellian/rank/sdtf/qzqx
 
