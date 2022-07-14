@@ -3364,6 +3364,7 @@
 #include "modular_mithra\code\game\objects\items\weapons\circuitboards\computer\computer.dm"
 #include "modular_mithra\code\game\objects\items\weapons\circuitboards\machinery\cloning.dm"
 #include "modular_mithra\code\modules\clothing\spacesuits\rig\suits\station.dm"
+#include "modular_mithra\code\modules\events\space_cold.dm"
 #include "modular_mithra\code\modules\mithra\traits.dm"
 #include "modular_mithra\code\modules\mob\animations.dm"
 #include "modular_mithra\code\modules\mob\inventory.dm"
