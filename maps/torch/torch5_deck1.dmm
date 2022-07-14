@@ -4656,9 +4656,7 @@
 /obj/effect/floor_decal/corner/yellow/three_quarters{
 	dir = 8
 	},
-/obj/structure/sign/double/lordflag/left{
-	step_y = 31
-	},
+/obj/structure/sign/double/lordflag/left,
 /obj/structure/bed/chair/padded/blue,
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
@@ -8049,9 +8047,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
-/obj/structure/sign/poster/antar/terra{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/terra,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
 "axD" = (
@@ -13085,8 +13081,7 @@
 "aSK" = (
 /obj/machinery/button/blast_door{
 	id_tag = "gift_shut";
-	name = "shutters control";
-	step_x = 1
+	name = "shutters control"
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/secpointhal)
@@ -19514,9 +19509,7 @@
 /obj/effect/floor_decal/corner/yellow/three_quarters{
 	dir = 1
 	},
-/obj/structure/sign/double/lordflag/right{
-	step_y = 31
-	},
+/obj/structure/sign/double/lordflag/right,
 /obj/structure/bed/chair/padded/blue,
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
@@ -22342,9 +22335,7 @@
 /area/security/bo)
 "lnb" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/obj/structure/sign/double/lordflag/left{
-	step_y = 31
-	},
+/obj/structure/sign/double/lordflag/left,
 /turf/simulated/floor/grass,
 /area/mempark)
 "lng" = (
@@ -24456,9 +24447,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
-/obj/structure/sign/poster/antar{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar,
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "nVe" = (
@@ -24809,9 +24798,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
-/obj/structure/sign/poster/antar/corparmy{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/corparmy,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
 "onM" = (
@@ -25561,9 +25548,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
 "peb" = (
-/obj/structure/sign/double/lordflag/right{
-	step_y = 31
-	},
+/obj/structure/sign/double/lordflag/right,
 /obj/structure/bed/chair/padded/blue,
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
@@ -26117,9 +26102,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
 "pLb" = (
-/obj/structure/sign/double/lordflag/right{
-	step_y = 31
-	},
+/obj/structure/sign/double/lordflag/right,
 /turf/simulated/floor/grass,
 /area/mempark)
 "pMb" = (
@@ -27393,9 +27376,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "qZb" = (
-/obj/structure/sign/poster/antar/terra{
-	step_y = 1
-	},
+/obj/structure/sign/poster/antar/terra,
 /turf/simulated/wall/prepainted,
 /area/mempark/gift)
 "rab" = (
@@ -27426,9 +27407,7 @@
 /turf/simulated/floor/tiled,
 /area/mempark/gift)
 "rcb" = (
-/obj/structure/sign/poster/antar/blini{
-	step_y = 1
-	},
+/obj/structure/sign/poster/antar/blini,
 /turf/simulated/wall/prepainted,
 /area/mempark/gift)
 "rcx" = (
@@ -30371,9 +30350,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/koi)
 "uBg" = (
-/obj/structure/sign/double/lordflag/left{
-	step_y = 31
-	},
+/obj/structure/sign/double/lordflag/left,
 /obj/structure/bed/chair/padded/blue,
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)

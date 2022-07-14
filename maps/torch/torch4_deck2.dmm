@@ -7529,9 +7529,7 @@
 	dir = 1;
 	icon_state = "bordercolorhalf"
 	},
-/obj/structure/sign/poster/antar/secure{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/secure,
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
 "qf" = (
@@ -9665,9 +9663,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/structure/sign/poster/antar/safety{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/safety,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
 "vi" = (
@@ -14398,9 +14394,7 @@
 	dir = 4
 	},
 /obj/effect/catwalk_plated,
-/obj/structure/sign/poster/antar/teamwork{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/teamwork,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck/fore)
 "GQ" = (

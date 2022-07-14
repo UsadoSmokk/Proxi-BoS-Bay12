@@ -45,9 +45,7 @@
 "ai" = (
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal,
-/obj/structure/sign/poster/antar/vo_slavu{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/vo_slavu,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/solrep)
 "aj" = (
@@ -2453,9 +2451,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
 "er" = (
-/obj/structure/sign/poster/antar/flag{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/flag,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "es" = (
@@ -3589,8 +3585,7 @@
 	},
 /obj/effect/floor_decal/corner/research,
 /obj/structure/sign/double/lordflag/left{
-	dir = 8;
-	step_x = 31
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
@@ -16211,8 +16206,7 @@
 	},
 /obj/effect/floor_decal/industrial/warning/fulltile,
 /obj/structure/sign/double/lordflag/right{
-	dir = 8;
-	step_x = 31
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
