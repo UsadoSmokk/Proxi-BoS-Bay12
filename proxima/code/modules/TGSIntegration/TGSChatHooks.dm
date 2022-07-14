@@ -2,7 +2,7 @@
 /world/TgsInitializationComplete()
 	. = ..()
 	var/name = GLOB.using_map.full_name
-	send2chat("**Внимание, <@&839057002046947329>**\nНачинается смена на **[name]**.\n*Заходите на <[get_world_url()]>*", "launch-alert")
+	send2chat("**Внимание, <@&836635409098080306>**\nНачинается смена на **[name]**.\n*Заходите на <[get_world_url()]>*", "launch-alert")
 
 // The round has been ended
 /hook/roundend/proc/SendTGSRoundEnd()
