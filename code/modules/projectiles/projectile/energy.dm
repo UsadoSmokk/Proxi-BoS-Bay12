@@ -224,8 +224,8 @@
 	name = "dark matter pellet"
 	icon_state = "dark_pellet"
 	fire_sound = 'sound/weapons/eLuger.ogg'
-	damage = 10
-	armor_penetration = 35
+	damage = 25 //was 10
+	armor_penetration = 15 //was 35
 	damage_type = DAMAGE_BRUTE
 
 /obj/item/projectile/energy/plasmarifle //boh

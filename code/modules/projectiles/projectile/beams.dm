@@ -5,7 +5,7 @@
 	fire_sound='sound/weapons/Laser.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
-	damage = 40
+	damage = 50 //was 40
 	damage_type = DAMAGE_BURN
 	sharp = TRUE
 	damage_flags = DAMAGE_FLAG_LASER
@@ -41,7 +41,7 @@
 
 /obj/item/projectile/beam/midlaser
 	damage = 40
-	armor_penetration = 10
+	armor_penetration = 20 //was 10
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(4, 0.96),
@@ -148,16 +148,16 @@
 
 /obj/item/projectile/beam/pulse/skrell
 	icon_state = "pu_laser"
-	damage = 20
+	damage = 30 //was 20
 	muzzle_type = /obj/effect/projectile/laser/pulse/skrell/muzzle
 	tracer_type = /obj/effect/projectile/laser/pulse/skrell/tracer
 	impact_type = /obj/effect/projectile/laser/pulse/skrell/impact
 
 /obj/item/projectile/beam/pulse/skrell/heavy
-	damage = 30
+	damage = 40 //was 30
 
 /obj/item/projectile/beam/pulse/skrell/single
-	damage = 50
+	damage = 60 //was 50
 
 /obj/item/projectile/beam/pulse/skrell/single/lance //boh
 	distance_falloff = 0.50
@@ -231,7 +231,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
 	damage = 50
-	armor_penetration = 10
+	armor_penetration = 50 //was 10
 	damage_falloff_list = list(
 		list(8, 0.97),
 		list(12, 0.94),
@@ -251,7 +251,7 @@
 	damage = 1//flavor burn! still not a laser, dmg will be reduce by energy resistance not laser resistances
 	damage_type = DAMAGE_BURN
 	eyeblur = 1//Some feedback that you've been hit
-	agony = 40
+	agony = 20 //was 40
 	distance_falloff = 1.5
 	damage_falloff_list = list(
 		list(3, 0.95),
@@ -273,8 +273,8 @@
 
 /obj/item/projectile/beam/stun/heavy
 	name = "heavy stun beam"
-	damage = 2
-	agony = 60
+	damage = 10 //was 2
+	agony = 40 //was 60
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(5, 0.97),
@@ -284,7 +284,7 @@
 
 /obj/item/projectile/beam/stun/shock
 	name = "shock beam"
-	agony = 0
+	agony = 20 //was 0
 	damage = 15
 	damage_type = DAMAGE_SHOCK
 	fire_sound='sound/weapons/pulse.ogg'
@@ -305,7 +305,7 @@
 
 /obj/item/projectile/beam/stun/shock/heavy
 	name = "heavy shock beam"
-	damage = 30
+	damage = 40 //was 30
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(5, 0.97),
@@ -317,7 +317,7 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 20
+	damage = 35 //was 20
 	armor_penetration = 30
 	edge = TRUE
 	damage_type = DAMAGE_BURN
@@ -391,7 +391,7 @@
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"
 	icon_state = "darkb"
-	damage = 40
+	damage = 35 //was 40
 	armor_penetration = 35
 	damage_type = DAMAGE_BRUTE
 	muzzle_type = /obj/effect/projectile/darkmatter/muzzle
@@ -403,7 +403,7 @@
 	icon_state = "darkt"
 	damage_flags = 0
 	sharp = FALSE
-	agony = 40
+	agony = 25 //was 40
 	damage_type = DAMAGE_STUN
 	muzzle_type = /obj/effect/projectile/stun/darkmatter/muzzle
 	tracer_type = /obj/effect/projectile/stun/darkmatter/tracer

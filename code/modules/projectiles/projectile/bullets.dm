@@ -153,12 +153,13 @@
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
 	damage_flags = 0
-	damage = 5
-	agony = 30
+	damage = 10 //was 5
+	agony = 40 //was 30
 	embed = FALSE
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
-	agony = 30
+	agony = 25
+	armor_penetration = 5
 
 //4mm. Tiny, very low damage, does not embed, but has very high penetration. Only to be used for the experimental SMG.
 /obj/item/projectile/bullet/flechette
@@ -193,7 +194,7 @@
 	icon_state = "pellet"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 30
-	pellets = 6
+	pellets = 8 //was 6
 	range_step = 1
 	spread_step = 50
 
