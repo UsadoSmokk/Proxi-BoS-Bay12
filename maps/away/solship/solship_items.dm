@@ -40,7 +40,7 @@
  * ========
  */
 
-/obj/item/clothing/under/solgov/utility/fleet/officer/command/captain
+/obj/item/clothing/under/solgov/utility/fleet/command/captain
 	accessories = list(/obj/item/clothing/accessory/solgov/department/command/fleet, /obj/item/clothing/accessory/solgov/specialty/pilot, /obj/item/clothing/accessory/solgov/rank/fleet/officer/o4, /obj/item/clothing/accessory/solgov/fleet_patch/fifth)
 
 /obj/item/clothing/under/solgov/utility/fleet/engineering/away_solship
@@ -55,3 +55,28 @@
 /* MISC
  * ========
  */
+/obj/item/paper/solinf
+	name = "note"
+	info = {"
+ <center><solcrest>
+<b>Центральное командование Пограничного Фронта ЛК-31 ЦПСС</b></center>
+<hr>
+Ваше судно уже два месяца не приносит никаких результатов, поэтому с сожалением сообщаем, что платы в консолях Texas-Red были реквизированы для более приоритетных объектов.
+Мы живём в трудное время, надеемся на понимание.
+Челнок всё ещё способен подлетать к объектам, так что приятных полётов!
+<hr>
+<i>This paper has been stamped with the stamp of SCG LC-31 Central Command.</i>
+"}
+
+ /obj/item/rig/military/sol
+ 	name = "SCG hardsuit control module"
+	desc = "A sleek and dangerous hardsuit for active combat."
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_RIFLES,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_RESISTANT,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_MINOR
+		)

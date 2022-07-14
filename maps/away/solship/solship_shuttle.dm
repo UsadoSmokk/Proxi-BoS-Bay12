@@ -1,6 +1,6 @@
 /obj/effect/overmap/visitable/ship/landable/exploration_shuttle/texas
 	name = "Texas Red"
-	desc = "todo."
+	desc = "Small shuttle with SCG markings."
 	shuttle = "Texas-Red"
 
 /datum/shuttle/autodock/overmap/exploration_shuttle/texas

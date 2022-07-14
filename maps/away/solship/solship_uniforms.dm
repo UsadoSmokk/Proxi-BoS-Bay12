@@ -22,7 +22,7 @@
 
 /decl/hierarchy/outfit/job/solship/crew/fleet/captain
 	name = OUTFIT_JOB_NAME("Solship Cap Fleet Outfit")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/officer/command/captain
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/command/captain
 	id_types= list(/obj/item/card/id/solship/captain)
 
 /decl/hierarchy/mil_uniform/scgfleet
