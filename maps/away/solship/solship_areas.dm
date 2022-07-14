@@ -101,6 +101,10 @@
 	name = "\improper Texas Cockpit"
 	icon_state = "texas"
 
+/area/exploration_shuttle/texas/cockpit
+	name = "\improper Texas Cockpit"
+	icon_state = "texas"
+
 /area/exploration_shuttle/texas/pass
 	name = "\improper Texas Passengers"
 

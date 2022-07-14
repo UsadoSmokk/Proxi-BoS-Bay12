@@ -31,7 +31,7 @@
 /datum/job/submap/solship
 	title = "Gunship Trooper"
 	total_positions = 2
-	outfit_type = /decl/hierarchy/outfit/job/solship/crew/fleet
+	outfit_type = /decl/hierarchy/outfit/job/solship/crew/fleet/troop
 	supervisors = "leader"
 	loadout_allowed = TRUE
 	is_semi_antagonist = TRUE
