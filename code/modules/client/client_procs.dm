@@ -379,7 +379,8 @@
 		'html/images/fleetlogo.png',
 		'html/images/armylogo.png',
 		'html/images/torchlogo.png',
-		'html/images/sfplogo.png'
+		'html/images/sfplogo.png',
+		'html/images/sovlogo.png'
 		)
 	addtimer(CALLBACK(src, .proc/after_send_resources), 1 SECOND)
 
