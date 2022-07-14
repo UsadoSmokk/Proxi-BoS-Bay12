@@ -8167,9 +8167,7 @@
 "qV" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/sign/poster/antar/tonicgin{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/tonicgin,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
 "qW" = (
@@ -8893,9 +8891,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/structure/sign/poster/antar/blini{
-	step_x = 31
-	},
+/obj/structure/sign/poster/antar/blini,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
 "sr" = (
@@ -12452,9 +12448,7 @@
 /obj/effect/floor_decal/corner/green{
 	dir = 5
 	},
-/obj/structure/sign/poster/antar/atlas{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/atlas,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "AU" = (
@@ -17105,9 +17099,7 @@
 /area/thruster/d3port)
 "Lb" = (
 /obj/item/stool/bar/padded,
-/obj/structure/sign/poster/antar/terra{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/terra,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/mess)
 "Lc" = (
@@ -19239,9 +19231,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/structure/sign/poster/antar/paradise{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/paradise,
 /turf/simulated/floor/plating,
 /area/crew_quarters_boh/cabin_main)
 "Qd" = (

@@ -7103,9 +7103,7 @@
 	dir = 1;
 	icon_state = "bordercolorhalf"
 	},
-/obj/structure/sign/poster/antar/stay_warm{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/stay_warm,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
 "rv" = (
@@ -20542,9 +20540,7 @@
 /area/hallway/primary/fourthdeck/fore)
 "WI" = (
 /obj/structure/catwalk,
-/obj/structure/sign/poster/antar/flag{
-	step_y = 31
-	},
+/obj/structure/sign/poster/antar/flag,
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/top)
 "WJ" = (
