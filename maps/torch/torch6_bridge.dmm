@@ -1343,13 +1343,11 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "cz" = (
-/obj/structure/table/glass,
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/structure/noticeboard{
 	pixel_y = 30
 	},
-/obj/item/storage/toolbox/emergency,
-/obj/item/device/flashlight,
+/obj/machinery/vending/medals,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "cA" = (

@@ -419,31 +419,30 @@
 /*
  *	Manual -- A big ol' manual.
  */
-/*
-/obj/item/weapon/paper/Cloning
-	name = "H-87 Cloning Apparatus Manual"
-	info = {"<h4>Getting Started</h4>
-	Congratulations, your station has purchased the H-87 industrial cloning device!<br>
-	Using the H-87 is almost as simple as brain surgery! Simply insert the target humanoid into the scanning chamber and select the scan option to create a new profile!<br>
-	<b>That's all there is to it!</b><br>
-	<i>Notice, cloning system cannot scan inorganic life or small primates.  Scan may fail if subject has suffered extreme brain damage.</i><br>
-	<p>Clone profiles may be viewed through the profiles menu. Scanning implants a complementary HEALTH MONITOR IMPLANT into the subject, which may be viewed from each profile.
-	Profile Deletion has been restricted to \[Station Head\] level access.</p>
-	<h4>Cloning from a profile</h4>
-	Cloning is as simple as pressing the CLONE option at the bottom of the desired profile.<br>
-	Per your company's EMPLOYEE PRIVACY RIGHTS agreement, the H-87 has been blocked from cloning crewmembers while they are still alive.<br>
-	<br>
-	<p>The provided CLONEPOD SYSTEM will produce the desired clone.  Standard clone maturation times (With SPEEDCLONE technology) are roughly 90 seconds.
-	The cloning pod may be unlocked early with any \[Medical Researcher\] ID after initial maturation is complete.</p><br>
-	<i>Please note that resulting clones may have a small DEVELOPMENTAL DEFECT as a result of genetic drift.</i><br>
-	<h4>Profile Management</h4>
-	<p>The H-87 (as well as your station's standard genetics machine) can accept STANDARD DATA DISKETTES.
-	These diskettes are used to transfer genetic information between machines and profiles.
-	A load/save dialog will become available in each profile if a disk is inserted.</p><br>
-	<i>A good diskette is a great way to counter aforementioned genetic drift!</i><br>
-	<br>
-	<font size=1>This technology produced under license from Thinktronic Systems, LTD.</font>"}
-*/
+/obj/item/paper/Cloning
+	name = "H-87 Техническое руководство по клонированию"
+	info = {"<h4>Введение</h4>
+    Поздравляем, ваше судно купило промышленное устройство клонирования!<br>
+    Использовать H-87 так же просто как и проводить операцию на мозге! Просто вставьте гуманоида в сканер и нажмите на опцию "Создать новый профиль".<br>
+    <b>Вот и всё!</b><br>
+    <i>Заметьте, система не может просканировать не-органиков или малых приматов. Сканирование так же может провалиться в виду сильного повреждения мозга у субъекта.</i><br>
+    <p>Профили клонирования могут быть просмотрены в меню профилей. Сканирование так же имплантирует дополнительный имплант монитора здоровья, который может быть просмотрен для каждого субъекта.
+    Удаление профилей ограничено доступом \[Командного состава\].</p>
+    <h4>Клонирование из профиля</h4>
+Клонирование проходит так же просто, как и нажатие функции "Клонировать" в нижней части каждого файла-профиля.<br>
+    В соответствии с соглашением о правах на частную жизнь, клонирование всё ещё живого экипажа заблокировано в H-87.<br>
+    <br>
+    <p>Предоставленный саркофаг клонирования создаст желаемого клона.  Стандартное время созревания клона(с использованием функции "быстрого клонирования") составляет примерно 90 секунд.
+    Саркофаг клонирования может быть разблокирован доступом \[Медицинского состава\] после завершения первоначального созревания.</p><br>
+    <i>Обратите внимание, что полученные клоны могут иметь небольшие дефекты физического развития в виду генетического дрейфа.</i><br>
+    <h4>Управление профилями</h4>
+    <p> H-87 (так же как и стандартное генетическоие оборудование на вашем судне) может принимать стандартные дискеты с данными.
+    Данные дискеты используются для переноса генетической информации между машинами.
+    Функция "сохранение/загрузка" станет доступна, если будет вставлен диск.</p><br>
+    <i>Хорошая дискета - отличный способ противостоять вышеупомянотому генетическому дрейфу!</i><br>
+    <br>
+    <font size=1>Технология произведена под лицензией корпорации Thinktronic Systems, LTD.</font>"}
+
 //SOME SCRAPS I GUESS
 /* EMP grenade/spell effect
 		if(istype(A, /obj/machinery/clonepod))
