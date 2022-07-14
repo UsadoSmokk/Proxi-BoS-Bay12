@@ -16,7 +16,7 @@
 				return
 			container = I
 		return
-	if(istype(I,/obj/item/weapon/virusdish))
+	if(istype(I,/obj/item/virusdish))
 		if(virusing)
 			to_chat(user, "<b>The pathogen materializer is still recharging..</b>")
 			return

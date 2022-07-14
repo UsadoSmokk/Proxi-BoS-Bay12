@@ -22346,9 +22346,9 @@
 /obj/structure/closet/crate/freezer,
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/weapon/virusdish/random,
-/obj/item/weapon/virusdish/random,
-/obj/item/weapon/virusdish/random,
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/virology)
 "lob" = (

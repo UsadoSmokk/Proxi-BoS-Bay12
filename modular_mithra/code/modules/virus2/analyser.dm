@@ -8,10 +8,10 @@
 	var/scanning = 0
 	var/pause = 0
 
-	var/obj/item/weapon/virusdish/dish = null
+	var/obj/item/virusdish/dish = null
 
 /obj/machinery/disease2/diseaseanalyser/attackby(var/obj/O as obj, var/mob/user as mob)
-	if(!istype(O,/obj/item/weapon/virusdish)) return
+	if(!istype(O,/obj/item/virusdish)) return
 
 	if(dish)
 		to_chat(user, "\The [src] is already loaded.")

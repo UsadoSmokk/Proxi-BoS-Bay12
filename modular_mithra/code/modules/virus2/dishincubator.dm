@@ -4,7 +4,7 @@
 	anchored = 1
 	icon = 'icons/obj/virology.dmi'
 	icon_state = "incubator"
-	var/obj/item/weapon/virusdish/dish
+	var/obj/item/virusdish/dish
 	var/obj/item/reagent_containers/glass/beaker = null
 	var/radiation = 0
 
@@ -30,7 +30,7 @@
 		src.attack_hand(user)
 		return
 
-	if(istype(O, /obj/item/weapon/virusdish))
+	if(istype(O, /obj/item/virusdish))
 
 		if(dish)
 			to_chat(user, "The dish tray is already full!")

@@ -111,7 +111,7 @@
 			infect_nearby(virus2)
 		if (isolating == 0)
 			if (virus2)
-				var/obj/item/weapon/virusdish/d = new /obj/item/weapon/virusdish(src.loc)
+				var/obj/item/virusdish/d = new /obj/item/virusdish(src.loc)
 				d.virus2 = virus2.getcopy()
 				virus2 = null
 				ping("\The [src] pings, \"Viral strain isolated.\"")

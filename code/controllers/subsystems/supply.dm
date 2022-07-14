@@ -120,9 +120,9 @@ SUBSYSTEM_DEF(supply)
 						add_points_from_source(round(D.Value() * 0.005), "gep")
 //vesta port start
 					// Sell virus dishes.
-					if(istype(A, /obj/item/weapon/virusdish))
+					if(istype(A, /obj/item/virusdish))
 						//Obviously the dish must be unique and never sold before.
-						var/obj/item/weapon/virusdish/dish = A
+						var/obj/item/virusdish/dish = A
 						if(dish.analysed && istype(dish.virus2) && dish.virus2.uniqueID)
 							if(!(dish.virus2.uniqueID in sold_virus_strains))
 								add_points_from_source(5, "virology_dishes")
