@@ -160,7 +160,7 @@
 	shoes = /obj/item/clothing/shoes/magboots/vox
 	l_ear = /obj/item/device/radio/headset
 	belt = /obj/item/storage/belt/utility/full
-	id = /obj/item/card/id/voxship
+	id_types = list(/obj/item/card/id/voxship)
 	l_pocket = /obj/item/crowbar/prybar
 	r_hand = /obj/item/tank/nitrogen_emergency_double
 	l_hand = /obj/item/voxbox
@@ -172,7 +172,7 @@
 	shoes = /obj/item/clothing/shoes/magboots/vox
 	l_ear = /obj/item/device/radio/headset
 	belt = /obj/item/storage/belt/utility/full
-	id = /obj/item/card/id/voxship_captain
+	id_types = list(/obj/item/card/id/voxship_captain)
 	l_pocket = /obj/item/crowbar/prybar
 	r_hand = /obj/item/device/radio
 	l_hand = /obj/item/voxbox

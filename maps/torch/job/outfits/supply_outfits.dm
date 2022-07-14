@@ -11,7 +11,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_deckofficer
 	uniform = /obj/item/clothing/under/rank/cargo
 	shoes = /obj/item/clothing/shoes/brown
-	id = /obj/item/card/id/torch/crew/supply/deckofficer
+	id_types= list(/obj/item/card/id/torch/crew/supply/deckofficer)
 	pda_type = /obj/item/modular_computer/pda/cargo
 
 /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/fleet
@@ -23,7 +23,7 @@
 	name = OUTFIT_JOB_NAME("Deck Technician")
 	uniform = /obj/item/clothing/under/rank/cargotech
 	shoes = /obj/item/clothing/shoes/brown
-	id = /obj/item/card/id/torch/crew/supply
+	id_types= list(/obj/item/card/id/torch/crew/supply)
 	pda_type = /obj/item/modular_computer/pda/cargo
 
 /decl/hierarchy/outfit/job/torch/crew/supply/tech/fleet
@@ -35,14 +35,14 @@
 	name = OUTFIT_JOB_NAME("Supply Assistant")
 	uniform = /obj/item/clothing/under/rank/cargotech
 	shoes = /obj/item/clothing/shoes/brown
-	id = /obj/item/card/id/torch/contractor/supply
+	id_types= list(/obj/item/card/id/torch/contractor/supply)
 	pda_type = /obj/item/modular_computer/pda/cargo
 
 /decl/hierarchy/outfit/job/torch/passenger/research/prospector
 	name = OUTFIT_JOB_NAME("Field Support")
 	uniform = /obj/item/clothing/under/solgov/utility
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id = /obj/item/card/id/torch/passenger/research/mining
+	id_types= list(/obj/item/card/id/torch/passenger/research/mining)
 	pda_type = /obj/item/modular_computer/pda/mining
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 	l_ear = /obj/item/device/radio/headset/headset_mining

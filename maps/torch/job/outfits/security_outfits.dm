@@ -12,7 +12,7 @@
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/combat/security
 	suit = /obj/item/clothing/suit/armor/pcarrier/medium
 	shoes = /obj/item/clothing/shoes/lordan
-	id = /obj/item/card/id/torch/crew/security/brigchief
+	id_types= list(/obj/item/card/id/torch/crew/security/brigchief)
 	pda_type = /obj/item/modular_computer/pda/security
 
 /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
@@ -20,7 +20,7 @@
 	uniform = /obj/item/clothing/under/solgov/utility
 	suit = /obj/item/clothing/suit/storage/det_trench/grey
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id = /obj/item/card/id/torch/crew/security/forensic
+	id_types= list(/obj/item/card/id/torch/crew/security/forensic)
 	pda_type = /obj/item/modular_computer/pda/forensics
 
 /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor
@@ -36,7 +36,7 @@
 	uniform = /obj/item/clothing/under/solgov/utility
 	suit = /obj/item/clothing/suit/armor/pcarrier/medium
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id = /obj/item/card/id/torch/crew/security
+	id_types= list(/obj/item/card/id/torch/crew/security)
 	pda_type = /obj/item/modular_computer/pda/security
 
 /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet

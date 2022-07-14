@@ -11,7 +11,7 @@
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/lordan/service
 	head = /obj/item/clothing/head/lordan/fleet
-	id = /obj/item/card/id/torch/gold
+	id_types = list(/obj/item/card/id/torch/gold)
 	pda_type = /obj/item/modular_computer/pda/captain
 
 /decl/hierarchy/outfit/job/torch/crew/command/CO/New()
@@ -27,7 +27,7 @@
 	head = /obj/item/clothing/head/lordan/fleet
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/lordan/service
-	id = /obj/item/card/id/torch/silver
+	id_types= list(/obj/item/card/id/torch/silver)
 	pda_type = /obj/item/modular_computer/pda/heads/hop
 
 /decl/hierarchy/outfit/job/torch/crew/command/cmo
@@ -37,7 +37,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/blue
 	head = /obj/item/clothing/head/beret/lordan/fleet
 	shoes = /obj/item/clothing/shoes/lordan
-	id = /obj/item/card/id/torch/silver/medical
+	id_types= list(/obj/item/card/id/torch/silver/medical)
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
 	pda_slot = slot_l_store
 
@@ -51,7 +51,7 @@
 	shoes = /obj/item/clothing/shoes/lordan
 	head = /obj/item/clothing/head/beret/lordan/fleet
 	l_ear = /obj/item/device/radio/headset/heads/ce
-	id = /obj/item/card/id/torch/silver/engineering
+	id_types= list(/obj/item/card/id/torch/silver/engineering)
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	pda_slot = slot_l_store
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -67,7 +67,7 @@
 	suit = /obj/item/clothing/suit/armor/pcarrier/medium
 	head = /obj/item/clothing/head/beret/lordan/fleet
 	shoes = /obj/item/clothing/shoes/lordan
-	id = /obj/item/card/id/torch/silver/security
+	id_types= list(/obj/item/card/id/torch/silver/security)
 	pda_type = /obj/item/modular_computer/pda/heads/hos
 
 /decl/hierarchy/outfit/job/torch/crew/command/cos/New()
@@ -79,7 +79,7 @@
 	uniform = /obj/item/clothing/under/suit_jacket/really_black
 	l_ear = /obj/item/device/radio/headset/heads/torchntdirector
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec/lordan
-	id = /obj/item/card/id/torch/silver/research
+	id_types= list(/obj/item/card/id/torch/silver/research)
 	pda_type = /obj/item/modular_computer/pda/heads/rd
 
 /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
@@ -89,7 +89,7 @@
 	head = /obj/item/clothing/head/lordan/fleet/po
 	shoes = /obj/item/clothing/shoes/lordan/service
 	l_ear = /obj/item/device/radio/headset/sea
-	id = /obj/item/card/id/torch/crew/sea
+	id_types= list(/obj/item/card/id/torch/crew/sea)
 	pda_type = /obj/item/modular_computer/pda/heads
 
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
@@ -98,7 +98,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 	head = /obj/item/clothing/head/beret/lordan/fleet
 	shoes = /obj/item/clothing/shoes/lordan/service
-	id = /obj/item/card/id/torch/crew/bridgeofficer
+	id_types= list(/obj/item/card/id/torch/crew/bridgeofficer)
 	pda_type = /obj/item/modular_computer/pda/heads
 	l_ear = /obj/item/device/radio/headset/bridgeofficer
 
@@ -108,7 +108,7 @@
 	suit = /obj/item/clothing/suit/storage/terran/service/navy/command
 	shoes = /obj/item/clothing/shoes/terran
 	head = /obj/item/clothing/head/terran/navy/service/command
-	id = /obj/item/card/id/torch/crew/representative
+	id_types= list(/obj/item/card/id/torch/crew/representative)
 	pda_type = /obj/item/modular_computer/pda/heads
 	l_ear = /obj/item/device/radio/headset/terran
 
@@ -117,5 +117,5 @@
 	uniform = /obj/item/clothing/under/terran/navy/utility
 	shoes = /obj/item/clothing/shoes/terran
 	head = /obj/item/clothing/head/terran/navy/utility
-	id = /obj/item/card/id/torch/crew/terguard
+	id_types= list(/obj/item/card/id/torch/crew/terguard)
 	l_ear = /obj/item/device/radio/headset/terran

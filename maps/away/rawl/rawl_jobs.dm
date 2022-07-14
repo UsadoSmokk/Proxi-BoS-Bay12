@@ -166,7 +166,7 @@
 	r_pocket = /obj/item/crowbar/prybar
 	shoes = /obj/item/clothing/shoes/jackboots/unathi
 	hierarchy_type = /decl/hierarchy/outfit/job/rawl
-	id = /obj/item/card/id/rawl
+	id_types = list(/obj/item/card/id/rawl)
 	pda_type = null
 	pda_slot = null
 
