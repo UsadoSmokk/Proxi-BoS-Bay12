@@ -30,8 +30,11 @@
 
 //SOVEREIGN LORDANIA (BOS)
 #define FACTION_SOVLORDANIA		"Lordanian Sovereign Systems"
-#define FACTION_LARFLEET		"LSS Fleet"
-#define FACTION_LARMARINES		"Lordanian Marine Corps"
+#define FACTION_LARFLEET		"Fleet"
+#define FACTION_LARMARINES		"Marine Corps"
+
+#define FACTION_LRA				"Republic Army"
+#define FACTION_SYNDI			"Syndicate"
 
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"

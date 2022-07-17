@@ -1,16 +1,9 @@
 /decl/cultural_info/faction/scg
 	name = FACTION_SOL_CENTRAL
-	description = "The Sol Central Government, commonly referred to as SolGov or the SCG, is a federal republic \
-	composed of numerous human member states spanning many systems.\
-	Based in the Sol System and with most seats of Government on Olympus, Mars,\
-	the SCG governs the majority of human space. Currently engaged in a cold war with the Confederation of Gilgamesh \
-	Its primary governing bodies are the Assemblies which are led by an Assembly-elected secretary general. \
-	Member states have a great degree of freedom in their actions, though the SCG manages sapient rights, \
-	domestic security, economic policy, and diplomacy for humanity as a whole. The SCG's population is diverse \
-	including many non-humans (though they are not citizens) and encompassing a wide range of systems, territories \
-	habitats, and celestial bodies. However, it is large, cumbersome, divided and slow to respond to issues due to \
-	its massive bureaucracy and the distance between worlds. Through its member states, the SCG governs as one of the \
-	most advanced and powerful civilisations in the known galaxy."
+	description = "Огромная межзвёздная федерация человеческих государств с центром на Марсе. \
+	Неумелое руководство последних лет сильно потрепало ЦПСС - спорные экономические и политические реформы привели к Корпоративным Войнам, подъему национализма и сепаратизма на пограничных мирах. \
+	Теперь ЦПСС сталкивается с последствиями своих решений. И пусть никто точно не знает, что случится с ЦПСС в ближайшее время, все сходятся на мнении, что время это будет темным. \
+	<font color=\"#ff0000\">Только для антагонистов.</font>" //bos
 
 
 /decl/cultural_info/faction/scg/fleet
@@ -23,7 +16,8 @@
 	Any SCG human citizen with at least a secondary school level of education can enlist into the Fleet, going through \
 	basic training and on-ship training for their rating (speciality). Commissioned officer candidates require at least a \
 	Bachelor degree and go through a lengthy training process before being assigned to a warship. \
-	Recently Sol-made IPCs were also permitted to enlist, provided they agree to install a law shackle."
+	Recently Sol-made IPCs were also permitted to enlist, provided they agree to install a law shackle. \
+	<font color=\"#ff0000\">Только для антагонистов.</font>" //bos
 
 /decl/cultural_info/faction/scg/army
 	name = FACTION_ARMY
@@ -47,14 +41,9 @@
 
 /decl/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
-	description = "The Independent Colonial Confederation of Gilgamesh, commonly referred to as the Gilgamesh Colonial Confederation (GCC), is a regional power in human space,\
-	bordered by the Sol Central Government towards the galactic centre. The capital of the Confederation is the city of Ameranth on the planet of Terra \
-	in the Gilgamesh system. Externally heavily militant and isolationist, the GCC, internally, is heavily libertarian, with \
-	a strong focus on independent planetary government with the GCC itself only handling defence, foreign relations and some intergalactic trade. \
-	Increasingly anti non-human, the GCC is in a cold war with the Sol Central Government following  the Gaia Conflict, a large \
-	scale conflict between the SCG and GCC that saw a great deal of death and destruction. In Sol space \"Indies\" as they are known are \
-	heavily mistrusted and in some instances, met with downright hostility. Today the GCC continues to be an economic powerhouse following \
-	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments."
+	description = "Гильгамешские Конфедеративные Системы является вторым государством по силе в человеческом регионе космоса и граничит со своим главным соперником – ЦПСС. \
+	Почти тридцать лет назад ГКК и ЦПСС вели масштабную войну, известную как Гайский Конфликт. И не смотря на то, что в начале войны у ГКК была позиция победителя, все сложилось совсем не так. \
+	Теперь, когда ЦПСС ослабело, Конфедерация видит отличный момент для того, чтобы показать кузькину мать." //bos
 	economic_power = 0.9
 
 
