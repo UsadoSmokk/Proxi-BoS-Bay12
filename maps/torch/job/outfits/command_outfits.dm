@@ -85,7 +85,7 @@
 /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	name = OUTFIT_JOB_NAME("Political Officer")
 	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
-	suit = /obj/item/clothing/suit/storage/lordan/service/po
+	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
 	head = /obj/item/clothing/head/lordan/fleet/po
 	shoes = /obj/item/clothing/shoes/lordan/service
 	l_ear = /obj/item/device/radio/headset/sea
