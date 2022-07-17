@@ -76,7 +76,7 @@ SUBSYSTEM_DEF(aspect)
 	return prob(chance)
 
 /datum/round_aspect/proc/get_desc_msg()
-	return SPAN_INFO("Абсолюнто обычная, ничем не примечательная смена. Удачного вечера, господа.")
+	return SPAN_INFO("Абсолютно обычная, ничем не примечательная смена. Удачного вечера, господа.")
 
 /datum/round_aspect/proc/announce_aspect()
 	if(make_announce)

@@ -13,7 +13,7 @@
 	allfood += /obj/item/storage/fancy/egg_box
 
 /datum/round_aspect/golodomor/get_desc_msg()
-	return SPAN_WARNING("Большая часть еды на карте была удалена. Удачи.")
+	return SPAN_WARNING("Большая часть еды на корабле пропала. Удачи.")
 
 /datum/round_aspect/golodomor/do_preload_thing()
 	. = ..()
