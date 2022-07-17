@@ -12149,6 +12149,7 @@
 /area/command/armoury)
 "aQr" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/barrier,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
 "aQs" = (
@@ -12438,6 +12439,7 @@
 	c_tag = "Bridge - Emergency Armory - Port";
 	dir = 1
 	},
+/obj/machinery/barrier,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
 "aRo" = (
@@ -15152,7 +15154,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/security/secpointhal)
+/area/mempark)
 "bPR" = (
 /turf/simulated/floor/tiled/white,
 /area/medical/virology)
@@ -21173,6 +21175,23 @@
 /obj/structure/bed/chair/pew,
 /turf/simulated/floor/grass,
 /area/mempark)
+"jZy" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/table/rack{
+	dir = 4
+	},
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/command/armoury)
 "kab" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 8
@@ -24113,20 +24132,8 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery2)
 "nDB" = (
-/obj/effect/catwalk_plated,
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/security/wing)
+/turf/simulated/wall/r_wall/prepainted,
+/area/mempark)
 "nEb" = (
 /obj/machinery/firealarm{
 	dir = 1;
@@ -41438,7 +41445,7 @@ tWo
 fVC
 brj
 vzp
-nDB
+fVC
 aCx
 aDD
 aEH
@@ -53360,7 +53367,7 @@ ljb
 hVb
 imb
 lyb
-ijb
+nDB
 bOZ
 lAb
 mav
@@ -60424,7 +60431,7 @@ aBc
 xqk
 rFK
 aMB
-aNE
+jZy
 vlw
 aMB
 aNE

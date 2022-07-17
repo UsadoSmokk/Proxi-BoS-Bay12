@@ -4207,7 +4207,7 @@
 /area/crew_quarters/heads/office/ce)
 "ik" = (
 /obj/machinery/photocopier/faxmachine{
-	department = "SolGov Representative"
+	department = "ICCG Representative"
 	},
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/structure/noticeboard{
@@ -11607,7 +11607,7 @@
 /area/bridge)
 "FG" = (
 /obj/machinery/photocopier/faxmachine{
-	department = "XO"
+	department = "FO"
 	},
 /obj/structure/noticeboard{
 	pixel_y = 30
@@ -12519,7 +12519,7 @@
 	name = "plastic table frame"
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "SEA"
+	department = "Political Officer"
 	},
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/machinery/requests_console{
@@ -15707,7 +15707,7 @@
 "Wi" = (
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Chief Science Officer's Office - Torch"
+	department = "Research Director"
 	},
 /obj/machinery/newscaster{
 	pixel_y = 32

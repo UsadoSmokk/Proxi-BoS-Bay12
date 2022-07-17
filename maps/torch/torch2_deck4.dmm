@@ -2724,7 +2724,7 @@
 	id_tag = "aquila_shuttle_outer";
 	locked = 1;
 	name = "Aquila External Access";
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_MARINES")
 	},
 /obj/machinery/shield_diffuser,
 /obj/structure/cable{
@@ -3635,7 +3635,7 @@
 	id_tag = "aquila_shuttle_dock_inner";
 	locked = 1;
 	name = "Docking Port Airlock";
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_MARINES")
 	},
 /obj/machinery/door/blast/shutters{
 	dir = 4;
@@ -4083,7 +4083,7 @@
 	},
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
-	department = "Pathfinder"
+	department = "Exploration Operations Leader"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/command/pathfinder)
@@ -10293,11 +10293,11 @@
 	id_tag = "aquila_shuttle_dock_airlock";
 	pixel_x = 24;
 	pixel_y = 24;
-	req_access = list(list("ACCESS_BRIDGE","ACCESS_TORCH_CREW"));
 	tag_airpump = "aquila_shuttle_dock_pump";
 	tag_chamber_sensor = "aquila_shuttle_dock_sensor";
 	tag_exterior_door = "aquila_shuttle_dock_outer";
-	tag_interior_door = "aquila_shuttle_dock_inner"
+	tag_interior_door = "aquila_shuttle_dock_inner";
+	req_access = list("ACCESS_MARINES")
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -13278,7 +13278,7 @@
 	id_tag = "aquila_shuttle_inner";
 	locked = 1;
 	name = "Aquila External Access";
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_MARINES")
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -15848,8 +15848,7 @@
 	icon_state = "closed";
 	id_tag = "aquila_shuttle_dock_outer";
 	locked = 1;
-	name = "Docking Port Airlock";
-	req_access = list("ACCESS_TORCH_CREW")
+	name = "Docking Port Airlock"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -18393,7 +18392,7 @@
 	dir = 8
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Deck Chief"
+	department = "Gunnery Chief"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)
