@@ -93,14 +93,14 @@
 	dir = 1;
 	pixel_y = -25
 	},
-/obj/machinery/atmospherics/valve/shutoff{
-	dir = 4
-	},
 /obj/machinery/light,
 /obj/effect/floor_decal/industrial/shutoff{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/green/half,
+/obj/machinery/atmospherics/valve/shutoff/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "aai" = (
@@ -4193,10 +4193,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "agQ" = (
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
 	},
-/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "agR" = (
@@ -4362,9 +4362,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "ahg" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/flora/ausbushes/grassybush,
-/turf/simulated/floor/grass,
+/obj/structure/sign/double/lordflag/right,
+/turf/simulated/wall/prepainted,
 /area/mempark)
 "ahh" = (
 /obj/effect/floor_decal/corner/paleblue{
@@ -4461,10 +4460,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "ahr" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	level = 2
 	},
@@ -4917,7 +4912,6 @@
 /area/maintenance/firstdeck/centralstarboard)
 "ahZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/corner/lightgrey/three_quarters{
 	dir = 1
 	},
@@ -5015,10 +5009,6 @@
 /turf/simulated/floor/grass,
 /area/mempark)
 "aij" = (
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -5033,7 +5023,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/mempark)
 "aik" = (
-/obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
@@ -7124,7 +7113,7 @@
 /area/maintenance/firstdeck/centralstarboard)
 "asF" = (
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -8359,7 +8348,7 @@
 	},
 /obj/structure/disposalpipe/sortjunction{
 	dir = 4;
-	name = "Xenobotany";
+	name = "Gift Shop";
 	sort_type = "Xenobotany"
 	},
 /obj/effect/catwalk_plated,
@@ -8377,10 +8366,9 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/disposalpipe/sortjunction{
 	dir = 4;
-	name = "Research Development";
+	name = "Memorial";
 	sort_type = "Research and Development"
 	},
-/obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/aft)
 "ayz" = (
@@ -8396,12 +8384,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/structure/disposalpipe/sortjunction{
-	dir = 4;
-	name = "Miscellaneous Research";
-	sort_type = "Miscellaneous Research"
-	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
 "ayA" = (
@@ -8643,15 +8629,11 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "azT" = (
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
+/obj/structure/sign/antarplaque{
+	pixel_y = -2
 	},
-/obj/effect/floor_decal/corner/lightgrey{
-	dir = 10
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/firstdeck/aft)
+/turf/simulated/wall/prepainted,
+/area/mempark/gift)
 "azU" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -9637,11 +9619,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "aFf" = (
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/structure/railing/mapped{
 	dir = 8;
 	tag = "icon-railing0 (EAST)"
 	},
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "aFg" = (
@@ -9868,8 +9850,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/rnd/anom_storage)
 "aGw" = (
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/effect/floor_decal/industrial/shutoff,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/firstdeck/center)
 "aGx" = (
@@ -10428,11 +10410,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
 "aJj" = (
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/structure/railing/mapped{
 	dir = 8;
 	tag = "icon-railing0 (EAST)"
 	},
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
 "aJl" = (
@@ -12804,7 +12786,7 @@
 	dir = 8;
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/machinery/atmospherics/valve/shutoff,
+/obj/machinery/atmospherics/valve/shutoff/fuel,
 /turf/simulated/open,
 /area/maintenance/firstdeck/aftport)
 "aSf" = (
@@ -13009,7 +12991,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -15166,6 +15148,9 @@
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 2
 	},
+/obj/machinery/light_switch{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/secpointhal)
 "bPR" = (
@@ -16687,7 +16672,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /obj/structure/railing/mapped,
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/machinery/atmospherics/valve/shutoff/fuel{
 	dir = 4
 	},
 /turf/simulated/open,
@@ -18138,14 +18123,13 @@
 /turf/simulated/floor/plating,
 /area/security/wing)
 "fWb" = (
-/obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/firstdeck/aft)
+/turf/simulated/floor/grass,
+/area/mempark)
 "fWZ" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -19438,6 +19422,7 @@
 /obj/machinery/light/spot{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/grass,
 /area/mempark)
 "hLf" = (
@@ -19650,7 +19635,10 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "ibb" = (
-/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/machinery/disposal,
 /turf/simulated/floor/tiled/monotile,
 /area/mempark)
 "iej" = (
@@ -19812,7 +19800,6 @@
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "isb" = (
-/obj/structure/disposalpipe/segment,
 /obj/structure/bed/chair/wood{
 	dir = 4
 	},
@@ -20292,10 +20279,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 10
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "iZb" = (
@@ -22254,11 +22241,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/bo)
-"lnb" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/obj/structure/sign/double/lordflag/left,
-/turf/simulated/floor/grass,
-/area/mempark)
 "lng" = (
 /obj/machinery/firealarm{
 	dir = 2;
@@ -23617,9 +23599,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
 "mUm" = (
-/obj/structure/sign/antarplaque{
-	pixel_y = -2
-	},
 /turf/simulated/wall/prepainted,
 /area/rnd/entry)
 "mVb" = (
@@ -25411,10 +25390,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/equipstorage)
 "pab" = (
-/obj/machinery/light_switch{
-	pixel_x = 20;
-	pixel_y = 24
-	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 10
 	},
@@ -25428,10 +25403,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
 "pcb" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/monotile,
+/obj/structure/sign/double/lordflag/left,
+/turf/simulated/wall/prepainted,
 /area/mempark)
 "pdb" = (
 /turf/simulated/floor/grass,
@@ -25453,6 +25426,11 @@
 /obj/machinery/camera/network/first_deck{
 	c_tag = "Briefing Room";
 	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 21
 	},
 /turf/simulated/floor/grass,
 /area/mempark)
@@ -25997,10 +25975,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
-"pLb" = (
-/obj/structure/sign/double/lordflag/right,
-/turf/simulated/floor/grass,
-/area/mempark)
 "pMb" = (
 /obj/machinery/chemical_dispenser/full,
 /obj/effect/floor_decal/corner/beige/mono,
@@ -26829,11 +26803,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24;
-	pixel_y = 0
-	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 6
 	},
@@ -27311,9 +27280,9 @@
 /turf/simulated/wall/prepainted,
 /area/mempark/gift)
 "rcx" = (
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/effect/floor_decal/industrial/shutoff,
 /obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "rdb" = (
@@ -27761,6 +27730,10 @@
 /obj/effect/floor_decal/corner/yellow/border{
 	dir = 8
 	},
+/obj/machinery/camera/network/first_deck{
+	c_tag = "Command Hallway - Aft";
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/mempark/gift)
 "rCb" = (
@@ -27815,11 +27788,6 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/obj/machinery/alarm{
-	alarm_id = "xenobio2_alarm";
-	dir = 4;
-	pixel_x = -24
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 6
@@ -28217,7 +28185,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/thruster/d1port)
 "rYN" = (
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -28438,6 +28406,10 @@
 /obj/effect/floor_decal/corner/yellow/bordercorner{
 	dir = 1
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/machinery/disposal,
 /turf/simulated/floor/tiled,
 /area/mempark/gift)
 "sik" = (
@@ -28465,6 +28437,9 @@
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/mempark/gift)
 "skb" = (
@@ -28477,6 +28452,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/yellow/three_quarters,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/mempark/gift)
 "skU" = (
@@ -28496,10 +28474,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -28510,6 +28484,9 @@
 	},
 /obj/effect/floor_decal/corner/yellow{
 	dir = 10
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/mempark/gift)
@@ -28915,7 +28892,7 @@
 	dir = 8;
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/machinery/atmospherics/valve/shutoff,
+/obj/machinery/atmospherics/valve/shutoff/fuel,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "sCx" = (
@@ -30205,7 +30182,7 @@
 	dir = 4;
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/machinery/atmospherics/valve/shutoff,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "ure" = (
@@ -54396,7 +54373,7 @@ aCf
 szb
 abJ
 mTb
-bmb
+azT
 bmb
 bmb
 bmb
@@ -55196,8 +55173,8 @@ uiY
 hdb
 jAM
 jab
-qPb
-lnb
+pcb
+hJb
 abJ
 abX
 ail
@@ -55397,9 +55374,9 @@ kFT
 pWW
 jhb
 ayz
-fWb
-qPb
-pLb
+jhb
+ahg
+pdb
 abJ
 aCf
 ail
@@ -55599,7 +55576,7 @@ uuS
 syH
 axB
 jAM
-azT
+iUb
 hyb
 ail
 abJ
@@ -55800,10 +55777,10 @@ mFw
 avq
 pWW
 lsT
-hgb
-flB
+hnN
+eNm
 hyb
-ahg
+rWb
 ahr
 ahZ
 aij
@@ -56011,7 +55988,7 @@ aib
 aik
 aib
 jWb
-pcb
+aHQ
 jYb
 qgb
 aHQ
@@ -56614,7 +56591,7 @@ qPb
 pdb
 aCf
 szb
-aCf
+fWb
 pNb
 rWb
 pfb

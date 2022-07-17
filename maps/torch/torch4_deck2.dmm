@@ -4121,7 +4121,8 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/multi_tile/glass/engineering{
-	name = "Engineering Bay"
+	name = "Engineering Bay";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/engineering/locker_room)
@@ -10053,13 +10054,13 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/structure/catwalk,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "wc" = (
@@ -13725,7 +13726,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "EY" = (
-/obj/machinery/atmospherics/valve/shutoff,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "EZ" = (
@@ -16892,7 +16893,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "Ob" = (
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -17287,10 +17288,10 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
+/obj/machinery/atmospherics/valve/shutoff/fuel,
 /turf/simulated/floor/plating,
 /area/engineering/fuelbay)
 "OY" = (

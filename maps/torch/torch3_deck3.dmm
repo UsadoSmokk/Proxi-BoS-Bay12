@@ -4383,7 +4383,7 @@
 	icon_state = "railing0-1";
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/machinery/atmospherics/valve/shutoff/fuel{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -5733,7 +5733,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/valve/shutoff,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "ly" = (
@@ -6243,7 +6243,7 @@
 /area/command/gunnery/missiles)
 "mJ" = (
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/valve/shutoff,
+/obj/machinery/atmospherics/valve/shutoff/fuel,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
 "mK" = (
@@ -7861,10 +7861,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
 "qi" = (
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/structure/railing/mapped,
+/obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
 	},
-/obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "qk" = (
@@ -9507,11 +9507,11 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
 "tE" = (
-/obj/machinery/atmospherics/valve/shutoff{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/green,
 /obj/effect/floor_decal/industrial/shutoff{
+	dir = 4
+	},
+/obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -14087,7 +14087,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/machinery/atmospherics/valve/shutoff/fuel{
 	dir = 4
 	},
 /turf/simulated/open,
@@ -16112,10 +16112,10 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/thirddeck/fore)
 "Je" = (
-/obj/machinery/atmospherics/valve/shutoff{
+/obj/effect/floor_decal/industrial/shutoff{
 	dir = 4
 	},
-/obj/effect/floor_decal/industrial/shutoff{
+/obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -19180,6 +19180,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor/autoset,
+/obj/machinery/door/airlock/mining{
+	name = "Gunnery"
+	},
 /turf/simulated/floor/plating,
 /area/command/gunnery/missiles)
 "PQ" = (
@@ -20692,12 +20695,12 @@
 /area/crew_quarters/mess)
 "TJ" = (
 /obj/random/junk,
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1";
 	tag = "icon-railing0 (EAST)"
 	},
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
 "TL" = (
@@ -21153,7 +21156,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /obj/structure/railing/mapped,
-/obj/machinery/atmospherics/valve/shutoff,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "UH" = (
