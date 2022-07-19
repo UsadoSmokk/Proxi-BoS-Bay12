@@ -222,11 +222,11 @@ var/global/datum/robolimb/basic_robolimb
 
 /datum/robolimb/vox
 	company = "Arkmade"
-	icon = 'icons/mob/human_races/cyberlimbs/vox/primalis.dmi'
+	icon = 'icons/bos/mob/human_races/cyberlimbs/vox/primalis.dmi'
 	unavailable_at_fab = 1
 	allowed_bodytypes = list(SPECIES_VOX)
 	species_cannot_use = list(SPECIES_VOX_ARMALIS)
 
 /datum/robolimb/vox/crap
 	company = "Improvised"
-	icon = 'icons/mob/human_races/cyberlimbs/vox/improvised.dmi'
+	icon = 'icons/bos/mob/human_races/cyberlimbs/vox/improvised.dmi'

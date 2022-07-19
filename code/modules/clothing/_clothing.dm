@@ -242,7 +242,7 @@ BLIND     // can't see anything
 	var/see_invisible = -1
 	var/light_protection = 0
 	sprite_sheets = list(
-		SPECIES_VOX = 'icons/mob/species/vox/onmob_eyes_vox.dmi',
+		SPECIES_VOX = 'icons/bos/mob/onmob/species/vox/onmob_eyes_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_eyes_vox_armalis.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_eyes_unathi.dmi',
 	)
@@ -277,7 +277,7 @@ BLIND     // can't see anything
 	attack_verb = list("challenged")
 	species_restricted = list("exclude",SPECIES_NABBER, SPECIES_UNATHI, SPECIES_VOX, SPECIES_VOX_ARMALIS)
 	sprite_sheets = list(
-		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
+		SPECIES_VOX = 'icons/bos/mob/onmob/species/vox/onmob_hands_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_hands_vox_armalis.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_hands_gas.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_hands_unathi.dmi'
@@ -380,7 +380,7 @@ BLIND     // can't see anything
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_hats.dmi',
 		)
 	sprite_sheets = list(
-		SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi',
+		SPECIES_VOX = 'icons/bos/mob/onmob/species/vox/onmob_head_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_head_vox_armalis.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_head_gas.dmi'
@@ -505,7 +505,7 @@ BLIND     // can't see anything
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
 	body_parts_covered = FACE|EYES
 	sprite_sheets = list(
-		SPECIES_VOX = 'icons/mob/species/vox/onmob_mask_vox.dmi',
+		SPECIES_VOX = 'icons/bos/mob/onmob/species/vox/onmob_mask_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_mask_vox_armalis.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_mask_unathi.dmi',
 		)
@@ -589,7 +589,7 @@ BLIND     // can't see anything
 	force = 2
 	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_UNATHI, SPECIES_VOX, SPECIES_VOX_ARMALIS)
 	sprite_sheets = list(
-		SPECIES_VOX = 'icons/mob/species/vox/onmob_feet_vox.dmi',
+		SPECIES_VOX = 'icons/bos/mob/onmob/species/vox/onmob_feet_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_feet_vox_armalis.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_feet_unathi.dmi',
 		)
@@ -754,7 +754,7 @@ BLIND     // can't see anything
 	w_class = ITEM_SIZE_NORMAL
 
 	sprite_sheets = list(
-		SPECIES_VOX = 'icons/mob/species/vox/onmob_suit_vox.dmi',
+		SPECIES_VOX = 'icons/bos/mob/onmob/species/vox/onmob_suit_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_suit_vox_armalis.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_suit_unathi.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_suit_gas.dmi'
@@ -810,7 +810,7 @@ BLIND     // can't see anything
 	var/rolled_down = -1 //0 = unrolled, 1 = rolled, -1 = cannot be toggled
 	var/rolled_sleeves = -1 //0 = unrolled, 1 = rolled, -1 = cannot be toggled
 	sprite_sheets = list(
-		SPECIES_VOX = 'icons/mob/species/vox/onmob_under_vox.dmi',
+		SPECIES_VOX = 'icons/bos/mob/onmob/species/vox/onmob_under_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_under_vox_armalis.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_under_gas.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_under_unathi.dmi'
