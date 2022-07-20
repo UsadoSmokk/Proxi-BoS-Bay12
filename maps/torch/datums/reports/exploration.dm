@@ -1,18 +1,18 @@
 /datum/computer_file/report/recipient/exp
-	logo = "\[eclogo\]"
+	logo = "\[sovlogo\]"
 
 /datum/computer_file/report/recipient/exp/generate_fields()
 	..()
 	set_access(access_explorer)
 
 /datum/computer_file/report/recipient/exp/fauna
-	form_name = "SCG-EXP-19f"
+	form_name = "LSS-EXP-19f"
 	title = "Отчет по фауне"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/exp/fauna/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Экспедиционный Корпус")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Экспедиционный Корпус")
 	add_field(/datum/report_field/text_label/instruction, "Следующие колонки заполняются членом, входящего в состав экспедиционной команды, после открытия и изучения инопланетной жизни.")
 	add_field(/datum/report_field/number, "Номер рапорта")
 	add_field(/datum/report_field/simple_text, "Местоположение", required = 1)
@@ -37,7 +37,7 @@
 
 /datum/computer_file/report/recipient/exp/planet/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Экспедиционный Корпус")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Экспедиционный Корпус")
 	add_field(/datum/report_field/text_label/instruction, "Следующие колонки заполняются членом, входящего в состав экспедиционной команды, после возвращения с планеты на борт судна.")
 	add_field(/datum/report_field/date, "Дата")
 	add_field(/datum/report_field/time, "Время")
@@ -59,7 +59,7 @@
 
 /datum/computer_file/report/recipient/exp/flora/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Экспедиционный Корпус")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Экспедиционный Корпус")
 	add_field(/datum/report_field/text_label/instruction, "Следующие колонки заполняются членом, входящего в состав экспедиционной команды, после открытия и изучения инопланетной жизни.")
 	add_field(/datum/report_field/number, "Номер рапорта")
 	add_field(/datum/report_field/simple_text, "Местоположение", required = 1)
@@ -76,5 +76,5 @@
 	Главный Научный Офицер должен отправить данный документ по факсу Корпоративному Связному и Командующему Офицеру, после чего хранить копию этого документа в своём офисе, как и другие отчёты о прогрессе миссии.")
 
 /datum/computer_file/report/recipient/shuttle/post_flight
-	logo = "\[eclogo\]"
-	form_name = "SCG-EXP-3"
+	logo = "\[sovlogo\]"
+	form_name = "LSS-EXP-3"

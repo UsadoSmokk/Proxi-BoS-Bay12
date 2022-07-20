@@ -1,14 +1,14 @@
 
 /datum/computer_file/report/recipient/sol
-	logo = "\[solcrest\]"
-	form_name = "SCG-REP-00"
+	logo = "\[iccgseal\]"
+	form_name = "ICCG-REP-00"
 
 /datum/computer_file/report/recipient/sol/generate_fields()
 	..()
 	set_access(list(list(access_heads, access_senadv, access_representative, access_cent_creed, access_liaison)))
 
 /datum/computer_file/report/recipient/sol/audit
-	form_name = "SCG-REP-12"
+	form_name = "ICCG-REP-12"
 	title = "Проверка департамента"
 	available_on_ntnet = TRUE
 
@@ -24,7 +24,7 @@
 	..()
 
 /datum/computer_file/report/recipient/sol/crewman_incident
-	form_name = "SCG-REP-4"
+	form_name = "ICCG-REP-4"
 	title = "Рапорт об инцидентах, произошедших с экипажем корабля"
 	available_on_ntnet = TRUE
 
@@ -39,7 +39,7 @@
 	..()
 
 /datum/computer_file/report/recipient/sol/work_visa
-	form_name = "SCG-REP-03b"
+	form_name = "ICCG-REP-03b"
 	title = "Получение рабочей визы"
 	available_on_ntnet = TRUE
 

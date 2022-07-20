@@ -1,20 +1,20 @@
 
 /datum/computer_file/report/recipient/shuttle
-	logo = "\[solcrest\]"
+	logo = "\[sovlogo\]"
 
 /datum/computer_file/report/recipient/deck/generate_fields()
 	..()
 	set_access(access_cargo_bot)
 
 /datum/computer_file/report/recipient/deck/docked
-	logo = "\[solcrest\]"
-	form_name = "SCG-SUP-12"
+	logo = "\[sovlogo\]"
+	form_name = "LSS-SUP-12"
 	title = "Отчет о пристыкованном судне"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/deck/docked/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Отдел снабжения")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Отдел снабжения")
 	add_field(/datum/report_field/text_label/header, "ОБЩАЯ ИНФОРМАЦИЯ")
 	add_field(/datum/report_field/date, "Дата заполнения")
 	add_field(/datum/report_field/time, "Время заполнения")
@@ -35,7 +35,7 @@
 	add_field(/datum/report_field/pencode_text,"Дополнительные заметки во время отстыковки")
 
 /datum/computer_file/report/recipient/request
-	form_name = "SCG-DEC-34"
+	form_name = "LSS-DEC-34"
 	title = "Запрос в отдел поставок"
 	available_on_ntnet = 1
 
@@ -43,7 +43,7 @@
 	..()
 	var/list/cargo_fields = list()
 	var/list/heads_fields = list()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Отдел снабжения")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Отдел снабжения")
 	add_field(/datum/report_field/simple_text, "Наименование отдела, запрашивающего предметы или материалы", required = 1)
 	add_field(/datum/report_field/people/from_manifest, "Полное Имя, должность и звание запрашивающего", required = 1)
 	add_field(/datum/report_field/signature, "Подпись запрашивающего", required = 1)
@@ -61,14 +61,14 @@
 		field.set_access(access_edit = access_heads)
 
 /datum/computer_file/report/recipient/deck/shuttle
-	form_name = "SCG-DEC-32"
+	form_name = "LSS-DEC-32"
 	title = "Предварительная проверка шаттла"
 	available_on_ntnet = 1
 
 /datum/computer_file/report/recipient/deck/shuttle/generate_fields()
 	..()
 	var/list/permission_fields = list()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Отдел снабжения")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Отдел снабжения")
 	add_field(/datum/report_field/date, "Дата заполнения")
 	add_field(/datum/report_field/time, "Время заполнения")
 	add_field(/datum/report_field/simple_text, "Название шаттла", required = 1)

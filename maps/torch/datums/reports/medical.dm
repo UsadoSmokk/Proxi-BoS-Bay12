@@ -1,20 +1,20 @@
 
 /datum/computer_file/report/recipient/medical
-	logo = "\[solcrest\]"
-	form_name = "SCG-MED-00"
+	logo = "\[sovlogo\]"
+	form_name = "LSS-MED-00"
 
 /datum/computer_file/report/recipient/medical/generate_fields()
 	..()
 	set_access(list(list(access_medical_equip, access_psychiatrist)))
 
 /datum/computer_file/report/recipient/medical/incidentreport
-	form_name = "SCG-MED-04"
+	form_name = "LSS-MED-04"
 	title = "Подробности медицинского происшествия"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/medical/incidentreport/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Медицинский отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Медицинский отдел")
 	add_field(/datum/report_field/date, "Дата Инцидента")
 	add_field(/datum/report_field/time, "Время Инцидента")
 	add_field(/datum/report_field/people/from_manifest, "Пациент")
@@ -26,14 +26,14 @@
 	add_field(/datum/report_field/signature, "Подпись лечащего врача")
 
 /datum/computer_file/report/recipient/medical/insanity_resolution
-	form_name = "SCG-MED-02"
+	form_name = "LSS-MED-02"
 	title = "Постановление о невменяемости"
 	available_on_ntnet = 1
 
 /datum/computer_file/report/recipient/medical/insanity_resolution/generate_fields()
 	..()
 	var/list/cmo_fields = list()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Медицинский отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Медицинский отдел")
 	add_field(/datum/report_field/people/from_manifest, "Полное Имя и должность пациента", required = 1)
 	add_field(/datum/report_field/simple_text, "Дата рождения", required = 1)
 	add_field(/datum/report_field/number, "Возраст", required = 1)
@@ -48,13 +48,13 @@
 		field.set_access(access_edit = access_cmo)
 
 /datum/computer_file/report/recipient/medical/checkup
-	form_name = "SCG-MED-013b"
+	form_name = "LSS-MED-013b"
 	title = "Контрольный список для медицинского осмотра"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/medical/checkup/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Медицинский отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Медицинский отдел")
 	add_field(/datum/report_field/people/from_manifest, "Пациент")
 	add_field(/datum/report_field/date, "Дата")
 	add_field(/datum/report_field/time, "Время")
@@ -72,13 +72,13 @@
 	set_access(access_edit = access_medical_equip)
 
 /datum/computer_file/report/recipient/medical/autopsy
-	form_name = "SCG-MED-015"
+	form_name = "LSS-MED-015"
 	title = "Отчет о вскрытии"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/medical/autopsy/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Медицинский отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Медицинский отдел")
 	add_field(/datum/report_field/people/from_manifest, "Полное Имя и должность погибшего", required = 1)
 	add_field(/datum/report_field/simple_text, "Раса", required = 1)
 	add_field(/datum/report_field/simple_text, "Пол", required = 1)
@@ -96,14 +96,14 @@
 	set_access(access_morgue, access_morgue)
 
 /datum/computer_file/report/recipient/medical/recipe
-	form_name = "SCG-MED-18"
+	form_name = "LSS-MED-18"
 	title = "Назначение рецепта медицинского препарата"
 	available_on_ntnet = 1
 
 /datum/computer_file/report/recipient/medical/recipe/generate_fields()
 	..()
 	var/list/cmo_fields = list()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Медицинский отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Медицинский отдел")
 	add_field(/datum/report_field/people/from_manifest, "Сотрудник, назначающий рецепт", required = 1)
 	add_field(/datum/report_field/signature, "Подпись сотрудника", required = 1)
 	add_field(/datum/report_field/simple_text, "Наименование препарата", required = 1)
@@ -118,13 +118,13 @@
 		field.set_access(access_edit = access_cmo)
 
 /datum/computer_file/report/recipient/medical/medical_services
-	form_name = "SCG-MED-05"
+	form_name = "LSS-MED-05"
 	title = "Справка об оказании медицинских услуг"
 	available_on_ntnet = 1
 
 /datum/computer_file/report/recipient/medical/medical_services/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Медицинский отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Медицинский отдел")
 	add_field(/datum/report_field/number, "Номер справки")
 	add_field(/datum/report_field/people/from_manifest, "Полное Имя и должность пациента", required = 1)
 	add_field(/datum/report_field/simple_text, "Раса", required = 1)

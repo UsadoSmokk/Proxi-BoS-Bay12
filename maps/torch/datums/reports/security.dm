@@ -1,19 +1,19 @@
 
 /datum/computer_file/report/recipient/sec
-	logo = "\[solcrest\]"
+	logo = "\[sovlogo\]"
 
 /datum/computer_file/report/recipient/sec/generate_fields()
 	..()
 	set_access(access_brig)
 
 /datum/computer_file/report/recipient/sec/incident
-	form_name = "SCG-SEC-01"
+	form_name = "LSS-SEC-01"
 	title = "Отчет об происшествии"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/sec/incident/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Охранный Отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Охранный Отдел")
 	add_field(/datum/report_field/text_label/instruction, "Заполняется дежурным офицером.")
 	add_field(/datum/report_field/time, "Время происшествия", required = 1)
 	add_field(/datum/report_field/simple_text, "Тип происшествия/преступления", required = 1)
@@ -29,13 +29,13 @@
 	set_access(access_edit = access_brig)
 
 /datum/computer_file/report/recipient/sec/investigation
-	form_name = "SCG-SEC-02"
+	form_name = "LSS-SEC-02"
 	title = "Отчет о расследовании"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/sec/investigation/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Охранный Отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Охранный Отдел")
 	add_field(/datum/report_field/text_label/instruction, "Для ознакомления авторизованному персоналу.")
 	add_field(/datum/report_field/people/from_manifest, "Полное Имя", required = 1)
 	add_field(/datum/report_field/date, "Дата", required = 1)
@@ -47,32 +47,32 @@
 	set_access(access_edit = access_brig)
 
 /datum/computer_file/report/recipient/sec/evidence
-	form_name = "SCG-SEC-02b"
+	form_name = "LSS-SEC-02b"
 	title = "Отчет об уликах"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/sec/report_evidence/generate_fields()
 	..()
 	var/list/det_fields = list()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Охранный Отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Охранный Отдел")
 	add_field(/datum/report_field/date, "Дата")
 	add_field(/datum/report_field/time, "Время")
 	add_field(/datum/report_field/people/from_manifest, "Конфисковано у", required = 1)
 	add_field(/datum/report_field/pencode_text, "Список конфискованных предметов", required = 1)
 	add_field(/datum/report_field/signature, "Подпись офицера проводившего конфискацию", required = 1)
-	det_fields += add_field(/datum/report_field/signature, "Подпись Смотрителя брига/Главы Службы Безопасности", required = 1)
+	det_fields += add_field(/datum/report_field/signature, "Подпись Коменданта/Главы Службы Безопасности", required = 1)
 	set_access(access_edit = access_brig)
 	for(var/datum/report_field/field in det_fields)
 		field.set_access(access_edit = access_armory)
 
 /datum/computer_file/report/recipient/sec/arrest
-	form_name = "SCG-SEC-03"
+	form_name = "LSS-SEC-03"
 	title = "Отчет о задержании"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/sec/arrest/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Охранный Отдел")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Охранный Отдел")
 	add_field(/datum/report_field/text_label/instruction, "Отчет заполняется задерживающим офицером, либо смотрителем брига. Отчет должен быть подписан и утвержден перед концом смены!")
 	add_field(/datum/report_field/people/from_manifest, "Докладывающий Офицер")
 	add_field(/datum/report_field/people/list_from_manifest, "Участники задержания")
@@ -92,18 +92,18 @@
 	add_field(/datum/report_field/simple_text, "Сенсоры костюма были зафиксированы на третьем уровне?")
 	add_field(/datum/report_field/simple_text, "Если потребовалась, была ли оказана Первая Медицинская Помощь?")
 	add_field(/datum/report_field/simple_text, "Если ПМП была оказана, какие травмы были у задержанного?")
-	add_field(/datum/report_field/text_label/instruction, "Этот документ ДОЛЖЕН быть утвержден и рассмотрен Главой Службы Безопасности или Смотрителем Брига.")
+	add_field(/datum/report_field/text_label/instruction, "Этот документ ДОЛЖЕН быть утвержден и рассмотрен Главой Службы Безопасности или Комендантом.")
 	add_field(/datum/report_field/signature, "Подпись Докладывающего Офицера")
 	set_access(access_edit = access_brig)
 
 /datum/computer_file/report/recipient/sec/armory
-	form_name = "SCG-SEC-05"
+	form_name = "LSS-SEC-05"
 	title = "Инвентаризация оружейной"
 	available_on_ntnet = 1
 
 /datum/computer_file/report/recipient/sec/armory/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Охранный департамент")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Охранный департамент")
 	add_field(/datum/report_field/date, "Дата")
 	add_field(/datum/report_field/time, "Время")
 	add_field(/datum/report_field/text_label, "Снаряжение")
@@ -126,23 +126,23 @@
 	set_access(access_armory, access_armory)
 
 /datum/computer_file/report/recipient/sec/ltc
-	form_name = "SCG-SEC-05"
+	form_name = "LSS-SEC-05"
 	title = "Лицензия на оружие"
 	available_on_ntnet = TRUE
 
 /datum/computer_file/report/recipient/sec/ltc/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "ГЭК \"Факел\" - Охранный Отдел")
-	add_field(/datum/report_field/text_label/instruction, "Заполняется КО/ИО/ГСБ. Документ должен быть подписан и утвержден, дабы считаться действительным. Все бумажные копии должны быть проштампованы.")
+	add_field(/datum/report_field/text_label/header, "ЛРК \"Антарес\" - Охранный Отдел")
+	add_field(/datum/report_field/text_label/instruction, "Заполняется КО/ПО/ГСБ. Документ должен быть подписан и утвержден, дабы считаться действительным. Все бумажные копии должны быть проштампованы.")
 	add_field(/datum/report_field/people/from_manifest, "Заявитель")
 	add_field(/datum/report_field/date, "Дата вступления лицензии в силу")
 	add_field(/datum/report_field/time, "Время вступления лицензии в силу")
 	add_field(/datum/report_field/simple_text, "Причина Оформления")
 	add_field(/datum/report_field/simple_text, "Авторизовано Владение")
-	add_field(/datum/report_field/text_label/instruction, "Данная лицензия выдается по желанию Командующего Офицера, Исполнительного Офицера, либо Главы Службы Безопасности, и соответственно может быть аннулирована ими по любой причине. \
+	add_field(/datum/report_field/text_label/instruction, "Данная лицензия выдается по желанию Командующего Офицера, Первого Офицера, либо Главы Службы Безопасности, и соответственно может быть аннулирована ими по любой причине. \
 	В случае применения лицензированного предмета в целях нарушения закона, данная лицензия может быть аннулирована любым членом охранного отдела при исполнении. \
 	Все носители лицензии обязаны исполнять соблюдать локальные законы/регуляции. Открытое ношение оружия запрещено, только если при составлении лицензии не указано обратное. \
 	Настоящий документ обязателен к ношению, в случае, если Заявитель хочет применить/применяет оружие, либо предмет, на который распространяется данная лицензия. \
-	Копии данного документа должны быть предоставлены Командующему Офицеру, Исполнительному Офицеру, Главе Службы Безопасности, а также Смотрителю Брига.")
+	Копии данного документа должны быть предоставлены Командующему Офицеру, Первому Офицеру, Главе Службы Безопасности, а также Коменданту.")
 	add_field(/datum/report_field/signature, "Подпись лица, выдавшего лицензию")
 	set_access(list(list(access_captain, access_hop, access_hos)), list(list(access_captain, access_hop, access_hos)))
