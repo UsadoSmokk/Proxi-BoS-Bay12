@@ -1189,6 +1189,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/submap_landmark/joinable_submap/skrellscoutship,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "mw" = (
