@@ -5,7 +5,7 @@
 	name = "Блю-Спейс"
 	chance = 10
 	weight = ASPECT_WEIGHT_BLUESPACE
-	announce_text = "<span class=\"info\">Из-за необьяснимой аномалии на судне замечены неопознанные порталы, они могут вести куда угодно...</span>"
+	announce_text = "<span class=\"info\">Из-за необьяснимой аномалии на судне начали появляться неопознанные порталы.</span>"
 	have_inround_proc = TRUE
 	have_preload_proc = FALSE
 	inround_timeout = 5 MINUTE
