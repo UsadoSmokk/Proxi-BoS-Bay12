@@ -940,6 +940,10 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod2/station)
+"cD" = (
+/obj/effect/paint/green,
+/turf/simulated/wall/titanium,
+/area/aquila/passenger)
 "cE" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
@@ -3034,7 +3038,7 @@
 /obj/effect/paint/red,
 /obj/effect/paint/green,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/aquila/medical)
+/area/aquila/passenger)
 "hu" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -3181,7 +3185,7 @@
 "hM" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/aquila/medical)
+/area/aquila/passenger)
 "hN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3801,7 +3805,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
-/area/aquila/medical)
+/area/aquila/passenger)
 "jq" = (
 /obj/structure/stairs/west,
 /obj/structure/railing/mapped{
@@ -4706,7 +4710,7 @@
 	icon_state = "warning"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/aquila/medical)
+/area/aquila/passenger)
 "lA" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack,
@@ -4810,7 +4814,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/aquila/medical)
+/area/aquila/passenger)
 "lR" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
@@ -5650,7 +5654,7 @@
 	},
 /obj/effect/paint/green,
 /turf/simulated/floor/plating,
-/area/aquila/medical)
+/area/aquila/passenger)
 "nx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6665,7 +6669,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark,
-/area/aquila/medical)
+/area/aquila/passenger)
 "ql" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 10
@@ -9112,7 +9116,7 @@
 	},
 /obj/effect/paint/green,
 /turf/simulated/wall/titanium,
-/area/aquila/medical)
+/area/aquila/passenger)
 "vO" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10
@@ -9851,7 +9855,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/aquila/medical)
+/area/aquila/passenger)
 "xJ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -10370,7 +10374,7 @@
 /area/aquila/airlock)
 "yS" = (
 /turf/simulated/floor/tiled/dark,
-/area/aquila/medical)
+/area/aquila/passenger)
 "yW" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -10765,7 +10769,7 @@
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/green,
 /turf/simulated/floor/plating,
-/area/aquila/medical)
+/area/aquila/passenger)
 "zM" = (
 /turf/simulated/floor/tiled,
 /area/quartermaster/deckchief)
@@ -12854,7 +12858,7 @@
 /obj/item/paper_bin,
 /obj/item/pen/retractable,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/aquila/medical)
+/area/aquila/passenger)
 "FS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -14039,7 +14043,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/aquila/medical)
+/area/aquila/passenger)
 "IE" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/techfloor,
@@ -14966,7 +14970,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/aquila/medical)
+/area/aquila/passenger)
 "KM" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -15257,7 +15261,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/dark,
-/area/aquila/medical)
+/area/aquila/passenger)
 "Lq" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -17799,7 +17803,7 @@
 	req_access = "ACCESS_BRIG"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/aquila/medical)
+/area/aquila/passenger)
 "QR" = (
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/sortjunction{
@@ -19456,7 +19460,7 @@
 	},
 /obj/effect/paint/green,
 /turf/simulated/floor/tiled/dark,
-/area/aquila/medical)
+/area/aquila/passenger)
 "Uu" = (
 /turf/simulated/wall/r_wall/hull,
 /area/crew_quarters/lounge)
@@ -19929,7 +19933,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/aquila/medical)
+/area/aquila/passenger)
 "Vq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -20279,7 +20283,7 @@
 	icon_state = "warning"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/aquila/medical)
+/area/aquila/passenger)
 "Wa" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/command/gunnery/missiles/storage/lower)
@@ -53892,12 +53896,12 @@ mZ
 UN
 UN
 vM
-lt
-lt
-lt
-lt
+cD
+cD
+cD
+cD
 qi
-lt
+cD
 IC
 UX
 Gz
@@ -54094,7 +54098,7 @@ aa
 aa
 aT
 vM
-lt
+cD
 yS
 Lo
 Us
@@ -54497,8 +54501,8 @@ aa
 aa
 aa
 aa
-lt
-lt
+cD
+cD
 FO
 hM
 ht
@@ -54699,13 +54703,13 @@ aa
 aa
 aa
 aa
-lt
-lt
-lt
+cD
+cD
+cD
 nw
-lt
-lt
-lt
+cD
+cD
+cD
 lt
 kx
 Ia
