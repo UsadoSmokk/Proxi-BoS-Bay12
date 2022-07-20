@@ -72,11 +72,11 @@
 	name = "SCG hardsuit control module"
 	desc = "A sleek and dangerous hardsuit for active combat."
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
+		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_AP,
-		laser = ARMOR_LASER_RIFLES,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_RESISTANT,
-		bio = ARMOR_BIO_SHIELDED,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SMALL,
 		rad = ARMOR_RAD_MINOR
 		)
