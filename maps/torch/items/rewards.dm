@@ -2,6 +2,7 @@
 	name = "Medalware"
 	desc = "A vendor for medals."
 	product_ads = "You ever wanted to pretend to be cool?;Hey, tough guy...;Get your medal!"
+	icon = 'maps/torch/icons/vending.dmi'
 	icon_state = "medals"
 	icon_vend = "medals-vend"
 	icon_deny = "medals-deny"
