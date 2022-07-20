@@ -1344,10 +1344,9 @@
 /area/bridge)
 "cz" = (
 /obj/effect/floor_decal/corner/blue/mono,
-/obj/structure/noticeboard{
-	pixel_y = 30
+/obj/machinery/vending/medals{
+	pixel_y = 32
 	},
-/obj/machinery/vending/medals,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "cA" = (
@@ -4087,6 +4086,7 @@
 /obj/effect/landmark/start{
 	name = "Sol Gov Representative"
 	},
+/obj/item/bedsheet/hos,
 /turf/simulated/floor/carpet/red,
 /area/crew_quarters/heads/office/solrep/backroom)
 "ia" = (
@@ -13115,7 +13115,9 @@
 /area/maintenance/bridge/foreport)
 "Lv" = (
 /obj/structure/table/glass,
-/obj/item/stamp/rd,
+/obj/item/stamp/rd{
+	name = "research director's rubber stamp"
+	},
 /obj/effect/floor_decal/corner/research{
 	dir = 5;
 	icon_state = "corner_white";

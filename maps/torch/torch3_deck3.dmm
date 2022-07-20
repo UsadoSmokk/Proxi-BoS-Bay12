@@ -1592,6 +1592,7 @@
 /obj/machinery/light/spot{
 	dir = 8
 	},
+/obj/structure/flora/pottedplant/decorative,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/sleep/cryo)
 "dl" = (
@@ -7832,8 +7833,8 @@
 /turf/simulated/wall/prepainted,
 /area/holocontrol)
 "qf" = (
-/obj/machinery/vending/sovietsoda,
 /obj/effect/floor_decal/industrial/outline,
+/obj/machinery/vending/cola,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/sleep/cryo)
 "qg" = (
@@ -13777,6 +13778,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
+/obj/structure/flora/pottedplant/stoutbush,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/sleep/cryo)
 "DZ" = (
@@ -20667,8 +20669,8 @@
 /turf/simulated/wall/prepainted,
 /area/chapel/office)
 "TF" = (
-/obj/machinery/vending/snix,
 /obj/effect/floor_decal/industrial/outline,
+/obj/machinery/vending/snack,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/sleep/cryo)
 "TG" = (

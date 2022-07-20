@@ -2726,7 +2726,6 @@
 	frequency = 1331;
 	icon_state = "closed";
 	id_tag = "aquila_shuttle_outer";
-	locked = 1;
 	name = "Aquila External Access";
 	req_access = list("ACCESS_MARINES")
 	},
@@ -3632,12 +3631,16 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/machinery/door/airlock/external{
 	autoset_access = 0;
 	frequency = 1331;
 	icon_state = "closed";
 	id_tag = "aquila_shuttle_dock_inner";
-	locked = 1;
 	name = "Docking Port Airlock";
 	req_access = list("ACCESS_MARINES")
 	},
@@ -3645,11 +3648,6 @@
 	dir = 4;
 	id_tag = "inf_pres_shutters";
 	name = "Pressure Shutters"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
@@ -11239,6 +11237,10 @@
 /obj/structure/closet/secure_closet/guncabinet/sidearm/small{
 	req_access = list("ACCESS_MARINES")
 	},
+/obj/item/gun/projectile/revolver/medium,
+/obj/item/gun/energy/revolver/secure{
+	req_access = list("ACCESS_MARINES")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/cockpit)
 "Bf" = (
@@ -13280,7 +13282,6 @@
 	frequency = 1331;
 	icon_state = "closed";
 	id_tag = "aquila_shuttle_inner";
-	locked = 1;
 	name = "Aquila External Access";
 	req_access = list("ACCESS_MARINES")
 	},
@@ -15846,18 +15847,17 @@
 /area/security/marines/armory)
 "MA" = (
 /obj/machinery/shield_diffuser,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/machinery/door/airlock/external{
 	autoset_access = 0;
 	frequency = 1331;
 	icon_state = "closed";
 	id_tag = "aquila_shuttle_dock_outer";
-	locked = 1;
 	name = "Docking Port Airlock"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
