@@ -43,7 +43,7 @@
 	name = OUTFIT_JOB_NAME("Engineering Assistant - Fleet")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/lordan
-	id_types= /obj/item/card/id/torch/contractor/engineering
+	id_types= list(/obj/item/card/id/torch/contractor/engineering)
 	pda_type = list(/obj/item/modular_computer/pda/engineering)
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist

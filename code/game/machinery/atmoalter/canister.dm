@@ -52,6 +52,27 @@
 	name = "\improper Canister: \[O2 (Cryo)\]"
 	start_pressure = 20 * ONE_ATMOSPHERE
 
+/obj/machinery/portable_atmospherics/canister/methyl_bromide //boh
+	name = "\improper Canister \[CH3Br\]"
+	icon_state = "black"
+	canister_color = "black"
+	can_label = 0
+
+/obj/machinery/portable_atmospherics/canister/methyl_bromide/New()
+	..()
+	air_contents.adjust_gas(GAS_METHYL_BROMIDE, MolesForPressure())
+	update_icon()
+
+/obj/machinery/portable_atmospherics/canister/methyl_bromide/prechilled
+	name = "\improper Canister: \[CH3Br (Cryo)\]"
+	start_pressure = 20 * ONE_ATMOSPHERE
+
+/obj/machinery/portable_atmospherics/canister/methyl_bromide/prechilled/New()
+	..()
+	src.air_contents.temperature = 80
+	src.update_icon()
+	return 1
+
 /obj/machinery/portable_atmospherics/canister/hydrogen
 	name = "\improper Canister: \[Hydrogen\]"
 	icon_state = "purple"

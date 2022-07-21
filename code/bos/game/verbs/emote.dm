@@ -1,4 +1,4 @@
 /mob/living/verb/oorah()
-	set name = "OORAH!!!"
+	set name = "Крикнуть УРРА!!!"
 	set category = "Emote"
 	emote("oorah")

@@ -52,3 +52,4 @@
 /obj/item/organ/external/chest/insectoid
 	name = "thorax"
 	encased = "carapace"
+
