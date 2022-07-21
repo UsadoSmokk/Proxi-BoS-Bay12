@@ -10176,7 +10176,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
 "yp" = (
-/obj/structure/table/steel_reinforced,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
@@ -10185,6 +10184,7 @@
 	pixel_y = 11
 	},
 /obj/item/flame/lighter/random,
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
 "yr" = (
@@ -14608,7 +14608,6 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/commissary)
 "JZ" = (
-/obj/structure/table/steel_reinforced,
 /obj/item/paper/inf{
 	pixel_x = -3;
 	pixel_y = 11
@@ -14622,6 +14621,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
 "Ka" = (
@@ -19193,6 +19193,8 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/deckofficer,
 /obj/structure/disposalpipe/segment,
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/accessory/storage/holster/thigh,
 /turf/simulated/floor/tiled,
 /area/quartermaster/deckchief)
 "TP" = (
@@ -19776,10 +19778,10 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "UU" = (
-/obj/structure/table/steel_reinforced,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
 "UV" = (

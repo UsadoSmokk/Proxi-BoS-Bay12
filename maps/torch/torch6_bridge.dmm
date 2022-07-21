@@ -1344,9 +1344,6 @@
 /area/bridge)
 "cz" = (
 /obj/effect/floor_decal/corner/blue/mono,
-/obj/machinery/vending/medals{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "cA" = (
@@ -2146,6 +2143,8 @@
 "dL" = (
 /obj/structure/closet/secure_closet/engineering_chief_torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/accessory/storage/holster/thigh,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)
 "dM" = (
@@ -5603,6 +5602,7 @@
 /obj/item/ammo_magazine/magnum/rubber,
 /obj/item/ammo_magazine/magnum/rubber,
 /obj/structure/closet/secure_closet/cos,
+/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "mJ" = (
@@ -8131,6 +8131,8 @@
 /area/crew_quarters/heads/office/sea)
 "ua" = (
 /obj/structure/closet/secure_closet/representative,
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/accessory/storage/holster/thigh,
 /turf/simulated/floor/carpet/red,
 /area/crew_quarters/heads/office/solrep/backroom)
 "ub" = (
@@ -8864,6 +8866,8 @@
 	},
 /obj/structure/closet/secure_closet/representative,
 /obj/item/storage/firstaid,
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/accessory/storage/holster/thigh,
 /turf/simulated/floor/carpet/red,
 /area/crew_quarters/heads/office/cl)
 "wc" = (
@@ -8883,6 +8887,8 @@
 	pixel_y = 0
 	},
 /obj/structure/closet/secure_closet/representative,
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/accessory/storage/holster/thigh,
 /turf/simulated/floor/carpet/red,
 /area/crew_quarters/heads/office/cl)
 "wh" = (
@@ -9122,6 +9128,8 @@
 	pixel_y = -24
 	},
 /obj/item/storage/belt/holster/general,
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/accessory/storage/holster/thigh,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea)
 "wx" = (
@@ -9964,6 +9972,8 @@
 /obj/item/gunbox/executive,
 /obj/item/storage/belt/holster/security,
 /obj/item/storage/belt/holster/general,
+/obj/item/clothing/accessory/storage/holster/thigh,
+/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "zb" = (
@@ -11402,6 +11412,8 @@
 /obj/structure/closet/secure_closet/CMO_torch,
 /obj/item/storage/belt/medical,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/accessory/storage/holster/thigh,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
 "EV" = (
@@ -12885,6 +12897,8 @@
 	},
 /obj/item/storage/belt/holster/security,
 /obj/item/storage/belt/holster/general,
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/accessory/storage/holster/thigh,
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cobed)
 "Kr" = (
@@ -13902,6 +13916,7 @@
 "OS" = (
 /obj/structure/closet/secure_closet/bridgeofficer,
 /obj/item/clothing/accessory/storage/holster/thigh,
+/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "OU" = (
@@ -14774,9 +14789,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "Sy" = (
-/obj/machinery/computer/teleporter{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -15028,6 +15040,8 @@
 /obj/item/material/knife/nullglass{
 	name = "Psykana mercy blade"
 	},
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/accessory/storage/holster/thigh,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "Tl" = (
@@ -16522,6 +16536,10 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
+"Zv" = (
+/obj/machinery/vending/medals,
+/turf/simulated/wall/r_wall/prepainted,
+/area/bridge)
 "Zx" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -24795,7 +24813,7 @@ eN
 Ke
 Ks
 TI
-eP
+Zv
 cz
 HC
 jw

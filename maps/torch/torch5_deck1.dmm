@@ -17625,6 +17625,18 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/wing)
+"eZO" = (
+/obj/effect/floor_decal/corner/red/mono,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/rack,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/turf/simulated/floor/tiled,
+/area/security/locker)
 "eZQ" = (
 /obj/machinery/lapvend{
 	dir = 4
@@ -21305,10 +21317,12 @@
 /area/assembly/robotics)
 "kiR" = (
 /obj/item/stack/medical/advanced/bruise_pack,
-/obj/item/stack/medical/advanced/ointment,
 /obj/effect/floor_decal/corner/red/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/table/rack,
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/ointment,
+/obj/item/stack/medical/advanced/ointment,
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "kjW" = (
@@ -24763,6 +24777,9 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/self_destruct,
+/mob/living/simple_animal/passive/cat{
+	name = "Biggus Dickus"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
 "oty" = (
@@ -25184,6 +25201,10 @@
 	name = "marine Officer's locker"
 	},
 /obj/effect/floor_decal/corner/b_green/mono,
+/obj/item/clothing/accessory/storage/holster/thigh,
+/obj/item/gun/energy/gun/secure,
+/obj/item/clothing/suit/armor/pcarrier/medium,
+/obj/item/clothing/accessory/armor_plate/ceramic,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea/marine)
 "oPb" = (
@@ -30404,6 +30425,13 @@
 	dir = 1;
 	pixel_y = -22
 	},
+/obj/structure/table/steel,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/armor_plate/ceramic,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "uNs" = (
@@ -40234,7 +40262,7 @@ goa
 frA
 rnp
 kiR
-kiR
+eZO
 dZx
 daB
 hGs

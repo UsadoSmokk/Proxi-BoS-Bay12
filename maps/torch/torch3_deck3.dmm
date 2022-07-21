@@ -4587,8 +4587,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/crew_quarters_boh/cabin_main)
 "jb" = (
@@ -5167,8 +5167,11 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/holocontrol)
 "kj" = (
-/turf/simulated/floor/plating,
-/area/crew_quarters_boh/cabin_main)
+/obj/machinery/door/airlock/glass/civilian{
+	name = "Auxiliary Tool Storage"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/storage/tools)
 "kk" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 5
@@ -8281,7 +8284,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/catwalk,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/crew_quarters_boh/cabin_main)
 "rh" = (
@@ -11116,7 +11119,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/catwalk,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/crew_quarters_boh/cabin_main)
 "xI" = (
@@ -13362,7 +13365,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/sleep/cryo)
 "Dc" = (
-/obj/machinery/door/airlock/multi_tile/civilian,
 /obj/machinery/door/firedoor/autoset,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13371,7 +13373,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/tiled,
 /area/crew_quarters_boh/cabin_main)
 "Dd" = (
 /obj/structure/cable/green{
@@ -13743,7 +13745,7 @@
 /area/hallway/primary/thirddeck/fore)
 "DV" = (
 /obj/machinery/door/firedoor/autoset,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/tiled,
 /area/crew_quarters_boh/cabin_main)
 "DW" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
@@ -21789,7 +21791,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/catwalk,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/crew_quarters_boh/cabin_main)
 "We" = (
@@ -45739,7 +45741,7 @@ Em
 Em
 MN
 AN
-AN
+kj
 AN
 AN
 jt
@@ -46145,9 +46147,9 @@ Fg
 Fg
 iC
 DV
-kj
+Fg
 rg
-kj
+Fg
 DV
 Fg
 EC
