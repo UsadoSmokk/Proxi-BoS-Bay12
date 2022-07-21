@@ -10235,6 +10235,7 @@
 /area/ai_monitored/storage/eva)
 "vz" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/telecomms/server/presets/infantry,
 /turf/simulated/floor/bluegrid,
 /area/tcommsat/chamber)
 "vA" = (
