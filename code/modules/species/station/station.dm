@@ -137,7 +137,7 @@
 	genders = list(PLURAL)
 	hidden_from_codex = FALSE
 	min_age = 19
-	max_age = 90
+	max_age = 120
 
 	burn_mod = 0.9
 	oxy_mod = 1.3
