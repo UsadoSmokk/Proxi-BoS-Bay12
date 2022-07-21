@@ -38,6 +38,7 @@
 		/datum/species/skrell = list(/datum/mil_branch/lord),
 		/datum/species/diona = list(/datum/mil_branch/larmarine, /datum/mil_branch/lord, /datum/mil_branch/larfleet),
 		/datum/species/adherent = list(/datum/mil_branch/larmarine, /datum/mil_branch/lord, /datum/mil_branch/larfleet),
+		/datum/species/shapeshifter/promethean = list(/datum/mil_branch/larmarine, /datum/mil_branch/lord, /datum/mil_branch/larfleet),
 		/datum/species/vox = list(
 			/datum/mil_branch/army,
 			/datum/mil_branch/fleet,
