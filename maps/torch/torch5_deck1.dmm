@@ -25205,6 +25205,7 @@
 /obj/item/gun/energy/gun/secure,
 /obj/item/clothing/suit/armor/pcarrier/medium,
 /obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/head/helmet,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea/marine)
 "oPb" = (

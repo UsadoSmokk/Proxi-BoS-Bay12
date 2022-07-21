@@ -761,6 +761,8 @@
 	},
 /obj/structure/closet/secure_closet/infantry,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "ci" = (
@@ -1925,6 +1927,8 @@
 /obj/structure/closet/secure_closet/squad_lead,
 /obj/effect/floor_decal/corner/green/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/monotile,
 /area/security/marines/com)
 "eT" = (
@@ -8710,6 +8714,8 @@
 	external_pressure_bound = 101.325;
 	external_pressure_bound_default = 101.325
 	},
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/gear)
 "uW" = (
@@ -8735,6 +8741,8 @@
 	},
 /obj/structure/closet/secure_closet/infantry,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "uY" = (
@@ -10446,6 +10454,8 @@
 	},
 /obj/structure/closet/secure_closet/infantry,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "zj" = (
@@ -11395,6 +11405,8 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/triagesec/inf,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/gear)
 "BK" = (
@@ -12117,13 +12129,14 @@
 	dir = 9;
 	icon_state = "techfloor_edges"
 	},
-/obj/item/storage/firstaid/stab,
 /obj/machinery/recharger/wallcharger{
 	dir = 4;
 	icon_state = "wrecharger0";
 	pixel_x = -23;
 	pixel_y = -3
 	},
+/obj/item/storage/firstaid/combat,
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/gear)
 "DH" = (
@@ -13242,7 +13255,9 @@
 	dir = 9;
 	icon_state = "intact-supply"
 	},
-/obj/random/firstaid,
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/adv,
+/obj/item/storage/firstaid/adv,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "GQ" = (
@@ -20116,6 +20131,8 @@
 	},
 /obj/structure/closet/secure_closet/infantry,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/clothing/accessory/armor_plate/ceramic,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "VJ" = (
@@ -21799,6 +21816,7 @@
 	icon_state = "2-8"
 	},
 /obj/item/storage/mre/menu11,
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/gear)
 "Zy" = (
