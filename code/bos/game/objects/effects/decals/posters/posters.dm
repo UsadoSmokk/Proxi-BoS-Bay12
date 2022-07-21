@@ -16,7 +16,7 @@
 /decl/poster/antar/atlas
 	icon_state="atlas"
 	name = "Atlas"
-	desc = "Although the advertising campaign of the 'Atlas' combat exosuit was a failure, it gained popularity as the BHL Chief Instructor's favorite mech."
+	desc = "Although the advertising campaign of the 'Atlas' combat exosuit was a failure, it gained popularity as the Boris Booker's favorite mech."
 
 /decl/poster/antar/terra
 	icon_state="terra"
