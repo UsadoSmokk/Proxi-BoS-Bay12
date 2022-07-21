@@ -17,7 +17,7 @@
 	var/max_boosted_faculties = 3
 	var/boosted_psipower = 120
 
-obj/item/clothing/head/helmet/space/psi_amp/skrell // BOS T5 tier of in-game amp
+/obj/item/clothing/head/helmet/space/psi_amp/skrell // BOS T5 tier of in-game amp
 	name = "skrellian psionic amplifier"
 	desc = "A crown-of-thorns cerebro-energetic enhancer that interfaces directly with the brain, isolating and strengthening psionic signals. This one looks slim and quite well-polished."
 	icon_state = "amp-skrell"
