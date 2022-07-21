@@ -150,6 +150,13 @@
 	build_path = /obj/item/gun/projectile/automatic/bullpup_rifle
 	sort_string = "TAPAC"
 
+/datum/design/item/weapon/nullrevolver //BOS
+	id = "nullrevolver"
+	req_tech = list(TECH_COMBAT = 7, TECH_MATERIAL = 5)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_SILVER = 7500, MATERIAL_DIAMOND = 3000)
+	build_path = /obj/item/gun/projectile/revolver/psirevolver
+	sort_string = "TAPAD"
+
 /datum/design/item/weapon/ammunition/AssembleDesignName()
 	..()
 	name = "Ammunition prototype ([item_name])"
@@ -202,6 +209,15 @@
 	materials = list(MATERIAL_STEEL = 3000, MATERIAL_URANIUM = 1000)
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	build_path = /obj/item/ammo_casing/shotgun/emp
+	sort_string = "TBAAG"
+
+/datum/design/item/weapon/ammunition/ammo_magnum_nullglass //BOS
+	name = "Nullglass munition"
+	id = "ammo_magnum_nullglass"
+	desc = "A revolver bullet casing with a nullglass coating."
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_DIAMOND = 2000)
+	req_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 6)
+	build_path = /obj/item/ammo_casing/pistol/magnum/nullglass
 	sort_string = "TBAAG"
 
 /datum/design/item/melee/energy/minuano
@@ -262,3 +278,11 @@
 	materials = list(MATERIAL_STEEL = 6000, MATERIAL_PLASTIC = 8000, MATERIAL_ALUMINIUM = 4000)
 	build_path = /obj/item/gun/energy/gun/secure
 	sort_string = "TEDAB"
+
+/datum/design/item/weapon/psicontrol //BOS
+	name = "Psi-control implants"
+	id = "psicontrol"
+	req_tech = list(TECH_MATERIAL = 4, TECH_COMBAT = 4, TECH_BIO = 4)
+	materials = list(MATERIAL_STEEL = 6000, MATERIAL_PLASTIC = 6000, MATERIAL_ALUMINIUM = 6000, MATERIAL_GOLD = 6000, MATERIAL_URANIUM = 6000)
+	build_path = /obj/item/storage/box/psykerimplants
+	sort_string = "TEDAC"
