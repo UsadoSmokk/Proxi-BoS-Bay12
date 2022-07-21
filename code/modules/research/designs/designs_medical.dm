@@ -73,3 +73,21 @@
 	materials = list(MATERIAL_PLASTIC = 1000, MATERIAL_GLASS = 1000, MATERIAL_SILVER = 1000, MATERIAL_GOLD = 1000)
 	build_path = /obj/item/bodybag/cryobag
 	sort_string = "MAFAA"
+
+/datum/design/item/medical/basic_amp //BOS
+	desc = "A crown-of-thorns cerebro-energetic enhancer that interfaces directly with the brain, isolating and strengthening psionic signals. \
+	This one is manufactured with some screws here and there."
+	id = "impr_amp"
+	req_tech = list(TECH_MATERIAL = 7, TECH_BIO = 7, TECH_MAGNET = 7, TECH_ENGINEERING = 7)
+	materials = list(MATERIAL_STEEL = 80000, MATERIAL_GOLD = 40000, MATERIAL_SILVER = 40000, MATERIAL_DIAMOND = 40000) //Extremely cost-ful.
+	build_path = /obj/item/clothing/head/helmet/space/psi_amp/improvised 
+	sort_string = "MAFAB"
+
+/datum/design/item/medical/adv_amp //BOS
+	desc = "A crown-of-thorns cerebro-energetic enhancer that interfaces directly with the brain, isolating and strengthening psionic signals. \
+	This one looks like a decent copy of a proper amplifier."
+	id = "adv_amp"
+	req_tech = list(TECH_MATERIAL = 7, TECH_BIO = 7, TECH_MAGNET = 7, TECH_ENGINEERING = 7, TECH_ESOTERIC = 7) //High level research.
+	materials = list(MATERIAL_STEEL = 80000, MATERIAL_GOLD = 80000, MATERIAL_SILVER = 80000, MATERIAL_DIAMOND = 80000) //Extremely cost-ful.
+	build_path = /obj/item/clothing/head/helmet/space/psi_amp/advanced 
+	sort_string = "MAFAC"
