@@ -23,3 +23,11 @@
 /obj/item/organ/internal/eyes/insectoid
 	name = "compound ocelli"
 	icon_state = "eyes-compound"
+
+/obj/item/organ/internal/lungs/tirolungs //boh
+	name = "bromine-oxide organic conversion bloc"
+	desc = "A strange device which can process both oxygen and methyl bromide into breathable air."
+	icon_state = "oxybromine_lungs"
+	breath_type = list(GAS_METHYL_BROMIDE,GAS_OXYGEN)
+
+/obj/item/organ/internal/lungs/tirolungs/mechassist()

@@ -26,4 +26,15 @@
 /material/cult/reinf
 	name = MATERIAL_REINFORCED_CULT
 	display_name = "runic inscriptions"
-	
+
+/material/resin
+	name = MATERIAL_RESIN
+	icon_colour = "#e85dd8"
+	dooropen_noise = 'sound/effects/attackblob.ogg'
+	door_icon_base = "resin"
+	melting_point = T0C+300
+	sheet_singular_name = "blob"
+	sheet_plural_name = "blobs"
+	conductive = 0
+	stack_type = null
+	hidden_from_codex = TRUE

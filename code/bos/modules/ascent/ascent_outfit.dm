@@ -3,7 +3,7 @@
 	mask =     /obj/item/clothing/mask/gas/ascent
 	uniform =  /obj/item/clothing/under/ascent
 	belt =     /obj/item/clothing/suit/storage/ascent
-	id =  /obj/item/card/id/ascent
+	id_types =  list(/obj/item/card/id/ascent)
 	shoes =    /obj/item/clothing/shoes/magboots/ascent
 	l_ear =    null
 	pda_type = null
@@ -20,7 +20,7 @@
 	mask =     /obj/item/clothing/mask/gas/ascent/monarch
 	uniform =  /obj/item/clothing/under/ascent
 	suit =     /obj/item/clothing/suit/storage/ascent
-	id =  /obj/item/card/id/ascent
+	id_types =  list(/obj/item/card/id/ascent)
 	l_ear =    null
 	pda_type = null
 	pda_slot = 0
@@ -117,4 +117,13 @@
 	r_ear = null
 	shoes = /obj/item/clothing/shoes/black
 	pda_type = null
-	id =  /obj/item/card/id/ascenttiro
+	id_types =  list(/obj/item/card/id/ascenttiro)
+
+/obj/item/clothing/accessory/badge/holo/ascent
+	name = "mark of the devoted"
+	desc = "A charm of mantid design, denoting it's holder as an Aurum. It glistens with a controlled, humming blue energy."
+	color = null
+	badge_string = "Par"
+	badge_access = access_ascent
+	icon_state = "ascentmark"
+	item_state = "collar_holo_overlay"
