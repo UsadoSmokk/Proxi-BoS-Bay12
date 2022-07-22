@@ -1,4 +1,4 @@
 /decl/emote/audible/oorah
 	key ="oorah"
-	emote_message_3p = "USER кричит УУРРА!!!"
+	emote_message_3p = "USER РєСЂРёС‡РёС‚ РЈРЈР Р Рђ!!!"
 	emote_sound = 'sound/voice/bos/oorah.ogg'
