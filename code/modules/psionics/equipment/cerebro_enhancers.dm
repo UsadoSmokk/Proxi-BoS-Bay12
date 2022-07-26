@@ -17,6 +17,54 @@
 	var/max_boosted_faculties = 3
 	var/boosted_psipower = 120
 
+/obj/item/clothing/head/helmet/space/psi_amp/skrell // BOS T5 tier of in-game amp
+	name = "skrellian psionic amplifier"
+	desc = "A crown-of-thorns cerebro-energetic enhancer that interfaces directly with the brain, isolating and strengthening psionic signals. This one looks slim and quite well-polished."
+	icon_state = "amp-skrell"
+	flags_inv = 0
+	body_parts_covered = 0
+
+	max_boosted_faculties = 1
+	boosted_rank = PSI_RANK_GRANDMASTER
+	unboosted_rank = PSI_RANK_OPERANT
+	boosted_psipower = 125
+
+/obj/item/clothing/head/helmet/space/psi_amp/ascent // BOS T4 tier of in-game amp
+	name = "alien psionic amplifier"
+	desc = "A crown-of-thorns cerebro-energetic enhancer that interfaces directly with the brain, isolating and strengthening psionic signals. This one looks like some alien high-tech. Weird."
+	icon_state = "amp-ascent"
+	flags_inv = 0
+	body_parts_covered = 0
+
+	max_boosted_faculties = 1
+	boosted_rank = PSI_RANK_GRANDMASTER
+	unboosted_rank = PSI_RANK_MASTER
+	boosted_psipower = 75 //Lower psi-power but higher for unboosted, so you can be a more purpuseful slave.
+
+/obj/item/clothing/head/helmet/space/psi_amp/advanced // BOS T3 tier of in-game amp. You can get this and improvised one by researching via RnD. T2 is antag.
+	name = "improved psionic amplifier"
+	desc = "A crown-of-thorns cerebro-energetic enhancer that interfaces directly with the brain, isolating and strengthening psionic signals. This one looks like a decent copy of a proper amplifier."
+	icon_state = "amp-improved"
+	flags_inv = 0
+	body_parts_covered = 0
+
+	max_boosted_faculties = 1
+	boosted_rank = PSI_RANK_GRANDMASTER
+	unboosted_rank = PSI_RANK_OPERANT
+	boosted_psipower = 50
+
+/obj/item/clothing/head/helmet/space/psi_amp/improvised // BOS T1 tier of in-game amp. You can get this and improvised one by researching via RnD. This one is weaker, but spaceproof.
+	name = "improvised psionic amplifier"
+	desc = "A crown-of-thorns cerebro-energetic enhancer that interfaces directly with the brain, isolating and strengthening psionic signals. This one is manufactured with some screws here and there."
+	icon_state = "amp-improvised"
+	flags_inv = 0
+	body_parts_covered = 0
+
+	max_boosted_faculties = 1
+	boosted_rank = PSI_RANK_MASTER
+	unboosted_rank = PSI_RANK_OPERANT
+	boosted_psipower = 40 //Weak, improvised version of antag psi-amp.
+
 /obj/item/clothing/head/helmet/space/psi_amp/lesser
 	name = "psionic amplifier"
 	desc = "A crown-of-thorns cerebro-energetic enhancer that interfaces directly with the brain, isolating and strengthening psionic signals. It kind of looks like a tiara having sex with an industrial robot."
