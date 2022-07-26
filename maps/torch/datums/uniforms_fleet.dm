@@ -12,6 +12,7 @@
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/com/seniorofficer
@@ -49,6 +50,7 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/eng/officer
@@ -64,7 +66,7 @@
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
-
+	dress_extra = /obj/item/storage/belt/holster/sheath/fleet
 
 /decl/hierarchy/mil_uniform/fleet/eng/officer/com //Can only be officers
 	name = "Fleet engineering command"
@@ -106,7 +108,7 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
-
+	dress_extra = /obj/item/storage/belt/holster/sheath/fleet
 
 /decl/hierarchy/mil_uniform/fleet/sec/officer
 	name = "Fleet security CO"
@@ -120,6 +122,7 @@
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/sec/officer/com //Can only be officers
@@ -162,6 +165,7 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/med/officer
@@ -176,6 +180,7 @@
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/med/officer/com //Can only be officers
@@ -217,6 +222,7 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/sup/officer
@@ -231,6 +237,7 @@
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/sup/seniorofficer
@@ -268,6 +275,7 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/srv/officer
@@ -281,6 +289,7 @@
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/spt
@@ -307,6 +316,7 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/snco
 
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/snco
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/spt/officer
@@ -323,6 +333,7 @@
 	dress_over = /obj/item/clothing/suit/storage/lordan/dress/fleet/officer
 	dress_under = /obj/item/clothing/under/lordan/dress/fleet/officer
 	dress_skirt = /obj/item/clothing/under/lordan/dress/fleet/skirt/officer
+	dress_extra = list(/obj/item/clothing/head/lordan/fleet/dress, /obj/item/storage/belt/holster/sheath/fleet)
 
 
 /decl/hierarchy/mil_uniform/fleet/spt/seniorofficer

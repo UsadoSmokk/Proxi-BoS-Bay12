@@ -43,6 +43,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 
 /decl/hierarchy/mil_uniform/marine_corps/com/seniorofficer
@@ -66,6 +67,7 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/engineer
 
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 
 /decl/hierarchy/mil_uniform/marine_corps/eng/officer
@@ -83,6 +85,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/eng/officer/com //Can only be officers
 	name = "Marine Corps engineering command"
@@ -110,6 +113,7 @@
 
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
 
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/sec/officer
 	name = "Marine Corps security CO"
@@ -126,7 +130,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/sec/officer/com //Can only be officers
 	name = "Marine Corps security command"
@@ -155,6 +159,7 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/medical
 
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 
 /decl/hierarchy/mil_uniform/marine_corps/med/officer
@@ -172,7 +177,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/med/officer/com //Can only be officers
 	name = "Marine Corps medical command"
@@ -197,6 +202,7 @@
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/marine
 
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 
 /decl/hierarchy/mil_uniform/marine_corps/sup/officer
@@ -214,7 +220,7 @@
 	dress_skirt = /obj/item/clothing/under/lordan/mildress/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
-
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/sup/seniorofficer
 	name = "Marine Corps supply senior command"
@@ -236,6 +242,7 @@
 
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
 
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/srv/officer
 	name = "Marine Corps service CO"
@@ -253,6 +260,7 @@
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
 
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/spt
 	name = "Marine Corps command support"
@@ -270,6 +278,7 @@
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
 
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/spt/noncom
 	name = "Marine Corps support NCO"
@@ -280,6 +289,7 @@
 
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/marine
 
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/spt/officer
 	name = "Marine Corps command support CO"
@@ -297,9 +307,12 @@
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/command
 	dress_hat = /obj/item/clothing/head/beret/lordan/white
 
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
+
 /decl/hierarchy/mil_uniform/marine_corps/spt/seniorofficer
 	name = "Marine Corps senior command support"
 	min_rank = 21
 
 	service_over = /obj/item/clothing/suit/storage/toggle/lordan/service/command
 	dress_over = /obj/item/clothing/suit/storage/toggle/lordan/dress/general
+	dress_extra = list(/obj/item/storage/belt/holster/sheath/marine)
