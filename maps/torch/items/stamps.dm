@@ -22,6 +22,10 @@
 	name = "\improper Lordanian Sovereign Systems Fleet OPHQ rubber stamp"
 	icon_state = "stamp-solgov"
 
+/obj/item/stamp/terrep
+	name = "\improper ICCG Embassy representative's rubber stamp"
+	icon_state = "stamp-solgov"
+
 /obj/item/stamp/nt
 	name = "\improper corporate rubber stamp"
 	icon_state = "stamp-corp"

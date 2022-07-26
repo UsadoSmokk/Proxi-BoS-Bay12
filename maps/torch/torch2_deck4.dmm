@@ -763,6 +763,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "ci" = (
@@ -1929,6 +1930,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/monotile,
 /area/security/marines/com)
 "eT" = (
@@ -4178,8 +4180,10 @@
 	id_tag = "aquila_shuttle";
 	pixel_x = 0;
 	pixel_y = 24;
-	req_access = list("ACCESS_MARINES");
-	tag_exterior_sensor = "aquila_shuttle_sensor_external"
+	tag_exterior_sensor = "aquila_shuttle_sensor_external";
+	tag_exterior_door = "aquila_shuttle_outer";
+	tag_interior_door = "aquila_shuttle_inner";
+	tag_interior_sensor = "aquila_shuttle_sensor"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
@@ -8716,6 +8720,9 @@
 	},
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/rig_module/mounted/plasmacutter,
+/obj/item/rig_module/device/rcd,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/gear)
 "uW" = (
@@ -8743,6 +8750,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "uY" = (
@@ -10306,8 +10314,7 @@
 	tag_airpump = "aquila_shuttle_dock_pump";
 	tag_chamber_sensor = "aquila_shuttle_dock_sensor";
 	tag_exterior_door = "aquila_shuttle_dock_outer";
-	tag_interior_door = "aquila_shuttle_dock_inner";
-	req_access = list("ACCESS_MARINES")
+	tag_interior_door = "aquila_shuttle_dock_inner"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -10456,6 +10463,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "zj" = (
@@ -11407,6 +11415,9 @@
 /obj/structure/closet/secure_closet/triagesec/inf,
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/rig_module/device/healthscanner,
+/obj/item/rig_module/vision/medhud,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/gear)
 "BK" = (
@@ -12394,6 +12405,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/jukebox/old,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines)
 "EB" = (
@@ -20133,6 +20145,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "VJ" = (

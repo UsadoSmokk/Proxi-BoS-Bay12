@@ -296,6 +296,10 @@
 	name = "\improper Bridge Storage"
 	req_access = list(access_bridge)
 
+/area/bridge/discip
+	name = "improper Disciplinary Room"
+	req_access = list()
+
 // Shuttles
 /area/shuttle/transport1/centcom
 	icon_state = "shuttle"
@@ -1062,6 +1066,10 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
 	ambience = list('sound/ambience/spookyspace1.ogg')
+
+/area/security/range
+	name = "\improper Shooting Range"
+	req_access = list()
 
 // AI
 /area/turret_protected/ai_foyer
