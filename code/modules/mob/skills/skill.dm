@@ -209,13 +209,13 @@ GLOBAL_LIST_EMPTY(skills)
 /decl/hierarchy/skill/security/weapons/get_cost(var/level)
 	switch(level)
 		if(SKILL_BASIC)
-			return difficulty
+			return 7*difficulty
 		if(SKILL_ADEPT)
-			return 2*difficulty
+			return 8*difficulty
 		if(SKILL_EXPERT)
-			return 3*difficulty
+			return 9*difficulty
 		if(SKILL_PROF)
-			return 4*difficulty
+			return 10*difficulty
 		else
 			return 0
 
