@@ -10,6 +10,12 @@
 	desc = "Marine Command"
 	region = ACCESS_REGION_SECURITY
 
+/var/const/access_marlead = "ACCESS_MARLEAD"
+/datum/access/marlead
+	id = access_marlead
+	desc = "Marine Leader"
+	region = ACCESS_REGION_SECURITY
+
 /var/const/access_martech = "ACCESS_MARTECH"
 /datum/access/martech
 	id = access_martech

@@ -28408,6 +28408,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/item/music_tape/custom,
 /turf/simulated/floor/tiled,
 /area/mempark/gift)
 "skb" = (

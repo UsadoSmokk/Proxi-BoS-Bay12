@@ -1791,7 +1791,7 @@
 	name = "\improper Squad Leader Prep"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
-	req_access = list(access_marcom)
+	req_access = list(access_marlead)
 
 /area/security/marines/armory
 	name = "\improper Marine Hard Storage"

@@ -764,6 +764,7 @@
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/device/binoculars,
+/obj/item/storage/firstaid/individual/military,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "ci" = (
@@ -1631,12 +1632,11 @@
 /obj/effect/floor_decal/corner_techfloor_gray/full{
 	dir = 1
 	},
-/obj/item/clothing/accessory/storage/bandolier,
-/obj/item/gun/projectile/shotgun/sabotgun,
-/obj/structure/closet/secure_closet/guncabinet{
-	name = "Ballistic - GS-95 Tectonic";
-	req_access = list("ACCESS_MARCOM")
-	},
+/obj/structure/table/rack/dark,
+/obj/item/inflatable_dispenser,
+/obj/item/inflatable_dispenser,
+/obj/item/inflatable_dispenser,
+/obj/item/inflatable_dispenser,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines/armory)
 "ei" = (
@@ -1931,6 +1931,7 @@
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/device/binoculars,
+/obj/item/storage/firstaid/individual/military,
 /turf/simulated/floor/tiled/monotile,
 /area/security/marines/com)
 "eT" = (
@@ -3177,14 +3178,18 @@
 /obj/effect/floor_decal/corner_techfloor_gray{
 	dir = 5
 	},
-/obj/item/clothing/accessory/storage/bandolier,
-/obj/item/clothing/accessory/storage/bandolier,
-/obj/item/gun/projectile/shotgun/pump,
-/obj/item/gun/projectile/shotgun/pump,
-/obj/structure/closet/secure_closet/guncabinet{
-	name = "Ballistic - MA-Envoy ";
-	req_access = list("ACCESS_MARCOM")
-	},
+/obj/structure/table/rack/dark,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/barrier,
+/obj/item/music_tape/custom,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines/armory)
 "hM" = (
@@ -4855,12 +4860,6 @@
 	icon_state = "tube1"
 	},
 /obj/structure/table/rack,
-/obj/item/barrier,
-/obj/item/barrier,
-/obj/item/barrier,
-/obj/item/barrier,
-/obj/item/barrier,
-/obj/item/barrier,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/clothing/head/welding,
 /turf/simulated/floor/tiled/techfloor,
@@ -5766,6 +5765,13 @@
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/metal{
 	pixel_x = -6;
 	pixel_y = -2
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "inf_sec_desk_storage";
+	name = "Desk Shutters";
+	pixel_x = -1;
+	pixel_y = 25;
+	req_access = list("ACCESS_MARINES")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines)
@@ -8162,15 +8168,12 @@
 	name = "smart sidearm cabinet";
 	req_access = list("ACCESS_MARINES")
 	},
-/obj/item/gun/energy/revolver/secure{
-	req_access = list("ACCESS_MARINES")
-	},
-/obj/item/gun/energy/revolver/secure{
-	req_access = list("ACCESS_MARINES")
-	},
-/obj/item/gun/energy/revolver/secure{
-	req_access = list("ACCESS_MARINES")
-	},
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "tK" = (
@@ -8730,6 +8733,7 @@
 /obj/item/rig_module/mounted/plasmacutter,
 /obj/item/rig_module/device/rcd,
 /obj/item/device/binoculars,
+/obj/item/storage/firstaid/individual/military,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/gear)
 "uW" = (
@@ -8758,6 +8762,7 @@
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/device/binoculars,
+/obj/item/storage/firstaid/individual/military,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "uY" = (
@@ -10473,6 +10478,7 @@
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/device/binoculars,
+/obj/item/storage/firstaid/individual/military,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "zj" = (
@@ -11427,6 +11433,7 @@
 /obj/item/rig_module/device/healthscanner,
 /obj/item/rig_module/vision/medhud,
 /obj/item/device/binoculars,
+/obj/item/storage/firstaid/individual/military,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/gear)
 "BK" = (
@@ -12312,9 +12319,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
 /obj/item/gun/energy/laser/infantry,
 /obj/item/gun/energy/laser/infantry,
 /obj/item/gun/energy/laser/infantry,
@@ -13277,7 +13281,6 @@
 	icon_state = "intact-supply"
 	},
 /obj/structure/table/rack,
-/obj/item/storage/firstaid/adv,
 /obj/item/storage/firstaid/adv,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
@@ -15178,8 +15181,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/obj/item/gun/projectile/automatic/bullpup_rifle/sec/lmg,
-/obj/item/gun/projectile/rocket/oneuse/marine,
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Explosive";
 	req_access = list("ACCESS_MARCOM")
@@ -15194,12 +15195,13 @@
 	name = "box of frag shells";
 	startswith = list(/obj/item/grenade/frag/shell=7)
 	},
-/obj/item/gun/projectile/rocket/oneuse/marine,
-/obj/item/gun/projectile/automatic/bullpup_rifle/sec/lmg,
 /obj/item/plastique,
 /obj/item/plastique,
-/obj/item/plastique,
-/obj/item/plastique,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines/armory)
 "Ld" = (
@@ -18559,17 +18561,10 @@
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod4/station)
 "Sr" = (
-/obj/structure/closet/secure_closet/guncabinet/sidearm{
-	name = "ballistic sidearm cabinet";
-	req_access = list("ACCESS_MARINES")
-	},
 /obj/effect/floor_decal/techfloor/corner{
 	dir = 4
 	},
-/obj/item/gun/projectile/pistol/military,
-/obj/item/gun/projectile/pistol/military,
-/obj/item/gun/projectile/revolver/medium,
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines/bunk)
 "Ss" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -20175,6 +20170,7 @@
 /obj/item/clothing/accessory/armor_plate/ceramic,
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/device/binoculars,
+/obj/item/storage/firstaid/individual/military,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/bunk)
 "VJ" = (

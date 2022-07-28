@@ -10042,6 +10042,10 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/thirddeck/fore)
+"uX" = (
+/obj/machinery/media/music_writer,
+/turf/simulated/wall/prepainted,
+/area/crew_quarters/galley)
 "vb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/light/small{
@@ -11486,6 +11490,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/closet/chefcloset_torch,
+/obj/item/material/kitchen/rollingpin,
+/obj/item/material/knife/kitchen/cleaver,
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar/storage)
 "yt" = (
@@ -11990,9 +11997,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
 "zB" = (
-/obj/structure/closet/chefcloset_torch,
-/obj/item/material/knife/kitchen/cleaver,
-/obj/item/material/kitchen/rollingpin,
 /obj/structure/window/reinforced/tinted{
 	dir = 8
 	},
@@ -13964,6 +13968,7 @@
 	dir = 1;
 	frequency = 1438
 	},
+/obj/item/music_tape/custom,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
 "Et" = (
@@ -40067,7 +40072,7 @@ Xo
 XG
 fy
 SC
-ev
+uX
 bB
 fv
 fv

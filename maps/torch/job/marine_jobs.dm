@@ -41,7 +41,7 @@
 	)
 
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_marines,
-			            access_marcom, access_martech, access_marmed, access_marspec, access_aquila, access_eva, access_bridge)
+			            access_marcom, access_marlead, access_martech, access_marmed, access_marspec, access_aquila, access_eva, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
