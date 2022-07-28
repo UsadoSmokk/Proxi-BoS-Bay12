@@ -1485,6 +1485,7 @@
 #include "code\modules\aspects\golodomor.dm"
 #include "code\modules\aspects\medieval.dm"
 #include "code\modules\aspects\traps.dm"
+#include "code\modules\aspects\contraband.dm"
 #include "code\modules\assembly\assembly.dm"
 #include "code\modules\assembly\helpers.dm"
 #include "code\modules\assembly\holder.dm"
