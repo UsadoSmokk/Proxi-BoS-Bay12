@@ -9668,6 +9668,7 @@
 	pixel_y = 8
 	},
 /obj/random/handgun,
+/obj/item/device/radio/uplink,
 /turf/simulated/floor/wood,
 /area/shuttle/merchant/home)
 "aTA" = (
