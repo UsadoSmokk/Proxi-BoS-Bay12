@@ -48,7 +48,7 @@ var/global/datum/species/shapeshifter/promethean/prometheans
 	unarmed_types = list(/datum/unarmed_attack/slime_glomp)
 	has_organ =     list(
 		BP_BRAIN = /obj/item/organ/internal/brain/slime,
-		BP_STOMACH = /obj/item/organ/internal/stomach/slime
+//		BP_STOMACH = /obj/item/organ/internal/stomach/slime
 
 	) // Slime core.
 	has_limbs = list(

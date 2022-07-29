@@ -6,7 +6,7 @@
 
 /obj/item/organ/internal/brain/slime/can_recover()
 	return 0
-
+/*
 /obj/item/organ/internal/stomach/slime
 	name = "devour membrane"
 	desc = "Plasma from a slime..."
@@ -22,3 +22,4 @@
 
 /obj/item/organ/internal/stomach/slime/get_devour_time(var/atom/movable/food)
 	return isitem(food) ? null : DEVOUR_SLOW
+*/
