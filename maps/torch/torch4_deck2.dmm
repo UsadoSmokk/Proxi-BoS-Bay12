@@ -5556,6 +5556,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/device/paint_sprayer,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "lB" = (

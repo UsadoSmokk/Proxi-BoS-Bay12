@@ -9680,13 +9680,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
-"aFX" = (
-/obj/machinery/light,
-/obj/effect/floor_decal/corner/red{
-	dir = 10
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/firstdeck/fore)
 "aGb" = (
 /obj/item/device/radio/intercom{
 	dir = 1;
@@ -9873,6 +9866,9 @@
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
+	},
+/obj/machinery/firealarm{
+	pixel_y = 22
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -10157,16 +10153,6 @@
 "aIc" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
-"aIe" = (
-/obj/machinery/firealarm{
-	pixel_y = 22
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "aIf" = (
@@ -17879,11 +17865,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
-"fKb" = (
-/obj/machinery/door/firedoor,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/firstdeck/fore)
 "fKJ" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -18096,6 +18077,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "fXY" = (
@@ -19107,6 +19089,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/computer/cryopod{
 	pixel_y = 32
+	},
+/obj/effect/landmark/start{
+	name = "Prisoner"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -27613,6 +27598,7 @@
 	},
 /obj/item/clothing/gloves/insulated,
 /obj/item/clothing/gloves/insulated,
+/obj/item/device/paint_sprayer,
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
 "rxb" = (
@@ -30716,14 +30702,12 @@
 /turf/simulated/wall/prepainted,
 /area/medical/surgery2)
 "vAP" = (
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -30732,7 +30716,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "vBa" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -43202,9 +43186,9 @@ aDL
 aDL
 qib
 vAP
-fKb
+aFV
 aGY
-puL
+oBG
 oBG
 aPE
 qhJ
@@ -43404,9 +43388,9 @@ aDL
 aDL
 aDL
 hyj
-aFX
+aFV
 aGY
-aIe
+puL
 oWb
 wXc
 oVb
