@@ -82,7 +82,7 @@
 	Канонир: В Ваши обязанности входит защита, хранение, транспортировка, изготовление боеголовок для космических сражений."
 
 /datum/job/mining
-	title = "Field Support"
+	title = "Field Constructor"
 	department = "Auxiliary"
 	department_flag = SUP
 	total_positions = 2
@@ -96,7 +96,8 @@
 
 	min_skill = list(   SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_EVA     = SKILL_BASIC,
-	                    SKILL_PILOT   = SKILL_BASIC)
+	                    SKILL_PILOT   = SKILL_BASIC,
+	                    SKILL_CONSTRUCTION = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
