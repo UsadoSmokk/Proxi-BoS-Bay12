@@ -9,6 +9,7 @@
 	var/working_sound = 'sound/machines/sensors/dradis.ogg'
 	var/datum/sound_token/sound_token
 	var/sound_id
+	var/print_language = LANGUAGE_HUMAN_LORD
 
 /obj/machinery/computer/ship/sensors/attempt_hook_up(obj/effect/overmap/visitable/ship/sector)
 	if(!(. = ..()))
@@ -236,3 +237,8 @@
 /obj/machinery/shipsensors/weak
 	heat_reduction = 0.2
 	desc = "Miniturized gravity scanner with various other sensors, used to detect irregularities in surrounding space. Can only run in vacuum to protect delicate quantum BS elements."
+
+/obj/machinery/computer/ship/sensors/spacer
+	construct_state = /decl/machine_construction/default/panel_closed/computer/no_deconstruct
+	base_type = /obj/machinery/computer/ship/sensors
+	print_language = LANGUAGE_SPACER

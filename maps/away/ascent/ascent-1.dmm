@@ -93,7 +93,6 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "ap" = (
-/obj/structure/table/rack/shelf/steel,
 /obj/item/cell/mantid,
 /obj/item/cell/mantid,
 /obj/item/cell/mantid,
@@ -1590,7 +1589,6 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_armory)
 "dF" = (
-/obj/structure/table/rack/shelf/steel,
 /obj/item/tank/mantid/reactor/oxygen/captives,
 /obj/item/tank/mantid/reactor/oxygen/captives,
 /obj/item/clothing/mask/gas/half,
@@ -1601,12 +1599,10 @@
 /turf/simulated/wall/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "dH" = (
-/obj/structure/table/rack/shelf/steel,
 /obj/item/storage/box/ascentimplants,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_armory)
 "dI" = (
-/obj/structure/table/rack/shelf/steel,
 /obj/item/reagent_containers/hypospray/autoinjector/combatpain,
 /obj/item/reagent_containers/hypospray/autoinjector/combatpain,
 /turf/simulated/floor/tiled/ascent,
@@ -1957,7 +1953,6 @@
 	dir = 1;
 	level = 2
 	},
-/obj/structure/table/rack/shelf/steel,
 /obj/item/cell/mantid,
 /obj/item/cell/mantid,
 /obj/item/cell/mantid,
@@ -1968,38 +1963,32 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/obj/structure/table/rack/shelf/steel,
 /obj/item/device/gps,
 /obj/item/device/gps,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
 "eB" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,
-/obj/structure/table/rack/shelf/steel,
 /obj/item/device/dociler,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
 "eC" = (
-/obj/structure/table/rack/shelf/steel,
 /obj/item/device/flashlight/lamp/floodlamp/ascent,
 /obj/item/device/flashlight/lamp/floodlamp/ascent,
 /obj/item/device/geiger,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
 "eD" = (
-/obj/structure/table/rack/shelf/steel,
 /obj/item/device/radio/electropack,
 /obj/item/device/radio/electropack,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
 "eE" = (
-/obj/structure/table/rack/shelf/steel,
 /obj/item/device/assembly/signaler,
 /obj/item/device/assembly/signaler,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
 "eF" = (
-/obj/structure/table/rack/shelf/steel,
 /obj/item/device/paicard,
 /obj/item/device/paicard,
 /obj/item/device/paicard,
@@ -2842,9 +2831,8 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "gz" = (
-/obj/machinery/shield_diffuser,
 /turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_center)
+/area/space)
 "gC" = (
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
@@ -3372,6 +3360,10 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/tiroarea)
+"EA" = (
+/obj/effect/shuttle_landmark/ascent_seedship/nav_north,
+/turf/space,
+/area/space)
 "EJ" = (
 /obj/structure/bed/chair/padded/purple/ascent,
 /turf/simulated/floor/tiled/ascent,
@@ -3559,7 +3551,6 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
 "Qm" = (
-/obj/machinery/porta_turret/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/bridge)
 "QB" = (
@@ -3711,6 +3702,10 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
+"Xz" = (
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/ascent,
+/area/space)
 "XS" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -7772,9 +7767,9 @@ ac
 aa
 aa
 aa
-aa
-aa
-aa
+gz
+Xz
+gz
 aa
 aa
 aa
@@ -8946,7 +8941,7 @@ aa
 aa
 aa
 aa
-aa
+EA
 aa
 aa
 aa
@@ -14483,7 +14478,7 @@ ai
 ad
 ad
 ai
-gz
+fV
 ai
 ad
 ad
@@ -14604,9 +14599,9 @@ ai
 ai
 aa
 aa
-aa
-aa
-aa
+gz
+Xz
+gz
 aa
 aa
 ai

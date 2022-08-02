@@ -57,3 +57,7 @@
 	)
 	name = "[pick(all_elements)]-[rand(10,99)]-[rand(10,99)]"
 	. = ..()
+
+/obj/effect/shuttle_landmark/ascent_seedship/nav_north
+	name = "Northwest of Ascent seedship"
+	landmark_tag = "nav_ascent_north"

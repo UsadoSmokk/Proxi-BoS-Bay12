@@ -38,3 +38,11 @@
 		"Texas Red" = list("nav_hangar_texas")
 	)
 
+/obj/effect/shuttle_landmark/solship/nav_northwest
+	name = "Northwest of Big Iron"
+	landmark_tag = "nav_solship_northwest"
+
+/obj/effect/shuttle_landmark/solship/nav_south
+	name = "South of Big Iron"
+	landmark_tag = "nav_solship_south"
+
