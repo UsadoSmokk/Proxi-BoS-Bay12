@@ -78,3 +78,9 @@
 	great for stashing your stolen goods. Comes with a crowbar and a floor tile."
 	item_cost = 20
 	path = /obj/item/storage/backpack/satchel/flat
+
+/datum/uplink_item/item/stealth_items/chameleon_stamp //BoS
+	name = "Chameleon Stamp"
+	desc = "Captain, kill yourself now! It Buker order, documents with stamp here."
+	item_cost = 20
+	path = /obj/item/stamp/chameleon
