@@ -15395,12 +15395,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/maintenance{
-	autoset_access = 0;
-	req_access = list("ACCESS_MAINT")
-	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/tiled/white,
 /area/maintenance/firstdeck/centralstarboard)
 "cin" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -16387,18 +16382,12 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "dmv" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 1;
-	icon_state = "techfloor_edges"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10;
 	icon_state = "intact"
 	},
-/obj/machinery/airlock_sensor{
-	frequency = 1349;
-	id_tag = "koi_shuttle_dock_sensor";
-	pixel_y = 24
+/obj/effect/floor_decal/techfloor{
+	dir = 5
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
@@ -26258,15 +26247,20 @@
 /turf/simulated/floor/tiled,
 /area/mempark/gift)
 "qdW" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 6
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/door/airlock/maintenance{
+	autoset_access = 0;
+	req_access = list("ACCESS_MAINT")
 	},
-/obj/structure/closet/emcloset,
-/turf/simulated/floor/tiled/techfloor/grid,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "qeb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -26539,11 +26533,12 @@
 	frequency = 1349;
 	id_tag = "koi_shuttle_dock_pump"
 	},
-/obj/effect/floor_decal/techfloor{
-	dir = 5
-	},
 /obj/item/device/radio/intercom{
 	pixel_y = 23
+	},
+/obj/effect/floor_decal/techfloor{
+	dir = 1;
+	icon_state = "techfloor_edges"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
@@ -29896,6 +29891,11 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/firstdeck/aftstarboard)
 "tVx" = (
+/obj/machinery/airlock_sensor{
+	frequency = 1349;
+	id_tag = "koi_shuttle_dock_sensor";
+	pixel_y = 24
+	},
 /obj/effect/floor_decal/techfloor{
 	dir = 5
 	},
@@ -31406,7 +31406,13 @@
 	frequency = 1349;
 	id_tag = "koi_shuttle_dock_pump"
 	},
-/obj/effect/floor_decal/techfloor,
+/obj/effect/floor_decal/techfloor{
+	dir = 6
+	},
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
 "xaC" = (
@@ -51240,7 +51246,7 @@ kxs
 abP
 aKU
 cib
-agF
+qdW
 gEY
 kCb
 uqP
@@ -51638,7 +51644,7 @@ bPR
 ahQ
 afq
 afq
-abP
+tVx
 dmv
 wYw
 aTZ
@@ -51841,8 +51847,8 @@ oLc
 aan
 afq
 afq
-tVx
-qdW
+abP
+abP
 fzH
 acC
 lHO
