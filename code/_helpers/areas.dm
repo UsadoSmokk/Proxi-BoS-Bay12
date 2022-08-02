@@ -79,6 +79,8 @@
 /proc/is_turf_no_mines_and_walls(var/turf/T)
 	if(!istype(T, /turf/simulated/floor))
 		return FALSE
+	if(istype(T, /turf/simulated/floor/reinforced))
+		return FALSE
 	if(locate(/obj/item/mine) in T)
 		return FALSE
 	return TRUE
