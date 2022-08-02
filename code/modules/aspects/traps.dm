@@ -5,7 +5,7 @@
 	name = "Минное поле"
 	chance = 25
 	weight = ASPECT_WEIGHT_TRAPS
-	announce_text = "<span class=\"warning\">Недавно проходили учения, и после них в технических тоннелях полно опасностей. Будьте осторожны!</span>"
+	announce_text = "<span class=\"info\">Недавно проходили учения, и после них в технических тоннелях полно опасностей. Будьте осторожны!</span>"
 
 /datum/round_aspect/traps/get_desc_msg()
 	return SPAN_WARNING("Тоннели стали более опасными...")

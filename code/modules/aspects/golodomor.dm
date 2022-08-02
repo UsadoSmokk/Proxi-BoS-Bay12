@@ -2,7 +2,7 @@
 	name = "Голодомор"
 	chance = 30
 	weight = ASPECT_WEIGHT_GOLODOMOR
-	announce_text = "<span class=\"warning\">На нашем судне произошло нечто ужасное... Все сожрали! Еды почти не осталось! И как нам быть?..</span>"
+	announce_text = "<span class=\"info\">На нашем судне произошло нечто ужасное... Все сожрали! Еды почти не осталось! И как нам быть?..</span>"
 	var/list/allfood
 
 /datum/round_aspect/golodomor/New()
