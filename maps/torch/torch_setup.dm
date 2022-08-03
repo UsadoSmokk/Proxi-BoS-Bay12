@@ -20,12 +20,12 @@
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
+	var/obj/effect/overmap/visitable/torch = map_sectors["1"]
 	var/welcome_text = "<center><br /><font size = 3><b>LRS Antares</b> просканировал систему</font><br>"
 	welcome_text += "Отчёт сгенерирован [stationdate2text()] в [stationtime2text()]</center><br /><br />"
-	welcome_text += "<hr>Текущая система:<br /><b>Неизвестно</b><br /><br>"
+	welcome_text += "<hr>Текущая система:<br /><b>[torch ? system_name : "Unknown"]</b><br /><br>"
 
 	var/list/space_things = list()
-	var/obj/effect/overmap/visitable/torch = map_sectors["1"]
 
 	welcome_text += "Текущие координаты:<br /><b>[torch.x]:[torch.y]</b><br /><br>"
 	welcome_text += "Следующая система:<br /><b>[generate_system_name()]</b><br /><br>"

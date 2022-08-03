@@ -26,7 +26,7 @@ GLOBAL_LIST_EMPTY(admin_departments)
 		if (length(GLOB.using_map?.map_admin_faxes))
 			GLOB.admin_departments = GLOB.using_map.map_admin_faxes.Copy()
 		else
-			GLOB.admin_departments = list("[station_name()] Head Office", "[station_name()] Supply")
+			GLOB.admin_departments = list("[station_name()] Headquarters", "[station_name()] Supply", "ICCG Embassy", "PLD Head Office")
 
 	if (!destination)
 		if (length(GLOB.admin_departments))
