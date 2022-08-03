@@ -6927,6 +6927,12 @@
 	pixel_x = -23;
 	pixel_y = 0
 	},
+/obj/item/missile_equipment/passenger,
+/obj/item/missile_equipment/passenger,
+/obj/item/missile_equipment/passenger,
+/obj/item/missile_equipment/passenger,
+/obj/item/missile_equipment/passenger,
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles)
 "ov" = (
