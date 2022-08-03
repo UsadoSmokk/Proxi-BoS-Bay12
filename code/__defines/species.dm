@@ -19,6 +19,7 @@
 #define SPECIES_NO_FBP_CONSTRUCTION           FLAG(3)  // FBP of this species can't be made in-game.
 #define SPECIES_NO_FBP_CHARGEN                FLAG(4)  // FBP of this species can't be selected at chargen.
 #define SPECIES_NO_ROBOTIC_INTERNAL_ORGANS    FLAG(5)  // Species cannot start with robotic organs or have them attached.
+#define SPECIES_NO_LACE						  FLAG(6)   // Species cannot have laces. (BOH)
 
 
 // Species appearance flags

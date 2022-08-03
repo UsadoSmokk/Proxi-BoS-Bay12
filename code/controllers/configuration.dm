@@ -156,6 +156,8 @@
 
 	var/static/minimum_player_age = 0
 
+	var/static/use_cortical_stacks = 1 //boh
+
 	/// Allows ghosts to write in blood in cult rounds...
 	var/static/cult_ghostwriter = TRUE
 
@@ -652,6 +654,8 @@
 						else
 							log_misc("Incorrect objective disabled definition: [value]")
 							objectives_disabled = CONFIG_OBJECTIVE_NONE
+			if("use_cortical_stacks") //boh
+				config.use_cortical_stacks = 1
 			if ("protect_roles_from_antagonist")
 				protect_roles_from_antagonist = TRUE
 			if ("probability")
