@@ -247,3 +247,27 @@
 	)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew)
+
+/datum/job/chronicler
+	title = "Chronicler"
+	department = "Auxiliary"
+	department_flag = SRV
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "the First Officer"
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/chronicler
+	allowed_branches = list(
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/service/chronicler/fleet,
+		/datum/mil_branch/civilian
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/larfleet/o1,
+		/datum/mil_rank/civ/civ
+	)
+
+	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew, access_hangar, access_chronicler)
+
+/datum/job/chronicler/get_description_blurb()
+	return "Впервые летописцы как востребованная профессия появились во времена Тишины, когда всё человечество было без связи, а записывать события было нужно.\
+	Эти времена давно прошли, но теперь у этих варваров совсем нет времени на историю. Вы должны это исправить.\
+	Логируйте все события на корабле, приставайте к командованию с просьбами пустить их на мостик, умирайте в экспедициях."

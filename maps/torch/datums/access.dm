@@ -39,3 +39,9 @@
 	id = access_gunnery
 	desc = "Gunnery Access"
 	region = ACCESS_REGION_SECURITY
+
+/var/const/access_chronicler = "ACCESS_CHRONICLER"
+/datum/access/chronicler
+	id = access_chronicler
+	desc = "Chronicler Access"
+	region = ACCESS_REGION_GENERAL

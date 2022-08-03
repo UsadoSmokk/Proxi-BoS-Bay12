@@ -1847,3 +1847,11 @@
 	name = "\improper Security Checkpoint - Hallway"
 	icon_state = "security"
 	req_access = list(access_brig)
+
+/////////
+// Chroniclers
+/////////
+
+/area/chronicler
+	name = "\improper Chroniclers Office"
+	req_access = list(access_chronicler)

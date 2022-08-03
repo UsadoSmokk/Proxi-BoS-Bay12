@@ -254,3 +254,8 @@
 //	military_branch = global.mil_branches.get_branch(military_branch)
 	military_rank = pick(military_branch.spawn_ranks_)
 //	military_rank = global.mil_branches.get_rank(military_branch.name, military_rank)
+
+/obj/item/card/id/torch/chronicler
+	desc = "A card issued to the chroniclers aboard the LRS Antares."
+	job_access_type = /datum/job/chronicler
+	detail_color = COLOR_PAKISTAN_GREEN

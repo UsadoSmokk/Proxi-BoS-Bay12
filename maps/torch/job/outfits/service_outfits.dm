@@ -62,3 +62,16 @@
 	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
 	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
 	shoes = /obj/item/clothing/shoes/lordan
+
+/decl/hierarchy/outfit/job/torch/crew/service/chronicler
+	name = OUTFIT_JOB_NAME("Chronicler")
+	uniform = /obj/item/clothing/under/suit_jacket/charcoal
+	shoes = /obj/item/clothing/shoes/black
+	pda_type = /obj/item/modular_computer/pda
+	id_types= list(/obj/item/card/id/torch/chronicler)
+
+/decl/hierarchy/outfit/job/torch/crew/service/chronicler/fleet
+	name = OUTFIT_JOB_NAME("Chronicler - Fleet")
+	uniform = /obj/item/clothing/under/lordan/service/fleet/officer
+	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer
+	shoes = /obj/item/clothing/shoes/lordan
