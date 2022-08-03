@@ -15822,9 +15822,8 @@
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	pixel_y = 0
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/equipstorage)
@@ -17446,8 +17445,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/locker)
@@ -18509,11 +18507,6 @@
 "gEb" = (
 /obj/machinery/fabricator,
 /obj/effect/floor_decal/corner/paleblue/mono,
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	pixel_y = 0
-	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/equipstorage)
 "gEY" = (
@@ -19853,9 +19846,6 @@
 	},
 /obj/machinery/light{
 	dir = 1
-	},
-/obj/machinery/recharger/wallcharger{
-	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
@@ -21530,9 +21520,6 @@
 /area/security/wing)
 "kDz" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/machinery/power/apc{
 	dir = 1;
 	name = "north bump";
@@ -21546,9 +21533,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
 "kFT" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -27594,6 +27578,9 @@
 /obj/item/clothing/gloves/insulated,
 /obj/item/clothing/gloves/insulated,
 /obj/item/device/paint_sprayer,
+/obj/machinery/recharger/wallcharger{
+	pixel_y = 24
+	},
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
 "rxb" = (
@@ -30145,7 +30132,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/machinery/light,
 /obj/machinery/photocopier,
 /obj/machinery/camera/network/medbay{
 	c_tag = "Infirmary - Locker Room";
