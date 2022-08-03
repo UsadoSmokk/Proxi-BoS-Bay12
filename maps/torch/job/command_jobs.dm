@@ -266,12 +266,14 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
-		/datum/mil_branch/larfleet
+		/datum/mil_branch/larfleet,
+		/datum/mil_branch/lord
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/larfleet/e8,
 		/datum/mil_rank/larfleet/e9_alt2,
-		/datum/mil_rank/larfleet/e9
+		/datum/mil_rank/larfleet/e9,
+		/datum/mil_rank/lord/kgb = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet/kgb //cursed af
 	)
 	min_skill = list(   SKILL_EVA        = SKILL_BASIC,
 	                    SKILL_COMBAT     = SKILL_BASIC,

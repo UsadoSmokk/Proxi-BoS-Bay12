@@ -4,7 +4,7 @@
 	Неумелое руководство последних лет сильно потрепало ЦПСС - спорные экономические и политические реформы привели к Корпоративным Войнам, подъему национализма и сепаратизма на пограничных мирах. \
 	Теперь ЦПСС сталкивается с последствиями своих решений. И пусть никто точно не знает, что случится с ЦПСС в ближайшее время, все сходятся на мнении, что время это будет темным. \
 	<font color=\"#ff0000\">Только для антагонистов.</font>" //bos
-	economic_power = 0.8 //bos
+	economic_power = 0.9 //bos
 
 /decl/cultural_info/faction/scg/fleet
 	name = FACTION_FLEET
@@ -18,7 +18,7 @@
 	Bachelor degree and go through a lengthy training process before being assigned to a warship. \
 	Recently Sol-made IPCs were also permitted to enlist, provided they agree to install a law shackle. \
 	<font color=\"#ff0000\">Только для антагонистов.</font>" //bos
-	economic_power = 0.7 //bos
+	economic_power = 0.9 //bos
 
 /decl/cultural_info/faction/scg/army
 	name = FACTION_ARMY

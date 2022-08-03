@@ -148,12 +148,14 @@
 
 	rank_types = list(
 		/datum/mil_rank/lord/rep,
-		/datum/mil_rank/lord/gov
+		/datum/mil_rank/lord/gov,
+		/datum/mil_rank/lord/kgb
 	)
 
 	spawn_rank_types = list(
 		/datum/mil_rank/lord/rep,
-		/datum/mil_rank/lord/gov
+		/datum/mil_rank/lord/gov,
+		/datum/mil_rank/lord/kgb
 	)
 
 /datum/mil_branch/terran
@@ -466,6 +468,10 @@
 /datum/mil_rank/lord/gov
 	name = "Government Worker"
 	name_short = "GOVT"
+
+/datum/mil_rank/lord/kgb
+	name = "Protective Lordanian Divison"
+	name_short = "PLD"
 
 /*
  *  Terrans

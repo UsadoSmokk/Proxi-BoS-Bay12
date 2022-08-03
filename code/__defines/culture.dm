@@ -32,6 +32,7 @@
 #define FACTION_SOVLORDANIA		"Lordanian Sovereign Systems"
 #define FACTION_LARFLEET		"Fleet"
 #define FACTION_LARMARINES		"Marine Corps"
+#define FACTION_KGB				"Protective Lordanian Division"
 
 #define FACTION_LRA				"Republic Army"
 #define FACTION_SYNDI			"Syndicate"

@@ -79,6 +79,6 @@
 	icon_state = "fleetcap"
 
 /obj/item/clothing/head/lordan/fleet/po
-	name = "fleet political officer service cap"
+	name = "political officer service cap"
 	desc = "A white service cap bearing the crest of the LSS Fleet."
 	icon_state = "fleetcap_po"

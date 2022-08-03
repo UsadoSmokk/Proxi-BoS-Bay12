@@ -92,6 +92,10 @@
 	id_types= list(/obj/item/card/id/torch/crew/sea)
 	pda_type = /obj/item/modular_computer/pda/heads
 
+/decl/hierarchy/outfit/job/torch/crew/command/sea/fleet/kgb //cursed af
+	name = OUTFIT_JOB_NAME("Political Officer - KGB")
+	uniform = /obj/item/clothing/under/sl_suit
+
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	name = OUTFIT_JOB_NAME("Second Officer")
 	uniform = /obj/item/clothing/under/lordan/service/fleet/officer

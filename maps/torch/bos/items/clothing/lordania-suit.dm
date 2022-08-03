@@ -85,7 +85,7 @@
 //	icon_open = "navyservice_cap_open"
 
 /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
-	name = "fleet political officer service jacket"
+	name = "political officer service jacket"
 	desc = "A navy LSS Fleet service jacket with red accents."
 	icon = 'maps/torch/bos/icons/obj/obj_suit_lordania.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/bos/icons/mob/onmob_suit_lordania.dmi')
