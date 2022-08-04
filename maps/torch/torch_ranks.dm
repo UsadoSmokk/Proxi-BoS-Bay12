@@ -470,8 +470,8 @@
 	name_short = "GOVT"
 
 /datum/mil_rank/lord/kgb
-	name = "Protective Lordanian Divison"
-	name_short = "PLD"
+	name = "Galactic Security Corps"
+	name_short = "GSC"
 
 /*
  *  Terrans
