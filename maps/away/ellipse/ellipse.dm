@@ -26,14 +26,14 @@
 	area_usage_test_exempted_root_areas = list(/area/ellipse)
 
 /obj/effect/overmap/visitable/ship/ellipse/New(nloc, max_x, max_y)
-	name = "SSV [pick("Seeker-007", "Pathfinder-013", "Prospector-015", "Researcher-017")], \a [name]"
+	name = "SSS [pick("Seeker-007", "Pathfinder-013", "Prospector-015", "Researcher-017")], \a [name]"
 	..()
 
 /var/const/access_ellipse = "ACCESS_ELLIPSE"
 
 /datum/access/ellipse
 	id = access_ellipse
-	desc = "SSV Operator"
+	desc = "SSS Operator"
 	region = ACCESS_REGION_NONE
 
 /obj/item/card/id/ellipse
