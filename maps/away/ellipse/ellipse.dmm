@@ -15,7 +15,7 @@
 "ao" = (/obj/structure/table/reinforced,/obj/item/stack/material/uranium{amount = 30},/obj/effect/floor_decal/corner/red/border{dir = 1},/turf/simulated/floor/tiled/techmaint,/area/ellipse/atom)
 "ap" = (/obj/machinery/light{dir = 1},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/effect/floor_decal/corner/red/border{dir = 1},/turf/simulated/floor/tiled/techmaint,/area/ellipse/atom)
 "aq" = (/obj/machinery/power/shield_generator/precharged,/obj/structure/cable{d2 = 8; icon_state = "0-8"},/obj/effect/floor_decal/corner/red/border{dir = 5},/obj/effect/floor_decal/industrial/hatch/yellow,/turf/simulated/floor/tiled/techmaint,/area/ellipse/atom)
-"ar" = (/obj/effect/floor_decal/corner/grey/border{dir = 1},/obj/machinery/button/blast_door{name = "Test Chamber Lockdown"; id_tag = "eliptest"},/turf/simulated/floor/tiled/dark,/area/ellipse/research)
+"ar" = (/obj/effect/floor_decal/corner/grey/border{dir = 1},/obj/machinery/button/blast_door{name = "Test Chamber Lockdown"; id_tag = "eliptest"; pixel_y = 25},/turf/simulated/floor/tiled/dark,/area/ellipse/research)
 "as" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/effect/floor_decal/corner/grey/border{dir = 8},/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
 "at" = (/obj/machinery/ion_engine{dir = 8},/obj/effect/paint/black,/turf/simulated/wall/r_titanium,/area/ellipse/research)
 "au" = (/obj/structure/closet/toolcloset,/obj/effect/floor_decal/corner/grey/border{dir = 9},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
@@ -63,7 +63,7 @@
 "bk" = (/obj/machinery/fabricator/hacked,/obj/effect/floor_decal/corner/grey/border{dir = 5},/obj/effect/floor_decal/industrial/hatch/yellow,/turf/simulated/floor/tiled/dark,/area/ellipse/research)
 "bl" = (/obj/effect/floor_decal/corner/grey/border{dir = 4},/obj/effect/paint/black,/turf/simulated/floor/tiled/dark,/area/ellipse/research)
 "bm" = (/obj/machinery/door/airlock/external,/turf/simulated/floor/tiled/dark,/area/ellipse/research)
-"bn" = (/obj/effect/overmap/visitable/ship/ellipse,/turf/space,/area/space)
+"bn" = (/obj/effect/overmap/visitable/ship/ellipse,/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
 "bo" = (/obj/machinery/hologram/holopad/longrange,/obj/effect/floor_decal/industrial/outline/yellow,/obj/effect/submap_landmark/joinable_submap/ellipse,/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
 "bp" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
 "bq" = (/obj/structure/railing/mapped{dir = 8; tag = "icon-railing0 (EAST)"},/obj/effect/floor_decal/corner/red/border{dir = 6},/turf/simulated/floor/tiled/techmaint,/area/ellipse/atom)
@@ -82,12 +82,12 @@
 "bD" = (/obj/effect/floor_decal/corner/grey/bordercorner{dir = 8},/turf/simulated/floor/tiled/dark,/area/ellipse/research)
 "bE" = (/obj/machinery/computer/ship/sensors{icon_state = "computer"; dir = 4},/obj/machinery/light{dir = 8},/obj/effect/floor_decal/corner/grey/border{dir = 9},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
 "bF" = (/obj/effect/floor_decal/corner/grey/border{dir = 1},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
-"bG" = (/obj/effect/floor_decal/corner/grey/border{dir = 1},/obj/machinery/button/blast_door{name = "Ship Full Lockdown"; id_tag = "eliplock"},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
+"bG" = (/obj/effect/floor_decal/corner/grey/border{dir = 1},/obj/machinery/button/blast_door{name = "Ship Full Lockdown"; id_tag = "eliplock"; pixel_y = 25},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
 "bH" = (/turf/simulated/floor/tiled/dark,/area/ellipse/arsenal)
 "bI" = (/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = list("ACCESS_ENGINE_EQUIP")},/obj/structure/cable{d2 = 4; icon_state = "0-4"},/obj/effect/floor_decal/corner/grey/border{dir = 1},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
 "bJ" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/structure/anomaly_container,/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
 "bK" = (/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
-"bL" = (/obj/structure/railing/mapped{dir = 8; tag = "icon-railing0 (EAST)"},/obj/machinery/light{dir = 1},/obj/machinery/button/blast_door{id_tag = "land_door"; identifier = null; name = "Enter Shutters Control"},/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
+"bL" = (/obj/structure/railing/mapped{dir = 8; tag = "icon-railing0 (EAST)"},/obj/machinery/light{dir = 1},/obj/machinery/button/blast_door{id_tag = "land_door"; identifier = null; name = "Enter Shutters Control"; pixel_y = 30},/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
 "bM" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/effect/floor_decal/corner/grey/border{dir = 1},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
 "bN" = (/obj/machinery/power/smes/buildable/preset/on_full{name = "Land-042 SMES"},/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
 "bO" = (/obj/machinery/shipsensors,/turf/simulated/floor/airless,/area/ellipse/shuttle)
@@ -96,12 +96,12 @@
 "bR" = (/obj/machinery/computer/ship/helm{dir = 4; icon_state = "computer"},/obj/effect/floor_decal/corner/grey/border{dir = 8},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
 "bS" = (/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
 "bT" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/door/blast/regular/open{dir = 4; icon_state = "pdoor0"; id_tag = "eliplock"; name = "Blast Door"},/obj/machinery/door/airlock/multi_tile/glass/command{dir = 8},/turf/simulated/floor/tiled/dark,/area/ellipse/research)
-"bU" = (/obj/structure/bed/chair/shuttle/black{dir = 4; icon_state = "shuttle_chair_preview"},/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
+"bU" = (/obj/structure/bed/chair/shuttle/black{dir = 4; icon_state = "shuttle_chair_preview"},/obj/machinery/button/blast_door{id_tag = "land_shutters"; name = "Window Shutters"; pixel_x = 25; pixel_y = 25},/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
 "bV" = (/obj/machinery/door/blast/regular/open{density = 0; dir = 4; icon_state = "pdoor0"; id_tag = "eliplock"; name = "Protective Shutters"; opacity = 0},/obj/effect/floor_decal/industrial/hatch/yellow,/turf/simulated/floor/tiled/dark,/area/ellipse/research)
 "bW" = (/obj/machinery/door/blast/regular/open{density = 0; dir = 4; icon_state = "pdoor0"; id_tag = "land_door"; name = "Protective Shutters"; opacity = 0},/obj/effect/floor_decal/industrial/hatch/yellow,/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
 "bX" = (/obj/machinery/computer/shuttle_control/explore/land,/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
 "bY" = (/obj/effect/floor_decal/corner/grey/border{dir = 1},/obj/structure/table/reinforced,/obj/random/tech_supply,/obj/random/tech_supply,/turf/simulated/floor/tiled/dark,/area/ellipse/research)
-"bZ" = (/obj/machinery/computer/ship/helm{dir = 8; icon_state = "computer"},/obj/machinery/button/blast_door{id_tag = "land_shutters"; name = "Window Shutters"},/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
+"bZ" = (/obj/machinery/computer/ship/helm{dir = 8; icon_state = "computer"},/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
 "ca" = (/obj/structure/railing/mapped{dir = 8; tag = "icon-railing0 (EAST)"},/obj/machinery/light,/obj/machinery/recharger,/turf/simulated/floor/tiled/techfloor,/area/ellipse/shuttle)
 "cb" = (/obj/effect/catwalk_plated,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/ellipse/research)
 "cc" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/techmaint,/area/ellipse/bridge)
@@ -226,8 +226,8 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaLacasaj
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaYbubuajbeaeaeaeaeaeaeaeaeaZaQbtaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacbdbPaebabbbgbhbYbkaeaRaQbtaeaaaWbybybybybybybOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacbEbGbIbMbfbwaeaRaSaSaSaSdgbxbAaQblaeaebybJbKbLbNbXbybyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnacacbRbjajajajdxcdaSaSaSaSaSaSaSaSaQaSbVbmbWbSbSbSbzbUbZceaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaccjboajajajbpbTbrbsbsbsbsbsbsbscbbsdFcfdGcgchbQcGbSckceaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacbRbjajajajdxcdaSaSaSaSaSaSaSaSaQaSbVbmbWbSbSbSbzbUbZceaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaccjbobnajajbpbTbrbsbsbsbsbsbsbscbbsdFcfdGcgchbQcGbSckceaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacclcmcNbuajaNaebBaSaSaSaSddbCbDaQbtaeaebycncocacicQbybyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacbdbPaecscucOcPcRdjaeaRaQbtaeaaabbybybybybybyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaccYbFbFajbeaeaeaeaeaeaeaeaeaZaQbtaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
