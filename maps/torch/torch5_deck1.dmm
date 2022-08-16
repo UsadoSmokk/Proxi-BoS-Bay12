@@ -22137,11 +22137,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/closet/firecloset,
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 9
 	},
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled,
 /area/rnd/entry)
 "lkb" = (
@@ -22973,6 +22972,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/secpointhal)
+"mof" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 10
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled,
+/area/hallway/primary/firstdeck/center)
 "mpq" = (
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 8
@@ -28313,6 +28319,9 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/entry)
+"sfO" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/rnd/entry)
 "sgb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -28975,9 +28984,7 @@
 /obj/effect/floor_decal/corner/green/half{
 	dir = 1
 	},
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "sOb" = (
@@ -47266,7 +47273,7 @@ aLU
 awb
 rKo
 aye
-ure
+mof
 aAm
 aAm
 aAm
@@ -53327,7 +53334,7 @@ nSb
 dMe
 qWb
 mpq
-htb
+sfO
 ljb
 hVb
 imb

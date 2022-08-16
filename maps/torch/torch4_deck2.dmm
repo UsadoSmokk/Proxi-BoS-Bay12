@@ -1742,8 +1742,7 @@
 /turf/simulated/floor/airless,
 /area/maintenance/seconddeck/aftport)
 "dn" = (
-/obj/structure/bed/roller,
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/elevator)
 "do" = (
@@ -7826,6 +7825,7 @@
 "qN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
 "qO" = (
@@ -16153,11 +16153,9 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/seconddeck/aftport)
 "LJ" = (
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/wallframe_spawn/reinforced/no_grille,
-/turf/simulated/floor/plating,
+/turf/simulated/wall/prepainted,
 /area/engineering/foyer)
 "LL" = (
 /obj/structure/cable/cyan{
@@ -17048,11 +17046,11 @@
 /turf/simulated/floor/tiled,
 /area/engineering/storage)
 "Om" = (
-/obj/item/stool,
 /obj/machinery/camera/network/second_deck{
 	c_tag = "Second Deck Hallway - Elevator Landing";
 	dir = 4
 	},
+/obj/structure/bed/roller,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/elevator)
 "On" = (

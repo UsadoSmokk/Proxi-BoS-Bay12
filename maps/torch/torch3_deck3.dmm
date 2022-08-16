@@ -411,12 +411,10 @@
 /turf/space,
 /area/space)
 "bc" = (
-/obj/machinery/camera/network/third_deck{
-	c_tag = "Third Deck Hallway - Ladders"
-	},
 /obj/effect/floor_decal/corner/yellow{
 	dir = 4
 	},
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "bd" = (
@@ -651,6 +649,9 @@
 /turf/simulated/wall/prepainted,
 /area/hydroponics)
 "bB" = (
+/obj/machinery/media/music_writer{
+	pixel_y = 30
+	},
 /turf/simulated/floor/wood/maple,
 /area/crew_quarters/mess)
 "bC" = (
@@ -8288,6 +8289,9 @@
 /obj/effect/floor_decal/corner/yellow{
 	dir = 1
 	},
+/obj/machinery/camera/network/third_deck{
+	c_tag = "Third Deck Hallway - Ladders"
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "rm" = (
@@ -9963,9 +9967,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/obj/effect/wallframe_spawn/no_grille,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
+/turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/sleep/cryo)
 "uS" = (
 /obj/machinery/door/firedoor,
@@ -9998,9 +10000,17 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/thirddeck/fore)
 "uX" = (
-/obj/machinery/media/music_writer,
-/turf/simulated/wall/prepainted,
-/area/crew_quarters/galley)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/ship_map,
+/turf/simulated/floor/tiled/techfloor,
+/area/crew_quarters/sleep/cryo)
 "vb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/light/small{
@@ -18146,9 +18156,7 @@
 /area/chapel/main)
 "NA" = (
 /obj/effect/floor_decal/industrial/warning/fulltile,
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/thirddeck/center)
 "NB" = (
@@ -39227,7 +39235,7 @@ ZB
 eQ
 ft
 kL
-Xn
+tF
 sj
 wV
 rV
@@ -40026,7 +40034,7 @@ Xo
 XG
 fy
 SC
-uX
+ev
 bB
 fv
 fv
@@ -40443,7 +40451,7 @@ QM
 sn
 YY
 uR
-vW
+uX
 vW
 yd
 yV

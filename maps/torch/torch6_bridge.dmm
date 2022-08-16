@@ -10245,6 +10245,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
+"zl" = (
+/obj/effect/floor_decal/corner/blue/half{
+	dir = 1;
+	icon_state = "bordercolorhalf"
+	},
+/obj/machinery/ship_map,
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/bridge/aft)
 "zm" = (
 /obj/machinery/camera/all/command{
 	c_tag = "AI Core - Center Starboard";
@@ -32173,7 +32181,7 @@ gm
 gm
 gm
 fI
-kM
+zl
 El
 mW
 kJ

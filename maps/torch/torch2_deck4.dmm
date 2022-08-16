@@ -7069,6 +7069,9 @@
 	icon_state = "corner_white"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/center)
 "rm" = (
@@ -11641,6 +11644,13 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/medical)
+"Ck" = (
+/obj/effect/floor_decal/corner/brown{
+	dir = 5
+	},
+/obj/machinery/ship_map,
+/turf/simulated/floor/tiled,
+/area/hallway/primary/fourthdeck/aft)
 "Cm" = (
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/top)
@@ -17408,9 +17418,7 @@
 	dir = 1;
 	icon_state = "bordercolorhalf"
 	},
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/center)
 "PT" = (
@@ -43864,7 +43872,7 @@ YG
 Ro
 pi
 Xn
-TH
+Ck
 jW
 TT
 ai
