@@ -14,7 +14,7 @@
 		bomb = ARMOR_BOMB_PADDED
 		)
 
-/obj/item/clothing/head/vox/guard
+/obj/item/clothing/head/helmet/vox/guard
 	name = "guard helmet"
 	desc = "."
 	icon = 'icons/bos/obj/clothing/species/vox/obj_head_vox.dmi'
@@ -26,7 +26,7 @@
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 		)
-/obj/item/clothing/head/vox/jaw
+/obj/item/clothing/head/helmet/vox/jaw
 	name = "chitin jaw"
 	desc = "."
 	icon = 'icons/bos/obj/clothing/species/vox/obj_head_vox.dmi'

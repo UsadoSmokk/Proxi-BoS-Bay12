@@ -80,7 +80,6 @@
 		list(mode_name="focused", burst=1, fire_delay=null, move_delay=null, burst_accuracy=list(30), dispersion=null, projectile_type=/obj/item/projectile/beam/darkmatter, charge_cost = 75),
 		list(mode_name="scatter burst", burst=8, fire_delay=null, move_delay=4, burst_accuracy=list(0, 0, 0, 0, 0, 0, 0, 0), dispersion=list(0, 1, 2, 2, 3, 3, 3, 3, 3), projectile_type=/obj/item/projectile/energy/darkmatter, charge_cost = 10),
 	)
-	use_external_power = 0
 
 /obj/item/rig_module/mounted/darkmatter
 	name = "darkmatter cannon"
@@ -90,7 +89,7 @@
 	suit_overlay_active = "darkmatter"
 	icon = 'icons/bos/obj/clothing/species/vox/obj_rig_vox.dmi'
 	icon_state = "darkmatter"
-	gun = /obj/item/gun/energy/darkmatter
+	gun = /obj/item/gun/energy/gun/mounted/darkmatter
 
 /obj/item/rig_module/mounted/plasmacutter/darkmatter
 	name = "plasmacutter"
