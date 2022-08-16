@@ -3,6 +3,8 @@
 	icon_override = 'icons/bos/mob/onmob/species/vox/onmob_head_vox.dmi'
 	icon_state = "vox_rig_inq"
 	species_restricted = list(SPECIES_VOX)
+	item_flags = 0
+	flags_inv = 0
 
 /obj/item/clothing/suit/space/rig/vox_rig_inq
 	icon = 'icons/bos/obj/clothing/species/vox/obj_suit_vox.dmi'
@@ -40,6 +42,8 @@
 	icon_override = 'icons/bos/mob/onmob/species/vox/onmob_head_vox.dmi'
 	icon_state = "vox_rig_breacher"
 	species_restricted = list(SPECIES_VOX)
+	item_flags = 0
+	flags_inv = 0
 
 /obj/item/clothing/suit/space/rig/vox_rig_breacher
 	icon = 'icons/bos/obj/clothing/species/vox/obj_suit_vox.dmi'
