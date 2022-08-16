@@ -108,7 +108,7 @@
 	)
 
 /obj/item/rig/vox/inq
-	name = "alien rig control module"
+	name = "inquisitor rig control module"
 	desc = "A strange purple the thing, as if from the nightmares of a psychopath with schizophrenia. A thousand legs are moving, they clearly make it clear that it is alive and extremely unfriendly. It is these rigs that envelop the bodies of the Inquisition of the New Empire, so that they simultaneously instill the fire of their faith into the hearts of their brethren, and inspire animal fear to their enemies..However, if you look closely, you can see how Kighakiki is scratched on the chitin."
 	suit_type = "alien rig"
 	icon = 'icons/bos/obj/clothing/species/vox/obj_rig_vox.dmi'
@@ -145,7 +145,7 @@
 		)
 
 /obj/item/rig/vox/inq/breacher
-	name = "alien rig control module"
+	name = "breacher control module"
 	desc = "A strange purple the thing, as if from the nightmares of a psychopath with schizophrenia. A thousand legs are moving, they clearly make it clear that it is alive and extremely unfriendly. It is these rigs that envelop the bodies of the Inquisition of the New Empire, so that they simultaneously instill the fire of their faith into the hearts of their brethren, and inspire animal fear to their enemies..However, if you look closely, you can see how Ciharica is scratched on the chitin."
 	suit_type = "alien rig"
 	icon = 'icons/bos/obj/clothing/species/vox/obj_rig_vox.dmi'

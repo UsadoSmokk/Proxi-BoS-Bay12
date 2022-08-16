@@ -39,20 +39,6 @@
 	initial_gas = list("nitrogen"=101)
 	},
 /area/voxship/ship_mid)
-"ay" = (
-/obj/machinery/door/airlock/ascent{
-	autoset_access = 0;
-	color = "#6cda1b";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP");
-	name = "Auralis Temple"
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen"=103)
-	},
-/area/voxship/dorms)
 "aN" = (
 /obj/item/stool/padded,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -167,15 +153,6 @@
 /obj/item/storage/box/detergent,
 /turf/simulated/floor/plating/vox,
 /area/voxship/dorms)
-"df" = (
-/obj/structure/table/marble,
-/obj/item/flame/candle,
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/voxship/dorms)
 "dk" = (
 /obj/machinery/light{
 	dir = 8;
@@ -225,6 +202,20 @@
 	initial_gas = list("nitrogen"=101.23)
 	},
 /area/voxship/med)
+"dO" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/obj/effect/floor_decal/spline/fancy/black,
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/obj/item/rig/vox/inq/breacher,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/voxship/dorms)
 "dR" = (
 /obj/machinery/light{
 	dir = 4;
@@ -325,16 +316,6 @@
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/simulated/floor/plating/vox,
 /area/voxship/cbridge)
-"fn" = (
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
-/obj/structure/monolith{
-	color = #483D8B
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/voxship/dorms)
 "fo" = (
 /obj/structure/table/standard,
 /obj/item/crowbar/brace_jack,
@@ -346,6 +327,20 @@
 /obj/item/airlock_brace,
 /turf/simulated/floor/plating/vox,
 /area/voxship/cbridge)
+"fs" = (
+/obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
+	color = "#6cda1b";
+	dir = 4;
+	req_access = list("ACCESS_VOXSHIP");
+	name = "Auralis Temple"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen"=103)
+	},
+/area/voxship/dorms)
 "fz" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -357,6 +352,14 @@
 	initial_gas = list("nitrogen"=103)
 	},
 /area/voxship/hydro)
+"fC" = (
+/obj/structure/table/standard,
+/obj/item/clothing/suit/armor/vox/quill_armor,
+/obj/item/clothing/head/helmet/vox/quill_crown,
+/turf/simulated/floor/wood/mahogany{
+	initial_gas = list("nitrogen"=101.23)
+	},
+/area/voxship/quills)
 "fD" = (
 /obj/machinery/cryopod{
 	dir = 2
@@ -482,13 +485,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
-"gT" = (
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 10;
-	icon_state = "spline_fancy"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/voxship/dorms)
 "hp" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -582,23 +578,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/hydro)
-"iQ" = (
-/obj/structure/table/marble,
-/obj/item/flame/candle,
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 4;
-	icon_state = "spline_fancy"
-	},
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/voxship/dorms)
 "iV" = (
 /obj/machinery/light{
 	dir = 8;
@@ -895,9 +874,14 @@
 /obj/random/maintenance,
 /turf/simulated/floor/plating/vox,
 /area/voxship/dorms)
-"mf" = (
+"mb" = (
+/obj/effect/floor_decal/spline/fancy/black,
 /obj/effect/floor_decal/spline/fancy/black{
-	dir = 6;
+	dir = 8;
+	icon_state = "spline_fancy"
+	},
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 4;
 	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -962,23 +946,6 @@
 	initial_gas = list("nitrogen"=101.23)
 	},
 /area/voxship/med)
-"mV" = (
-/obj/structure/table/marble,
-/obj/item/flame/candle,
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 8;
-	icon_state = "spline_fancy"
-	},
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/voxship/dorms)
 "mX" = (
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/cbridge)
@@ -1552,6 +1519,17 @@
 /obj/machinery/vending/snack,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"vO" = (
+/obj/structure/table/marble,
+/obj/item/organ/internal/brain/unathi,
+/obj/item/organ/internal/acetone,
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/obj/effect/floor_decal/spline/fancy/black,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/voxship/dorms)
 "wm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/chemical_dispenser/full,
@@ -1608,6 +1586,14 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"wz" = (
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/obj/structure/vox_monolith,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/voxship/dorms)
 "wF" = (
 /obj/structure/closet,
 /obj/item/reagent_containers/food/drinks/milk,
@@ -1639,17 +1625,6 @@
 	initial_gas = list("nitrogen"=101.23)
 	},
 /area/voxship/ship_mid)
-"wO" = (
-/obj/structure/table/marble,
-/obj/item/organ/internal/brain/unathi,
-/obj/item/organ/internal/acetone,
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 4;
-	icon_state = "spline_fancy"
-	},
-/obj/effect/floor_decal/spline/fancy/black,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/voxship/dorms)
 "wP" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1677,21 +1652,21 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/cbridge)
 "xa" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/ascent{
-	autoset_access = 0;
-	color = "#6cda1b";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
+/obj/structure/table/marble,
+/obj/item/flame/candle,
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 8;
+	icon_state = "spline_fancy"
 	},
-/obj/machinery/door/airlock/ascent{
-	autoset_access = 0;
-	color = "#6cda1b";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP");
-	name = "Auralis Temple"
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/voxship/dorms)
 "xc" = (
 /obj/structure/bed/padded,
@@ -1917,8 +1892,8 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "zO" = (
-/obj/machinery/recharge_station,
-/turf/simulated/floor/plating/vox,
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/inq,
+/turf/simulated/floor/carpet/purple,
 /area/voxship/dorms)
 "Ag" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1981,18 +1956,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/cbridge)
-"Bb" = (
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 4;
-	icon_state = "spline_fancy"
-	},
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 8;
-	icon_state = "spline_fancy"
-	},
-/obj/effect/floor_decal/spline/fancy/black,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/voxship/dorms)
 "Bd" = (
 /obj/effect/submap_landmark/joinable_submap/voxship,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -2278,14 +2241,6 @@
 /obj/item/stool/padded,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
-"Fr" = (
-/obj/structure/table/standard,
-/obj/item/clothing/suit/armor/vox/quill_armor,
-/obj/item/clothing/head/helmet/vox/quill_crown,
-/turf/simulated/floor/wood/mahogany{
-	initial_gas = list("nitrogen"=101.23)
-	},
-/area/voxship/quills)
 "Fu" = (
 /obj/structure/bed/padded,
 /obj/structure/curtain/open/bed,
@@ -2622,6 +2577,10 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"IO" = (
+/obj/machinery/recharge_station,
+/turf/simulated/floor/plating/vox,
+/area/voxship/dorms)
 "Ja" = (
 /obj/structure/bed/padded,
 /obj/structure/curtain/open/bed,
@@ -2737,20 +2696,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
-"KV" = (
-/obj/structure/table/rack,
-/obj/item/rig/vox/inq/breacher,
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 4;
-	icon_state = "spline_fancy"
-	},
-/obj/effect/floor_decal/spline/fancy/black,
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/voxship/dorms)
 "KW" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
@@ -2814,6 +2759,10 @@
 	initial_gas = list("nitrogen"=101.23)
 	},
 /area/voxship/med)
+"Lt" = (
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/breacher,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
 "Lx" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
@@ -3058,6 +3007,18 @@
 	initial_gas = list("nitrogen"=101.23)
 	},
 /area/voxship/med)
+"NZ" = (
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 8;
+	icon_state = "spline_fancy"
+	},
+/obj/effect/floor_decal/spline/fancy/black,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/voxship/dorms)
 "Oc" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4;
@@ -3104,7 +3065,13 @@
 	},
 /area/voxship/dorms)
 "Oz" = (
-/turf/simulated/floor/reinforced/airless,
+/obj/structure/table/marble,
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/obj/item/rig/vox/inq,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/voxship/dorms)
 "OA" = (
 /obj/machinery/atmospherics/unary/freezer{
@@ -3362,6 +3329,17 @@
 	initial_gas = list("nitrogen"=101.23)
 	},
 /area/voxship/med)
+"Rg" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
+	color = "#6cda1b";
+	dir = 4;
+	req_access = list("ACCESS_VOXSHIP");
+	name = "Auralis Temple"
+	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
 "Rh" = (
 /obj/machinery/reagentgrinder,
 /obj/item/stack/material/phoron/ten,
@@ -3371,6 +3349,20 @@
 	initial_gas = list("nitrogen"=101.23)
 	},
 /area/voxship/med)
+"Rx" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 8;
+	icon_state = "spline_fancy"
+	},
+/obj/effect/floor_decal/spline/fancy/black,
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/obj/item/rig/vox/inq/breacher,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/voxship/dorms)
 "RD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5;
@@ -3496,6 +3488,23 @@
 	initial_gas = list("nitrogen"=101)
 	},
 /area/voxship/ship_mid)
+"SO" = (
+/obj/structure/table/marble,
+/obj/item/flame/candle,
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 4;
+	icon_state = "spline_fancy"
+	},
+/obj/effect/floor_decal/spline/fancy/black{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/voxship/dorms)
 "SV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -3574,29 +3583,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/hydro)
-"TB" = (
-/obj/structure/table/marble,
-/obj/item/organ/internal/cell/adherent,
-/obj/item/organ/internal/controller,
-/obj/item/organ/internal/appendix,
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 8;
-	icon_state = "spline_fancy"
-	},
-/obj/effect/floor_decal/spline/fancy/black,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/voxship/dorms)
-"TV" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/ascent{
-	autoset_access = 0;
-	color = "#6cda1b";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP");
-	name = "Auralis Temple"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/dorms)
 "Ua" = (
 /obj/structure/table/standard,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -3624,9 +3610,6 @@
 	initial_gas = list("nitrogen"=101.23)
 	},
 /area/voxship/med)
-"Ul" = (
-/turf/simulated/floor/carpet/purple,
-/area/voxship/dorms)
 "Uy" = (
 /obj/machinery/light{
 	dir = 4;
@@ -3894,23 +3877,21 @@
 	},
 /turf/simulated/floor/airless,
 /area/voxship/ship_mid)
-"Xh" = (
-/obj/structure/table/rack,
-/obj/item/rig/vox/inq,
+"Xl" = (
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/hydro)
+"Xn" = (
+/obj/structure/table/marble,
+/obj/item/organ/internal/cell/adherent,
+/obj/item/organ/internal/controller,
+/obj/item/organ/internal/appendix,
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 8;
 	icon_state = "spline_fancy"
 	},
 /obj/effect/floor_decal/spline/fancy/black,
-/obj/effect/floor_decal/spline/fancy/black{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/voxship/dorms)
-"Xl" = (
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/hydro)
 "Xs" = (
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/cbridge)
@@ -4073,6 +4054,9 @@
 /turf/simulated/floor/tiled/kafel_full{
 	initial_gas = list("nitrogen"=101.23)
 	},
+/area/voxship/dorms)
+"Zw" = (
+/turf/simulated/floor/reinforced/airless,
 /area/voxship/dorms)
 "Zx" = (
 /obj/machinery/cryopod{
@@ -14816,7 +14800,7 @@ bq
 OI
 Ya
 Tc
-Fr
+fC
 zo
 Gk
 jz
@@ -19360,8 +19344,8 @@ hC
 hC
 hC
 hC
-Oz
-Oz
+Zw
+Zw
 YO
 YO
 Nj
@@ -19815,9 +19799,9 @@ hC
 hC
 hC
 YO
-mV
-TB
-De
+xa
+Xn
+Lt
 De
 YO
 YO
@@ -19967,11 +19951,11 @@ hC
 hC
 hC
 YO
-fn
-Ul
-gT
+wz
+zO
+mb
 De
-xa
+Rg
 De
 zI
 jc
@@ -20119,11 +20103,11 @@ hC
 hC
 hC
 YO
-fn
-Ul
-mf
+SO
+vO
+Lt
 De
-TV
+YO
 De
 PX
 sE
@@ -20271,10 +20255,10 @@ hC
 hC
 hC
 YO
-iQ
-wO
-De
-De
+YO
+YO
+YO
+fs
 YO
 Zx
 De
@@ -20422,11 +20406,11 @@ hC
 hC
 hC
 hC
+hC
 YO
 YO
-YO
-YO
-ay
+zB
+De
 YO
 fD
 tN
@@ -20575,9 +20559,9 @@ hC
 hC
 hC
 hC
+hC
 YO
-YO
-zB
+Rx
 De
 YO
 YO
@@ -20729,8 +20713,8 @@ hC
 hC
 hC
 YO
-Xh
-De
+Oz
+NZ
 YO
 cc
 tK
@@ -20881,8 +20865,8 @@ hC
 hC
 hC
 YO
-df
-Bb
+dO
+De
 YO
 co
 pt
@@ -21033,7 +21017,7 @@ hC
 hC
 hC
 YO
-KV
+zB
 De
 YO
 vJ
@@ -21185,8 +21169,8 @@ hC
 hC
 hC
 YO
-zB
-De
+YO
+YO
 YO
 cG
 tK
@@ -21336,9 +21320,9 @@ hC
 hC
 hC
 hC
-YO
-YO
-YO
+bC
+bC
+bC
 YO
 cY
 tK
@@ -21801,7 +21785,7 @@ tK
 kJ
 tK
 dk
-zO
+IO
 YO
 ZV
 IA
@@ -21953,7 +21937,7 @@ LH
 WM
 mx
 tK
-zO
+IO
 YO
 xc
 IG
