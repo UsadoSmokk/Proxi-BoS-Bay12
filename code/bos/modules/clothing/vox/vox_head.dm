@@ -1,5 +1,7 @@
 /obj/item/clothing/head/vox
 	species_restricted = list(SPECIES_VOX)
+	item_flags = 0
+	flags_inv = 0
 
 /obj/item/clothing/head/helmet/vox/quill_crown
 	name = "quill crown"

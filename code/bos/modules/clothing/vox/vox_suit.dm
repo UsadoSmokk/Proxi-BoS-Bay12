@@ -1,6 +1,8 @@
 /obj/item/clothing/suit/armor/vox
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	species_restricted = list(SPECIES_VOX)
+	item_flags = 0
+	flags_inv = 0
 
 /obj/item/clothing/suit/armor/vox/bombsuit
 	name = "vox bombsuit"
@@ -21,9 +23,8 @@
 		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
 	heat_protection = UPPER_TORSO|LOWER_TORSO
-	item_flags = null
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	siemens_coefficient = 0
+	siemens_coefficient = 0.2
 
 /obj/item/clothing/suit/armor/vox/quill_armor
 	name = "quill mantle"
@@ -37,6 +38,7 @@
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
+	siemens_coefficient = 0
 
 /obj/item/clothing/suit/armor/vox/guard
 	name = "guard shell"
@@ -53,8 +55,7 @@
 	w_class = ITEM_SIZE_HUGE//bulky item
 	gas_transfer_coefficient = 0.90
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
-	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
-	siemens_coefficient = 0
+	siemens_coefficient = 0.2
 
 /obj/item/clothing/suit/storage/vox
 	name = "vox cloak"

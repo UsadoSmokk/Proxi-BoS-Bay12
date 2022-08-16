@@ -138,7 +138,7 @@
 		/obj/item/rig_module/vision/darkmatter,
 		/obj/item/rig_module/mounted/plasmacutter/darkmatter,
 		/obj/item/rig_module/maneuvering_jets,
-		/obj/item/rig_module/mounted/darkmatter,
+		/obj/item/rig_module/teleporter,
 		/obj/item/rig_module/power_sink,
 		/obj/item/rig_module/cooling_unit
 		)
