@@ -75,7 +75,7 @@
 // RIG modules
 /obj/item/gun/energy/gun/mounted/darkmatter
 	projectile_type = /obj/item/projectile/beam/stun/darkmatter
-	firemodes = list(
+	init_firemodes = list(
 		list(mode_name="stunning", burst=1, fire_delay=null, move_delay=null, burst_accuracy=list(30), dispersion=null, projectile_type=/obj/item/projectile/beam/stun/darkmatter, charge_cost = 50),
 		list(mode_name="focused", burst=1, fire_delay=null, move_delay=null, burst_accuracy=list(30), dispersion=null, projectile_type=/obj/item/projectile/beam/darkmatter, charge_cost = 75),
 		list(mode_name="scatter burst", burst=8, fire_delay=null, move_delay=4, burst_accuracy=list(0, 0, 0, 0, 0, 0, 0, 0), dispersion=list(0, 1, 2, 2, 3, 3, 3, 3, 3), projectile_type=/obj/item/projectile/energy/darkmatter, charge_cost = 10),
@@ -114,6 +114,7 @@
 	icon = 'icons/bos/obj/clothing/species/vox/obj_rig_vox.dmi'
 	icon_override = 'icons/bos/mob/onmob/species/vox/onmob_rig_back_vox.dmi'
 	icon_state = "vox_rig_inq"
+	equipment_overlay_icon = 'icons/bos/mob/onmob/species/vox/onmob_rig_back_vox.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_PISTOL,
@@ -150,6 +151,7 @@
 	icon = 'icons/bos/obj/clothing/species/vox/obj_rig_vox.dmi'
 	icon_override = 'icons/bos/mob/onmob/species/vox/onmob_rig_back_vox.dmi'
 	icon_state = "vox_rig_inq"
+	equipment_overlay_icon = 'icons/bos/mob/onmob/species/vox/onmob_rig_back_vox.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_PISTOL,
@@ -162,10 +164,10 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 
-	chest_type = /obj/item/clothing/suit/space/rig/vox_rig_inq
-	helm_type = /obj/item/clothing/head/helmet/space/rig/vox_rig_inq
-	boot_type = /obj/item/clothing/shoes/magboots/rig/vox_rig_inq
-	glove_type = /obj/item/clothing/gloves/rig/vox_rig_inq
+	chest_type = /obj/item/clothing/suit/space/rig/vox_rig_breacher
+	helm_type = /obj/item/clothing/head/helmet/space/rig/vox_rig_breacher
+	boot_type = /obj/item/clothing/shoes/magboots/rig/vox_rig_breacher
+	glove_type = /obj/item/clothing/gloves/rig/vox_rig_breacher
 	air_type =     /obj/item/tank/nitrogen
 
 	online_slowdown = 0.6

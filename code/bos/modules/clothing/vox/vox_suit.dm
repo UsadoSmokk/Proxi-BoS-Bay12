@@ -5,9 +5,13 @@
 /obj/item/clothing/suit/armor/vox/bombsuit
 	name = "vox bombsuit"
 	desc = "A massive chitinous exoskeleton, in the vox society, is used by engineers to work with radiation and explosion protection."
-	icon_state = "vox-bombsuit"
 	icon = 'icons/bos/obj/clothing/species/vox/obj_suit_vox.dmi'
 	icon_override = 'icons/bos/mob/onmob/species/vox/onmob_suit_vox.dmi'
+	icon_state = "vox-bombsuit"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_uniforms.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_uniforms.dmi',
+		)
 	w_class = ITEM_SIZE_HUGE//bulky item
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
@@ -20,6 +24,7 @@
 		bio = ARMOR_BIO_RESISTANT,
 		rad = ARMOR_RAD_SHIELDED
 		)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
 	heat_protection = UPPER_TORSO|LOWER_TORSO
 	item_flags = null
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -28,9 +33,13 @@
 /obj/item/clothing/suit/armor/vox/quill_armor
 	name = "quill mantle"
 	desc = "A blue mantle made of extremely durable material, complemented by fragments of armor made of heavy-duty chitin. Such armor is worn only by high-ranking Quills that bring death to the opponents of their empire."
-	icon_state = "vox-mantle"
 	icon = 'icons/bos/obj/clothing/species/vox/obj_suit_vox.dmi'
 	icon_override = 'icons/bos/mob/onmob/species/vox/onmob_suit_vox.dmi'
+	icon_state = "vox-mantle"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_uniforms.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_uniforms.dmi',
+		)
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
@@ -42,9 +51,13 @@
 /obj/item/clothing/suit/armor/vox/guard
 	name = "guard shell"
 	desc = "A heavy shell that perfectly protects against the adversities of any nature, be it a hail of bullets, lasers or even bombs. Wearing such chitinous armor, members of the honor guard become mobile fortresses that withstand the onslaught alone.."
-	icon_state = "vox-guard"
 	icon = 'icons/bos/obj/clothing/species/vox/obj_suit_vox.dmi'
 	icon_override = 'icons/bos/mob/onmob/species/vox/onmob_suit_vox.dmi'
+	icon_state = "vox-guard"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_uniforms.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_uniforms.dmi',
+		)
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RIFLE,
@@ -58,12 +71,16 @@
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 	siemens_coefficient = 0
 
-/obj/item/clothing/suit/armor/vox/cloak
+/obj/item/clothing/suit/storage/vox
 	name = "vox cloak"
 	desc = "A whitish raincoat used in everyday life just like human lab coats. They are worn and appreciated by many vox for their comfort, however, most often such robes are ranked among the bio-techniques of vox fleets."
-	icon_state = "vox-labcoat"
 	icon = 'icons/bos/obj/clothing/species/vox/obj_suit_vox.dmi'
 	icon_override = 'icons/bos/mob/onmob/species/vox/onmob_suit_vox.dmi'
+	icon_state = "vox-labcoat"
+	item_icons = list(
+		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_uniforms.dmi',
+		slot_r_hand_str = 'icons/mob/onmob/items/righthand_uniforms.dmi',
+		)
 	armor = list(
 		melee = ARMOR_MELEE_MINOR,
 		bio = ARMOR_BIO_RESISTANT
