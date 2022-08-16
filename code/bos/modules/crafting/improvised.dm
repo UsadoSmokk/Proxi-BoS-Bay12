@@ -15,7 +15,7 @@
 	next_stages = list(
 		/decl/crafting_stage/wrenchswordfinish)
 
-decl/crafting_stage/wrenchswordfinish
+/decl/crafting_stage/wrenchswordfinish
 	completion_trigger_type = /obj/item/wrench
 	progress_message = "You attach the wrench into the hilt, securing it."
 	product = /obj/item/material/sword/improvised
@@ -38,7 +38,7 @@ decl/crafting_stage/wrenchswordfinish
 	next_stages = list(
 		/decl/crafting_stage/spikedcrowfinish)
 
-decl/crafting_stage/spikedcrowfinish
+/decl/crafting_stage/spikedcrowfinish
 	completion_trigger_type = /obj/item/tape_roll
 	progress_message = "You finish the spiked crowbar."
 	product = /obj/item/material/knife/combat/improvised
