@@ -90,7 +90,7 @@
 	suit_overlay_active = "darkmatter"
 	icon = 'icons/bos/obj/clothing/species/vox/obj_rig_vox.dmi'
 	icon_state = "darkmatter"
-	gun = /obj/item/gun/energy/gun/mounted/darkmatter
+	gun = /obj/item/gun/energy/darkmatter
 
 /obj/item/rig_module/mounted/plasmacutter/darkmatter
 	name = "plasmacutter"
@@ -144,13 +144,13 @@
 		/obj/item/rig_module/cooling_unit
 		)
 
-/obj/item/rig/vox/inq/breacher
+/obj/item/rig/vox/breacher
 	name = "breacher control module"
 	desc = "A strange purple the thing, as if from the nightmares of a psychopath with schizophrenia. A thousand legs are moving, they clearly make it clear that it is alive and extremely unfriendly. It is these rigs that envelop the bodies of the Inquisition of the New Empire, so that they simultaneously instill the fire of their faith into the hearts of their brethren, and inspire animal fear to their enemies..However, if you look closely, you can see how Ciharica is scratched on the chitin."
 	suit_type = "alien rig"
 	icon = 'icons/bos/obj/clothing/species/vox/obj_rig_vox.dmi'
 	icon_override = 'icons/bos/mob/onmob/species/vox/onmob_rig_back_vox.dmi'
-	icon_state = "vox_rig_inq"
+	icon_state = "vox_rig_breacher"
 	equipment_overlay_icon = 'icons/bos/mob/onmob/species/vox/onmob_rig_back_vox.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,

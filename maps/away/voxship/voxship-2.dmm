@@ -213,7 +213,7 @@
 	dir = 1;
 	icon_state = "spline_fancy"
 	},
-/obj/item/rig/vox/inq/breacher,
+/obj/item/rig/vox/breacher,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/voxship/dorms)
 "dR" = (
@@ -336,10 +336,7 @@
 	name = "Auralis Temple"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen"=103)
-	},
+/turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "fz" = (
 /obj/structure/cable{
@@ -1718,9 +1715,6 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/obj/item/clothing/head/helmet/vox/jaw,
-/obj/item/clothing/head/helmet/vox/jaw,
-/obj/item/clothing/head/helmet/vox/jaw,
 /obj/item/clothing/suit/storage/vox,
 /obj/item/clothing/suit/storage/vox,
 /obj/item/clothing/suit/storage/vox,
@@ -3360,7 +3354,7 @@
 	dir = 1;
 	icon_state = "spline_fancy"
 	},
-/obj/item/rig/vox/inq/breacher,
+/obj/item/rig/vox/breacher,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/voxship/dorms)
 "RD" = (
