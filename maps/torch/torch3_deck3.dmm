@@ -6844,10 +6844,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "oh" = (
-/obj/effect/landmark/start{
-	name = "Stowaway"
+/obj/structure/table/rack,
+/obj/item/reagent_containers/food/drinks/bottle/vodka,
+/obj/item/reagent_containers/food/drinks/bottle/vodka,
+/obj/effect/floor_decal/borderfloor{
+	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "oi" = (
 /obj/effect/shuttle_landmark/torch/deck2/aquila,
@@ -6923,13 +6926,13 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "ot" = (
-/obj/structure/closet/crate/medical,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/obj/structure/grille/broken,
-/turf/simulated/floor/plating,
+/obj/structure/table/rack,
+/obj/item/reagent_containers/food/drinks/bottle/vodka,
+/obj/item/reagent_containers/food/drinks/bottle/vodka,
+/obj/effect/floor_decal/borderfloor{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "ou" = (
 /obj/machinery/alarm{
@@ -7983,7 +7986,7 @@
 /area/turret_protected/ai_upload_foyer)
 "qC" = (
 /obj/structure/table/glass,
-/obj/item/folder,
+/obj/machinery/recharger,
 /turf/simulated/floor/lino,
 /area/chronicler)
 "qG" = (
@@ -9267,8 +9270,22 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "tc" = (
-/obj/random/junk,
-/turf/simulated/floor/plating,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_containers/food/snacks/canned/beef,
+/obj/item/reagent_containers/food/snacks/canned/beef,
+/obj/item/reagent_containers/food/snacks/canned/beef,
+/obj/item/reagent_containers/food/snacks/canned/beef,
+/obj/item/reagent_containers/food/snacks/canned/beef,
+/obj/item/reagent_containers/food/snacks/canned/beef,
+/obj/item/reagent_containers/food/snacks/canned/beef,
+/obj/item/reagent_containers/food/snacks/canned/beef,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "td" = (
 /obj/machinery/computer/shuttle_control/lift/missile,
@@ -12828,9 +12845,12 @@
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/thirddeck/foreport)
 "BW" = (
-/obj/random/torchcloset,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/plating,
+/obj/structure/table/rack,
+/obj/item/reagent_containers/food/drinks/bottle/vodka,
+/obj/effect/floor_decal/borderfloor{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "BX" = (
 /turf/simulated/floor/plating,
@@ -13087,6 +13107,21 @@
 /obj/machinery/newscaster,
 /turf/simulated/wall/prepainted,
 /area/chronicler)
+"CC" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_containers/food/snacks/canned/beans,
+/obj/item/reagent_containers/food/snacks/canned/beans,
+/obj/item/reagent_containers/food/snacks/canned/beans,
+/obj/item/reagent_containers/food/snacks/canned/beans,
+/obj/item/reagent_containers/food/snacks/canned/beans,
+/obj/item/reagent_containers/food/snacks/canned/beans,
+/obj/item/reagent_containers/food/snacks/canned/beans,
+/obj/item/reagent_containers/food/snacks/canned/beans,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/thirddeck/foreport)
 "CE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -13216,9 +13251,10 @@
 /area/space)
 "CT" = (
 /obj/structure/table/rack,
-/obj/random/maintenance/solgov,
-/obj/random/tech_supply,
-/turf/simulated/floor/plating,
+/obj/item/reagent_containers/chem_disp_cartridge/vodka,
+/obj/item/reagent_containers/chem_disp_cartridge/vodka,
+/obj/effect/floor_decal/borderfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "CU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -13444,6 +13480,20 @@
 /obj/item/pen,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
+"Dw" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 6
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_containers/food/snacks/canned/tomato,
+/obj/item/reagent_containers/food/snacks/canned/tomato,
+/obj/item/reagent_containers/food/snacks/canned/tomato,
+/obj/item/reagent_containers/food/snacks/canned/tomato,
+/obj/item/reagent_containers/food/snacks/canned/tomato,
+/obj/item/reagent_containers/food/snacks/canned/tomato,
+/obj/item/reagent_containers/food/snacks/canned/tomato,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/thirddeck/foreport)
 "Dy" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -13781,8 +13831,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
 "Ef" = (
-/obj/structure/grille,
-/turf/simulated/floor/plating,
+/obj/effect/floor_decal/borderfloor/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "Eg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13846,6 +13898,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/sleep/cryo)
+"Eo" = (
+/obj/machinery/conveyor/ammobelt{
+	dir = 8;
+	id = "solconv1"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/command/gunnery/missiles/inside)
 "Eq" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 9;
@@ -14639,6 +14698,16 @@
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
+"Gg" = (
+/obj/structure/table/rack,
+/obj/machinery/light/small,
+/obj/item/reagent_containers/food/drinks/bottle/premiumvodka,
+/obj/item/reagent_containers/food/drinks/bottle/premiumvodka,
+/obj/effect/floor_decal/borderfloor{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/thirddeck/foreport)
 "Gh" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/camera/network/command{
@@ -17201,8 +17270,13 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/hardstorage)
 "LA" = (
-/obj/random/trash,
-/turf/simulated/floor/plating,
+/obj/structure/table/rack,
+/obj/item/reagent_containers/food/drinks/bottle/premiumvodka,
+/obj/item/reagent_containers/food/drinks/bottle/premiumvodka,
+/obj/effect/floor_decal/borderfloor{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "LB" = (
 /obj/structure/catwalk,
@@ -17270,8 +17344,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
 "LF" = (
-/obj/random/obstruction,
-/turf/simulated/floor/plating,
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "LH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -17767,8 +17843,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/storage/tools)
 "MP" = (
-/obj/machinery/constructable_frame/computerframe,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "MQ" = (
 /obj/effect/floor_decal/corner/green{
@@ -18832,6 +18907,10 @@
 /obj/structure/ladder/up,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/thirddeck/aft)
+"Ps" = (
+/obj/effect/floor_decal/borderfloor/corner,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/thirddeck/foreport)
 "Pt" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -20129,8 +20208,18 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/turret_protected/ai_upload_foyer)
 "SF" = (
-/obj/random/maintenance,
-/turf/simulated/floor/plating,
+/obj/effect/floor_decal/borderfloor{
+	dir = 5
+	},
+/obj/structure/closet/crate,
+/obj/item/reagent_containers/food/snacks/canned/caviar/true,
+/obj/item/reagent_containers/food/snacks/canned/caviar/true,
+/obj/item/reagent_containers/food/snacks/canned/caviar/true,
+/obj/item/reagent_containers/food/snacks/canned/caviar/true,
+/obj/item/reagent_containers/food/snacks/canned/caviar/true,
+/obj/item/reagent_containers/food/snacks/canned/caviar/true,
+/obj/item/reagent_containers/food/snacks/canned/caviar/true,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/foreport)
 "SG" = (
 /obj/machinery/camera/network/third_deck{
@@ -21313,6 +21402,15 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/thirddeck/port)
+"Vs" = (
+/obj/effect/landmark/start{
+	name = "Stowaway"
+	},
+/obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/thirddeck/foreport)
 "Vt" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -22453,7 +22551,8 @@
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
 	department = "Chroniclers Office";
-	req_access = list("ACCESS_CHRONICLER")
+	req_access = list("ACCESS_CHRONICLER");
+	send_access = list("ACCESS_CHRONICLER")
 	},
 /turf/simulated/floor/lino,
 /area/chronicler)
@@ -22927,6 +23026,10 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/storage/tools)
+"Za" = (
+/obj/machinery/door/airlock/hatch/maintenance,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/thirddeck/foreport)
 "Zb" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -32268,11 +32371,11 @@ Di
 Di
 Di
 BV
-BX
+ot
 oh
-BX
-BX
-SF
+oh
+BW
+BV
 BV
 BV
 BV
@@ -32469,12 +32572,12 @@ KZ
 Di
 Di
 Di
-BW
-BX
-ot
+BV
+LF
+MP
+MP
 Ef
-Ef
-BX
+Gg
 BV
 BV
 BV
@@ -32672,14 +32775,14 @@ yG
 yG
 yG
 yG
-Nv
+LF
+MP
+Ps
+Vs
+LA
 zS
-zS
-zS
-BX
-BX
-BX
-BX
+CM
+CM
 BV
 BV
 BV
@@ -32874,14 +32977,14 @@ PH
 CF
 yG
 yG
-BX
+CC
+MP
 CT
-CT
 zS
 zS
 zS
-zS
-BX
+Yb
+Yb
 BV
 BV
 BV
@@ -33077,14 +33180,14 @@ Yc
 LS
 yG
 tc
-LA
-SF
+MP
+CT
 zS
 GV
 RV
+Yb
+Yb
 YC
-Yb
-Yb
 BV
 BV
 BV
@@ -33279,9 +33382,9 @@ nz
 oO
 yG
 LF
-BX
 MP
-Nv
+MP
+Za
 Yb
 Ur
 Ur
@@ -33481,8 +33584,8 @@ lP
 yG
 yG
 SF
-tc
 MP
+Dw
 zS
 Mf
 XY
@@ -43743,7 +43846,7 @@ Wa
 fm
 ar
 Xg
-av
+Eo
 vX
 aB
 as
