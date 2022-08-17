@@ -94,4 +94,11 @@
 	url = "https://youtu.be/38FICqwuVeA"
 	volume = 60
 
+/decl/audio/track/drunkensailor
+	title = "Drunken Sailor"
+	author = "The Irish Rovers"
+	source = 'sound/music/bos/drunkensailor.ogg'
+	license = /decl/license/grandfathered //vrun
+	url = "https://youtu.be/V12FuCX9xJM"
+	volume = 60
 
