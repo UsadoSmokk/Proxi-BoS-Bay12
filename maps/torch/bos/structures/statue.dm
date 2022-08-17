@@ -29,3 +29,8 @@
 	name = "Bolshoy Grigoriy statue"
 	desc = " The Hero cat. He bit the wire of an enemy artillery mount and saved the squad."
 	icon_state = "grisha"
+
+/obj/structure/memstatue/shmesser
+	name = "Unknown warrior statue"
+	desc = " This naked unknown warrior appeared out of nowhere and attacked Lordania's enemies with only a toolbox. He showed the most important trait of the Lordanian people - courage and commitment to the homeland"
+	icon_state = "shmesser"

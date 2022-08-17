@@ -150,6 +150,8 @@
 
 
 GLOBAL_LIST_INIT(jukebox_tracks, list(
+	/decl/audio/track/kabak, //bos
+	/decl/audio/track/drunkensailor, //bos
 	/decl/audio/track/rain, //bos
 	/decl/audio/track/endoftheworld, //bos
 	/decl/audio/track/startthefire, // bos
@@ -185,7 +187,6 @@ GLOBAL_LIST_INIT(jukebox_tracks, list(
 	/decl/audio/track/rimward_cruise,
 	/decl/audio/track/space_oddity,
 	/decl/audio/track/thunderdome,
-	/decl/audio/track/torch,
 	/decl/audio/track/torn,
 	/decl/audio/track/treacherous_voyage,
 	/decl/audio/track/voidsent,

@@ -100,6 +100,8 @@
 		/datum/job/submap/voxship_vox/armalis,
 		/datum/job/submap/voxship_vox/doc,
 		/datum/job/submap/voxship_vox/engineer,
+		/datum/job/submap/voxship_vox/breacher,
+		/datum/job/submap/voxship_vox/inq,
 		/datum/job/submap/voxship_vox/quill
 	)
 	whitelisted_species = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
