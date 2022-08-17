@@ -18,7 +18,7 @@
     id = "awaysite_raider_vessel"
     description = "Raider Vessel."
     suffixes = list("raider_vessel.dmm")
-    spawn_cost = 1
+    spawn_cost = 0.5
     area_usage_test_exempted_root_areas = list(/area/raider_vessel)
 
 /obj/effect/shuttle_landmark/raider_vessel/nav1
