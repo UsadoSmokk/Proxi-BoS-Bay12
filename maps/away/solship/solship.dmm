@@ -202,6 +202,7 @@
 "hN" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/turf/simulated/floor/wood/walnut,/area/solship/crew)
 "hO" = (/obj/machinery/vending/tool{dir = 4},/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/techmaint,/area/solship/engineering)
 "hP" = (/obj/structure/closet/hydrant,/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark/monotile,/area/solship/fronthall)
+"hQ" = (/obj/effect/floor_decal/industrial/warning/cee,/obj/structure/catwalk,/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 4; frequency = 1911; id_tag = "bhunter_shuttle_pump"},/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area/exploration_shuttle/texas/airlock)
 "hS" = (/obj/effect/floor_decal/borderfloor{dir = 8},/obj/effect/floor_decal/corner/black/border{dir = 8},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/obj/machinery/alarm{dir = 4; pixel_x = -24},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/solship/fronthall)
 "hT" = (/obj/structure/bed/chair/shuttle/blue,/turf/simulated/floor/tiled/techfloor,/area/exploration_shuttle/texas/pass)
 "hW" = (/obj/structure/table/standard,/turf/simulated/floor/wood/walnut,/area/solship/canteen)
@@ -523,7 +524,7 @@
 "zC" = (/obj/structure/table/standard,/obj/random/smokes,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 8},/turf/simulated/floor/wood/mahogany,/area/solship/canteen)
 "zD" = (/obj/machinery/atmospherics/unary/vent_pump/on,/obj/effect/floor_decal/borderfloor{dir = 1},/obj/effect/floor_decal/corner/black/border{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/solship/fronthall)
 "zP" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/light/small{dir = 1},/obj/machinery/power/port_gen/pacman/super/potato,/turf/simulated/floor/plating,/area/solship/reactorroom)
-"zQ" = (/obj/effect/floor_decal/industrial/warning/cee{dir = 1},/obj/structure/catwalk,/obj/machinery/light/small{dir = 4},/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 8; frequency = 1911; id_tag = "bhunter_shuttle_pump_out_internal"},/turf/simulated/floor/plating,/area/exploration_shuttle/texas/airlock)
+"zQ" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 8; frequency = 1911; id_tag = "bhunter_shuttle_pump_out_internal"},/obj/effect/floor_decal/industrial/outline/orange,/obj/effect/floor_decal/industrial/warning/cee{dir = 1},/obj/machinery/sealgen/away{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/exploration_shuttle/texas/airlock)
 "zR" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/structure/sign/double/solgovflag/right{dir = 1; pixel_x = -13; pixel_y = -27},/obj/structure/sign/double/solgovflag/left{dir = 1; pixel_y = -27; pixel_x = 19},/obj/machinery/conveyor/ammobelt{dir = 8; id = "solconv2"},/turf/simulated/floor/plating,/area/solship/rockets)
 "zT" = (/turf/simulated/floor/tiled/dark,/area/solship/equiproom)
 "Af" = (/obj/machinery/shipsensors,/turf/simulated/floor/reinforced/airless,/area/exploration_shuttle/texas/pass)
@@ -953,7 +954,7 @@ sWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWMyxFxFxFoDKBsXOBBSnFZcoDjqsWEXrz
 sWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWxFUWisxFFyyenpfZZrzrjQwyCETtyyoDrrIPGDriVrLtXEqAkCXUkIitFXcngfGEXrapMLQZlqgegegegegeebibMGTRJjYkZsdMyiVnuegWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsW
 sWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWxFUWUWxFhTNWhTptmcrDnphinqnqfjfjLKfjrrHuyGFeuSHesjWqGDkzegltltCGltfxfxfxfxfxGHuBKNKNRsMZeddqDQMGMGJJMGZsJsEsESuegWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsW
 sWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWxFxFnMuPrDGoXatnbqEBIpEiqbxWftfjogAwBTbQHurzFeOHsEmaJnGDeoTsltvFsSQQfxzPfxzPfxjpxcfFfFZFaLbgkcZjShweUbqYimWXyYXGuegWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsW
-sWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWoWoWZUptvWrDjvPtLZLZcAkdCTpqGbpRfjoFbaslmepjpjJhGDmXmXGDGDxwTsltBuIAYjfxTKfxTKfxfxawasasasawawxwRQMGMGwfMGZszwmKlGuegWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsW
+sWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWoWoWZUptvWrDjvPtLZLZcAkdCTpqGbpRfjhQbaslmepjpjJhGDmXmXGDGDxwTsltBuIAYjfxTKfxTKfxfxawasasasawawxwRQMGMGwfMGZszwmKlGuegWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsW
 sWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWoWgqKnTjMHratVXbRmHiqcQjwzXnhAFozAlDncFxnxzsAZkJzfhJYCjNdICxOoltVfaONyDKifIiRlehfxkikiBOkicYawntHRMGYZhNyZZsdMtSbwuegWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsW
 sWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWoWoWhEcRqqrDIOqaLZLZOSwSCTblqgXtfjogTlzQmepjpjJhcWCPEvKIOkCKegltltdfltfxTKfxTKfxfxZYyofbYSLeasiwFrMGuYDZIqZsWCYcykuegWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsW
 sWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWxFxFxfUCrDjMVHOGTutRROjOXkUVZlfjoFaTuLrrHugWueZsRoOOZsZsJKYPKWCjeYhmfxlBfxlBfxIyWUkZAkuWTrasebghMGMGMGMGMGMGMGMGXPgWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsWsW

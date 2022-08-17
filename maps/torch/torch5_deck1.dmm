@@ -5289,7 +5289,6 @@
 	id_tag = "koi_shuttle_sensor";
 	pixel_y = 25
 	},
-/obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/koi)
 "aje" = (
@@ -14449,6 +14448,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/rnd/anom_storage)
+"bfX" = (
+/obj/machinery/sealgen{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/outline/orange,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/firstdeck/forestarboard)
 "bhb" = (
 /obj/machinery/door/blast/regular{
 	id_tag = "cChamber1sV";
@@ -16670,6 +16676,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
+"dKu" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	controlled = 0;
+	dir = 4;
+	frequency = 1436;
+	id_tag = "koi_shuttle_pump_out_internal"
+	},
+/obj/structure/closet/emcloset,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/koi)
 "dMb" = (
 /obj/effect/floor_decal/corner/pink/bordercorner,
 /obj/structure/cable/green{
@@ -16812,6 +16828,10 @@
 	dir = 4;
 	frequency = 1436;
 	id_tag = "koi_shuttle_pump_out_internal"
+	},
+/obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/sealgen{
+	req_access = list("ACCESS_MEDICAL")
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/koi)
@@ -20441,6 +20461,8 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 9
 	},
+/obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/sealgen,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
 "jiS" = (
@@ -21481,6 +21503,12 @@
 /area/mempark)
 "kxs" = (
 /obj/effect/floor_decal/techfloor,
+/obj/machinery/access_button/airlock_exterior{
+	frequency = 1436;
+	master_tag = "koi_shuttle";
+	pixel_y = -24;
+	req_access = list("ACCESS_MEDICAL")
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
 "kyb" = (
@@ -28621,13 +28649,6 @@
 /turf/simulated/floor/grass,
 /area/mempark)
 "srR" = (
-/obj/structure/closet/crate,
-/obj/item/storage/backpack/dufflebag/firefighter,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/storage/box/flares,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
 /obj/structure/hygiene/shower{
 	dir = 4;
 	icon_state = "shower"
@@ -43211,7 +43232,7 @@ aaa
 hBr
 hBr
 hBr
-abE
+bfX
 abE
 adS
 aeK
@@ -50279,7 +50300,7 @@ npl
 mbh
 dUZ
 cin
-dUZ
+dKu
 uNs
 aIg
 abP

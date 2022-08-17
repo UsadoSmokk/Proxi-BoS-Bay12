@@ -4068,9 +4068,9 @@
 	dir = 4;
 	icon_state = "techfloor_edges"
 	},
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
+/obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/sealgen{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
@@ -4632,6 +4632,7 @@
 	dir = 8;
 	icon_state = "techfloor_edges"
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "jc" = (
@@ -7456,9 +7457,10 @@
 	dir = 4;
 	icon_state = "techfloor_edges"
 	},
-/obj/machinery/light/small{
-	dir = 4
+/obj/machinery/oxygen_pump{
+	pixel_x = 32
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "rt" = (
@@ -8594,6 +8596,13 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
+"uE" = (
+/obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/sealgen{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/auxsolarbridge)
 "uG" = (
 /obj/structure/bed/chair/padded/blue,
 /turf/simulated/floor/tiled/dark,
@@ -9485,6 +9494,9 @@
 	name = "south bump";
 	pixel_y = -24
 	},
+/obj/machinery/oxygen_pump{
+	pixel_x = -32
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/auxsolarbridge)
 "wU" = (
@@ -9568,12 +9580,13 @@
 	frequency = 1379;
 	id_tag = "bridge_eva_pump"
 	},
-/obj/machinery/oxygen_pump{
-	pixel_x = -32
-	},
 /obj/effect/floor_decal/techfloor{
 	dir = 8;
 	icon_state = "techfloor_edges"
+	},
+/obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/sealgen{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
@@ -15373,11 +15386,6 @@
 	frequency = 1379;
 	id_tag = "solar_bridge_pump"
 	},
-/obj/machinery/light/small,
-/obj/machinery/oxygen_pump{
-	pixel_x = 0;
-	pixel_y = -32
-	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
 	frequency = 1379;
 	id_tag = "solar_bridge_airlock";
@@ -15399,6 +15407,9 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 1;
 	icon_state = "techfloor_edges"
+	},
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
@@ -33610,7 +33621,7 @@ on
 dV
 dV
 Tc
-dV
+uE
 dV
 ad
 ad
@@ -33813,7 +33824,7 @@ dV
 dV
 ws
 kW
-ad
+dV
 ad
 ad
 ad

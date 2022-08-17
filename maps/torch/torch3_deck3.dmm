@@ -2787,6 +2787,10 @@
 	id_tag = "eva_pump"
 	},
 /obj/effect/floor_decal/techfloor,
+/obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/sealgen{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai_monitored/storage/eva)
 "fK" = (
