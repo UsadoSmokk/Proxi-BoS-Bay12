@@ -1,11 +1,9 @@
-/obj/item/clothing/suit/coiscin
+/obj/item/clothing/accessory/coiscin/haori
 	name = "old haori"
 	desc = "An old haori with an unknown symbol on its back."
-	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND,ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_INSIGNIA,ACCESSORY_SLOT_RANK,ACCESSORY_SLOT_DEPT)
-	icon = 'customs/icons/obj/custom_items_obj.dmi'
 	icon_state = "voxcoat"
-	item_icons = list(slot_wear_suit_str = 'customs/icons/mob/custom_items_mob.dmi')
-	accessories = list(/obj/item/clothing/accessory/coiscin)
+	item_state = "voxcoat"
+	force = 0
 
 /obj/item/clothing/accessory/coiscin
 	name = "katana and a tanto"
