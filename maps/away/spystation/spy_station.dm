@@ -18,7 +18,7 @@
     id = "awaysite_spy_station"
     description = "Delta Station."
     suffixes = list("spy_station/spy_station.dmm")
-    spawn_cost = 1
+    spawn_cost = 0.5
     area_usage_test_exempted_root_areas = list(/area/spy_station)
 
 /obj/effect/shuttle_landmark/spy_station/nav1

@@ -92,7 +92,6 @@
 	source = 'sound/music/bos/kabak.ogg'
 	license = /decl/license/grandfathered //da net zhe
 	url = "https://youtu.be/38FICqwuVeA"
-	volume = 60
 
 /decl/audio/track/drunkensailor
 	title = "Drunken Sailor"
