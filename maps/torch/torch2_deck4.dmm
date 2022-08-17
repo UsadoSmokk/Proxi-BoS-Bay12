@@ -5150,11 +5150,12 @@
 /turf/simulated/floor/airless,
 /area/aquila/maintenance)
 "mw" = (
-/obj/machinery/sealgen{
-	req_access = list("ACCESS_MARINES")
-	},
 /obj/structure/window/phoronreinforced,
 /obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/sealgen{
+	req_access = list("ACCESS_MARINES");
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
 "my" = (
@@ -11069,10 +11070,11 @@
 	icon_state = "1-4"
 	},
 /obj/effect/floor_decal/techfloor,
-/obj/machinery/sealgen{
-	req_access = list("ACCESS_MARINES")
-	},
 /obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/sealgen{
+	req_access = list("ACCESS_MARINES");
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
 "AB" = (
@@ -18480,6 +18482,9 @@
 	},
 /obj/machinery/photocopier/faxmachine{
 	department = "Gunnery Chief"
+	},
+/obj/structure/sign/booker{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)

@@ -1193,6 +1193,9 @@
 /area/crew_quarters/heads/office/xo)
 "cp" = (
 /obj/structure/table/woodentable/walnut,
+/obj/structure/sign/booker{
+	pixel_y = -30
+	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "cq" = (
@@ -2145,6 +2148,9 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/gun/energy/gun/secure,
 /obj/item/clothing/accessory/storage/holster/thigh,
+/obj/structure/sign/booker{
+	pixel_y = -30
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)
 "dM" = (
@@ -5693,6 +5699,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/bridgecheck)
+"mC" = (
+/obj/structure/sign/booker{
+	pixel_x = -30
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/co)
 "mE" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/office/cos)
@@ -5705,6 +5717,9 @@
 	pixel_y = -3
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/sign/booker{
+	pixel_y = 30
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "mH" = (
@@ -6812,6 +6827,9 @@
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
+	},
+/obj/structure/sign/booker{
+	pixel_x = -30
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
@@ -11785,6 +11803,9 @@
 /obj/machinery/computer/rdservercontrol{
 	dir = 4;
 	icon_state = "computer"
+	},
+/obj/structure/sign/booker{
+	pixel_x = -30
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
@@ -24730,7 +24751,7 @@ RV
 Mz
 Yz
 LY
-Pt
+mC
 An
 uy
 Kq

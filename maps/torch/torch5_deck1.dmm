@@ -18660,6 +18660,10 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/equipstorage)
+"gSU" = (
+/obj/structure/memstatue/shmesser,
+/turf/simulated/floor/grass,
+/area/mempark)
 "gTQ" = (
 /obj/effect/floor_decal/corner_techfloor_grid{
 	dir = 5
@@ -30622,8 +30626,8 @@
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "vhs" = (
-/obj/structure/noticeboard{
-	pixel_y = 32
+/obj/structure/sign/booker{
+	pixel_y = 30
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
@@ -55186,7 +55190,7 @@ pdb
 qhb
 abJ
 rJb
-rHb
+gSU
 rWb
 pdb
 szb
