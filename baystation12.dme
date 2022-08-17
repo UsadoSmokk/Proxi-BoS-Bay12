@@ -3366,6 +3366,7 @@
 #include "code\unit_tests\virtual_mob_tests.dm"
 #include "code\unit_tests\zas_tests.dm"
 #include "code\unit_tests\~helpers.dm"
+#include "customs\code\ambrosia.dm"
 #include "customs\code\coiscin.dm"
 #include "customs\code\eloncake.dm"
 #include "customs\code\hacso.dm"
