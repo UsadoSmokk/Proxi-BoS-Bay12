@@ -1,6 +1,6 @@
 /datum/job/submap/voxship_vox
 	title = "Shard Acolyte"
-	total_positions = 5
+	total_positions = 3
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
 	supervisors = "Quill, The Apex and the arkship"
 	info = "By the will of the dead creators, you must reclaim the lost territory of their fallen empire, and re-establish the domain of the Auralis no matter the cost. \
@@ -147,6 +147,83 @@
 	                    SKILL_CHEMISTRY = SKILL_EXPERT)
 	skill_points = 30
 
+/datum/job/submap/voxship_vox/breacher
+	title = "Breacher"
+	total_positions = 2
+	supervisors = "The Apex and the arkship"
+	info = "The Empire has been reborn, even if Auralis died, but their word is still in you.	\
+	You have become part of the Ecclesiarchy of the Empire, and while the inquisitors are supervising the brothers and protecting the very young empire with their bodies, you must help them and protect them from the vile heretics who dared to threaten his life.	\
+	Obey your Inquisitor, protect him and report everything to him, because you are his claws, his eyes and ears."
+	whitelisted_species = list(SPECIES_VOX)
+	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
+						SKILL_EVA         = SKILL_EXPERT,
+						SKILL_SCIENCE     = SKILL_BASIC,
+						SKILL_PILOT       = SKILL_ADEPT,
+						SKILL_COMBAT      = SKILL_ADEPT,
+						SKILL_WEAPONS     = SKILL_ADEPT)
+
+
+	max_skill = list(   SKILL_BUREAUCRACY = SKILL_MAX,
+	                    SKILL_FINANCE = SKILL_MAX,
+	                    SKILL_EVA = SKILL_MAX,
+	                    SKILL_MECH = SKILL_MAX,
+	                    SKILL_PILOT = SKILL_MAX,
+	                    SKILL_HAULING = SKILL_MAX,
+	                    SKILL_COMPUTER = SKILL_MAX,
+	                    SKILL_BOTANY = SKILL_MAX,
+	                    SKILL_COOKING = SKILL_MAX,
+	                    SKILL_COMBAT = SKILL_MAX,
+	                    SKILL_WEAPONS = SKILL_MAX,
+	                    SKILL_FORENSICS = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL = SKILL_EXPERT,
+	                    SKILL_ATMOS = SKILL_EXPERT,
+	                    SKILL_ENGINES = SKILL_EXPERT,
+	                    SKILL_DEVICES = SKILL_MAX,
+	                    SKILL_SCIENCE = SKILL_MAX,
+	                    SKILL_MEDICAL = SKILL_EXPERT,
+	                    SKILL_ANATOMY = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY = SKILL_EXPERT)
+	skill_points = 18
+
+/datum/job/submap/voxship_vox/inq
+	title = "Inquisitor"
+	total_positions = 1
+	supervisors = "The Apex and the arkship"
+	info = "You are the face of the Apexes, that you carry the will of the great Auralis with your claws.	\
+	The Empire has returned, but not all voxes have believed again, and therefore the apexes have chosen you, so that you, destroying your enemies, return the spark of the Creators to all your brothers in their hearts.	\
+	Help the Quill of this vessel by spiritually instructing its crew members and do not allow heretics of dust-swallows learn the secrets of Auralis."
+	whitelisted_species = list(SPECIES_VOX)
+	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
+						SKILL_EVA         = SKILL_EXPERT,
+						SKILL_SCIENCE     = SKILL_BASIC,
+						SKILL_PILOT       = SKILL_ADEPT,
+						SKILL_COMBAT      = SKILL_ADEPT,
+						SKILL_WEAPONS     = SKILL_ADEPT)
+
+
+	max_skill = list(   SKILL_BUREAUCRACY = SKILL_MAX,
+	                    SKILL_FINANCE = SKILL_MAX,
+	                    SKILL_EVA = SKILL_MAX,
+	                    SKILL_MECH = SKILL_MAX,
+	                    SKILL_PILOT = SKILL_MAX,
+	                    SKILL_HAULING = SKILL_MAX,
+	                    SKILL_COMPUTER = SKILL_MAX,
+	                    SKILL_BOTANY = SKILL_MAX,
+	                    SKILL_COOKING = SKILL_MAX,
+	                    SKILL_COMBAT = SKILL_MAX,
+	                    SKILL_WEAPONS = SKILL_MAX,
+	                    SKILL_FORENSICS = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL = SKILL_EXPERT,
+	                    SKILL_ATMOS = SKILL_EXPERT,
+	                    SKILL_ENGINES = SKILL_EXPERT,
+	                    SKILL_DEVICES = SKILL_MAX,
+	                    SKILL_SCIENCE = SKILL_MAX,
+	                    SKILL_MEDICAL = SKILL_EXPERT,
+	                    SKILL_ANATOMY = SKILL_EXPERT,
+	                    SKILL_CHEMISTRY = SKILL_EXPERT)
+	skill_points = 30
 #define VOXSHIP_OUTFIT_JOB_NAME(job_name) ("Vox Asteroid Base - Job - " + job_name)
 /decl/hierarchy/outfit/job/voxship
 	hierarchy_type = /decl/hierarchy/outfit/job/voxship
@@ -222,5 +299,11 @@
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/quill
 	name = "Shard Quill"
+
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/inq
+	name = "Inquisitor"
+
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/breacher
+	name = "Breacher"
 
 #undef VOXSHIP_OUTFIT_JOB_NAME
