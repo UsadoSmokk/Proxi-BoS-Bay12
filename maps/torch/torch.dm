@@ -212,6 +212,7 @@
 	#include "../away/mininghome/mininghome.dm"
 	#include "../away/scavver/scavver_gantry.dm"
 	#include "../away/raidership/raider_vessel.dm"
+	#include "../away/spystation/spy_station.dm"
 
 	#include "../event/iccgn_ship/icgnv_hound.dm"
 

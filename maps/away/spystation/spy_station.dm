@@ -1,4 +1,4 @@
-//#include "spy_station_areas.dm"
+#include "spy_station_areas.dm"
 
 /obj/effect/overmap/visitable/sector/spy_station
     name = "Delta Station"
