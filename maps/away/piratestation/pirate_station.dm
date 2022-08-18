@@ -23,7 +23,7 @@
 
 /obj/effect/shuttle_landmark/pirate_station/nav1
     name = "Infer Xiaos Hangar"
-    landmark_tag = "nav_spy_station_1"
+    landmark_tag = "nav_pirate_station_1"
 
 /obj/effect/shuttle_landmark/pirate_station/nav2
     name = "Infer Xiaos #1"
