@@ -15,7 +15,7 @@
 	item_state = "katana"
 	inv_overlay = 'customs/icons/obj/custom_items_obj_inv_accessory.dmi'
 	force = 10
-	slot = ACCESSORY_SLOT_DECOR
+	slot = ACCESSORY_SLOT_ARMBAND
 	accessory_icons = list(slot_w_uniform_str = 'customs/icons/mob/custom_items_mob.dmi', slot_wear_suit_str = 'customs/icons/mob/custom_items_mob.dmi')
 	item_icons = list(
 		slot_l_hand_str = 'customs/icons/mob/custom_items_lhand.dmi',
