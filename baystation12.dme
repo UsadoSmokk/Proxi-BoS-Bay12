@@ -196,6 +196,7 @@
 #include "code\bos\modules\clothing\vox\vox_head.dm"
 #include "code\bos\modules\clothing\vox\vox_rig.dm"
 #include "code\bos\modules\clothing\vox\vox_suit.dm"
+#include "code\bos\modules\clothing\vox\vox_uniform.dm"
 #include "code\bos\modules\crafting\improvised.dm"
 #include "code\bos\modules\culture_descriptor\culture\cultures_ascent.dm"
 #include "code\bos\modules\culture_descriptor\culture\cultures_human.dm"

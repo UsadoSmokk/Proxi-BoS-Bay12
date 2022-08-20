@@ -76,6 +76,17 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/table/rack,
+/obj/item/clothing/head/welding,
+/obj/item/clothing/head/welding,
+/obj/item/clothing/head/welding,
+/obj/item/clothing/head/welding,
+/obj/random/ammo,
+/obj/random/ammo,
+/obj/random/ammo,
+/obj/item/clothing/glasses/welding/superior,
+/obj/item/clothing/glasses/welding/superior,
+/obj/item/clothing/glasses/welding/superior,
+/obj/random/junk,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/engineering)
 "aR" = (
@@ -86,8 +97,29 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 8
 	},
+/obj/structure/table/reinforced,
+/obj/machinery/cell_charger,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"aW" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/conveyor/ammobelt{
+	dir = 8;
+	id = "ammobeltvox1"
+	},
+/obj/structure/window/phoronreinforced,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
 "bb" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1505;
@@ -100,16 +132,17 @@
 	dir = 8;
 	tag = "icon-railing0 (EAST)"
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/engineering)
+/area/voxship/dock)
 "bt" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/structure/disposaloutlet{
+/obj/structure/window/phoronreinforced,
+/obj/machinery/disposal/deliveryChute{
 	dir = 4
 	},
-/obj/structure/window/phoronreinforced,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "bO" = (
@@ -165,6 +198,7 @@
 /obj/item/rig/vox,
 /obj/item/rig/vox,
 /obj/item/rig/vox,
+/obj/item/clothing/glasses/meson,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "cq" = (
@@ -181,6 +215,14 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/random/toy,
+/obj/random/toy,
+/obj/random/toy,
+/obj/random/toy,
+/obj/random/toy,
+/obj/random/toy,
+/obj/random/toy,
+/obj/random/toy,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/voxship/misslie)
 "cs" = (
@@ -204,6 +246,8 @@
 /obj/item/clothing/head/helmet/space/vox/stealth,
 /obj/item/clothing/head/helmet/space/vox/stealth,
 /obj/item/clothing/head/helmet/space/vox/stealth,
+/obj/random/trash,
+/obj/item/clothing/glasses/meson,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "ct" = (
@@ -226,6 +270,19 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark/vox,
+/area/voxship/dock)
+"cM" = (
+/obj/random/trash,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
+"de" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
 "df" = (
 /obj/machinery/light{
@@ -302,9 +359,18 @@
 /area/voxship/shuttle)
 "dX" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/portable_atmospherics/powered/pump/filled,
+/obj/structure/largecrate,
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
+/obj/item/gun/energy/revolver/secure,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
 /turf/simulated/floor/plating/vox,
-/area/voxship/engineering)
+/area/voxship/dock)
 "ec" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -338,6 +404,13 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
+"em" = (
+/obj/machinery/conveyor/ammobelt{
+	id = "voxmiss"
+	},
+/obj/random/trash,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/voxship/misslie)
 "eo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
@@ -390,6 +463,11 @@
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 8;
 	icon_state = "spline_fancy"
+	},
+/obj/machinery/conveyor_switch/ammobelt{
+	id = "voxmiss";
+	pixel_x = 6;
+	pixel_y = 10
 	},
 /turf/simulated/floor/tiled/dark,
 /area/voxship/misslie)
@@ -469,6 +547,17 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
+/obj/structure/table/reinforced,
+/obj/item/rpd,
+/obj/item/rpd,
+/obj/item/rcd,
+/obj/item/rcd,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo/large,
+/obj/item/rcd_ammo,
+/obj/item/rcd_ammo,
+/obj/item/rcd_ammo,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/engineering)
 "ft" = (
@@ -520,6 +609,7 @@
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
+/obj/random/trash,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "fQ" = (
@@ -610,6 +700,14 @@
 /obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"gJ" = (
+/obj/structure/ship_munition/disperser_charge/mining,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
 "gQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -714,6 +812,13 @@
 	},
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/engineering)
+"iH" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/blue{
+	dir = 1
+	},
+/obj/random/trash,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/shuttle)
 "iK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
@@ -783,8 +888,15 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
+"jr" = (
+/obj/structure/catwalk,
+/obj/structure/lattice,
+/obj/random/trash,
+/turf/space,
+/area/space)
 "jt" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/industrial/warning,
@@ -1070,6 +1182,11 @@
 "mW" = (
 /turf/simulated/wall/ocp_wall,
 /area/space)
+"nb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/glasses/meson,
+/turf/simulated/floor/plating/vox,
+/area/voxship/armory)
 "ni" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1105,6 +1222,9 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
+/obj/random/ammo,
+/obj/random/ammo,
+/obj/random/ammo,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/engineering)
 "nw" = (
@@ -1135,6 +1255,28 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/item/storage/toolbox/syndicate,
+/obj/item/storage/toolbox/syndicate,
+/obj/item/storage/toolbox/syndicate,
+/obj/item/storage/toolbox/syndicate,
+/obj/item/device/geiger,
+/obj/item/device/geiger,
+/obj/item/stack/cable_coil{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/stack/cable_coil{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/stack/cable_coil{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/welder_tank/experimental,
+/obj/item/welder_tank/experimental,
+/obj/item/welder_tank/experimental,
+/obj/item/welder_tank/experimental,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/engineering)
 "nV" = (
@@ -1194,6 +1336,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/misslie)
+"oq" = (
+/obj/machinery/portable_atmospherics/canister/sleeping_agent,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/plating/vox,
+/area/voxship/dock)
 "oz" = (
 /obj/structure/window/phoronreinforced{
 	dir = 1
@@ -1202,7 +1352,16 @@
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
-/obj/structure/table/rack,
+/obj/structure/closet/radiation,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/welding/superior,
+/obj/item/clothing/glasses/welding/superior,
+/obj/item/clothing/glasses/welding/superior,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/engineering)
 "oA" = (
@@ -1229,6 +1388,8 @@
 /obj/random/energy,
 /obj/random/energy,
 /obj/random/energy,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "oJ" = (
@@ -1290,9 +1451,17 @@
 /area/voxship/shuttle)
 "pC" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/portable_atmospherics/powered/scrubber,
+/obj/structure/table/rack,
+/obj/item/gun/projectile/automatic/l6_saw/sec,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
 /turf/simulated/floor/tiled/dark/monotile/vox,
-/area/voxship/engineering)
+/area/voxship/dock)
 "pL" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5;
@@ -1315,6 +1484,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/random/maintenance,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "pS" = (
@@ -1431,6 +1601,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
+/obj/structure/largecrate,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/voxship/dock)
 "rg" = (
@@ -1455,6 +1626,7 @@
 "rk" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel,
+/obj/structure/reagent_dispensers/beerkeg,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "rt" = (
@@ -1510,6 +1682,7 @@
 /area/voxship/armory)
 "sG" = (
 /obj/structure/table/reinforced,
+/obj/item/gun/energy/k342/sniper,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/misslie)
 "sK" = (
@@ -1526,7 +1699,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/engineering)
+/area/voxship/dock)
 "sL" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
@@ -1552,6 +1725,15 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"sO" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/random/trash,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/dock)
 "sS" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -1573,6 +1755,10 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/misslie)
 "sW" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/voxship/dock)
 "sX" = (
@@ -1589,6 +1775,11 @@
 	dir = 9;
 	icon_state = "spline_fancy"
 	},
+/obj/machinery/conveyor_switch/ammobelt{
+	id = "voxmiss";
+	pixel_x = 6;
+	pixel_y = 10
+	},
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/misslie)
 "tc" = (
@@ -1603,6 +1794,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
@@ -1709,6 +1905,12 @@
 "vz" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light,
+/obj/structure/table/rack,
+/obj/random/tank,
+/obj/random/tank,
+/obj/random/tank,
+/obj/random/tank,
+/obj/random/tank,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/dock)
 "vU" = (
@@ -1717,6 +1919,14 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
+"vV" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/largecrate,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/plating/vox,
+/area/voxship/dock)
 "vW" = (
 /obj/machinery/light{
 	dir = 1;
@@ -1751,6 +1961,19 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
+/obj/structure/largecrate,
+/obj/item/material/harpoon,
+/obj/item/material/harpoon,
+/obj/item/material/harpoon,
+/obj/item/material/harpoon,
+/obj/item/clothing/under/carp,
+/obj/item/clothing/under/carp,
+/obj/item/reagent_containers/food/snacks/cubancarp,
+/obj/item/reagent_containers/food/snacks/fish/space_carp,
+/obj/item/reagent_containers/food/snacks/fish/space_carp,
+/obj/item/reagent_containers/food/snacks/sushi,
+/obj/item/reagent_containers/food/snacks/sushi,
+/obj/item/reagent_containers/food/snacks/sushi,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "wm" = (
@@ -1760,6 +1983,22 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
+"wn" = (
+/obj/structure/cable{
+	d1 = 16;
+	d2 = 0;
+	icon_state = "16-0"
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 0
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen"=103)
+	},
+/area/voxship/engineering)
 "wu" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/effect/floor_decal/industrial/warning{
@@ -1786,6 +2025,15 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
+"wB" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/vox,
+/area/voxship/dock)
+"wG" = (
+/obj/random/trash,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/shuttle)
 "wY" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 1
@@ -1817,6 +2065,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/dock)
 "xm" = (
@@ -1824,12 +2073,44 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
+/obj/structure/table/rack,
+/obj/item/tank/nitrogen,
+/obj/item/tank/nitrogen,
+/obj/item/tank/nitrogen,
+/obj/item/tank/nitrogen,
+/obj/item/tank/nitrogen,
+/obj/item/tank/nitrogen,
+/obj/random/tank,
+/obj/random/tank,
+/obj/random/tank,
+/obj/random/tank,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/dock)
 "xt" = (
 /obj/effect/paint/sun,
 /turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
+"xv" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/structure/largecrate,
+/obj/item/toy/prize,
+/obj/item/toy/prize/deathripley,
+/obj/item/toy/prize/durand,
+/obj/item/toy/prize/fireripley,
+/obj/item/toy/prize/gygax,
+/obj/item/toy/prize/honk,
+/obj/item/toy/prize/marauder,
+/obj/item/toy/prize/mauler,
+/obj/item/toy/prize/odysseus,
+/obj/item/toy/prize/phazon,
+/obj/item/toy/prize/powerloader,
+/obj/item/toy/prize/seraph,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/dock)
 "xC" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -1851,6 +2132,7 @@
 	use_power = 1;
 	dir = 4
 	},
+/obj/random/maintenance,
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/voxship/engineering)
 "xT" = (
@@ -1868,6 +2150,11 @@
 	d2 = 2;
 	icon_state = "1-2";
 	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
@@ -1895,6 +2182,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
+/obj/random/trash,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "yl" = (
@@ -1968,6 +2256,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
+/obj/random/trash,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "zw" = (
@@ -2005,6 +2294,15 @@
 /obj/structure/fuel_port,
 /turf/simulated/wall/alienwall,
 /area/voxship/shuttle)
+"zX" = (
+/obj/structure/ship_munition/disperser_charge/mining,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/random/trash,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
 "Ab" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/machinery/light{
@@ -2024,6 +2322,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 6;
 	icon_state = "intact"
+	},
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
@@ -2052,7 +2354,18 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark/vox,
+/area/voxship/dock)
+"Ax" = (
+/obj/structure/largecrate,
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen"=103)
+	},
 /area/voxship/engineering)
+"Ay" = (
+/obj/random/trash,
+/turf/space,
+/area/space)
 "AG" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -2164,6 +2477,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
+/obj/structure/largecrate,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/voxship/dock)
 "BD" = (
@@ -2203,6 +2517,18 @@
 	dir = 1
 	},
 /obj/machinery/light,
+/obj/structure/table/rack,
+/obj/item/toy/ringbell,
+/obj/item/tank/air,
+/obj/item/tank/air,
+/obj/item/tank/air,
+/obj/item/tank/air,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
+/obj/random/tank,
+/obj/random/tank,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/dock)
 "Ca" = (
@@ -2211,6 +2537,22 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/voxship/misslie)
+"Cg" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/wall/ocp_wall,
+/area/voxship/engineering)
+"Cu" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/machinery/light,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/dock)
 "CE" = (
 /obj/structure/closet/crate/munitions/payload/explosive,
 /obj/structure/window/phoronreinforced,
@@ -2290,6 +2632,7 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
+/obj/random/trash,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "Dg" = (
@@ -2348,6 +2691,10 @@
 	icon_state = "alarm0";
 	pixel_y = -22;
 	req_access = list("ACCESS_VOXSHIP")
+	},
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/voxship/dock)
@@ -2425,6 +2772,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/engineering)
+"Eh" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/vox,
+/area/voxship/armory)
 "Eu" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -2435,6 +2786,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/voxship/dock)
 "Ew" = (
@@ -2446,6 +2798,11 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
+"EK" = (
+/obj/structure/ship_munition/disperser_charge/mining,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
 "EU" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2500,6 +2857,18 @@
 /obj/structure/window/phoronreinforced,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
+"Fg" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/largecrate,
+/obj/item/storage/firstaid/combat,
+/obj/item/storage/firstaid/combat,
+/obj/item/storage/firstaid/combat,
+/obj/item/storage/firstaid/combat,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/plating/vox,
+/area/voxship/dock)
 "Ft" = (
 /turf/simulated/wall/ocp_wall,
 /area/voxship/misslie)
@@ -2507,6 +2876,7 @@
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
 "FF" = (
@@ -2618,6 +2988,7 @@
 /obj/item/clothing/head/helmet/space/vox/pressure,
 /obj/item/clothing/head/helmet/space/vox/pressure,
 /obj/item/clothing/head/helmet/space/vox/pressure,
+/obj/item/device/binoculars,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "GI" = (
@@ -2631,6 +3002,13 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/engineering)
+"GQ" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/dock)
 "GU" = (
 /obj/effect/floor_decal/corner/b_green{
 	dir = 10
@@ -2683,6 +3061,20 @@
 	icon_state = "1-8"
 	},
 /obj/structure/table/rack,
+/obj/item/clothing/suit/space/vox/raider,
+/obj/item/clothing/suit/space/vox/raider,
+/obj/item/clothing/suit/space/vox/raider,
+/obj/item/clothing/head/helmet/space/vox/raider,
+/obj/item/clothing/head/helmet/space/vox/raider,
+/obj/item/clothing/head/helmet/space/vox/raider,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/item/clothing/suit/space/vox/raider,
+/obj/item/clothing/suit/space/vox/raider,
+/obj/item/clothing/head/helmet/space/vox/raider,
+/obj/item/clothing/head/helmet/space/vox/raider,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "Hu" = (
@@ -2700,6 +3092,7 @@
 	dir = 1;
 	frequency = 1331
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/dock)
 "Hz" = (
@@ -2707,6 +3100,16 @@
 	initial_id_tag = "vox_pd"
 	},
 /obj/machinery/power/terminal,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
+"HA" = (
+/obj/effect/shuttle_landmark/vox_ship/nav_south{
+	name = "South of Abnormal Ship"
+	},
+/turf/space,
+/area/space)
+"HI" = (
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "HV" = (
@@ -2742,6 +3145,10 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 13
 	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "Ij" = (
@@ -2758,6 +3165,7 @@
 /area/voxship/armory)
 "Ik" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
+/obj/random/trash,
 /turf/simulated/floor/plating/vox,
 /area/voxship/dock)
 "Im" = (
@@ -2767,6 +3175,10 @@
 	icon_state = "4-8"
 	},
 /obj/structure/table/rack,
+/obj/item/gun/projectile/dartgun/vox/raider,
+/obj/item/gun/projectile/dartgun/vox/raider,
+/obj/item/gun/projectile/dartgun/vox/raider,
+/obj/item/gun/projectile/dartgun/vox/raider,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "In" = (
@@ -2823,8 +3235,29 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"Je" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/conveyor/ammobelt{
+	dir = 8;
+	id = "ammobeltvox1"
+	},
+/obj/structure/window/phoronreinforced,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/maintenance,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
 "Ji" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
@@ -2881,6 +3314,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "JX" = (
@@ -2901,6 +3335,7 @@
 	pixel_y = -22;
 	req_access = list("ACCESS_VOXSHIP")
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "Ku" = (
@@ -2945,6 +3380,7 @@
 	dir = 8;
 	icon_state = "warning"
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/engineering)
 "KG" = (
@@ -2997,6 +3433,10 @@
 	},
 /turf/simulated/wall/alienwall,
 /area/voxship/shuttle)
+"Lg" = (
+/obj/random/maintenance,
+/turf/space,
+/area/space)
 "Lm" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -3072,10 +3512,12 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "LP" = (
 /obj/machinery/light,
+/obj/structure/table/rack,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "LQ" = (
@@ -3087,7 +3529,7 @@
 	pixel_x = 0
 	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/engineering)
+/area/voxship/dock)
 "LT" = (
 /obj/structure/cable/yellow{
 	d2 = 2;
@@ -3101,6 +3543,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
@@ -3133,7 +3576,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/engineering)
+/area/voxship/dock)
 "MF" = (
 /obj/structure/lattice,
 /turf/space,
@@ -3167,14 +3610,21 @@
 /obj/item/clothing/mask/gas/swat/vox,
 /obj/item/clothing/mask/gas/swat/vox,
 /obj/item/clothing/mask/gas/swat/vox,
+/obj/item/device/binoculars,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "MQ" = (
 /obj/structure/railing/mapped,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/portable_atmospherics/powered/scrubber,
+/obj/structure/table/rack,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
 /turf/simulated/floor/tiled/dark/monotile/vox,
-/area/voxship/engineering)
+/area/voxship/dock)
 "Nk" = (
 /obj/structure/ship_munition/disperser_charge/mining,
 /obj/machinery/light{
@@ -3236,6 +3686,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/engineering)
 "Oc" = (
@@ -3271,6 +3722,12 @@
 	},
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/engineering)
+"Ov" = (
+/obj/effect/shuttle_landmark/vox_ship/nav_northwest{
+	name = "Northwest of Abnormal Ship"
+	},
+/turf/space,
+/area/space)
 "Oy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	dir = 5
@@ -3297,6 +3754,7 @@
 /obj/item/clothing/head/helmet/space/vox/medic,
 /obj/item/clothing/head/helmet/space/vox/medic,
 /obj/item/clothing/head/helmet/space/vox/medic,
+/obj/item/clothing/glasses/meson,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "OJ" = (
@@ -3348,6 +3806,7 @@
 /obj/item/clothing/head/helmet/space/vox/carapace,
 /obj/item/clothing/head/helmet/space/vox/carapace,
 /obj/item/clothing/head/helmet/space/vox/carapace,
+/obj/item/clothing/glasses/meson,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "Pe" = (
@@ -3385,6 +3844,16 @@
 /obj/item/clothing/shoes/magboots/vox,
 /obj/item/clothing/shoes/magboots/vox,
 /obj/item/clothing/shoes/magboots/vox,
+/obj/item/device/binoculars,
+/obj/item/device/binoculars,
+/obj/item/device/binoculars,
+/obj/item/device/binoculars,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "PH" = (
@@ -3446,6 +3915,20 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"Qs" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/item/pickaxe/hammer,
+/obj/item/pickaxe/hammer,
+/obj/item/pickaxe/hammer,
+/obj/item/pickaxe/hammer,
+/obj/item/pickaxe/jackhammer,
+/obj/item/pickaxe/jackhammer,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/dock)
 "Rm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
 /turf/simulated/wall/alienwall{
@@ -3497,8 +3980,9 @@
 /area/voxship/dock)
 "Rz" = (
 /obj/structure/stairs/north,
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/engineering)
+/area/voxship/dock)
 "RD" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -3619,7 +4103,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/engineering)
+/area/voxship/dock)
 "TA" = (
 /obj/structure/table/rack,
 /obj/random/projectile,
@@ -3628,6 +4112,8 @@
 /obj/random/projectile,
 /obj/random/projectile,
 /obj/random/projectile,
+/obj/random/trash,
+/obj/item/clothing/glasses/meson,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "TO" = (
@@ -3644,6 +4130,27 @@
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
+"TT" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/rack,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark/monotile/vox,
+/area/voxship/dock)
+"Ua" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/random/trash,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/dock)
 "Ug" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{
 	dir = 8
@@ -3674,6 +4181,11 @@
 /obj/effect/overmap/visitable/sector/vox_start,
 /turf/space,
 /area/space)
+"Uz" = (
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/vox,
+/area/voxship/dock)
 "UD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
@@ -3681,6 +4193,16 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
+/obj/structure/table/reinforced,
+/obj/item/clothing/suit/armor/vox/bombsuit,
+/obj/item/clothing/suit/armor/vox/bombsuit,
+/obj/item/clothing/suit/armor/vox/bombsuit,
+/obj/item/clothing/head/helmet/vox/jaw,
+/obj/item/clothing/head/helmet/vox/jaw,
+/obj/item/clothing/head/helmet/vox/jaw,
+/obj/item/clothing/under/vox/eng,
+/obj/item/clothing/under/vox/eng,
+/obj/item/clothing/under/vox/eng,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/engineering)
 "UN" = (
@@ -3713,8 +4235,14 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/red,
+/obj/random/trash,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
+"UV" = (
+/obj/structure/ship_munition/disperser_charge/vox,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
 "UX" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/blue{
 	dir = 1
@@ -3791,6 +4319,12 @@
 	},
 /obj/machinery/computer/ship/disperser{
 	dir = 4
+	},
+/obj/machinery/button/blast_door{
+	dir = 1;
+	id_tag = "vox_ofd";
+	pixel_y = -20;
+	pixel_x = -23
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
@@ -3901,6 +4435,24 @@
 	initial_gas = list("nitrogen"=103)
 	},
 /area/voxship/dock)
+"Xd" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/random/trash,
+/turf/simulated/floor/tiled/dark/vox,
+/area/voxship/engineering)
+"Xy" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/item/melee/energy/pick,
+/obj/item/melee/energy/pick,
+/obj/item/melee/energy/pick,
+/obj/item/melee/energy/pick,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/dock)
 "XC" = (
 /obj/structure/lattice,
 /obj/structure/catwalk,
@@ -3947,6 +4499,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/misslie)
 "Yv" = (
@@ -3963,6 +4516,21 @@
 	icon_state = "2-4"
 	},
 /obj/structure/table/rack,
+/obj/item/device/binoculars,
+/obj/item/device/binoculars,
+/obj/item/device/binoculars,
+/obj/item/device/suit_cooling_unit,
+/obj/item/device/suit_cooling_unit,
+/obj/item/device/suit_cooling_unit,
+/obj/item/tank/jetpack/nitrogen,
+/obj/item/tank/jetpack/nitrogen,
+/obj/item/tank/jetpack/nitrogen,
+/obj/item/tank/jetpack/nitrogen,
+/obj/item/tank/jetpack/nitrogen,
+/obj/item/tank/jetpack/nitrogen,
+/obj/item/tank/jetpack/nitrogen,
+/obj/item/tank/jetpack/nitrogen,
+/obj/item/tank/jetpack/nitrogen,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "YI" = (
@@ -3981,6 +4549,17 @@
 /obj/structure/table/reinforced,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
+"YM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/book/manual/rust_engine,
+/turf/simulated/floor/tiled/dark/vox,
+/area/voxship/engineering)
+"YR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
+/turf/simulated/floor/plating/vox,
+/area/voxship/armory)
 "YV" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -3992,6 +4571,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/dock)
 "YX" = (
@@ -4001,6 +4582,7 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/atmospherics/portables_connector,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "YZ" = (
@@ -4013,6 +4595,7 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 4
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/voxship/misslie)
 "Za" = (
@@ -4034,6 +4617,10 @@
 /area/voxship/misslie)
 "Zl" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/dock)
 "Zu" = (
@@ -4053,6 +4640,7 @@
 	req_access = list("ACCESS_VOXSHIP");
 	pixel_x = 20
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/misslie)
 "ZE" = (
@@ -5234,7 +5822,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -5743,7 +6331,7 @@ Js
 Js
 Js
 Js
-Js
+Ov
 Js
 Js
 Js
@@ -6490,7 +7078,7 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 Js
 Js
@@ -6589,6 +7177,7 @@ Js
 Js
 Js
 Js
+Ay
 Js
 Js
 Js
@@ -6605,8 +7194,7 @@ Js
 Js
 Js
 Js
-Js
-Js
+Ay
 Js
 Js
 Js
@@ -6683,6 +7271,7 @@ Js
 Js
 Js
 Js
+Ay
 Js
 Js
 Js
@@ -6703,8 +7292,7 @@ Js
 Js
 Js
 Js
-Js
-Js
+Lg
 Js
 Js
 Js
@@ -6802,7 +7390,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -6888,12 +7476,12 @@ Js
 Js
 Js
 Js
+Lg
 Js
 Js
 Js
 Js
-Js
-Js
+Lg
 Js
 Js
 Js
@@ -6996,7 +7584,7 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 GI
 Js
@@ -7190,6 +7778,7 @@ Js
 Js
 Js
 Js
+Lg
 Js
 Js
 Js
@@ -7197,14 +7786,13 @@ Js
 Js
 Js
 Js
-Js
-Js
+Ay
 Js
 Js
 GI
 DE
 Js
-Js
+Ay
 Js
 Js
 yd
@@ -7295,12 +7883,12 @@ Js
 Js
 Js
 Js
+Ay
 Js
 Js
 Js
 Js
-Js
-Js
+Ay
 Js
 Js
 GI
@@ -7425,7 +8013,7 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 Js
 Js
@@ -7525,8 +8113,8 @@ Js
 Js
 Js
 Js
-Js
-Js
+Ay
+Ay
 Js
 Js
 Js
@@ -7627,8 +8215,8 @@ Js
 Js
 Js
 Js
-Js
-Js
+Ay
+Ay
 Js
 Js
 Js
@@ -7712,7 +8300,7 @@ Js
 DE
 DE
 DE
-Fc
+aW
 Jq
 VE
 KX
@@ -7812,7 +8400,7 @@ GI
 DE
 DE
 DE
-gc
+gJ
 VA
 Fc
 kS
@@ -7820,7 +8408,7 @@ Be
 pO
 fd
 sU
-DN
+em
 OJ
 iW
 kU
@@ -7834,7 +8422,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -7914,12 +8502,12 @@ GI
 DE
 DE
 gc
-gc
+EK
 DE
-Fc
+Je
 oA
 fW
-ZY
+cM
 fd
 Qf
 DN
@@ -8007,16 +8595,16 @@ Js
 Js
 Js
 Js
+Lg
 Js
-Js
-Js
+Lg
 Js
 Js
 GI
 DE
 DE
 My
-ZY
+HI
 EV
 pL
 nW
@@ -8108,7 +8696,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -8219,7 +8807,7 @@ Js
 GI
 DE
 My
-My
+UV
 vU
 DE
 cq
@@ -8235,14 +8823,14 @@ Oi
 eH
 DI
 Js
+Ay
 Js
 Js
 Js
 Js
 Js
 Js
-Js
-Js
+Lg
 Js
 Js
 Js
@@ -8316,7 +8904,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Hz
 tz
@@ -8344,7 +8932,7 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 Js
 Js
@@ -8418,12 +9006,12 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 DE
 Nk
-ZY
+cM
 xT
 DE
 Nv
@@ -8440,6 +9028,7 @@ eH
 DI
 Js
 Js
+Lg
 Js
 Js
 Js
@@ -8447,8 +9036,7 @@ Js
 Js
 Js
 Js
-Js
-Js
+Ay
 Js
 Js
 Js
@@ -8542,7 +9130,7 @@ XC
 XC
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -8618,7 +9206,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -8627,7 +9215,7 @@ Js
 GI
 DE
 gc
-ZY
+HI
 gc
 fd
 lg
@@ -8728,8 +9316,8 @@ Js
 Js
 GI
 DE
-Nk
-ZY
+zX
+HI
 yu
 DE
 UZ
@@ -8743,14 +9331,14 @@ uK
 CT
 Wn
 XC
+jr
 eH
-eH
 Js
 Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -8831,7 +9419,7 @@ Js
 GI
 DE
 gc
-ZY
+HI
 gc
 DE
 Xa
@@ -8926,7 +9514,7 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 Js
 GI
@@ -9023,12 +9611,12 @@ Js
 Js
 Js
 Js
+Lg
 Js
 Js
 Js
 Js
-Js
-Js
+Lg
 Js
 Js
 yQ
@@ -9136,7 +9724,7 @@ Js
 yQ
 Xa
 Zl
-Zl
+wB
 OV
 BY
 Xa
@@ -9164,7 +9752,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -9237,7 +9825,7 @@ Js
 Js
 yQ
 Xa
-Ik
+Uz
 Ik
 Eu
 xm
@@ -9339,7 +9927,7 @@ Js
 Js
 yQ
 Xa
-Ir
+oq
 Ir
 cf
 vz
@@ -9433,7 +10021,7 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 Js
 Js
@@ -9466,7 +10054,7 @@ FF
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -9538,7 +10126,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 yQ
@@ -9650,10 +10238,10 @@ Hm
 Ew
 Iw
 Rx
-Rx
+GQ
 nB
 bQ
-Rx
+Cu
 FF
 FF
 Mz
@@ -9742,14 +10330,14 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 yQ
 Xa
 Xa
 Im
-Ew
+Ua
 dD
 Lp
 po
@@ -9761,7 +10349,7 @@ AX
 oX
 vW
 Vp
-wk
+Xd
 wk
 Do
 jZ
@@ -9953,7 +10541,7 @@ Xa
 NL
 Ln
 xC
-Ew
+rh
 wl
 po
 Oc
@@ -9966,7 +10554,7 @@ FF
 Ve
 EU
 Ws
-zS
+YM
 iB
 IE
 Db
@@ -10046,17 +10634,17 @@ Js
 Js
 Js
 Js
+Ay
 Js
 Js
 Js
-Js
-Js
+Ay
 Xa
 wA
 Wq
-xC
+sO
 rh
-wl
+xv
 po
 af
 gb
@@ -10081,7 +10669,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -10158,7 +10746,7 @@ AG
 Wq
 xC
 rh
-dD
+Qs
 po
 nw
 yF
@@ -10260,7 +10848,7 @@ YI
 gg
 xC
 Ew
-dD
+Xy
 po
 CM
 po
@@ -10272,7 +10860,7 @@ FF
 kj
 NK
 oz
-dN
+zS
 tq
 fI
 Ga
@@ -10280,7 +10868,7 @@ ix
 FF
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -10353,7 +10941,7 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 Js
 Js
@@ -10367,14 +10955,14 @@ ls
 qI
 bb
 vc
-UX
+iH
 TR
 po
 FF
 GK
 NK
 aC
-dN
+zS
 DH
 FF
 FF
@@ -10384,7 +10972,7 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 Js
 Js
@@ -10558,7 +11146,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Xa
@@ -10575,7 +11163,7 @@ BD
 XY
 po
 FF
-FF
+Ax
 ha
 FF
 FF
@@ -10759,7 +11347,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -10773,7 +11361,7 @@ Oz
 AN
 po
 hw
-kO
+vc
 FD
 kO
 qq
@@ -10781,9 +11369,9 @@ po
 FF
 MQ
 Rz
-dN
+Qi
 LQ
-dX
+Fg
 FF
 Ia
 Ia
@@ -10863,29 +11451,29 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 Js
 sg
 sg
 PD
-Od
+YR
 XV
 Pb
 AN
 zW
 Hu
-kO
+vc
 Ku
-kO
+wG
 CR
 po
 FF
-pC
+TT
 Ao
 bq
 sK
-dX
+vV
 FF
 Ia
 Ia
@@ -10970,8 +11558,8 @@ Js
 Js
 sg
 cp
-Od
-Od
+Eh
+nb
 Af
 cs
 AN
@@ -11099,12 +11687,12 @@ Js
 Js
 Js
 Js
+Lg
 Js
 Js
 Js
 Js
-Js
-Js
+Ay
 Js
 Js
 Js
@@ -11193,7 +11781,7 @@ Js
 Js
 Js
 FF
-Ia
+de
 mW
 Js
 Js
@@ -11271,7 +11859,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 sg
@@ -11295,7 +11883,7 @@ Js
 Js
 Js
 FF
-Ia
+de
 Js
 Js
 Js
@@ -11396,8 +11984,8 @@ Js
 Js
 Js
 Js
-FF
-Ia
+wn
+Cg
 Js
 Js
 Js
@@ -11492,15 +12080,15 @@ Js
 Js
 Js
 Js
+Ay
 Js
-Js
-Js
+Ay
 Js
 Js
 FF
 Ia
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -11589,7 +12177,7 @@ Js
 Js
 Js
 Js
-Js
+Lg
 Js
 Js
 Js
@@ -11683,6 +12271,9 @@ Js
 Js
 Js
 Js
+Lg
+Js
+Ay
 Js
 Js
 Js
@@ -11690,10 +12281,7 @@ Js
 Js
 Js
 Js
-Js
-Js
-Js
-Js
+Lg
 Js
 Js
 Js
@@ -11788,11 +12376,11 @@ Js
 Js
 Js
 Js
+Ay
 Js
 Js
 Js
-Js
-Js
+Ay
 Js
 Js
 Js
@@ -12004,7 +12592,7 @@ Js
 Js
 Js
 Js
-Js
+Ay
 Js
 Js
 Js
@@ -12435,7 +13023,7 @@ Js
 Js
 Js
 Js
-Js
+HA
 Js
 Js
 Js

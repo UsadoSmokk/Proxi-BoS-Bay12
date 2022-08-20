@@ -34,6 +34,7 @@
 /datum/job/submap/voxship_vox/doc
 	title = "Shard Biotechnician"
 	total_positions = 2
+	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/doc
 	info = "Your sacred duty is to preserve the lives of your ship-band; \
 	save their stacks, stabilize wounded crew, replace missing components and ensure nobody messes with your patients or your workspace."
 	whitelisted_species = list(SPECIES_VOX)
@@ -71,6 +72,7 @@
 /datum/job/submap/voxship_vox/engineer
 	title = "Shard Technician"
 	total_positions = 2
+	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/engineer
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING      = SKILL_BASIC,
 						SKILL_COMPUTER     = SKILL_ADEPT,
@@ -150,6 +152,7 @@
 /datum/job/submap/voxship_vox/breacher
 	title = "Breacher"
 	total_positions = 2
+	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/breacher
 	supervisors = "The Apex and the arkship"
 	info = "The Empire has been reborn, even if Auralis died, but their word is still in you.	\
 	You have become part of the Ecclesiarchy of the Empire, and while the inquisitors are supervising the brothers and protecting the very young empire with their bodies, you must help them and protect them from the vile heretics who dared to threaten his life.	\
@@ -187,8 +190,9 @@
 	skill_points = 18
 
 /datum/job/submap/voxship_vox/inq
-	title = "Inquisitor"
+	title = "Shard Inquisitor"
 	total_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/inq
 	supervisors = "The Apex and the arkship"
 	info = "You are the face of the Apexes, that you carry the will of the great Auralis with your claws.	\
 	The Empire has returned, but not all voxes have believed again, and therefore the apexes have chosen you, so that you, destroying your enemies, return the spark of the Creators to all your brothers in their hearts.	\
@@ -233,6 +237,36 @@
 /decl/hierarchy/outfit/job/voxship/crew
 	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Expeditionary")
 	uniform = /obj/item/clothing/under/vox/vox_robes
+	suit = /obj/item/clothing/suit/armor/vox/guard
+	head = /obj/item/clothing/head/helmet/vox/guard
+	r_pocket = /obj/item/device/radio
+	shoes = /obj/item/clothing/shoes/magboots/vox
+	l_ear = /obj/item/device/radio/headset
+	belt = /obj/item/storage/belt/utility/full
+	id_types = list(/obj/item/card/id/voxship)
+	l_pocket = /obj/item/crowbar/prybar
+	r_hand = /obj/item/tank/nitrogen_emergency_double
+	l_hand = /obj/item/voxbox
+
+/decl/hierarchy/outfit/job/voxship/crew/doc
+	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Biotechnician")
+	uniform = /obj/item/clothing/under/vox/vox_casual
+	suit = /obj/item/clothing/suit/storage/vox
+	head = /obj/item/clothing/head/helmet/vox/jaw
+	r_pocket = /obj/item/device/radio
+	shoes = /obj/item/clothing/shoes/magboots/vox
+	l_ear = /obj/item/device/radio/headset
+	belt = /obj/item/storage/belt/utility/full
+	id_types = list(/obj/item/card/id/voxship)
+	l_pocket = /obj/item/crowbar/prybar
+	r_hand = /obj/item/tank/nitrogen_emergency_double
+	l_hand = /obj/item/voxbox
+
+/decl/hierarchy/outfit/job/voxship/crew/engineer
+	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Technician")
+	uniform = /obj/item/clothing/under/vox/eng
+	suit = /obj/item/clothing/suit/armor/vox/bombsuit
+	head = /obj/item/clothing/head/helmet/vox/jaw
 	r_pocket = /obj/item/device/radio
 	shoes = /obj/item/clothing/shoes/magboots/vox
 	l_ear = /obj/item/device/radio/headset
@@ -244,7 +278,9 @@
 
 /decl/hierarchy/outfit/job/voxship/crew/captain
 	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Quill")
-	uniform = /obj/item/clothing/under/vox/vox_robes
+	uniform = /obj/item/clothing/under/vox/lead
+	suit = /obj/item/clothing/suit/armor/vox/quill_armor
+	head = /obj/item/clothing/head/helmet/vox/quill_crown
 	r_pocket = /obj/item/tank/nitrogen_emergency_double
 	shoes = /obj/item/clothing/shoes/magboots/vox
 	l_ear = /obj/item/device/radio/headset
@@ -253,6 +289,35 @@
 	l_pocket = /obj/item/crowbar/prybar
 	r_hand = /obj/item/device/radio
 	l_hand = /obj/item/voxbox
+
+/decl/hierarchy/outfit/job/voxship/crew/inq
+	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Inquisitor")
+	uniform = /obj/item/clothing/under/vox/lead
+	suit = /obj/item/clothing/suit/armor/vox/guard
+	head = /obj/item/clothing/head/helmet/vox/guard
+	r_pocket = /obj/item/tank/nitrogen_emergency_double
+	shoes = /obj/item/clothing/shoes/magboots/vox
+	l_ear = /obj/item/device/radio/headset
+	belt = /obj/item/storage/belt/utility/full
+	id_types = list(/obj/item/card/id/voxship_captain)
+	l_pocket = /obj/item/crowbar/prybar
+	r_hand = /obj/item/device/radio
+	l_hand = /obj/item/voxbox
+
+/decl/hierarchy/outfit/job/voxship/crew/breacher
+	name = VOXSHIP_OUTFIT_JOB_NAME("Breacher")
+	uniform = /obj/item/clothing/under/vox/vox_robes
+	suit = /obj/item/clothing/suit/armor/vox/guard
+	head = /obj/item/clothing/head/helmet/vox/guard
+	r_pocket = /obj/item/device/radio
+	shoes = /obj/item/clothing/shoes/magboots/vox
+	l_ear = /obj/item/device/radio/headset
+	belt = /obj/item/storage/belt/utility/full
+	id_types = list(/obj/item/card/id/voxship_captain)
+	l_pocket = /obj/item/crowbar/prybar
+	r_hand = /obj/item/tank/nitrogen_emergency_double
+	l_hand = /obj/item/voxbox
+
 
 /obj/item/voxbox
 	name = "Vox Combat Kit"
