@@ -122,7 +122,7 @@
 	supervisors = "the Gunnery Chief"
 	department = "Auxiliary"
 	department_flag = SUP
-	total_positions = 1
+	total_positions = 3
 	spawn_positions = 1
 	economic_power = 10
 	minimal_player_age = 0
