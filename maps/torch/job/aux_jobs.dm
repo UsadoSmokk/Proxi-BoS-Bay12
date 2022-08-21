@@ -206,8 +206,8 @@
 	title = "Canteen Worker"
 	department = "Auxiliary"
 	department_flag = SRV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	supervisors = "the First Officer"
 	alt_titles = list(
