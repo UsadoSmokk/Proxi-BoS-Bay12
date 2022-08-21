@@ -10,7 +10,7 @@
 	id = "awaysite_voxship"
 	description = "Vox ship."
 	suffixes = list("voxship/voxship-1.dmm","voxship/voxship-2.dmm")
-	spawn_cost = 0.1 //was 0.5
+	spawn_cost = 0.7 //was 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/voxship)
 	area_coherency_test_subarea_count = list(

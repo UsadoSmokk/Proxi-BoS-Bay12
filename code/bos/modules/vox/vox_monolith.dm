@@ -20,6 +20,7 @@
 	desc = "A structure built in honor and glory of Auralis, proclaiming the prophecy '𒄃𒄉𒃼𒃴𒃮𒂀'"
 	icon = 'icons/bos/obj/vox_altar.dmi'
 	icon_state = "altar"
+	throwpass = 1
 
 /obj/structure/cult/altar/vox/bookcase
 	desc = "A structure built in honor and glory of Auralis, proclaiming the prophecy '𒄃𒄉𒃼𒃴𒃮𒂀'"

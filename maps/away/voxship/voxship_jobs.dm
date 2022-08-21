@@ -292,8 +292,8 @@
 
 /decl/hierarchy/outfit/job/voxship/crew/inq
 	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Inquisitor")
-	uniform = /obj/item/clothing/under/vox/lead
-	suit = /obj/item/clothing/suit/armor/vox/guard
+	uniform = /obj/item/clothing/under/vox/vox_robes
+	suit = /obj/item/clothing/suit/armor/vox/quill_armor/inq
 	head = /obj/item/clothing/head/helmet/vox/guard
 	r_pocket = /obj/item/tank/nitrogen_emergency_double
 	shoes = /obj/item/clothing/shoes/magboots/vox
@@ -366,7 +366,7 @@
 	name = "Shard Quill"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/inq
-	name = "Inquisitor"
+	name = "Shard Inquisitor"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/breacher
 	name = "Breacher"

@@ -40,6 +40,11 @@
 		)
 	siemens_coefficient = 0
 
+/obj/item/clothing/suit/armor/vox/quill_armor/inq
+	name = "inquisitor mantle"
+	desc = "Chitinous durable armor, able to protect against many types of damage. Such armor is worn mainly by high ranks in the cult of worship of Auralis."
+	icon_state = "vox-inq"
+
 /obj/item/clothing/suit/armor/vox/guard
 	name = "guard shell"
 	desc = "A heavy shell that perfectly protects against the adversities of any nature, be it a hail of bullets, lasers or even bombs. Wearing such chitinous armor, members of the honor guard become mobile fortresses that withstand the onslaught alone.."

@@ -113,11 +113,11 @@
 	dir = 8;
 	id = "ammobeltvox1"
 	},
-/obj/structure/window/phoronreinforced,
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/structure/window/phoronreinforced,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "bb" = (
@@ -134,15 +134,15 @@
 	},
 /obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "bt" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/structure/window/phoronreinforced,
 /obj/machinery/disposal/deliveryChute{
 	dir = 4
 	},
+/obj/structure/window/phoronreinforced,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "bO" = (
@@ -269,8 +269,13 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "cM" = (
 /obj/random/trash,
 /turf/simulated/floor/reinforced/vox,
@@ -370,7 +375,7 @@
 /obj/random/junk,
 /obj/random/junk,
 /turf/simulated/floor/plating/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "ec" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -951,9 +956,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "kj" = (
@@ -989,6 +991,13 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced,
+/obj/structure/window/phoronreinforced{
 	dir = 4
 	},
 /turf/simulated/floor/reinforced/vox,
@@ -1289,21 +1298,20 @@
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/misslie)
 "nW" = (
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
 /obj/machinery/pointdefense_control{
 	initial_id_tag = "vox_pd";
 	name = "Point Defense Controller"
 	},
 /obj/structure/window/phoronreinforced{
-	dir = 8
-	},
-/obj/structure/window/phoronreinforced{
 	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/disposalpipe/segment/bent{
+	dir = 8
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "nZ" = (
@@ -1368,11 +1376,14 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/window/phoronreinforced{
-	dir = 8
-	},
 /obj/machinery/power/smes/batteryrack,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "oI" = (
@@ -1458,19 +1469,19 @@
 /obj/random/junk,
 /obj/random/junk,
 /obj/random/junk,
-/obj/random/junk,
-/obj/random/junk,
-/turf/simulated/floor/tiled/dark/monotile/vox,
-/area/voxship/dock)
-"pL" = (
-/obj/structure/disposalpipe/segment{
-	dir = 5;
-	icon_state = "pipe-c"
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
+/turf/simulated/floor/tiled/dark/monotile/vox,
+/area/voxship/engineering)
+"pL" = (
 /obj/machinery/conveyor/ammobelt{
 	dir = 5;
 	id = "ammobeltvox1"
 	},
+/obj/structure/disposalpipe/segment/bent,
 /obj/structure/window/phoronreinforced,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
@@ -1532,6 +1543,10 @@
 /obj/machinery/disperser/middle{
 	dir = 8
 	},
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "qq" = (
@@ -1699,7 +1714,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "sL" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
@@ -1774,11 +1789,6 @@
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 9;
 	icon_state = "spline_fancy"
-	},
-/obj/machinery/conveyor_switch/ammobelt{
-	id = "voxmiss";
-	pixel_x = 6;
-	pixel_y = 10
 	},
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/misslie)
@@ -1926,7 +1936,7 @@
 /obj/random/junk,
 /obj/random/junk,
 /turf/simulated/floor/plating/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "vW" = (
 /obj/machinery/light{
 	dir = 1;
@@ -2284,6 +2294,10 @@
 	name = "Artillery Blast Door"
 	},
 /obj/machinery/shield_diffuser,
+/obj/structure/window/phoronreinforced,
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ofd)
 "zS" = (
@@ -2354,7 +2368,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "Ax" = (
 /obj/structure/largecrate,
 /turf/simulated/wall/alienwall{
@@ -2407,9 +2421,6 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
 "Be" = (
-/obj/structure/window/phoronreinforced{
-	dir = 1
-	},
 /obj/structure/bed/chair/shuttle/black{
 	dir = 8;
 	icon_state = "shuttle_chair_preview"
@@ -2664,19 +2675,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/cable{
-	d1 = 16;
-	d2 = 0;
-	icon_state = "16-0";
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/zpipe/up/supply{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{
 	dir = 1
 	},
-/obj/structure/cable,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "Dj" = (
@@ -2868,7 +2872,7 @@
 /obj/random/junk,
 /obj/random/junk,
 /turf/simulated/floor/plating/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "Ft" = (
 /turf/simulated/wall/ocp_wall,
 /area/voxship/misslie)
@@ -3249,13 +3253,12 @@
 	dir = 8;
 	id = "ammobeltvox1"
 	},
-/obj/structure/window/phoronreinforced,
 /obj/effect/decal/cleanable/dirt,
-/obj/random/maintenance,
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/structure/window/phoronreinforced,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "Ji" = (
@@ -3283,6 +3286,10 @@
 	dir = 8
 	},
 /obj/structure/ship_munition/disperser_charge/vox,
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "Jr" = (
@@ -3529,7 +3536,7 @@
 	pixel_x = 0
 	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "LT" = (
 /obj/structure/cable/yellow{
 	d2 = 2;
@@ -3576,7 +3583,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "MF" = (
 /obj/structure/lattice,
 /turf/space,
@@ -3591,13 +3598,13 @@
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/dock)
 "MP" = (
-/obj/structure/table/rack,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2";
 	pixel_y = 0
 	},
+/obj/structure/table/rack,
 /obj/item/clothing/suit/armor/vox/guard,
 /obj/item/clothing/suit/armor/vox/guard,
 /obj/item/clothing/suit/armor/vox/guard,
@@ -3614,17 +3621,21 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "MQ" = (
-/obj/structure/railing/mapped,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/table/rack,
-/obj/random/junk,
-/obj/random/junk,
-/obj/random/junk,
-/obj/random/junk,
-/obj/random/junk,
-/obj/random/junk,
-/turf/simulated/floor/tiled/dark/monotile/vox,
-/area/voxship/dock)
+/obj/structure/cable{
+	d1 = 16;
+	d2 = 0;
+	icon_state = "16-0";
+	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen"=103)
+	},
+/area/voxship/engineering)
 "Nk" = (
 /obj/structure/ship_munition/disperser_charge/mining,
 /obj/machinery/light{
@@ -3982,7 +3993,7 @@
 /obj/structure/stairs/north,
 /obj/random/trash,
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "RD" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -4103,7 +4114,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/dark/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "TA" = (
 /obj/structure/table/rack,
 /obj/random/projectile,
@@ -4140,7 +4151,7 @@
 /obj/random/junk,
 /obj/random/junk,
 /turf/simulated/floor/tiled/dark/monotile/vox,
-/area/voxship/dock)
+/area/voxship/engineering)
 "Ua" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -4209,6 +4220,10 @@
 /obj/machinery/disperser/front{
 	dir = 8
 	},
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced,
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ofd)
 "UQ" = (
@@ -4314,9 +4329,6 @@
 /turf/simulated/floor/airless,
 /area/voxship/ofd)
 "VE" = (
-/obj/structure/window/phoronreinforced{
-	dir = 1
-	},
 /obj/machinery/computer/ship/disperser{
 	dir = 4
 	},
@@ -11369,7 +11381,7 @@ po
 FF
 MQ
 Rz
-Qi
+dN
 LQ
 Fg
 FF
