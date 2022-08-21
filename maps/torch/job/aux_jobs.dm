@@ -123,7 +123,7 @@
 	department = "Auxiliary"
 	department_flag = SUP
 	total_positions = 3
-	spawn_positions = 1
+	spawn_positions = 3
 	economic_power = 10
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 24)
