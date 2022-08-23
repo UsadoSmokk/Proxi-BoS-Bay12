@@ -154,6 +154,8 @@ GLOBAL_LIST_INIT(jukebox_tracks, list(
 	/decl/audio/track/drunkensailor, //bos
 	/decl/audio/track/rain, //bos
 	/decl/audio/track/endoftheworld, //bos
+	/decl/audio/track/zvyozdnoegestapo, //bos
+	/decl/audio/track/vinteresah, //bos
 	/decl/audio/track/startthefire, // bos
 	/decl/audio/track/solandterra, //bos
 	/decl/audio/track/comeyouknights, //bos
