@@ -15,12 +15,54 @@
 	name = "monolith of Kihikihi"
 	icon_state = "monolith_kihikihi"
 
-/obj/structure/cult/altar/vox
+/obj/structure/table/vox
 	name = "the Altar of Eternity"
 	desc = "A structure built in honor and glory of Auralis, proclaiming the prophecy '𒄃𒄉𒃼𒃴𒃮𒂀'"
 	icon = 'icons/bos/obj/vox_altar.dmi'
 	icon_state = "altar"
-	throwpass = 1
+	throwpass = TRUE
+	can_reinforce = FALSE
+	can_plate = FALSE
+	material = null
+
+
+/obj/structure/table/vox/attackby(obj/item/W, mob/user, click_params)
+	if(istype(W, /obj/item/hand)) //playing cards
+		var/obj/item/hand/H = W
+		if(H.cards && H.cards.len == 1)
+			usr.visible_message("\The [user] plays \the [H.cards[1].name].")
+		return
+
+	// Handle dismantling or placing things on the table from here on.
+	if(isrobot(user))
+		return
+
+	if(W.loc != user) // This should stop mounted modules ending up outside the module.
+		return
+
+	if (istype(W, /obj/item/natural_weapon))
+		return ..()
+
+	if(user.unEquip(W, src.loc))
+		auto_align(W, click_params)
+		return 1
+
+	return
+
+/obj/structure/table/vox/MouseDrop_T()
+	return
+
+/obj/structure/table/vox/update_desc()
+	return
+
+/obj/structure/table/vox/break_to_parts()
+	return
+
+/obj/structure/table/vox/on_update_icon()
+	return
+
+/obj/structure/table/vox/update_connections()
+	return
 
 /obj/structure/cult/altar/vox/bookcase
 	desc = "A structure built in honor and glory of Auralis, proclaiming the prophecy '𒄃𒄉𒃼𒃴𒃮𒂀'"
