@@ -115,3 +115,9 @@
 	license = /decl/license/grandfathered //vrun
 	url = "https://youtu.be/Z8B8LFSJ43Y"
 
+/decl/audio/track/killallxenos
+	title = "Kill All Xenos"
+	author = "Space Cadets"
+	source = 'sound/music/bos/killallxenos.ogg'
+	license = /decl/license/grandfathered //vrun
+	url = "https://youtu.be/Yg2IooEFTp8"
