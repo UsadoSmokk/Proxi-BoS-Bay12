@@ -64,13 +64,16 @@
 
 /obj/item/clothing/suit/storage/vox
 	name = "vox cloak"
-	desc = "A whitish raincoat used in everyday life just like human lab coats. They are worn and appreciated by many vox for their comfort, however, most often such robes are ranked among the bio-techniques of vox fleets."
+	desc = "A whitish raincoat used in everyday life just like human labcoats. They are worn and appreciated by many vox for their comfort, however, most often such robes are ranked among the bio-techniques of vox fleets."
 	icon = 'icons/bos/obj/clothing/species/vox/obj_suit_vox.dmi'
 	icon_state = "vox-labcoat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	allowed = list(/obj/item/device/scanner/gas,/obj/item/stack/medical,/obj/item/reagent_containers/dropper,/obj/item/reagent_containers/syringe,/obj/item/reagent_containers/hypospray,/obj/item/device/scanner/health,/obj/item/device/flashlight/pen,/obj/item/reagent_containers/glass/bottle,/obj/item/reagent_containers/glass/beaker,/obj/item/reagent_containers/pill,/obj/item/storage/pill_bottle,/obj/item/paper)
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
 		bio = ARMOR_BIO_RESISTANT
 		)
+	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND, ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_RANK)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 
 

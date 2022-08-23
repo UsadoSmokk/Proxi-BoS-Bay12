@@ -365,10 +365,10 @@
 
 /decl/hierarchy/outfit/job/voxslave
 	name = VOXSHIP_OUTFIT_JOB_NAME("Slave")
-	uniform = /obj/random/clothing
-	suit = /obj/random/suit
-	head = /obj/random/hat
-	shoes = /obj/random/shoes
+	uniform = 0
+	suit = 0
+	head = 0
+	shoes = 0
 	mask = /obj/item/clothing/mask/breath
 	r_hand = /obj/item/tank/air
 

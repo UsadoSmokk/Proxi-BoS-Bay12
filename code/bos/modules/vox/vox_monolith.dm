@@ -1,5 +1,5 @@
 /obj/structure/vox_monolith
-	name = "monolith of Kritika"
+	name = "monolith of Kritiki"
 	desc = "A structure built in honor and glory of Auralis, proclaiming the prophecy '𒄃𒄉𒃼𒃴𒃮𒂀'"
 	icon = 'icons/bos/obj/vox_monolith.dmi'
 	icon_state = "monolith_kritika"
@@ -64,12 +64,14 @@
 /obj/structure/table/vox/update_connections()
 	return
 
-/obj/structure/cult/altar/vox/bookcase
+/obj/structure/cult/altar/bookcasevox
+	name = "the Lectern of Eternity"
+	icon = 'icons/bos/obj/vox_altar.dmi'
 	desc = "A structure built in honor and glory of Auralis, proclaiming the prophecy '𒄃𒄉𒃼𒃴𒃮𒂀'"
 	icon_state = "bookcase"
 
 /obj/item/storage/bible/vox
-	name = "the Talons of the Kritika"
+	name = "the Talons of the Kritiki"
 	desc = "Postulates of the great leader and warrior, Auralis Kritiki"
 	icon = 'icons/bos/obj/vox_altar.dmi'
 	icon_state ="bibleforce"

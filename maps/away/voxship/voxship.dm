@@ -105,7 +105,7 @@
 		/datum/job/submap/voxship_vox/inq,
 		/datum/job/submap/voxship_vox/quill
 	)
-	whitelisted_species = list(SPECIES_VOX, SPECIES_VOX_ARMALIS, SPECIES_HUMAN, SPECIES_DIONA, SPECIES_IPC, SPECIES_SKRELL, SPECIES_TAJ)
+	whitelisted_species = list(SPECIES_VOX, SPECIES_VOX_ARMALIS, SPECIES_HUMAN, SPECIES_DIONA, SPECIES_IPC, SPECIES_SKRELL, SPECIES_TAJ, SPECIES_ADHERENT, SPECIES_UNATHI, SPECIES_YEOSA)
 	blacklisted_species = null
 	call_webhook = WEBHOOK_SUBMAP_LOADED_VOX
 
