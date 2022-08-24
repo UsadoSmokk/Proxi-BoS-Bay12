@@ -3,7 +3,7 @@
 /obj/item/clothing/gloves/latex/lodagn
 	name = "latex gloves"
 	desc = "Cheap sterile gloves made from latex. On them you can see strange spots of white mucus." //what the fuck
-	icon_state = "lodagn"
+	icon_state = "lodagn" //4 some reason oni ne rabotayut v ikonkah kastomok
 	item_state = "lodagn"
 
 /obj/item/clothing/shoes/dutyboots/lodagn
