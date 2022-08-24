@@ -7070,9 +7070,7 @@
 	icon_state = "corner_white"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/center)
 "rm" = (
@@ -8453,6 +8451,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/center)
 "un" = (
@@ -15814,7 +15813,7 @@
 	pixel_y = 6
 	},
 /obj/machinery/sealgen{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/orange,
 /obj/effect/floor_decal/industrial/warning{
@@ -16918,7 +16917,7 @@
 /area/maintenance/fourthdeck/foreport)
 "ON" = (
 /obj/machinery/sealgen{
-	dir = 1
+	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/orange,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -17431,14 +17430,6 @@
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup,
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/maintenance)
-"PS" = (
-/obj/effect/floor_decal/corner/green/half{
-	dir = 1;
-	icon_state = "bordercolorhalf"
-	},
-/obj/machinery/ship_map,
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/fourthdeck/center)
 "PT" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled,
@@ -37220,7 +37211,7 @@ kl
 kl
 kl
 Fj
-PS
+rh
 XV
 Uq
 SD
