@@ -22,7 +22,7 @@
 	item_icons = list(slot_glasses_str = 'customs/icons/mob/custom_items_mob.dmi')
 	flash_protection = FLASH_PROTECTION_MODERATE
 
-/obj/item/melee/lodagn //literally toolbox
+/obj/item/melee/lodagn //literally toolbox, but sharp
 	name = "bastard sword"
 	desc = "A sword capable of standing one-handed and two-handed grips. The handle is upholstered in fabric that is covered in a transparent goo that smells like Skrells..." //chto s toboy ne tak
 	slot_flags = SLOT_BACK
@@ -31,7 +31,11 @@
 	throwforce = 10
 	throw_speed = 1
 	throw_range = 7
-	base_parry_chance = 15
+	base_parry_chance = 50
+	sharp = TRUE
+    edge = TRUE
+    attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+    hitsound = 'sound/weapons/bladeslice.ogg'
 	origin_tech = list(TECH_COMBAT = 2)
 	attack_verb = list("slashed")
 	icon = 'customs/icons/obj/custom_items_obj.dmi'
