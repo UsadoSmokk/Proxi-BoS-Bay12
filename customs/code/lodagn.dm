@@ -33,11 +33,10 @@
 	throw_range = 7
 	base_parry_chance = 50
 	sharp = TRUE
-    edge = TRUE
-    attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-    hitsound = 'sound/weapons/bladeslice.ogg'
+	edge = TRUE
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	hitsound = 'sound/weapons/bladeslice.ogg'
 	origin_tech = list(TECH_COMBAT = 2)
-	attack_verb = list("slashed")
 	icon = 'customs/icons/obj/custom_items_obj.dmi'
 	icon_state = "bastard"
 	item_icons = list(
