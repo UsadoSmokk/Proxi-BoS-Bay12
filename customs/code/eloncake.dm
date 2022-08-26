@@ -24,3 +24,13 @@
 	icon_state = "outcast_cloak"
 	item_state = "outcast_cloak"
 	item_icons = list(slot_wear_suit_str = 'proxima/icons/mob/onmob/mob_suit.dmi')
+
+/obj/item/material/hatchet/machete/unbreakable/elloncake
+	name = "NanoTrasen short sword"
+	desc = "Literally an ancient artifact"
+	icon = 'customs/icons/obj/custom_items_obj.dmi'
+	icon_state = "ntsword"
+	item_state = "ntsword"
+	item_icons = list(
+		slot_l_hand_str = 'customs/icons/mob/custom_items_lhand.dmi',
+		slot_r_hand_str = 'customs/icons/mob/custom_items_rhand.dmi')
