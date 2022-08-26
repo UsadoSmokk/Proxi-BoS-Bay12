@@ -27627,8 +27627,7 @@
 /area/hallway/primary/firstdeck/aft)
 "ruS" = (
 /obj/effect/floor_decal/corner/green/mono,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset,
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "rvb" = (
@@ -29010,12 +29009,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/secpointhal)
 "sNn" = (
-/obj/effect/floor_decal/corner/green/half{
-	dir = 1
-	},
-/obj/machinery/ship_map,
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/firstdeck/center)
+/obj/structure/memstatue/ambrosia,
+/turf/simulated/floor/grass,
+/area/mempark)
 "sOb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -47095,7 +47091,7 @@ aqn
 aqn
 aqn
 aLU
-sNn
+wWr
 nUp
 aai
 aAm
@@ -56396,7 +56392,7 @@ rHb
 hJb
 rHb
 szb
-pdb
+sNn
 ail
 pBb
 pdb

@@ -40,6 +40,11 @@
 		)
 	siemens_coefficient = 0
 
+/obj/item/clothing/suit/armor/vox/quill_armor/inq
+	name = "inquisitor mantle"
+	desc = "Chitinous durable armor, able to protect against many types of damage. Such armor is worn mainly by high ranks in the cult of worship of Auralis."
+	icon_state = "vox-inq"
+
 /obj/item/clothing/suit/armor/vox/guard
 	name = "guard shell"
 	desc = "A heavy shell that perfectly protects against the adversities of any nature, be it a hail of bullets, lasers or even bombs. Wearing such chitinous armor, members of the honor guard become mobile fortresses that withstand the onslaught alone.."
@@ -59,13 +64,16 @@
 
 /obj/item/clothing/suit/storage/vox
 	name = "vox cloak"
-	desc = "A whitish raincoat used in everyday life just like human lab coats. They are worn and appreciated by many vox for their comfort, however, most often such robes are ranked among the bio-techniques of vox fleets."
+	desc = "A whitish raincoat used in everyday life just like human labcoats. They are worn and appreciated by many vox for their comfort, however, most often such robes are ranked among the bio-techniques of vox fleets."
 	icon = 'icons/bos/obj/clothing/species/vox/obj_suit_vox.dmi'
 	icon_state = "vox-labcoat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	allowed = list(/obj/item/device/scanner/gas,/obj/item/stack/medical,/obj/item/reagent_containers/dropper,/obj/item/reagent_containers/syringe,/obj/item/reagent_containers/hypospray,/obj/item/device/scanner/health,/obj/item/device/flashlight/pen,/obj/item/reagent_containers/glass/bottle,/obj/item/reagent_containers/glass/beaker,/obj/item/reagent_containers/pill,/obj/item/storage/pill_bottle,/obj/item/paper)
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
 		bio = ARMOR_BIO_RESISTANT
 		)
+	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND, ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_RANK)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 
 
