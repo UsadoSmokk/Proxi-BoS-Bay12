@@ -32,7 +32,7 @@
 
 	species_to_branch_blacklist = list(
 		/datum/species/human   = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
-		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/lord, /datum/mil_branch/terran),
+		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/terran),
 		/datum/species/tajaran = list(/datum/mil_branch/larmarine, /datum/mil_branch/lord, /datum/mil_branch/larfleet, /datum/mil_branch/terran),
 		/datum/species/unathi = list(/datum/mil_branch/lord, /datum/mil_branch/terran),
 		/datum/species/unathi/yeosa = list(/datum/mil_branch/lord, /datum/mil_branch/terran),
