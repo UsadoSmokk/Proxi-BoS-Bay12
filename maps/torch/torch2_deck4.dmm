@@ -8620,7 +8620,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/wall/vox/reinforced,
 /area/hallway/primary/fourthdeck/aft)
 "uI" = (
 /obj/machinery/button/blast_door{
@@ -9117,6 +9117,13 @@
 "vF" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/commissary)
+"vG" = (
+/obj/effect/floor_decal/corner/brown/half{
+	dir = 1;
+	icon_state = "bordercolorhalf"
+	},
+/turf/simulated/wall/vox,
+/area/hallway/primary/fourthdeck/aft)
 "vH" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -10951,7 +10958,7 @@
 /obj/structure/sign/warning/pods/east{
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/wall/vox,
 /area/hallway/primary/fourthdeck/aft)
 "Aj" = (
 /obj/structure/cable/green{
@@ -11034,6 +11041,15 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/marines/com)
+"Au" = (
+/obj/effect/floor_decal/corner/brown/half,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/vox/reinforced,
+/area/hallway/primary/fourthdeck/aft)
 "Av" = (
 /obj/effect/floor_decal/corner/brown/half,
 /turf/simulated/floor/tiled,
@@ -14989,7 +15005,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/wall/vox/reinforced,
 /area/hallway/primary/fourthdeck/aft)
 "KH" = (
 /obj/machinery/door/blast/shutters{
@@ -17431,6 +17447,12 @@
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup,
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/maintenance)
+"PS" = (
+/obj/effect/floor_decal/corner/brown{
+	dir = 5
+	},
+/turf/simulated/wall/vox,
+/area/hallway/primary/fourthdeck/aft)
 "PT" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled,
@@ -19987,7 +20009,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/wall/vox/reinforced,
 /area/hallway/primary/fourthdeck/aft)
 "Vj" = (
 /obj/random/maintenance,
@@ -44104,9 +44126,9 @@ tN
 jx
 iT
 Xn
-vj
+vG
 xJ
-WS
+Au
 vZ
 kX
 yF
@@ -44508,7 +44530,7 @@ da
 da
 eb
 cN
-TH
+PS
 tc
 KG
 KZ
@@ -44710,7 +44732,7 @@ uM
 iQ
 uM
 cN
-TH
+PS
 MI
 Vi
 vK
