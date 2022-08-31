@@ -1073,6 +1073,10 @@
 	},
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/misslie)
+"lh" = (
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/reinforced/vox,
+/area/space)
 "ll" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -2316,6 +2320,9 @@
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ofd)
+"zQ" = (
+/turf/simulated/floor/reinforced/vox,
+/area/space)
 "zS" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/vox,
@@ -4221,7 +4228,7 @@
 /area/voxship/misslie)
 "Us" = (
 /obj/effect/overmap/visitable/sector/vox_start,
-/turf/space,
+/turf/simulated/floor/reinforced/vox,
 /area/space)
 "Uz" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -7922,9 +7929,9 @@ Js
 Js
 GI
 DE
-Js
+lh
 Us
-Js
+zQ
 Js
 yd
 Ft

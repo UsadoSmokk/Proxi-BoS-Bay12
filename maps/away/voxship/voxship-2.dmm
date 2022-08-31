@@ -3194,6 +3194,18 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/ship_mid)
+"Kk" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1480;
+	id_tag = "vox_up_pump"
+	},
+/obj/machinery/sealgen{
+	dir = 1;
+	req_access = list("ACCESS_VOXSHIP")
+	},
+/turf/simulated/floor/plating/vox,
+/area/voxship/ship_mid)
 "KD" = (
 /obj/effect/floor_decal/corner/b_green/half{
 	dir = 1
@@ -9359,7 +9371,7 @@ sN
 BI
 VT
 GP
-VT
+Kk
 BI
 Pt
 Js
