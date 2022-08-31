@@ -45,7 +45,7 @@
 	delay = 6 SECONDS
 
 /obj/item/clothing/suit/armor/shieldarmor
-	name = "Energy shielded armor"
+	name = "Tech armor"
 	icon = 'icons/bos/obj/armorshield.dmi'
 	icon_state = "50"
 	armor_type = /datum/extension/armor/shieldlike
