@@ -90,6 +90,9 @@
 /obj/random/junk,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/engineering)
+"aN" = (
+/turf/simulated/floor/reinforced/vox,
+/area/space)
 "aR" = (
 /obj/machinery/light{
 	dir = 1;
@@ -125,7 +128,8 @@
 "bb" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1505;
-	id_tag = "vox_shuttle_inner"
+	id_tag = "vox_shuttle_inner";
+	locked = 1
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
@@ -945,6 +949,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"jA" = (
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/reinforced/vox,
+/area/space)
 "jE" = (
 /obj/structure/closet/firecloset,
 /obj/machinery/alarm/vox{
@@ -1073,10 +1081,6 @@
 	},
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/misslie)
-"lh" = (
-/obj/machinery/shield_diffuser,
-/turf/simulated/floor/reinforced/vox,
-/area/space)
 "ll" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -1461,7 +1465,9 @@
 /obj/structure/window/phoronreinforced{
 	dir = 1
 	},
-/obj/machinery/vending/tool,
+/obj/machinery/vending/tool{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/engineering)
 "pl" = (
@@ -2320,9 +2326,6 @@
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ofd)
-"zQ" = (
-/turf/simulated/floor/reinforced/vox,
-/area/space)
 "zS" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/vox,
@@ -2390,10 +2393,6 @@
 	initial_gas = list("nitrogen"=103)
 	},
 /area/voxship/engineering)
-"Ay" = (
-/obj/random/trash,
-/turf/space,
-/area/space)
 "AG" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -3472,10 +3471,6 @@
 	},
 /turf/simulated/wall/alienwall,
 /area/voxship/shuttle)
-"Lg" = (
-/obj/random/maintenance,
-/turf/space,
-/area/space)
 "Lm" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -4226,10 +4221,6 @@
 	initial_gas = list("nitrogen"=103)
 	},
 /area/voxship/misslie)
-"Us" = (
-/obj/effect/overmap/visitable/sector/vox_start,
-/turf/simulated/floor/reinforced/vox,
-/area/space)
 "Uz" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /obj/effect/decal/cleanable/dirt,
@@ -4440,7 +4431,9 @@
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
-/obj/machinery/vending/engivend,
+/obj/machinery/vending/engivend{
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/engineering)
 "Wv" = (
@@ -7114,7 +7107,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 Js
 Js
@@ -7213,7 +7206,6 @@ Js
 Js
 Js
 Js
-Ay
 Js
 Js
 Js
@@ -7230,7 +7222,8 @@ Js
 Js
 Js
 Js
-Ay
+Js
+Js
 Js
 Js
 Js
@@ -7307,7 +7300,6 @@ Js
 Js
 Js
 Js
-Ay
 Js
 Js
 Js
@@ -7328,7 +7320,8 @@ Js
 Js
 Js
 Js
-Lg
+Js
+Js
 Js
 Js
 Js
@@ -7426,7 +7419,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -7512,12 +7505,12 @@ Js
 Js
 Js
 Js
-Lg
 Js
 Js
 Js
 Js
-Lg
+Js
+Js
 Js
 Js
 Js
@@ -7620,7 +7613,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 GI
 Js
@@ -7814,7 +7807,6 @@ Js
 Js
 Js
 Js
-Lg
 Js
 Js
 Js
@@ -7822,13 +7814,14 @@ Js
 Js
 Js
 Js
-Ay
+Js
+Js
 Js
 Js
 GI
 DE
 Js
-Ay
+Js
 Js
 Js
 yd
@@ -7919,19 +7912,19 @@ Js
 Js
 Js
 Js
-Ay
 Js
 Js
 Js
 Js
-Ay
+Js
+Js
 Js
 Js
 GI
 DE
-lh
-Us
-zQ
+jA
+aN
+aN
 Js
 yd
 Ft
@@ -8049,7 +8042,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 Js
 Js
@@ -8149,8 +8142,8 @@ Js
 Js
 Js
 Js
-Ay
-Ay
+Js
+Js
 Js
 Js
 Js
@@ -8251,8 +8244,8 @@ Js
 Js
 Js
 Js
-Ay
-Ay
+Js
+Js
 Js
 Js
 Js
@@ -8458,7 +8451,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -8631,9 +8624,9 @@ Js
 Js
 Js
 Js
-Lg
 Js
-Lg
+Js
+Js
 Js
 Js
 GI
@@ -8732,7 +8725,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -8859,14 +8852,14 @@ Oi
 eH
 DI
 Js
-Ay
 Js
 Js
 Js
 Js
 Js
 Js
-Lg
+Js
+Js
 Js
 Js
 Js
@@ -8940,7 +8933,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Hz
 tz
@@ -8968,7 +8961,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 Js
 Js
@@ -9042,7 +9035,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 DE
@@ -9064,7 +9057,6 @@ eH
 DI
 Js
 Js
-Lg
 Js
 Js
 Js
@@ -9072,7 +9064,8 @@ Js
 Js
 Js
 Js
-Ay
+Js
+Js
 Js
 Js
 Js
@@ -9166,7 +9159,7 @@ XC
 XC
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -9242,7 +9235,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -9374,7 +9367,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -9550,7 +9543,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 Js
 GI
@@ -9647,12 +9640,12 @@ Js
 Js
 Js
 Js
-Lg
 Js
 Js
 Js
 Js
-Lg
+Js
+Js
 Js
 Js
 yQ
@@ -9788,7 +9781,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -10057,7 +10050,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 Js
 Js
@@ -10090,7 +10083,7 @@ FF
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -10162,7 +10155,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 yQ
@@ -10366,7 +10359,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 yQ
@@ -10670,11 +10663,11 @@ Js
 Js
 Js
 Js
-Ay
 Js
 Js
 Js
-Ay
+Js
+Js
 Xa
 wA
 Wq
@@ -10705,7 +10698,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -10904,7 +10897,7 @@ ix
 FF
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -10977,7 +10970,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 Js
 Js
@@ -11008,7 +11001,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 Js
 Js
@@ -11182,7 +11175,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Xa
@@ -11383,7 +11376,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -11487,7 +11480,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 Js
 sg
@@ -11723,12 +11716,12 @@ Js
 Js
 Js
 Js
-Lg
 Js
 Js
 Js
 Js
-Ay
+Js
+Js
 Js
 Js
 Js
@@ -11895,7 +11888,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 sg
@@ -12116,15 +12109,15 @@ Js
 Js
 Js
 Js
-Ay
 Js
-Ay
+Js
+Js
 Js
 Js
 FF
 Ia
 Js
-Ay
+Js
 Js
 Js
 Js
@@ -12213,7 +12206,7 @@ Js
 Js
 Js
 Js
-Lg
+Js
 Js
 Js
 Js
@@ -12307,9 +12300,6 @@ Js
 Js
 Js
 Js
-Lg
-Js
-Ay
 Js
 Js
 Js
@@ -12317,7 +12307,10 @@ Js
 Js
 Js
 Js
-Lg
+Js
+Js
+Js
+Js
 Js
 Js
 Js
@@ -12412,11 +12405,11 @@ Js
 Js
 Js
 Js
-Ay
 Js
 Js
 Js
-Ay
+Js
+Js
 Js
 Js
 Js
@@ -12628,7 +12621,7 @@ Js
 Js
 Js
 Js
-Ay
+Js
 Js
 Js
 Js
