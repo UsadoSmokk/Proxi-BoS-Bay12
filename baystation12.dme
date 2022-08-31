@@ -3381,6 +3381,7 @@
 #include "customs\code\coiscin.dm"
 #include "customs\code\devilmayrus.dm"
 #include "customs\code\eloncake.dm"
+#include "customs\code\germanrus.dm"
 #include "customs\code\hacso.dm"
 #include "customs\code\lodagn.dm"
 #include "interface\interface.dm"
