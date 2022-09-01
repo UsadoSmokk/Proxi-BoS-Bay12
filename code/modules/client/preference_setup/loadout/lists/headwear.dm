@@ -184,3 +184,28 @@
 	options += /obj/item/clothing/head/beret/pcrc
 	options += /obj/item/clothing/head/beret/saare
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(options)
+
+//bos
+/datum/gear/head/sombrero
+	display_name = "sombrero selection"
+	path = /obj/item/clothing/head
+
+/datum/gear/head/sombrero/New()
+	..()
+	var/sombrero = list()
+	sombrero["sombrero"] = /obj/item/clothing/head/sombrero
+	sombrero["green sombrero"] = /obj/item/clothing/head/sombrero/green
+	sombrero["shamebrero"] = /obj/item/clothing/head/sombrero/shamebrero
+	gear_tweaks += new/datum/gear_tweak/path(sombrero)
+
+/datum/gear/head/cowboy_hat
+	display_name = "cowboy hat selection"
+	path = /obj/item/clothing/head
+
+/datum/gear/head/cowboy_hat/New()
+	..()
+	var/cowboy_hat = list()
+	cowboy_hat["classic cowboy hat"] = /obj/item/clothing/head/cowboy_hat
+	cowboy_hat["black cowboy hat"] = /obj/item/clothing/head/cowboy_hat/black
+	cowboy_hat["white cowboy hat"] = /obj/item/clothing/head/cowboy_hat/white
+	gear_tweaks += new/datum/gear_tweak/path(cowboy_hat)
