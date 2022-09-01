@@ -18160,9 +18160,11 @@
 /turf/simulated/floor/carpet/purple,
 /area/chapel/main)
 "NA" = (
-/obj/effect/floor_decal/industrial/warning/fulltile,
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
 /obj/machinery/ship_map,
-/turf/simulated/floor/tiled/steel_grid,
+/turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
 "NB" = (
 /obj/structure/cable/green{
@@ -38645,7 +38647,7 @@ lu
 lu
 lu
 yr
-NA
+YW
 Us
 Nn
 uN
@@ -39251,7 +39253,7 @@ ZB
 eQ
 ft
 kL
-tF
+NA
 sj
 wV
 rV

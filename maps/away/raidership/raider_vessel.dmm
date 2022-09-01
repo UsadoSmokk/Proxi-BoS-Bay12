@@ -288,7 +288,7 @@
 "VF" = (/obj/structure/table/reinforced,/turf/simulated/floor/tiled/dark,/area/raider_vessel/bsa)
 "VN" = (/obj/effect/decal/cleanable/blood/drip,/turf/simulated/floor/tiled/dark,/area/raider_vessel/engin)
 "Wd" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/paint/black,/turf/simulated/wall/r_wall,/area/space)
-"Xv" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/techfloor/grid,/area/raider_vessel/cock)
+"Xv" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/effect/decal/cleanable/blood,/obj/effect/overmap/visitable/sector/raider_vessel,/turf/simulated/floor/tiled/techfloor/grid,/area/raider_vessel/cock)
 "XL" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/decal/cleanable/blood/drip,/turf/simulated/floor/tiled/dark,/area/raider_vessel/engin)
 "XM" = (/obj/structure/closet,/obj/item/storage/belt/medical,/obj/random/firstaid,/obj/random/shoes,/obj/item/clothing/suit/storage/toggle/labcoat,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/raider_vessel/barrack)
 "Yf" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/obj/structure/catwalk,/obj/random/trash,/turf/simulated/floor,/area/raider_vessel/engin)

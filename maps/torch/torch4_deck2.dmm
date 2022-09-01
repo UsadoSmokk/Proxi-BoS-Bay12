@@ -1744,7 +1744,6 @@
 /turf/simulated/floor/airless,
 /area/maintenance/seconddeck/aftport)
 "dn" = (
-/obj/machinery/ship_map,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/elevator)
 "do" = (
@@ -9204,7 +9203,6 @@
 	frequency = 1441;
 	icon_state = "map_injector";
 	id = "co2_in";
-	pixel_y = 0;
 	use_power = 1
 	},
 /turf/simulated/floor/reinforced/carbon_dioxide,
@@ -9463,11 +9461,10 @@
 /turf/simulated/floor/plating,
 /area/engineering/atmos)
 "uE" = (
-/obj/machinery/atmospherics/unary/vent_pump{
+/obj/machinery/atmospherics/unary/vent_pump/tank{
 	dir = 8;
 	external_pressure_bound = 0;
 	external_pressure_bound_default = 0;
-	frequency = 1441;
 	icon_state = "map_vent_in";
 	id_tag = "co2_out";
 	initialize_directions = 1;
@@ -9757,30 +9754,20 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
 "vn" = (
-/obj/effect/floor_decal/corner/black{
-	dir = 6;
-	icon_state = "corner_white"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4;
-	icon_state = "intact"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/black{
-	dir = 2;
-	icon_state = "intact"
-	},
 /obj/machinery/computer/air_control{
 	dir = 8;
-	frequency = 1441;
-	icon_state = "computer";
 	input_tag = "co2_in";
 	name = "Carbon Dioxide Supply Control";
 	output_tag = "co2_out";
 	sensor_name = "Carbon Dioxide Supply";
 	sensor_tag = "co2_sensor"
 	},
-/obj/machinery/light/spot{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
+/obj/effect/floor_decal/corner/black{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
@@ -10678,6 +10665,7 @@
 	dir = 5;
 	icon_state = "corner_white"
 	},
+/obj/machinery/ship_map,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
 "xO" = (
@@ -11080,7 +11068,6 @@
 	frequency = 1441;
 	icon_state = "map_injector";
 	id = "n2o_in";
-	pixel_y = 0;
 	use_power = 1
 	},
 /turf/simulated/floor/reinforced/n20,
@@ -11318,11 +11305,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "zx" = (
-/obj/machinery/atmospherics/unary/vent_pump{
+/obj/machinery/atmospherics/unary/vent_pump/tank{
 	dir = 8;
 	external_pressure_bound = 0;
 	external_pressure_bound_default = 0;
-	frequency = 1441;
 	icon_state = "map_vent_in";
 	id_tag = "n2o_out";
 	initialize_directions = 1;
@@ -11667,26 +11653,20 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "Ao" = (
-/obj/effect/floor_decal/corner/orange{
-	dir = 6;
-	icon_state = "corner_white"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4;
-	icon_state = "intact"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/black{
-	dir = 2;
-	icon_state = "intact"
-	},
 /obj/machinery/computer/air_control{
 	dir = 8;
-	frequency = 1441;
 	input_tag = "h2_in";
 	name = "Hydrogen Supply Control";
 	output_tag = "h2_out";
 	sensor_name = "Hydrogen Supply";
 	sensor_tag = "tox_sensor"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
+/obj/effect/floor_decal/corner/orange{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
@@ -14613,26 +14593,20 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "Ho" = (
-/obj/effect/floor_decal/corner/white{
-	dir = 6;
-	icon_state = "corner_white"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4;
-	icon_state = "intact"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/black{
-	dir = 2;
-	icon_state = "intact"
-	},
 /obj/machinery/computer/air_control{
 	dir = 8;
-	frequency = 1441;
 	input_tag = "n2o_in";
 	name = "Nitrous Oxide Supply Control";
 	output_tag = "n2o_out";
 	sensor_name = "Nitrous Oxide Supply";
 	sensor_tag = "n2o_sensor"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
+/obj/effect/floor_decal/corner/white{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
@@ -17063,7 +17037,6 @@
 	frequency = 1441;
 	icon_state = "map_injector";
 	id = "h2_in";
-	pixel_y = 0;
 	use_power = 1
 	},
 /turf/simulated/floor/reinforced/hydrogen,
@@ -17453,11 +17426,10 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
 "Pn" = (
-/obj/machinery/atmospherics/unary/vent_pump{
+/obj/machinery/atmospherics/unary/vent_pump/tank{
 	dir = 8;
 	external_pressure_bound = 0;
 	external_pressure_bound_default = 0;
-	frequency = 1441;
 	icon_state = "map_vent_in";
 	id_tag = "h2_out";
 	initialize_directions = 1;

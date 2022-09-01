@@ -5762,6 +5762,19 @@
 /obj/item/ammo_magazine/magnum/rubber,
 /obj/structure/closet/secure_closet/cos,
 /obj/item/gun/energy/gun/secure,
+/obj/item/clothing/suit/armor/shieldarmor/red,
+/obj/item/armorchargebattery/max,
+/obj/item/armorchargebattery/max,
+/obj/item/armorchargebattery/max,
+/obj/item/armorchargebattery/max,
+/obj/item/armorchargebattery,
+/obj/item/armorchargebattery,
+/obj/item/armorchargebattery,
+/obj/item/armorchargebattery,
+/obj/item/armorchargebattery,
+/obj/item/armorchargebattery,
+/obj/item/armorchargebattery,
+/obj/item/armorchargebattery,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "mJ" = (
@@ -10276,14 +10289,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
-"zl" = (
-/obj/effect/floor_decal/corner/blue/half{
-	dir = 1;
-	icon_state = "bordercolorhalf"
-	},
-/obj/machinery/ship_map,
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/bridge/aft)
 "zm" = (
 /obj/machinery/camera/all/command{
 	c_tag = "AI Core - Center Starboard";
@@ -32213,7 +32218,7 @@ gm
 gm
 gm
 fI
-zl
+kM
 El
 mW
 kJ

@@ -31,13 +31,14 @@
 "eO" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/firealarm{pixel_y = 24},/turf/simulated/floor/tiled/freezer,/area/spy_station/toilet)
 "eX" = (/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/effect/decal/cleanable/generic,/obj/machinery/access_button/airlock_interior{frequency = 1505; master_tag = "vox_shuttle"; pixel_y = 20; req_access = list("ACCESS_VOXSHIP")},/turf/simulated/floor,/area/spy_station/engin)
 "eZ" = (/obj/structure/sign/warning/docking_area,/obj/effect/paint/merc,/turf/simulated/wall/r_wall,/area/spy_station/dock)
-"fe" = (/obj/structure/table/standard,/obj/random/firstaid,/obj/effect/floor_decal/borderfloorwhite{dir = 1},/obj/machinery/firealarm{pixel_y = 24},/turf/simulated/floor/tiled/white,/area/spy_station/med)
+"fe" = (/obj/structure/table/standard,/obj/random/firstaid,/obj/effect/floor_decal/borderfloorwhite{dir = 1},/obj/machinery/firealarm{pixel_y = 24},/obj/item/reagent_containers/ivbag,/turf/simulated/floor/tiled/white,/area/spy_station/med)
 "ff" = (/obj/effect/floor_decal/borderfloorwhite{dir = 10},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/white,/area/spy_station/med)
 "fg" = (/obj/structure/grille/broken,/obj/structure/lattice,/turf/space,/area/space)
 "fs" = (/obj/structure/lattice,/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/airless,/area/space)
 "fD" = (/obj/effect/floor_decal/floordetail/edgedrain{dir = 8},/obj/effect/floor_decal/corner/paleblue{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/decal/cleanable/blood/splatter,/turf/simulated/floor/tiled/white,/area/spy_station/med)
 "fF" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/freezer,/area/spy_station/canteen)
 "fH" = (/obj/structure/table/marble,/obj/machinery/cooker/candy,/turf/simulated/floor/tiled/freezer,/area/spy_station/canteen)
+"fJ" = (/obj/effect/decal/cleanable/dirt,/obj/effect/overmap/visitable/sector/spy_station,/turf/simulated/floor/tiled/dark,/area/spy_station/com)
 "fL" = (/obj/structure/lattice,/obj/machinery/access_button/airlock_interior{frequency = 1505; master_tag = "vox_shuttle"; pixel_y = 10; req_access = list("ACCESS_VOXSHIP")},/obj/effect/paint/merc,/turf/simulated/wall/r_wall,/area/spy_station/engin)
 "fM" = (/obj/machinery/atmospherics/portables_connector{dir = 8},/turf/simulated/floor,/area/spy_station/engin)
 "fO" = (/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/solar{id = "auxsolarsport"; name = "Port Auxiliary Solar Array"},/obj/effect/floor_decal/solarpanel,/turf/simulated/floor/airless,/area/space)
@@ -99,7 +100,7 @@
 "lY" = (/turf/simulated/floor,/area/spy_station/dock)
 "mc" = (/obj/structure/lattice,/obj/structure/lattice,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/airless,/area/space)
 "mf" = (/obj/effect/floor_decal/industrial/warning{dir = 1; icon_state = "warning"},/turf/simulated/floor,/area/spy_station/engin)
-"mi" = (/obj/effect/floor_decal/floordetail/edgedrain{dir = 4},/obj/effect/floor_decal/corner/paleblue{dir = 9},/obj/effect/floor_decal/corner/paleblue/border{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/white,/area/spy_station/med)
+"mi" = (/obj/effect/floor_decal/floordetail/edgedrain{dir = 4},/obj/effect/floor_decal/corner/paleblue{dir = 9},/obj/effect/floor_decal/corner/paleblue/border{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/hygiene/sink{dir = 4; icon_state = "sink"; pixel_x = 11; pixel_y = 0},/turf/simulated/floor/tiled/white,/area/spy_station/med)
 "ml" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/door/airlock/civilian{id_tag = "mercstall"; name = "Stall"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/door/firedoor,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/freezer,/area/spy_station/toilet)
 "mo" = (/obj/machinery/vending/engivend,/obj/machinery/light{dir = 1},/turf/simulated/floor,/area/spy_station/engin)
 "mp" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/decal/cleanable/vomit,/turf/simulated/floor/tiled/freezer,/area/spy_station/toilet)
@@ -333,7 +334,7 @@
 "PN" = (/obj/effect/decal/cleanable/generic,/turf/simulated/floor/plating,/area/spy_station/engin)
 "PR" = (/obj/machinery/atmospherics/portables_connector,/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor,/area/spy_station/dock)
 "PT" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor,/area/spy_station/engin)
-"Qf" = (/obj/effect/floor_decal/borderfloorwhite{dir = 8},/obj/effect/decal/cleanable/vomit,/obj/structure/iv_drip,/turf/simulated/floor/tiled/white,/area/spy_station/med)
+"Qf" = (/obj/effect/floor_decal/borderfloorwhite{dir = 8},/obj/effect/decal/cleanable/vomit,/obj/structure/iv_drip,/obj/item/reagent_containers/ivbag,/turf/simulated/floor/tiled/white,/area/spy_station/med)
 "Qi" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/blast/regular/open{icon_state = "pdoor0"; id_tag = "Starboard wide window BD"},/turf/simulated/floor,/area/spy_station/com)
 "Qm" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/freezer,/area/spy_station/canteen)
 "Qs" = (/obj/machinery/vending/tool/bearcat,/turf/simulated/floor,/area/spy_station/engin)
@@ -447,11 +448,11 @@ dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCfgrUrUdCdCdCrUdC
 dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCRSRSdCAxSVSVSVSVvjQiQiQivjvjQiQiQivjbHbHbHbHbHlTjaFxFxFxKbKbFxFxFxFxFxUrrUrUQZdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
 dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCGxdCdCSVhFfHRsSViqXAFlySiZElkZOpqYdabHzKaFOXbHUrOYrUrUrUrUrUrUrUrUrUrUfsfVBdQZdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
 dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCQZrUrUSVlyVZLsSVqwzBEVsuILhYsuEVEVTObHEuSGxEbHUrjafOfOfOfOfOfOfOfOfOfOSDBdBdQZdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
-dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCQZrUrUSVFWOCMuSVZqsudpUNsuTFCiEVEVMXbHsrKZXpbHBvGVkukukukukukukukukukuWzQZQZQZdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
+dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCQZrUrUSVFWOCMuSVZqsudpUNfJTFCiEVEVMXbHsrKZXpbHBvGVkukukukukukukukukukuWzQZQZQZdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
 dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCRSdCdCSVuYQuBASVDeqYdavjRQqGvjmssuMXbHauPFngbHwufLFxFxFxFxFxFxFxFxFxFxBdRSdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
 dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdChjdCdCdCdCdCdCdCdCdCdCdCdCRSRSdCSVfFQmZESVhNIRgtkTEVYSkTcWqyMXbHCBPNMgbHFnIYdCdCdCdCrUrUrUdCdCdCrURSdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
 dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCRSdCSVCbwJSVSVSVSVSVvjIUjMvjbHbHbHbHbHkgbHbHsVbHbHbHbHbHbHbHbHdCdCRSRSRSdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
-dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCQZrUSVFPEOnUHHHuLrAxPtEbGUKQbHapmoQsvSqVVveXtvJKiNrZrZMqgQtTbHdCdCixdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
+dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCQZrUSVFPEOnUHHHuLrSVPtEbGUKQbHapmoQsvSqVVveXtvJKiNrZrZMqgQtTbHdCdCixdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
 dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCRSdCSVDMolRuFPLUvYSVBCEbaWhxbHyKmfPyPyFRggslFhoGByHIwpfMPiRrbHrUrUQZdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
 dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCRSdCSVvHYiMlsIsIVVGQymTHVfpOPvVXskVXigUiPTpoXeigUjzGigignOjbbHdCdCRSdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
 dCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCixdCSVYNJfELgAFPJAKXzpEblQuMCtWrWrWryclpziXRlEBsYzyLJayLqVktbHdCdCRSdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC

@@ -4,7 +4,7 @@
 	icon = 'icons/bos/obj/weapons.dmi'
 	icon_state = "wrenchsword"
 	item_state = "machete"
-	max_force = 20
+	max_force = 23
 	armor_penetration = 5
 	worth_multiplier = 10
 
@@ -14,7 +14,7 @@
 	icon = 'icons/bos/obj/weapons.dmi'
 	icon_state = "spiked_crowbar"
 	item_state = "crowbar"
-	max_force = 19
+	max_force = 20
 	base_parry_chance = 19
 	w_class = ITEM_SIZE_NORMAL
 	melee_accuracy_bonus = -20

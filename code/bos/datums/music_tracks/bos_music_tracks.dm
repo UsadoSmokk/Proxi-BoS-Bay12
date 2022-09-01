@@ -101,3 +101,23 @@
 	url = "https://youtu.be/V12FuCX9xJM"
 	volume = 60
 
+/decl/audio/track/zvyozdnoegestapo
+	title = "Zvyozdnoe Gestapo"
+	author = "Agatha Christie"
+	source = 'sound/music/bos/zvyozdnoe-gestapo.ogg'
+	license = /decl/license/grandfathered //vrun
+	url = "https://youtu.be/km6J0VQASwg"
+
+/decl/audio/track/vinteresah
+	title = "V Interesah Revolyucii"
+	author = "Agatha Christie"
+	source = 'sound/music/bos/v-interesax-revolyucii.ogg'
+	license = /decl/license/grandfathered //vrun
+	url = "https://youtu.be/Z8B8LFSJ43Y"
+
+/decl/audio/track/killallxenos
+	title = "Kill All Xenos"
+	author = "Space Cadets"
+	source = 'sound/music/bos/killallxenos.ogg'
+	license = /decl/license/grandfathered //vrun
+	url = "https://youtu.be/Yg2IooEFTp8"
