@@ -14,8 +14,8 @@
 	can_flee = TRUE
 
 /datum/say_list/caracal
-	emote_hear = list("yawn", "lick their paws")
-	emote_see = list("shakes their head", "flop his ears")
+	emote_hear = list("yawn", "lick his paws")
+	emote_see = list("shakes his head", "flop his ears")
 
 
 /mob/living/simple_animal/passive/cat/caracal/grisha
