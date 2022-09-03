@@ -19,13 +19,14 @@ GLOBAL_LIST(end_titles)
 	LAZYINITLIST(credits)
 
 	if(mob)
-		mob.overlay_fullscreen("fishbed",/obj/screen/fullscreen/fishbed)
-		mob.overlay_fullscreen("fadeout",/obj/screen/fullscreen/fadeout)
+		//mob.overlay_fullscreen("fishbed",/obj/screen/fullscreen/fishbed)
+		//mob.overlay_fullscreen("fadeout",/obj/screen/fullscreen/fadeout)
+		mob.add_client_color(/datum/client_color/noir) //BoS
 
 		if(mob.get_preference_value(/datum/client_preference/play_lobby_music) == GLOB.PREF_YES)
 			sound_to(mob, sound(null, channel = GLOB.lobby_sound_channel))
 			if(GLOB.end_credits_song == null)
-				var/title_song = pick('sound/music/THUNDERDOME.ogg', 'sound/music/europa/Chronox_-_03_-_In_Orbit.ogg', 'sound/music/europa/asfarasitgets.ogg')
+				var/title_song = pick('sound/music/bos/pulp_fiction.ogg', 'sound/music/bos/what_a_wonderful_world.ogg', 'sound/music/bos/house_of_the_rising_sun.ogg', 'sound/music/bos/he_was_a_good_stalker.ogg')
 				sound_to(mob, sound(title_song, wait = 0, volume = 40, channel = GLOB.lobby_sound_channel))
 			else if(get_preference_value(/datum/client_preference/play_admin_midis) == GLOB.PREF_YES)
 				sound_to(mob, sound(GLOB.end_credits_song, wait = 0, volume = 40, channel = GLOB.lobby_sound_channel))
@@ -49,9 +50,10 @@ GLOBAL_LIST(end_titles)
 	set category = "OOC"
 	verbs -= /client/proc/ClearCredits
 	QDEL_NULL_LIST(credits)
-	mob.clear_fullscreen("fishbed")
-	mob.clear_fullscreen("fadeout")
-	sound_to(mob, sound(null, channel = GLOB.lobby_sound_channel))
+	//mob.clear_fullscreen("fishbed")
+	//mob.clear_fullscreen("fadeout")
+	mob.remove_client_color(/datum/client_color/noir) //BoS
+	//sound_to(mob, sound(null, channel = GLOB.lobby_sound_channel))
 
 /obj/screen/credit
 	icon_state = "blank"
