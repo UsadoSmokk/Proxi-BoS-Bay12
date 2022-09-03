@@ -6445,6 +6445,7 @@
 /obj/item/device/radio/intercom/entertainment{
 	pixel_y = 20
 	},
+/obj/structure/reagent_dispensers/kvass,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/mess)
 "nl" = (

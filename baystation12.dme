@@ -296,6 +296,7 @@
 #include "code\bos\modules\overmap\ships\engines\gas_thruster.dm"
 #include "code\bos\modules\overmap\ships\engines\ion_thruster.dm"
 #include "code\bos\modules\reagents\Chemistry-Reagents-Recipes.dm"
+#include "code\bos\modules\reagents\kvasok.dm"
 #include "code\bos\modules\reagents\Chemistry-Reagents\Chemistry-Reagents-Food-Drinks.dm"
 #include "code\bos\modules\species\mantid\mantid.dm"
 #include "code\bos\modules\sprite_accessories\_accessory_markings.dm"
