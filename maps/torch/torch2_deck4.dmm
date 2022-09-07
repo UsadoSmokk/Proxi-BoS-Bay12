@@ -503,8 +503,8 @@
 /area/maintenance/fourthdeck/forestarboard)
 "bw" = (
 /obj/structure/railing/mapped,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
+/obj/machinery/atmospherics/valve/shutoff/supply{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
@@ -704,7 +704,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
+	dir = 9
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -1034,7 +1034,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
-/obj/structure/catwalk,
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
@@ -4778,20 +4777,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/commissary)
-"lZ" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fourthdeck/aftstarboard)
 "mb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
@@ -5321,6 +5306,21 @@
 /obj/effect/paint/green,
 /turf/simulated/wall/titanium,
 /area/aquila/cockpit)
+"na" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/forestarboard)
 "nf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -6012,13 +6012,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod4/station)
-"oN" = (
-/obj/structure/railing/mapped,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/forestarboard)
 "oO" = (
 /obj/effect/floor_decal/corner/mauve/mono,
 /obj/machinery/disposal,
@@ -6641,6 +6634,24 @@
 "qA" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines)
+"qB" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/forestarboard)
 "qC" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -7495,25 +7506,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/center)
-"sM" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/starboard)
 "sP" = (
 /obj/structure/table/steel,
 /obj/item/hand_labeler,
@@ -7541,6 +7533,20 @@
 /obj/item/stool/padded,
 /turf/simulated/floor/tiled,
 /area/security/marines)
+"sU" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/aftstarboard)
 "sV" = (
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
@@ -8386,10 +8392,29 @@
 	},
 /turf/simulated/floor/lino,
 /area/command/captainmess)
+"uz" = (
+/obj/machinery/atmospherics/valve/shutoff/supply{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/shutoff{
+	dir = 4;
+	pixel_y = -4
+	},
+/turf/simulated/floor/tiled,
+/area/security/marines)
 "uA" = (
-/obj/machinery/atmospherics/valve/shutoff/supply,
-/turf/simulated/floor/tiled/techmaint,
-/area/maintenance/fourthdeck/aftstarboard)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/starboard)
 "uB" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -9671,24 +9696,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/mess)
-"xH" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/forestarboard)
 "xI" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -10150,6 +10157,25 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
+"yL" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/starboard)
 "yM" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -11434,7 +11460,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/obj/structure/catwalk,
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
@@ -13145,21 +13170,6 @@
 /obj/structure/closet/secure_closet/infmed,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/marines/gear)
-"Hl" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/forestarboard)
 "Hm" = (
 /obj/structure/cable{
 	d1 = 16;
@@ -15072,16 +15082,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
-"Lv" = (
-/obj/machinery/atmospherics/valve/shutoff/supply{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/shutoff{
-	dir = 4;
-	pixel_y = -4
-	},
-/turf/simulated/floor/tiled,
-/area/security/marines)
 "Lw" = (
 /obj/structure/missile,
 /obj/effect/floor_decal/industrial/warning{
@@ -15726,12 +15726,9 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/fourthdeck/center)
 "MS" = (
-/obj/structure/railing/mapped,
-/obj/machinery/atmospherics/valve/shutoff/supply{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/forestarboard)
+/obj/machinery/atmospherics/valve/shutoff/supply,
+/turf/simulated/floor/tiled/techmaint,
+/area/maintenance/fourthdeck/aftstarboard)
 "MT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -18748,6 +18745,13 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/storage/primary)
+"Tw" = (
+/obj/structure/railing/mapped,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/forestarboard)
 "Tx" = (
 /obj/machinery/vending/games{
 	dir = 8
@@ -20327,18 +20331,12 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "Xd" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/structure/railing/mapped,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
 	},
-/obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/starboard)
+/area/maintenance/fourthdeck/forestarboard)
 "Xf" = (
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor,
@@ -40378,8 +40376,8 @@ aa
 ak
 ak
 bN
-oN
-xH
+Xd
+bZ
 dU
 fd
 OZ
@@ -40580,8 +40578,8 @@ aa
 ak
 ak
 bN
-MS
-Hl
+bw
+na
 dU
 fd
 Un
@@ -40782,8 +40780,8 @@ aa
 ak
 ak
 bN
-bw
-bZ
+Tw
+qB
 dU
 fd
 fd
@@ -42400,8 +42398,8 @@ ef
 iA
 kC
 mT
-Xd
-Xd
+uA
+uA
 YN
 YN
 Gr
@@ -44821,7 +44819,7 @@ aa
 bX
 wW
 aF
-sM
+yL
 ie
 ar
 cZ
@@ -47461,8 +47459,8 @@ LT
 LT
 LT
 lH
-lZ
-uA
+sU
+MS
 VF
 NV
 op
@@ -49487,7 +49485,7 @@ Od
 sP
 kt
 SA
-Lv
+uz
 rV
 of
 Ep
