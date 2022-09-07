@@ -2522,7 +2522,7 @@
 	},
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Ballistic - Z2, Light Machinegun";
-	req_access = list("ACCESS_MARCOM")
+	req_access = list("ACCESS_MARLEAD")
 	},
 /obj/item/ammo_magazine/box/machinegun,
 /obj/item/ammo_magazine/box/machinegun,
@@ -6548,7 +6548,7 @@
 	icon_state = "tube1"
 	},
 /obj/structure/displaycase{
-	req_access = list("ACCESS_MARCOM")
+	req_access = list("ACCESS_MARLEAD")
 	},
 /obj/item/gun/energy/laser/infantry/sl,
 /turf/simulated/floor/tiled/monotile,
@@ -14883,7 +14883,7 @@
 	},
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Explosive";
-	req_access = list("ACCESS_MARCOM")
+	req_access = list("ACCESS_MARLEAD")
 	},
 /obj/item/storage/box/flashbangs{
 	desc = "A box containing 7 smoke bombs.";
