@@ -44,7 +44,7 @@
 		slot_r_hand_str = 'customs/icons/mob/custom_items_rhand.dmi',
 		slot_back_str = 'customs/icons/mob/custom_items_mob.dmi'
 		)
-
+/*
 /obj/item/paper/lodagn
 	name = "note"
 	language = LANGUAGE_SKRELLIAN
@@ -54,3 +54,4 @@
 С любовью, <i>Твоя Лучшая Подруга</i><br>
 <center><img src = xri.png></center><br>
 	"}
+*/
