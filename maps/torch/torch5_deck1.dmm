@@ -241,15 +241,6 @@
 /obj/machinery/camera/network/medbay{
 	c_tag = "Virology - Aft"
 	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -2448,10 +2439,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/door/window/eastleft{
-	dir = 2;
-	name = "Medical Storage"
-	},
+/obj/effect/catwalk_plated/white,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "aeg" = (
@@ -3191,7 +3179,7 @@
 	id_tag = "MedEnt";
 	name = "Emergenecy Treatment Center";
 	autoset_access = 0;
-	req_access = list(list("ACCESS_MEDICAL", "ACCESS_TORCH_BIOMECH"))
+	req_access = list(list("ACCESS_MEDICAL","ACCESS_TORCH_BIOMECH"))
 	},
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/machinery/door/firedoor{
@@ -4553,7 +4541,7 @@
 /obj/effect/decal/cleanable/cobweb2,
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
@@ -4842,7 +4830,7 @@
 "ahU" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 5
@@ -5024,7 +5012,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 6
@@ -5148,7 +5136,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
@@ -5243,7 +5231,7 @@
 "aiY" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1
@@ -5347,7 +5335,7 @@
 "ajz" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
@@ -5366,7 +5354,7 @@
 "ajH" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -5624,7 +5612,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
@@ -5844,7 +5832,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
@@ -7701,7 +7689,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/hallway/primary/firstdeck/fore)
@@ -8602,6 +8590,11 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 6
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "aAl" = (
@@ -8987,7 +8980,7 @@
 "aBM" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/center)
@@ -9059,6 +9052,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/security/wing)
 "aCy" = (
@@ -9338,14 +9332,14 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aEb" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -9549,7 +9543,7 @@
 "aFf" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
@@ -9729,7 +9723,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -9998,7 +9992,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1
@@ -10325,7 +10319,7 @@
 "aJj" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
@@ -11036,7 +11030,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
@@ -11292,7 +11286,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
@@ -11662,7 +11656,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
@@ -11791,7 +11785,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
@@ -12260,7 +12254,7 @@
 /obj/structure/lattice,
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 6
@@ -12690,7 +12684,7 @@
 "aSe" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/valve/shutoff/fuel,
 /turf/simulated/open,
@@ -12698,7 +12692,7 @@
 "aSf" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/firstdeck/aftport)
@@ -12883,7 +12877,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
@@ -13258,7 +13252,7 @@
 "aTH" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1
@@ -14385,10 +14379,6 @@
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "processwindow"
 	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/machinery/door/blast/regular{
 	density = 0;
 	dir = 4;
@@ -14397,8 +14387,28 @@
 	name = "Security Blast Door";
 	opacity = 0
 	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/plating,
 /area/security/wing)
+"bdt" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 1;
+	icon_state = "pipe-j2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/opscheck)
 "bdz" = (
 /obj/machinery/air_sensor{
 	id_tag = "d1po2_sensor"
@@ -15621,8 +15631,7 @@
 	},
 /obj/machinery/optable,
 /obj/machinery/body_scan_display{
-	pixel_y = 24;
-	tag = "or2_display"
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/surgery)
@@ -15747,6 +15756,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
+"cGY" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/machinery/disposal,
+/turf/simulated/floor/tiled/dark,
+/area/security/secpointhal)
 "cHb" = (
 /obj/machinery/vending/hydroseeds/generic,
 /turf/simulated/floor/tiled,
@@ -15899,6 +15915,9 @@
 /obj/effect/floor_decal/corner/paleblue/half{
 	dir = 4
 	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/koi)
 "cPY" = (
@@ -15993,8 +16012,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 9
@@ -16105,6 +16123,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/portable_atmospherics/powered/scrubber,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/koi)
 "dab" = (
@@ -16552,7 +16573,7 @@
 "dIA" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /obj/machinery/atmospherics/valve/shutoff/fuel{
@@ -16691,6 +16712,11 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "dQb" = (
@@ -16765,7 +16791,7 @@
 /obj/machinery/door/airlock/multi_tile/glass/medical{
 	id_tag = "triageinner";
 	name = "Emergenecy Treatment Center";
-	req_access = list(list("ACCESS_MEDICAL", "ACCESS_TORCH_BIOMECH"));
+	req_access = list(list("ACCESS_MEDICAL","ACCESS_TORCH_BIOMECH"));
 	autoset_access = 0
 	},
 /obj/effect/floor_decal/industrial/hatch/blue,
@@ -17244,7 +17270,7 @@
 "eFO" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1
@@ -17743,6 +17769,12 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/firstdeck/centralstarboard)
+"fAu" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/koi)
 "fBb" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/firedoor,
@@ -18465,6 +18497,14 @@
 /obj/machinery/porta_turret/exterior/dagon,
 /turf/simulated/floor/reinforced/airless,
 /area/command/armoury)
+"gDl" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/security/wing)
 "gDm" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 4
@@ -18537,11 +18577,6 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/safe_room/medical)
 "gML" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -18941,6 +18976,11 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/plating,
 /area/security/wing)
 "hnN" = (
@@ -18964,7 +19004,7 @@
 "hqS" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -18999,6 +19039,24 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/opscheck)
+"hsh" = (
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "processwindow"
+	},
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "Prison Gate";
+	name = "Security Blast Door";
+	opacity = 0
+	},
+/obj/structure/cable/green,
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
+/area/security/wing)
 "htb" = (
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
@@ -19884,7 +19942,7 @@
 /obj/structure/stairs/north,
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/armoury)
@@ -19992,6 +20050,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	dir = 6
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/koi)
 "iKb" = (
@@ -20002,8 +20063,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 9
@@ -20900,7 +20960,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/security{
-	c_tag = "Security Wing - Lobby"
+	c_tag = "Memorial - Shitcurity"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/secpointhal)
@@ -21601,8 +21661,7 @@
 	dir = 1
 	},
 /obj/machinery/body_scan_display{
-	pixel_y = 24;
-	tag = "or1_display"
+	pixel_y = 24
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -22206,8 +22265,7 @@
 "ltb" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 5
@@ -22278,10 +22336,6 @@
 	pixel_y = -28
 	},
 /obj/structure/cable/green,
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
 "lxs" = (
@@ -22729,10 +22783,6 @@
 	id_tag = "Prison Gate";
 	name = "Security Blast Door";
 	opacity = 0
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/plating,
@@ -23917,7 +23967,7 @@
 "nvX" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/armoury)
@@ -25194,6 +25244,20 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
+"oSh" = (
+/obj/structure/table/woodentable_reinforced/walnut,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled,
+/area/security/wing)
 "oSD" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 9
@@ -25348,7 +25412,7 @@
 "pfb" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/machinery/camera/network/first_deck{
-	c_tag = "Briefing Room";
+	c_tag = "Memorial Aft";
 	dir = 8
 	},
 /obj/machinery/alarm{
@@ -25497,6 +25561,12 @@
 /obj/structure/cable/green,
 /obj/structure/table/steel,
 /obj/effect/floor_decal/corner/red,
+/obj/machinery/atmospherics/pipe/cap/visible/scrubbers{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/cap/visible/supply{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/secpointhal)
 "prb" = (
@@ -25588,8 +25658,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 9
@@ -25669,7 +25738,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -25865,8 +25934,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 9
@@ -26035,7 +26103,7 @@
 "pXG" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/open,
@@ -26043,7 +26111,7 @@
 "pYb" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/mempark)
@@ -26326,7 +26394,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/grass,
 /area/mempark)
@@ -27027,6 +27095,16 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
+"qSQ" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/machinery/door/window/eastleft{
+	dir = 1;
+	name = "Medical Storage"
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/sleeper)
 "qTX" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/crate,
@@ -27668,7 +27746,7 @@
 	dir = 8
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = "Command Hallway - Aft";
+	c_tag = "Memorial - Gift Shop";
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -27824,7 +27902,7 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/grass,
 /area/mempark)
@@ -27961,7 +28039,7 @@
 "rPb" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
@@ -28036,8 +28114,7 @@
 "rUb" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 9
@@ -28162,6 +28239,9 @@
 /obj/structure/cable/green{
 	d2 = 8;
 	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/critical{
+	pixel_y = -24
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
@@ -28678,7 +28758,7 @@
 "sww" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1
@@ -28754,8 +28834,7 @@
 "syb" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 1
@@ -28806,6 +28885,7 @@
 "sBg" = (
 /obj/structure/closet/l3closet/virology,
 /obj/effect/floor_decal/industrial/outline/blue,
+/obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
 "sCb" = (
@@ -28821,7 +28901,7 @@
 "sCu" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/valve/shutoff/fuel,
 /turf/simulated/floor/plating,
@@ -29339,7 +29419,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
 	dir = 8
@@ -29364,7 +29444,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1
@@ -30073,7 +30153,7 @@
 /obj/machinery/door/airlock/medical{
 	name = "Operating Theater 2";
 	autoset_access = 0;
-	req_access = list(list("ACCESS_MEDICAL", "ACCESS_TORCH_BIOMECH"))
+	req_access = list(list("ACCESS_MEDICAL","ACCESS_TORCH_BIOMECH"))
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
@@ -30113,7 +30193,7 @@
 "urd" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/plating,
@@ -30127,7 +30207,7 @@
 "usV" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 9
@@ -30158,6 +30238,9 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/koi)
@@ -30216,7 +30299,7 @@
 /obj/structure/lattice,
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/zpipe/down/fuel{
 	dir = 8
@@ -30656,6 +30739,21 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/firstdeck/aft)
+"vuq" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/tiled/white,
+/area/maintenance/firstdeck/centralstarboard)
 "vvn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -30688,6 +30786,11 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
@@ -30912,6 +31015,10 @@
 	id_tag = "Prison Gate";
 	name = "Security Blast Door";
 	opacity = 0
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
@@ -31478,7 +31585,7 @@
 "xoo" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/assembly/robotics)
@@ -31520,7 +31627,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
@@ -31615,7 +31722,7 @@
 "xBk" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -31651,7 +31758,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/railing/mapped{
 	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 6
@@ -41555,7 +41662,7 @@ sxG
 aUo
 awY
 aAb
-aAb
+gDl
 xRh
 aCy
 aDE
@@ -41757,7 +41864,7 @@ avI
 aUo
 axK
 aAb
-aAb
+gDl
 cDO
 aJr
 aDE
@@ -41959,7 +42066,7 @@ jpt
 vTY
 eyY
 aBd
-aAb
+gDl
 aBd
 jpt
 lmb
@@ -42158,10 +42265,10 @@ aUo
 mCk
 hnL
 dPA
-vTY
+hsh
 ayP
 gxi
-gxi
+oSh
 gxi
 qkc
 aDE
@@ -49406,7 +49513,7 @@ aaa
 aaa
 acw
 biJ
-ehZ
+fAu
 haV
 ehZ
 abl
@@ -52238,7 +52345,7 @@ afq
 abP
 abP
 sBg
-acC
+vuq
 lHO
 gnt
 dZb
@@ -52443,7 +52550,7 @@ abP
 acC
 lHO
 aef
-dZb
+qSQ
 cQb
 dgb
 eRb
@@ -52669,7 +52776,7 @@ nPb
 lwb
 qcJ
 amh
-lwb
+bdt
 xie
 jMb
 jXb
@@ -52877,7 +52984,7 @@ jNb
 jyb
 pWb
 jGb
-jfb
+cGY
 bta
 qFb
 bta

@@ -795,8 +795,7 @@
 /obj/structure/lattice,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -1133,8 +1132,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -1869,8 +1867,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/open,
@@ -2417,8 +2414,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/central)
@@ -3043,8 +3039,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -3623,8 +3618,7 @@
 /area/engineering/storage)
 "hw" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -3897,8 +3891,7 @@
 "io" = (
 /obj/machinery/light/small,
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -3912,15 +3905,13 @@
 	pixel_y = -32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod6/station)
 "iq" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -5661,8 +5652,7 @@
 "mk" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -8322,6 +8312,13 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"sz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area)
 "sA" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Second Deck Substation"
@@ -8339,6 +8336,12 @@
 /obj/item/stool/padded,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
+"sD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area)
 "sE" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark{
@@ -8835,14 +8838,14 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
 "tN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -9837,8 +9840,7 @@
 "wx" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -10343,8 +10345,7 @@
 "xW" = (
 /obj/machinery/light/small,
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -10355,8 +10356,7 @@
 /area/shuttle/escape_pod5/station)
 "xX" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod5/station)
@@ -11052,8 +11052,7 @@
 "zP" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -11667,6 +11666,8 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "BA" = (
@@ -11984,6 +11985,8 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area)
 "Cj" = (
@@ -12198,6 +12201,8 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor,
 /area)
 "CF" = (
@@ -12272,8 +12277,7 @@
 /obj/structure/lattice,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
 	dir = 1
@@ -12426,6 +12430,9 @@
 "Dh" = (
 /obj/structure/table/rack,
 /obj/item/storage/box/bodybags,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area)
 "Di" = (
@@ -12495,8 +12502,7 @@
 /obj/structure/lattice,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /obj/machinery/atmospherics/pipe/manifold4w/visible/fuel,
@@ -12820,6 +12826,9 @@
 /area)
 "DY" = (
 /obj/structure/table/steel,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area)
 "DZ" = (
@@ -13236,8 +13245,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -13257,8 +13265,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -14184,8 +14191,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
@@ -14303,8 +14309,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
@@ -15146,8 +15151,7 @@
 /obj/structure/lattice,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
@@ -16872,8 +16876,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/cable{
 	d1 = 1;
@@ -17272,8 +17275,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
@@ -18304,8 +18306,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -19187,8 +19188,7 @@
 "WF" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -19601,9 +19601,11 @@
 /turf/simulated/floor/tiled/freezer,
 /area/maintenance/seconddeck/forestarboard)
 "XU" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
 	},
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "XV" = (
@@ -41340,8 +41342,8 @@ XU
 Bx
 Ch
 CE
-wC
-wC
+sz
+sD
 DX
 Eh
 Eh
