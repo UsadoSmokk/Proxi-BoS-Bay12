@@ -167,7 +167,7 @@
 /turf/simulated/wall/r_wall/hull,
 /area/command/gunnery/missiles/inside)
 "at" = (
-/turf/simulated/floor/plating,
+/turf/simulated/floor/reinforced/airless,
 /area/command/gunnery/missiles/inside)
 "au" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -189,7 +189,7 @@
 	dir = 8;
 	id = "ammobelt2"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/reinforced/airless,
 /area/command/gunnery/missiles/inside)
 "ax" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -284,7 +284,7 @@
 	id_tag = "missile2";
 	name = "missile launcher 2"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/reinforced/airless,
 /area/command/gunnery/missiles/inside)
 "aI" = (
 /turf/simulated/floor/reinforced/airless,
@@ -1297,6 +1297,7 @@
 /obj/machinery/smartfridge{
 	dir = 8
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/galley)
 "cP" = (
@@ -1783,12 +1784,14 @@
 	dir = 4
 	},
 /obj/machinery/light_switch{
-	pixel_x = -32
+	pixel_x = -32;
+	dir = 4
 	},
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "cabinthree";
 	name = "Cabin Two Bolts";
-	pixel_x = -24
+	pixel_x = -24;
+	dir = 4
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters_boh/cabin_main/c2)
@@ -2495,7 +2498,9 @@
 /area/command/gunnery/missiles/inside)
 "fn" = (
 /obj/machinery/door/airlock/engineering{
-	name = "Engineering Hard Storage"
+	name = "Engineering Hard Storage";
+	req_access = list("ACCESS_ENGINEERING");
+	autoset_access = 0
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2615,6 +2620,7 @@
 	id_tag = "kitchen";
 	name = "Kitchen Shutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "fz" = (
@@ -2723,7 +2729,7 @@
 /obj/machinery/button/blast_door{
 	id_tag = "kitchen_backroom";
 	name = "Cold Room Shutters";
-	pixel_y = 21
+	pixel_y = 22
 	},
 /obj/item/storage/box/monkeycubes,
 /obj/item/storage/box/monkeycubes,
@@ -2979,7 +2985,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/light_switch{
 	pixel_x = 22;
-	pixel_y = -22
+	pixel_y = -22;
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/tcommsat/storage)
@@ -3409,7 +3416,8 @@
 	},
 /obj/machinery/light_switch{
 	pixel_x = -24;
-	pixel_y = 24
+	pixel_y = 24;
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
@@ -3658,6 +3666,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "hz" = (
@@ -3677,7 +3686,9 @@
 "hB" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/table/marble,
-/obj/machinery/chemical_dispenser/bar_soft/full,
+/obj/machinery/chemical_dispenser/bar_soft/full{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "hC" = (
@@ -3980,6 +3991,7 @@
 	dir = 8
 	},
 /obj/structure/ladder,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/command/gunnery/missiles/storage)
 "ij" = (
@@ -3997,14 +4009,16 @@
 /obj/machinery/light_switch{
 	pixel_w = -28;
 	pixel_x = 24;
-	pixel_y = -24
+	pixel_y = -24;
+	dir = 1
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "kitchen";
 	name = "Kitchen Shutters";
 	pixel_w = -28;
 	pixel_x = 32;
-	pixel_y = -24
+	pixel_y = -24;
+	dir = 1
 	},
 /obj/effect/floor_decal/corner/grey/diagonal,
 /turf/simulated/floor/tiled/white,
@@ -4445,6 +4459,7 @@
 /obj/machinery/door/airlock/civilian{
 	name = "Galley"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/galley)
 "iY" = (
@@ -4454,6 +4469,7 @@
 	id_tag = "kitchen";
 	name = "Kitchen Shutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/crew_quarters/galley)
 "iZ" = (
@@ -5992,12 +6008,16 @@
 /area/crew_quarters/bar)
 "mn" = (
 /obj/structure/table/standard,
-/obj/machinery/chemical_dispenser/bar_alc/full,
+/obj/machinery/chemical_dispenser/bar_alc/full{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "mo" = (
 /obj/structure/table/standard,
-/obj/machinery/chemical_dispenser/bar_soft/full,
+/obj/machinery/chemical_dispenser/bar_soft/full{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "mp" = (
@@ -6102,6 +6122,7 @@
 /obj/machinery/door/airlock/mining{
 	name = "Gunnery"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles)
 "mJ" = (
@@ -6727,7 +6748,8 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/table/standard,
 /obj/machinery/chemical_dispenser/bar_coffee/full{
-	pixel_y = 3
+	pixel_y = 3;
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
@@ -6798,6 +6820,21 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/aft)
+"oq" = (
+/obj/machinery/conveyor/ammobelt{
+	dir = 1;
+	id = "ammobelt0";
+	name = "Loading Belt 1"
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "gunnery";
+	name = "Conveyor Shutters Control";
+	dir = 8;
+	pixel_y = 12;
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/command/gunnery/missiles/storage)
 "or" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -6969,6 +7006,9 @@
 	},
 /obj/item/rig/gas,
 /obj/item/rig/gas,
+/obj/structure/table/rack{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ai_monitored/storage/eva)
 "oP" = (
@@ -7292,7 +7332,8 @@
 	},
 /obj/structure/janitorialcart,
 /obj/machinery/light_switch{
-	pixel_x = 24
+	pixel_x = -24;
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters_boh/cabin_main/janitorial)
@@ -8012,7 +8053,8 @@
 	id_tag = "hydroponics_shutters";
 	name = "Window Shutters";
 	pixel_x = 26;
-	pixel_y = 6
+	pixel_y = 6;
+	dir = 8
 	},
 /obj/structure/closet/secure_closet/hydroponics_torch,
 /turf/simulated/floor/tiled,
@@ -8138,7 +8180,7 @@
 	dir = 8;
 	id = "ammobelt3"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/reinforced/airless,
 /area/command/gunnery/missiles/inside)
 "rk" = (
 /obj/effect/floor_decal/corner/yellow{
@@ -8452,6 +8494,11 @@
 	dir = 1;
 	name = "Loading Belt 2"
 	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters{
+	id_tag = "gunnery";
+	name = "Gunnery Shutters"
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles)
 "rT" = (
@@ -8750,6 +8797,13 @@
 /obj/item/missile_equipment/autoarm,
 /obj/item/missile_equipment/autoarm,
 /obj/item/storage/belt/utility/full,
+/obj/machinery/button/blast_door{
+	id_tag = "gunnery";
+	name = "Conveyor Shutters Control";
+	dir = 8;
+	pixel_x = -4;
+	pixel_y = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles)
 "su" = (
@@ -9590,7 +9644,8 @@
 	},
 /obj/machinery/light_switch{
 	pixel_x = 22;
-	pixel_y = -22
+	pixel_y = -22;
+	dir = 1
 	},
 /turf/simulated/floor/lino,
 /area/tcommsat/computer)
@@ -9925,7 +9980,9 @@
 "vk" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/table/marble,
-/obj/machinery/chemical_dispenser/bar_alc/full,
+/obj/machinery/chemical_dispenser/bar_alc/full{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "vm" = (
@@ -10268,7 +10325,8 @@
 	},
 /obj/machinery/light_switch{
 	pixel_x = 22;
-	pixel_y = -22
+	pixel_y = -22;
+	dir = 8
 	},
 /obj/effect/catwalk_plated/dark,
 /turf/simulated/floor/plating,
@@ -10498,12 +10556,14 @@
 /area/engineering/hardstorage)
 "wK" = (
 /obj/machinery/light_switch{
-	pixel_x = -32
+	pixel_x = -32;
+	dir = 4
 	},
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "cabinone";
 	name = "Cabin One Bolts";
-	pixel_x = -24
+	pixel_x = -24;
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -11192,7 +11252,7 @@
 	id_tag = "kosmag_firing_doors";
 	name = "firing port"
 	},
-/turf/simulated/floor/airless,
+/turf/simulated/floor/reinforced/airless,
 /area/command/gunnery/missiles/inside)
 "yn" = (
 /obj/structure/dispenser/oxygen,
@@ -12526,6 +12586,15 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
+"BJ" = (
+/obj/effect/floor_decal/corner/black{
+	dir = 6
+	},
+/obj/machinery/camera/network/third_deck{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/gunnery/missiles/storage)
 "BK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -12726,11 +12795,13 @@
 /obj/machinery/button/windowtint{
 	id = "lawyer_window";
 	pixel_x = 24;
-	pixel_y = -4
+	pixel_y = -4;
+	dir = 8
 	},
 /obj/machinery/light_switch{
 	pixel_x = 24;
-	pixel_y = 4
+	pixel_y = 4;
+	dir = 8
 	},
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -15811,7 +15882,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser/odst)
 "Jo" = (
-/obj/machinery/vending/boozeomat,
+/obj/machinery/vending/boozeomat{
+	dir = 1
+	},
 /obj/machinery/requests_console{
 	department = "Bar";
 	departmentType = 2;
@@ -16658,14 +16731,16 @@
 	id_tag = "hab_checkpoint_shutters";
 	name = "Checkpoint Window Shutters";
 	pixel_x = -3;
-	pixel_y = 7
+	pixel_y = 7;
+	dir = 1
 	},
 /obj/machinery/button/blast_door{
 	desc = "A remote control-switch for shutters.";
 	id_tag = "hab_hallway_shutters";
 	name = "Hallway Checkpoint Shutters";
 	pixel_x = -3;
-	pixel_y = -3
+	pixel_y = -3;
+	dir = 1
 	},
 /obj/machinery/newscaster/security_unit{
 	pixel_y = -32
@@ -16717,7 +16792,7 @@
 	id_tag = "missile1";
 	name = "missile launcher 1"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/reinforced/airless,
 /area/command/gunnery/missiles/inside)
 "KZ" = (
 /obj/machinery/atmospherics/portables_connector{
@@ -16938,7 +17013,9 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/engineering{
-	name = "Engineering Hard Storage"
+	name = "Engineering Hard Storage";
+	req_access = list("ACCESS_ENGINEERING", "ACCESS_MAINT");
+	autoset_access = 0
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/hardstorage)
@@ -17123,6 +17200,9 @@
 	},
 /obj/item/rig/gas,
 /obj/item/rig/gas,
+/obj/structure/table/rack{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ai_monitored/storage/eva)
 "LT" = (
@@ -17182,6 +17262,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "LY" = (
@@ -17206,13 +17287,15 @@
 	pixel_x = -36
 	},
 /obj/machinery/light_switch{
-	pixel_x = -24
+	pixel_x = -24;
+	dir = 4
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "bar";
 	name = "Bar Shutters";
 	pixel_x = -24;
-	pixel_y = 8
+	pixel_y = 8;
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
@@ -17870,7 +17953,8 @@
 "NI" = (
 /obj/machinery/light_switch{
 	pixel_x = 24;
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 8
 	},
 /obj/machinery/firealarm{
 	dir = 4;
@@ -18399,6 +18483,12 @@
 	},
 /obj/machinery/conveyor_switch/ammobelt{
 	id = "ammobelt0"
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "gunnery";
+	name = "Conveyor Shutters Control";
+	dir = 8;
+	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage)
@@ -19354,12 +19444,14 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/light_switch{
-	pixel_x = 24
+	pixel_x = 24;
+	dir = 8
 	},
 /obj/machinery/button/windowtint{
 	id = "chroniclers";
 	pixel_x = 24;
-	pixel_y = -9
+	pixel_y = -9;
+	dir = 8
 	},
 /turf/simulated/floor/lino,
 /area/chronicler)
@@ -19769,6 +19861,10 @@
 	id = "ammobelt0";
 	name = "Loading Belt 1"
 	},
+/obj/machinery/door/blast/shutters{
+	id_tag = "gunnery";
+	name = "Gunnery Shutters"
+	},
 /turf/simulated/floor/plating,
 /area/command/gunnery/missiles/storage)
 "SC" = (
@@ -19778,6 +19874,7 @@
 	id_tag = "kitchen";
 	name = "Kitchen Shutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "SD" = (
@@ -20316,9 +20413,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/storage/tools)
 "TW" = (
-/obj/machinery/camera/network/third_deck{
-	dir = 4
-	},
 /obj/effect/floor_decal/techfloor{
 	dir = 8
 	},
@@ -20773,6 +20867,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/button/blast_door{
+	id_tag = "gunnery";
+	name = "Conveyor Shutters Control";
+	dir = 4;
+	pixel_x = -24;
+	pixel_y = -12
+	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles)
 "UU" = (
@@ -20943,7 +21044,8 @@
 	id_tag = "d3aft_shutters";
 	name = "Window Shutters";
 	pixel_x = -26;
-	pixel_y = 26
+	pixel_y = 26;
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /turf/simulated/floor/tiled,
@@ -21240,7 +21342,8 @@
 	},
 /obj/machinery/light_switch{
 	pixel_x = -24;
-	pixel_y = -24
+	pixel_y = -24;
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
@@ -21928,6 +22031,7 @@
 	id_tag = "kitchen";
 	name = "Kitchen Shutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "Xp" = (
@@ -21943,7 +22047,9 @@
 /area/crew_quarters/public_office)
 "Xr" = (
 /obj/effect/floor_decal/corner/red/diagonal,
-/obj/machinery/vending/boozeomat,
+/obj/machinery/vending/boozeomat{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "Xs" = (
@@ -21992,7 +22098,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/forestarboard)
 "Xy" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -22069,6 +22175,7 @@
 	id_tag = "kitchen";
 	name = "Kitchen Shutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "XH" = (
@@ -22887,7 +22994,8 @@
 	},
 /obj/machinery/button/windowtint{
 	id = "lawyer_backroom";
-	pixel_x = 24
+	pixel_x = 24;
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -23019,7 +23127,8 @@
 "ZQ" = (
 /obj/machinery/light_switch{
 	pixel_x = 4;
-	pixel_y = -24
+	pixel_y = -24;
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/captainmess)
@@ -36513,7 +36622,7 @@ aO
 aO
 aO
 aO
-yc
+Xw
 dy
 dy
 eE
@@ -36917,7 +37026,7 @@ aO
 aO
 aO
 WQ
-Xw
+yc
 dy
 qz
 Ol
@@ -43993,11 +44102,11 @@ dR
 rS
 Gt
 SA
-Sf
+oq
 Sf
 QV
 Pa
-XK
+BJ
 Fs
 VJ
 pp
