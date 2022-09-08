@@ -91,7 +91,7 @@
 	economic_power = 3
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
-		"Custodian" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor,
+		"Senior Custodian" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor,
 		"Testing Assistant" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/testsubject,
 		"Intern",
 		"Clerk",

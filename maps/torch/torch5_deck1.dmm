@@ -4457,6 +4457,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "ahr" = (
@@ -4961,9 +4962,6 @@
 /obj/structure/sign/warning/deathsposal,
 /turf/simulated/wall/r_wall/hull,
 /area/medical/virology)
-"aie" = (
-/turf/simulated/wall/prepainted,
-/area/command/gunnery/mim)
 "aif" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/iv_drip,
@@ -6261,11 +6259,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "ann" = (
-/obj/structure/mim_ammo_broken/right,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/structure/mim_ammo_broken/left,
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "anp" = (
@@ -14823,7 +14821,7 @@
 	},
 /obj/structure/cable/green,
 /obj/machinery/door/blast/regular{
-	dir = 4;
+	dir = 2;
 	id_tag = "TOCBlast";
 	name = "Security Shutters"
 	},
@@ -22058,12 +22056,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/medical/virology)
-"lcG" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 5
-	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/hallway/primary/firstdeck/center)
 "lcI" = (
 /obj/machinery/camera/network/security{
 	c_tag = "Security Wing - Armory";
@@ -31292,7 +31284,6 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
 "wlh" = (
-/obj/structure/mim_ammo_broken/left,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/window/reinforced{
 	dir = 1
@@ -31301,6 +31292,7 @@
 	dir = 8
 	},
 /obj/structure/cable/green,
+/obj/structure/mim_ammo_broken/right,
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "wlG" = (
@@ -46231,7 +46223,7 @@ hQb
 hQb
 hQb
 aLU
-lcG
+aLU
 aLU
 jUb
 aLU
@@ -46426,7 +46418,7 @@ hBr
 hBr
 adN
 ahM
-aie
+aol
 aol
 aol
 aol
