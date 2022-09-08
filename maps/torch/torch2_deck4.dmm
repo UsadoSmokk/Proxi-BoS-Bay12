@@ -2354,6 +2354,9 @@
 	dir = 10
 	},
 /obj/effect/catwalk_plated,
+/obj/machinery/computer/guestpass{
+	pixel_x = 32
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "gc" = (
@@ -6222,10 +6225,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftstarboard)
@@ -10019,6 +10027,9 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftstarboard)
 "ym" = (
@@ -11167,20 +11178,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftport)
 "Bt" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
 /turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/aftstarboard)
+/area/maintenance/fourthdeck/port)
 "Bu" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -11543,6 +11545,13 @@
 /obj/random_multi/single_item/runtime,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/commissary)
+"Cx" = (
+/obj/machinery/computer/guestpass{
+	pixel_y = 32;
+	pixel_x = 28
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/fourthdeck/aft)
 "Cy" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
@@ -12221,6 +12230,11 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod1/station)
+"Ev" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/forestarboard)
 "Ew" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -14269,8 +14283,10 @@
 "JM" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
 /obj/structure/catwalk,
@@ -14440,14 +14456,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/structure/ladder/up,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/port)
 "Kc" = (
@@ -16052,6 +16068,9 @@
 /area/maintenance/fourthdeck/aftport)
 "Nz" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/port)
 "NA" = (
@@ -18691,6 +18710,9 @@
 /area/quartermaster/sorting)
 "Ti" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/maintenance/fourthdeck/forestarboard)
 "Tj" = (
@@ -19367,10 +19389,10 @@
 /area/quartermaster/office)
 "UJ" = (
 /obj/structure/railing/mapped,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "UK" = (
@@ -19613,6 +19635,13 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
+"Vg" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/port)
 "Vh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -21062,6 +21091,9 @@
 	},
 /obj/effect/floor_decal/corner/green{
 	dir = 8
+	},
+/obj/machinery/computer/guestpass{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled,
 /area/security/marines/exterior)
@@ -37836,7 +37868,7 @@ er
 uY
 Qj
 UJ
-QX
+Ev
 Ti
 SV
 fl
@@ -43321,7 +43353,7 @@ BH
 Vt
 sh
 Kb
-Ni
+Bt
 GT
 GT
 aa
@@ -43510,7 +43542,7 @@ yC
 yC
 yC
 ai
-yC
+Cx
 vi
 fA
 sj
@@ -43523,7 +43555,7 @@ Ie
 oj
 sh
 JL
-Ni
+Vg
 GT
 GT
 aa
@@ -47736,7 +47768,7 @@ rA
 JI
 tC
 pz
-Bt
+tC
 yl
 zP
 mV
@@ -47937,8 +47969,8 @@ fh
 lK
 kH
 kH
-kH
 JM
+kH
 kH
 WG
 Vj

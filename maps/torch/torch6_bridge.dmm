@@ -28,8 +28,14 @@
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/bridge/forestarboard)
 "ag" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/maintenance/bridge/aftstarboard)
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/airless,
+/area/space)
 "ah" = (
 /obj/structure/cable/yellow{
 	d2 = 2;
@@ -300,19 +306,14 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "aG" = (
-/obj/machinery/door/airlock/vault/bolted{
-	frequency = 1379;
-	id_tag = "toc_door";
-	locked = 0;
-	name = "TOC Access"
+/obj/machinery/porta_turret/exterior/dagon{
+	maxhealth = 100000;
+	health = 100000;
+	auto_repair = 1;
+	shot_delay = 3
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/command/gunnery/mim/door)
+/turf/simulated/floor/airless,
+/area/maintenance/bridge/foreport)
 "aH" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -410,8 +411,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftstarboard)
 "aT" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/aftstarboard)
 "aU" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -1469,11 +1473,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "cI" = (
@@ -1497,11 +1496,6 @@
 	dir = 10
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "cJ" = (
@@ -2918,6 +2912,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /obj/structure/catwalk,
+/obj/machinery/light/small,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "fh" = (
@@ -3788,26 +3783,13 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
 "hb" = (
-/obj/structure/ladder,
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "toc_door";
 	name = "TOC door-bolt control";
 	pixel_x = -25
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/structure/catwalk,
-/obj/machinery/light/small,
 /turf/simulated/floor/plating,
-/area/command/gunnery/mim/door)
+/area/maintenance/bridge/aftstarboard)
 "hc" = (
 /obj/machinery/power/terminal,
 /obj/structure/cable{
@@ -3957,7 +3939,7 @@
 	dir = 8
 	},
 /obj/structure/catwalk,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/airless,
 /area/bridge)
 "hI" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
@@ -4556,7 +4538,12 @@
 /turf/space,
 /area/space)
 "jf" = (
-/obj/machinery/porta_turret/exterior/dagon,
+/obj/machinery/porta_turret/exterior/dagon{
+	maxhealth = 100000;
+	health = 100000;
+	auto_repair = 1;
+	shot_delay = 3
+	},
 /turf/simulated/floor/airless,
 /area/bridge/storage)
 "jh" = (
@@ -4991,7 +4978,7 @@
 /area/crew_quarters/heads/office/xo)
 "kE" = (
 /obj/structure/catwalk,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/airless,
 /area/bridge)
 "kI" = (
 /obj/effect/floor_decal/corner/yellow{
@@ -5041,13 +5028,13 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
 /obj/effect/floor_decal/industrial/warning/fulltile,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
 "kP" = (
@@ -7067,7 +7054,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/bridge/discip)
 "qH" = (
-/obj/machinery/porta_turret/exterior/dagon,
+/obj/machinery/porta_turret/exterior/dagon{
+	maxhealth = 100000;
+	health = 100000;
+	auto_repair = 1;
+	shot_delay = 3
+	},
 /turf/simulated/floor/airless,
 /area/bridge)
 "qI" = (
@@ -8501,7 +8493,7 @@
 /area/bridge/discip)
 "uM" = (
 /obj/machinery/camera/network/command{
-	c_tag = "Representative's Guard office";
+	c_tag = "Representative's Guard Break Room";
 	dir = 4;
 	network = list("Command","Security")
 	},
@@ -8728,7 +8720,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/airless,
 /area/space)
 "vB" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -10153,7 +10145,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/airless,
 /area/space)
 "zz" = (
 /obj/effect/floor_decal/corner/white/full,
@@ -10684,6 +10676,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
+"Br" = (
+/obj/structure/catwalk,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/aftstarboard)
 "Bs" = (
 /obj/machinery/light{
 	dir = 8;
@@ -11137,11 +11136,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/structure/disposalpipe/junction,
 /obj/effect/floor_decal/industrial/warning/fulltile,
+/obj/machinery/atmospherics/valve/shutoff/supply,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/aft)
 "CV" = (
@@ -11185,6 +11184,10 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge Storage";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
@@ -12097,6 +12100,15 @@
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftport)
+"Hl" = (
+/obj/effect/floor_decal/corner/blue/half,
+/obj/structure/table/glass,
+/obj/machinery/camera/network/bridge{
+	c_tag = "Discipline Room Port";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/bridge/discip)
 "Ho" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "hopdoor";
@@ -13207,6 +13219,9 @@
 	},
 /obj/structure/filingcabinet/chestdrawer{
 	dir = 1
+	},
+/obj/machinery/camera/network/bridge{
+	c_tag = "Discipline Room Starboard"
 	},
 /turf/simulated/floor/tiled,
 /area/bridge/discip)
@@ -15316,6 +15331,10 @@
 	id = "GKK_dorm";
 	pixel_x = 7;
 	pixel_y = 31
+	},
+/obj/machinery/camera/network/command{
+	c_tag = "Representative's Guard office";
+	network = list("Command","Security")
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
@@ -23777,7 +23796,7 @@ zx
 aa
 aa
 hg
-qA
+aG
 tg
 tg
 tg
@@ -23965,7 +23984,7 @@ Fp
 oA
 aa
 aa
-vA
+ag
 aa
 aa
 hH
@@ -31228,7 +31247,7 @@ gz
 aS
 bx
 bm
-ag
+sT
 sT
 sT
 sT
@@ -31432,8 +31451,8 @@ bB
 Qi
 aT
 hb
-aT
-MD
+Ns
+Br
 MD
 yV
 fI
@@ -31632,9 +31651,9 @@ dY
 dY
 gi
 bx
-aT
-aG
-aT
+Ns
+Ns
+Ns
 MD
 MD
 zW
@@ -34680,7 +34699,7 @@ OW
 OW
 mu
 mu
-PV
+Hl
 Lp
 OP
 cP
