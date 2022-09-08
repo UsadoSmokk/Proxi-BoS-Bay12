@@ -27,6 +27,7 @@
 	#include "bos/effects/decal.dm"
 
 	#include "bos/items/choco.dm"
+	#include "bos/items/swords.dm"
 	#include "bos/items/tableflags.dm"
 	#include "bos/items/underwear.dm"
 
