@@ -8,9 +8,9 @@
 		/datum/mil_rank/larmarine/o2
 	)
 	access = list(access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
-			            access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_guppy_helm,
-			            access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory, access_gunnery, access_marines, access_marspec, access_marcom, access_marlead)
+						access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
+						access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_guppy_helm,
+						access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory, access_gunnery, access_marines, access_marspec, access_marcom, access_marlead)
 
 /datum/job/squad_lead
 	title = "Marine Squad Leader"
@@ -41,7 +41,7 @@
 	)
 
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_marines,
-			            access_marlead, access_martech, access_marmed, access_marspec, access_aquila, access_eva, access_bridge)
+						access_marlead, access_martech, access_marmed, access_marspec, access_aquila, access_eva, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -84,7 +84,7 @@
 		/datum/mil_rank/larmarine/e5
 		)
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_marines,
-			            access_aquila, access_eva, access_martech, access_marspec)
+						access_aquila, access_eva, access_martech, access_marspec)
 /*
 /datum/job/combat_tech/is_position_available()
 	if(..())
@@ -133,7 +133,7 @@
 		/datum/mil_rank/larmarine/e5
 		)
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_marines,
-			            access_aquila, access_eva, access_marmed, access_medical, access_marspec)
+						access_aquila, access_eva, access_marmed, access_medical, access_marspec)
 /*
 /datum/job/combat_medic/is_position_available()
 	if(..())
@@ -177,7 +177,7 @@
 		/datum/mil_rank/larmarine/e4
 	)
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_marines,
-			            access_aquila, access_eva)
+						access_aquila, access_eva)
 	alt_titles = list(
 		"Marine Grenadier",
 		"Marine Assaultman")

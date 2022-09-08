@@ -42,7 +42,7 @@ exactly 3 "update_icon() override" '/update_icon\((.*)\)'  -P
 exactly 5 "goto use" 'goto '
 exactly 1 "NOOP match" 'NOOP'
 exactly 369 "spawn uses" '^\s*spawn\s*\(\s*(-\s*)?\d*\s*\)' -P
-exactly 318 "tag uses" '\stag = ' -P '**/*.dmm'
+exactly 42 "tag uses" '\stag = ' -P '**/*.dmm'
 exactly 25 "anchored = 0/1" 'anchored\s*=\s*\d' -P
 exactly 29 "density = 0/1" 'density\s*=\s*\d' -P
 exactly 2 "emagged = 0/1" 'emagged\s*=\s*\d' -P
