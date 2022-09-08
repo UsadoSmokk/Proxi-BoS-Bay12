@@ -16,14 +16,14 @@
 		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/gov
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_EVA         = SKILL_ADEPT,
-	                    SKILL_SCIENCE     = SKILL_ADEPT,
-	                    SKILL_PILOT       = SKILL_BASIC)
+						SKILL_EVA	     = SKILL_ADEPT,
+						SKILL_SCIENCE     = SKILL_ADEPT,
+						SKILL_PILOT       = SKILL_BASIC)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX,
-	                    SKILL_COMBAT      = SKILL_EXPERT,
-	                    SKILL_WEAPONS     = SKILL_EXPERT)
+						SKILL_SCIENCE     = SKILL_MAX,
+						SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT)
 	skill_points = 22
 
 	access = list(
@@ -56,14 +56,14 @@
 		"Chemical Researcher"
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_COMPUTER    = SKILL_BASIC,
-	                    SKILL_DEVICES     = SKILL_BASIC,
-	                    SKILL_SCIENCE     = SKILL_ADEPT,
+						SKILL_COMPUTER    = SKILL_BASIC,
+						SKILL_DEVICES     = SKILL_BASIC,
+						SKILL_SCIENCE     = SKILL_ADEPT,
 						SKILL_CHEMISTRY   = SKILL_BASIC)
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_DEVICES     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX,
+						SKILL_DEVICES     = SKILL_MAX,
+						SKILL_SCIENCE     = SKILL_MAX,
 						SKILL_CHEMISTRY   = SKILL_MAX)
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
@@ -91,7 +91,7 @@
 	economic_power = 3
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
-		"Custodian" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor,
+		"Senior Custodian" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor,
 		"Testing Assistant" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/testsubject,
 		"Intern",
 		"Clerk",
@@ -105,8 +105,8 @@
 		/datum/mil_rank/civ/contractor, /datum/mil_rank/lord/gov
 	)
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_DEVICES     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
+						SKILL_DEVICES     = SKILL_MAX,
+						SKILL_SCIENCE     = SKILL_MAX)
 
 	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint,
 						access_mining_office, access_mining_station, access_xenobiology,
@@ -134,9 +134,9 @@
 	min_skill = list(   SKILL_EVA = SKILL_BASIC)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX,
-	                    SKILL_COMBAT      = SKILL_EXPERT,
-	                    SKILL_WEAPONS     = SKILL_EXPERT)
+						SKILL_SCIENCE     = SKILL_MAX,
+						SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT)
 
 	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
 		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, access_petrov_analysis, access_research, access_petrov_maint

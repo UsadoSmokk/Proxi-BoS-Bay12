@@ -154,8 +154,8 @@
 	region = ACCESS_REGION_SERVICE
 
 /var/const/access_marspec = "ACCESS_MARSPEC"
-/datum/access/marmed
-	id = access_marmed
+/datum/access/marspec
+	id = access_marspec
 	desc = "Marine Specialist"
 	region = ACCESS_REGION_SERVICE
 

@@ -221,8 +221,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 6;
@@ -279,7 +278,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
@@ -513,17 +512,11 @@
 /turf/simulated/wall/titanium,
 /area/aquila/head)
 "by" = (
-/obj/machinery/access_button{
-	command = "cycle_exterior";
-	frequency = 1331;
-	master_tag = "nuke_shuttle_dock_airlock";
-	name = "exterior access button";
-	pixel_x = -6;
-	pixel_y = -19;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
+/obj/effect/floor_decal/industrial/fire{
+	dir = 4
 	},
-/turf/simulated/wall/r_wall/hull,
-/area/hallway/primary/fourthdeck/fore)
+/turf/simulated/floor/tiled/dark,
+/area/command/gunnery/missiles/storage/lower)
 "bz" = (
 /obj/effect/floor_decal/corner/brown,
 /turf/simulated/floor/tiled/steel_grid,
@@ -536,8 +529,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -732,8 +724,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/turbolift/cargo_lift)
@@ -827,6 +818,10 @@
 	pixel_y = 32
 	},
 /obj/structure/table/marble,
+/obj/machinery/camera/network/fourth_deck{
+	c_tag = "Mess Hall - Officer's Mess Aft";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/captainmess)
 "cr" = (
@@ -855,6 +850,13 @@
 	name = "Docking Port Airlock"
 	},
 /obj/machinery/shield_diffuser,
+/obj/machinery/access_button/airlock_exterior{
+	pixel_x = 22;
+	master_tag = "merchant_shuttle_station_dock";
+	pixel_y = 10;
+	frequency = 1380;
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "cv" = (
@@ -874,8 +876,7 @@
 	dir = 8
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -889,8 +890,7 @@
 	dir = 4
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
@@ -914,8 +914,7 @@
 	dir = 8
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -929,8 +928,7 @@
 	dir = 4
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
@@ -1176,15 +1174,16 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/teleporter/fourthdeck)
 "dh" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1380;
-	id_tag = "merchant_shuttle_station_pump"
-	},
 /obj/effect/floor_decal/industrial/warning/full,
 /obj/machinery/airlock_sensor{
 	frequency = 1380;
 	id_tag = "merchant_shuttle_station_sensor";
-	pixel_x = -24
+	pixel_x = -24;
+	master_tag = "merchant_shuttle_station_dock";
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "merchant_shuttle_station_pump"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -1195,8 +1194,7 @@
 /area/aquila/storage)
 "dj" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod1/station)
@@ -1205,8 +1203,7 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod1/station)
@@ -1215,15 +1212,13 @@
 	pixel_x = -32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod2/station)
 "dm" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod2/station)
@@ -1283,7 +1278,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage/lower)
 "dt" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
@@ -1350,7 +1345,8 @@
 	},
 /obj/machinery/light_switch{
 	pixel_x = 24;
-	pixel_y = 24
+	pixel_y = 24;
+	dir = 8
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -1379,8 +1375,7 @@
 "dB" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -1415,8 +1410,7 @@
 /area/aquila/maintenance)
 "dI" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
@@ -1454,8 +1448,7 @@
 /area/hallway/primary/fourthdeck/fore)
 "dM" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
@@ -1466,8 +1459,7 @@
 /area/shuttle/escape_pod1/station)
 "dP" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -1583,8 +1575,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/brown{
 	dir = 9
@@ -1611,7 +1602,7 @@
 "ei" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
@@ -1805,10 +1796,10 @@
 /obj/machinery/pointdefense{
 	initial_id_tag = "gunship_pd"
 	},
-/obj/structure/cable/yellow,
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning"
 	},
+/obj/structure/cable/white,
 /turf/simulated/floor/reinforced/airless,
 /area/aquila/maintenance)
 "eF" = (
@@ -1969,15 +1960,15 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/machinery/camera/network/fourth_deck{
-	c_tag = "Fourth Deck - Fore Starboard Docking Access";
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/red{
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/white{
 	dir = 8
+	},
+/obj/machinery/camera/network/fourth_deck{
+	c_tag = "Fourth Deck - Fore Starboard Docking Access";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -2090,8 +2081,7 @@
 "fv" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -2170,6 +2160,9 @@
 "fF" = (
 /obj/machinery/light/spot{
 	dir = 4
+	},
+/obj/machinery/camera/network/hangar{
+	dir = 8
 	},
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
@@ -2361,6 +2354,9 @@
 	dir = 10
 	},
 /obj/effect/catwalk_plated,
+/obj/machinery/computer/guestpass{
+	pixel_x = 32
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "gc" = (
@@ -2444,8 +2440,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -2522,7 +2517,7 @@
 	},
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Ballistic - Z2, Light Machinegun";
-	req_access = list("ACCESS_MARCOM")
+	req_access = list("ACCESS_MARLEAD")
 	},
 /obj/item/ammo_magazine/box/machinegun,
 /obj/item/ammo_magazine/box/machinegun,
@@ -2662,11 +2657,13 @@
 /obj/machinery/button/windowtint{
 	id = "mmgrayons";
 	pixel_x = -5;
-	pixel_y = -22
+	pixel_y = -22;
+	dir = 1
 	},
 /obj/machinery/light_switch{
 	pixel_x = 4;
-	pixel_y = -21
+	pixel_y = -22;
+	dir = 1
 	},
 /obj/effect/floor_decal/corner/green{
 	dir = 10
@@ -2703,8 +2700,7 @@
 /obj/structure/lattice,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/zpipe/up/cyan{
 	dir = 4
@@ -2738,7 +2734,8 @@
 	id_tag = "starboardaux_warehouse";
 	name = "Warehouse Door Control";
 	pixel_x = 24;
-	pixel_y = 6
+	pixel_y = 6;
+	dir = 8
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/storage/auxillary/starboard)
@@ -2758,7 +2755,8 @@
 	name = "Warehouse Door Control";
 	pixel_x = -24;
 	pixel_y = 6;
-	req_access = list("ACCESS_CARGO")
+	req_access = list("ACCESS_CARGO");
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -2821,8 +2819,7 @@
 "hh" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/light/spot{
 	dir = 1
@@ -2951,8 +2948,7 @@
 /area/crew_quarters/lounge)
 "hs" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -2998,10 +2994,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
+/obj/structure/cable/white{
+	icon_state = "2-8";
 	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
+	d2 = 8
 	},
 /turf/simulated/wall/titanium,
 /area/aquila/maintenance)
@@ -3050,8 +3046,7 @@
 "hB" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/lattice,
 /turf/simulated/open,
@@ -3096,7 +3091,8 @@
 	},
 /obj/machinery/light_switch{
 	pixel_x = -6;
-	pixel_y = -24
+	pixel_y = -24;
+	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/laundry)
@@ -3611,7 +3607,8 @@
 /obj/machinery/button/alternate/door{
 	id_tag = "starboard_storage";
 	name = "Door Bolt";
-	pixel_y = -22
+	pixel_y = -22;
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/auxillary/starboard)
@@ -3812,7 +3809,8 @@
 	id_tag = "sup_office";
 	name = "Desk Shutter Control";
 	pixel_x = 26;
-	pixel_y = 28
+	pixel_y = 24;
+	dir = 8
 	},
 /obj/machinery/computer/modular/preset/civilian,
 /obj/effect/floor_decal/corner/brown/mono,
@@ -3960,8 +3958,7 @@
 "kb" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/fourthdeck/starboard)
@@ -3973,11 +3970,13 @@
 /obj/machinery/button/windowtint{
 	id = "pathfinder_office";
 	pixel_x = -24;
-	pixel_y = 6
+	pixel_y = 6;
+	dir = 4
 	},
 /obj/machinery/light_switch{
 	pixel_x = -24;
-	pixel_y = -6
+	pixel_y = -6;
+	dir = 4
 	},
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
@@ -4049,21 +4048,15 @@
 "km" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
 "kn" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1331;
-	id_tag = "aquila_shuttle_pump"
-	},
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
@@ -4074,6 +4067,9 @@
 	tag_exterior_sensor = "aquila_shuttle_sensor_external";
 	req_access = list("ACCESS_MARINES");
 	id_tag = "aquila_shuttle"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "aquila_shuttle_pump"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
@@ -4394,12 +4390,11 @@
 	dir = 9;
 	icon_state = "warning"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
-	},
 /obj/machinery/oxygen_pump{
 	pixel_y = 32
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "nuke_shuttle_dock_pump"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -4441,6 +4436,9 @@
 	},
 /obj/machinery/pointdefense_control{
 	initial_id_tag = "gunship_pd"
+	},
+/obj/machinery/dummy_airlock_controller{
+	id_tag = "aquila_shuttle"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/cockpit)
@@ -4718,12 +4716,8 @@
 /turf/simulated/floor/plating,
 /area/aquila/maintenance)
 "lT" = (
-/obj/item/device/radio/intercom{
-	dir = 4;
-	pixel_x = -21
-	},
-/turf/space,
-/area/space)
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/aftstarboard)
 "lU" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -4774,6 +4768,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
+	},
+/obj/machinery/camera/network/fourth_deck{
+	c_tag = "Fourth Deck - Commissary Counter";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/commissary)
@@ -5025,22 +5023,21 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 1
 	},
-/obj/structure/cable/yellow{
+/obj/structure/cable/white{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/airless,
+/turf/simulated/floor/reinforced/airless,
 /area/aquila/maintenance)
 "mw" = (
-/obj/structure/window/phoronreinforced,
-/obj/effect/floor_decal/industrial/outline/orange,
-/obj/machinery/sealgen{
-	req_access = list("ACCESS_MARINES");
-	dir = 1
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/security/marines)
+/turf/simulated/floor/tiled/white,
+/area/maintenance/aux_med)
 "my" = (
 /obj/structure/table/standard,
 /obj/effect/floor_decal/corner/mauve/half{
@@ -5255,7 +5252,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftstarboard)
 "mW" = (
 /obj/structure/catwalk,
@@ -5988,20 +5986,26 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/fore)
+"oJ" = (
+/obj/structure/catwalk,
+/obj/machinery/camera/network/hangar{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle_ceiling/torch/air,
+/area/quartermaster/hangar/top)
 "oK" = (
 /obj/effect/paint/green,
 /turf/simulated/wall/titanium,
 /area/aquila/maintenance)
 "oL" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1331;
-	id_tag = "aquila_shuttle_pump"
-	},
 /obj/machinery/oxygen_pump{
 	pixel_y = 32
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 1
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "aquila_shuttle_pump"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
@@ -6221,19 +6225,22 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftstarboard)
 "pD" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -6258,8 +6265,7 @@
 "pI" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
@@ -6473,8 +6479,7 @@
 	master_tag = "aquila_shuttle";
 	name = "interior access button";
 	pixel_x = -24;
-	pixel_y = -24;
-	req_access = newlist()
+	pixel_y = -24
 	},
 /obj/structure/cable{
 	d1 = 2;
@@ -6548,7 +6553,7 @@
 	icon_state = "tube1"
 	},
 /obj/structure/displaycase{
-	req_access = list("ACCESS_MARCOM")
+	req_access = list("ACCESS_MARLEAD")
 	},
 /obj/item/gun/energy/laser/infantry/sl,
 /turf/simulated/floor/tiled/monotile,
@@ -6719,6 +6724,11 @@
 "qP" = (
 /obj/random/maintenance,
 /obj/random/trash,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/white,
 /area/maintenance/aux_med)
 "qQ" = (
@@ -6741,18 +6751,20 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "nuke_shuttle_dock_pump"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/fore)
 "qT" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 5
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
-	},
 /obj/machinery/oxygen_pump{
 	pixel_y = 32
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "nuke_shuttle_dock_pump"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -6781,11 +6793,6 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/plating,
 /area/aquila/maintenance)
 "qX" = (
@@ -6874,8 +6881,7 @@
 "rk" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/cable{
@@ -6963,6 +6969,10 @@
 	},
 /obj/effect/floor_decal/corner/yellow{
 	dir = 10
+	},
+/obj/machinery/camera/network/fourth_deck{
+	c_tag = "Fourth Deck Hallway - Aft Hallway";
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
@@ -7185,11 +7195,11 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/fore)
 "sl" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
+/obj/machinery/camera/network/command{
+	c_tag = "Missile Magazine Lower Starboard"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/hallway/primary/fourthdeck/fore)
+/turf/simulated/floor/tiled/techfloor,
+/area/command/gunnery/missiles/storage/lower)
 "sm" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -7212,6 +7222,13 @@
 	locked = 1;
 	name = "Docking Port Airlock"
 	},
+/obj/machinery/access_button/airlock_interior{
+	master_tag = "nuke_shuttle_dock_airlock";
+	frequency = 1331;
+	pixel_x = 8;
+	pixel_y = -22;
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/fourthdeck/fore)
 "sp" = (
@@ -7232,7 +7249,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/camera/network/fourth_deck{
-	c_tag = "Fourth Deck Hallway - Primary Docking Port";
+	c_tag = "Fourth Deck Hallway - Commissary Counter";
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/warning{
@@ -7910,29 +7927,21 @@
 /turf/simulated/floor/tiled/dark,
 /area/aquila/cockpit)
 "tz" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1331;
-	id_tag = "aquila_shuttle_pump_out_external"
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "aquila_shuttle_pump_out_external";
+	dir = 4
 	},
-/obj/machinery/airlock_sensor{
-	dir = 4;
-	frequency = 1331;
-	id_tag = "aquila_shuttle_sensor_external";
-	pixel_x = 25;
-	pixel_y = -6
+/obj/effect/floor_decal/industrial/warning/cee{
+	dir = 8
 	},
-/obj/machinery/access_button{
-	command = "cycle_exterior";
+/obj/machinery/airlock_sensor/airlock_exterior{
+	req_access = list("ACCESS_MARINES");
 	frequency = 1331;
 	master_tag = "aquila_shuttle";
-	name = "exterior access button";
-	pixel_x = 23;
-	pixel_y = 6
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 9;
-	icon_state = "warning"
+	id_tag = "aquila_shuttle_sensor_external";
+	pixel_x = 25;
+	pixel_y = -14;
+	name = "PRESS TO CYCLE AIRLOCK, DUMB MARINE"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/aquila/airlock)
@@ -7955,8 +7964,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/floor/plating,
@@ -8065,15 +8073,14 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/janitor/aux)
 "tO" = (
-/obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/hallway/primary/fourthdeck/fore)
+/obj/machinery/camera/network/hangar,
+/turf/simulated/open,
+/area/quartermaster/hangar/top)
 "tP" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "nuke_shuttle_dock_pump";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -8083,16 +8090,20 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/cable/white{
+	icon_state = "2-4";
+	d1 = 2;
+	d2 = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/maintenance)
 "tR" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 6
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "nuke_shuttle_dock_pump";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -8330,8 +8341,7 @@
 "uu" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/fourthdeck/forestarboard)
@@ -8344,6 +8354,9 @@
 /obj/item/device/radio,
 /obj/item/device/radio,
 /obj/item/device/radio,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/aquila/storage)
 "uw" = (
@@ -8472,7 +8485,8 @@
 	},
 /obj/machinery/light_switch{
 	pixel_x = 10;
-	pixel_y = 32
+	pixel_y = 32;
+	dir = 4
 	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1;
@@ -8687,8 +8701,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/fourthdeck/foreport)
@@ -8699,7 +8712,8 @@
 	name = "Warehouse Door Control";
 	pixel_x = 26;
 	pixel_y = -25;
-	req_access = list(list("ACCESS_CARGO","ACCESS_MINING"))
+	req_access = list(list("ACCESS_CARGO","ACCESS_MINING"));
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
@@ -8802,6 +8816,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/fourthdeck)
 "vr" = (
@@ -8817,6 +8835,11 @@
 "vs" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
+	},
+/obj/machinery/light_switch{
+	pixel_x = 6;
+	pixel_y = -24;
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/teleporter/fourthdeck)
@@ -8979,6 +9002,11 @@
 	},
 /obj/item/stack/material/glass/reinforced/fifty,
 /obj/item/stack/material/steel/fifty,
+/obj/structure/cable/white{
+	icon_state = "1-2";
+	d1 = 1;
+	d2 = 2
+	},
 /turf/simulated/floor/plating,
 /area/aquila/maintenance)
 "vM" = (
@@ -8991,16 +9019,11 @@
 /turf/simulated/wall/titanium,
 /area/aquila/passenger)
 "vO" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
-	},
-/obj/effect/floor_decal/industrial/outline/orange,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10
 	},
-/obj/machinery/sealgen{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "nuke_shuttle_dock_pump";
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -9166,7 +9189,7 @@
 	name = "Lower Missile Magazine"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles/storage/lower)
 "ws" = (
 /obj/machinery/door/firedoor,
@@ -9207,7 +9230,8 @@
 	name = "Desk Shutters";
 	pixel_x = -1;
 	pixel_y = -25;
-	req_access = list("ACCESS_MARINES")
+	req_access = list("ACCESS_MARINES");
+	dir = 1
 	},
 /obj/effect/floor_decal/corner_techfloor_gray{
 	dir = 10
@@ -9218,7 +9242,8 @@
 /obj/machinery/button/blast_door{
 	id_tag = "sup_lift";
 	name = "Warehouse Lift Shutters";
-	pixel_x = 25
+	pixel_x = 25;
+	dir = 8
 	},
 /obj/machinery/conveyor_switch/oneway{
 	id = "packageSort1"
@@ -9457,8 +9482,7 @@
 "wS" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/top)
@@ -9555,6 +9579,10 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
+/obj/machinery/camera/network/aquila{
+	c_tag = "Aquila - Power Compartment";
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/aquila/maintenance)
 "xl" = (
@@ -9564,7 +9592,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
@@ -9890,8 +9918,7 @@
 "ya" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/open,
@@ -9984,8 +10011,7 @@
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/monotile,
@@ -9999,8 +10025,10 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
+	},
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftstarboard)
@@ -10014,7 +10042,8 @@
 /obj/machinery/airlock_sensor{
 	frequency = 1331;
 	id_tag = "aquila_shuttle_sensor";
-	pixel_y = -24
+	pixel_y = -24;
+	req_access = list("ACCESS_MARINES")
 	},
 /obj/effect/floor_decal/techfloor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -10057,8 +10086,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/corner/brown{
 	dir = 9
@@ -10149,7 +10177,7 @@
 	id_tag = "aquila_shuttle_dock_airlock";
 	pixel_x = 24;
 	pixel_y = 24;
-	tag_airpump = "aqusssila_shuttle_dock_pump";
+	tag_airpump = "aquila_shuttle_dock_pump";
 	tag_chamber_sensor = "aquila_shuttle_dock_sensor";
 	tag_exterior_door = "aquila_shuttle_dock_outer";
 	tag_interior_door = "aquila_shuttle_dock_inner";
@@ -10157,6 +10185,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
+"yK" = (
+/obj/structure/catwalk,
+/obj/machinery/camera/network/hangar{
+	dir = 4
+	},
+/turf/simulated/floor/shuttle_ceiling/torch/air,
+/area/quartermaster/hangar/top)
 "yL" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -10274,8 +10309,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -10560,7 +10594,8 @@
 "zD" = (
 /obj/machinery/light_switch{
 	pixel_x = 6;
-	pixel_y = -24
+	pixel_y = -24;
+	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -10633,7 +10668,8 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftstarboard)
 "zQ" = (
 /obj/structure/catwalk,
@@ -10690,8 +10726,7 @@
 /area/hallway/primary/fourthdeck/aft)
 "Aa" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
@@ -10806,6 +10841,9 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
 	icon_state = "warning"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "nuke_shuttle_dock_pump"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -11140,21 +11178,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftport)
 "Bt" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
 /turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/aftstarboard)
+/area/maintenance/fourthdeck/port)
 "Bu" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -11185,15 +11213,6 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1331;
-	master_tag = "nuke_shuttle_dock_airlock";
-	name = "interior access button";
-	pixel_x = -23;
-	pixel_y = -22;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
@@ -11229,7 +11248,9 @@
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "sup_lift";
-	name = "Warehouse Lift Shutters"
+	name = "Warehouse Lift Shutters";
+	pixel_y = 5;
+	dir = 1
 	},
 /turf/simulated/wall/prepainted,
 /area/quartermaster/sorting)
@@ -11305,7 +11326,8 @@
 	id_tag = "portaux_warehouse";
 	name = "Warehouse Door Control";
 	pixel_x = 24;
-	pixel_y = -6
+	pixel_y = -6;
+	dir = 8
 	},
 /obj/machinery/firealarm{
 	pixel_y = 24
@@ -11322,7 +11344,8 @@
 	name = "Warehouse Door Control";
 	pixel_x = -24;
 	pixel_y = -6;
-	req_access = list("ACCESS_CARGO")
+	req_access = list("ACCESS_CARGO");
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -11375,6 +11398,11 @@
 /obj/machinery/vending/medical/torch{
 	dir = 1
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/maintenance/aux_med)
 "BW" = (
@@ -11424,8 +11452,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/top)
@@ -11467,7 +11494,9 @@
 /obj/machinery/airlock_sensor{
 	frequency = 1331;
 	id_tag = "aquila_shuttle_dock_sensor";
-	pixel_y = 24
+	pixel_y = 24;
+	master_tag = "aquila_shuttle_dock_airlock";
+	req_access = list("ACCESS_MARINES")
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 8;
@@ -11483,6 +11512,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/techfloor,
+/obj/machinery/light/small,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
 "Cr" = (
@@ -11515,6 +11545,13 @@
 /obj/random_multi/single_item/runtime,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/commissary)
+"Cx" = (
+/obj/machinery/computer/guestpass{
+	pixel_y = 32;
+	pixel_x = 28
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/fourthdeck/aft)
 "Cy" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
@@ -11708,6 +11745,8 @@
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/spray/sterilizine,
 /obj/item/frame/apc,
+/obj/item/module/power_control,
+/obj/item/cell/standard,
 /turf/simulated/floor/tiled/white,
 /area/maintenance/aux_med)
 "CW" = (
@@ -11747,8 +11786,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
@@ -12044,8 +12082,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
@@ -12193,6 +12230,11 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod1/station)
+"Ev" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/forestarboard)
 "Ew" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -12207,8 +12249,7 @@
 "EB" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -12569,6 +12610,15 @@
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
+"FE" = (
+/obj/structure/door_assembly,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/maintenance/aux_med)
 "FG" = (
 /obj/structure/closet/medical_wall/filled{
 	pixel_x = 32
@@ -12712,6 +12762,10 @@
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
 "Gb" = (
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/aux_med)
 "Gc" = (
@@ -12721,6 +12775,11 @@
 	pixel_x = 28
 	},
 /obj/random/maintenance,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/maintenance/aux_med)
 "Gd" = (
@@ -12750,6 +12809,10 @@
 	},
 /obj/structure/window/phoronreinforced{
 	dir = 8
+	},
+/obj/machinery/camera/network/aquila{
+	c_tag = "Aquila - Cannon Balls Storage";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/head)
@@ -12908,8 +12971,7 @@
 /area/hallway/primary/fourthdeck/aft)
 "Gw" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -12962,12 +13024,16 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/aux_med)
 "GG" = (
-/obj/effect/floor_decal/industrial/outline/orange,
-/obj/machinery/sealgen{
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
+/obj/machinery/camera/network/supply{
+	c_tag = "Supply Office - Stairs";
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/hallway/primary/fourthdeck/fore)
+/turf/simulated/open,
+/area/quartermaster/storage/upper)
 "GI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
@@ -12977,8 +13043,7 @@
 /area/maintenance/fourthdeck/foreport)
 "GJ" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod3/station)
@@ -13041,8 +13106,7 @@
 /area/shuttle/escape_pod4/station)
 "GS" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod4/station)
@@ -13119,7 +13183,8 @@
 	name = "SL Shutter Control";
 	pixel_x = -26;
 	pixel_y = 9;
-	req_access = list("ACCESS_MARINES")
+	req_access = list("ACCESS_MARINES");
+	dir = 4
 	},
 /obj/effect/floor_decal/corner/green/half{
 	dir = 8
@@ -13183,8 +13248,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftport)
@@ -13229,8 +13293,7 @@
 /area/security/marines/com)
 "Hr" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
@@ -13241,8 +13304,7 @@
 /area/shuttle/escape_pod3/station)
 "Hu" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -13255,8 +13317,7 @@
 /obj/structure/stairs/north,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/lounge)
@@ -13429,8 +13490,7 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod3/station)
@@ -13450,8 +13510,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
@@ -13463,8 +13522,7 @@
 	pixel_x = -32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod4/station)
@@ -13577,10 +13635,6 @@
 	dir = 5
 	},
 /obj/structure/table/steel,
-/obj/item/paper/inf/dock,
-/obj/machinery/dummy_airlock_controller{
-	id_tag = "aquila_shuttle"
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/marines)
 "Ii" = (
@@ -13639,6 +13693,13 @@
 	name = "Docking Port Airlock"
 	},
 /obj/machinery/shield_diffuser,
+/obj/machinery/access_button/airlock_exterior{
+	pixel_x = 22;
+	master_tag = "skipjack_shuttle_dock_airlock";
+	pixel_y = -10;
+	frequency = 1380;
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "Ip" = (
@@ -13658,8 +13719,7 @@
 	dir = 8
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -13673,8 +13733,7 @@
 	dir = 4
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
@@ -13688,8 +13747,7 @@
 	dir = 8
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -13703,8 +13761,7 @@
 	dir = 4
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
@@ -13850,8 +13907,7 @@
 "II" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/top)
@@ -13949,14 +14005,12 @@
 "IZ" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
@@ -13976,11 +14030,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
 	dir = 1
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/maintenance)
@@ -14046,11 +14095,6 @@
 	},
 /obj/structure/cable,
 /obj/random_multi/single_item/boombox,
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/item/storage/box/flares,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 9
@@ -14197,8 +14241,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -14210,6 +14253,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftstarboard)
+"JK" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/ship_munition/disperser_charge/explosive,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/aquila/secure_storage)
 "JL" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -14231,8 +14283,10 @@
 "JM" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
 /obj/structure/catwalk,
@@ -14402,14 +14456,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/structure/ladder/up,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/port)
 "Kc" = (
@@ -14727,6 +14781,7 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 1
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/passenger)
 "KM" = (
@@ -14826,26 +14881,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
-"KV" = (
-/obj/structure/shuttle/engine/heater,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/airless,
-/area/aquila/maintenance)
 "KW" = (
 /turf/simulated/floor/tiled/dark,
 /area/command/captainmess)
@@ -14883,7 +14918,7 @@
 	},
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Explosive";
-	req_access = list("ACCESS_MARCOM")
+	req_access = list("ACCESS_MARLEAD")
 	},
 /obj/item/storage/box/flashbangs{
 	desc = "A box containing 7 smoke bombs.";
@@ -14913,10 +14948,11 @@
 /obj/machinery/airlock_sensor{
 	frequency = 1331;
 	id_tag = "nuke_shuttle_dock_sensor";
-	pixel_y = 24
+	pixel_y = 24;
+	master_tag = "nuke_shuttle_dock_airlock";
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1331;
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	id_tag = "nuke_shuttle_dock_pump"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -14980,8 +15016,7 @@
 "Lk" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/open,
@@ -15138,14 +15173,17 @@
 	locked = 1;
 	name = "Docking Port Airlock"
 	},
+/obj/machinery/access_button/airlock_exterior{
+	frequency = 1331;
+	master_tag = "nuke_shuttle_dock_airlock";
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	name = "exterior access button";
+	pixel_x = -10;
+	pixel_y = -22
+	},
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "LF" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1331;
-	id_tag = "aquila_shuttle_pump_out_internal"
-	},
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 8;
@@ -15155,6 +15193,10 @@
 	pixel_y = 32
 	},
 /obj/effect/floor_decal/techfloor{
+	dir = 1
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "aquila_shuttle_pump_out_internal";
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -15238,12 +15280,17 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/fuel,
-/obj/structure/cable/yellow{
+/obj/structure/cable/white{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/airless,
+/obj/structure/cable/white{
+	icon_state = "1-8";
+	d1 = 1;
+	d2 = 8
+	},
+/turf/simulated/floor/reinforced/airless,
 /area/aquila/maintenance)
 "LQ" = (
 /obj/structure/table/marble,
@@ -15408,6 +15455,7 @@
 /area/hallway/primary/fourthdeck/fore)
 "Mh" = (
 /obj/structure/catwalk,
+/obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/fourthdeck/forestarboard)
 "Mi" = (
@@ -15465,8 +15513,7 @@
 "Mq" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/fourthdeck/port)
@@ -15496,8 +15543,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15727,7 +15773,7 @@
 /area/hallway/primary/fourthdeck/center)
 "MS" = (
 /obj/machinery/atmospherics/valve/shutoff/supply,
-/turf/simulated/floor/tiled/techmaint,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/aftstarboard)
 "MT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -15817,8 +15863,7 @@
 "Nf" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -15933,8 +15978,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -16005,7 +16049,8 @@
 	id_tag = "lounge_shutters";
 	name = "Window Shutters";
 	pixel_x = -26;
-	pixel_y = -24
+	pixel_y = -24;
+	dir = 4
 	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
@@ -16023,6 +16068,9 @@
 /area/maintenance/fourthdeck/aftport)
 "Nz" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/port)
 "NA" = (
@@ -16156,8 +16204,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10
@@ -16347,8 +16394,7 @@
 "Og" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/maintenance/fourthdeck/foreport)
@@ -16488,7 +16534,9 @@
 "OA" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/mining{
-	name = "Expedition Storage"
+	name = "Expedition Storage";
+	req_access = list(list("ACCESS_MINING","ACCESS_TORCH_EXPLORER","ACCESS_XENOARCH"));
+	autoset_access = 0
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/forestarboard)
@@ -16565,11 +16613,21 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "ON" = (
-/obj/machinery/sealgen{
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/corner/red,
+/obj/effect/floor_decal/corner/white{
 	dir = 8
 	},
-/obj/effect/floor_decal/industrial/outline/orange,
-/turf/simulated/floor/tiled/techfloor/grid,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/fore)
 "OO" = (
 /obj/structure/disposalpipe/segment{
@@ -16800,8 +16858,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftport)
@@ -16809,8 +16866,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/top)
@@ -17022,7 +17078,8 @@
 	},
 /obj/machinery/light_switch{
 	pixel_x = 6;
-	pixel_y = -24
+	pixel_y = -24;
+	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -17032,11 +17089,11 @@
 "PO" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -24
+	pixel_x = -24;
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/lounge)
@@ -17112,6 +17169,10 @@
 	dir = 4;
 	pixel_x = -22
 	},
+/obj/machinery/camera/network/fourth_deck{
+	c_tag = "Fourth Deck - Commissary";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/commissary)
 "PZ" = (
@@ -17146,6 +17207,11 @@
 /obj/machinery/door/airlock/medical{
 	locked = 1;
 	name = "Auxilliary Infirmary"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/aux_med)
@@ -17211,6 +17277,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/fire/corner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage/lower)
 "Qm" = (
@@ -17221,8 +17290,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -17304,6 +17372,16 @@
 /obj/item/device/megaphone,
 /turf/simulated/floor/tiled,
 /area/quartermaster/deckchief)
+"Qw" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 4
+	},
+/obj/machinery/camera/network/security{
+	c_tag = "Infantry - Primary Aft";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/security/marines)
 "Qx" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 9
@@ -17350,6 +17428,9 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25
+	},
+/obj/effect/floor_decal/industrial/fire{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage/lower)
@@ -17415,8 +17496,7 @@
 "QJ" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/valve/shutoff/supply{
 	dir = 4
@@ -17524,8 +17604,7 @@
 "QT" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/light/spot,
 /turf/simulated/open,
@@ -17683,8 +17762,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
@@ -17746,8 +17824,7 @@
 "Rs" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -18073,6 +18150,13 @@
 	},
 /turf/simulated/floor/crystal,
 /area/crew_quarters/adherent)
+"Sc" = (
+/obj/machinery/alarm{
+	dir = 1;
+	pixel_y = -22
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/forestarboard)
 "Sd" = (
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/lounge)
@@ -18103,6 +18187,9 @@
 	icon_state = "4-8"
 	},
 /obj/structure/ladder/up,
+/obj/effect/floor_decal/industrial/fire{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage/lower)
 "Sh" = (
@@ -18167,15 +18254,16 @@
 /area/maintenance/fourthdeck/foreport)
 "Sn" = (
 /obj/effect/floor_decal/industrial/warning/full,
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1380;
-	id_tag = "skipjack_shuttle_dock_pump"
-	},
 /obj/machinery/airlock_sensor{
 	frequency = 1380;
 	id_tag = "skipjack_shuttle_dock_sensor";
-	pixel_x = -24
+	pixel_x = -24;
+	master_tag = "skipjack_shuttle_dock_airlock";
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "skipjack_shuttle_dock_pump";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -18250,8 +18338,7 @@
 "Sx" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/quartermaster/storage/upper)
@@ -18623,6 +18710,9 @@
 /area/quartermaster/sorting)
 "Ti" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/maintenance/fourthdeck/forestarboard)
 "Tj" = (
@@ -18679,8 +18769,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/shuttle_ceiling/torch/air,
 /area/quartermaster/hangar/top)
@@ -18859,8 +18948,7 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/machinery/light/spot,
 /turf/simulated/open,
@@ -19301,10 +19389,10 @@
 /area/quartermaster/office)
 "UJ" = (
 /obj/structure/railing/mapped,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "UK" = (
@@ -19357,6 +19445,11 @@
 "UO" = (
 /obj/random/maintenance,
 /obj/random/firstaid,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/maintenance/aux_med)
 "UP" = (
@@ -19378,6 +19471,10 @@
 "UQ" = (
 /obj/structure/catwalk,
 /obj/structure/ladder,
+/obj/machinery/camera/network/hangar{
+	c_tag = "Expedition Storage Upper";
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
 "UR" = (
@@ -19538,6 +19635,13 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
+"Vg" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/port)
 "Vh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -19682,7 +19786,9 @@
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "supsafedoor";
 	name = "safe room door-control";
-	pixel_x = 32
+	pixel_x = 25;
+	dir = 8;
+	pixel_y = 6
 	},
 /obj/structure/bed/chair{
 	dir = 1
@@ -19693,12 +19799,12 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/fourthdeck)
 "Vz" = (
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24
-	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/ship_munition/disperser_charge/explosive,
+/obj/machinery/camera/network/aquila{
+	c_tag = "Aquila - Cannon";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/secure_storage)
 "VA" = (
@@ -19923,6 +20029,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/industrial/fire{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage/lower)
@@ -20249,8 +20358,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftport)
@@ -20317,10 +20425,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
-/obj/structure/cable/yellow{
+/obj/structure/cable/white{
+	icon_state = "2-4";
 	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+	d2 = 4
 	},
 /turf/simulated/wall/titanium,
 /area/aquila/maintenance)
@@ -20382,8 +20490,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/lattice,
 /obj/structure/disposalpipe/segment{
@@ -20603,6 +20710,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
+/obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/fourthdeck/forestarboard)
 "XD" = (
@@ -20634,6 +20742,11 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
+	},
+/obj/machinery/alarm{
+	alarm_id = "petrov2";
+	pixel_y = 23;
+	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/commissary)
@@ -20689,6 +20802,11 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 8
 	},
+/obj/structure/cable/white{
+	icon_state = "2-8";
+	d1 = 2;
+	d2 = 8
+	},
 /turf/simulated/floor/plating,
 /area/aquila/maintenance)
 "XP" = (
@@ -20719,16 +20837,13 @@
 /area/security/hangcheck)
 "XS" = (
 /obj/effect/floor_decal/corner/brown/mono,
-/obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -22
-	},
 /obj/machinery/button/alternate/door{
 	id_tag = "shop_doors";
 	name = "Door Lockdown";
 	pixel_x = -24;
 	pixel_y = 6;
-	req_access = list(list("ACCESS_HEADS","ACCESS_TORCH_SHOP"))
+	req_access = list(list("ACCESS_HEADS","ACCESS_TORCH_SHOP"));
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/commissary)
@@ -20827,15 +20942,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
-"Yb" = (
-/obj/structure/railing/mapped,
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/turf/simulated/open,
-/area/quartermaster/hangar/top)
 "Yc" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Laundry Maintenance"
@@ -20986,6 +21092,9 @@
 /obj/effect/floor_decal/corner/green{
 	dir = 8
 	},
+/obj/machinery/computer/guestpass{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled,
 /area/security/marines/exterior)
 "YB" = (
@@ -21012,6 +21121,10 @@
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -24
+	},
+/obj/machinery/camera/network/command{
+	c_tag = "Missile Magazine Lower Port";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/missiles/storage/lower)
@@ -21134,8 +21247,7 @@
 "YQ" = (
 /obj/structure/railing/mapped{
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -21258,8 +21370,7 @@
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /obj/random/trash,
 /obj/structure/cable{
@@ -21459,8 +21570,7 @@
 "ZB" = (
 /obj/structure/railing/mapped{
 	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "railing0-1"
 	},
 /turf/simulated/open,
 /area/quartermaster/storage/upper)
@@ -30699,7 +30809,7 @@ aa
 Nv
 zj
 LD
-by
+WZ
 WZ
 aa
 aa
@@ -31102,8 +31212,8 @@ Jh
 Jh
 WZ
 Aq
-sl
-tO
+sm
+tP
 WZ
 Jh
 Jh
@@ -31506,8 +31616,8 @@ ni
 ou
 le
 qR
-sl
-tO
+sm
+tP
 fL
 wz
 OC
@@ -32516,7 +32626,7 @@ dg
 oz
 pL
 sr
-sr
+dg
 sr
 vo
 dg
@@ -33915,7 +34025,7 @@ aa
 aa
 aa
 Hw
-ON
+WZ
 WZ
 XD
 mK
@@ -33949,7 +34059,7 @@ WZ
 WZ
 WZ
 WZ
-GG
+WZ
 cv
 aa
 aa
@@ -34116,7 +34226,7 @@ aa
 aa
 aa
 aa
-PM
+aa
 PM
 PM
 XH
@@ -34150,9 +34260,9 @@ Hp
 DT
 DT
 DT
-WZ
-WZ
-WZ
+aa
+aa
+aa
 aa
 aa
 aa
@@ -34344,8 +34454,8 @@ BY
 BU
 CW
 qP
-EL
-CW
+FE
+mw
 Gc
 GD
 Hp
@@ -34353,7 +34463,7 @@ DT
 DT
 aa
 aa
-lT
+aa
 aa
 aa
 aa
@@ -34541,10 +34651,10 @@ Ye
 vx
 JC
 yb
-Le
+ON
 Qc
 UO
-CW
+mw
 BV
 GE
 GE
@@ -36143,7 +36253,7 @@ kQ
 KF
 TS
 Kt
-KI
+Sc
 Fj
 kl
 kl
@@ -37758,7 +37868,7 @@ er
 uY
 Qj
 UJ
-QX
+Ev
 Ti
 SV
 fl
@@ -38373,7 +38483,7 @@ gg
 gg
 jY
 gg
-gg
+yK
 gg
 gg
 jY
@@ -39392,7 +39502,7 @@ Cm
 Cm
 Cm
 Wf
-gg
+oJ
 Sd
 ET
 FD
@@ -40388,7 +40498,7 @@ hq
 LQ
 jq
 MX
-Yn
+tO
 mG
 ic
 Ga
@@ -40591,7 +40701,7 @@ QA
 Zd
 MX
 hh
-Yb
+aO
 ic
 xl
 ei
@@ -41392,8 +41502,8 @@ Wa
 Lw
 Lw
 LM
-Zy
-Zy
+by
+by
 Qk
 hJ
 eJ
@@ -41591,7 +41701,7 @@ Qs
 cd
 cM
 Wa
-dZ
+sl
 dZ
 iO
 hw
@@ -43243,7 +43353,7 @@ BH
 Vt
 sh
 Kb
-Ni
+Bt
 GT
 GT
 aa
@@ -43432,7 +43542,7 @@ yC
 yC
 yC
 ai
-yC
+Cx
 vi
 fA
 sj
@@ -43445,7 +43555,7 @@ Ie
 oj
 sh
 JL
-Ni
+Vg
 GT
 GT
 aa
@@ -44245,7 +44355,7 @@ Eq
 Fd
 FM
 Nl
-ZB
+GG
 ZB
 ZB
 QT
@@ -47258,7 +47368,7 @@ aw
 LT
 lG
 du
-od
+lT
 Mw
 Je
 ky
@@ -47658,7 +47768,7 @@ rA
 JI
 tC
 pz
-Bt
+tC
 yl
 zP
 mV
@@ -47859,8 +47969,8 @@ fh
 lK
 kH
 kH
-kH
 JM
+kH
 kH
 WG
 Vj
@@ -50695,7 +50805,7 @@ Dk
 nN
 iN
 pF
-gW
+Qw
 yI
 gW
 ap
@@ -51101,7 +51211,7 @@ va
 uZ
 va
 Cp
-mw
+va
 uZ
 va
 va
@@ -51512,7 +51622,7 @@ uv
 CA
 HF
 iI
-qr
+JK
 Vz
 iC
 Qf
@@ -52725,7 +52835,7 @@ oK
 Ja
 qW
 Jq
-KV
+mv
 WY
 aa
 aa
