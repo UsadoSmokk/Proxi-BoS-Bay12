@@ -226,6 +226,7 @@
 #include "code\bos\modules\emotes\definitions\_species.dm"
 #include "code\bos\modules\emotes\definitions\ascent.dm"
 #include "code\bos\modules\emotes\definitions\audible.dm"
+#include "code\bos\modules\events\psi_wave.dm"
 #include "code\bos\modules\events\supply_pod.dm"
 #include "code\bos\modules\events\totalitaria.dm"
 #include "code\bos\modules\food\recipes_microwave.dm"
