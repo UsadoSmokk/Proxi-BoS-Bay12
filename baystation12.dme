@@ -199,6 +199,7 @@
 #include "code\bos\modules\ascent\~ascent.dm"
 #include "code\bos\modules\clothing\accss_armor_boh.dm"
 #include "code\bos\modules\clothing\armor_boh.dm"
+#include "code\bos\modules\clothing\booker.dm"
 #include "code\bos\modules\clothing\cowboy_hat_alt.dm"
 #include "code\bos\modules\clothing\hands.dm"
 #include "code\bos\modules\clothing\hardhat_boh.dm"
