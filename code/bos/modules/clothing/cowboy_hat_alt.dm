@@ -15,3 +15,12 @@
 	icon_state = "gunfighter"
 	item_state = "gunfighter"
 	body_parts_covered = 0
+
+/obj/item/clothing/head/cowboy_hat/wide
+	name = "wide-brimmed cowboy hat"
+	desc = "These are worn by the Terstenian rangers and boyscouts. Whose side are you on?"
+	icon = 'icons/bos/obj/clothing/obj_head.dmi'
+	item_icons = list(slot_head_str = 'icons/bos/mob/onmob/onmob_head.dmi')
+	icon_state = "cowboy_wide"
+	item_state = "cowboy_wide"
+	body_parts_covered = 0
