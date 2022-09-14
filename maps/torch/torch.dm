@@ -27,6 +27,7 @@
 	#include "bos/effects/decal.dm"
 
 	#include "bos/items/choco.dm"
+	#include "bos/items/swords.dm"
 	#include "bos/items/tableflags.dm"
 	#include "bos/items/underwear.dm"
 
@@ -49,7 +50,6 @@
 	#include "bos/structures/signs.dm"
 	#include "bos/structures/statue.dm"
 
-	#include "datums/access.dm"
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_fleet.dm"
 	#include "datums/uniforms_terran.dm"
