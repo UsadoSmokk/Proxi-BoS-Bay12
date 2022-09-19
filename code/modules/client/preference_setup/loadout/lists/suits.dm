@@ -171,3 +171,23 @@
 /datum/gear/suit/zipper
 	display_name = "sweater, zip up"
 	path = /obj/item/clothing/suit/storage/toggle/zipper
+
+//bos
+/datum/gear/suit/overcoat
+	display_name = "overcoat selection"
+	path = /obj/item/clothing/suit
+	cost = 3
+
+
+/datum/gear/suit/overcoat/New()
+	..()
+	var/overcoat = list()
+	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek
+	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek/green
+	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek/black
+	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek/white
+	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek_long
+	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek_long/green
+	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek_long/black
+	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek_long/white
+	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(overcoat)
