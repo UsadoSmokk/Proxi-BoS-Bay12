@@ -54,7 +54,6 @@
 /turf/simulated/floor/plating,
 /area/map_template/icgnv_hound)
 "ak" = (
-/obj/effect/paint/hull,
 /turf/simulated/wall/r_titanium,
 /area/map_template/icgnv_hound)
 "al" = (

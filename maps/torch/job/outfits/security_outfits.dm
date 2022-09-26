@@ -24,7 +24,7 @@
 	pda_type = /obj/item/modular_computer/pda/forensics
 
 /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor
-	name = OUTFIT_JOB_NAME("Detective")
+	name = OUTFIT_JOB_NAME("Detective - Antares")
 	head = /obj/item/clothing/head/det
 	uniform = /obj/item/clothing/under/det
 	suit = /obj/item/clothing/suit/storage/det_trench/ft

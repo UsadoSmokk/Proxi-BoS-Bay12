@@ -313,7 +313,7 @@
 	shot_delay = 3
 	},
 /turf/simulated/floor/airless,
-/area/maintenance/bridge/foreport)
+/area/space)
 "aH" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -3940,7 +3940,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/airless,
-/area/bridge)
+/area/space)
 "hI" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
@@ -4537,15 +4537,6 @@
 /obj/effect/shuttle_landmark/merc/deck5,
 /turf/space,
 /area/space)
-"jf" = (
-/obj/machinery/porta_turret/exterior/dagon{
-	maxhealth = 100000;
-	health = 100000;
-	auto_repair = 1;
-	shot_delay = 3
-	},
-/turf/simulated/floor/airless,
-/area/bridge/storage)
 "jh" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/drone_fabricator/dagon/adv,
@@ -4966,7 +4957,7 @@
 "kE" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/airless,
-/area/bridge)
+/area/space)
 "kI" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
@@ -7044,15 +7035,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/bridge/discip)
-"qH" = (
-/obj/machinery/porta_turret/exterior/dagon{
-	maxhealth = 100000;
-	health = 100000;
-	auto_repair = 1;
-	shot_delay = 3
-	},
-/turf/simulated/floor/airless,
-/area/bridge)
 "qI" = (
 /obj/structure/lordbanner,
 /turf/simulated/floor/tiled/dark,
@@ -23577,11 +23559,11 @@ hg
 hg
 hg
 hg
-qH
+aG
 hg
 Jt
 hg
-qH
+aG
 hg
 hg
 hg
@@ -23772,7 +23754,7 @@ wZ
 Fp
 Fp
 Fp
-jf
+aG
 hg
 aa
 aa
