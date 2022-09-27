@@ -240,6 +240,7 @@
 #include "code\bos\modules\mob\cat.dm"
 #include "code\bos\modules\mob\language\lordanian.dm"
 #include "code\bos\modules\mob\language\alien\mantid.dm"
+#include "code\bos\modules\mob\language\alien\tajara.dm"
 #include "code\bos\modules\mob\living\silicon\robot\preset.dm"
 #include "code\bos\modules\mob\living\silicon\robot\flying\module_flying_ascent.dm"
 #include "code\bos\modules\mob\observer\eye\landing_eye\landing_eye.dm"

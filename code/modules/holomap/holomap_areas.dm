@@ -5,8 +5,6 @@
 
 /area/chapel/holomap_color = HOLOMAP_AREACOLOR_CREW
 
-/area/engineering/holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
-
 /area/hallway/holomap_color = HOLOMAP_AREACOLOR_HALLWAYS
 
 /area/medical/holomap_color = HOLOMAP_AREACOLOR_MEDICAL
@@ -22,5 +20,3 @@
 /////
 
 /area/maintenance/holomap_color = HOLOMAP_AREACOLOR_MAINT
-
-/area/command/holomap_color = HOLOMAP_AREACOLOR_COMMAND

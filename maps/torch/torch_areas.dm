@@ -729,6 +729,7 @@
 
 // Engineering
 
+/area/engineering/holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 /area/engineering/shieldbay
 	name = "Shield Bay"
 	icon_state = "engineering"
