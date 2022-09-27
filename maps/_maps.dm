@@ -1,8 +1,4 @@
-#include "_map_include.dm"
-
 #include "example\example_define.dm" // Always included because tests. May be fixable later.
-
-#include "using.dm"
 
 #include "antag_spawn\antag_spawn_bases.dm"
 #include "antag_spawn\ert\ert.dm"
@@ -11,6 +7,9 @@
 #include "antag_spawn\ninja\ninja.dm"
 #include "antag_spawn\vox\voxraider.dm"
 #include "antag_spawn\wizard\wizard.dm"
+
+//#include "using.dm"
+#include "_map_include.dm"
 
 #include "away\away_sites.dm"
 #include "away_sites_testing\away_sites_testing_define.dm"
