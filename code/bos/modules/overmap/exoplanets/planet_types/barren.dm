@@ -1,6 +1,6 @@
 /obj/effect/overmap/visitable/sector/exoplanet/barren
-	name = "barren exoplanet"
-	desc = "An exoplanet that couldn't hold its atmosphere."
+	name = "exoplanet"
+	desc = "A planet that couldn't hold its atmosphere."
 	color = "#847c6f"
 	planetary_area = /area/exoplanet/barren
 	rock_colors = list(COLOR_BEIGE, COLOR_GRAY80, COLOR_BROWN)
@@ -19,7 +19,7 @@
 	atmosphere.remove_ratio(0.9)
 
 /datum/random_map/noise/exoplanet/barren
-	descriptor = "barren exoplanet"
+	descriptor = "barren planet"
 	smoothing_iterations = 4
 	land_type = /turf/simulated/floor/exoplanet/barren
 	flora_prob = 0.1

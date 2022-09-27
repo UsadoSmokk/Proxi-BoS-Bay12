@@ -1,6 +1,6 @@
 /obj/effect/overmap/visitable/sector/exoplanet/chlorine
-	name = "chlorine exoplanet"
-	desc = "An exoplanet with a chlorine based ecosystem. Large quantities of liquid chlorine are present."
+	name = "chlorine planet"
+	desc = "A planet with a chlorine based ecosystem. Large quantities of liquid chlorine are present."
 	color = "#efff7c"
 	planetary_area = /area/exoplanet/chlorine
 	rock_colors = list(COLOR_GRAY80, COLOR_PALE_GREEN_GRAY, COLOR_PALE_BTL_GREEN)
@@ -31,7 +31,7 @@
 		atmosphere.update_values()
 
 /datum/random_map/noise/exoplanet/chlorine
-	descriptor = "chlorine exoplanet"
+	descriptor = "chlorine planet"
 	smoothing_iterations = 3
 	land_type = /turf/simulated/floor/exoplanet/chlorine_sand
 	water_type = /turf/simulated/floor/exoplanet/water/shallow/chlorine_liquid

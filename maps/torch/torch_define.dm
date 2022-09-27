@@ -17,7 +17,7 @@
 
 	station_name  = "LRS Antares"
 	station_short = "Antares"
-	dock_name     = "TBD"
+	dock_name     = "Port-Vengeance, Nouveaulyon"
 	boss_name     = "Operational Headquarters"
 	boss_short    = "OpHQ"
 	company_name  = "Lordanian Sovereign Systems Fleet"

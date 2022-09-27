@@ -1,6 +1,6 @@
 /obj/effect/overmap/visitable/sector/exoplanet/desert
-	name = "desert exoplanet"
-	desc = "An arid exoplanet with sparse biological resources but rich mineral deposits underground."
+	name = "desert planet"
+	desc = "An arid planet with sparse biological resources but rich mineral deposits underground."
 	color = "#d6cca4"
 	planetary_area = /area/exoplanet/desert
 	rock_colors = list(COLOR_BEIGE, COLOR_PALE_YELLOW, COLOR_GRAY80, COLOR_BROWN)
@@ -38,7 +38,7 @@
 	S.set_trait(TRAIT_SPREAD,0)
 
 /datum/random_map/noise/exoplanet/desert
-	descriptor = "desert exoplanet"
+	descriptor = "desert planet"
 	smoothing_iterations = 4
 	land_type = /turf/simulated/floor/exoplanet/desert
 
