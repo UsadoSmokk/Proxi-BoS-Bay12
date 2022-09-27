@@ -8,8 +8,8 @@
 #include "antag_spawn\vox\voxraider.dm"
 #include "antag_spawn\wizard\wizard.dm"
 
-#include "using.dm"
 #include "_map_include.dm"
+#include "using.dm"
 
 #include "away\away_sites.dm"
 #include "away_sites_testing\away_sites_testing_define.dm"
