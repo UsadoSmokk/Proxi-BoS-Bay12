@@ -1,5 +1,5 @@
 /obj/effect/overmap/visitable/sector/exoplanet/volcanic
-	name = "volcanic exoplanet"
+	name = "volcanic planet"
 	desc = "A tectonically unstable planet, extremely rich in minerals."
 	color = "#8e3900"
 	planetary_area = /area/exoplanet/volcanic
@@ -33,7 +33,7 @@
 	A.heat_damage_per_tick = 0 //animals not hot, no burning in lava
 
 /datum/random_map/noise/exoplanet/volcanic
-	descriptor = "volcanic exoplanet"
+	descriptor = "volcanic planet"
 	smoothing_iterations = 5
 	land_type = /turf/simulated/floor/exoplanet/volcanic
 	water_type = /turf/simulated/floor/exoplanet/lava

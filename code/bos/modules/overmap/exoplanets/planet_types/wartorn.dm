@@ -1,5 +1,5 @@
 /obj/effect/overmap/visitable/sector/exoplanet/wartorn
-	name = "conflict ridden exoplanet"
+	name = "conflict ridden planet"
 	desc = "Something horrible has happened here, as suggested by the surface scarring seen from orbit."
 	color = "#b3625b"
 	planetary_area = /area/exoplanet/wartorn
@@ -38,7 +38,7 @@
 	return I
 
 /datum/random_map/noise/exoplanet/wartorn
-	descriptor = "wartorn exoplanet"
+	descriptor = "wartorn planet"
 	smoothing_iterations = 4
 	land_type = /turf/simulated/floor/exoplanet/desert
 	flora_prob = 8

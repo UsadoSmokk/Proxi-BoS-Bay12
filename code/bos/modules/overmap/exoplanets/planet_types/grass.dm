@@ -1,5 +1,5 @@
 /obj/effect/overmap/visitable/sector/exoplanet/grass
-	name = "lush exoplanet"
+	name = "lush planet"
 	desc = "Planet with abundant flora and fauna."
 	color = "#538224"
 	planetary_area = /area/exoplanet/grass
@@ -54,7 +54,7 @@
 
 
 /datum/random_map/noise/exoplanet/grass
-	descriptor = "grass exoplanet"
+	descriptor = "grass planet"
 	smoothing_iterations = 2
 	land_type = /turf/simulated/floor/exoplanet/grass
 	water_type = /turf/simulated/floor/exoplanet/water/shallow
