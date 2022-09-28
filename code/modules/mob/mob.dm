@@ -410,7 +410,7 @@
 			return "<span class='notice'>[msg]</span>"
 		else
 			return "<span class='notice'>[copytext_preserve_html(msg, 1, 37)]... <a href='byond://?src=\ref[src];flavor_more=1'>More...</a></span>"
-
+/*
 /client/verb/changes()
 	set name = "Changelog"
 	set category = "OOC"
@@ -440,7 +440,7 @@
 		prefs.lastchangelog = GLOB.changelog_hash
 		SScharacter_setup.queue_preferences_save(prefs)
 		winset(src, "rpane.changelog", "background-color=none;font-style=;")
-
+*/
 /mob/verb/cancel_camera()
 	set name = "Cancel Camera View"
 	set category = "OOC"
