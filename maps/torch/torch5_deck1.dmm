@@ -2791,8 +2791,8 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/range)
@@ -3175,10 +3175,10 @@
 /area/medical/sleeper)
 "afb" = (
 /obj/machinery/door/airlock/multi_tile/glass/medical{
+	autoset_access = 0;
 	dir = 4;
 	id_tag = "MedEnt";
 	name = "Emergenecy Treatment Center";
-	autoset_access = 0;
 	req_access = list(list("ACCESS_MEDICAL","ACCESS_TORCH_BIOMECH"))
 	},
 /obj/effect/floor_decal/industrial/hatch/blue,
@@ -16831,10 +16831,10 @@
 /area/medical/morgue)
 "dUb" = (
 /obj/machinery/door/airlock/multi_tile/glass/medical{
+	autoset_access = 0;
 	id_tag = "triageinner";
 	name = "Emergenecy Treatment Center";
-	req_access = list(list("ACCESS_MEDICAL","ACCESS_TORCH_BIOMECH"));
-	autoset_access = 0
+	req_access = list(list("ACCESS_MEDICAL","ACCESS_TORCH_BIOMECH"))
 	},
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/machinery/door/firedoor,
@@ -25430,9 +25430,9 @@
 	},
 /obj/structure/cable/green,
 /obj/machinery/light_switch{
+	dir = 1;
 	pixel_x = -11;
-	pixel_y = -24;
-	dir = 1
+	pixel_y = -24
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/equipstorage)
@@ -27367,8 +27367,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/camera/network/command{
-	dir = 4;
-	c_tag = "PCD Controls"
+	c_tag = "PCD Controls";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
@@ -27476,10 +27476,12 @@
 	},
 /obj/structure/window/reinforced,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/storage/box/fragshells,
-/obj/item/storage/box/fragshells,
-/obj/item/gun/launcher/grenade,
 /obj/structure/table/rack/dark,
+/obj/item/gun/projectile/automatic/corpo/sec,
+/obj/item/gun/projectile/automatic/corpo/sec,
+/obj/item/ammo_magazine/corpo,
+/obj/item/ammo_magazine/corpo,
+/obj/item/ammo_magazine/corpo,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "rnb" = (
@@ -27885,8 +27887,10 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/gun/energy/plasmastun,
 /obj/structure/table/rack/dark,
+/obj/item/storage/box/fragshells,
+/obj/item/storage/box/fragshells,
+/obj/item/gun/launcher/grenade,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "rFb" = (
@@ -30229,8 +30233,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/medical{
-	name = "Operating Theater 2";
 	autoset_access = 0;
+	name = "Operating Theater 2";
 	req_access = list(list("ACCESS_MEDICAL","ACCESS_TORCH_BIOMECH"))
 	},
 /turf/simulated/floor/tiled/white,
