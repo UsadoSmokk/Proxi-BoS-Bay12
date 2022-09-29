@@ -1,5 +1,5 @@
 /obj/item/gun/projectile/automatic/corpo
-	name = "corporate submachine gun"
+	name = "NT41"
 	desc = "The NT41 Enforcer is a self-defense weapon made on bullpup system. Produced by NanoTrasen for it's Security Force. Looks cool and stylish, but sometimes too uncomfortably to run with it. Uses 6mmR rounds."
 	icon_state = "nt41"
 	item_state = "nt41"
@@ -35,8 +35,8 @@
 	icon_state = (ammo_magazine)? "nt41" : "nt41-e"
 
 /obj/item/gun/projectile/automatic/amrcarabine
-	name = "corporate carabine"
-	desc = "The sielent and deadly and manufactured by Aussec Armory, bullpup carabine LDC-542 is a common weapon for a long-medium ranged combat units in Private Military Companies. Uses 12mmR rounds."
+	name = "LDC-542"
+	desc = "The 'silent' and deadly and manufactured by Aussec Armory, bullpup carabine LDC-542 is a common weapon for a long-medium ranged combat units in Private Military Companies. Uses 12mmR rounds."
 	icon = 'proxima/icons/obj/guns/guns.dmi'
 	icon_state = "amrcarabine"
 	item_state = "z8carbine"
@@ -66,7 +66,7 @@
 
 
 /obj/item/gun/projectile/automatic/pdw
-	name = "corporate personal defense weapons"
+	name = "BP-15"
 	desc = "The BP-15 'Moloh' is a  personal defense weapon, produced by Aussec Armory for use by police spec ops or solders. Uses 6mmR rounds."
 	icon = 'proxima/icons/obj/guns/guns.dmi'
 	icon_state = "pdw"
@@ -85,7 +85,7 @@
 
 	//machine pistol, like SMG but easier to one-hand with
 	firemodes = list(
-		list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=1, move_delay=null),
+		list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=0, move_delay=null),
 		list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=null, move_delay=4, one_hand_penalty=3),
 		list(mode_name="5-round bursts", mode_desc = "Short, controlled bursts", burst=5, fire_delay=null, move_delay=6, one_hand_penalty=3),
 		list(mode_name = "fuller auto",  mode_desc = "800 rounds per minute",   mode_type = /datum/firemode/automatic, fire_delay = 1, one_hand_penalty=5)
@@ -98,3 +98,8 @@
 /obj/item/gun/projectile/automatic/bp15/on_update_icon()
 	icon_state = (ammo_magazine)? "pdw" : "pdw-empty"
 	..()
+
+/obj/item/gun/projectile/automatic/corpo/sec
+	name = "NT41-Smart"
+	desc = "The varriant of NT41 Enforcer is a self-defense weapon made on bullpup system, moddified to have 'smartlock' system widely used in smartgun sidearms. Produced by NanoTrasen for it's Security Force. Looks cool and stylish, but sometimes too uncomfortably to run with it. Uses 6mmR rounds."
+	authorized_modes = list(UNAUTHORIZED)
