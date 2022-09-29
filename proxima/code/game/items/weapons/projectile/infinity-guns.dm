@@ -67,7 +67,7 @@
 
 /obj/item/gun/projectile/automatic/pdw
 	name = "BP-15"
-	desc = "The BP-15 'Moloh' is a  personal defense weapon, produced by Aussec Armory for use by police spec ops or solders. Uses 6mmR rounds."
+	desc = "The BP-15 'Moloh' is a personal defense weapon, produced by Aussec Armory for use by police spec ops or solders. Uses 6mmR rounds."
 	icon = 'proxima/icons/obj/guns/guns.dmi'
 	icon_state = "pdw"
 	item_state = "c20r"
