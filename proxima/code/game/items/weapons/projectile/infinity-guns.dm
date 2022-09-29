@@ -19,7 +19,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/corpo
 	screen_shake = 0.5 //SMG
 
-	firemodes = list(
+	init_firemodes = list(
 		list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=0, move_delay=null),
 		list(mode_name="2-round bursts", mode_desc = "Short, controlled bursts", burst=2, fire_delay=null, move_delay=2, one_hand_penalty=2),
 		list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=null, move_delay=4, one_hand_penalty=3),
@@ -50,7 +50,7 @@
 	ammo_type = /obj/item/ammo_casing/amr
 	wielded_item_state = "z8carbine-wielded"
 	burst_delay = 2
-	firemodes = list(
+	init_firemodes = list(
 		list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=1, move_delay=null),
 		list(mode_name="2-round bursts", mode_desc = "Short, controlled bursts", burst=2, fire_delay=null, move_delay=2, one_hand_penalty=2),
 		list(mode_name = "full auto",  mode_desc = "400 rounds per minute",   mode_type = /datum/firemode/automatic, fire_delay = 4, one_hand_penalty=3)
@@ -84,7 +84,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/pdw
 
 	//machine pistol, like SMG but easier to one-hand with
-	firemodes = list(
+	init_firemodes = list(
 		list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=0, move_delay=null),
 		list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=null, move_delay=4, one_hand_penalty=3),
 		list(mode_name="5-round bursts", mode_desc = "Short, controlled bursts", burst=5, fire_delay=null, move_delay=6, one_hand_penalty=3),
