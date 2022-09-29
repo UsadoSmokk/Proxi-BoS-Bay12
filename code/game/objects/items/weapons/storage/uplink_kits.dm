@@ -184,3 +184,13 @@
 		/obj/item/clothing/suit/armor/pcarrier/merc,
 		/obj/item/clothing/head/helmet/merc
 	)
+
+/obj/item/storage/secure/briefcase/corpamr
+	startswith = list(
+		/obj/item/gun/projectile/automatic/amrcarabine,
+		/obj/item/ammo_magazine/amr
+	)
+
+/obj/item/storage/secure/briefcase/corpamr/Initialize()
+	. = ..()
+	make_exact_fit()

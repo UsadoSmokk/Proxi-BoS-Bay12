@@ -228,3 +228,17 @@
 	item_cost = 12
 	path = /obj/item/gun/projectile/heavysniper/boltaction
 	antag_roles = list(MODE_REVOLUTIONARY)
+
+//Proxima corpguns
+/datum/uplink_item/item/visible_weapons/corpsmg
+	name = "Corporative PDW"
+	desc = "Ol' fashioned BP-15. Remember, not a single word about 'Syndicate'."
+	item_cost = 56
+	path = /obj/item/gun/projectile/automatic/pdw
+
+/datum/uplink_item/item/visible_weapons/corpamr
+	name = "Corporative AMR"
+	desc = "A secure briefcase that contains an immensely powerful carabine  rifle, as well as magazines for it. Make sure that every shot will count."
+	item_cost = 70
+	path = /obj/item/storage/secure/briefcase/corpamr
+	antag_roles = list(MODE_MERCENARY)
