@@ -3,7 +3,7 @@
 #define LIST "list"
 #define ENTRY "entry"
 
-/obj/machinery/disease2/isolator/
+/obj/machinery/disease2/isolator
 	name = "pathogenic isolator"
 	density = 1
 	anchored = 1
@@ -28,7 +28,8 @@
 		icon_state = "isolator"
 
 /obj/machinery/disease2/isolator/attackby(var/obj/O as obj, var/mob/user)
-	if(!istype(O,/obj/item/reagent_containers/syringe)) return
+	if(!istype(O,/obj/item/reagent_containers/syringe))
+		return ..(O, user)
 	if(sample)
 		to_chat(user, "\The [src] is already loaded.")
 		return

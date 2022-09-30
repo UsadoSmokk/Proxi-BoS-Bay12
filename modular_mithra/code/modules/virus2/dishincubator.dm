@@ -1,4 +1,4 @@
-/obj/machinery/disease2/incubator/
+/obj/machinery/disease2/incubator
 	name = "pathogenic incubator"
 	density = 1
 	anchored = 1
@@ -43,6 +43,8 @@
 		SSnano.update_uis(src)
 
 		src.attack_hand(user)
+		return
+	..(O, user)
 
 /obj/machinery/disease2/incubator/interface_interact(mob/user)
 	ui_interact(user)

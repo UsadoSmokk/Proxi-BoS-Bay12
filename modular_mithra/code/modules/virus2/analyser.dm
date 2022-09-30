@@ -11,7 +11,8 @@
 	var/obj/item/virusdish/dish = null
 
 /obj/machinery/disease2/diseaseanalyser/attackby(var/obj/O as obj, var/mob/user as mob)
-	if(!istype(O,/obj/item/virusdish)) return
+	if(!istype(O,/obj/item/virusdish))
+		return ..(O, user)
 
 	if(dish)
 		to_chat(user, "\The [src] is already loaded.")
