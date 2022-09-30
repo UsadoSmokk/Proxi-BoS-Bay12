@@ -1,9 +1,9 @@
 /obj/item/gun/projectile/automatic/corpo
 	name = "NT41"
 	desc = "The NT41 Enforcer is a self-defense weapon made on bullpup system. Produced by NanoTrasen for it's Security Force. Looks cool and stylish, but sometimes too uncomfortably to run with it. Remember, not a single word about 'Syndicate'. Uses 6mmR rounds."
+	icon = 'proxima/icons/obj/guns/guns.dmi'
 	icon_state = "nt41"
 	item_state = "nt41"
-	icon = 'proxima/icons/obj/guns/guns.dmi'
 	wielded_item_state = "nt41-wielded"
 	item_icons = list(
 		slot_r_hand_str = 'proxima/icons/mob/onmob/righthand.dmi',
