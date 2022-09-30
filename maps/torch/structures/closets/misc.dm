@@ -92,12 +92,13 @@
 /obj/structure/closet/secure_closet/representative/WillContain()
 	return list(
 		/obj/item/device/flash,
+			/obj/item/clothing/suit/armor/pcarrier/medium,
+		/obj/item/clothing/head/helmet,
 		/obj/item/device/camera_film = 2,
 		/obj/item/material/clipboard,
 		/obj/item/folder,
 		/obj/item/device/tape/random = 3,
 		/obj/item/storage/secure/briefcase,
-		/obj/item/rig/light/internalaffairs,
 		/obj/item/device/radio/headset/terran,
 		/obj/item/clothing/shoes/terran,
 		/obj/item/clothing/under/terran/navy/service/command,
@@ -111,7 +112,7 @@
 
 /obj/structure/closet/secure_closet/solguard
 	name = "\improper ICCG guard's locker"
-	req_access = list(access_petrov_security)	// Why here was Science "Security Guard" Access anyway?
+	req_access = list(access_representative)	// Why here was Science "Security Guard" Access anyway? -laxesh //who cares, this fucking locker wasn't even used, bruh. -evie
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
 
 /obj/structure/closet/secure_closet/solguard/WillContain()
@@ -128,7 +129,8 @@
 		/obj/item/clothing/head/terran/navy/service,
 		/obj/item/clothing/shoes/terran,
 		/obj/item/device/flashlight/maglight,
-		/obj/item/device/radio/headset/terran
+		/obj/item/device/radio/headset/terran,
+		/obj/item/gunbox/pol
 		)
 
 

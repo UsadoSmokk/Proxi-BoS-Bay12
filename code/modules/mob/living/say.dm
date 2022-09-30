@@ -20,6 +20,7 @@ var/global/list/department_radio_keys = list(
 	  ":o" = "Response Team",".o" = "Response Team", //ERT
 	  ":j" = "Hailing", ".j" = "Hailing",
 	  ":a" = "Infantry",	".a" = "Infantry", //bos
+	  ":g" = "Terran",		".g" = "Terran",	//Bos
 
 	  ":R" = "right ear",	".R" = "right ear",
 	  ":L" = "left ear",	".L" = "left ear",
@@ -41,6 +42,7 @@ var/global/list/department_radio_keys = list(
 	  ":O" = "Response Team", ".O" = "Response Team",
 	  ":J" = "Hailing", ".J" = "Hailing",
 	  ":A" = "Infantry",	".A" = "Infantry", //bos
+	  ":G" = "Terran",		".G" = "Terran",	//Bos
 
 	  //kinda localization -- Sweden_Moose
 	  ":к" = "right ear",	".к" = "right ear",
@@ -64,6 +66,7 @@ var/global/list/department_radio_keys = list(
 	  ":щ" = "Response Team",".щ" = "Response Team", //ERT
 	  ":о" = "Hailing", ".о" = "Hailing",
 	  ":ф" = "Infantry",	".ф" = "Infantry", //bos
+  	  ":п" = "Terran",		".п" = "Terran",	//Bos
 
 	  ":К" = "right ear",	".К" = "right ear",
 	  ":Д" = "left ear",	".Д" = "left ear",
@@ -85,6 +88,7 @@ var/global/list/department_radio_keys = list(
 	  ":Щ" = "Response Team", ".Щ" = "Response Team",
 	  ":О" = "Hailing", ".О" = "Hailing",
 	  ":Ф" = "Infantry",	".Ф" = "Infantry", //bos
+   	  ":П" = "Terran",		".П" = "Terran",	//Bos
 )
 
 

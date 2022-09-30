@@ -55,7 +55,7 @@
 	id = "Receiver A"
 	network = "tcommsat"
 	autolinkers = list("receiverA") // link to relay
-	freq_listening = list(AI_FREQ, SCI_FREQ, MED_FREQ, SUP_FREQ, SRV_FREQ, COMM_FREQ, ENG_FREQ, SEC_FREQ, INF_FREQ, ENT_FREQ, HAIL_FREQ) //inf_freq - bos
+	freq_listening = list(AI_FREQ, SCI_FREQ, MED_FREQ, SUP_FREQ, SRV_FREQ, COMM_FREQ, ENG_FREQ, SEC_FREQ, INF_FREQ, ENT_FREQ, HAIL_FREQ, TERR_FREQ) //inf_freq, TERR_FREQ - bos
 
 	//Common and other radio frequencies for people to freely use
 /obj/machinery/telecomms/receiver/preset_right/New()
@@ -100,7 +100,7 @@
 /obj/machinery/telecomms/bus/preset_two
 	id = "Bus 2"
 	network = "tcommsat"
-	freq_listening = list(SUP_FREQ, SRV_FREQ)
+	freq_listening = list(SUP_FREQ, SRV_FREQ, TERR_FREQ) // TERR_FREQ - bos
 	autolinkers = list("processor2", "supply", "service")
 
 /obj/machinery/telecomms/bus/preset_three
@@ -249,8 +249,8 @@
 
 /obj/machinery/telecomms/server/presets/command
 	id = "Command Server"
-	freq_listening = list(COMM_FREQ)
-	channel_tags = list(list(COMM_FREQ, "Command", COMMS_COLOR_COMMAND))
+	freq_listening = list(COMM_FREQ, TERR_FREQ)
+	channel_tags = list(list(COMM_FREQ, "Command", COMMS_COLOR_COMMAND), list(TERR_FREQ, "Terran", COMMS_COLOR_VOX))
 	autolinkers = list("command")
 
 /obj/machinery/telecomms/server/presets/engineering

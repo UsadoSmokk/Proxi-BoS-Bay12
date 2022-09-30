@@ -74,7 +74,7 @@
 /obj/item/device/encryptionkey/terran
 	name = "terran encryption key"
 	icon_state = "com_cypherkey"
-	channels = list("Command" = 1)
+	channels = list("Command" = 1, "Terran" = 1)
 
 /obj/item/device/encryptionkey/heads/marcom
 	name = "marine officer's encryption key"
