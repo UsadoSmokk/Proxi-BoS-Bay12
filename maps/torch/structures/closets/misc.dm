@@ -119,9 +119,6 @@
 	return list(
 		/obj/item/device/flash,
 		/obj/item/clothing/accessory/storage/holster/armpit,
-		/obj/item/gun/projectile/pistol/military,
-		/obj/item/ammo_magazine/pistol/double = 2,
-		/obj/item/ammo_magazine/pistol/double/rubber = 2,
 		/obj/item/gun/energy/laser/secure/ceremonial,
 		/obj/item/storage/secure/briefcase,
 		/obj/item/clothing/under/terran/navy/service,
