@@ -27,12 +27,14 @@
 		product.reagents.add_reagent(/datum/reagent/blood,30,data)
 
 		virusing = 1
-		spawn(1200) virusing = 0
+		addtimer(CALLBACK(src, .proc/resetCloningTimer), 1 MINUTE)
 
 		state("The [src.name] Buzzes", "blue")
 		return
-	..()
-	return
+	..(I, user)
+
+/obj/machinery/computer/curer/proc/resetCloningTimer()
+	virusing = 0
 
 /obj/machinery/computer/curer/interface_interact(var/mob/user)
 	interact(user)
