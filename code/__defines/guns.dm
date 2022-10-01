@@ -6,7 +6,7 @@
 #define CALIBER_PISTOL_CUSTOM	".38 special" //delete this properly
 #define CALIBER_PISTOL_MAGNUM_LARGE ".454mm" //boh
 #define CALIBER_PISTOL_FRANGIBLE "7mmF" //boh
-#define CALIBER_PISTOL_FAST 	"6mmR" //proxima
+#define CALIBER_PISTOL_FAST 	"8mm" //proxima
 
 #define CALIBER_RIFLE			"5mmR"
 #define CALIBER_RIFLE_MILITARY  "7mmR"
