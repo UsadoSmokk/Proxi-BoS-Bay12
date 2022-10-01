@@ -30,3 +30,6 @@
 		src.icon_state = "scanner_open"
 	else
 		src.icon_state = "scanner_green"
+
+/decl/cultural_info/culture/nabber/b
+	valid_jobs = list(/datum/job/canworker) //bos

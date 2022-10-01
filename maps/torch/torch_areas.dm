@@ -354,6 +354,7 @@
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/plating
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+	holomap_color = HOLOMAP_AREACOLOR_EXPLORATION
 
 /area/exploration_shuttle/cockpit
 	name = "\improper LSS Charon - Cockpit"
@@ -383,6 +384,7 @@
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+	holomap_color = HOLOMAP_AREACOLOR_MARINES
 
 /area/aquila/cockpit
 	name = "\improper LAS Aquila - Cockpit"
@@ -435,6 +437,7 @@
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	req_access = list(access_medical)
+	holomap_color = HOLOMAP_AREACOLOR_MEDICAL
 
 
 //Petrov
@@ -445,6 +448,7 @@
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	req_access = list(access_research)
+	holomap_color = HOLOMAP_AREACOLOR_SCIENCE
 
 /area/shuttle/petrov/cell1
 	name = "\improper LRL Petrov - Isolation Cell 1"
@@ -611,6 +615,8 @@
 	base_turf = /turf/simulated/floor
 
 // Command
+// the fuck 2 commands?
+/area/command/holomap_color = HOLOMAP_AREACOLOR_COMMAND
 /area/command/conference
 	name = "Briefing Room"
 	icon_state = "head_quarters"
@@ -723,6 +729,7 @@
 
 // Engineering
 
+/area/engineering/holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 /area/engineering/shieldbay
 	name = "Shield Bay"
 	icon_state = "engineering"
@@ -833,9 +840,10 @@
 	req_access = list(access_research)
 
 // Supply
-
+//TODO FUCK ANYONE WHO REPLACED CARGO WITH QM ~Laxesh BoS
 /area/quartermaster
 	req_access = list(access_cargo)
+	holomap_color = HOLOMAP_AREACOLOR_CARGO
 
 /area/quartermaster/office
 	name = "\improper Supply Office"
@@ -862,6 +870,7 @@
 	name = "\improper Expedition Preparation"
 	icon_state = "mining"
 	req_access = list(list(access_mining, access_nanotrasen, access_xenoarch))
+	holomap_color = HOLOMAP_AREACOLOR_EXPLORATION
 
 /area/quartermaster/expedition/eva
 	name = "\improper Expedition EVA"
@@ -1209,11 +1218,12 @@
 	req_access = list(access_atmospherics)
 
 // Command
-
+// why not command?
 /area/bridge
 	name = "\improper LRS Antares Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
+	holomap_color = HOLOMAP_AREACOLOR_COMMAND
 
 /area/bridge/hallway
 	name = "\improper Bridge Access Hallway"
@@ -1712,6 +1722,7 @@
 	icon = 'icons/boh/area.dmi'
 	icon_state = "guntemp"
 	req_access = list(access_gunnery)
+	holomap_color = HOLOMAP_AREACOLOR_GUNNERY
 
 /area/command/gunnery/missiles
 	name = "\improper Missile Pod Exterior"
@@ -1783,6 +1794,7 @@
 	icon_state = "crew_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_marines)
+	holomap_color = HOLOMAP_AREACOLOR_MARINES
 
 /area/security/marines/gear
 	name = "\improper Technician Prep"

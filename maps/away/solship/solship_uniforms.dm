@@ -1,3 +1,9 @@
+// Who the fuck are those one, then? ~Laxesh
+/decl/hierarchy/outfit/job/solship
+	name = OUTFIT_JOB_NAME("Shitcode sucker the I")
+/decl/hierarchy/outfit/job/solship/crew
+	name = OUTFIT_JOB_NAME("Shitcode sucker the II")
+
 /decl/hierarchy/outfit/job/solship/crew/fleet
 	name = OUTFIT_JOB_NAME("Solship Fleet Outfit")
 	hierarchy_type = /decl/hierarchy/outfit/job/solship/crew/fleet
