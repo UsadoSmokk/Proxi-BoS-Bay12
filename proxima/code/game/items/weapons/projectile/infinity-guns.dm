@@ -2,7 +2,7 @@
 	name = "SN42"
 	desc = "The SN42 Enforcer or simply Syndie 42 is a self-defense weapon made on bullpup system. Formely produced by Syndicate for it's Corporate Force. Looks cool and stylish, but sometimes too uncomfortably to run with it. Uses 6mmR rounds."
 	icon = 'proxima/icons/obj/guns/guns.dmi'
-  icon_state = "nt41"
+	icon_state = "nt41"
 	item_state = "nt41"
 	wielded_item_state = "nt41-wielded"
 	item_icons = list(
@@ -96,7 +96,7 @@
 	one_hand_penalty = 3
 
 /obj/item/gun/projectile/automatic/bp15/on_update_icon()
-	icon_state = (ammo_magazine)? "pdw" : "pdw-empty"
+	icon_state = (ammo_magazine)? "pdw" : "pdw-e"
 	..()
 
 /obj/item/gun/projectile/automatic/corpo/sec
