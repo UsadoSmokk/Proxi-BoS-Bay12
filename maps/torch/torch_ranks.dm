@@ -701,7 +701,7 @@
 	sort_order = 17
 
 /datum/mil_rank/larmarine/o3
-	name = "Captain "
+	name = "Captain"
 	name_short = "CPT"
 	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/officer/o3)
 	sort_order = 18
