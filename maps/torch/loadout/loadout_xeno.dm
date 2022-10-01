@@ -32,3 +32,10 @@
 	whitelisted = list(SPECIES_NABBER)
 	allowed_roles = ENGINEERING_ROLES
 	sort_category = "Xenowear"
+
+/datum/gear/skrell_bodysuit
+	display_name = "skrell jumpsuit"
+	path = /obj/item/clothing/under/skrelljumpsuit
+	sort_category = "Xenowear"
+	whitelisted = list(SPECIES_SKRELL)
+	cost = 1

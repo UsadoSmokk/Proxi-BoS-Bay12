@@ -1,4 +1,4 @@
-/datum/sprite_accessory/hair/vox/bos/vox_punk
+/datum/sprite_accessory/hair/vox/bos
 	name = "Punk Razor"
 	icon = 'icons/bos/mob/human_races/species/vox/hair.dmi'
 	icon_state = "vox_punk"

@@ -88,7 +88,7 @@
 	economic_power = 20
 	minimal_player_age = 6
 	minimum_character_age = list(SPECIES_HUMAN = 35, SPECIES_SKRELL = 35)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/cso
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cso
 	allowed_branches = list(
 		/datum/mil_branch/lord
 	)

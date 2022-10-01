@@ -8483,7 +8483,7 @@
 "azp" = (
 /obj/machinery/porta_turret/exterior/dagon,
 /turf/simulated/floor/reinforced/airless,
-/area/rnd/xenobiology)
+/area/space)
 "azq" = (
 /obj/machinery/light,
 /obj/structure/extinguisher_cabinet{

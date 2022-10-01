@@ -388,6 +388,12 @@ var/global/const/access_research_storage = "ACCESS_RESEARCH_STORAGE"
 	desc = "Science Storage"
 	region = ACCESS_REGION_RESEARCH
 
+/var/const/access_pilot = "ACCESS_PILOT"
+/datum/access/pilot
+	id = access_pilot
+	desc = "Pilot"
+	region = ACCESS_REGION_GENERAL
+
 /******************
 * Central Command *
 ******************/

@@ -74,7 +74,7 @@
 	..()
 	BACKPACK_OVERRIDE_SECURITY
 
-/decl/hierarchy/outfit/job/torch/crew/research/cso
+/decl/hierarchy/outfit/job/torch/crew/command/cso
 	name = OUTFIT_JOB_NAME("Research Director - Antares")
 	uniform = /obj/item/clothing/under/suit_jacket/really_black
 	l_ear = /obj/item/device/radio/headset/heads/torchntdirector
