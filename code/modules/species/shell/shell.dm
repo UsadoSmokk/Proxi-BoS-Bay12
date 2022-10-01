@@ -22,7 +22,7 @@
 	strength = STR_HIGH
 
 	min_age = 1
-	max_age = 15
+	max_age = 55
 
 	warning_low_pressure = 50
 	hazard_low_pressure = -1
