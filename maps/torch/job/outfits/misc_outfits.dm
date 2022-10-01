@@ -58,6 +58,6 @@
 	id = null
 
 /decl/hierarchy/outfit/job/torch/stowaway/post_equip(var/mob/living/carbon/human/H)
-    ..()
-    var/obj/item/card/id/torch/stowaway/ID = new(H.loc)
-    H.equip_to_slot_or_store_or_drop(ID, id_slot)
+	..()
+	var/obj/item/card/id/torch/stowaway/ID = new(H.loc)
+	H.equip_to_slot_or_store_or_drop(ID, id_slot)

@@ -25,6 +25,7 @@
 			I.forceMove(src)
 			user.visible_message("[user] adds a sample to \the [src]!", "You add a sample to \the [src]!")
 		return
+	..(I, user)
 
 /obj/machinery/disease2/antibodyanalyser/Process()
 	if(stat & (NOPOWER|BROKEN))

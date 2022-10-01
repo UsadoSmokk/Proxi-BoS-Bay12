@@ -99,6 +99,8 @@
 	#include "items/mecha.dm"
 	#include "items/memos.dm"
 
+	#include "items\ziptie.dm"
+
 	#include "../../packs/faction_iccgn/_pack.dm"
 
 	#include "items/clothing/ec_skillbadges.dm"
@@ -109,6 +111,11 @@
 	#include "items/clothing/solgov-head.dm"
 	#include "items/clothing/solgov-suit.dm"
 	#include "items/clothing/solgov-under.dm"
+
+	#include "items/clothing/boh_accessory.dm"
+	#include "items/clothing/boh_clothing.dm"
+	#include "items/clothing/boh_head.dm"
+	#include "items/clothing/boh_under.dm"
 
 	#include "items/weapon/storage/wallets.dm"
 
@@ -143,6 +150,8 @@
 	#include "machinery/keycard authentication.dm"
 	#include "machinery/suit_storage.dm"
 
+	#include "machinery/rewards.dm"
+
 	#include "outfits/scgec.dm"
 
 	#include "robot/module_flying_surveyor.dm"
@@ -160,6 +169,8 @@
 	#include "structures/closets/supply.dm"
 	#include "structures/closets/exploration.dm"
 
+	#include "structures/closets/munitions.dm"
+
 	#include "loadout/_defines.dm"
 	#include "loadout/loadout_accessories.dm"
 	#include "loadout/loadout_accessories_boh.dm"
@@ -176,6 +187,9 @@
 	#include "loadout/loadout_augments.dm"
 	#include "loadout/loadout_sikits.dm"
 	#include "loadout/loadout_military.dm"
+
+	#include "loadout/zaglushka.dm"
+
 	#include "loadout/~defines.dm"
 
 	#include "torch1_deck5.dmm"

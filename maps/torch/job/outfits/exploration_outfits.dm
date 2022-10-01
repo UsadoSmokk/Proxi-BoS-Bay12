@@ -29,7 +29,7 @@
 	head = /obj/item/clothing/head/helmet/solgov/pilot
 	pda_type = /obj/item/modular_computer/pda/explorer
 
-/decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
+/decl/hierarchy/outfit/job/torch/crew/exploration/pilot_fleet
 	name = OUTFIT_JOB_NAME("Shuttle Pilot - Fleet")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/command/pilot
 	shoes = /obj/item/clothing/shoes/lordan

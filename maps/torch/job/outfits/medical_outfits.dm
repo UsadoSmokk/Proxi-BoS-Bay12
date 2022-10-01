@@ -9,7 +9,7 @@
 	BACKPACK_OVERRIDE_MEDICAL
 
 /decl/hierarchy/outfit/job/torch/crew/medical/senior
-	name = OUTFIT_JOB_NAME("Surgeon")
+	name = OUTFIT_JOB_NAME("Surgeon - Antares")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/medical
 	shoes = /obj/item/clothing/shoes/lordan
 	id_types= list(/obj/item/card/id/torch/crew/medical/senior)
@@ -26,6 +26,9 @@
 	name = OUTFIT_JOB_NAME("Virologist - Fleet")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/medical
 	shoes = /obj/item/clothing/shoes/lordan
+
+/decl/hierarchy/outfit/job/torch/crew/medical/contractor
+	name = OUTFIT_JOB_NAME("Medic - Contractor. (BoS. A.K.A. Bastion of Shitcode)")
 
 /decl/hierarchy/outfit/job/torch/crew/medical/contractor/senior
 	name = OUTFIT_JOB_NAME("Surgeon - Contractor")

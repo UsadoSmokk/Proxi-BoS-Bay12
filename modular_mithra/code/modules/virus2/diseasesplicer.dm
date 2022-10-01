@@ -13,9 +13,6 @@
 	var/scanning = 0
 
 /obj/machinery/computer/diseasesplicer/attackby(var/obj/I as obj, var/mob/user as mob)
-	if(isScrewdriver(I))
-		return ..(I,user)
-
 	if(istype(I,/obj/item/virusdish))
 		if (dish)
 			to_chat(user, "\The [src] is already loaded.")
@@ -23,6 +20,7 @@
 		if(!user.unEquip(I, src))
 			return
 		dish = I
+		return
 
 	if(istype(I,/obj/item/diseasedisk))
 		to_chat(user, "You upload the contents of the disk onto the buffer.")
@@ -30,8 +28,9 @@
 		memorybank = disk.effect
 		species_buffer = disk.species
 		analysed = disk.analysed
+		return
 
-	src.attack_hand(user)
+	..(I,user)
 
 /obj/machinery/computer/diseasesplicer/interface_interact(var/mob/user)
 	ui_interact(user)

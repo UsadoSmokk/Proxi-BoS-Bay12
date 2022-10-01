@@ -117,12 +117,6 @@
 	desc = "Pathfinder"
 	region = ACCESS_REGION_GENERAL
 
-/var/const/access_pilot = "ACCESS_TORCH_PILOT" //95
-/datum/access/pilot
-	id = access_pilot
-	desc = "Pilot"
-	region = ACCESS_REGION_GENERAL
-
 /var/const/access_marines = "ACCESS_MARINES"
 /datum/access/marines
 	id = access_marines
