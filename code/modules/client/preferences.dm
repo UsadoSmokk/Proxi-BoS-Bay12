@@ -37,6 +37,8 @@
 	var/datum/category_collection/player_setup_collection/player_setup
 	var/datum/browser/panel
 
+	var/datum/floating_chat_color //aurora
+
 /datum/preferences/New(client/C)
 	if(istype(C))
 		client = C
@@ -231,6 +233,7 @@
 
 	character.gender = gender
 	character.age = age
+	character.set_floating_chat_color(floating_chat_color) //aurora
 	character.b_type = b_type
 
 	character.eye_color = eye_color
