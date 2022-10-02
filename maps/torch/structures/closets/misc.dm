@@ -112,7 +112,7 @@
 
 /obj/structure/closet/secure_closet/solguard
 	name = "\improper ICCG guard's locker"
-	req_access = list(access_representative)	// Why here was Science "Security Guard" Access anyway? -laxesh //who cares, this fucking locker wasn't even used, bruh. -evie
+	req_access = list(access_representative)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
 
 /obj/structure/closet/secure_closet/solguard/WillContain()

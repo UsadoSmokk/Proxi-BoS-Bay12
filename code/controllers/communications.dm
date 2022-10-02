@@ -174,7 +174,7 @@ var/global/list/radiochannels = list(
 	"Entertainment" = ENT_FREQ,
 	"Medical (I)"	= MED_I_FREQ,
 	"Security (I)"	= SEC_I_FREQ,
-	"Recon"			= SKRELL_FREQ, //boh
+	"Recon"			= SKRELL_FREQ, //boh,
 	"Terran"		= TERR_FREQ,
 	"SCG Fleet"		= SOL_FREQ
 )
