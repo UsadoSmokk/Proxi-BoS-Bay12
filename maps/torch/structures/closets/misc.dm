@@ -92,7 +92,7 @@
 /obj/structure/closet/secure_closet/representative/WillContain()
 	return list(
 		/obj/item/device/flash,
-			/obj/item/clothing/suit/armor/pcarrier/medium,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/clothing/head/helmet,
 		/obj/item/device/camera_film = 2,
 		/obj/item/material/clipboard,
