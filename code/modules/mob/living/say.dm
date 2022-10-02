@@ -42,7 +42,7 @@ var/global/list/department_radio_keys = list(
 	  ":O" = "Response Team", ".O" = "Response Team",
 	  ":J" = "Hailing", ".J" = "Hailing",
 	  ":A" = "Infantry",	".A" = "Infantry", //bos
-	  ":G" = "Terran",		".G" = "Terran",	//Bos
+	  ":G" = "Terran",		".G" = "Terran",	//Bos,
 
 	  //kinda localization -- Sweden_Moose
 	  ":к" = "right ear",	".к" = "right ear",
