@@ -60,3 +60,9 @@
 	path = /obj/item/ammo_magazine/corpo
 	hidden = 1
 	category = "Arms and Ammunition"
+
+/datum/fabricator_recipe/arms_ammo/magazine_bp15
+	name = "ammunition (corporate pdw magazine)"
+	path = 	/obj/item/ammo_magazine/pdw
+	hidden = 1
+	category = "Arms and Ammunition"
