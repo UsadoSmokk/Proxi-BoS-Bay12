@@ -3,7 +3,7 @@ var/global/list/department_radio_keys = list(
 	  ":l" = "left ear",	".l" = "left ear",
 	  ":i" = "intercom",	".i" = "intercom",
 	  ":h" = "department",	".h" = "department",
-	  ":+" = "special",		".+" = "special", //activate radio-specific special functions
+	  ":+" = "special",		".+" = "special", //activate radio-specific special functions,
 	  ":c" = "Command",		".c" = "Command",
 	  ":n" = "Science",		".n" = "Science",
 	  ":m" = "Medical",		".m" = "Medical",
@@ -17,9 +17,9 @@ var/global/list/department_radio_keys = list(
 	  ":p" = "AI Private",	".p" = "AI Private",
 	  ":z" = "Entertainment",".z" = "Entertainment",
 	  ":y" = "Exploration",		".y" = "Exploration",
-	  ":o" = "Response Team",".o" = "Response Team", //ERT
+	  ":o" = "Response Team",".o" = "Response Team", //ERT,
 	  ":j" = "Hailing", ".j" = "Hailing",
-	  ":a" = "Infantry",	".a" = "Infantry", //bos
+	  ":a" = "Infantry",	".a" = "Infantry", //bos,
 	  ":g" = "Terran",		".g" = "Terran",	//Bos,
 
 	  ":R" = "right ear",	".R" = "right ear",
@@ -41,7 +41,7 @@ var/global/list/department_radio_keys = list(
 	  ":Y" = "Exploration",		".Y" = "Exploration",
 	  ":O" = "Response Team", ".O" = "Response Team",
 	  ":J" = "Hailing", ".J" = "Hailing",
-	  ":A" = "Infantry",	".A" = "Infantry", //bos
+	  ":A" = "Infantry",	".A" = "Infantry", //bos,
 	  ":G" = "Terran",		".G" = "Terran",	//Bos,
 
 	  //kinda localization -- Sweden_Moose
@@ -49,7 +49,7 @@ var/global/list/department_radio_keys = list(
 	  ":д" = "left ear",	".д" = "left ear",
 	  ":ш" = "intercom",	".ш" = "intercom",
 	  ":р" = "department",	".р" = "department",
-	  ":+" = "special",		".+" = "special", //activate radio-specific special functions
+	  ":+" = "special",		".+" = "special", //activate radio-specific special functions,
 	  ":с" = "Command",		".с" = "Command",
 	  ":т" = "Science",		".т" = "Science",
 	  ":ь" = "Medical",		".ь" = "Medical",
@@ -63,9 +63,9 @@ var/global/list/department_radio_keys = list(
 	  ":з" = "AI Private",	".з" = "AI Private",
 	  ":я" = "Entertainment",".я" = "Entertainment",
 	  ":н" = "Exploration",		".н" = "Exploration",
-	  ":щ" = "Response Team",".щ" = "Response Team", //ERT
+	  ":щ" = "Response Team",".щ" = "Response Team", //ERT,
 	  ":о" = "Hailing", ".о" = "Hailing",
-	  ":ф" = "Infantry",	".ф" = "Infantry", //bos
+	  ":ф" = "Infantry",	".ф" = "Infantry", //bos,
   	  ":п" = "Terran",		".п" = "Terran",	//Bos,
 
 	  ":К" = "right ear",	".К" = "right ear",
@@ -87,7 +87,7 @@ var/global/list/department_radio_keys = list(
 	  ":Н" = "Exploration",		".Н" = "Exploration",
 	  ":Щ" = "Response Team", ".Щ" = "Response Team",
 	  ":О" = "Hailing", ".О" = "Hailing",
-	  ":Ф" = "Infantry",	".Ф" = "Infantry", //bos
+	  ":Ф" = "Infantry",	".Ф" = "Infantry", //bos,
    	  ":П" = "Terran",		".П" = "Terran",	//Bos,
 )
 
