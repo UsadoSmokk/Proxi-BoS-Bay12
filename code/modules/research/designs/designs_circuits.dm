@@ -226,12 +226,19 @@
 	build_path = /obj/item/stock_parts/circuitboard/autolathe
 	sort_string = "HABAD"
 
+/datum/design/circuit/weaponfab
+	name = "weapon fabricator board"
+	id = "weaponfab"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2, TECH_COMBAT = 2)
+	build_path = /obj/item/stock_parts/circuitboard/weaponsfab/rnd
+	sort_string = "HABAE"
+
 /datum/design/circuit/replicator
 	name = "replicator board"
 	id = "replicator"
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 3, TECH_BIO = 3)
 	build_path = /obj/item/stock_parts/circuitboard/replicator
-	sort_string = "HABAE"
+	sort_string = "HABAG"
 
 /datum/design/circuit/microlathe
 	name = "microlathe board"

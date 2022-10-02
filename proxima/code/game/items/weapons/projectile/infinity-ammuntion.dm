@@ -1,7 +1,7 @@
 // Ammo cassings
 
 /obj/item/ammo_casing/corpo
-	desc = "A high-powered bullet casing. Somwewhat between 5-6mm."
+	desc = "A high-powered bullet casing. Somwewhat between 7-8mm."
 	caliber = CALIBER_PISTOL_FAST
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/fast
 
@@ -15,7 +15,7 @@
 	matter = list(MATERIAL_STEEL = 500)
 
 /obj/item/ammo_casing/pdw
-	desc = "A bullet casing. Somewhat near 5,5mm"
+	desc = "A bullet casing. Somewhat near 7,5mm"
 	caliber = CALIBER_PISTOL_FAST
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/fast
 
@@ -58,5 +58,11 @@
 /datum/fabricator_recipe/arms_ammo/magazine_nt41
 	name = "ammunition (corporate smg magazine)"
 	path = /obj/item/ammo_magazine/corpo
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/fabricator_recipe/arms_ammo/magazine_bp15
+	name = "ammunition (corporate pdw magazine)"
+	path = 	/obj/item/ammo_magazine/pdw
 	hidden = 1
 	category = "Arms and Ammunition"

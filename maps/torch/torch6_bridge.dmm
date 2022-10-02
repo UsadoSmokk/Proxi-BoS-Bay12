@@ -307,9 +307,9 @@
 /area/maintenance/bridge/forestarboard)
 "aG" = (
 /obj/machinery/porta_turret/exterior/dagon{
-	maxhealth = 100000;
-	health = 100000;
 	auto_repair = 1;
+	health = 100000;
+	maxhealth = 100000;
 	shot_delay = 3
 	},
 /turf/simulated/floor/airless,
@@ -4537,6 +4537,15 @@
 /obj/effect/shuttle_landmark/merc/deck5,
 /turf/space,
 /area/space)
+"jf" = (
+/obj/machinery/porta_turret/exterior/dagon{
+	auto_repair = 1;
+	health = 100000;
+	maxhealth = 100000;
+	shot_delay = 3
+	},
+/turf/simulated/floor/airless,
+/area/bridge/storage)
 "jh" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/drone_fabricator/dagon/adv,
@@ -7035,6 +7044,15 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/bridge/discip)
+"qH" = (
+/obj/machinery/porta_turret/exterior/dagon{
+	auto_repair = 1;
+	health = 100000;
+	maxhealth = 100000;
+	shot_delay = 3
+	},
+/turf/simulated/floor/airless,
+/area/bridge)
 "qI" = (
 /obj/structure/lordbanner,
 /turf/simulated/floor/tiled/dark,
@@ -8208,6 +8226,7 @@
 /area/turret_protected/ai_data_chamber)
 "ui" = (
 /mob/living/simple_animal/passive/cat/caracal/grisha,
+/obj/structure/bed/chair/padded/black,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
 "uj" = (
@@ -8222,6 +8241,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
+/obj/structure/bed/chair/padded/black,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
 "uk" = (
@@ -8869,10 +8889,10 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/obj/structure/closet/secure_closet/representative,
 /obj/item/storage/firstaid,
 /obj/item/gun/energy/gun/secure,
 /obj/item/clothing/accessory/storage/holster/thigh,
+/obj/structure/closet/secure_closet/solguard,
 /turf/simulated/floor/carpet/red,
 /area/crew_quarters/heads/office/cl)
 "wc" = (
@@ -8890,9 +8910,10 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/obj/structure/closet/secure_closet/representative,
 /obj/item/gun/energy/gun/secure,
 /obj/item/clothing/accessory/storage/holster/thigh,
+/obj/structure/closet/secure_closet/solguard,
+/obj/item/storage/firstaid,
 /turf/simulated/floor/carpet/red,
 /area/crew_quarters/heads/office/cl)
 "wh" = (

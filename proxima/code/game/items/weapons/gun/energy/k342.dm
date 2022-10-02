@@ -103,7 +103,7 @@
 	return TRUE
 
 /obj/item/gun/energy/k342
-	name = "plasma rifle"
+	name = "K342 Barrakuda"
 	desc = "K342 Barrakuda is the latest plasma weapon created by NanoTrasen. It can fire several types of charges: stunning, incendiary and lethal."
 	icon = 'proxima/icons/obj/guns/k342.dmi'
 	w_class = ITEM_SIZE_LARGE
@@ -150,13 +150,14 @@
 		icon_state = "[initial(item_state)]_off"
 
 /obj/item/gun/energy/k342/sniper
-	name = "plasma sniper rifle"
+	name = "K480 Skat"
 	desc = "K480 Skat is the latest heavy plasma weapon created by NanoTrasen for SolGov snipers, capable to fire several types of charges: stunning, incendiary, and lethal bolts. Advanced magnetic constriction technology improves accuracy and firepower."
 	icon = 'proxima/icons/obj/guns/k480.dmi'
 	icon_state = "mantis_off"
 	item_state = "mantis"
 	w_class = ITEM_SIZE_LARGE
 	slot_flags = SLOT_BACK
+	origin_tech = list(TECH_COMBAT=6, TECH_MATERIAL=3, TECH_POWER=6)
 	scoped_accuracy = 6
 	scope_zoom = 1.5
 	init_firemodes = list(
