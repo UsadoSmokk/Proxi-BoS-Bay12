@@ -207,6 +207,7 @@
 #include "code\bos\modules\clothing\hardhat_boh.dm"
 #include "code\bos\modules\clothing\kgb_hat.dm"
 #include "code\bos\modules\clothing\peacoat.dm"
+#include "code\bos\modules\clothing\sexysuits.dm"
 #include "code\bos\modules\clothing\shieldarmor.dm"
 #include "code\bos\modules\clothing\sombrero.dm"
 #include "code\bos\modules\clothing\suit.dm"
