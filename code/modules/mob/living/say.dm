@@ -66,7 +66,7 @@ var/global/list/department_radio_keys = list(
 	  ":щ" = "Response Team",".щ" = "Response Team", //ERT
 	  ":о" = "Hailing", ".о" = "Hailing",
 	  ":ф" = "Infantry",	".ф" = "Infantry", //bos
-  	  ":п" = "Terran",		".п" = "Terran",	//Bos
+  	  ":п" = "Terran",		".п" = "Terran",	//Bos,
 
 	  ":К" = "right ear",	".К" = "right ear",
 	  ":Д" = "left ear",	".Д" = "left ear",
