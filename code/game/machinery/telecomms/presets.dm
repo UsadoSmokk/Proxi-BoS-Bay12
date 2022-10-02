@@ -106,7 +106,7 @@
 /obj/machinery/telecomms/bus/preset_three
 	id = "Bus 3"
 	network = "tcommsat"
-	freq_listening = list(SEC_FREQ, COMM_FREQ, INF_FREQ, TERR_FREQ) //inf_freq, TERR_FREQ - bos
+	freq_listening = list(SEC_FREQ, COMM_FREQ, INF_FREQ, TERR_FREQ) //inf_freq, TERR_FREQ - bos,
 	autolinkers = list("processor3", "security", "command", "infantry") //infantry - bos
 
 /obj/machinery/telecomms/bus/preset_four
