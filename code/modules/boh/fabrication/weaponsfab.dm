@@ -330,3 +330,9 @@
 		/obj/item/stock_parts/keyboard = 1,
 		/obj/item/stock_parts/power/apc/buildable = 1
 	)
+
+/obj/machinery/weapons_fabricator/rnd
+	req_access = null
+
+/obj/item/stock_parts/circuitboard/weaponsfab/rnd
+	build_path = /obj/machinery/weapons_fabricator/rnd
