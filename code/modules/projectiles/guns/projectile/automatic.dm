@@ -249,8 +249,8 @@
 		overlays += image(icon, "ammo-bad")
 
 /obj/item/gun/projectile/automatic/bullpup_rifle
-	name = "Hephaestus Z9 Bulldog" //boh
-	desc = "The Hephaestus Industries Z9 Bulldog is the standard weapon of the Solarian Marines. It's durable yet ergonomic design has proved itself across hundreds of battlefields!" //boh
+	name = "Z9 Bulldog" //boh
+	desc = "The Hephaestus Industries Z9 Bulldog is an unmatched design once was standard issued in SCG Fleet. Now those times are long gone. It's durable yet ergonomic design has proved itself across hundreds of battlefields! Uses 7mmR bullets." //boh
 	icon = 'icons/obj/guns/bullpup_rifle.dmi'
 	icon_state = "carbine"
 	item_state = "z8carbine"
