@@ -191,3 +191,18 @@
 	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek_long/black
 	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek_long/white
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(overcoat)
+
+/datum/gear/suit/peacoat
+	display_name = "pea coat, colour select"
+	path = /obj/item/clothing/suit/storage/toggle/peacoat
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/suit/blazer
+	display_name = "blazer, colour select"
+	path = /obj/item/clothing/suit/storage/toggle/suitjacket/blazer
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/suit/blazerlong
+	display_name = "long blazer, colour select"
+	path = /obj/item/clothing/suit/storage/toggle/suitjacket/blazer/long
+	flags = GEAR_HAS_COLOR_SELECTION
