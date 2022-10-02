@@ -105,6 +105,11 @@
 					/obj/item/clothing/suit/bio_suit/plaguedoctorsuit,
 					/obj/item/clothing/under/schoolgirl,
 					/obj/item/clothing/under/owl,
+					/obj/item/clothing/suit/engicost,
+					/obj/item/clothing/suit/maxman,
+					/obj/item/clothing/suit/iasexy,
+					/obj/item/clothing/suit/sexyminer
+					/obj/item/clothing/suit/lumber
 					/obj/item/clothing/under/waiter,
 					/obj/item/clothing/under/gladiator,
 					/obj/item/clothing/under/soviet,
