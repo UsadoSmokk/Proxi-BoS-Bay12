@@ -14,4 +14,5 @@
 	Typically untrusting, once a Terstener has made a friend, they will often be that way for life.  Known for their community and attitudes to strangers, they are considered the cowboys of Sol Central. \
 	Many Tersteners serve in the Defence Forces, and many gave their lives in the Gaia Conflict."
 	capital = "Tersten City"
+	ruling_body = "Lordanian Sovereign Systems"	//bos
 	economic_power = 1.0

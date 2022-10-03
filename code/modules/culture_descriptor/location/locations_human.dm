@@ -145,6 +145,7 @@
 	Lorrimanians are a quiet, unassuming, academically-driven bunch. They are often sought as researchers or other scientifically-driven career.  It is rare for anyone to immigrate \
 	to the planet, but exceptions have been made. A scientifically driven people, they have served many organisations loyally."
 	capital = "The Hub"
+	ruling_body = "Lordanian Sovereign Systems"	//bos
 	economic_power = 1.0
 
 /decl/cultural_info/location/human/cinu
@@ -161,6 +162,7 @@
 	are known for characteristic firmness disguising fierce friendliness. Its people have suffered in the past, but today look towards a bright future. They are known to be pacifist,\
 	with many refusing to participate in the Defence Forces. Instead, they serve as peacekeepers and diplomats. The Cinuan People were controversially non-aligned during the Gaian Conflict."
 	capital = "Al-Mular"
+	ruling_body = "Lordanian Sovereign Systems"	//bos
 	economic_power = 1.0
 
 /decl/cultural_info/location/human/yuklid
@@ -174,6 +176,7 @@
 	Being from a small colonial system, those that do join the Defence Forces have usually never seen the level of development the Sol System has. \
 	More recently, a spiritualist movement has developed on the planet, taking aspects of religious theory and the hippocratic oath."
 	capital = "Iyeegi"
+	ruling_body = "Lordanian Sovereign Systems"	//bos
 	economic_power = 0.9
 
 /decl/cultural_info/location/human/lordania
@@ -188,6 +191,7 @@
 	typically only seen on the planet, or in entertainment medias. Lower Lordanians are more common, and many opt leave their home planet. Historically, Lordanians have a superiority complex, \
 	and often see themselves as better. Most Lordanians are seen as untrustworthy, or selfish. As such, they are rarely seen within Sol's Defence Forces."
 	capital = "New Ares"
+	ruling_body = "Lordanian Sovereign Systems"	//bos
 	economic_power = 1.2
 
 /decl/cultural_info/location/human/kingston
@@ -202,6 +206,7 @@
 	their Sol brothers, and are usually seen onboard most SCG Vessels.  Growing up on a waterworld, most Kingstonians can sail a boat, something rare in the 26th Century.  \
 	Typically dark in skin due to the planet's proximity to it's sun, Kingstonians come in various forms."
 	capital = "New Havana"
+	ruling_body = "Lordanian Sovereign Systems"	//bos
 	economic_power = 1.1
 
 /decl/cultural_info/location/human/gaia
