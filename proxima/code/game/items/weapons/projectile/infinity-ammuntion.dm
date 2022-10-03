@@ -1,13 +1,13 @@
 // Ammo cassings
 
 /obj/item/ammo_casing/corpo
-	desc = "A high-powered bullet casing. Somwewhat between 7-8mm."
+	desc = "A high-powered bullet casing. Wholesome 8mm."
 	caliber = CALIBER_PISTOL_FAST
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/fast
 
 /obj/item/ammo_casing/amr
 	name = "bullet casing"
-	desc = "A high-powered bullet casing. Somewhat around 12mmR."
+	desc = "A high-powered bullet casing. Fucking 12mmR."
 	projectile_type = /obj/item/projectile/bullet/rifle/amr
 	icon_state = "lcasing"
 	spent_icon = "lcasing-spent"
@@ -15,7 +15,7 @@
 	matter = list(MATERIAL_STEEL = 500)
 
 /obj/item/ammo_casing/pdw
-	desc = "A bullet casing. Somewhat near 7,5mm"
+	desc = "A high-powered bullet casing. Wholesome 8mm"
 	caliber = CALIBER_PISTOL_FAST
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/fast
 
