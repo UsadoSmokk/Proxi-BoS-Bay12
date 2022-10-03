@@ -136,8 +136,14 @@
 	path = /obj/item/ammo_magazine/speedloader/clip
 
 /datum/uplink_item/item/ammo/amr
-	name = "Ammobox of Corporative Rounds"
+	name = "Ammobox of Corporative Rifle Rounds"
 	desc = "A container of rounds for the corporative carbine. Contains only 10 rounds."
 	item_cost = 8
 	path = /obj/item/ammo_magazine/amr
 	antag_roles = list(MODE_MERCENARY)
+
+/datum/uplink_item/item/ammo/pdw
+	name = "Ammobox of Corporative PDW Rounds"
+	desc = "A container of rounds for the corporative PDW BP15. Contains whole 30 rounds."
+	item_cost = 2
+	path = /obj/item/ammo_magazine/pdw
