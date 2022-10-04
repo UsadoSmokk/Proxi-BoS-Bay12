@@ -1,2 +1,0 @@
-/datum/computer_file/program/supermatter_monitor
-	required_access = access_castelnau_engine

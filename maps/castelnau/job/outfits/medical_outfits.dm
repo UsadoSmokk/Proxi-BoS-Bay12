@@ -1,43 +1,80 @@
-/decl/hierarchy/outfit/job/castelnau/crew/medical
-	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/crew/medical
+/decl/hierarchy/outfit/job/torch/crew/medical
+	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew/medical
 	l_ear = /obj/item/device/radio/headset/headset_med
-	shoes = /obj/item/clothing/shoes/white
 	pda_type = /obj/item/modular_computer/pda/medical
 	pda_slot = slot_l_store
 
-/decl/hierarchy/outfit/job/castelnau/crew/medical/New()
+/decl/hierarchy/outfit/job/torch/crew/medical/New()
 	..()
 	BACKPACK_OVERRIDE_MEDICAL
 
-/decl/hierarchy/outfit/job/castelnau/crew/medical/senior
-	name = OUTFIT_JOB_NAME("Surgeon - Castelnau")
-	uniform = /obj/item/clothing/under/rank/medical/scrubs
-	id_types = /obj/item/card/id/castelnau/crew/medical/senior
+/decl/hierarchy/outfit/job/torch/crew/medical/senior
+	name = OUTFIT_JOB_NAME("Surgeon - Antares")
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/medical
+	shoes = /obj/item/clothing/shoes/lordan
+	id_types= list(/obj/item/card/id/torch/crew/medical/senior)
 
-/decl/hierarchy/outfit/job/castelnau/crew/medical/senior/traumasurgeon
-	name = OUTFIT_JOB_NAME("Trauma Surgeon - Castelnau")
+/decl/hierarchy/outfit/job/torch/crew/medical/virologist
+	name = OUTFIT_JOB_NAME("Virologist - Antares")
+	uniform = /obj/item/clothing/under/rank/virologist
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat/virologist
+	mask = /obj/item/clothing/mask/surgical
+	shoes = /obj/item/clothing/shoes/white
+	id_types= list(/obj/item/card/id/torch/crew/medical/virology)
+
+/decl/hierarchy/outfit/job/torch/crew/medical/virologist/fleet
+	name = OUTFIT_JOB_NAME("Virologist - Fleet")
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/medical
+	shoes = /obj/item/clothing/shoes/lordan
+
+/decl/hierarchy/outfit/job/torch/crew/medical/contractor
+	name = OUTFIT_JOB_NAME("Medic - Contractor. (BoS. A.K.A. Bastion of Shitcode)")
+
+/decl/hierarchy/outfit/job/torch/crew/medical/contractor/senior
+	name = OUTFIT_JOB_NAME("Surgeon - Contractor")
 	uniform = /obj/item/clothing/under/rank/medical/scrubs/blue
+	head = /obj/item/clothing/head/surgery/blue
+	shoes = /obj/item/clothing/shoes/white
+	id_types= list(/obj/item/card/id/torch/contractor/medical/senior)
 
-/decl/hierarchy/outfit/job/castelnau/crew/medical/doctor
-	name = OUTFIT_JOB_NAME("Doctor - Castelnau")
+/decl/hierarchy/outfit/job/torch/crew/medical/doctor
+	name = OUTFIT_JOB_NAME("Medical Technician")
 	uniform = /obj/item/clothing/under/rank/medical
-	id_types = /obj/item/card/id/castelnau/crew/medical
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	shoes = /obj/item/clothing/shoes/white
+	id_types= list(/obj/item/card/id/torch/crew/medical)
+	l_ear = /obj/item/device/radio/headset/headset_corpsman
 
-/decl/hierarchy/outfit/job/castelnau/crew/medical/doctor/paramedic
-	name = OUTFIT_JOB_NAME("Paramedic - Castelnau")
-	uniform = /obj/item/clothing/under/rank/medical/paramedic
+/decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
+	name = OUTFIT_JOB_NAME("Medical Technician - Fleet")
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/medical
+	shoes = /obj/item/clothing/shoes/lordan
+	l_ear = /obj/item/device/radio/headset/headset_corpsman
+
+/decl/hierarchy/outfit/job/torch/crew/medical/contractor/mortus
+	name = OUTFIT_JOB_NAME("Mortician")
+	uniform = /obj/item/clothing/under/rank/medical/scrubs/black
+
+/decl/hierarchy/outfit/job/torch/crew/medical/contractor/paramedic
+	name = OUTFIT_JOB_NAME("Paramedic - Antares")
 	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
-	shoes = /obj/item/clothing/shoes/jackboots
-	l_hand = /obj/item/storage/firstaid/adv
 	belt = /obj/item/storage/belt/medical/emt
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
-/decl/hierarchy/outfit/job/castelnau/crew/medical/doctor/chemist
-	name = OUTFIT_JOB_NAME("Chemist - Castelnau")
-	uniform = /obj/item/clothing/under/rank/chemist
-	pda_type = /obj/item/modular_computer/pda/chemistry
-	id_types = /obj/item/card/id/castelnau/crew/medical/chemist
+/decl/hierarchy/outfit/job/torch/crew/medical/contractor/chemist
+	name = OUTFIT_JOB_NAME("Chemist - Antares")
+	uniform = /obj/item/clothing/under/rank/medical
+	shoes = /obj/item/clothing/shoes/white
+	pda_type = /obj/item/modular_computer/pda/medical
+	id_types= list(/obj/item/card/id/torch/contractor/chemist)
 
-/decl/hierarchy/outfit/job/castelnau/crew/medical/doctor/chemist/New()
-	..()
-	BACKPACK_OVERRIDE_CHEMISTRY
+/decl/hierarchy/outfit/job/torch/crew/medical/counselor
+	name = OUTFIT_JOB_NAME("Counselor")
+	uniform = /obj/item/clothing/under/rank/psych/turtleneck
+	shoes = /obj/item/clothing/shoes/white
+	id_types= list(/obj/item/card/id/torch/contractor/medical/counselor)
+
+/decl/hierarchy/outfit/job/torch/crew/medical/counselor/redactor
+	name = OUTFIT_JOB_NAME("Redactor")
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	shoes = /obj/item/clothing/shoes/laceup
