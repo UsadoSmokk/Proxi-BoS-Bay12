@@ -67,7 +67,7 @@
 	return TRUE
 
 /datum/computer_file/program/ntnetdownload/proc/hide_file_info(datum/computer_file/file, skill)
-	server = (file in ntnet_global.available_station_software) ? "NTNet Software Repository" : "unspecified server"
+	server = (file in ntnet_global.available_station_software) ? "LORnet Software Repository" : "unspecified server"
 	if(!hacked_download)
 		return "[file.filename].[file.filetype]"
 	var/stealth_chance = max(skill - SKILL_BASIC, 0) * 30
