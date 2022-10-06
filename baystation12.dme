@@ -202,6 +202,7 @@
 #include "code\bos\modules\clothing\blazer.dm"
 #include "code\bos\modules\clothing\booker.dm"
 #include "code\bos\modules\clothing\cowboy_hat_alt.dm"
+#include "code\bos\modules\clothing\cowboy_boots.dm"
 #include "code\bos\modules\clothing\cyberpunk_overcoat.dm"
 #include "code\bos\modules\clothing\hands.dm"
 #include "code\bos\modules\clothing\hardhat_boh.dm"
