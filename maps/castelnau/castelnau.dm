@@ -5,11 +5,13 @@
 
 	#include "castelnau_announcements.dm"
 	#include "castelnau_antagonism.dm"
+	#include "castelnau_define.dm"
 	#include "castelnau_areas.dm"
 	#include "castelnau_lobby.dm"
 	#include "castelnau_overmap.dm"
 	#include "castelnau_overrides.dm"
 	#include "castelnau_presets.dm"
+	#include "castelnau_holodeck.dm"
 	#include "castelnau_procs.dm"
 	#include "castelnau_ranks.dm"
 	#include "castelnau_renames.dm"
