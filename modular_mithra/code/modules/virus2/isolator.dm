@@ -72,13 +72,13 @@
 
 						var/weakref/W = B.data["donor"]
 						var/mob/living/carbon/human/D = W.resolve()
-						pathogen_pool.Add(list(list(\
-							"name" = "[D ? D.get_species() : "Unidentified"] [B.name]", \
-							"dna" = B.data["blood_DNA"], \
-							"unique_id" = V.uniqueID, \
-							"reference" = "\ref[V]", \
-							"is_in_database" = !!R, \
-							"record" = "\ref[R]")))
+						pathogen_pool.Add(list(list(
+							"name" = "[D ? D.get_species() : "Unidentified"] [B.name]",
+							"dna" = B.data["blood_DNA"],
+							"unique_id" = V.uniqueID,
+							"reference" = V ? "\ref[V]" : "",
+							"is_in_database" = !!R,
+							"record" = R ? "\ref[R]" : "")))
 
 				if (pathogen_pool.len > 0)
 					data["pathogen_pool"] = pathogen_pool
