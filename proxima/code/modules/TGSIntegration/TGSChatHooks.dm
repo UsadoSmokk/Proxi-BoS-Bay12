@@ -24,3 +24,6 @@
 	if (LAZYLEN(GLOB.round_end_notifiees))
 		send2chat("*Раунд закончился, ребятки. Всем по слапу!*\n[GLOB.round_end_notifiees.Join(", ")]", "bot-spam")
 	return TRUE
+
+/hook/startup/proc/sayFuck()
+	log_unit_test("StartupHook")
