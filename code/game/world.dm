@@ -91,7 +91,6 @@ GLOBAL_VAR(href_logfile)
 #endif
 
 /world/New()
-	to_world_log("hello world")
 	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (debug_server)
 		call(debug_server, "auxtools_init")()
