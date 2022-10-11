@@ -33,9 +33,10 @@
 	                    SKILL_ENGINES      = SKILL_MAX)
 	skill_points = 24
 
-	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
-			            access_tcomsat, access_solgov_crew, access_seneng, access_hangar, access_network, access_robotics)
+	access = list(
+		access_castelnau_perseus, access_castelnau_perseus_helm, access_castelnau_maint_tunnels,
+		access_castelnau_external_airlocks, access_castelnau_engineering, access_castelnau_engine, access_castelnau_seneng,
+		access_castelnau_atmospherics, access_castelnau_thrusters, access_castelnau_hangar, access_castelnau_eva)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/supermatter_monitor,
@@ -90,9 +91,9 @@
 	                    SKILL_ENGINES      = SKILL_MAX)
 	skill_points = 20
 
-	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_construction,
-			            access_solgov_crew, access_hangar, access_tcomsat)
+	access = list(access_castelnau_perseus, access_castelnau_maint_tunnels,
+		access_castelnau_external_airlocks, access_castelnau_engineering, access_castelnau_engine,
+		access_castelnau_atmospherics, access_castelnau_thrusters, access_castelnau_eva)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/supermatter_monitor,
@@ -142,9 +143,8 @@
 	                    SKILL_ATMOS        = SKILL_MAX,
 	                    SKILL_ENGINES      = SKILL_MAX)
 
-	access = list(access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_eva, access_tech_storage, access_construction,
-			            access_solgov_crew, access_hangar)
+	access = list(access_castelnau_perseus, access_castelnau_maint_tunnels,
+		access_castelnau_external_airlocks, access_castelnau_engineering,  access_castelnau_thrusters, access_castelnau_eva)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/supermatter_monitor,
@@ -197,7 +197,7 @@
 	                    SKILL_ANATOMY      = SKILL_MAX)
 	skill_points = 24
 
-	access = list(access_robotics, access_robotics_engineering, access_nanotrasen, access_engine, access_solgov_crew, access_maint_tunnels, access_research, access_petrov_maint)
+//	access = list(access_robotics, access_robotics_engineering, access_nanotrasen, access_engine, access_solgov_crew, access_maint_tunnels, access_research, access_petrov_maint)
 
 /datum/job/roboticist/get_description_blurb()
 	return "Вы - Робототехник. Вашим прямым начальством является Старший и Главный инженеры.\

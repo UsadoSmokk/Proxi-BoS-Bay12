@@ -3,7 +3,7 @@
    /////
 
 /datum/job/qm
-	title = "Gunnery Chief"
+	title = "Intendant"
 	department = "Auxiliary"
 	department_flag = SPT|SUP
 	total_positions = 1
@@ -13,8 +13,6 @@
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	selection_color = "#755c48"
-	alt_titles = list(
-		"Deck Chief")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/fleet
 	allowed_branches = list(
 		/datum/mil_branch/larfleet
@@ -31,9 +29,15 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 	skill_points = 20
 
-	access = list(access_maint_tunnels, access_bridge, access_emergency_storage, access_tech_storage,  access_cargo, access_guppy_helm,
-						access_cargo_bot, access_qm, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
-						access_mining, access_mining_office, access_mining_station, access_commissary, access_gunnery, access_eva)
+	access = list(access_castelnau_supply,
+				  access_castelnau_qm,
+				  access_castelnau_eva,
+				  access_castelnau_maint_tunnels,
+				  access_castelnau_hangar,
+				  access_castelnau_bixie,
+				  access_castelnau_bixie_helm,
+				  access_castelnau_perseus,
+				  access_castelnau_perseus_helm)
 
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
@@ -43,7 +47,7 @@
 	return "Вы - Начальник Артилерии, а Вспомогательный отдел, шаттлы в Ангаре и все снаряды на судне - Ваши подданные. В Ваши обязанности входит наблюдение за тем, чтобы корабль был укомплектован, манифесты о полете составлены, боеголовки заряжены, шаттлы заправлены, а корабль оставался готов к новому космическому столкновению."
 
 /datum/job/cargo_tech
-	title = "Supply Technician"
+	title = "Hangar Technician"
 	department = "Auxiliary"
 	department_flag = SUP
 	total_positions = 3
@@ -51,8 +55,6 @@
 	supervisors = "the Gunnery Chief"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	selection_color = "#755c48"
-	alt_titles = list(
-		"Munitions Technician")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech/fleet
 	allowed_branches = list(
 		/datum/mil_branch/larfleet,
@@ -70,8 +72,14 @@
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
-	access = list(access_maint_tunnels, access_emergency_storage, access_cargo, access_guppy_helm,
-						access_cargo_bot, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, access_commissary, access_gunnery, access_eva)
+	access = list(access_castelnau_supply,
+				  access_castelnau_eva,
+				  access_castelnau_maint_tunnels,
+				  access_castelnau_hangar,
+				  access_castelnau_bixie,
+				  access_castelnau_bixie_helm,
+				  access_castelnau_perseus,
+				  access_castelnau_perseus_helm)
 
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
@@ -110,8 +118,14 @@
 								/datum/mil_rank/larfleet/e4,
 								/datum/mil_rank/larfleet/e5)
 
-	access = list(access_maint_tunnels, access_emergency_storage, access_mining, access_mining_office, access_mining_station,
-						access_expedition_shuttle, access_guppy, access_hangar, access_guppy_helm, access_solgov_crew, access_cargo, access_eva)
+	access = list(access_castelnau_supply,
+				  access_castelnau_eva,
+				  access_castelnau_maint_tunnels,
+				  access_castelnau_hangar,
+				  access_castelnau_bixie,
+				  access_castelnau_bixie_helm,
+				  access_castelnau_perseus,
+				  access_castelnau_perseus_helm)
 
 /datum/job/mining/get_description_blurb()
 	return "Член Полевой Поддержки: Вашим прямым начальством является Начальник Артилерии. В Ваши обязанности входит помощь и организация подспорья для Лорданианской экспансии, путем постройки баррикад и усиления обороны на подконтрольных ЛСС аванпостах.\
@@ -139,10 +153,7 @@
 		/datum/mil_rank/larfleet/e6
 	)
 
-	access = list(
-	 access_guppy, access_hangar, access_maint_tunnels, access_guppy_helm, access_expedition_shuttle, access_expedition_shuttle_helm, access_pilot,
-		access_solgov_crew, access_eva, access_explorer, access_petrov_analysis, access_research, access_petrov_maint, access_petrov_helm, access_aquila, access_aquila_helm
-	)
+	access = list(access_castelnau_prometeus, access_castelnau_prometeus_helm)
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
 						SKILL_PILOT = SKILL_ADEPT)
 
@@ -177,7 +188,6 @@
 		/datum/mil_rank/larfleet/o1)
 
 	min_skill = list(SKILL_BUREAUCRACY = SKILL_BASIC)
-	access = list(access_morgue, access_chapel_office, access_crematorium, access_solgov_crew, access_medical, access_maint_tunnels)
 
 /datum/job/janitor
 	title = "Janitor"
@@ -200,7 +210,8 @@
 
 	min_skill = list(   SKILL_HAULING = SKILL_BASIC)
 
-	access = list(access_maint_tunnels, access_emergency_storage, access_janitor, access_solgov_crew, access_hangar)
+	access = list(access_castelnau_janitor,
+			      access_castelnau_maint_tunnels)
 
 /datum/job/canworker
 	title = "Canteen Worker"
@@ -227,7 +238,7 @@
 	min_skill = list(   SKILL_COOKING   = SKILL_ADEPT,
 	                    SKILL_BOTANY    = SKILL_BASIC,
 	                    SKILL_CHEMISTRY = SKILL_BASIC)
-	access = list(access_maint_tunnels, access_hydroponics, access_kitchen, access_solgov_crew, access_bar, access_commissary)
+	access = list(access_castelnau_kitchen, access_castelnau_bar)
 
 /datum/job/crew
 	title = "Crewman"
@@ -264,8 +275,6 @@
 		/datum/mil_rank/larfleet/o1,
 		/datum/mil_rank/civ/civ
 	)
-
-	access = list(access_maint_tunnels, access_emergency_storage, access_solgov_crew, access_hangar, access_chronicler)
 
 /datum/job/chronicler/get_description_blurb()
 	return "Впервые летописцы как востребованная профессия появились во времена Тишины, когда человечество не имело связи. \
