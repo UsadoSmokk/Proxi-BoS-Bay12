@@ -1,5 +1,5 @@
 /datum/job/captain
-	title = "Commanding Officer"
+	title = "Captain"
 	supervisors = "Operational Headquarters and your conscience"
 	minimal_player_age = 14
 	economic_power = 15
@@ -69,7 +69,7 @@
 
 /datum/job/hop
 	title = "First Officer"
-	supervisors = "the Commanding Officer"
+	supervisors = "the Captain"
 	department = "Command"
 	department_flag = COM
 	minimal_player_age = 8
@@ -134,12 +134,12 @@
 
 /datum/job/hos
 	title = "Sheriff"
-	supervisors = "the Commanding Officer and the First Officer"
+	supervisors = "the Captain and the First Officer"
 	economic_power = 8
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	alt_titles = list(
-		"PMC Ranger",
+		"Ranger",
 		"Security Pointman"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
@@ -182,12 +182,12 @@
 	return "-"
 
 /datum/job/sea
-	title = "Political Officer"
+	title = "Reviser"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Commanding Officer and the First Officer"
+	supervisors = "the Operational Headquarters"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 6
 	economic_power = 8
@@ -229,7 +229,7 @@
 	return "-"
 
 /datum/job/bridgeofficer
-	title = "Second Officer"
+	title = "Navigator"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 3
@@ -237,7 +237,7 @@
 	alt_titles = list(
 		"Piloting Officer",
 		"Navigator")
-	supervisors = "the Commanding Officer and heads of staff"
+	supervisors = "the Captain and heads of staff"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
 	economic_power = 7

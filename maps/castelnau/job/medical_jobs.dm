@@ -8,7 +8,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Chief Medical Officer"
+	supervisors = "the First Officer"
 	selection_color = "#013d3b"
 	economic_power = 8
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/senior
@@ -41,7 +41,7 @@
 	title = "Doctor"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "Surgeons and the Chief Medical Officer"
+	supervisors = "Senior Doctors"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	minimal_player_age = 0
@@ -77,7 +77,7 @@
 	title = "Virologist" //Highly specialized role for handling viruses only. Not a physician. Not a medtech.
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief Medical Officer"
+	supervisors = "Senior Doctors"
 	economic_power = 8
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	minimal_player_age = 0
@@ -113,7 +113,7 @@
 	department_flag = MED
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Medical personnel, and the Chief Medical Officer"
+	supervisors = "Medical personnel"
 	selection_color = "#013d3b"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
@@ -156,7 +156,7 @@
 	department_flag = MED
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief Medical Officer, the Corporate Liaison and Medical Personnel"
+	supervisors = "Senior Doctors"
 	selection_color = "#013d3b"
 	economic_power = 4
 	minimum_character_age = list(SPECIES_HUMAN = 21)
@@ -178,13 +178,13 @@
 /datum/job/chemist/get_description_blurb()
 	return "-"
 /datum/job/psychiatrist
-	title = "Psionic Psychiatrist"
+	title = "Redactor"
 	total_positions = 1
 	spawn_positions = 1
 	economic_power = 5
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	minimal_player_age = 0
-	supervisors = "the Chief Medical Officer"
+	supervisors = "Senior Doctors"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/counselor
 
 	allowed_branches = list(
@@ -204,10 +204,6 @@
 		/datum/computer_file/program/camera_monitor
 	)
 
-	alt_titles = list(
-		"Redactor" = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/redactor
-	)
-
 /datum/job/psychiatrist/get_description_blurb()
 	return "Псионический Психиатр: Вашим прямым начальством является Главврач.\
 	В Ваши обязанности входит оказание психологической помощи персоналу корабля, используя как стандартные методы психологии, так и свои псионические навыки.\
@@ -220,10 +216,5 @@
 	а также останавливать кровотечения и заживлять сломанные кости."
 
 /datum/job/psychiatrist/equip(var/mob/living/carbon/human/H)
-	psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
-	return ..()
-
-/datum/job/psychiatrist/equip(var/mob/living/carbon/human/H)
-	if(H.mind.role_alt_title == "Redactor")
-		psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT)
+	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT)
 	return ..()

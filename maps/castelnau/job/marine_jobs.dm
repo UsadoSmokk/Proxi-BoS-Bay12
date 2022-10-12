@@ -1,5 +1,6 @@
 /datum/job/sea/marine
 	title = "Marine Officer"
+	supervisors = "the Captain and Operational Headquarters"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/marine
 	allowed_branches = list(
 		/datum/mil_branch/larmarine
@@ -18,7 +19,7 @@
 	department_flag = INF
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the highest ranking Marine and Antares Command"
+	supervisors = "the Captain and the highest ranking Marine"
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7

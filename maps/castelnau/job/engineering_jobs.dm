@@ -4,7 +4,7 @@
 	department_flag = ENG
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief Engineer"
+	supervisors = "the First Officer"
 	selection_color = "#a25f2a"
 	economic_power = 6
 	minimal_player_age = 3
@@ -56,7 +56,7 @@
 	title = "Engineer"
 	total_positions = 6
 	spawn_positions = 6
-	supervisors = "the Chief Engineer and the Senior Engineer"
+	supervisors = "the Senior Engineer"
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 19)
@@ -113,7 +113,7 @@
 	department_flag = ENG
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Chief Engineer and Engineering Personnel"
+	supervisors = "the Senior Engineer and Engineering Personnel"
 	selection_color = "#a25f2a"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 
@@ -168,7 +168,7 @@
 	spawn_positions = 2
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 22)
-	supervisors = "the Chief Engineer and the Senior Engineer"
+	supervisors = "the Senior Engineer"
 	selection_color = "#a25f2a"
 	economic_power = 6
 	alt_titles = list(
