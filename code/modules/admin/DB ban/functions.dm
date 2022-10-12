@@ -126,7 +126,7 @@
 		to_chat(usr, "<span class='notice'>Ban saved to database.</span>")
 		setter = key_name_admin(usr)
 	message_admins("[setter] has added a [bantype_str] for [ckey] [(job)?"([job])":""] [(duration > 0)?"([minutes_to_readable(duration)])":""] with the reason: \"[reason]\" to the ban database.",1)
-	callHook("banned", list(bantype, setter, ckey, (job)?"([job])":"", (duration > 0)?"([minutes_to_readable(duration)])":"", reason))	// PRX\BOS send to discord via TGS
+	callHook("banned", list(bantype, key_name(usr, null, 0), ckey, (job)?"([job])":"", (duration > 0)?"([minutes_to_readable(duration)])":"", reason))	// PRX\BOS send to discord via TGS
 	return 1
 
 
