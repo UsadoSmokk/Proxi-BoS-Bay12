@@ -121,3 +121,10 @@
 	source = 'sound/music/bos/killallxenos.ogg'
 	license = /decl/license/grandfathered //vrun
 	url = "https://youtu.be/Yg2IooEFTp8"
+
+/decl/audio/track/eventmusic
+	title = "Event Music"
+	author = "Event Music"
+	source = 'sound/music/bos/event.ogg'
+	license = /decl/license/grandfathered //vrun
+	url = "https://youtu.be/dQw4w9WgXcQ"
