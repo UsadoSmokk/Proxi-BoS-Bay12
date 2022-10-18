@@ -212,6 +212,12 @@
 	path = /obj/item/clothing/accessory/lordan/specialty/counselor
 	allowed_roles = list(/datum/job/psychiatrist)
 
+/datum/gear/clothing/cloak
+	display_name = "cloak, colored"
+	path = /obj/item/clothing/accessory/cloak
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION
+
 // Alternative cloak
 /datum/gear/clothing/cloak/alt
 	display_name = "cloak, colored (alt)"

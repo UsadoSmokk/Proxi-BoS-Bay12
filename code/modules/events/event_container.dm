@@ -150,7 +150,7 @@ var/global/list/severity_to_string = list(EVENT_LEVEL_MUNDANE = "Mundane", EVENT
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Brain Expansion",				/datum/event/brain_expansion,		20,		list(ASSIGNMENT_SCIENTIST = 20)),
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mail Delivery",					/datum/event/mail,					5,		list(ASSIGNMENT_ANY = 1), 1),
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Whale Migration",				/datum/event/whale_migration,		10),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Totalitaria",					/datum/event/totalitaria,		20) //BoS
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Totalitaria",					/datum/event/totalitaria,		40) //BoS
 	)
 
 /datum/event_container/moderate
@@ -176,7 +176,8 @@ var/global/list/severity_to_string = list(EVENT_LEVEL_MUNDANE = "Mundane", EVENT
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Toilet Flooding",						/datum/event/toilet_clog/flood,			50, 	list(ASSIGNMENT_JANITOR = 20)),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Drone Uprising",						/datum/event/rogue_maint_drones,		25,		list(ASSIGNMENT_ENGINEER = 30)),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Supermatter Power Surge",				/datum/event/power_surge,				100,	list(ASSIGNMENT_ENGINEER = 10)),
-		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Supply Pod",							/datum/event/supply_pod,				10,		list(ASSIGNMENT_ENGINEER = 10, ASSIGNMENT_SECURITY = 20)), //BoS
+		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Supply Pod",							/datum/event/supply_pod,				10,		list(ASSIGNMENT_ENGINEER = 20, ASSIGNMENT_SECURITY = 10)), //BoS
+		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Psi Wave",								/datum/event/psi_wave,					10,		list(ASSIGNMENT_SECURITY = 20, ASSIGNMENT_MEDICAL = 10)), //BoS
 	)
 
 /datum/event_container/major

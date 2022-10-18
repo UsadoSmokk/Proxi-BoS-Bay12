@@ -86,17 +86,17 @@
 
 //The base miss chance for the different defence zones
 var/list/global/base_miss_chance = list(
-	BP_HEAD = 60,
-	BP_CHEST = 10,
-	BP_GROIN = 20,
-	BP_L_LEG = 50,
-	BP_R_LEG = 50,
-	BP_L_ARM = 20,
-	BP_R_ARM = 20,
-	BP_L_HAND = 50,
-	BP_R_HAND = 50,
-	BP_L_FOOT = 70,
-	BP_R_FOOT = 70,
+	BP_HEAD = 20,
+	BP_CHEST = 5,
+	BP_GROIN = 10,
+	BP_L_LEG = 15,
+	BP_R_LEG = 15,
+	BP_L_ARM = 10,
+	BP_R_ARM = 10,
+	BP_L_HAND = 25,
+	BP_R_HAND = 25,
+	BP_L_FOOT = 25,
+	BP_R_FOOT = 25,
 )
 
 //Used to weight organs when an organ is hit randomly (i.e. not a directed, aimed attack).

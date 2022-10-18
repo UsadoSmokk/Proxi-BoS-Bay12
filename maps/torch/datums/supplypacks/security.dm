@@ -130,6 +130,16 @@
 	security_level = SUPPLY_SECURITY_HIGH
 
 //rubay code
+/decl/hierarchy/supply_pack/security/corpsmg
+	name = "Weapons - Corporative SMG"
+	contains = list(/obj/item/gun/projectile/automatic/corpo = 2,
+					/obj/item/ammo_magazine/corpo = 2)
+	cost = 70
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "smg crate"
+	access = access_armory
+	security_level = SUPPLY_SECURITY_HIGH
+
 /decl/hierarchy/supply_pack/security/gren_launch
 	name = "Weapons - Grenade Launcher Ammunition"
 	contains = list(/obj/item/grenade/frag/shell = 6)
@@ -138,6 +148,15 @@
 	containername = "grenade launcher ammunition crate"
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_HIGH
+
+/decl/hierarchy/supply_pack/security/corpsmgammo
+	name = "Ammunition - Corporative SMG magazines"
+	contains = list(/obj/item/ammo_magazine/corpo = 6)
+	cost = 30
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "smg ammunition crate"
+	access = access_security
+	security_level = SUPPLY_SECURITY_ELEVATED
 //rubay code end
 
 /decl/hierarchy/supply_pack/security/pistolammo

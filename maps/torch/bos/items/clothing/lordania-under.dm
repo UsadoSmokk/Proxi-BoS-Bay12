@@ -29,6 +29,9 @@
 	item_state = "tanutility"
 	worn_state = "tanutility"
 
+/obj/item/clothing/under/lordan/utility/tan/command
+	accessories = list(/obj/item/clothing/accessory/lordan/department/command/marine)
+
 /obj/item/clothing/under/lordan/utility/green
 	name = "marine utility uniform"
 	desc = "A green version of the LSS Marine utility uniform, made from durable material."
@@ -81,6 +84,13 @@
 	desc = "Alternative utility uniform of the LSS Fleet, for when coveralls are impractical."
 	icon_state = "navycombat"
 	worn_state = "navycombat"
+	armor = list(
+		melee = ARMOR_MELEE_SMALL,
+		bullet = ARMOR_BALLISTIC_SMALL,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_MINOR
+		)
 
 /obj/item/clothing/under/lordan/utility/fleet/combat/security
 	accessories = list(/obj/item/clothing/accessory/lordan/department/security/fleet)

@@ -380,7 +380,8 @@
 		'html/images/armylogo.png',
 		'html/images/torchlogo.png',
 		'html/images/sfplogo.png',
-		'html/images/sovlogo.png'
+		'html/images/sovlogo.png',
+		'customs/xri.png' //bos
 		)
 	addtimer(CALLBACK(src, .proc/after_send_resources), 1 SECOND)
 

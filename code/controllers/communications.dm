@@ -107,6 +107,7 @@ var/global/const/RADIO_HIGH_FREQ	= 1600
 var/global/const/BOT_FREQ	= 1447
 var/global/const/SKRELL_FREQ = 1598 //boh
 var/global/const/COMM_FREQ = 1353
+var/global/const/TERR_FREQ = 1363
 var/global/const/ERT_FREQ	= 1345
 var/global/const/AI_FREQ	= 1343
 var/global/const/ENT_FREQ	= 1461 //entertainment frequency. This is not a diona exclusive frequency.
@@ -116,6 +117,7 @@ var/global/const/DTH_FREQ	= 1341
 var/global/const/SYND_FREQ = 1213
 var/global/const/RAID_FREQ	= 1277
 var/global/const/V_RAID_FREQ = 1245
+var/global/const/SOL_FREQ = 1247
 
 // department channels
 var/global/const/PUB_FREQ = 1459
@@ -128,6 +130,7 @@ var/global/const/SCI_FREQ = 1351
 var/global/const/SRV_FREQ = 1349
 var/global/const/SUP_FREQ = 1347
 var/global/const/EXP_FREQ = 1361
+
 
 // internal department channels
 var/global/const/MED_I_FREQ = 1485
@@ -158,7 +161,7 @@ var/global/list/radiochannels = list(
 	"Medical"		= MED_FREQ,
 	"Engineering"	= ENG_FREQ,
 	"Security" 		= SEC_FREQ,
-	"Infantry" 		= INF_FREQ, //boh
+	"Infantry" 		= INF_FREQ, //boh,
 	"Response Team" = ERT_FREQ,
 	"Special Ops" 	= DTH_FREQ,
 	"Mercenary" 	= SYND_FREQ,
@@ -171,7 +174,9 @@ var/global/list/radiochannels = list(
 	"Entertainment" = ENT_FREQ,
 	"Medical (I)"	= MED_I_FREQ,
 	"Security (I)"	= SEC_I_FREQ,
-	"Recon"			= SKRELL_FREQ //boh
+	"Recon"			= SKRELL_FREQ, //boh,
+	"Terran"		= TERR_FREQ,
+	"SCG Fleet"		= SOL_FREQ
 )
 
 var/global/list/channel_color_presets = list(

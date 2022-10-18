@@ -11,9 +11,16 @@ GLOBAL_LIST_EMPTY(floating_chat_colors)
 #define CHAT_MESSAGE_WIDTH 128
 /// Max width of chat message in pixels
 #define CHAT_MESSAGE_HEIGHT 64
+var/list/floating_chat_colors = list() //aurora
 
 /atom/movable
 	var/list/stored_chat_text
+
+/atom/movable/proc/get_floating_chat_color() //aurora
+	return get_random_colour(0, 160, 230)
+
+/atom/movable/proc/set_floating_chat_color(color) //aurora
+	floating_chat_colors[name] = color
 
 /atom/movable/proc/animate_chat(message, datum/language/language, small, list/show_to, duration = CHAT_MESSAGE_LIFESPAN, huge)
 	set waitfor = FALSE
@@ -54,9 +61,9 @@ GLOBAL_LIST_EMPTY(floating_chat_colors)
 	if(length_char(message) > limit)
 		message = "[copytext_char(message, 1, limit)]..."
 
-	if(!GLOB.floating_chat_colors[name])
-		GLOB.floating_chat_colors[name] = get_random_colour(0, 160, 230)
-	style += "color: [GLOB.floating_chat_colors[name]];"
+	if(!floating_chat_colors[name]) //aurora
+		floating_chat_colors[name] = get_floating_chat_color()
+	style += "color: [floating_chat_colors[name]];"
 
 	// create 2 messages, one that appears if you know the language, and one that appears when you don't know the language
 	var/image/understood = generate_floating_text(src, capitalize(message), style, fontsize, duration, show_to)

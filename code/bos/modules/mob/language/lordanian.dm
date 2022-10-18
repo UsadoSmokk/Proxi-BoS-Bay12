@@ -4,7 +4,7 @@
 	primarily a language for the unification of the cultures of formerly independent West and East Lordania. \
 	The more popular Spacer began to wane after the rise of national unity and the desire to speak one's own language."
 	colour = ""
-	key = "1"
+	key = "0"
 	shorthand = "LRD"
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 50,

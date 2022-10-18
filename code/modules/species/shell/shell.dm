@@ -22,7 +22,7 @@
 	strength = STR_HIGH
 
 	min_age = 1
-	max_age = 15
+	max_age = 55
 
 	warning_low_pressure = 50
 	hazard_low_pressure = -1
@@ -38,7 +38,7 @@
 	body_temperature = null
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_POISON
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_IS_WHITELISTED | SPECIES_IS_RESTRICTED
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_SKIN_TONE_NORMAL | HAS_LIPS //IPCs can wear undies too :)
 
 	blood_color = "#61b6de"

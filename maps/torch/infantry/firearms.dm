@@ -20,9 +20,9 @@
 // Sec Bullpup
 /////////
 /obj/item/gun/projectile/automatic/bullpup_rifle/sec
-	name = "Z9 Bulldog"
+	name = "Z9A Bulldog"
 	desc = "The Hephaestus Industries Z9 Bulldog is a newer generation bullpup carbine. It appears to be heavily modified: consisting of the removal of the auto-eject function. Lame. \
-	Still has the kickass grenade launcher, though!"
+	Still has the kickass grenade launcher, though! Uses 7mmR bullets."
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	ammo_type = /obj/item/ammo_casing/rifle/military //De-nerfs the one-round type.
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
@@ -44,7 +44,7 @@
 /obj/item/gun/projectile/automatic/bullpup_rifle/sec/b
 	name = "Z9B Bulldog"
 	desc = "The Hephaestus Industries Z9B Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
-	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
+	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate. Uses 7mmR bullets."
 	jam_chance = 8 //You're my little pogchamp, security.
 	req_access = list(access_brig)
 	init_firemodes = list(

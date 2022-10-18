@@ -1,6 +1,6 @@
 /obj/effect/overmap/visitable/sector/exoplanet/shrouded
-	name = "shrouded exoplanet"
-	desc = "An exoplanet shrouded in a perpetual storm of bizzare, light absorbing particles."
+	name = "shrouded planet"
+	desc = "A planet shrouded in a perpetual storm of bizzare, light absorbing particles."
 	color = "#3e3960"
 	planetary_area = /area/exoplanet/shrouded
 	rock_colors = list(COLOR_INDIGO, COLOR_DARK_BLUE_GRAY, COLOR_NAVY_BLUE)
@@ -20,7 +20,7 @@
 	return COLOR_BLACK
 
 /datum/random_map/noise/exoplanet/shrouded
-	descriptor = "shrouded exoplanet"
+	descriptor = "shrouded planet"
 	smoothing_iterations = 2
 	flora_prob = 5
 	large_flora_prob = 20

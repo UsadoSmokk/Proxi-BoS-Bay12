@@ -74,7 +74,7 @@
 	..()
 	BACKPACK_OVERRIDE_SECURITY
 
-/decl/hierarchy/outfit/job/torch/crew/research/cso
+/decl/hierarchy/outfit/job/torch/crew/command/cso
 	name = OUTFIT_JOB_NAME("Research Director - Antares")
 	uniform = /obj/item/clothing/under/suit_jacket/really_black
 	l_ear = /obj/item/device/radio/headset/heads/torchntdirector
@@ -95,6 +95,7 @@
 /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet/kgb //cursed af
 	name = OUTFIT_JOB_NAME("Political Officer - KGB")
 	uniform = /obj/item/clothing/under/sl_suit
+	head = /obj/item/clothing/head/helmet/kgb
 
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	name = OUTFIT_JOB_NAME("Second Officer")

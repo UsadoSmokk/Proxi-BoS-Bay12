@@ -34,6 +34,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		pref.species = "human"
 	pref.age = R.read("age")
 	pref.gender = R.read("gender")
+	pref.floating_chat_color = R.read("floating_chat_color") //aurora
 	pref.head_hair_color = R.read("head_hair_color")
 	if (!pref.head_hair_color)
 		pref.head_hair_color = rgb(R.read("hair_red"), R.read("hair_green"), R.read("hair_blue"))
@@ -63,6 +64,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	W.write("species", pref.species)
 	W.write("gender", pref.gender)
 	W.write("age", pref.age)
+	W.write("floating_chat_color", pref.floating_chat_color) //aurora
 	W.write("head_hair_color", pref.head_hair_color)
 	W.write("facial_hair_color", pref.facial_hair_color)
 	W.write("skin_tone", pref.skin_tone)
@@ -82,6 +84,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 
 /datum/category_item/player_setup_item/physical/body/sanitize_character()
 	pref.has_cortical_stack = sanitize_bool(pref.has_cortical_stack, initial(pref.has_cortical_stack)) //boh
+	pref.floating_chat_color = sanitize_hexcolor(pref.floating_chat_color, get_random_colour(0, 160, 230)) //aurora
 	pref.head_hair_color = sanitize_hexcolor(pref.head_hair_color)
 	pref.facial_hair_color = sanitize_hexcolor(pref.facial_hair_color)
 	pref.eye_color = sanitize_hexcolor(pref.eye_color)
@@ -138,11 +141,12 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	. += "<br /><br /><b>Body</b> [BTN("random", "Randomize")]"
 	. += "<br />[TBTN("gender", gender2text(pref.gender), "Gender")]"
 	. += "<br />[TBTN("age", pref.age, "Age")]"
+	. += "<br />Floating Chat Color: <a href='?src=\ref[src];select_floating_chat_color=1'><b>[pref.floating_chat_color]</b></a>" //aurora
 	. += "<br />[TBTN("blood_type", pref.b_type, "Blood Type")]"
 	. += "<br />[VTBTN("disabilities", NEARSIGHTED, pref.disabilities & NEARSIGHTED ? "Yes" : "No", "Glasses")]"
 
 	if(config.use_cortical_stacks) //boh
-		. += "Neural lace: "
+		. += "<br />Neural lace "
 		if(mob_species.spawn_flags & SPECIES_NO_LACE)
 			. += "incompatible."
 		else
@@ -254,6 +258,15 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 
 	else if(href_list["toggle_stack"]) //boh
 		pref.has_cortical_stack = !pref.has_cortical_stack
+		return TOPIC_REFRESH
+
+	else if(href_list["select_floating_chat_color"]) //aurora
+		var/new_fc_color = input(user, "Choose Floating Chat Color:", "Global Preference") as color|null
+		if(new_fc_color && CanUseTopic(user))
+			pref.floating_chat_color = new_fc_color
+			var/mob/living/carbon/human/H = preference_mob()
+			if(ishuman(H))
+				H.set_floating_chat_color(new_fc_color)
 		return TOPIC_REFRESH
 
 	else if(href_list["gender"])

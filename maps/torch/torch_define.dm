@@ -17,7 +17,7 @@
 
 	station_name  = "LRS Antares"
 	station_short = "Antares"
-	dock_name     = "TBD"
+	dock_name     = "Port-Vengeance, Nouveaulyon"
 	boss_name     = "Operational Headquarters"
 	boss_short    = "OpHQ"
 	company_name  = "Lordanian Sovereign Systems Fleet"
@@ -37,7 +37,7 @@
 	use_overmap = 1
 	num_exoplanets = 1
 
-	away_site_budget = 3.5
+	away_site_budget = 5
 	//id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'
 	id_hud_icons = 'maps/torch/icons/assignment_hud_boh.dmi'
 
@@ -50,7 +50,7 @@
 			HOME_SYSTEM_CINU,
 			HOME_SYSTEM_YUKLID,
 			HOME_SYSTEM_KINGSTON,
-			HOME_SYSTEM_GAIA,
+//			HOME_SYSTEM_GAIA,
 			HOME_SYSTEM_MAGNITKA,
 			HOME_SYSTEM_MARS,
 			HOME_SYSTEM_LUNA,
@@ -59,7 +59,7 @@
 			HOME_SYSTEM_CERES,
 			HOME_SYSTEM_PLUTO,
 			HOME_SYSTEM_TAU_CETI,
-			HOME_SYSTEM_HELIOS,
+//			HOME_SYSTEM_HELIOS,
 			HOME_SYSTEM_OTHER
 
 		),

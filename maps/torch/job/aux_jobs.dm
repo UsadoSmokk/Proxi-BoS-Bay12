@@ -131,7 +131,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/pilot
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
+		/datum/mil_branch/larfleet = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot_fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
@@ -141,7 +141,7 @@
 
 	access = list(
 	 access_guppy, access_hangar, access_maint_tunnels, access_guppy_helm, access_expedition_shuttle, access_expedition_shuttle_helm, access_pilot,
-		access_solgov_crew, access_eva, access_explorer, access_petrov_analysis, access_petrov, access_petrov_maint, access_petrov_helm, access_aquila, access_aquila_helm
+		access_solgov_crew, access_eva, access_explorer, access_petrov_analysis, access_research, access_petrov_maint, access_petrov_helm, access_aquila, access_aquila_helm
 	)
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
 						SKILL_PILOT = SKILL_ADEPT)

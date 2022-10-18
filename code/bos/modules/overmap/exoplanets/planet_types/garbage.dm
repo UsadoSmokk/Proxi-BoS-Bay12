@@ -1,6 +1,6 @@
 /obj/effect/overmap/visitable/sector/exoplanet/garbage
-	name = "ruined exoplanet"
-	desc = "An arid exoplanet with unnatural formations covering the surface. Hotspots of radiation detected."
+	name = "ruined planet"
+	desc = "An arid planet with unnatural formations covering the surface. Hotspots of radiation detected."
 	color = "#a5a18b"
 	planetary_area = /area/exoplanet/garbage
 	map_generators = list(/datum/random_map/city, /datum/random_map/noise/exoplanet/garbage, /datum/random_map/noise/ore/poor)
@@ -42,7 +42,7 @@
 	return I
 
 /datum/random_map/noise/exoplanet/garbage
-	descriptor = "garbage exoplanet"
+	descriptor = "garbage planet"
 	smoothing_iterations = 4
 	land_type = /turf/simulated/floor/exoplanet/desert
 	flora_prob = 1

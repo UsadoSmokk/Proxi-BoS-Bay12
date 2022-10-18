@@ -554,6 +554,8 @@ SUBSYSTEM_DEF(jobs)
 
 	job.post_equip_rank(H, alt_title || rank)
 
+	INVOKE_ASYNC(GLOBAL_PROC, .proc/show_location_blurb, H.client, 30) //nebula
+
 	return H
 
 /datum/controller/subsystem/jobs/proc/titles_by_department(var/dept)
@@ -567,3 +569,33 @@ SUBSYSTEM_DEF(jobs)
 			continue
 		empty_playable_ai_cores += new /obj/structure/AIcore/deactivated(get_turf(S))
 	return 1
+
+/proc/show_location_blurb(client/C, duration) //nebula
+	set waitfor = 0
+
+	var/style = "font-family: 'Fixedsys'; -dm-text-outline: 1 black; font-size: 11px;"
+//	var/area/A = get_area(C.mob)
+	var/text = "[stationdate2text()], [stationtime2text()]\nShip: [station_name()]\nObjective: Recon and Sabotage\nFinal Destination: The Solar System frontier"	//bos
+	text = uppertext(text)
+
+	var/obj/effect/overlay/T = new()
+	T.maptext_height = 62
+	T.maptext_width = 510
+	T.layer = FLOAT_LAYER
+	T.plane = HUD_PLANE
+	T.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
+	T.screen_loc = "LEFT+1,BOTTOM+2"
+
+	C.screen += T
+	animate(T, alpha = 255, time = 10)
+	for(var/i = 1 to length(text)+1)
+		T.maptext = "<span style=\"[style]\">[copytext(text,1,i)] </span>"
+		sleep(1)
+
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/fade_location_blurb, C, T), duration)
+
+/proc/fade_location_blurb(client/C, obj/T)
+	animate(T, alpha = 0, time = 5)
+	sleep(5)
+	C.screen -= T
+	qdel(T)

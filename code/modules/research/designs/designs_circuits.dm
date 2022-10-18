@@ -226,12 +226,19 @@
 	build_path = /obj/item/stock_parts/circuitboard/autolathe
 	sort_string = "HABAD"
 
+/datum/design/circuit/weaponfab
+	name = "weapon fabricator board"
+	id = "weaponfab"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2, TECH_COMBAT = 2)
+	build_path = /obj/item/stock_parts/circuitboard/weaponsfab/rnd
+	sort_string = "HABAE"
+
 /datum/design/circuit/replicator
 	name = "replicator board"
 	id = "replicator"
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 3, TECH_BIO = 3)
 	build_path = /obj/item/stock_parts/circuitboard/replicator
-	sort_string = "HABAE"
+	sort_string = "HABAG"
 
 /datum/design/circuit/microlathe
 	name = "microlathe board"
@@ -506,14 +513,14 @@
 	req_tech = list(TECH_ENGINEERING = 5, TECH_POWER = 5, TECH_MATERIAL = 5)
 	build_path = /obj/item/stock_parts/circuitboard/portable_scrubber/huge/stationary
 	sort_string = "JEAAD"
-/*
+
 /datum/design/circuit/thruster
 	name = "gas thruster"
 	id = "thruster"
 	req_tech = list(TECH_POWER = 1, TECH_ENGINEERING = 2)
 	build_path = /obj/item/stock_parts/circuitboard/unary_atmos/engine
 	sort_string = "JFAAA"
-*/
+
 /datum/design/circuit/helms
 	name = "helm control console"
 	id = "helms"
@@ -596,7 +603,7 @@
 	req_tech = list(TECH_POWER = 1, TECH_ENGINEERING = 1)
 	build_path = /obj/item/stock_parts/circuitboard/floodlight
 	sort_string = "KCAAC"
-/*
+
 /datum/design/circuit/disperserfront
 	name = "obstruction field disperser beam generator"
 	id = "disperserfront"
@@ -624,7 +631,7 @@
 	req_tech = list(TECH_DATA = 2, TECH_COMBAT = 5, TECH_BLUESPACE = 5)
 	build_path = /obj/item/stock_parts/circuitboard/disperser
 	sort_string = "KCAAG"
-*/
+
 /datum/design/circuit/tcom
 	req_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 4)
 
@@ -787,7 +794,7 @@
 	req_tech = list(TECH_DATA = 4, TECH_BIO = 3)
 	build_path = /obj/item/stock_parts/circuitboard/aicore
 	sort_string = "XAAAA"
-/*
+
 /datum/design/circuit/ionengine
 	name = "ion propulsion system"
 	id = "ionengine"
@@ -795,7 +802,7 @@
 	materials = list(MATERIAL_GOLD = 250, MATERIAL_DIAMOND = 250, MATERIAL_URANIUM = 250, MATERIAL_PLASTIC = 1000, MATERIAL_ALUMINIUM = 1000)
 	build_path = /obj/item/stock_parts/circuitboard/engine/ion
 	sort_string = "XAAAB"
-*/
+
 /datum/design/circuit/sublimator/sauna
 	name = "sauna heater system"
 	id = "sauna"

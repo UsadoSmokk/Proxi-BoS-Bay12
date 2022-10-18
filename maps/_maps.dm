@@ -1,8 +1,4 @@
-#include "_map_include.dm"
-
 #include "example\example_define.dm" // Always included because tests. May be fixable later.
-
-#include "using.dm"
 
 #include "antag_spawn\antag_spawn_bases.dm"
 #include "antag_spawn\ert\ert.dm"
@@ -11,6 +7,9 @@
 #include "antag_spawn\ninja\ninja.dm"
 #include "antag_spawn\vox\voxraider.dm"
 #include "antag_spawn\wizard\wizard.dm"
+
+#include "_map_include.dm"
+#include "using.dm"
 
 #include "away\away_sites.dm"
 #include "away_sites_testing\away_sites_testing_define.dm"
@@ -31,7 +30,7 @@
 #include "random_ruins\exoplanet_ruins\oldlab\oldlab.dm"
 #include "random_ruins\exoplanet_ruins\oldlab2\oldlab2.dm"
 #include "random_ruins\exoplanet_ruins\oldpod\oldpod.dm"
-//#include "random_ruins\exoplanet_ruins\playablecolony\playablecolony.dm"
+#include "random_ruins\exoplanet_ruins\playablecolony\playablecolony.dm"
 #include "random_ruins\exoplanet_ruins\playablecolony2\playablecolony2.dm"
 #include "random_ruins\exoplanet_ruins\radshrine\radshrine.dm"
 #include "random_ruins\exoplanet_ruins\spider_nest\spider_nest.dm"

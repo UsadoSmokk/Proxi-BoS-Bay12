@@ -10,10 +10,11 @@
 		/datum/species/adherent = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/sea/marine, /datum/job/terrep, /datum/job/terguard, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/combat_medic, /datum/job/warden, /datum/job/officer, /datum/job/senior_doctor, /datum/job/detective, /datum/job/psychiatrist),
 		/datum/species/diona   = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/rd, /datum/job/officer, /datum/job/warden, /datum/job/sea, /datum/job/sea/marine, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/combat_medic, /datum/job/psychiatrist),
 		/datum/species/tajaran = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/sea/marine, /datum/job/terrep, /datum/job/terguard, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/combat_medic, /datum/job/warden, /datum/job/officer, /datum/job/senior_doctor),
-		/datum/species/skrell = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/sea/marine, /datum/job/terrep, /datum/job/terguard, /datum/job/warden, /datum/job/senior_doctor, /datum/job/squad_lead),
+		/datum/species/skrell = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/sea/marine, /datum/job/terrep, /datum/job/terguard, /datum/job/warden, /datum/job/squad_lead),
 		/datum/species/unathi = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/sea/marine, /datum/job/terrep, /datum/job/terguard, /datum/job/warden, /datum/job/senior_doctor, /datum/job/squad_lead, /datum/job/detective),
 		/datum/species/unathi/yeosa = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/sea/marine, /datum/job/terrep, /datum/job/terguard, /datum/job/warden, /datum/job/senior_doctor, /datum/job/squad_lead, /datum/job/detective),
-		/datum/species/machine = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/sea/marine, /datum/job/terrep, /datum/job/terguard, /datum/job/warden, /datum/job/senior_doctor, /datum/job/detective, /datum/job/squad_lead, /datum/job/psychiatrist, /datum/job/detective),
+		/datum/species/machine = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/sea/marine, /datum/job/terrep, /datum/job/terguard, /datum/job/warden, /datum/job/detective, /datum/job/squad_lead, /datum/job/psychiatrist, /datum/job/detective),
+		/datum/species/machine/shell = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/sea, /datum/job/sea/marine, /datum/job/terrep, /datum/job/terguard, /datum/job/warden, /datum/job/squad_lead, /datum/job/psychiatrist, /datum/job/warden, /datum/job/officer, /datum/job/grunt, /datum/job/detective),
 		/datum/species/shapeshifter/promethean = list(/datum/job/captain, /datum/job/janitor, /datum/job/officer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/terguard, /datum/job/warden, /datum/job/detective, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/combat_medic)
 		)
 
@@ -35,14 +36,14 @@
 						)
 
 	access_modify_region = list(
-		ACCESS_REGION_SECURITY = list(access_change_ids),
-		ACCESS_REGION_MEDBAY = list(access_change_ids),
-		ACCESS_REGION_RESEARCH = list(access_change_ids),
-		ACCESS_REGION_ENGINEERING = list(access_change_ids),
-		ACCESS_REGION_COMMAND = list(access_change_ids),
-		ACCESS_REGION_GENERAL = list(access_change_ids),
-		ACCESS_REGION_SUPPLY = list(access_change_ids),
-		ACCESS_REGION_NT = list(access_change_ids)
+		ACCESS_REGION_SECURITY = list(access_hos, access_change_ids, access_robotics),
+		ACCESS_REGION_MEDBAY = list(access_cmo, access_change_ids, access_robotics),
+		ACCESS_REGION_RESEARCH = list(access_rd, access_change_ids, access_robotics),
+		ACCESS_REGION_ENGINEERING = list(access_ce, access_change_ids, access_robotics),
+		ACCESS_REGION_COMMAND = list(access_change_ids, access_robotics),
+		ACCESS_REGION_GENERAL = list(access_change_ids, access_robotics),
+		ACCESS_REGION_SUPPLY = list(access_qm, access_change_ids, access_robotics),
+		ACCESS_REGION_SERVICE = list(access_marcom, access_change_ids, access_robotics)
 	)
 
 ///datum/map/torch/setup_job_lists()

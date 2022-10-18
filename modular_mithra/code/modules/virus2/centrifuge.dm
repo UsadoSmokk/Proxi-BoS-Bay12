@@ -11,9 +11,6 @@
 	core_skill = SKILL_VIROLOGY
 
 /obj/machinery/computer/centrifuge/attackby(var/obj/O as obj, var/mob/user as mob)
-	if(isScrewdriver(O))
-		return ..(O,user)
-
 	if(istype(O,/obj/item/reagent_containers/glass/beaker/vial))
 		if(sample)
 			to_chat(user, "\The [src] is already loaded.")
@@ -24,8 +21,9 @@
 
 		user.visible_message("[user] adds \a [O] to \the [src]!", "You add \a [O] to \the [src]!")
 		SSnano.update_uis(src)
+		return
 
-	src.attack_hand(user)
+	..(O, user)
 
 /obj/machinery/computer/centrifuge/on_update_icon()
 	..()

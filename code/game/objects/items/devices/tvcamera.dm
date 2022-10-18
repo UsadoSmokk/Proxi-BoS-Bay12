@@ -19,10 +19,12 @@
 	QDEL_NULL(radio)
 	. = ..()
 
-/obj/item/device/camera/tvcamera/Initialize()
+/obj/item/device/camera/tvcamera/Initialize(mapload)
 	camera = new(src)
-	camera.c_tag = channel
+	camera.c_tag = "[channel] #[random_id(/obj/item/device/camera/tvcamera, 1, 999)]"	// BoS
 	camera.status = FALSE
+	camera.active_power_usage = 0 //BoS
+	camera.idle_power_usage = 0 // BoS
 	radio = new(src)
 	radio.listening = FALSE
 	radio.set_frequency(ENT_FREQ)

@@ -3,14 +3,16 @@
 #define CALIBER_PISTOL_MAGNUM 	"15mm"
 #define CALIBER_PISTOL_FLECHETTE "4mm"
 #define CALIBER_PISTOL_ANTIQUE	"~10mm"
-#define CALIBER_PISTOL_CUSTOM	".38 special"
+#define CALIBER_PISTOL_CUSTOM	".38 special" //delete this properly
 #define CALIBER_PISTOL_MAGNUM_LARGE ".454mm" //boh
 #define CALIBER_PISTOL_FRANGIBLE "7mmF" //boh
+#define CALIBER_PISTOL_FAST 	"8mm" //proxima
 
 #define CALIBER_RIFLE			"5mmR"
 #define CALIBER_RIFLE_MILITARY  "7mmR"
 #define CALIBER_RIFLE_MILITARY_LARGE "12mm" //boh
 #define CALIBER_ANTIMATERIAL    "15mmR"
+#define CALIBER_ANTIMATERIAL_SMALL	"12mmR" //proxima
 
 #define CALIBER_SHOTGUN			"12g"
 #define CALIBER_GYROJET			"20mmG"

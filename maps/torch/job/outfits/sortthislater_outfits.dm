@@ -10,6 +10,9 @@
 	l_ear = /obj/item/device/radio/headset/headset_pilot
 	id_types= list(/obj/item/card/id/torch/passenger/research/nt_pilot)
 
+/decl/hierarchy/outfit/job/torch/crew/research
+	name = OUTFIT_JOB_NAME("Crewman. But should be an Sci. But BoS, a.k.a. Bastion of Shitcode")
+
 /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	name = OUTFIT_JOB_NAME("Scientist - Antares")
 	uniform = /obj/item/clothing/under/rank/medical/scrubs
