@@ -32,14 +32,14 @@
 		if (BANTYPE_JOB_PERMA)
 			bantypeString = "*__**ПЕРМА ДЖОБКА НА ПРОФЫ:**__ \n[jobs]*"
 		if (BANTYPE_JOB_TEMP)
-			bantypeString = "*__временно на профы:__ \n[jobs]*\n**5.1. Бан спадет через:** __*[duration]*__"
+			bantypeString = "*__Временно на профы:__ \n[jobs]*\n**5.1. Бан спадет через:** __*[duration]*__"
 		if (BANTYPE_PERMA)
 			bantypeString = "__***ПЕРМА***__"
 		if (BANTYPE_TEMP)
-			bantypeString = "__*на время*__.\n**5.1. Бан спадет через:** __*[duration]*__"
+			bantypeString = "__*На время*__.\n**5.1. Бан спадет через:** __*[duration]*__"
 		else
 			bantypeString = "__***капец как забанил...***__"
-	send2chat("***Новый жбан***\n**1. Ckey осужденного:** __*[target]*__\n**2. Ckey администратора:**__*[admin]*__\n**3. Сервер:**__*PRX*__\n**4. Причина:**\n ```[reason]```\n**5. Наказание и длительность:** [bantypeString]", "notes-hub")
+	send2chat("***Новый жбан***\n**1. Ckey осужденного:** __*[target]*__\n**2. Ckey администратора:** __*[admin]*__\n**3. Сервер:** __*BoS*__\n**4. Причина:**```[reason]```**5. Наказание и длительность:** [bantypeString]", "notes-hub")
 	return TRUE
 
 /hook/unbanned/proc/SendTGSUnBan(bantype, admin, target, jobs)
@@ -59,9 +59,11 @@
 	return TRUE
 
 /hook/playerNotes/proc/SendTGSNotes(admin, target, note)
+	if (findtext_char(note, "banned") || findtext_char(note, "(MANUAL BAN)"))
+		return TRUE		// Это бан (или может быть анбан), нефиг дублировать
 	send2chat("***Доносики***\n**1. Ckey обвиняемого:** __*[target]*__\n**2. Ckey доносчика:** __*[admin]*__\n**3. Сервер:** __*BOS*__\n**4. Доносик:** __*[note]*__\n**5. Тип:** __*Нотес*__\n**6. Срок действия доноса:** __*INFINITY*__", "notes-hub")
 	return TRUE
 
-/hook/oocMessage/proc/SendOOCMsg(ckey, message)
-	send2chat("**[ckey]:** *[message]*", "ooc-chat")
+/hook/oocMessage/proc/SendOOCMsg(ckey, message, admin_rank)
+	send2chat("**[admin_rank == null ? null : admin_rank][ckey]:** *[message]*", "ooc-chat")
 	return TRUE
