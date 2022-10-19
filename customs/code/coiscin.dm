@@ -64,6 +64,7 @@
 	desc = "A draft of a song with its words, notes, chords and other useful features for musicians."
 	icon = 'customs/icons/obj/custom_items_obj.dmi'
 	icon_state = "page"
+	w_class = ITEM_SIZE_TINY
 
 /obj/item/music_tape/custom/coiscin/Initialize()
 	. = ..()
@@ -77,7 +78,7 @@
 	icon_state = "note"
 	randpixel = 0
 	throwforce = 1
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_SMALL
 	throw_speed = 3
 	throw_range = 7
 	layer = BELOW_OBJ_LAYER
@@ -112,7 +113,6 @@
 					return
 	if(amount >= 1)
 		amount--
-		if(amount==0)
 		var/obj/item/music_tape/custom/coiscin/P
 		P = new /obj/item/music_tape/custom/coiscin
 		user.put_in_hands(P)
