@@ -64,7 +64,7 @@
 /datum/gear/tactical/blood_patch
 	display_name = "blood patch selection"
 	description = "A selection of blood type patches. Attaches to plate carrier."
-	path = /obj/item/clothing/accessory/armor/tag/
+	path = /obj/item/clothing/accessory/armor_tag
 	cost = 0 // Life-saving.
 
 /datum/gear/tactical/blood_patch/New()
