@@ -58,7 +58,6 @@
 "bf" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/command)
 "bg" = (/obj/structure/reagent_dispensers/water_cooler{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/command)
 "bh" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/obj/effect/wallframe_spawn/reinforced_phoron,/obj/effect/paint/black,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/armsfactory/atmospherics)
-"bi" = (/obj/effect/wallframe_spawn/reinforced_phoron,/obj/machinery/door/firedoor,/turf/space,/area/map_template/armsfactory/command)
 "bj" = (/obj/item/ammo_magazine/rifle,/obj/item/ammo_magazine/rifle,/obj/item/ammo_magazine/rifle,/obj/item/ammo_magazine/rifle,/obj/item/ammo_magazine/rifle,/obj/structure/table/rack,/turf/simulated/floor/tiled/steel_grid,/area/map_template/armsfactory/armory)
 "bk" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/command)
 "bl" = (/obj/effect/floor_decal/techfloor{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/commons)
@@ -405,7 +404,7 @@
 "hO" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 4},/obj/effect/floor_decal/corner/green{dir = 9},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory)
 "hP" = (/obj/machinery/atmospherics/pipe/manifold/visible/red{icon_state = "map"; dir = 1},/obj/effect/floor_decal/corner_techfloor_grid{icon_state = "corner_techfloor_grid"; dir = 5},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/atmospherics)
 "hQ" = (/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 1},/obj/effect/floor_decal/corner/red{dir = 10},/obj/machinery/light{dir = 1},/obj/structure/table/steel_reinforced,/obj/item/storage/box/donut,/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/jail)
-"hR" = (/obj/effect/wallframe_spawn/reinforced_phoron,/turf/space,/area/map_template/armsfactory/command)
+"hR" = (/obj/effect/wallframe_spawn/reinforced_phoron,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/map_template/armsfactory/command)
 "hS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/map_template/armsfactory/commons)
 "hT" = (/obj/structure/cable,/obj/item/frame/apc,/turf/simulated/floor/plating,/area/map_template/armsfactory/commons)
 "hU" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/floor_decal/spline/fancy/wood{dir = 6},/turf/simulated/floor/wood,/area/map_template/armsfactory/messhall)
@@ -804,10 +803,10 @@ aqafafafafafafafafafafafafafafafafafafajaqabababababababacaqadadadadadaqaqaqaqaq
 aqafIAaMalaMalaMalaMalaMalaMalaMalaMalaMababaxavagayaAaDacacadahaianadaqaqaqaqaq
 aqafIAaZalaZalaZalaZalaZalaZalaZalaZalaZabmiapaRaVaWaXaVaYbbadamasaEadaqaqaqaqaq
 aqafIAaZalaZalaZalaZalaZalaZalaZalaZalaZhRbsaCbxbnmxbfbkbkbpmzbubvbwadaqaqaqaqaq
-aqafbcaZalaZalaZalaZalaZalaZalaZalaZalaZbibgaCnDbDbEbUbCacacadbXbGcjadaqaqaqaqaq
-aqafIAbealaZalaZalaZalaZalaZalaZalaZalaZbimmaCnDnNbEcknfacaHadadadadadcdcqcqcqcr
-aqafIAbealaZalaZalaZalaZalaZalaZalaZalaZbimiaCbxmlVQdadcaceGaccfdndndndnehehehcs
-aqafIAbealaZalaZalaZalaZbBbIbMbIbRbTbMcibicnaTcxcCcFbKbVaceDmCeZeZfcfceZeZfcfccs
+aqafbcaZalaZalaZalaZalaZalaZalaZalaZalaZhRbgaCnDbDbEbUbCacacadbXbGcjadaqaqaqaqaq
+aqafIAbealaZalaZalaZalaZalaZalaZalaZalaZhRmmaCnDnNbEcknfacaHadadadadadcdcqcqcqcr
+aqafIAbealaZalaZalaZalaZalaZalaZalaZalaZhRmiaCbxmlVQdadcaceGaccfdndndndnehehehcs
+aqafIAbealaZalaZalaZalaZbBbIbMbIbRbTbMcihRcnaTcxcCcFbKbVaceDmCeZeZfcfceZeZfcfccs
 aqafajcKcPdldmelbMdlcPeociararauawauarararararararardxdEaBaBaFaFaBaBaGaIaGaGfccs
 aqaJaJaJaJaJaJaJaJaJaLaJewarbAbtdGcbcamLtetedDfdGtaNdIgtaPdRdUdVdWaQebdKdLaGdFcs
 aqaSbHbSbHaUbWbLaUbYbNaSeLarcgbObPbQheazPDnLEkJmnMaNeketeceeefegezexeFdCdNaGfccs
