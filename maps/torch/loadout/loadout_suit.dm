@@ -1,8 +1,8 @@
 /datum/gear/suit/blueapron
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/suit/overalls
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/suit/medcoat
 	allowed_roles = MEDICAL_ROLES
@@ -33,19 +33,19 @@
 
 /datum/gear/suit/suit_jacket
 //	allowed_roles = FORMAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/suit/custom_suit_jacket
 //	allowed_roles = FORMAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/suit/hoodie
 //	allowed_roles = CASUAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/suit/hoodie_sel
 //	allowed_roles = CASUAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/suit/labcoat
 
@@ -58,7 +58,7 @@
 	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/rd)
 
 /datum/gear/suit/coat
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/suit/leather
 
@@ -66,7 +66,7 @@
 
 /datum/gear/suit/track
 //	allowed_roles = CASUAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/pcarrier
 	display_name = "plate carrier selection"
