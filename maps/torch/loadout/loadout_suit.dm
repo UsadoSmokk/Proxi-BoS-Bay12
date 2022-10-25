@@ -68,8 +68,17 @@
 //	allowed_roles = CASUAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
+/datum/gear/tactical/pcarrier_fleet
+	display_name = "armor | plate carrier (LSS fleet)"
+	description = "A plate carrier. Can be equipped with armor plates, but provides no protection of their own."
+	path = /obj/item/clothing/suit/armor/pcarrier/navy
+	slot = slot_wear_suit
+	cost = 1
+	allowed_branches = MILITARY_BRANCHES
+
+
 /datum/gear/tactical/pcarrier
-	display_name = "plate carrier selection"
+	display_name = "armor | plate carrier selection"
 	description = "A selection of military plate carriers. They can be equipped with armor plates, but provides no protection of their own."
 	path = /obj/item/clothing/suit/armor/pcarrier
 	cost = 1
@@ -84,4 +93,5 @@
 	armors["blue plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/blue
 	armors["green plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/green
 	armors["tan plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/tan
+	armors["grey plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/grey
 	gear_tweaks += new/datum/gear_tweak/path(armors)
