@@ -1,4 +1,4 @@
-obj/item/gmoderror
+/obj/item/gmoderror
 	name = "error"
 	desc = "error"
 	icon = 'icons/bos/error.dmi'
