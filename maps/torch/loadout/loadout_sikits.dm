@@ -6,7 +6,7 @@ This is for standard issue sidearms.
 	description = "A sidearm for military personnel."
 	cost = 5
 	sort_category = "Standard Issue Equipment"
-	path = /obj/item/gun/projectile/
+	path = /obj/item/gun/projectile
 	allowed_roles = ARMED_ROLES
 
 /datum/gear/sikits/guns/New()
@@ -22,7 +22,7 @@ This is for standard issue sidearms.
 	description = "A sidearm holster for military personnel."
 	cost = 3
 	sort_category = "Standard Issue Equipment"
-	path = /obj/item/clothing/accessory/storage/holster/
+	path = /obj/item/clothing/accessory/storage/holster
 	allowed_roles = ARMED_ROLES
 
 /datum/gear/sikits/holsters/New()
