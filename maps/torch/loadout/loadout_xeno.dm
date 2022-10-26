@@ -1,5 +1,5 @@
 /datum/gear/suit/lab_xyn_machine
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/gloves/dress/modified
 	display_name = "modified gloves, dress"
@@ -17,7 +17,7 @@
 
 /datum/gear/head/skrell_helmet
 	allowed_roles = ARMORED_ROLES
-//	allowed_branches = TACTICOOL_BRANCHES
+//	allowed_branches = MILITARY_BRANCHES
 	whitelisted = list(SPECIES_SKRELL)
 
 /datum/gear/uniform/harness

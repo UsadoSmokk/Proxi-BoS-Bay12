@@ -80,10 +80,10 @@
 	allowed_roles = list(/datum/job/rd, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/assistant)
 
 /datum/gear/accessory/tie
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/tie_color
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/stethoscope
 	allowed_roles = STERILE_ROLES
@@ -126,54 +126,54 @@
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/clothing/hawaii
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/scarf
 	allowed_roles = SEMIANDFORMAL_ROLES
 
 /datum/gear/clothing/flannel
 	allowed_roles = SEMIFORMAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/vest
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/suspenders
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/wcoat
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/zhongshan
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/dashiki
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/thawb
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/sherwani
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/qipao
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/sweater
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/tangzhuang
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/bowtie
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/ftupin
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /*********************
  tactical accessories
@@ -182,7 +182,7 @@
 	display_name = "UBAC shirt selection"
 	description = "A selection of combat shirts."
 	path = /obj/item/clothing/accessory/ubac
-	allowed_branches = TACTICOOL_BRANCHES
+	allowed_branches = MILITARY_BRANCHES
 
 /datum/gear/tactical/ubac/New()
 	..()
@@ -193,12 +193,19 @@
 	shirts["tan UBAC shirt"] = /obj/item/clothing/accessory/ubac/tan
 	gear_tweaks += new/datum/gear_tweak/path(shirts)
 
+/datum/gear/tactical/armor_pouches_fleet
+	display_name = "armor pouches (LSS fleet)"
+	description = "A navy-colored small armor pouches. Attaches to plate carrier."
+	path = /obj/item/clothing/accessory/storage/pouches/navy
+	allowed_branches = MILITARY_BRANCHES
+	cost = 1
+
 /datum/gear/tactical/armor_pouches
-	display_name = "armor pouches selection"
+	display_name = "armor pouches selection (small)"
 	description = "A selection of military armor pouches. Attaches to plate carrier."
 	path = /obj/item/clothing/accessory/storage/pouches
 	cost = 1
-	allowed_branches = TACTICOOL_BRANCHES
+	allowed_roles = ARMORED_ROLES
 
 /datum/gear/tactical/armor_pouches/New()
 	..()
@@ -208,14 +215,15 @@
 	pouches["blue armor pouches"] = /obj/item/clothing/accessory/storage/pouches/blue
 	pouches["green armor pouches"] = /obj/item/clothing/accessory/storage/pouches/green
 	pouches["tan armor pouches"] = /obj/item/clothing/accessory/storage/pouches/tan
+	pouches["grey armor pouches"] = /obj/item/clothing/accessory/storage/pouches/grey
 	gear_tweaks += new/datum/gear_tweak/path(pouches)
 
 /datum/gear/tactical/large_pouches
-	display_name = "large armor pouches selection"
+	display_name = "armor pouches selection (large)"
 	description = "A selection of military large armor pouches. Attaches to plate carrier."
 	path = /obj/item/clothing/accessory/storage/pouches/large
 	cost = 2
-	allowed_branches = TACTICOOL_BRANCHES
+	allowed_roles = ARMORED_ROLES
 
 /datum/gear/tactical/large_pouches/New()
 	..()
@@ -225,4 +233,5 @@
 	lpouches["blue large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/blue
 	lpouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
 	lpouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
+	lpouches["grey large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/grey
 	gear_tweaks += new/datum/gear_tweak/path(lpouches)

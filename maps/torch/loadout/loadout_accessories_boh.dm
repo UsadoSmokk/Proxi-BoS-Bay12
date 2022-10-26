@@ -82,21 +82,28 @@
 
 // Armor plates
 /datum/gear/tactical/armor_plate_light
-	display_name = "Light armor plate"
+	display_name = "armor plate - light"
 	description = "A light armor plate to be slipped into a plate carrier"
 	path = /obj/item/clothing/accessory/armor_plate
 	cost = 3
-	allowed_branches = TACTICOOL_BRANCHES
+	allowed_branches = MILITARY_BRANCHES
+
+/datum/gear/tactical/armor_plate_medium
+	display_name = "armor plate - medium"
+	description = "A medium armor plate to be slipped into a plate carrier"
+	path = /obj/item/clothing/accessory/armor_plate/medium
+	cost = 4
+	allowed_roles = ARMORED_ROLES
+
 
 /// Limb guards
 // Arms
 /datum/gear/tactical/arm_guards
-	display_name = "arm guards selection"
+	display_name = "armor | arm guards selection"
 	description = "A selection of military arm guards. Attaches to plate carrier."
 	path = /obj/item/clothing/accessory/arm_guards
-	cost = 1
+	cost = 2
 	allowed_roles = ARMORED_ROLES
-	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/tactical/arm_guards/New()
 	..()
@@ -108,11 +115,17 @@
 	arm_guards["tan arm guards"] = /obj/item/clothing/accessory/arm_guards/tan
 	gear_tweaks += new/datum/gear_tweak/path(arm_guards)
 
+/datum/gear/tactical/arm_guards_light_fleet
+	display_name = "armor | arm pads (LSS fleet)"
+	description = "A navy-colored arm pads. They're weaker than normal guards."
+	path = /obj/item/clothing/accessory/arm_guards/light/navy
+	allowed_branches = MILITARY_BRANCHES
+
 /datum/gear/tactical/arm_guards_light
-	display_name = "arm pads selection"
+	display_name = "armor | arm pads selection"
 	description = "A selection of military arm pads. They're weaker than normal guards."
 	path = /obj/item/clothing/accessory/arm_guards/light
-	allowed_branches = TACTICOOL_BRANCHES
+	allowed_roles = ARMORED_ROLES
 
 /datum/gear/tactical/arm_guards_light/New()
 	..()
@@ -122,20 +135,17 @@
 	arm_guards["blue arm pads"] = /obj/item/clothing/accessory/arm_guards/light/blue
 	arm_guards["green arm pads"] = /obj/item/clothing/accessory/arm_guards/light/green
 	arm_guards["tan arm pads"] = /obj/item/clothing/accessory/arm_guards/light/tan
+	arm_guards["grey arm pads"] = /obj/item/clothing/accessory/arm_guards/light/grey
 	gear_tweaks += new/datum/gear_tweak/path(arm_guards)
 
-/datum/gear/tactical/arm_guards_grey
-	display_name = "grey arm pads"
-	path = /obj/item/clothing/accessory/arm_guards/light/grey
 
 // Legs
 /datum/gear/tactical/leg_guards
-	display_name = "leg guards selection"
+	display_name = "armor | leg guards selection"
 	description = "A selection of military leg guards. Attaches to plate carrier."
 	path = /obj/item/clothing/accessory/leg_guards
-	cost = 1
+	cost = 2
 	allowed_roles = ARMORED_ROLES
-	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/tactical/leg_guards/New()
 	..()
@@ -147,11 +157,17 @@
 	leg_guards["tan leg guards"] = /obj/item/clothing/accessory/leg_guards/tan
 	gear_tweaks += new/datum/gear_tweak/path(leg_guards)
 
+/datum/gear/tactical/leg_guards_light_fleet
+	display_name = "armor | leg pads (LSS fleet)"
+	description = "A navy-colored leg pads. They're weaker than normal guards."
+	path = /obj/item/clothing/accessory/leg_guards/light/navy
+	allowed_branches = MILITARY_BRANCHES
+
 /datum/gear/tactical/leg_guards_light
-	display_name = "leg pads selection"
+	display_name = "armor | leg pads selection"
 	description = "A selection of military leg pads. They're weaker than normal guards."
 	path = /obj/item/clothing/accessory/leg_guards/light
-	allowed_branches = TACTICOOL_BRANCHES
+	allowed_roles = ARMORED_ROLES
 
 /datum/gear/tactical/leg_guards_light/New()
 	..()
@@ -161,24 +177,14 @@
 	leg_guards["blue leg pads"] = /obj/item/clothing/accessory/leg_guards/light/blue
 	leg_guards["green leg pads"] = /obj/item/clothing/accessory/leg_guards/light/green
 	leg_guards["tan leg pads"] = /obj/item/clothing/accessory/leg_guards/light/tan
+	leg_guards["grey leg pads"] = /obj/item/clothing/accessory/leg_guards/light/grey
 	gear_tweaks += new/datum/gear_tweak/path(leg_guards)
-
-/datum/gear/tactical/leg_guards_grey
-	display_name = "grey leg pads"
-	path = /obj/item/clothing/accessory/leg_guards/light/grey
-
-// Grey carrier pouches. Only small ones to emulate standard suit/storage behavior.
-/datum/gear/tactical/armor_pouches_grey
-	display_name = "grey armor pouches"
-	path = /obj/item/clothing/accessory/storage/pouches/grey
-	cost = 1
 
 /datum/gear/tactical/combatknife
 	display_name = "combat knife"
 	path = /obj/item/material/knife/combat
 	cost = 3
 	allowed_roles = ARMORED_ROLES
-	allowed_branches = TACTICOOL_BRANCHES
 
 // Too lazy to adjust outfit
 /datum/gear/accessory/nt_blaze
