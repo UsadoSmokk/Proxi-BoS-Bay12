@@ -182,7 +182,6 @@
 	display_name = "UBAC shirt selection"
 	description = "A selection of combat shirts."
 	path = /obj/item/clothing/accessory/ubac
-	allowed_branches = MILITARY_BRANCHES
 
 /datum/gear/tactical/ubac/New()
 	..()
