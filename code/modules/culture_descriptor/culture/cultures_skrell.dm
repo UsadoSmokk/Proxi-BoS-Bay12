@@ -16,11 +16,6 @@
 		LANGUAGE_HUMAN_EURO,
 		LANGUAGE_SPACER
 	)
-	allowed_accents = list(
-		/decl/accent/skrell,
-		/decl/accent/skrell_north,
-		/decl/accent/skrell_south
-	)
 
 /decl/cultural_info/culture/skrell/caste_malish
 	name = CULTURE_SKRELL_MALISH
