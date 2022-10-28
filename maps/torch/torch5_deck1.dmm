@@ -18697,7 +18697,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/equipstorage)
 "gSU" = (
-/obj/structure/memstatue/shmesser,
+/obj/structure/statue/shmesser,
 /turf/simulated/floor/grass,
 /area/mempark)
 "gTQ" = (
@@ -26091,7 +26091,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/wing)
 "pRb" = (
-/obj/structure/memstatue/matt,
+/obj/structure/statue/matt,
 /turf/simulated/floor/grass,
 /area/mempark)
 "pRm" = (
@@ -26412,7 +26412,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
 "qhb" = (
-/obj/structure/memstatue/roger,
+/obj/structure/statue/roger,
 /turf/simulated/floor/grass,
 /area/mempark)
 "qhJ" = (
@@ -26517,7 +26517,7 @@
 /obj/machinery/light/spot{
 	dir = 4
 	},
-/obj/structure/memstatue/boris{
+/obj/structure/statue/boris{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -27921,7 +27921,7 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "rHb" = (
-/obj/structure/memstatue,
+/obj/structure/statue,
 /turf/simulated/floor/grass,
 /area/mempark)
 "rIb" = (
@@ -27995,7 +27995,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "rLb" = (
-/obj/structure/memstatue/grisha,
+/obj/structure/statue/grisha,
 /obj/machinery/camera/network/first_deck{
 	c_tag = "Memorial Port Aft";
 	dir = 8
@@ -28217,7 +28217,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/foreport)
 "rYb" = (
-/obj/structure/memstatue/vasiliy,
+/obj/structure/statue/vasiliy,
 /turf/simulated/floor/grass,
 /area/mempark)
 "rYd" = (
@@ -29058,7 +29058,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/secpointhal)
 "sNn" = (
-/obj/structure/memstatue/ambrosia,
+/obj/structure/statue/ambrosia,
 /turf/simulated/floor/grass,
 /area/mempark)
 "sOb" = (
