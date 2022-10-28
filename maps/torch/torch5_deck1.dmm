@@ -1682,7 +1682,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "acN" = (
 /obj/structure/table/rack,
 /obj/item/device/scanner/xenobio,
@@ -7154,7 +7154,7 @@
 	name = "Docking Port Airlock"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "atA" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/alarm{
@@ -13382,7 +13382,7 @@
 "aTZ" = (
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "aUa" = (
 /obj/structure/lattice,
 /turf/simulated/wall/r_wall/hull,
@@ -16418,8 +16418,17 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 5
 	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "dmz" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -17364,7 +17373,7 @@
 "eGY" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "eHb" = (
 /obj/effect/floor_decal/corner/pink/bordercorner{
 	dir = 4
@@ -18676,7 +18685,7 @@
 "gQI" = (
 /obj/structure/sign/lord,
 /turf/simulated/wall/r_wall/hull,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "gRb" = (
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/structure/table/rack,
@@ -19610,7 +19619,7 @@
 	name = "Docking Port Airlock"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "hYM" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -20541,7 +20550,7 @@
 /obj/effect/floor_decal/industrial/outline/orange,
 /obj/machinery/sealgen,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "jiS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -20552,7 +20561,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "jjb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -21603,7 +21612,7 @@
 	req_access = list("ACCESS_MEDICAL")
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "kyb" = (
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
@@ -22291,6 +22300,9 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
+"llQ" = (
+/turf/simulated/wall/r_wall/hull,
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "lmb" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "bo_windows"
@@ -22711,7 +22723,7 @@
 	tag_interior_door = "koi_shuttle_dock_inner"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "lRa" = (
 /obj/machinery/light_switch{
 	pixel_x = -6;
@@ -26041,7 +26053,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "pOZ" = (
 /obj/effect/floor_decal/techfloor/corner{
 	dir = 4
@@ -26634,7 +26646,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "qvX" = (
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled,
@@ -27699,7 +27711,7 @@
 	req_access = list(list("ACCESS_EXTERNAL","ACCESS_MEDICAL"))
 	},
 /turf/simulated/wall/r_wall/hull,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "rxK" = (
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -27795,8 +27807,13 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "rCc" = (
 /obj/structure/sign/lord,
 /turf/simulated/wall/r_wall/hull,
@@ -29253,7 +29270,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "sVQ" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/woodentable,
@@ -30034,7 +30051,7 @@
 	c_tag = "Koi - Docking Port"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "tWo" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -31613,7 +31630,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/centralstarboard/medical_dock)
 "xaC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -51038,7 +51055,7 @@ gQI
 eGY
 atw
 rxb
-abP
+llQ
 abP
 abP
 abP
@@ -51236,11 +51253,11 @@ aaa
 aaa
 aaa
 aaa
-abP
+llQ
 jiq
 sVL
 lPg
-abP
+llQ
 abP
 abP
 abP
@@ -51438,11 +51455,11 @@ afq
 afq
 afq
 afq
-abP
+llQ
 acM
 jiS
 kxs
-abP
+llQ
 aKU
 cib
 qdW
@@ -51640,7 +51657,7 @@ aaf
 aaz
 iFI
 afq
-abP
+llQ
 qvu
 rCb
 pOL
