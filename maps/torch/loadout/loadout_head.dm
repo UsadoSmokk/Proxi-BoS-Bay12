@@ -9,9 +9,6 @@
 /datum/gear/head/beret
 	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/lord, /datum/mil_branch/larmarine)
 
-/datum/gear/bandana
-	allowed_branches = CIVILIAN_BRANCHES
-
 /datum/gear/head/bandana
 	allowed_branches = CIVILIAN_BRANCHES
 
