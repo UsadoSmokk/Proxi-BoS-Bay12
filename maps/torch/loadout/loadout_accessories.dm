@@ -88,18 +88,6 @@
 /datum/gear/accessory/stethoscope
 	allowed_roles = STERILE_ROLES
 
-/datum/gear/storage/brown_vest
-
-/datum/gear/storage/black_vest
-
-/datum/gear/storage/white_vest
-
-/datum/gear/storage/brown_drop_pouches
-
-/datum/gear/storage/black_drop_pouches
-
-/datum/gear/storage/white_drop_pouches
-
 /datum/gear/tactical/holster
 
 /datum/gear/tactical/holster/New()
