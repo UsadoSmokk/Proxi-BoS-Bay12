@@ -142,7 +142,7 @@
 	#include "job/outfits/supply_outfits.dm"
 	#include "job/outfits/marine_outfits.dm"
 
-	#include "language/human/euro.dm"
+	#include "language/human/bos_language_overrides.dm"
 	#include "language/human/misc/spacer.dm"
 
 	#include "machinery/apc_shuttle.dm"

@@ -231,6 +231,10 @@
 	name = "First Deck Starboard Maintenance"
 	icon_state = "smaint"
 
+/area/maintenance/firstdeck/centralstarboard/medical_dock
+	name = "First Deck Starboard Medical Dock"
+	icon_state = "medbay"
+
 /area/maintenance/firstdeck/centralport
 	name = "First Deck Port Maintenance"
 	icon_state = "pmaint"
