@@ -42,7 +42,7 @@
 	path = /obj/item/clothing/accessory/armor_tag/solgov/medic
 	allowed_skills = list(SKILL_MEDICAL = SKILL_BASIC)
 */
-/datum/gear/tactical/med_tag/alt
+/datum/gear/tactical/med_tag_alt
 	display_name = "Medical tag, alt"
 	path = /obj/item/clothing/accessory/armor_tag/civ/med
 
