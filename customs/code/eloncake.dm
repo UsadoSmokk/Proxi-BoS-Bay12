@@ -34,8 +34,8 @@
 	item_icons = list(slot_w_uniform_str = 'customs/icons/mob/custom_items_mob.dmi')
 */
 /obj/item/clothing/mask/gas/elloncake
-	name = "gas mask"
-	desc = "A face-covering mask that can be connected to an air supply. Filters harmful gases from the air."
+	name = "skrellian gas mask"
+	desc = "A face-covering mask that can be connected to an air supply. It was made in the Empire, and looks pretty new."
 	icon_state = "gasmask"
 	item_state = "gasmask"
 	icon = 'customs/icons/obj/custom_items_obj.dmi'
