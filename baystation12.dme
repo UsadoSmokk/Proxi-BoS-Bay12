@@ -3404,6 +3404,7 @@
 #include "customs\code\germanrus.dm"
 #include "customs\code\hacso.dm"
 #include "customs\code\lodagn.dm"
+#include "customs\code\s1334.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\_maps.dm"
