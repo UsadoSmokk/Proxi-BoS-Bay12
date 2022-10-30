@@ -157,7 +157,7 @@
 /datum/gear/accessory/bowtie
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/accessory/ftupin
+/datum/gear/accessory/ftu_pin
 	allowed_branches = CIVILIAN_BRANCHES
 
 /*********************
