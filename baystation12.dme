@@ -3398,6 +3398,7 @@
 #include "code\unit_tests\~helpers.dm"
 #include "customs\code\ambrosia.dm"
 #include "customs\code\coiscin.dm"
+#include "customs\code\coppercats.dm"
 #include "customs\code\devilmayrus.dm"
 #include "customs\code\egorium.dm"
 #include "customs\code\eloncake.dm"
