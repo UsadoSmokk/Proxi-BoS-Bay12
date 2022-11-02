@@ -124,6 +124,7 @@
 	return
 /obj/item/document_coiscin
 	name = "document"
+	icon = 'customs/icons/obj/custom_items_obj.dmi'
 	w_class = ITEM_SIZE_TINY
 	attack_verb = list("whipped")
 	hitsound = 'sound/weapons/towelwhip.ogg'
@@ -158,16 +159,14 @@
 	to_chat(user, info || SPAN_WARNING("[src] is completely blank!"))
 
 /obj/item/document_coiscin/passport
-	name = "ICCG passport"
-	icon = 'icons/obj/passport.dmi'
-	icon_state = "passport_iccg"
+	name = "ICCG passport"'
+	icon_state = "passport"
 	desc = "A passport from the Independent Colonial Confederation of Gilgamesh."
 	info = "\nName: Yakahakichaki-Tikiyahitika\nSpecies: IPC\nGender: M\nAge: 4\nPlace of Birth: Vega\nFingerprint: n/A"
 	doc_type = "passport"
 
 /obj/item/document_coiscin/workpass
 	name = "workpass"
-	icon = 'customs/icons/obj/custom_items_obj.dmi'
 	icon_state = "workpass"
 	desc = "Workpass issued to citizens of other states when officially employed on the territory or object of Lordania."
 	info = "\nName: Yakahakichaki-Tikiyahitika\nMastered specialties: pilot, cook, information security technician, nurse, junior engineer, roboticist, lawyer, accountant, secretary\nValid until: 2351.23.06"
@@ -175,7 +174,6 @@
 
 /obj/item/document_coiscin/lorvisa
 	name = "Lordania visa"
-	icon = 'customs/icons/obj/custom_items_obj.dmi'
 	icon_state = "lorvisa"
 	desc = "A visa issued by the Government of Lordania for the purpose of free movement on the territory of its state, or staying at its facilities."
 	info = "\nName: Yakahakichaki-Tikiyahitika\nPassport number: 213-321-124\nPurpose : work\nDuration: 4\nDate: 2346.23.06"
