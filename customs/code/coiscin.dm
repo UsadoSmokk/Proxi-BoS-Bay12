@@ -159,7 +159,7 @@
 	to_chat(user, info || SPAN_WARNING("[src] is completely blank!"))
 
 /obj/item/document_coiscin/passport
-	name = "ICCG passport"'
+	name = "ICCG passport"
 	icon_state = "passport"
 	desc = "A passport from the Independent Colonial Confederation of Gilgamesh."
 	info = "\nName: Yakahakichaki-Tikiyahitika\nSpecies: IPC\nGender: M\nAge: 4\nPlace of Birth: Vega\nFingerprint: n/A"
@@ -176,7 +176,7 @@
 	name = "Lordania visa"
 	icon_state = "lorvisa"
 	desc = "A visa issued by the Government of Lordania for the purpose of free movement on the territory of its state, or staying at its facilities."
-	info = "\nName: Yakahakichaki-Tikiyahitika\nPassport number: 213-321-124\nPurpose : work\nDuration: 4 years\nDate: 2346.23.06"
+	info = "\nName: Yakahakichaki-Tikiyahitika\nPassport number: 213-321-124\nPurpose: work\nDuration: 4 years\nDate: 2346.23.06"
 	doc_type = "lordaniavisa"
 
 /obj/item/clothingbag/coiscin
