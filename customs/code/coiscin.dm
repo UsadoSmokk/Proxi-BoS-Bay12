@@ -178,7 +178,7 @@
 	icon = 'customs/icons/obj/custom_items_obj.dmi'
 	icon_state = "lorvisa"
 	desc = "A visa issued by the Government of Lordania for the purpose of free movement on the territory of its state, or staying at its facilities."
-	info = "\nName: Yakahakichaki-Tikiyahitika\nPassport number: 213-321-124\nPurpose : work\nDuration: 4\nDate: 2346.23.06"
+	info = "\nName: Yakahakichaki-Tikiyahitika\nPassport number: 213-321-124\nPurpose : work\nDuration: 4 years\nDate: 2346.23.06"
 	doc_type = "lordaniavisa"
 
 /obj/item/clothingbag/coiscin
