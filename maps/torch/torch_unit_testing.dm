@@ -27,6 +27,7 @@
 		/area/maintenance/seconddeck/forestarboard = NO_SCRUBBER,
 		/area/maintenance/thirddeck/aftstarboard = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/fifthdeck/aftstarboard = NO_SCRUBBER,
+		/area/maintenance/firstdeck/centralstarboard/medical_dock = NO_SCRUBBER,
 		/area/maintenance/waterstore = 0,
 		/area/shield = NO_SCRUBBER|NO_VENT,
 		/area/shuttle = NO_SCRUBBER|NO_VENT|NO_APC,

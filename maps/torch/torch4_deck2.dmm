@@ -9818,8 +9818,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "we" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/green{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -9833,13 +9835,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
 "wg" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 5
-	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4;
 	icon_state = "warning"
 	},
+/obj/machinery/atmospherics/pipe/manifold/visible/green,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "wi" = (
@@ -46141,7 +46141,7 @@ tc
 Pa
 uG
 vq
-if
+mp
 Qn
 if
 if
