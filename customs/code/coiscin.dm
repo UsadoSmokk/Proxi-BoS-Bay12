@@ -122,8 +122,62 @@
 
 	add_fingerprint(user)
 	return
+/obj/item/document_coiscin
+	name = "document"
+	icon = 'customs/icons/obj/custom_items_obj.dmi'
+	w_class = ITEM_SIZE_TINY
+	attack_verb = list("whipped")
+	hitsound = 'sound/weapons/towelwhip.ogg'
+	var/info
+	var/doc_type
 
+/obj/item/document_coiscin/proc/show(mob/user as mob)
+	var/output = "<html><head><title>document</title></head>"
+	output += "<body style='overflow:hidden;margin:0;text-align:center'>"
+	output += "<img src='[doc_type].png' style='-ms-interpolation-mode:nearest-neighbor' />"
+	output += "</body></html>"
+	show_browser(user, output, "window=book")
+	onclose(user, "document")
+	return
 
+/obj/item/document_coiscin/examine(mob/user, distance)
+	. = TRUE
+	if(distance <= 1)
+		show(user)
+		to_chat(user, desc)
+	else
+		to_chat(user, SPAN_NOTICE("It is too far away."))
+
+/obj/item/document_coiscin/attack_self(mob/user as mob)
+	show(user)
+	user.visible_message(
+		SPAN_ITALIC("[user] opens and checks [src]."),
+		SPAN_ITALIC("You open [src] and check for some main information."),
+		SPAN_ITALIC("You hear the faint rustle of pages."),
+		5
+	)
+	to_chat(user, info || SPAN_WARNING("[src] is completely blank!"))
+
+/obj/item/document_coiscin/passport
+	name = "ICCG passport"
+	icon_state = "passport"
+	desc = "A passport from the Independent Colonial Confederation of Gilgamesh."
+	info = "\nName: Yakahakichaki-Tikiyahitika\nSpecies: IPC\nGender: M\nAge: 4\nPlace of Birth: Vega\nFingerprint: n/A"
+	doc_type = "passport"
+
+/obj/item/document_coiscin/workpass
+	name = "workpass"
+	icon_state = "workpass"
+	desc = "Workpass issued to citizens of other states when officially employed on the territory or object of Lordania."
+	info = "\nName: Yakahakichaki-Tikiyahitika\nMastered specialties: pilot, cook, information security technician, nurse, junior engineer, roboticist, lawyer, accountant, secretary\nValid until: 2351.23.06"
+	doc_type = "workpass"
+
+/obj/item/document_coiscin/lorvisa
+	name = "Lordania visa"
+	icon_state = "lorvisa"
+	desc = "A visa issued by the Government of Lordania for the purpose of free movement on the territory of its state, or staying at its facilities."
+	info = "\nName: Yakahakichaki-Tikiyahitika\nPassport number: 213-321-124\nPurpose: work\nDuration: 4 years\nDate: 2346.23.06"
+	doc_type = "lordaniavisa"
 
 /obj/item/clothingbag/coiscin
 	name = "clothing bag"
@@ -131,6 +185,9 @@
 
 /obj/item/clothingbag/coiscin/Initialize()
 	. = ..()
+	new /obj/item/document_coiscin/passport(src)
+	new /obj/item/document_coiscin/lorvisa(src)
+	new /obj/item/document_coiscin/workpass(src)
 	new /obj/item/clothing/under/coiscin(src)
 	new /obj/item/clothing/accessory/haori_coiscin(src)
 	new /obj/item/clothing/accessory/katana_coiscin(src)
