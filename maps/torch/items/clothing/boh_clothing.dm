@@ -1,8 +1,13 @@
 /obj/item/clothing/accessory/cloak/boh
 	desc = "A simple, yet fancy cloak."
+	icon_state = "cloak"
 	icon = 'maps/torch/icons/obj/obj_cloak_boh.dmi'
 	icon_override = 'maps/torch/icons/mob/onmob_cloak_boh.dmi'
-	accessory_icons = list(slot_tie_str = 'maps/torch/icons/mob/onmob_cloak_boh.dmi', slot_w_uniform_str = 'maps/torch/icons/mob/onmob_cloak_boh.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_cloak_boh.dmi')
+	accessory_icons = list(
+		slot_tie_str = 'maps/torch/icons/mob/onmob_cloak_boh.dmi',
+		slot_w_uniform_str = 'maps/torch/icons/mob/onmob_cloak_boh.dmi',
+		slot_wear_suit_str = 'maps/torch/icons/mob/onmob_cloak_boh.dmi'
+	)
 
 /obj/item/clothing/accessory/cloak/boh/dress
 	name = "boatcloak"

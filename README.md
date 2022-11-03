@@ -1,9 +1,9 @@
-# BoS-BAY - Тысяча Рантаймов Edition
-Модификация модификации, да. Вы всё правильно поняли.
+# BoS-BAY - Actually Playable Edition
+Модификация модификации, основывающаяся на модификации модификации, да. К этому моменту мне уже сложно называть билд модификацией.
 
 Оригинал - [Baystation12](https://github.com/baystation12/baystation12)
 
-Отсюда я крал и обновлял код - [Bastion of Hestia](https://github.com/BoHBranch/BoH-Bay) 
+На этом билде мы основывались до ребейза - [Bastion of Hestia](https://github.com/BoHBranch/BoH-Bay) 
 
 Модульные приколы:
 `BOS-bay/code/bos`

@@ -41,3 +41,7 @@
 /obj/item/stamp/path
 	name = "EOL's rubber stamp"
 	icon_state = "stamp-pf"
+
+/obj/item/stamp/solgov/whatthefuck
+	name = "\improper Sol Central Governtment High Command rubber stamp"
+	icon_state = "stamp-solgov"

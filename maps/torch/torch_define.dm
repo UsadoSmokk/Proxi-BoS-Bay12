@@ -37,7 +37,7 @@
 	use_overmap = 1
 	num_exoplanets = 1
 
-	away_site_budget = 5
+	away_site_budget = 0.1
 	//id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'
 	id_hud_icons = 'maps/torch/icons/assignment_hud_boh.dmi'
 

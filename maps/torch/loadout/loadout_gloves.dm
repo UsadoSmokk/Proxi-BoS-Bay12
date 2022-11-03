@@ -7,7 +7,7 @@
 
 /datum/gear/gloves/rainbow
 	allowed_roles = CASUAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
+	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/gloves/evening
 

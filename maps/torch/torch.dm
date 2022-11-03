@@ -142,7 +142,7 @@
 	#include "job/outfits/supply_outfits.dm"
 	#include "job/outfits/marine_outfits.dm"
 
-	#include "language/human/euro.dm"
+	#include "language/human/bos_language_overrides.dm"
 	#include "language/human/misc/spacer.dm"
 
 	#include "machinery/apc_shuttle.dm"
@@ -180,7 +180,6 @@
 	#include "loadout/loadout_head_boh.dm"
 	#include "loadout/loadout_shoes.dm"
 	#include "loadout/loadout_suit.dm"
-	#include "loadout/loadout_suit_boh.dm"
 	#include "loadout/loadout_uniform.dm"
 	#include "loadout/loadout_xeno.dm"
 	#include "loadout/loadout_augments.dm"

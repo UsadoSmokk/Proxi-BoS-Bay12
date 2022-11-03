@@ -86,7 +86,7 @@
 
 
 /datum/job/officer
-	title = "Security Guard"
+	title = "Peacekeeper"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Chief of Security"

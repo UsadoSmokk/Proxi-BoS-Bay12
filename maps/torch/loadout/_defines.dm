@@ -47,7 +47,7 @@
 #define ARMED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/merchant, /datum/job/terrep, /datum/job/terguard, /datum/job/grunt, /datum/job/combat_tech, /datum/job/combat_medic, /datum/job/squad_lead, /datum/job/submap/armsfactory_loyalguard, /datum/job/qm, /datum/job/bridgeofficer, /datum/job/mining)
 
 //For jobs that spawn with armor in their lockers
-#define ARMORED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/qm, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/merchant, /datum/job/terguard, /datum/job/submap/skrellscoutship_crew, /datum/job/submap/skrellscoutship_crew/leader, /datum/job/grunt, /datum/job/combat_tech, /datum/job/combat_medic, /datum/job/squad_lead, /datum/job/submap/armsfactory_loyalguard)
+#define ARMORED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/qm, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/pathfinder, /datum/job/merchant, /datum/job/terguard, /datum/job/submap/skrellscoutship_crew, /datum/job/submap/skrellscoutship_crew/leader, /datum/job/grunt, /datum/job/combat_tech, /datum/job/combat_medic, /datum/job/squad_lead, /datum/job/submap/armsfactory_loyalguard)
 
 //For members of the command and command support department. Why wasn't this here before?
 #define COMMAND_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/terrep, /datum/job/terguard)
@@ -58,14 +58,8 @@
 //For members of Command, Command Support and all other officer roles. Basically COMMAND_ROLES and OFFICER_ROLES merged together as a last resort.
 #define COMMANDANDOFFICER_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/scientist, /datum/job/qm, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/doctor/virologist, /datum/job/pathfinder, /datum/job/terrep, /datum/job/terguard)
 
-#define UNIFORMED_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine, /datum/mil_branch/terran)
-
-#define CASUAL_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/lord)
-
 #define CIVILIAN_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/lord)
 
 #define LORDANIA_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine)
-
-#define TACTICOOL_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine, /datum/mil_branch/terran)
 
 #define MILITARY_BRANCHES list(/datum/mil_branch/larfleet, /datum/mil_branch/larmarine, /datum/mil_branch/terran)
