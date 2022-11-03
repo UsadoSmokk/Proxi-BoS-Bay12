@@ -575,7 +575,7 @@ SUBSYSTEM_DEF(jobs)
 
 	var/style = "font-family: 'Fixedsys'; -dm-text-outline: 1 black; font-size: 11px;"
 //	var/area/A = get_area(C.mob)
-	var/text = "[stationdate2text()], [stationtime2text()]\nAssignment: SCG-LSS Combined Operation\nOP Name: Rat Eater"	//bos
+	var/text = "[stationdate2text()], [stationtime2text()]\nShip: [station_name()]\nObjective: Recon and Sabotage\nFinal Destination: The Solar System frontier"	//bos
 	text = uppertext(text)
 
 	var/obj/effect/overlay/T = new()

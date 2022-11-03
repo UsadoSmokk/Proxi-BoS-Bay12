@@ -121,10 +121,3 @@
 	source = 'sound/music/bos/killallxenos.ogg'
 	license = /decl/license/grandfathered //vrun
 	url = "https://youtu.be/Yg2IooEFTp8"
-
-/decl/audio/track/goodbye
-	title = "Can't Say Goodbye to Yesterday"
-	author = "Carla White"
-	source = 'sound/music/bos/goodbye.ogg'
-	license = /decl/license/grandfathered //lmao no
-	url = "https://youtu.be/2-xDqmebxnM"
