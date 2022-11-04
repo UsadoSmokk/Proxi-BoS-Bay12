@@ -2327,6 +2327,7 @@
 #include "code\modules\mob\living\carbon\human\human_defense.dm"
 #include "code\modules\mob\living\carbon\human\human_defines.dm"
 #include "code\modules\mob\living\carbon\human\human_helpers.dm"
+#include "code\modules\mob\living\carbon\human\human_helpers_bos.dm"
 #include "code\modules\mob\living\carbon\human\human_interactions.dm"
 #include "code\modules\mob\living\carbon\human\human_maneuvers.dm"
 #include "code\modules\mob\living\carbon\human\human_movement.dm"
