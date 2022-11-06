@@ -29,7 +29,7 @@
 	access = list(
 		access_pathfinder, access_explorer, access_eva, access_maint_tunnels, access_bridge, access_emergency_storage,
 		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_research,
-		access_guppy, access_hangar, access_petrov_analysis, access_petrov_maint, access_petrov_helm, access_petrov_security
+		access_guppy, access_hangar
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
