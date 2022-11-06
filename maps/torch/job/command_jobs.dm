@@ -114,7 +114,7 @@
 		access_research, access_mining, access_mining_office, access_mining_station, access_xenobiology,
 		access_RC_announce, access_keycard_auth, access_xenoarch, access_nanotrasen, access_heads,
 		access_expedition_shuttle, access_guppy, access_hangar, access_petrov_helm, access_guppy_helm,
-		access_petrov_analysis, access_petrov_chemistry,
+		access_petrov_analysis, access_petrov_chemistry, access_research_storage,
 		access_petrov_security, access_petrov_maint, access_pathfinder, access_explorer, access_eva, access_solgov_crew,
 		access_expedition_shuttle, access_expedition_shuttle_helm, access_maint_tunnels, access_robotics, access_robotics_engineering
 	)

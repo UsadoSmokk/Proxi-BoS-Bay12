@@ -42,20 +42,9 @@
 	send2chat("***Новый жбан***\n**1. Ckey осужденного:** __*[target]*__\n**2. Ckey администратора:** __*[admin]*__\n**3. Сервер:** __*BoS*__\n**4. Причина:**```[reason]```**5. Наказание и длительность:** [bantypeString]", "notes-hub")
 	return TRUE
 
-/hook/unbanned/proc/SendTGSUnBan(bantype, admin, target, jobs)
+/hook/unbanned/proc/SendTGSUnBan(admin, target)
 	var/bantypeString = ""
-	switch(bantype)
-		if (BANTYPE_JOB_PERMA)
-			bantypeString = "__***пермабан на профессию**: [jobs]*__"
-		if (BANTYPE_JOB_TEMP)
-			bantypeString = "__*временный бан на профессию: [jobs]*__"
-		if (BANTYPE_PERMA)
-			bantypeString = "__***ПЕРМАБАН***__"
-		if (BANTYPE_TEMP)
-			bantypeString = "__*временный бан*__"
-		else
-			bantypeString = "__***капец как разбанил...***__"
-	send2chat("***Амнистия***\n__**1. Ckey помилованного:** __*[target]*__\n**2. Ckey покровителя:** __*[admin]***__**3. Сервер:** __*BOS*__\n**4. Что прощено:** [bantypeString]", "notes-hub")
+	send2chat("***Амнистия***\n__**1. Ckey помилованного:** __*[target]*__\n**2. Ckey покровителя:** __*[admin]***__**3. Сервер:** __*BOS*__", "notes-hub")
 	return TRUE
 
 /hook/playerNotes/proc/SendTGSNotes(admin, target, note)
@@ -65,5 +54,14 @@
 	return TRUE
 
 /hook/oocMessage/proc/SendOOCMsg(ckey, message, admin_rank)
+	if (findtext_char(message, "@"))
+		var/mob/M = get_mob_by_key(ckey)
+		if(!M || !M.client)
+			message_admins("Говно - [ckey] пытался сделать слап. Но я не могу его замутить")
+			return TRUE
+		if(!(M.client.prefs.muted & MUTE_OOC))
+			M.client.prefs.muted |= MUTE_OOC
+			message_admins("Кусок абузера на [ckey] пытался сделать слап. Теперь у него нет ООС")
+		return TRUE
 	send2chat("**[admin_rank == null ? null : admin_rank][ckey]:** *[message]*", "ooc-chat")
 	return TRUE
