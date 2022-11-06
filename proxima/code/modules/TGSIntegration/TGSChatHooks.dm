@@ -59,7 +59,7 @@
 		if(!M || !M.client)
 			message_admins("Говно - [ckey] пытался сделать слап. Но я не могу его замутить")
 			return TRUE
-		if(!(M.client.prefs.muted & mute_type))
+		if(!(M.client.prefs.muted & MUTE_OOC))
 			M.client.prefs.muted |= MUTE_OOC
 			message_admins("Кусок абузера на [ckey] пытался сделать слап. Теперь у него нет ООС")
 		return TRUE
