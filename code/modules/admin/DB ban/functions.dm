@@ -194,13 +194,6 @@
 		return
 
 	DB_ban_unban_by_id(ban_id)
-	// PRX\BOS start	send to discord via TGS
-	if(!src.owner || !istype(src.owner, /client))
-		return
-
-	var/unban_ckey = src.owner:ckey
-	callHook("unbanned", list(bantype, unban_ckey, ckey, (job)?"([job])":""))
-	// PRX\BOS end
 
 /datum/admins/proc/DB_ban_edit(var/banid = null, var/param = null)
 
@@ -298,6 +291,8 @@
 
 	var/sql_update = "UPDATE erro_ban SET unbanned = 1, unbanned_datetime = Now(), unbanned_ckey = '[unban_ckey]', unbanned_computerid = '[unban_computerid]', unbanned_ip = '[unban_ip]' WHERE id = [id]"
 	message_admins("[key_name_admin(usr)] has lifted [pckey]'s ban.",1)
+
+	callHook("unbanned", list(unban_ckey, pckey))	// PRX\BOS start	send to discord via TGS
 
 	var/DBQuery/query_update = dbcon.NewQuery(sql_update)
 	query_update.Execute()
