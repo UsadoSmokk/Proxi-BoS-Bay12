@@ -173,7 +173,7 @@
 	icon_state = "booker"
 	complexity = COMPLEXITY_THREE
 
-/obj/structure/statue/boris/proc/invoke_reaction_normal(mob/user)
+/obj/structure/statue/boris/proc/invoke_reaction_normal(mob/living/carbon/human/user)
 	var/list/quotes = list(
 		"It's humiliating.",
 		"Maybe it's time for me to see a doctor?",
@@ -200,7 +200,7 @@
 
 	to_chat(user, SPAN_BOLD(SPAN_WARNING(pick(quotes))))
 
-/obj/structure/statue/boris/proc/invoke_reaction_lordanian(mob/user)
+/obj/structure/statue/boris/proc/invoke_reaction_lordanian(mob/living/carbon/human/user)
 	var/list/quotes = list(
 		"He is a true lord-protector",
 		"This is absolute power of Lordania",
@@ -225,7 +225,7 @@
 
 	to_chat(user, SPAN_BOLD(SPAN_NOTICE(pick(quotes))))
 
-/obj/structure/statue/boris/proc/special_action(mob/user)
+/obj/structure/statue/boris/proc/special_action(mob/living/carbon/human/user)
 	user.visible_message(
 		"[user] put their hand on the groin of the statue of Boris Booker",
 		"You put your hand on the groin of the statue of Boris Booker"
@@ -234,9 +234,9 @@
 	// TODO Move this to defines
 	var/list/lordanian_faction = list(FACTION_SOVLORDANIA, FACTION_LARFLEET, FACTION_LARMARINES)
 	var/list/lordanian_cultures = list(CULTURE_HUMAN_LORDANIAN_WEST, CULTURE_HUMAN_LORDANIAN_EAST)
-	var/faction = user.client.prefs.cultural_info[TAG_FACTION]
-	var/homeworld = user.client.prefs.cultural_info[TAG_HOMEWORLD]
-	var/culture = user.client.prefs.cultural_info[TAG_CULTURE]
+	var/faction = user.get_faction()
+	var/homeworld = user.get_homeworld()
+	var/culture = user.get_culture()
 
 
 	if ((faction in lordanian_faction) && (homeworld == HOME_SYSTEM_LORDANIA) && (culture in lordanian_cultures))
