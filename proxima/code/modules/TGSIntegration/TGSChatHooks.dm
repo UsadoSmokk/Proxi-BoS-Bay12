@@ -56,7 +56,7 @@
 /hook/oocMessage/proc/SendOOCMsg(ckey, message, admin_rank)
 	if (findtext_char(message, "@"))
 		var/mob/M = get_mob_by_key(ckey)
-		if(!M || !M.client)
+		if(!M || !M.client || M.client.holder)
 			message_admins("Говно - [ckey] пытался сделать слап. Но я не могу его замутить")
 			return TRUE
 		if(!(M.client.prefs.muted & MUTE_OOC))
