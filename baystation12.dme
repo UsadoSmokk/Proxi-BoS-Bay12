@@ -3404,6 +3404,7 @@
 #include "customs\code\devilmayrus.dm"
 #include "customs\code\egorium.dm"
 #include "customs\code\eloncake.dm"
+#include "customs\code\eventmedals.dm"
 #include "customs\code\germanrus.dm"
 #include "customs\code\hacso.dm"
 #include "customs\code\lodagn.dm"
