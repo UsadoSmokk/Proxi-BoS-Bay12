@@ -29,8 +29,8 @@ GLOBAL_LIST_INIT(default_uplink_source_priority, list(
 	var/datum/computer_file/program/uplink/program = new(pda_pass)
 	if(!P.hard_drive.save_file(program))
 		return SETUP_FAILED	//Not enough space or other issues.
-	to_chat(M, "<span class='notice'>A portable object teleportation relay has been installed in your [P.name]. Simply enter the code \"[pda_pass]\" in TaxQuickly program to unlock its hidden features.</span>")
-	M.StoreMemory("<B>Uplink passcode:</B> [pda_pass] ([P.name]).", /decl/memory_options/system)
+	to_chat(M, "<span class='notice'>Портативное телепортационное реле было установлено в ваш [P.name]. Просто введите код \"[pda_pass]\" в программу TaxQuickly для получения доступа к новым возможностям.</span>")
+	M.StoreMemory("<B>Пароль аплинка:</B> [pda_pass] ([P.name]).", /decl/memory_options/system)
 	T.program = program
 
 /decl/uplink_source/radio
@@ -55,7 +55,7 @@ GLOBAL_LIST_INIT(default_uplink_source_priority, list(
 	var/obj/item/device/uplink/T = new(R, M.mind, amount)
 	R.hidden_uplink = T
 	R.traitor_frequency = freq
-	to_chat(M, "<span class='notice'>A portable object teleportation relay has been installed in your [R.name]. Simply dial the frequency [format_frequency(freq)] to unlock its hidden features.</span>")
+	to_chat(M, "<span class='notice'>Портативное телепортационное реле было установлено в ваш [R.name]. Просто смените частоту на [format_frequency(freq)] для получения доступа к новым возможностям.</span>")
 	M.StoreMemory("<B>Radio Freq:</B> [format_frequency(freq)] ([R.name]).", /decl/memory_options/system)
 
 /decl/uplink_source/implant

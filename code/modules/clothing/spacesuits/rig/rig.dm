@@ -101,6 +101,9 @@
 
 	var/banned_modules = list()
 
+	/// BOS: Overrides species_icon in update_icon proc
+	var/species_icon_override
+
 /obj/item/rig/get_mechanics_info()
 	. = ..()
 	. += {"
@@ -606,7 +609,11 @@
 	//TODO: Maybe consider a cache for this (use mob_icon as blank canvas, use suit icon overlay).
 	overlays.Cut()
 	if(!mob_icon || update_mob_icon)
-		var/species_icon = 'icons/mob/onmob/onmob_rig_back.dmi'
+		var/species_icon
+		if (!species_icon_override)
+			species_icon = 'icons/mob/onmob/onmob_rig_back.dmi'
+		else
+			species_icon = species_icon_override
 		// Since setting mob_icon will override the species checks in
 		// update_inv_wear_suit(), handle species checks here.
 		if(wearer && sprite_sheets && sprite_sheets[wearer.species.get_bodytype(wearer)])
@@ -723,7 +730,7 @@
 		"<span class='info'>[M] starts putting on \the [src]...</span>", \
 		"<span class='info'>You start putting on \the [src]...</span>")
 
-		if(!do_after(M, seal_delay, src, DO_PUBLIC_UNIQUE))
+		if(!do_after(M, seal_delay, M, DO_PUBLIC_UNIQUE))
 			if(M && M.back == src)
 				if(!M.unEquip(src))
 					return
