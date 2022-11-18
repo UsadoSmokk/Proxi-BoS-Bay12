@@ -158,6 +158,8 @@
 /obj/item/flame/lighter/zippo/shutoff_effects(mob/user)
 	user.visible_message("<span class='rose'>You hear a quiet click, as [user] shuts off [src] without even looking at what they're doing.</span>")
 	playsound(src.loc, 'sound/items/zippo_close.ogg', 100, 1, -4)
+	else if(lit && istype(O))
+		O.HandleObjectHeating(src, user, 700)
 
 /obj/item/flame/lighter/zippo/afterattack(obj/O, mob/user, proximity)
 	if(!proximity) return
