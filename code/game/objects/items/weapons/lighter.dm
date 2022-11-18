@@ -165,9 +165,9 @@
 		O.reagents.trans_to_obj(src, max_fuel)
 		to_chat(user, "<span class='notice'>You refuel [src] from \the [O]</span>")
 		playsound(src.loc, 'sound/effects/refill.ogg', 50, 1, -6)
-    else if(lit && istype(O))
-        O.HandleObjectHeating(src, user, 700)
-		
+	else if(lit && istype(O))
+		O.HandleObjectHeating(src, user, 700)
+
 /obj/item/flame/lighter/zippo/black
 	color = COLOR_DARK_GRAY
 	name = "black zippo"
