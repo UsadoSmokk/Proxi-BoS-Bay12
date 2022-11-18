@@ -167,6 +167,7 @@
 		playsound(src.loc, 'sound/effects/refill.ogg', 50, 1, -6)
     else if(lit && istype(O))
         O.HandleObjectHeating(src, user, 700)
+		
 /obj/item/flame/lighter/zippo/black
 	color = COLOR_DARK_GRAY
 	name = "black zippo"
