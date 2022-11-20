@@ -56,6 +56,10 @@
 	path = /obj/item/clothing/shoes/hightops
 	flags = GEAR_HAS_TYPE_SELECTION
 
+/datum/gear/shoes/sneakers
+	display_name = "drip sneakers"
+	path = /obj/item/clothing/shoes/sneakers
+
 /datum/gear/shoes/sandal
 	display_name = "wooden sandals"
 	path = /obj/item/clothing/shoes/sandal

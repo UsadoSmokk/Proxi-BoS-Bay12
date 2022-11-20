@@ -211,3 +211,18 @@
 	cowboy_hat["wide-brimmed cowboy hat"] = /obj/item/clothing/head/cowboy_hat/wide
 	cowboy_hat["black wide-brimmed cowboy hat"] = /obj/item/clothing/head/cowboy_hat/wide/black
 	gear_tweaks += new/datum/gear_tweak/path(cowboy_hat)
+
+/datum/gear/head/richard
+	display_name = "cock mask"
+	path = /obj/item/clothing/head/dickmask
+
+/datum/gear/head/bike_helmet
+	display_name = "bike helmet selection"
+	path = /obj/item/clothing/head
+
+/datum/gear/head/bike_helmet/New()
+	..()
+	var/bike_helmet = list()
+	bike_helmet += /obj/item/clothing/head/helmet/biker/integral
+	bike_helmet += /obj/item/clothing/head/helmet/biker/cross
+	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(bike_helmet)
