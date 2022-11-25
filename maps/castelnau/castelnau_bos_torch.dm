@@ -1,15 +1,14 @@
-	#include "job/torch_access.dm"
 
-	#include "bos_torch/datums/uniforms.dm"
+/*	#include "bos_torch/datums/uniforms.dm"
 	#include "bos_torch/datums/uniforms_fleet.dm"
 	#include "bos_torch/datums/uniforms_terran.dm"
-	#include "bos_torch/datums/uniforms_marine-corps.dm"
+	#include "bos_torch/datums/uniforms_marine-corps.dm"*/
 	#include "bos_torch/datums/game_modes/torch_traitor.dm"
 	#include "bos_torch/datums/game_modes/torch_revolution.dm"
 	#include "bos_torch/datums/game_modes/torch_siege.dm"
 //	#include "bos_torch/datums/game_modes/torch_meteor.dm"
 	#include "bos_torch/datums/game_modes/torch_uprising.dm"
-	#include "bos_torch/datums/reports/command.dm"
+/*	#include "bos_torch/datums/reports/command.dm"
 	#include "bos_torch/datums/reports/corporate.dm"
 	#include "bos_torch/datums/reports/exploration.dm"
 	#include "bos_torch/datums/reports/engineering.dm"
@@ -17,11 +16,11 @@
 	#include "bos_torch/datums/reports/science.dm"
 	#include "bos_torch/datums/reports/security.dm"
 	#include "bos_torch/datums/reports/solgov.dm"
-	#include "bos_torch/datums/reports/deck.dm"
+	#include "bos_torch/datums/reports/deck.dm"*/
 	#include "bos_torch/datums/shackle_law_sets.dm"
-	#include "bos_torch/datums/supplypacks/security.dm"
-	#include "bos_torch/datums/supplypacks/science.dm"
-	#include "bos_torch/datums/department_exploration.dm"
+//	#include "bos_torch/datums/supplypacks/security.dm"
+//	#include "bos_torch/datums/supplypacks/science.dm"
+//	#include "bos_torch/datums/department_exploration.dm"
 
 	#include "bos_torch/game/antagonist/outsider/deathsquad.dm"
 	#include "bos_torch/game/antagonist/outsider/ert.dm"
@@ -34,7 +33,7 @@
 	#include "bos_torch/infantry/storage.dm"
 	#include "bos_torch/infantry/vending.dm"
 	#include "bos_torch/infantry/hardsuit.dm"
-
+/*
 	#include "bos_torch/items/cards_ids.dm"
 	#include "bos_torch/items/encryption_keys.dm"
 	#include "bos_torch/items/headsets.dm"
@@ -48,7 +47,7 @@
 	#include "bos_torch/items/explo_shotgun.dm"
 	#include "bos_torch/items/mecha.dm"
 	#include "bos_torch/items/memos.dm"
-
+*/
 	#include "bos_torch/items\ziptie.dm"
 
 	#include "bos_torch/items/clothing/ec_skillbadges.dm"
@@ -64,7 +63,7 @@
 	#include "bos_torch/items/clothing/boh_clothing.dm"
 	#include "bos_torch/items/clothing/boh_head.dm"
 	#include "bos_torch/items/clothing/boh_under.dm"
-
+/*
 	#include "bos_torch/items/weapon/storage/wallets.dm"
 
 	#include "bos_torch/language/human/euro.dm"
@@ -75,13 +74,13 @@
 	#include "bos_torch/machinery/suit_storage.dm"
 
 	#include "bos_torch/machinery/rewards.dm"
-
+*/
 	#include "bos_torch/robot/module_flying_surveyor.dm"
 
-	#include "bos_torch/structures/signs.dm"
-	#include "bos_torch/structures/closets.dm"
+//	#include "bos_torch/structures/signs.dm"
+//	#include "bos_torch/structures/closets.dm"
 	#include "bos_torch/structures/closets/closet_appearances.dm"
-	#include "bos_torch/structures/closets/command.dm"
+/*	#include "bos_torch/structures/closets/command.dm"
 	#include "bos_torch/structures/closets/engineering.dm"
 	#include "bos_torch/structures/closets/medical.dm"
 	#include "bos_torch/structures/closets/misc.dm"
@@ -90,9 +89,9 @@
 	#include "bos_torch/structures/closets/services.dm"
 	#include "bos_torch/structures/closets/supply.dm"
 	#include "bos_torch/structures/closets/exploration.dm"
-
+*/
 	#include "bos_torch/structures/closets/munitions.dm"
-
+/*
 	#include "bos_torch/loadout/_defines.dm"
 	#include "bos_torch/loadout/loadout_accessories.dm"
 	#include "bos_torch/loadout/loadout_accessories_boh.dm"
@@ -113,5 +112,5 @@
 	#include "bos_torch/loadout/zaglushka.dm"
 
 	#include "bos_torch/loadout/~defines.dm"
-
+*/
 	#include "../../packs/faction_iccgn/_pack.dm"

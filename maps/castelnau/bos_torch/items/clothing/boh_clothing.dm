@@ -85,7 +85,7 @@
 	name = "heavy suit control module"
 	desc = "A heavy, incredibly sleek suit of military grade armor. \
 	The ablative coating and composite armor makes it seem incredibly sturdy."
-	req_access = list(access_marines)
+//	req_access = list(access_marines)
 	suit_type = "military hardsuit"
 	icon_state = "military_rig"
 	armor = list(

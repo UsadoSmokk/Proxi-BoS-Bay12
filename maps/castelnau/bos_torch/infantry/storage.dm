@@ -100,5 +100,5 @@
 /obj/machinery/suit_cycler/infantry
 	name = "Infantry suit cycler"
 	model_text = "Marines"
-	req_access = list(access_marines)
+//	req_access = list(access_marines)
 	available_modifications = list(/decl/item_modifier/space_suit/hazard, /decl/item_modifier/space_suit/engineering/alt, /decl/item_modifier/space_suit/security/alt, /decl/item_modifier/space_suit/security)

@@ -5,7 +5,7 @@
 	icon_deny = "sec-deny"
 	icon_vend = "sec-vend"
 	vend_delay = 14
-	req_access = list(access_marines)
+//	req_access = list(access_marines)
 	products = list(
 		/obj/item/ammo_magazine/mil_rifle/sec = 12,
 		/obj/item/ammo_magazine/mil_rifle/sec/large = 2,

@@ -27,7 +27,7 @@
 	icon = 'maps/torch/bos/icons/obj/structures/lordbanner.dmi'
 	icon_state = "banner_stowed"
 	w_class = ITEM_SIZE_HUGE
-	req_access = list(access_solgov_crew)
+//	req_access = list(access_solgov_crew)
 
 /obj/item/lordbanner/attack_self(mob/living/carbon/human/user)
 	..()
