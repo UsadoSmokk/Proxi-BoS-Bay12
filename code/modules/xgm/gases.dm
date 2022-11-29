@@ -197,11 +197,11 @@
 	tile_color = "#c5f72d"
 	overlay_limit = 0.5
 	specific_heat = 5	// J/(mol*K)
-	molar_mass = 0.017	// kg/mol
+	molar_mass = 0.071	// kg/mol
 	flags = XGM_GAS_CONTAMINANT
 	breathed_product = /datum/reagent/toxin/chlorine
-	symbol_html = "Cl"
-	symbol = "Cl"
+	symbol_html = "Cl<sub>2</sub>"
+	symbol = "Cl2"
 
 /decl/xgm_gas/vapor
 	id = GAS_STEAM

@@ -49,7 +49,13 @@
 			/obj/item/clothing/suit/leathercoat = 500,
 			/obj/item/clothing/suit/storage/toggle/brown_jacket = 500,
 			/obj/item/clothing/suit/storage/toggle/bomber = 500,
-			/obj/item/clothing/suit/storage/hooded/wintercoat = 500))
+			/obj/item/clothing/suit/storage/hooded/wintercoat = 500),
+		"Medical" = list(
+			/obj/item/stack/medical/ointment = 40,
+			/obj/item/stack/medical/advanced/ointment = 80,
+			/obj/item/stack/medical/bruise_pack = 40,
+			/obj/item/stack/medical/advanced/bruise_pack = 80))
+
 
 /obj/machinery/biogenerator/New()
 	..()
