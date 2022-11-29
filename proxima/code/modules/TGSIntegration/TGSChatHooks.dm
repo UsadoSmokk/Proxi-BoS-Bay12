@@ -43,7 +43,7 @@
 	return TRUE
 
 /hook/unbanned/proc/SendTGSUnBan(admin, target)
-	var/bantypeString = ""
+//	var/bantypeString = "" //Я НЕ ЕБУ ЗАЧЕМ ОНО НУЖНО, НО ВЫ ЕГО БОЛЬШЕ НЕ ИСПОЛЬЗУЕТЕ И СРЁТСЯ ВАРНИНГ ПРИ КОМПИЛЕ
 	send2chat("***Амнистия***\n__**1. Ckey помилованного:** __*[target]*__\n**2. Ckey покровителя:** __*[admin]***__**3. Сервер:** __*BOS*__", "notes-hub")
 	return TRUE
 
