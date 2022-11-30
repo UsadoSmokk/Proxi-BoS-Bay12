@@ -17,3 +17,10 @@
 	desc = "A pair of cowboy boots made from python skin."
 	icon_state = "cowboy_snakeskin"
 	item_state = "cowboy_snakeskin"
+
+/obj/item/clothing/shoes/sneakers
+	name = "drip sneakers"
+	desc = "Good God, they're so cool."
+	icon_state = "dripsneakers"
+	icon = 'icons/bos/obj/clothing/obj_feet.dmi'
+	item_icons = list(slot_shoes_str = 'icons/bos/mob/onmob/onmob_feet.dmi')
