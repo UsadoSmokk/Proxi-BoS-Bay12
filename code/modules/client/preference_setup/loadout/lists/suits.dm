@@ -118,6 +118,7 @@
 	jackets += /obj/item/clothing/suit/storage/bos/hmjacket
 	jackets += /obj/item/clothing/suit/storage/bos/hmvest
 	jackets += /obj/item/clothing/suit/storage/bos/drivejacket
+	jackets += /obj/item/clothing/suit/storage/bos/disco
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(jackets)
 
 /datum/gear/suit/wintercoat

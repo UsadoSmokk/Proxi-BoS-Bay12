@@ -60,6 +60,10 @@
 	display_name = "drip sneakers"
 	path = /obj/item/clothing/shoes/sneakers
 
+/datum/gear/shoes/snakeshoes
+	display_name = "snake shoes"
+	path = /obj/item/clothing/shoes/snakeshoes
+
 /datum/gear/shoes/sandal
 	display_name = "wooden sandals"
 	path = /obj/item/clothing/shoes/sandal

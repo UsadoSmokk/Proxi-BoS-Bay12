@@ -22,3 +22,8 @@
 	desc = "Satin bomber jacket with scorpion embroidery on the back"
 	icon_state = "drivejacket"
 
+/obj/item/clothing/suit/storage/bos/disco
+	name = "disco-ass blazer"
+	desc = "Looks like someone skinned this blazer off some long extinct disco-animal. It has an enigmatic white rectangle on the back and the right sleeve."
+	icon_state = "disco"
+

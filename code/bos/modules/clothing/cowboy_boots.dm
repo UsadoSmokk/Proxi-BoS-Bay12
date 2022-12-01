@@ -24,3 +24,10 @@
 	icon_state = "dripsneakers"
 	icon = 'icons/bos/obj/clothing/obj_feet.dmi'
 	item_icons = list(slot_shoes_str = 'icons/bos/mob/onmob/onmob_feet.dmi')
+
+/obj/item/clothing/shoes/snakeshoes
+	name = "green snake shoes"
+	desc = "Good God, they're so cool."
+	icon_state = "snakeshoes"
+	icon = 'icons/bos/obj/clothing/obj_feet.dmi'
+	item_icons = list(slot_shoes_str = 'icons/bos/mob/onmob/onmob_feet.dmi')
