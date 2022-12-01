@@ -21,6 +21,7 @@
 	ties["navy tie"] = /obj/item/clothing/accessory/navy
 	ties["horrible tie"] = /obj/item/clothing/accessory/horrible
 	ties["brown tie"] = /obj/item/clothing/accessory/brown
+	ties["disco tie"] = /obj/item/clothing/accessory/horror_tie
 	gear_tweaks += new/datum/gear_tweak/path(ties)
 
 
