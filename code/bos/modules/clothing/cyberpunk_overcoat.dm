@@ -71,3 +71,32 @@
 	desc = "A sleek long overcoat made of neo-laminated fabric. Has a reasonably sized pocket on the inside."
 	icon_state = "cyberpunksleek_long_white"
 	item_state = "cyberpunksleek_long_white"
+
+/obj/item/clothing/suit/storage/davidjacket
+	name = "blade hunter jacket"
+	desc = "A jacket for a real blade hunter. It once belonged to David Martinez, and before that to his mother, Gloria"
+	icon_state = "punkjacket"
+	item_state = "punkjacket"
+	icon = 'icons/bos/obj/clothing/obj_suit.dmi'
+	item_icons = list(slot_wear_suit_str = 'icons/bos/mob/onmob/onmob_suit.dmi')
+	armor = list(
+		melee = 5,
+		bullet = 10,
+		energy = 5,
+		bomb = 0,
+		bio = 0,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+
+/obj/item/clothing/suit/storage/davidjacket/samurai
+	name = "punk jacket"
+	desc = "This jacket is a merch, one of the most popular in our time of the Plutonian punk band Foronovaia Eblia"
+	icon_state = "samuraijacket"
+	item_state = "samuraijacket"
+
+/obj/item/clothing/suit/storage/davidjacket/bladejacket
+	name = "hunter jacket"
+	desc = "During the IPC revolution, hunters of particularly dangerous individuals dressed in such a coat"
+	icon_state = "bladejacket"
+	item_state = "bladejacket"
