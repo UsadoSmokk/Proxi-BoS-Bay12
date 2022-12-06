@@ -7,7 +7,6 @@
 	anchored = 1
 	idle_power_usage = 20
 	active_power_usage = 5000
-	req_access = list(access_brig)
 	base_type = /obj/machinery/weapons_fabricator
 	construct_state = /decl/machine_construction/default/panel_closed
 	uncreated_component_parts = null
@@ -317,22 +316,17 @@
 	update_categories()
 
 /obj/item/stock_parts/circuitboard/weaponsfab
-	name = "Circuit board (Weapons Fabricator)"
+	name = T_BOARD("weapons fabricator")
 	build_path = /obj/machinery/weapons_fabricator
 	board_type = "machine"
 	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3)
 	req_components = list(
 		/obj/item/stock_parts/matter_bin = 2,
 		/obj/item/stock_parts/manipulator = 1,
-		/obj/item/stock_parts/micro_laser = 1)
+		/obj/item/stock_parts/micro_laser = 1
+	)
 	additional_spawn_components = list(
 		/obj/item/stock_parts/console_screen = 1,
 		/obj/item/stock_parts/keyboard = 1,
 		/obj/item/stock_parts/power/apc/buildable = 1
 	)
-
-/obj/machinery/weapons_fabricator/rnd
-	req_access = list()
-
-/obj/item/stock_parts/circuitboard/weaponsfab/rnd
-	build_path = /obj/machinery/weapons_fabricator/rnd

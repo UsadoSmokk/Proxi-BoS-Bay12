@@ -28,7 +28,7 @@
 
 	access = list(access_security, access_brig, access_armory, access_forensics_lockers,
 						access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-						access_eva, access_sec_doors, access_solgov_crew, access_gun, access_research, access_petrov_security, access_hangar)
+						access_eva, access_sec_doors, access_solgov_crew, access_gun, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
@@ -86,7 +86,7 @@
 
 
 /datum/job/officer
-	title = "Security Guard"
+	title = "Peacekeeper"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Chief of Security"
@@ -119,7 +119,7 @@
 
 	access = list(access_security, access_brig, access_maint_tunnels,
 						access_external_airlocks, access_emergency_storage,
-						access_eva, access_sec_doors, access_solgov_crew, access_research, access_petrov_security, access_hangar)
+						access_eva, access_sec_doors, access_solgov_crew, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)

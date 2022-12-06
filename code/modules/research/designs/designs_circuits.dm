@@ -230,7 +230,7 @@
 	name = "weapon fabricator board"
 	id = "weaponfab"
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2, TECH_COMBAT = 2)
-	build_path = /obj/item/stock_parts/circuitboard/weaponsfab/rnd
+	build_path = /obj/item/stock_parts/circuitboard/weaponsfab
 	sort_string = "HABAE"
 
 /datum/design/circuit/replicator
@@ -366,6 +366,12 @@
 	id = "injector"
 	build_path = /obj/item/stock_parts/circuitboard/air_management/injector_control
 	sort_string = "JAAAH"
+
+/datum/design/circuit/target_control
+	name = "target control console"
+	id = "target_control_console"
+	build_path = /obj/item/stock_parts/circuitboard/missiles
+	sort_string = "JAAAI"
 
 /datum/design/circuit/pacman
 	name = "PACMAN-type generator"

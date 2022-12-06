@@ -54,6 +54,10 @@
 	suits += /obj/item/clothing/under/det
 	suits += /obj/item/clothing/under/det/black
 	suits += /obj/item/clothing/under/det/grey
+	suits += /obj/item/clothing/under/bos
+	suits += /obj/item/clothing/under/bos/casual
+	suits += /obj/item/clothing/under/bos/sport
+	suits += /obj/item/clothing/under/bos/pantclash
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(suits)
 
 /datum/gear/uniform/scrubs

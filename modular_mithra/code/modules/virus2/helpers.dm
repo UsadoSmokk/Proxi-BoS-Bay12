@@ -1,5 +1,6 @@
 /obj/machinery/disease2
 	core_skill = SKILL_VIROLOGY
+	construct_state = /decl/machine_construction/default/panel_closed
 
 /obj/machinery/proc/infect_nearby(datum/disease2/disease/disease, base_chance = 20, dist = 2)
 	if(istype(disease) && operator_skill <= HAS_PERK)
