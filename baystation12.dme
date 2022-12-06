@@ -169,6 +169,7 @@
 #include "code\bos\datums\uplink\stealth_and_camouflage_items.dm"
 #include "code\bos\game\jobs\access_datum.dm"
 #include "code\bos\game\objects\fakebooks.dm"
+#include "code\bos\game\objects\noose.dm"
 #include "code\bos\game\objects\effects\error.dm"
 #include "code\bos\game\objects\effects\razorweb.dm"
 #include "code\bos\game\objects\effects\decals\contraband.dm"
