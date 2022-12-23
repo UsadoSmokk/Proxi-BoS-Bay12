@@ -80,6 +80,14 @@
 	#include "structures/watercloset.dm"
 	#include "structures/wood.dm"
 
+	#include "structures/closets/closet.dm"
+	#include "structures/closets/engineering.dm"
+	#include "structures/closets/medical.dm"
+	#include "structures/closets/misc.dm"
+	#include "structures/closets/security.dm"
+	#include "structures/closets/service.dm"
+	#include "structures/closets/supply.dm"
+
 	#include "structures/stool_bed_chair_nest/bed.dm"	//FUCK YOU
 	#include "structures/stool_bed_chair_nest/chairs.dm"
 

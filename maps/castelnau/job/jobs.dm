@@ -2,14 +2,14 @@
 	species_to_job_whitelist = list()
 
 #define COMMAND_JOBS /datum/job/captain, /datum/job/hop, /datum/job/adjutant
-#define HUMAN_NOVOX_JOBS /datum/job/captain, /datum/job/hop, /datum/job/adjutant, /datum/job/senior_engineer, /datum/job/engineer, /datum/job/warden, /datum/job/officer, /*/datum/job/specialist,*/ /datum/job/senior_doctor, /datum/job/doctor, /datum/job/qm, /datum/job/mining, /datum/job/janitor, /datum/job/chef, /datum/job/bartender, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/roboticist, /datum/job/scientist_assistant, /datum/job/scientist_pilot, /datum/job/assistant
+#define HUMAN_NOVOX_JOBS /datum/job/captain, /datum/job/hop, /datum/job/adjutant, /datum/job/senior_engineer, /datum/job/engineer, /datum/job/officer, /*/datum/job/specialist,*/ /datum/job/senior_doctor, /datum/job/doctor, /datum/job/qm, /datum/job/mining, /datum/job/janitor, /datum/job/chef, /datum/job/bartender, /datum/job/scientist, /datum/job/roboticist, /datum/job/assistant
 	species_to_job_blacklist = list(
 		/datum/species/unathi = list(/datum/job/captain, /datum/job/hop),
 		/datum/species/unathi/yeosa = list(/datum/job/captain, /datum/job/hop),
 		/datum/species/machine = list(/datum/job/captain),
 		/datum/species/diona = list(COMMAND_JOBS, /datum/job/warden, /datum/job/officer),
 		/datum/species/adherent = list(COMMAND_JOBS, /datum/job/warden, /datum/job/officer),
-		/datum/species/nabber = list(COMMAND_JOBS, /datum/job/senior_engineer, /datum/job/senior_doctor, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/qm, /datum/job/warden, /datum/job/officer),
+		/datum/species/nabber = list(COMMAND_JOBS, /datum/job/senior_engineer, /datum/job/senior_doctor, /datum/job/scientist, /datum/job/qm, /datum/job/warden, /datum/job/officer),
 //		/datum/species/resomi = list(COMMAND_JOBS, /datum/job/senior_engineer, /datum/job/senior_doctor, /datum/job/senior_scientist, /datum/job/warden),
 		/datum/species/vox = list(HUMAN_NOVOX_JOBS),
 		/datum/species/vox/armalis = list(HUMAN_NOVOX_JOBS),
@@ -23,7 +23,7 @@
 						/datum/job/senior_doctor, /datum/job/doctor,
 						/datum/job/qm, /datum/job/mining,
 						/datum/job/janitor, /datum/job/chef, /datum/job/bartender,
-						/datum/job/senior_scientist, /datum/job/scientist, /datum/job/roboticist, /datum/job/scientist_assistant, /datum/job/scientist_pilot,
+						/datum/job/scientist, /datum/job/roboticist,
 						/datum/job/assistant
 						)
 
@@ -40,7 +40,7 @@
 
 // Some jobs for nabber grades defined here due to map-specific job datums.
 /decl/cultural_info/culture/nabber/New()
-	LAZYADD(valid_jobs, /datum/job/scientist_assistant)
+	LAZYADD(valid_jobs, /datum/job/scientist)
 	..()
 
 /decl/cultural_info/culture/nabber/b/New()

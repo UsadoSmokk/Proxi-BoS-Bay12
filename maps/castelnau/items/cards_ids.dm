@@ -68,16 +68,10 @@
 	job_access_type = /datum/job/bartender
 
 /obj/item/card/id/castelnau/crew/research
-	job_access_type = /datum/job/scientist_assistant
-
-/obj/item/card/id/castelnau/crew/research/senior_scientist
-	job_access_type = /datum/job/senior_scientist
+	job_access_type = /datum/job/scientist
 
 /obj/item/card/id/castelnau/crew/research/scientist
 	job_access_type = /datum/job/scientist
 
 /obj/item/card/id/castelnau/crew/research/roboticist
 	job_access_type = /datum/job/roboticist
-
-/obj/item/card/id/castelnau/crew/research/scientist_pilot
-	job_access_type = /datum/job/scientist_pilot

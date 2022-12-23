@@ -87,3 +87,59 @@
 							 /datum/computer_file/program/atmos_control,
 							 /datum/computer_file/program/rcon_console,
 							 /datum/computer_file/program/shields_monitor)
+
+
+/datum/job/scientist
+	title = "Reverse Engineer"
+	department = "Science"
+	department_flag = ENG
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Research Director"
+	economic_power = 10
+	ideal_character_age = 45
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_COMPUTER    = SKILL_BASIC,
+	                    SKILL_DEVICES     = SKILL_BASIC,
+	                    SKILL_SCIENCE     = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_DEVICES     = SKILL_MAX,
+	                    SKILL_SCIENCE     = SKILL_MAX)
+
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/research/scientist
+	allowed_branches = list(/datum/mil_branch/science_personnel)
+	allowed_ranks = list(/datum/mil_rank/civ/civ)
+
+	access = list(access_castelnau_prometeus)
+
+	skill_points = 25
+
+
+/datum/job/roboticist
+	title = "Roboticist"
+	department = "Science"
+	department_flag = ENG
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Senior Researcher"
+	selection_color = "#633d63"
+	economic_power = 6
+	alt_titles = list(
+		"Biomechanical Engineer")
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/research/roboticist
+	allowed_branches = list(/datum/mil_branch/science_personnel)
+	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
+	                    SKILL_MECH          = SKILL_ADEPT,
+	                    SKILL_DEVICES		= SKILL_ADEPT,
+	                    SKILL_ANATOMY       = SKILL_BASIC)
+
+	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
+						SKILL_COMPUTER	   = SKILL_MAX,
+						SKILL_MECH		   = SKILL_MAX,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_ANATOMY      = SKILL_EXPERT)
+
+	access = list(access_castelnau_prometeus)
+
+	skill_points = 20

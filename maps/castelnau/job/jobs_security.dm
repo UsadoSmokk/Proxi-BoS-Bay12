@@ -8,10 +8,6 @@
 	economic_power = 8
 	minimal_player_age = 14
 	ideal_character_age = 35
-	alt_titles = list(
-		"PMC Ranger",
-		"Security Pointman"
-		)
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/security/warden
 	allowed_branches = list(/datum/mil_branch/ship_personnel)
 	allowed_ranks = list(/datum/mil_rank/civ/merc, /datum/mil_rank/civ/civ)
@@ -37,7 +33,7 @@
 				  access_castelnau_eva)
 
 /datum/job/officer
-	title = "Deputy Sheriff"
+	title = "Security Operative"
 	department = "Security"
 	department_flag = SEC
 	total_positions = 1
@@ -46,9 +42,6 @@
 	economic_power = 6
 	minimal_player_age = 10
 	ideal_character_age = 25
-	alt_titles = list(
-		"PMC Junior Ranger",
-		"Security Operative")
 
 	skill_points = 20
 
