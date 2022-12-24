@@ -2,6 +2,8 @@
 	name = "spying sensor"
 	icon_state = "motion0" //placeholder
 	desc = "Looks like some sort of sensor."
+	w_class = ITEM_SIZE_SMALL
+
 	var/active = FALSE
 	var/datum/mind/owner
 	var/list/obj/item/device/spy_sensor/group
