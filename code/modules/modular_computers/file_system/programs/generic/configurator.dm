@@ -19,7 +19,7 @@
 	category = PROG_UTIL
 
 /datum/nano_module/program/computer_configurator
-	name = "NTOS Computer Configuration Tool"
+	name = "LOROS Computer Configuration Tool"
 
 /datum/nano_module/program/computer_configurator/ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = 1, var/datum/topic_state/state = GLOB.default_state)
 	var/list/data = list()
@@ -57,7 +57,7 @@
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
-		ui = new(user, src, ui_key, "laptop_configuration.tmpl", "NTOS Configuration Utility", 575, 700, state = state)
+		ui = new(user, src, ui_key, "laptop_configuration.tmpl", "LOROS Configuration Utility", 575, 700, state = state)
 		ui.auto_update_layout = 1
 		ui.set_initial_data(data)
 		ui.open()
