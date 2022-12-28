@@ -22,7 +22,7 @@
 /datum/nano_module/program/email_administration/proc/get_ntos()
 	var/datum/extension/interactive/ntos/os = get_extension(nano_host(), /datum/extension/interactive/ntos)
 	if(!istype(os))
-		error = "Error accessing system. Are you using a functional and NTOSv2-compliant device?"
+		error = "Error accessing system. Are you using a functional and LOROSv2-compliant device?"
 		return
 	return os
 

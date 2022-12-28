@@ -33,6 +33,7 @@ var/global/datum/uplink/uplink = new()
 	var/list/antag_costs = list()			// Allows specific antag roles to purchase at a different cost
 	var/datum/uplink_category/category		// Item category
 	var/list/datum/antagonist/antag_roles	// Antag roles this item is displayed to. If empty, display to all. If it includes 'Exclude", anybody except this role can view it
+	var/service = 0							//BoS, special var for SyndieNet service
 
 /datum/uplink_item/item
 	var/path = null
@@ -46,6 +47,11 @@ var/global/datum/uplink/uplink = new()
 		return
 
 	var/cost = cost(U.uses, U)
+
+	if(service) //BoS, for contracts
+		purchase_log(U, user, cost)
+		U.reputation -= cost
+		return
 
 	var/goods = get_goods(U, get_turf(user), user, extra_args)
 	if(!goods)
@@ -61,7 +67,10 @@ var/global/datum/uplink/uplink = new()
 	return 1
 
 /datum/uplink_item/proc/can_buy(obj/item/device/uplink/U)
-	if(cost(U.uses, U) > U.uses)
+	if((cost(U.reputation, U) > U.reputation) && (service)) //BoS, rep for service check
+		return 0
+
+	if((cost(U.uses, U) > U.uses) && (!service)) //BoS, was "if(cost(U.uses, U) > U.uses)"
 		return 0
 
 	return can_view(U)
@@ -96,6 +105,12 @@ var/global/datum/uplink/uplink = new()
 
 /datum/uplink_item/proc/description()
 	return desc
+
+/datum/uplink_item/proc/currency() //BoS
+	if(service == 1)
+		return "REP"
+	else
+		return ""
 
 // get_goods does not necessarily return physical objects, it is simply a way to acquire the uplink item without paying
 /datum/uplink_item/proc/get_goods(var/obj/item/device/uplink/U, var/loc)

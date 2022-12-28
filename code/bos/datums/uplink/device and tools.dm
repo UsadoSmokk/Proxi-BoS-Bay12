@@ -3,7 +3,7 @@
 	desc = "Special explosive, which can be planted on doors and will explode when somebody will open this door."
 	item_cost = 14
 	path = /obj/item/weapon/door_charge
-	
+
 /datum/uplink_item/item/tools/radlaser
 	name = "Radioactive Microlaser"
 	item_cost = 18

@@ -121,3 +121,11 @@
 	source = 'sound/music/bos/killallxenos.ogg'
 	license = /decl/license/grandfathered //vrun
 	url = "https://youtu.be/Yg2IooEFTp8"
+
+/decl/audio/track/pskovskiymarch
+	display = "Lordanian March"
+	title = "Pskovskiy March"
+	author = "Andrey Savchenko"
+	source = 'sound/music/bos/pskovskiymarch.ogg'
+	license = /decl/license/grandfathered //who knows
+	url = "https://www.youtube.com/watch?v=9x54QQqS3pg"

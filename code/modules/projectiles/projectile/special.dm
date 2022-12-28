@@ -204,20 +204,6 @@
 	if(L.reagents)
 		L.reagents.add_reagent(/datum/reagent/toxin/venom, 5)
 
-/obj/item/missile
-	icon = 'icons/obj/grenade.dmi'
-	icon_state = "missile"
-	var/primed = null
-	throwforce = 15
-
-/obj/item/missile/throw_impact(atom/hit_atom)
-	if(primed)
-		explosion(hit_atom, 0, 1, 2, 4)
-		qdel(src)
-	else
-		..()
-	return
-
 /obj/item/projectile/hotgas
 	name = "gas vent"
 	icon_state = null
@@ -236,11 +222,14 @@
 
 //boh
 /obj/item/projectile/missile
+	name = "missile"
+	icon = 'proxima/icons/obj/guns/projectiles.dmi'
 	icon_state = "missile"
+	fire_sound = 'sound/weapons/gunshot/rpg_fire.ogg'
 	throwforce = 15
 
 /obj/item/projectile/missile/on_impact(var/atom/target, var/blocked = 0)
-	explosion(target, 0, 2, 2, 4)
+	explosion(target, 1, 1, 3, 3)
 
 /obj/item/projectile/missile/on_hit(atom/target, blocked, def_zone) // Oh no, someone got hit by the RPG.
 	. = ..()
