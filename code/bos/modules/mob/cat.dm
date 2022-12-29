@@ -34,3 +34,11 @@
 		set_dir(get_dir(src, user))
 		qdel(W)
 		visible_emote("eat all of the dumplings in few seconds with gigantic happines!")
+
+/mob/living/simple_animal/passive/cat/caracal/grisha/new_year
+	name = "Novogodniy Bolshoy Grigoriy"
+	desc = "That's Bolshoy Grigoriy, a big Terran cat. Now he full with determination to celebrate the New Year. So you better not interfere.."
+	icon_state = "floppa_newyear"
+	item_state = "floppa_newyear"
+	icon_living = "floppa_newyear"
+	mob_size = MOB_LARGE
