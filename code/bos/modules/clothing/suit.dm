@@ -27,3 +27,7 @@
 	desc = "Looks like someone skinned this blazer off some long extinct disco-animal. It has an enigmatic white rectangle on the back and the right sleeve."
 	icon_state = "disco"
 
+/obj/item/clothing/suit/storage/bos/santa_blue
+	name = "santa's suit"
+	desc = "Looks like capitalism."
+	icon_state = "santa"

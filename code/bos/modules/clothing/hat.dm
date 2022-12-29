@@ -34,3 +34,11 @@
 	desc = "a cross motorcycle helmet, the package includes glasses and a can of Space Bull"
 	icon_state = "crosshelmet"
 	icon_state_open = "crosshelmet_open"
+
+/obj/item/clothing/head/santa_hat_blue
+	name = "Santa's hat"
+	desc = "Hoo-hoo ho..."
+	icon = 'icons/bos/obj/clothing/obj_head.dmi'
+	icon_state = "cap_santa"
+	item_icons = list(slot_head_str = 'icons/bos/mob/onmob/onmob_head.dmi')
+	flags_inv = BLOCKHAIR
