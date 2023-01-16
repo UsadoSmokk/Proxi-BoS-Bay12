@@ -197,6 +197,7 @@
 #include "code\bos\game\objects\items\weapons\storage\uplink_kits.dm"
 #include "code\bos\game\objects\items\weapons\uplink\explosive.dm"
 #include "code\bos\game\objects\items\weapons\uplink\radanalyzer.dm"
+#include "code\bos\game\objects\random\random.dm"
 #include "code\bos\game\objects\structures\barrier.dm"
 #include "code\bos\game\objects\structures\flora.dm"
 #include "code\bos\game\objects\structures\sealgen.dm"
