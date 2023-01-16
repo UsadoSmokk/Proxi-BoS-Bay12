@@ -9,7 +9,7 @@
 	name = "Spying Implant"
 	item_cost = 1
 	path = /obj/item/storage/box/syndie_kit/imp_spying
-	desc = "An implant, created for hidden taking all possible information from his carrier."
+	desc = "An implant, created for hidden taking of all possible information from his carrier."
 	antag_roles = list(MODE_TRAITOR)
 
 /datum/uplink_item/item/contractor/imp_spying/buy(obj/item/device/uplink/U)
@@ -72,7 +72,7 @@
 	name = "Random Teleportation"
 	item_cost = 25
 	service = 1
-	desc = "SyndieNet can overpower the bluespace rele in your uplink, and you get randomly teleported in your destination base. WARNING: SyndieNet can't guarantee that you not get teleported in danger area."
+	desc = "Gestalt can overpower the bluespace rele in your uplink, and you get randomly teleported in your destination base. WARNING: Gestalt can't guarantee that you won't be teleported into the danger zone."
 	antag_roles = list(MODE_TRAITOR)
 
 /datum/uplink_item/item/contractor/teleport/buy(obj/item/device/uplink/U)
@@ -92,7 +92,7 @@
 	name = "Check Archive"
 	item_cost = 15
 	service = 1
-	desc = "SyndieNet check his contracts archive, and find for you one or two missions. Remember: other agents in your zone also can complete this contracts."
+	desc = "Gestalt can check his contracts archive, and find for you one or two missions. Remember: other agents in your zone also can complete these contracts."
 	antag_roles = list(MODE_TRAITOR)
 
 /datum/uplink_item/item/contractor/syndienet_archive/buy(obj/item/device/uplink/U)
