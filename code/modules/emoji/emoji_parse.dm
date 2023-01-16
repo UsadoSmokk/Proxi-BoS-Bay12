@@ -7,7 +7,7 @@ GLOBAL_VAR_INIT(emojis, 'icons/emoji.dmi')
 	var/pos = 1
 	var/search = 0
 	var/emoji = ""
-	var/static/list/emojis = icon_states(GLOB.emojis)
+	var/list/emojis = icon_states(GLOB.emojis)
 	while(1)
 		search = findtext_char(text, ":", pos)
 		parsed += copytext_char(text, pos, search)
