@@ -7,12 +7,14 @@
 	ideal_character_age = 45
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Captain, the First Officer and the Second Officer"
+	supervisors = "the Coordinator"
 	selection_color = "#013d3b"
 	economic_power = 8
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/medical/senior
-	allowed_branches = list(/datum/mil_branch/ship_personnel)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	allowed_branches = list(/datum/mil_branch/reg)
+	allowed_ranks = list(
+		/datum/mil_rank/reg
+	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_ADEPT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
@@ -35,7 +37,7 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Surgeon"
+	supervisors = "the Surgeon and the Coordinator"
 	economic_power = 7
 	ideal_character_age = 40
 	alt_titles = list(
@@ -43,8 +45,16 @@
 		"Chemist")
 
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/medical/doctor
-	allowed_branches = list(/datum/mil_branch/ship_personnel)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	allowed_branches = list(
+							/datum/mil_branch/mil,
+							/datum/mil_branch/par)
+	allowed_ranks = list(
+						/datum/mil_rank/mil/scg,
+						/datum/mil_rank/mil/lss,
+						/datum/mil_rank/mil/iccg,
+						/datum/mil_rank/par,
+						/datum/mil_rank/par/yak,
+						/datum/mil_rank/other/free)
 	min_skill = list(   SKILL_MEDICAL   = SKILL_BASIC,
 		                SKILL_CHEMISTRY = SKILL_BASIC,
 	                    SKILL_ANATOMY   = SKILL_BASIC)
@@ -57,3 +67,35 @@
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors)
 	skill_points = 22
 
+
+/datum/job/redactor
+	title = "Redactor"
+	total_positions = 1
+	spawn_positions = 1
+	economic_power = 5
+	minimum_character_age = list(SPECIES_HUMAN = 24)
+	minimal_player_age = 0
+	supervisors = "the Surgeon and the Coordinator"
+//	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/counselor
+
+	allowed_branches = list(
+							/datum/mil_branch/par,
+							/datum/mil_branch/other)
+	allowed_ranks = list(
+						/datum/mil_rank/par,
+						/datum/mil_rank/par/yak,
+						/datum/mil_rank/other/free)
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_BASIC,
+		SKILL_MEDICAL     = SKILL_BASIC
+	)
+	max_skill = list(
+		SKILL_MEDICAL     = SKILL_MAX
+	)
+	software_on_spawn = list(
+		/datum/computer_file/program/suit_sensors,
+		/datum/computer_file/program/camera_monitor
+	)
+/datum/job/redactor/equip(var/mob/living/carbon/human/H)
+	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT)
+	return ..()

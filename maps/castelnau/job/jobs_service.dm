@@ -5,11 +5,19 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Captain, the First Officer and the Second Officer"
+	supervisors = "the Captain, the First Mate and the Coordinator"
 	ideal_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/service/janitor
-	allowed_branches = list(/datum/mil_branch/ship_personnel)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	allowed_branches = list(
+							/datum/mil_branch/mil,
+							/datum/mil_branch/par,
+							/datum/mil_branch/other)
+	allowed_ranks = list(
+						/datum/mil_rank/mil/scg,
+						/datum/mil_rank/mil/lss,
+						/datum/mil_rank/mil/iccg,
+						/datum/mil_rank/par,
+						/datum/mil_rank/other/free)
 
 	access = list(access_castelnau_janitor,
 			      access_castelnau_maint_tunnels)
@@ -21,14 +29,22 @@
 	department_flag = SRV
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Captain, the First Officer and the Second Officer"
+	supervisors = "the Captain, the First Mate and the Coordinator"
 	alt_titles = list(
 		"Cook",
 		"Culinary Specialist"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/service/cook
-	allowed_branches = list(/datum/mil_branch/ship_personnel)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	allowed_branches = list(
+							/datum/mil_branch/mil,
+							/datum/mil_branch/par,
+							/datum/mil_branch/other)
+	allowed_ranks = list(
+						/datum/mil_rank/mil/scg,
+						/datum/mil_rank/mil/lss,
+						/datum/mil_rank/mil/iccg,
+						/datum/mil_rank/par,
+						/datum/mil_rank/other/free)
 	min_skill = list(	SKILL_COOKING   = SKILL_ADEPT,
 						SKILL_BOTANY    = SKILL_BASIC,
 						SKILL_CHEMISTRY = SKILL_BASIC)
@@ -36,14 +52,21 @@
 	access = list(access_castelnau_kitchen)
 
 /datum/job/bartender
+	title = "Bartender"
 	department = "Service"
 	department_flag = SRV
-	supervisors = "the Captain, the First Officer and the Second Officer"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Captain, the First Mate and the Coordinator"
 	ideal_character_age = 30
 	selection_color = "#515151"
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/service/bartender
-	allowed_branches = list(/datum/mil_branch/ship_personnel)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	allowed_branches = list(
+							/datum/mil_branch/par,
+							/datum/mil_branch/other)
+	allowed_ranks = list(
+						/datum/mil_rank/par,
+						/datum/mil_rank/other/free)
 
 	access = list(access_castelnau_bar)
 

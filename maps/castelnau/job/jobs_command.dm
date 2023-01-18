@@ -1,7 +1,7 @@
 /datum/job/captain
 	title = "Captain"
 	department = "Command"
-	supervisors = "the God"
+	supervisors = "the Regulator High Command and the God (He didn't answer last time)"
 	department_flag = COM
 	head_position = 1
 	minimal_player_age = 21
@@ -11,8 +11,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	req_admin_notify = 1
-	allowed_branches = list(/datum/mil_branch/ship_personnel)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	allowed_branches = list(/datum/mil_branch/reg)
+	allowed_ranks = list(/datum/mil_rank/reg/com)
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_ADEPT,
 						SKILL_PILOT       = SKILL_ADEPT)
 
@@ -60,7 +60,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/hop
-	title = "First Officer"
+	title = "First Mate"
 	supervisors = "the Captain"
 	department = "Command"
 	department_flag = COM
@@ -72,8 +72,8 @@
 	economic_power = 12
 	ideal_character_age = 45
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/command/hop
-	allowed_branches = list(/datum/mil_branch/ship_personnel)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	allowed_branches = list(/datum/mil_branch/reg)
+	allowed_ranks = list(/datum/mil_rank/reg/com)
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_ADEPT,
 						SKILL_PILOT       = SKILL_BASIC)
 
@@ -81,7 +81,7 @@
 
 	skill_points = 20
 
-	access = list(access_castelnau_supply,
+/*	access = list(access_castelnau_supply,
 				  access_castelnau_qm,
 				  access_castelnau_eva,
 				  access_castelnau_maint_tunnels,
@@ -109,25 +109,22 @@
 				  access_castelnau_idmod,
 				  access_castelnau_engineering,
 				  access_castelnau_seneng,
-				  access_castelnau_atmospherics)
+				  access_castelnau_atmospherics)*/
 
 /datum/job/adjutant
-	title = "Second Officer"
+	title = "Coordinator"
 	department = "Command"
 	department_flag = COM
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Captain and the First Officer"
+	supervisors = "the Captain and the First Mate"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 18
 	economic_power = 7
 	ideal_character_age = 24
-	alt_titles = list(
-		"Piloting Officer",
-		"Navigator")
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/command/adjutant
-	allowed_branches = list(/datum/mil_branch/ship_personnel)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	allowed_branches = list(/datum/mil_branch/reg)
+	allowed_ranks = list(/datum/mil_rank/reg/com)
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
 						SKILL_PILOT       = SKILL_ADEPT)
 
@@ -136,7 +133,7 @@
 	skill_points = 20
 
 
-	access = list(access_castelnau_supply,
+/*	access = list(access_castelnau_supply,
 				  access_castelnau_eva,
 				  access_castelnau_maint_tunnels,
 				  access_castelnau_hangar,
@@ -161,7 +158,7 @@
 				  access_castelnau_engineering,
 				  access_castelnau_engine,
 				  access_castelnau_atmospherics,
-				  access_castelnau_thrusters)
+				  access_castelnau_thrusters)*/
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/suit_sensors,

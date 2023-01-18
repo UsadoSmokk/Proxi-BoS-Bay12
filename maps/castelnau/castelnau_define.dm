@@ -1,7 +1,7 @@
 GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 /datum/map/castelnau
 	name = "Castelnau"
-	full_name = "MOTV Castelnau"
+	full_name = "RMV Castelnau"
 	path = "castelnau"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 
@@ -13,8 +13,8 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	admin_levels = list(4,5)
 	empty_levels = list(6)
 	accessible_z_levels = list("1"=1,"2"=1,"3"=1, "6" = 30)
-	overmap_size = 35
-	overmap_event_areas = 34
+	overmap_size = 25
+	overmap_event_areas = 24
 	usable_email_tlds = list("freemail.castelnau.net",
 							 "freemail.net"
 							 )
@@ -22,15 +22,15 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	allowed_spawns = list("Cryogenic Storage", "Prometeus Cryogenic Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "MOTV Castelnau"
+	station_name  = "RMV Castelnau"
 	station_short = "Castelnau"
 	dock_name     = "TBD"
-	boss_name     = "Interstellar Emergency Frequency"
-	boss_short    = "Interstellar Emergency Frequency"
-	company_name  = "Castelnau Tow. Ltd."
-	company_short = "CT"
+	boss_name     = "Regulators Center"
+	boss_short    = "Center"
+	company_name  = "Regulators"
+	company_short = "Regs"
 
-	map_admin_faxes = list("Interstellar Emergency Frequency")
+	map_admin_faxes = list("Regulators Center")
 
 	evac_controller_type = /datum/evacuation_controller/starship
 
@@ -51,16 +51,8 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 
 /datum/map/castelnau/get_map_info()
 	. = list()
-	. +=  "Вы находитесь на борту <b>[station_name]</b>, мультизадачного орбитального буксира класса Таурус. Между капитаном этого судна и независимой группой учёных был заключён контракт о буксировке и обеспечении научного шаттла Прометей с целью исследования последними глубокого космоса в своих интересах."
-	. +=  "Охрана судна укомплектована как сотрудниками, нанятыми капитаном лично, так и служащими частных военных компаний."
-	. +=  "Особый дресс-код на борту отсутствует. В целом, экипаж волен носить ту одежду, что ему нравится. Не забудьте выбрать свой стиль перед входом в игру."
+	. +=  "тим)"
 	return jointext(., "<br>")
-
-/*/datum/map/castelnau/map_info(victim)
-	to_chat(victim, "<h2>Информация о карте</h2>")
-	to_chat(victim, "Вы находитесь на борту <b>[station_name]</b>, мультизадачного орбитального буксира класса Таурус. Между капитаном этого судна и независимой группой учённых был заключён контракт о буксировке и обеспечении научного шаттла Прометей с целью исследования последними глубокого космоса в своих интересах.")
-	to_chat(victim, "Охрана судна укомплектована как сотрудниками, нанятыми капитаном лично, так и служащими частных военных компаний.")
-	to_chat(victim, "Техническая информация: если у вас не играет музыка от инструментов и проигрывателей, то вам стоит откатить версию бьенда с самой последней до 1456.") */
 
 /datum/map/castelnau/send_welcome()
 	var/welcome_text = "<center><br /><font size = 3><b>MSM Prometeus</b> Показания Сенсоров:</font><hr />"

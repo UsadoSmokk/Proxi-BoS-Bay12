@@ -1,22 +1,16 @@
 /datum/job/submap
 	branch = /datum/mil_branch/other
-	rank =   /datum/mil_rank/other
+	rank =   /datum/mil_rank/civ/civ
 
 /datum/map/castelnau
 	branch_types = list(
-		/datum/mil_branch/reg,
-		/datum/mil_branch/mil,
-		/datum/mil_branch/par,
-//		/datum/mil_branch/cult,
-		/datum/mil_branch/other
+		/datum/mil_branch/regulator,
+		/datum/mil_branch/science_personnel
 	)
 
 	spawn_branch_types = list(
-		/datum/mil_branch/reg,
-		/datum/mil_branch/mil,
-		/datum/mil_branch/par,
-//		/datum/mil_branch/cult,
-		/datum/mil_branch/other
+		/datum/mil_branch/ship_personnel,
+		/datum/mil_branch/science_personnel
 	)
 
 /*
@@ -24,8 +18,8 @@
  *  ============
  */
 
-/datum/mil_branch/reg
-	name = "Regulators"
+/datum/mil_branch/regulator
+	name = "Regulator"
 	name_short = "Reg"
 	email_domain = "reg.net"
 
@@ -39,7 +33,7 @@
 		/datum/mil_rank/reg/com
 	)
 
-/datum/mil_branch/mil
+/datum/mil_branch/military
 	name = "Military"
 	name_short = "Mil"
 	email_domain = "mil.gov"
@@ -60,23 +54,21 @@
 		/datum/mil_rank/mil/mir
 	)
 
-/datum/mil_branch/par
+/datum/mil_branch/paroled
 	name = "Paroled"
 	name_short = "Par"
 	email_domain = "freemail.net"
 
 	rank_types = list(
-		/datum/mil_rank/par,
-		/datum/mil_rank/par/yak
+		/datum/mil_rank/par
 	)
 
 	spawn_rank_types = list(
-		/datum/mil_rank/par,
-		/datum/mil_rank/par/yak
+		/datum/mil_rank/par
 	)
-/*
+
 /datum/mil_branch/cult
-	name = "Nar'Si Faith Promotion Organization"
+	name = "Blood Cult of Nar'Sie"
 	name_short = "Cult"
 	email_domain = "freemail.net"
 
@@ -89,22 +81,20 @@
 		/datum/mil_rank/reg,
 		/datum/mil_rank/reg/com
 	)
-*/
+
 /datum/mil_branch/other
 	name = "Other"
 	name_short = "Other"
 	email_domain = "freemail.net"
 
 	rank_types = list(
-		/datum/mil_rank/other,
-		/datum/mil_rank/other/free,
-		/datum/mil_rank/other/merc
+		/datum/mil_rank/cult,
+		/datum/mil_rank/reg/com
 	)
 
 	spawn_rank_types = list(
-		/datum/mil_rank/other,
-		/datum/mil_rank/other/free,
-		/datum/mil_rank/other/merc
+		/datum/mil_rank/reg,
+		/datum/mil_rank/reg/com
 	)
 
 /*
@@ -128,10 +118,10 @@
  */
 
 /datum/mil_rank/reg
-	name = "Regulators"
+	name = "Regulator"
 
 /datum/mil_rank/reg/com
-	name = "Regulators Command"
+	name = "Regulator Command"
 
 /*
  *  Military
@@ -166,13 +156,10 @@
 /datum/mil_rank/par
 	name = "Paroled"
 
-/datum/mil_rank/par/yak
-	name = "Yakuza"	//vremennoe nazvanie
-
 /*
  *  Cultists
  *  =========
- *
+ */
 
 /datum/mil_rank/cult
 	name = "Nar'Sie Acolyte"
@@ -181,7 +168,6 @@
 /datum/mil_rank/cult/ich
 	name = "Nar'Sie Ichorn"
 	name_short = "Ichorn"
-*/
 
 /*
  *  Other

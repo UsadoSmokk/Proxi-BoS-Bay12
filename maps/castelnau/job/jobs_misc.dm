@@ -5,10 +5,16 @@
 	spawn_positions = 4
 	department = "Civilian"
 	department_flag = CIV
-	supervisors = "the Captain, the First Officer and the Second Officer"
+	supervisors = "the Captain, the First Mate and the Coordinator"
 	selection_color = "#515151"
 	economic_power = 6
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crewman
-	allowed_branches = list(/datum/mil_branch/ship_personnel)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	allowed_branches = list(
+							/datum/mil_branch/par,
+							/datum/mil_branch/other)
+	allowed_ranks = list(
+						/datum/mil_rank/par,
+						/datum/mil_rank/par/yak,
+						/datum/mil_rank/other/merc,
+						/datum/mil_rank/other/free)
