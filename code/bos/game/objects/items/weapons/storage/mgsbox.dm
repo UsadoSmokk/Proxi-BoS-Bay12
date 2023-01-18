@@ -32,7 +32,7 @@
 			src.overlays -= overlay
 		return
 	else if(taping_level == 2)
-		to_chat(usr, SPAN_WARNING("There so much duct tape - you even can't open the box! Maybe just broke it?.."))
+		to_chat(usr, SPAN_WARNING("There so much duct tape - you even can't open the box! Maybe just break it?.."))
 		return
 
 	if(open == 0)
@@ -195,19 +195,14 @@
 
 	if(can_move)
 		can_move = 0
-		switch(user.bodytemperature)
-			if(300 to INFINITY)
-				spawn(10) can_move = 1
-			if(295 to 300)
-				spawn(13) can_move = 1
-			if(280 to 295)
-				spawn(16) can_move = 1
-			if(260 to 280)
-				spawn(20) can_move = 1
-			else
-				spawn(25) can_move = 1
 		if(isturf(loc))
 			step(src, direction)
+			if((istype(loc, /turf/simulated/open)) && (!locate(/obj/structure/catwalk) in loc))
+				if(!locate(/obj/structure/lattice) in loc)
+					to_chat(usr, SPAN_DANGER("Looks like this box has bad aerodynamics."))
+					boxmaster.disrupt_stealth()
+		spawn(11) can_move = 1
+
 	return
 
 /obj/effect/dummy/box/Destroy()
