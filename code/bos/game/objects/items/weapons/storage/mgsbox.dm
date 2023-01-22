@@ -9,7 +9,6 @@
 	max_storage_space = 40
 	allow_quick_empty = 1
 	allow_quick_gather = 1
-	use_sound = "rustle"
 
 	var/open = 0
 	var/stealth_mode = 0
@@ -127,9 +126,13 @@
 		to_chat(usr, SPAN_NOTICE("The box is sealed - you can't climb into it."))
 		return
 
+	if((istype(usr.r_hand, /obj/item/storage/mgsbox)) && (istype(usr.l_hand, /obj/item/storage/mgsbox)))
+		to_chat(usr, SPAN_WARNING("You can't climb into a box with another box!"))
+		return
+
 	if(stealth_mode == 0)
 		visible_message(SPAN_NOTICE("[usr] begins to climb into a box!"))
-		if(do_after(usr, 5 SECONDS, src, DO_SHOW_PROGRESS | DO_PUBLIC_PROGRESS | DO_BAR_OVER_USER))
+		if(do_after(usr, 5 SECONDS, src, DO_SHOW_PROGRESS | DO_PUBLIC_PROGRESS | DO_BAR_OVER_USER | DO_USER_SAME_HAND))
 			quick_empty()
 			active_dummy = new /obj/effect/dummy/box(usr.loc)
 			active_dummy.activate(src, usr, 'icons/bos/obj/box.dmi', sprite, src)

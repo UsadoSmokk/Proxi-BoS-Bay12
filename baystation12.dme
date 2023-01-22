@@ -272,6 +272,7 @@
 #include "code\bos\modules\mob\living\silicon\robot\preset.dm"
 #include "code\bos\modules\mob\living\silicon\robot\flying\module_flying_ascent.dm"
 #include "code\bos\modules\mob\observer\eye\landing_eye\landing_eye.dm"
+#include "code\bos\modules\modular_computers\file_system\programs\generic\sudoku.dm"
 #include "code\bos\modules\organs\external\species\ascent\ascent.dm"
 #include "code\bos\modules\overmap\_defines.dm"
 #include "code\bos\modules\overmap\overmap_object.dm"
