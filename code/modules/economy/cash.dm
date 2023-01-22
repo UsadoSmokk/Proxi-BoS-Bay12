@@ -100,8 +100,8 @@
 		amount = round(clamp(amount, 0, src.worth))
 		if (amount==0) return 0
 
-		if(!locate(src) in view(1, usr)) //BoS. Add this to fox money dupes
-			to_chat(usr, SPAN_WARNING("You must hold money in hands to divide them!"))
+		if(!locate(src) in view(1, usr)) //BoS. Added this to fix money dupes
+			to_chat(usr, SPAN_WARNING("You must hold money in your hands to divide them!"))
 			return 0
 
 		src.worth -= amount
