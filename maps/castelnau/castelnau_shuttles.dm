@@ -40,49 +40,53 @@ CASTELNAU_ESCAPE_POD(7)
 CASTELNAU_ESCAPE_POD(8)
 CASTELNAU_ESCAPE_POD(9)
 
-//Prometeus
+//Cheapskate
 
-/datum/shuttle/autodock/overmap/prometeus
-	name = "Prometeus"
+/datum/shuttle/autodock/overmap/cheapskate
+	name = "Cheapskate"
 	move_time = 90
 	shuttle_area = list(
-		/area/shuttle/castelnau/prometeus/cockpit,
-		/area/shuttle/castelnau/prometeus/external,
-		/area/shuttle/castelnau/prometeus/power,
-		/area/shuttle/castelnau/prometeus/medical,
-		/area/shuttle/castelnau/prometeus/airlock,
-		/area/shuttle/castelnau/prometeus/hall,
-		/area/shuttle/castelnau/prometeus/rnd,
-		/area/shuttle/castelnau/prometeus/robotic,
-		/area/shuttle/castelnau/prometeus/anomaly,
-		/area/shuttle/castelnau/prometeus/botany,
-		/area/shuttle/castelnau/prometeus/equip,
-		/area/shuttle/castelnau/prometeus/eva,
-		/area/shuttle/castelnau/prometeus/gas,
-		/area/shuttle/castelnau/prometeus/xen,
-		/area/shuttle/castelnau/prometeus/dorm,
-		/area/shuttle/castelnau/prometeus/tele
+	/area/shuttle/castelnau/cheapskate,
+	/area/shuttle/castelnau/cheapskate/cockpit,
+	/area/shuttle/castelnau/cheapskate/conference,
+	/area/shuttle/castelnau/cheapskate/eva,
+	/area/shuttle/castelnau/cheapskate/med,
+	/area/shuttle/castelnau/cheapskate/maint,
+	/area/shuttle/castelnau/cheapskate/maint/storage,
+	/area/shuttle/castelnau/cheapskate/maint/dock,
+	/area/shuttle/castelnau/cheapskate/maint/airlock,
+	/area/shuttle/castelnau/cheapskate/maint/supairlock,
+	/area/shuttle/castelnau/cheapskate/sec,
+	/area/shuttle/castelnau/cheapskate/cm,
+	/area/shuttle/castelnau/cheapskate/server,
+	/area/shuttle/castelnau/cheapskate/cryo,
+	/area/shuttle/castelnau/cheapskate/merch,
+	/area/shuttle/castelnau/cheapskate/merch/warehouse,
+	/area/shuttle/castelnau/cheapskate/cargo,
+	/area/shuttle/castelnau/cheapskate/cargo/war,
+	/area/shuttle/castelnau/cheapskate/cargo/smoking,
+	/area/shuttle/castelnau/cheapskate/cargo/extwar
 	)
-	dock_target = "prometeus_shuttle_airlock"
-	current_location = "nav_prometeus_dock"
-	landmark_transition = "nav_prometeus_transit"
+	dock_target = "cheapskate_shuttle_airlock"
+	current_location = "nav_cheapskate_dock"
+	landmark_transition = "nav_cheapskate_transit"
 	range = 1
 	fuel_consumption = 4
-	logging_home_tag = "nav_prometeus_dock"
+	logging_home_tag = "nav_cheapskate_dock"
 	//logging_access = access_castelnau_prometeus_helm
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 
-/obj/effect/shuttle_landmark/castelnau/hangar/prometeus
-	name = "Prometeus Hangar"
-	landmark_tag = "nav_prometeus_dock"
-	docking_controller = "prometeus_shuttle_dock"
+/obj/effect/shuttle_landmark/castelnau/hangar/cheapskate
+	name = "Cheapskate Hangar"
+	landmark_tag = "nav_cheapskate_dock"
+	docking_controller = "cheapskate_shuttle_dock"
 	base_area = /area/space
 	base_turf = /turf/space
 
 
-/obj/effect/shuttle_landmark/castelnau/transit/prometeus
+/obj/effect/shuttle_landmark/castelnau/transit/cheapskate
 	name = "Transit"
-	landmark_tag = "nav_prometeus_transit"
+	landmark_tag = "nav_cheapskate_transit"
 
 //bixie
 /datum/shuttle/autodock/overmap/bixie

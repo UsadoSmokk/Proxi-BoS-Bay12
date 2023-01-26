@@ -17,15 +17,7 @@
 
 #undef HUMAN_NOVOX_JOBS
 
-	allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/adjutant,
-						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/psiengineer, /datum/job/scientist, /datum/job/roboticist,
-						/datum/job/warden, /datum/job/officer, /datum/job/specialist,
-						/datum/job/inflead, /datum/job/infantry, /datum/job/battlepriest,
-						/datum/job/senior_doctor, /datum/job/doctor, /datum/job/redactor,
-						/datum/job/qm, /datum/job/cargotech, /datum/job/pilot, /datum/job/mining,
-						/datum/job/janitor, /datum/job/chef, /datum/job/bartender,
-						/datum/job/assistant
-						)
+	allowed_jobs = list(/datum/job/captain)
 
 	access_modify_region = list(
 		ACCESS_REGION_SECURITY = list(access_castelnau_idmod),

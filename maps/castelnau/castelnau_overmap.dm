@@ -24,9 +24,9 @@
 		"nav_space_first_1"
 	)
 
-/obj/effect/overmap/visitable/ship/landable/prometeus
-	name = "Prometeus"
-	shuttle = "Prometeus"
+/obj/effect/overmap/visitable/ship/landable/cheapskate
+	name = "Cheapskate"
+	shuttle = "Cheapskate"
 	vessel_mass = 4500
 	fore_dir = WEST
 
@@ -42,9 +42,9 @@
 	vessel_mass = 1000
 	fore_dir = EAST
 
-/obj/machinery/computer/shuttle_control/explore/prometeus
-	name = "prometeus control console"
-	shuttle_tag = "Prometeus"
+/obj/machinery/computer/shuttle_control/explore/cheapskate
+	name = "cheapskate control console"
+	shuttle_tag = "Cheapskate"
 	req_access = list()
 
 /obj/machinery/computer/shuttle_control/explore/perseus

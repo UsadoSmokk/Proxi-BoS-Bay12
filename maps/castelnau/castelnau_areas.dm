@@ -167,75 +167,80 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	requires_power = 1
 
-//Prometeus
+//Cheapskate
 
-/area/shuttle/castelnau/prometeus
+/area/shuttle/castelnau/cheapskate
+	name = "Cheapskate - Hallway"
+	icon_state = "invi"
 	req_access = list(access_castelnau_prometeus)
 
-/area/shuttle/castelnau/prometeus/cockpit
-	icon_state = "pro_crew"
-	name = "Prometeus - Cockpit"
+/area/shuttle/castelnau/cheapskate/cockpit
+	icon_state = "cheap_com"
+	name = "Cheapskate - Cockpit"
 
-/area/shuttle/castelnau/prometeus/external
-	icon_state = "pro_ext"
-	name = "Prometeus - External Storage"
+/area/shuttle/castelnau/cheapskate/conference
+	icon_state = "cheap_com"
+	name = "Cheapskate - Conference Room"
 
-/area/shuttle/castelnau/prometeus/power
-	icon_state = "pro_eng"
-	name = "Prometeus - Power Compartment"
+/area/shuttle/castelnau/cheapskate/eva
+	icon_state = "cheap_eva"
+	name = "Cheapskate - EVA"
 
-/area/shuttle/castelnau/prometeus/medical
-	icon_state = "pro_med"
-	name = "Prometeus - Medical Compartment"
+/area/shuttle/castelnau/cheapskate/med
+	icon_state = "cheap_med"
+	name = "Cheapskate - Medical Bay"
 
-/area/shuttle/castelnau/prometeus/airlock
-	icon_state = "pro_ext"
-	name = "Prometeus - Airlock Compartment"
+/area/shuttle/castelnau/cheapskate/maint
+	icon_state = "cheap_maint"
+	name = "Cheapskate - Maintenance"
 
-/area/shuttle/castelnau/prometeus/hall
-	icon_state = "pro_hall"
-	name = "Prometeus - Hall"
+/area/shuttle/castelnau/cheapskate/maint/storage
+	name = "Cheapskate - Maintenance Storage"
 
-/area/shuttle/castelnau/prometeus/rnd
-	icon_state = "pro_rnd"
-	name = "Prometeus - Research"
+/area/shuttle/castelnau/cheapskate/maint/dock
+	name = "Cheapskate - Dock"
 
-/area/shuttle/castelnau/prometeus/robotic
-	icon_state = "pro_robo"
-	name = "Prometeus - Robotic Lab"
+/area/shuttle/castelnau/cheapskate/maint/airlock
+	name = "Cheapskate - Airlock"
 
-/area/shuttle/castelnau/prometeus/anomaly
-	icon_state = "pro_ano"
-	name = "Prometeus - Anomaly Lab"
+/area/shuttle/castelnau/cheapskate/maint/supairlock
+	name = "Cheapskate - Supply Airlock"
 
-/area/shuttle/castelnau/prometeus/botany
-	icon_state = "pro_bot"
-	name = "Prometeus - Xenobotany"
+/area/shuttle/castelnau/cheapskate/sec
+	icon_state = "cheap_sec"
+	name = "Cheapskate - Security"
 
-/area/shuttle/castelnau/prometeus/equip
-	icon_state = "pro_lock"
-	name = "Prometeus - Equipment"
+/area/shuttle/castelnau/cheapskate/cm
+	icon_state = "cheap_com"
+	name = "Cheapskate - Chief Merchant"
 
-/area/shuttle/castelnau/prometeus/eva
-	icon_state = "pro_eva"
-	name = "Prometeus - EVA"
+/area/shuttle/castelnau/cheapskate/server
+	icon_state = "cheap_eva"
+	name = "Cheapskate - Server Room"
 
-/area/shuttle/castelnau/prometeus/xen
-	icon_state = "pro_xen"
-	name = "Prometeus - Xenobiology"
+/area/shuttle/castelnau/cheapskate/cryo
+	icon_state = "cheap_cryo"
+	name = "Cheapskate - Cryogenic Storage"
 
-/area/shuttle/castelnau/prometeus/gas
-	icon_state = "pro_gas"
-	name = "Prometeus - Gas Lab"
+/area/shuttle/castelnau/cheapskate/merch
+	icon_state = "cheap_merch"
+	name = "Cheapskate - Outlet Shop"
 
-/area/shuttle/castelnau/prometeus/dorm
-	icon_state = "pro_dorm"
-	name = "Prometeus - Dormitory"
+/area/shuttle/castelnau/cheapskate/merch/warehouse
+	name = "Cheapskate - Merchant Warehouse"
 
-/area/shuttle/castelnau/prometeus/tele
-	icon_state = "pro_tele"
-	name = "Prometeus - Telecomms"
+/area/shuttle/castelnau/cheapskate/cargo
+	icon_state = "cheap_sup"
+	name = "Cheapskate - Supply Office"
 
+/area/shuttle/castelnau/cheapskate/cargo/war
+	name = "Cheapskate - Supply Warehouse"
+
+/area/shuttle/castelnau/cheapskate/cargo/smoking
+	name = "Cheapskate - Supply Smoking Room"
+
+/area/shuttle/castelnau/cheapskate/cargo/extwar
+	name = "Cheapskate - Supply External Warehouse"
 
 //Perseus
 /area/shuttle/castelnau/perseus
