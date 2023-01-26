@@ -50,7 +50,7 @@
 
 	//create an entry in the account transaction log for when it was created
 	//note that using the deposit proc on the account isn't really feasible because we need to change the transaction data before performing it
-	var/datum/transaction/singular/T = new(M, (source_db ? source_db.machine_id : "NTGalaxyNet Terminal #[rand(111,1111)]"), starting_funds, "Account creation")
+	var/datum/transaction/singular/T = new(M, (source_db ? source_db.machine_id : "TerraGalaxyBank Terminal #[rand(111,1111)]"), starting_funds, "Account creation")
 	if(!source_db)
 		//set a random date, time and location some time over the past few decades
 		T.date = "[num2text(rand(1, 31))] [pick("January","February","March","April","May","June","July","August","September","October","November","December")], [GLOB.using_map.game_year-rand(8, 18)]"

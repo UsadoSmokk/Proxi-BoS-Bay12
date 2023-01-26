@@ -37,11 +37,11 @@ exactly 0 "world.log<< uses" 'world.log<<|world.log[[:space:]]<<'
 exactly 6 "<< uses" '(?<!<)<<(?!<)' -P
 exactly 2 ">> uses" '(?<!>)>>(?!>)' -P
 exactly 0 "incorrect indentations" '^( {4,})' -P
-exactly 25 "text2path uses" 'text2path'
+exactly 26 "text2path uses" 'text2path'
 exactly 3 "update_icon() override" '/update_icon\((.*)\)'  -P
 exactly 5 "goto use" 'goto '
 exactly 1 "NOOP match" 'NOOP'
-exactly 369 "spawn uses" '^\s*spawn\s*\(\s*(-\s*)?\d*\s*\)' -P
+exactly 368 "spawn uses" '^\s*spawn\s*\(\s*(-\s*)?\d*\s*\)' -P
 exactly 42 "tag uses" '\stag = ' -P '**/*.dmm'
 exactly 25 "anchored = 0/1" 'anchored\s*=\s*\d' -P
 exactly 29 "density = 0/1" 'density\s*=\s*\d' -P

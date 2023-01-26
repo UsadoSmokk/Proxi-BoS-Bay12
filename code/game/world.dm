@@ -4,7 +4,7 @@
 #define SET_THROTTLE(TIME, REASON) throttle[1] = base_throttle + (TIME); throttle[2] = (REASON);
 
 
-var/global/server_name = "BoS-BAY12"
+var/global/server_name = "BOS"
 var/global/game_id = null
 
 GLOBAL_VAR(href_logfile)
@@ -96,7 +96,33 @@ GLOBAL_VAR(href_logfile)
 		call(debug_server, "auxtools_init")()
 		enable_debugging()
 
-	name = "[server_name] - [GLOB.using_map.full_name]"
+	var/list/name_titles = list(
+		"Дуализм человечества",
+		"Игра ва-банк",
+		"Твёрдый Букер",
+		"Оружие Патриотов",
+		"Дети Свободы",
+		"Ходок Мира",
+		"Змееед",
+		"Фантомная Боль",
+		"Слабоумие и отвага",
+		"Слепой патриотизм",
+		"Весёлые истории смутного времени",
+		"Терранская артиллерия",
+		"ЦПСС наносит ответный удар",
+		"Возвращение таяры",
+		"Последний из Стивенов",
+		"Судьба тёмного будущего",
+		"Последняя гонка Григория",
+		"Секретное дело КГБ",
+		"Давая войне шанс",
+		"История одного военного преступления",
+		"Мечтая о электрокаракалах",
+		"На дне социального рейтинга",
+		"48 лет спустя"
+	)
+
+	name = "[server_name] - [pick(name_titles)]"
 
 	//logs
 	SetupLogs()

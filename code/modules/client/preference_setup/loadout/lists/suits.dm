@@ -115,6 +115,10 @@
 	jackets += /obj/item/clothing/suit/storage/toggle/brown_jacket
 	jackets += /obj/item/clothing/suit/storage/mbill
 	jackets += /obj/item/clothing/suit/storage/toggle/leather_hoodie
+	jackets += /obj/item/clothing/suit/storage/bos/hmjacket
+	jackets += /obj/item/clothing/suit/storage/bos/hmvest
+	jackets += /obj/item/clothing/suit/storage/bos/drivejacket
+	jackets += /obj/item/clothing/suit/storage/bos/disco
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(jackets)
 
 /datum/gear/suit/wintercoat
@@ -190,6 +194,9 @@
 	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek_long/green
 	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek_long/black
 	overcoat += /obj/item/clothing/suit/storage/cyberpunksleek_long/white
+	overcoat += /obj/item/clothing/suit/storage/davidjacket
+	overcoat += /obj/item/clothing/suit/storage/davidjacket/samurai
+	overcoat += /obj/item/clothing/suit/storage/davidjacket/bladejacket
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(overcoat)
 
 /datum/gear/suit/peacoat

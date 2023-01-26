@@ -155,6 +155,7 @@ GLOBAL_LIST_INIT(jukebox_tracks, list(
 	/decl/audio/track/rain,
 	/decl/audio/track/endoftheworld,
 	/decl/audio/track/killallxenos,
+	/decl/audio/track/pskovskiymarch,
 	/decl/audio/track/zvyozdnoegestapo,
 	/decl/audio/track/vinteresah,
 	/decl/audio/track/startthefire,

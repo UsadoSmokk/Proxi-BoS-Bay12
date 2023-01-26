@@ -31,8 +31,8 @@
 						/datum/job/chaplain, /datum/job/janitor, /datum/job/canworker, /datum/job/chronicler,
 						/datum/job/pathfinder, /datum/job/explorer, /datum/job/scientist, /datum/job/scientist_assistant,
 						/datum/job/ai, /datum/job/cyborg,
-						/datum/job/crew, /datum/job/assistant, /datum/job/stowaway,
-						/datum/job/merchant
+						/datum/job/crew, /datum/job/assistant, /datum/job/stowaway
+//						/datum/job/merchant
 						)
 
 	access_modify_region = list(
@@ -91,4 +91,4 @@
 
 
 /datum/map/torch
-	default_assistant_title = "Passenger"
+	default_assistant_title = "Off-Duty"

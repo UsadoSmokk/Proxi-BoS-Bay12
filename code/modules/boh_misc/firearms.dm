@@ -269,54 +269,6 @@
 	authorized_modes = list(UNAUTHORIZED)
 
 /////////
-// Disposable RPG
-/////////
-
-/obj/item/gun/projectile/rocket/oneuse // One time use RPGs.
-	slot_flags = SLOT_BACK|SLOT_BELT
-	icon = 'icons/boh/obj/guns/launchers64.dmi' // RPG file for big boy RPGs.
-	icon_state = "disposable"
-	 // As a note, you can technically reload these, but you need an admin to spawn you the ammo, which is better than having them spawn you the rocket THEN delete the old one.
-	ammo_type = /obj/item/ammo_casing/oneuse_rocket
-	starts_loaded = 1
-	ununloadable = TRUE
-	var/folded = 1
-
-//Unfolds/folds the RPG.
-/obj/item/gun/projectile/rocket/oneuse/attack_self(mob/user)
-	if(folded)
-		playsound(src.loc,'sound/weapons/guns/interaction/rpgoneuse_deploying.ogg',80, 0)
-		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-		if(do_after(usr, 30, src))
-			usr.visible_message("<span class='notice'>\The [usr] extends [src].</span>", "<span class='notice'>You deploy the [src]</span>")
-			folded = FALSE
-			icon_state = "[icon_state]_deployed"
-			item_state = "[item_state]_deployed"
-			slot_flags = null
-	else
-		playsound(src.loc,'sound/weapons/guns/interaction/rpgoneuse_deploying.ogg',80, 0)
-		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-		if(do_after(usr, 30, src))
-			usr.visible_message("<span class='notice'>\The [usr] folds the [src].</span>", "<span class='notice'>You fold the [src]</span>")
-			folded = TRUE
-			icon_state = initial(icon_state)
-			item_state = initial(item_state)
-			slot_flags = SLOT_BACK|SLOT_BELT
-
-// Tells the player to deploy it, dummy.
-/obj/item/gun/projectile/rocket/oneuse/special_check(mob/user)
-	if(folded)
-		to_chat(user, "You can't fire this in this state! Deploy it!")
-		return 0
-	return ..()
-
-/obj/item/gun/projectile/rocket/oneuse/marine // Marine Disposable..
-	name = "L-19 disposable rocket launcher"
-	desc = "A disposable use rocket launcher, better known as an RPG well known around SolGov space, used by many people and many folk to blow things sky high. It cannot be unloaded or reloaded without specialized tools and is meant to be disposed once used. This is one is a licensed version, known as the Lance 19 for the SMC."
-	icon_state = "disposable_marine"
-	item_state = "disposable_marine"
-
-/////////
 // SMG Primary
 /////////
 

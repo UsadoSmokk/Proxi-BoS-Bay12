@@ -1,5 +1,5 @@
 
-<!-- 
+<!--
 Title: Syndicate Uplink, uses some javascript to change nanoUI up a bit.
 Used In File(s): \code\game\objects\items\devices\uplinks.dm
  -->
@@ -13,6 +13,9 @@ Used In File(s): \code\game\objects\items\devices\uplinks.dm
 	<div class="itemContent">
 		{{:helper.link('Request Items', 'gear', {'menu' : 0}, null, 'fixedLeftWider')}}
 		{{:helper.link('Exploitable Information', 'gear', {'menu' : 2}, null, 'fixedLeftWider')}}
+		{{if data.has_contracts}}
+			{{:helper.link('Contracts', 'gear', {'menu' : 3}, null, 'fixedLeftWider')}}
+		{{/if}}
 		{{:helper.link('Return', 'arrowreturn-1-w', {'return' : 1}, null, 'fixedLeft')}}
 		{{:helper.link('Close', 'gear', {'lock' : "1"}, null, 'fixedLeft')}}
 	</div>
@@ -28,6 +31,17 @@ Used In File(s): \code\game\objects\items\devices\uplinks.dm
 			{{:data.crystals}}
 		</div>
 	</div>
+
+	{{if data.has_contracts}}
+		<div class="item">
+			<div class="itemLabel">
+				<b>Reputation</b>:
+			</div>
+			<div class="itemContent">
+				{{:data.reputation}}
+			</div>
+		</div>
+	{{/if}}
 
 	{{if data.discount_amount < 100}}
 		<div class="item">
@@ -50,11 +64,11 @@ Used In File(s): \code\game\objects\items\devices\uplinks.dm
 	{{/for}}
 {{else data.menu == 1}}
     <H2><span class="white">Request items:</span></H2>
-    <span class="white"><i>Each item costs a number of tele-crystals as indicated by the number following their name.</i></span>
-	
+    <span class="white"><i>Each item costs a number of telecrystals or reputation as indicated by the number following their name.</i></span>
+
 	{{for data.items}}
 		<div class="item">
-			{{:helper.link(value.name, 'gear', {'buy_item' : value.ref}, value.can_buy ? null : 'disabled')}} - <span class="white">{{:value.cost}}</span>
+			{{:helper.link(value.name, 'gear', {'buy_item' : value.ref}, value.can_buy ? null : 'disabled')}} - <span class="white">{{:value.cost}} {{:value.currency}}</span>
 		</div>
 		<div class="item">
 			{{:value.description}}
@@ -86,4 +100,30 @@ Used In File(s): \code\game\objects\items\devices\uplinks.dm
             </div>
         </div>
     </div>
+{{else data.menu == 3}}
+	<h2>Available contracts:</h2>
+	<table style="width:100%">
+	<tr>
+	<td>Type</td>
+	<th style="width:50%">Description</th>
+	<th style="width:12%">Reward</th>
+	<th style="width:18%">Status</th>
+	</tr>
+	{{for data.available_contracts}}
+		<tr class="candystripe">
+		<td style="background-color: #8daf6a;">{{:value.name}}</td>
+		<td style="background-color: #8daf6a;">{{:value.desc}}</td>
+		<td style="background-color: #8daf6a;"><center>{{:value.reward}} TC<br><br>{{:value.reputation_reward}} REP</center></td>
+		<td style="background-color: #8daf6a;"><center>{{:value.status}}</center></td>
+		</tr>
+	{{/for}}
+	{{for data.completed_contracts}}
+		<tr class="candystripe">
+		<td style="background-color: #aa5f61;">{{:value.name}}</td>
+		<td style="background-color: #aa5f61;">{{:value.desc}}</td>
+		<td style="background-color: #aa5f61;"><center>{{:value.reward}} TC<br><br>{{:value.reputation_reward}} REP</center></td>
+		<td style="background-color: #aa5f61;"><center>{{:value.status}}</center></td>
+		</tr>
+	{{/for}}
+	</table>
 {{/if}}

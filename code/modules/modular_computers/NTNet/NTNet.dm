@@ -48,7 +48,7 @@ var/global/datum/ntnet/ntnet_global = new()
 	build_software_lists()
 	build_emails_list()
 	build_reports_list()
-	add_log("NTNet logging system activated.")
+	add_log("LORnet logging system activated.")
 
 /datum/ntnet/proc/add_log_with_ids_check(log_string, obj/item/stock_parts/computer/network_card/source = null, intrusion = TRUE)
 	if(intrusion_detection_enabled)
@@ -78,7 +78,7 @@ var/global/datum/ntnet/ntnet_global = new()
 	for(var/obj/machinery/ntnet_relay/R in ntnet_global.relays)
 		var/obj/item/stock_parts/computer/hard_drive/portable/P = R.get_component_of_type(/obj/item/stock_parts/computer/hard_drive/portable)
 		if(istype(P))
-			P.update_data_file("ntnet_log", "[log_text]\[br\]", /datum/computer_file/data/logfile)
+			P.update_data_file("lornet_log", "[log_text]\[br\]", /datum/computer_file/data/logfile)
 	return TRUE
 
 /datum/ntnet/proc/get_os_by_nid(NID)

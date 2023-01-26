@@ -1,12 +1,14 @@
-/*
-This is for standard issue sidearms.
-*/
+// * This is for standard issue sidearms.
+
+/datum/gear/sikits
+	sort_category = "Standard Issue Equipment"
+	category = /datum/gear/sikits
+
 /datum/gear/sikits/guns
 	display_name = "Standard Issue Sidearm"
 	description = "A sidearm for military personnel."
 	cost = 5
-	sort_category = "Standard Issue Equipment"
-	path = /obj/item/gun/projectile/
+	path = /obj/item/gun/projectile
 	allowed_roles = ARMED_ROLES
 
 /datum/gear/sikits/guns/New()
@@ -21,8 +23,7 @@ This is for standard issue sidearms.
 	display_name = "Standard Issue Holster"
 	description = "A sidearm holster for military personnel."
 	cost = 3
-	sort_category = "Standard Issue Equipment"
-	path = /obj/item/clothing/accessory/storage/holster/
+	path = /obj/item/clothing/accessory/storage/holster
 	allowed_roles = ARMED_ROLES
 
 /datum/gear/sikits/holsters/New()
