@@ -64,7 +64,7 @@
 
 /obj/item/gunbox/inftech/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic|Explosive - Z-6 Automatic Rifle|L-19 Disposable Launcher"] = list(/obj/item/gun/projectile/automatic/bullpup_rifle/sec/lmg, /obj/item/gun/projectile/rocket/oneuse/marine,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/frag)
+	options["Ballistic|Explosive - Z-6 Automatic Rifle|L-19 Disposable Launcher"] = list(/obj/item/gun/projectile/automatic/bullpup_rifle/sec/lmg, /obj/item/gun/projectile/rocket/oneuse,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/frag)
 	options["Explosive - TVP-3, Recoilless Rifle"] = list(/obj/item/gun/projectile/rocket/recoilless/sec,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/frag)
 	options["Ballistic - Z2, Light Machinegun"] = list(/obj/item/gun/projectile/automatic/l6_saw/sec,/obj/item/ammo_magazine/box/machinegun,/obj/item/ammo_magazine/box/machinegun)
 	options["Energy - G40B"] = list(/obj/item/gun/energy/laser/infantry,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/frag)

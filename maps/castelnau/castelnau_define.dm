@@ -13,11 +13,9 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	admin_levels = list(4,5)
 	empty_levels = list(6)
 	accessible_z_levels = list("1"=1,"2"=1,"3"=1, "6" = 30)
-	overmap_size = 25
-	overmap_event_areas = 24
-	usable_email_tlds = list("freemail.castelnau.net",
-							 "freemail.net"
-							 )
+	overmap_size = 15
+	overmap_event_areas = 14
+	usable_email_tlds = list("reg.net", "mil.gov", "freemail.net")
 
 	allowed_spawns = list("Cryogenic Storage", "Prometeus Cryogenic Storage")
 	default_spawn = "Cryogenic Storage"
