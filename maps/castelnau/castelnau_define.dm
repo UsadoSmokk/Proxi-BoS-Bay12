@@ -53,13 +53,13 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	return jointext(., "<br>")
 
 /datum/map/castelnau/send_welcome()
-	var/welcome_text = "<center><br /><font size = 3><b>MSM Prometeus</b> Показания Сенсоров:</font><hr />"
+	var/welcome_text = "<center><br /><font size = 3><b>FTV Cheapskate</b> Показания Сенсоров:</font><hr />"
 	welcome_text += "Отчет сгенерирован [stationdate2text()] в [stationtime2text()]</center><br /><br />"
-	welcome_text += "Текущая система: <b>ЕЛЛОНКЕЙК ВСПОМНИ КАКАЯ ТУТ ХУЙНЯ</b><br />"
+	welcome_text += "Текущая система: <b>Я НЕ ПОМНЮ</b><br />"
 	welcome_text += "Следующая система для прыжка: <b>[generate_system_name()]</b><br />"
-	welcome_text += "Дней до ближайшей обитаемой системы: <b>[rand(1,5)]</b><br />"
+	welcome_text += "Дней до ближайшей подконтрольной правительству системы: <b>[rand(1,5)]</b><br />"
 	welcome_text += "Дней с последнего визита в порт: <b>[rand(30,90)]</b><br />"
-	welcome_text += "Результаты сканирования показали следующие потенциальные объекты для исследования:<br />"
+	welcome_text += "Результаты сканирования показали следующие потенциальные объекты для проверки:<br />"
 	var/list/space_things = list()
 	var/obj/effect/overmap/visitable/castelnau = map_sectors["1"]
 	for(var/zlevel in map_sectors)
@@ -86,5 +86,5 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 		welcome_text += "<br>Сигналов бедствия не обнаружено.<br />"
 	welcome_text += "<hr>"
 
-	post_comm_message("MSM Prometeus Sensor Readings", welcome_text)
+	post_comm_message("FTV Cheapskate Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")

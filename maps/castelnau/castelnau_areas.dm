@@ -421,6 +421,16 @@ CREATE_CST_AREA(engineering/atmos)
 	sound_env = LARGE_ENCLOSED
 	req_access = list(access_castelnau_atmospherics)
 
+CREATE_CST_AREA(engineering/lab)
+	name = "Reverse Engineering Lab"
+	icon_state = "research"
+	sound_env = SMALL_ENCLOSED
+
+CREATE_CST_AREA(engineering/robotics)
+	name = "Engineering Robotics Lab"
+	icon_state = "robotics"
+	sound_env = SMALL_ENCLOSED
+
 CREATE_CST_AREA(storage/tech)
 	name = "Technical Storage"
 	icon_state = "storage"
@@ -474,6 +484,16 @@ CREATE_CST_AREA(security/recreation)
 CREATE_CST_AREA(security/aux)
 	name = "Security - Auxiliary Equipment"
 	icon_state = "security_brig"
+	req_access = list(access_castelnau_brig)
+
+CREATE_CST_AREA(security/sheriff)
+	name = "Security - Sheriff Office"
+	icon_state = "warden"
+	req_access = list(access_castelnau_brig)
+
+CREATE_CST_AREA(security/detective)
+	name = "Security - Investigator Office"
+	icon_state = "detective"
 	req_access = list(access_castelnau_brig)
 
 CREATE_CST_AREA(command/fo)

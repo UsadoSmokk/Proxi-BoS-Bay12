@@ -1,5 +1,5 @@
 /obj/effect/overmap/visitable/ship/castelnau
-	name = "MOTV Castelnau"
+	name = "RMV Castelnau"
 	fore_dir = WEST
 	vessel_mass = 15000
 	start_x = 4
@@ -7,12 +7,12 @@
 	color = COLOR_PINK
 	icon = 'icons/obj/overmap.dmi'
 	initial_restricted_waypoints = list(
-		"Prometeus" = list("nav_prometeus_dock"),
+		"Cheapskate" = list("nav_cheapskate_dock"),
 		"Bixie" = list("nav_bixie_dock"),
 		"Perseus" = list("nav_perseus_dock")
 	)
 	initial_generic_waypoints = list(
-		"nav_prometeus_dock",
+		"nav_cheapskate_dock",
 		"nav_perseus_dock",
 		"nav_bixie_dock",
 		"nav_space_near_third_deck",
