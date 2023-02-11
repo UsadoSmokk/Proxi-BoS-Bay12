@@ -314,9 +314,9 @@ CREATE_CST_AREA(civ/janitor)
 	icon_state = "janitor"
 	req_access = list(access_castelnau_janitor)
 
-CREATE_CST_AREA(storage/expedition)
-	name = "Expedition Storage"
-	icon_state = "storage"
+CREATE_CST_AREA(supply/teleporter)
+	name = "Teleporter"
+	icon_state = "teleporter"
 	sound_env = SMALL_ENCLOSED
 
 CREATE_CST_AREA(storage/cargo)
