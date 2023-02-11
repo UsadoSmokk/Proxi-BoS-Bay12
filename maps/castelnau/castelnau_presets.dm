@@ -197,8 +197,8 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 		num2text(MED_I_FREQ) = list(access_castelnau_medical),
 		num2text(SEC_FREQ)   = list(access_castelnau_security),
 		num2text(SEC_I_FREQ) = list(access_castelnau_security),
-		num2text(SCI_FREQ)   = list(access_castelnau_prometeus),
-		num2text(SUP_FREQ)   = list(access_castelnau_supply),
+		num2text(SCI_FREQ)   = list(access_castelnau_cheapskate),
+		num2text(SUP_FREQ)   = list(access_castelnau_cheapskate),
 		num2text(SRV_FREQ)   = list(list(access_castelnau_janitor, access_castelnau_bar, access_castelnau_kitchen)),
 		num2text(EXP_FREQ)   = list() //DEBUG
 	)

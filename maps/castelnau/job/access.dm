@@ -1,22 +1,41 @@
+//Cheapskate
+/var/const/access_castelnau_cheapskate = "ACCESS_CHEAPSKATE"
+/datum/access/castelnau/cheapskate
+	id = access_castelnau_cheapskate
+	desc = "Cheapskate General"
+	region = ACCESS_REGION_GENERAL
+
+/var/const/access_castelnau_cheapskate_helm = "ACCESS_CHEAPSKATE_HELM"
+/datum/access/castelnau/cheapskate_helm
+	id = access_castelnau_cheapskate_helm
+	desc = "Cheapskate Helm"
+	region = ACCESS_REGION_GENERAL
+
+/var/const/access_castelnau_cheapskate_cargo = "ACCESS_CHEAPSKATE_CARGO"
+/datum/access/castelnau/cheapskate_cargo
+	id = access_castelnau_cheapskate_cargo
+	desc = "Cheapskate Supply"
+	region = ACCESS_REGION_SUPPLY
+
+/var/const/access_castelnau_cheapskate_shop = "ACCESS_CHEAPSKATE_SHOP"
+/datum/access/castelnau/cheapskate_shop
+	id = access_castelnau_cheapskate_shop
+	desc = "Cheapskate Shop"
+	region = ACCESS_REGION_SUPPLY
+
+/var/const/access_castelnau_cheapskate_security = "ACCESS_CHEAPSKATE_SECURITY"
+/datum/access/castelnau/cheapskate_security
+	id = access_castelnau_cheapskate_security
+	desc = "Cheapskate Security"
+	region = ACCESS_REGION_SECURITY
+
+/var/const/access_castelnau_cheapskate_chief = "ACCESS_CHEAPSKATE_CHIEF"
+/datum/access/castelnau/cheapskate_chief
+	id = access_castelnau_cheapskate_chief
+	desc = "Cheapskate Chief Merchant"
+	region = ACCESS_REGION_COMMAND
+
 //Shuttles
-/var/const/access_castelnau_prometeus = "ACCESS_PROMETEUS"
-/datum/access/castelnau/prometeus
-	id = access_castelnau_prometeus
-	desc = "Castelnau Prometeus"
-	region = ACCESS_REGION_RESEARCH
-
-/var/const/access_castelnau_prometeus_helm = "ACCESS_PROMETEUS_HELM"
-/datum/access/castelnau/prometeus_helm
-	id = access_castelnau_prometeus_helm
-	desc = "Castelnau Prometeus Helm"
-	region = ACCESS_REGION_RESEARCH
-
-/var/const/access_castelnau_prometeus_senior = "ACCESS_PROMETEUS_SENIOR_SCIENTIST"
-/datum/access/castelnau/prometeus_senior
-	id = access_castelnau_prometeus_senior
-	desc = "Castelnau Senior Scientist"
-	region = ACCESS_REGION_RESEARCH
-
 /var/const/access_castelnau_bixie = "ACCESS_BIXIE"
 /datum/access/castelnau/bixie
 	id = access_castelnau_bixie
@@ -41,19 +60,6 @@
 	desc = "Castelnau Perseus Helm"
 	region = ACCESS_REGION_GENERAL
 
-//Supply
-/var/const/access_castelnau_supply = "ACCESS_CASTELNAU_SUPPLY"
-/datum/access/castelnau/supply
-	id = access_castelnau_supply
-	desc = "Castelnau Supply"
-	region = ACCESS_REGION_SUPPLY
-
-/var/const/access_castelnau_qm = "ACCESS_CASTELNAU_QM"
-/datum/access/castelnau/qm
-	id = access_castelnau_qm
-	desc = "Castelnau Quartermaster"
-	region = ACCESS_REGION_SUPPLY
-
 //Security
 var/const/access_castelnau_security = "ACCESS_CASTELNAU_SECURITY"
 /datum/access/castelnau/security
@@ -77,6 +83,12 @@ var/const/access_castelnau_sheriff = "ACCESS_CASTELNAU_SHERIFF"
 /datum/access/castelnau/sheriff
 	id = access_castelnau_sheriff
 	desc = "Castelnau Sheriff"
+	region = ACCESS_REGION_SECURITY
+
+var/const/access_castelnau_detective = "ACCESS_CASTELNAU_DETECTIVE"
+/datum/access/castelnau/detective
+	id = access_castelnau_detective
+	desc = "Castelnau Detective"
 	region = ACCESS_REGION_SECURITY
 
 //Misc
@@ -178,12 +190,6 @@ var/const/access_castelnau_sheriff = "ACCESS_CASTELNAU_SHERIFF"
 	desc = "Castelnau ID modification"
 	region = ACCESS_REGION_COMMAND
 
-/var/const/access_castelnau_seneng = "ACCESS_CASTELNAU_SENENG"
-/datum/access/castelnau/seneng
-	id = access_castelnau_seneng
-	desc = "Castelnau Senior Engineer"
-	region = ACCESS_REGION_ENGINEERING
-
 /var/const/access_castelnau_engineering = "ACCESS_CASTELNAU_ENGINEERING"
 /datum/access/castelnau/engineering
 	id = access_castelnau_engineering
@@ -207,3 +213,15 @@ var/const/access_castelnau_sheriff = "ACCESS_CASTELNAU_SHERIFF"
 	id = access_castelnau_thrusters
 	desc = "Castelnau Thrusters"
 	region = ACCESS_REGION_ENGINEERING
+
+/var/const/access_castelnau_englab = "ACCESS_CASTELNAU_ENGLAB"
+/datum/access/castelnau/englab
+	id = access_castelnau_englab
+	desc = "Castelnau Engineering Lab"
+	region = ACCESS_REGION_ENGINEERING
+
+/var/const/access_castelnau_teleporter = "ACCESS_CASTELNAU_TELEPORTER"
+/datum/access/castelnau/teleporter
+	id = access_castelnau_teleporter
+	desc = "Castelnau Teleporter"
+	region = ACCESS_REGION_GENERAL

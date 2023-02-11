@@ -18,3 +18,7 @@
 						/datum/mil_rank/par/yak,
 						/datum/mil_rank/other/merc,
 						/datum/mil_rank/other/free)
+
+	access = list(
+	access_castelnau_perseus
+	)

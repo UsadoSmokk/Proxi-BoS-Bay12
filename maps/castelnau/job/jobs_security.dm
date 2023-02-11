@@ -4,7 +4,7 @@
 	department_flag = SEC
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Captain, the First Officer and the Second Officer"
+	supervisors = "the Captain, the First Mate and the Coordinator"
 	economic_power = 8
 	minimal_player_age = 14
 	ideal_character_age = 35
@@ -23,14 +23,26 @@
 	                    SKILL_FORENSICS   = SKILL_MAX)
 	skill_points = 25
 
-	access = list(access_castelnau_sheriff,
-				  access_castelnau_security,
-				  access_castelnau_brig,
-				  access_castelnau_armory,
-				  access_castelnau_maint_tunnels,
-				  access_castelnau_external_airlocks,
-				  access_castelnau_hangar,
-				  access_castelnau_eva)
+	access = list(
+	access_castelnau_command,
+	access_castelnau_bridge,
+	access_castelnau_eva,
+
+	access_castelnau_maint_tunnels,
+	access_castelnau_external_airlocks,
+
+	access_castelnau_security,
+	access_castelnau_brig,
+	access_castelnau_armory,
+	access_castelnau_detective,
+
+	access_castelnau_morgue,
+
+	access_castelnau_perseus,
+	access_castelnau_perseus_helm,
+
+	access_castelnau_teleporter
+	)
 
 /datum/job/officer
 	title = "Security Operative"
@@ -39,6 +51,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Sheriff"
+	selection_color = "#9e2e2e"
 	economic_power = 6
 	minimal_player_age = 10
 	ideal_character_age = 25
@@ -66,25 +79,30 @@
 	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_WEAPONS     = SKILL_MAX)
 
-	access = list(access_castelnau_security,
-				  access_castelnau_brig,
-				  access_castelnau_armory,
-				  access_castelnau_maint_tunnels,
-				  access_castelnau_external_airlocks,
-				  access_castelnau_hangar,
-				  access_castelnau_eva)
+	access = list(
+	access_castelnau_eva,
+
+	access_castelnau_maint_tunnels,
+	access_castelnau_external_airlocks,
+
+	access_castelnau_security,
+	access_castelnau_brig,
+
+	access_castelnau_perseus
+	)
 
 /datum/job/specialist
-	title = "Bounty Hunter"
+	title = "Investigator"
 	department = "Security"
 	department_flag = SEC
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Sheriff"
-	selection_color = "#601c1c"
+	selection_color = "#9e2e2e"
 	economic_power = 6
 	minimal_player_age = 10
 	ideal_character_age = 25
+	give_psionic_implant_on_join = FALSE
 	alt_titles = list(
 		"Psi-Interrogator")
 
@@ -95,7 +113,6 @@
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/scg,
 						/datum/mil_rank/mil/lss,
 						/datum/mil_rank/mil/iccg,
 						/datum/mil_rank/par,
@@ -111,6 +128,21 @@
 	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_WEAPONS     = SKILL_MAX,
 	                    SKILL_FORENSICS   = SKILL_MAX)
+	access = list(
+	access_castelnau_command,
+	access_castelnau_bridge,
+	access_castelnau_eva,
+
+	access_castelnau_maint_tunnels,
+	access_castelnau_external_airlocks,
+
+	access_castelnau_brig,
+	access_castelnau_detective,
+
+	access_castelnau_morgue,
+
+	access_castelnau_perseus
+	)
 
 /datum/job/detective/equip(var/mob/living/carbon/human/H)
 	if(H.mind.role_alt_title == "Psi-Interrogator")

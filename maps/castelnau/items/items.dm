@@ -67,7 +67,6 @@ OTHER
 	req_access = list(access_castelnau_atmospherics)
 
 /obj/item/tape/research
-	req_access = list(access_castelnau_prometeus)
 
 /obj/item/tape/medical
 	req_access = list(access_castelnau_medical)

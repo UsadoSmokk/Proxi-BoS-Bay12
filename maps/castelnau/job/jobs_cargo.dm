@@ -1,41 +1,3 @@
-/datum/job/qm
-	title = "Quartermaster"
-	department = "Auxiliary"
-	department_flag = SUP
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Captain, the First Mate and the Coordinator"
-	economic_power = 8
-	minimal_player_age = 7
-	ideal_character_age = 35
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/supply/quartermaster
-	allowed_branches = list(/datum/mil_branch/reg,
-							/datum/mil_branch/mil)
-	allowed_ranks = list(/datum/mil_rank/reg,
-						/datum/mil_rank/mil/scg,
-						/datum/mil_rank/mil/lss,
-						/datum/mil_rank/mil/iccg)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
-	                    SKILL_FINANCE     = SKILL_ADEPT,
-	                    SKILL_HAULING     = SKILL_BASIC)
-
-	skill_points = 14
-
-/*	access = list(access_castelnau_supply,
-				  access_castelnau_qm,
-				  access_castelnau_eva,
-				  access_castelnau_maint_tunnels,
-				  access_castelnau_hangar,
-				  access_castelnau_bixie,
-				  access_castelnau_bixie_helm,
-				  access_castelnau_perseus,
-				  access_castelnau_perseus_helm)
-*/
-	software_on_spawn = list(/datum/computer_file/program/supply,
-							 /datum/computer_file/program/deck_management,
-							 /datum/computer_file/program/reports)
-
-
 /datum/job/cargotech
 	title = "Cargo Technician"
 	department = "Auxiliary"
@@ -46,6 +8,7 @@
 	economic_power = 8
 	minimal_player_age = 7
 	ideal_character_age = 35
+	selection_color = "#755c48"
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/supply/quartermaster
 	allowed_branches = list(
 							/datum/mil_branch/mil,
@@ -65,16 +28,13 @@
 
 	skill_points = 14
 
-/*	access = list(access_castelnau_supply,
-				  access_castelnau_qm,
-				  access_castelnau_eva,
-				  access_castelnau_maint_tunnels,
-				  access_castelnau_hangar,
-				  access_castelnau_bixie,
-				  access_castelnau_bixie_helm,
-				  access_castelnau_perseus,
-				  access_castelnau_perseus_helm)
-*/
+	access = list(
+					access_castelnau_cheapskate,
+
+					access_castelnau_cheapskate_cargo,
+
+					access_castelnau_bixie)
+
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -85,10 +45,10 @@
 	department_flag = SUP
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Quartermaster"
-	selection_color = "#515151"
+	supervisors = "the Chief Merchant"
 	economic_power = 7
 	ideal_character_age = 25
+	selection_color = "#4f3230"
 	alt_titles = list(
 		"Field Constructor")
 	allowed_branches = list(
@@ -114,12 +74,8 @@
 						/datum/mil_rank/other/merc,
 						/datum/mil_rank/other/free)
 
-/*	access = list(access_castelnau_supply,
-				  access_castelnau_eva,
-				  access_castelnau_maint_tunnels,
-				  access_castelnau_hangar,
-				  access_castelnau_bixie,
-				  access_castelnau_bixie_helm,
-				  access_castelnau_perseus,
-				  access_castelnau_perseus_helm)
-*/
+	access = list(
+
+					access_castelnau_bixie,
+					access_castelnau_bixie_helm,
+					access_castelnau_hangar)

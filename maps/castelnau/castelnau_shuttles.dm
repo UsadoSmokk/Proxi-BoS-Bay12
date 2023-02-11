@@ -61,7 +61,6 @@ CASTELNAU_ESCAPE_POD(9)
 	/area/shuttle/castelnau/cheapskate/server,
 	/area/shuttle/castelnau/cheapskate/cryo,
 	/area/shuttle/castelnau/cheapskate/merch,
-	/area/shuttle/castelnau/cheapskate/merch/warehouse,
 	/area/shuttle/castelnau/cheapskate/cargo,
 	/area/shuttle/castelnau/cheapskate/cargo/war,
 	/area/shuttle/castelnau/cheapskate/cargo/smoking,

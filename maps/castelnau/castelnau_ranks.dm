@@ -8,6 +8,7 @@
 		/datum/mil_branch/mil,
 		/datum/mil_branch/par,
 //		/datum/mil_branch/cult,
+		/datum/mil_branch/ftu,
 		/datum/mil_branch/other
 	)
 
@@ -16,6 +17,7 @@
 		/datum/mil_branch/mil,
 		/datum/mil_branch/par,
 //		/datum/mil_branch/cult,
+		/datum/mil_branch/ftu,
 		/datum/mil_branch/other
 	)
 
@@ -61,8 +63,8 @@
 	)
 
 /datum/mil_branch/par
-	name = "Paroled"
-	name_short = "Par"
+	name = "Alternatively Hired"
+	name_short = "AltH"
 	email_domain = "freemail.net"
 
 	rank_types = list(
@@ -73,6 +75,22 @@
 	spawn_rank_types = list(
 		/datum/mil_rank/par,
 		/datum/mil_rank/par/yak
+	)
+
+/datum/mil_branch/ftu
+	name = "Free Trade Union"
+	name_short = "FTU"
+	email_domain = "freetrade.net"
+
+	rank_types = list(
+		/datum/mil_rank/ftu,
+		/datum/mil_rank/ftu/qm,
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/ftu,
+		/datum/mil_rank/ftu/qm,
+		/datum/mil_rank/ftu/sec
 	)
 /*
 /datum/mil_branch/cult
@@ -182,6 +200,24 @@
 	name = "Nar'Sie Ichorn"
 	name_short = "Ichorn"
 */
+
+/*
+ *  Free Trade Union
+ *  =========
+ */
+
+/datum/mil_rank/ftu
+	name = "Free Trader"
+	name_short = "TRD"
+
+/datum/mil_rank/ftu/qm
+	name = "FTU Quartermaster"
+	name_short = "QM"
+
+/datum/mil_rank/ftu/sec
+	name = "FTU Security"
+	name_short = "SEC"
+
 
 /*
  *  Other

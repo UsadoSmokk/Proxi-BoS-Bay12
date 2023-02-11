@@ -172,51 +172,62 @@
 /area/shuttle/castelnau/cheapskate
 	name = "Cheapskate - Hallway"
 	icon_state = "invi"
-	req_access = list(access_castelnau_prometeus)
 
 /area/shuttle/castelnau/cheapskate/cockpit
 	icon_state = "cheap_com"
 	name = "Cheapskate - Cockpit"
+	req_access = list(access_castelnau_cheapskate_helm)
 
 /area/shuttle/castelnau/cheapskate/conference
 	icon_state = "cheap_com"
 	name = "Cheapskate - Conference Room"
+	req_access = list(access_castelnau_cheapskate)
 
 /area/shuttle/castelnau/cheapskate/eva
 	icon_state = "cheap_eva"
 	name = "Cheapskate - EVA"
+	req_access = list(access_castelnau_cheapskate)
 
 /area/shuttle/castelnau/cheapskate/med
 	icon_state = "cheap_med"
 	name = "Cheapskate - Medical Bay"
+	req_access = list(access_castelnau_cheapskate)
 
 /area/shuttle/castelnau/cheapskate/maint
 	icon_state = "cheap_maint"
 	name = "Cheapskate - Maintenance"
+	req_access = list(access_castelnau_cheapskate)
 
 /area/shuttle/castelnau/cheapskate/maint/storage
 	name = "Cheapskate - Maintenance Storage"
+	req_access = list(access_castelnau_cheapskate)
 
 /area/shuttle/castelnau/cheapskate/maint/dock
 	name = "Cheapskate - Dock"
+	req_access = list(access_castelnau_cheapskate_cargo)
 
 /area/shuttle/castelnau/cheapskate/maint/airlock
 	name = "Cheapskate - Airlock"
+	req_access = list(access_castelnau_cheapskate)
 
 /area/shuttle/castelnau/cheapskate/maint/supairlock
 	name = "Cheapskate - Supply Airlock"
+	req_access = list(access_castelnau_cheapskate_cargo)
 
 /area/shuttle/castelnau/cheapskate/sec
 	icon_state = "cheap_sec"
 	name = "Cheapskate - Security"
+	req_access = list(access_castelnau_cheapskate_security)
 
 /area/shuttle/castelnau/cheapskate/cm
 	icon_state = "cheap_com"
 	name = "Cheapskate - Chief Merchant"
+	req_access = list(access_castelnau_cheapskate_chief)
 
 /area/shuttle/castelnau/cheapskate/server
 	icon_state = "cheap_eva"
 	name = "Cheapskate - Server Room"
+	req_access = list(access_castelnau_cheapskate_chief)
 
 /area/shuttle/castelnau/cheapskate/cryo
 	icon_state = "cheap_cryo"
@@ -225,13 +236,12 @@
 /area/shuttle/castelnau/cheapskate/merch
 	icon_state = "cheap_merch"
 	name = "Cheapskate - Outlet Shop"
-
-/area/shuttle/castelnau/cheapskate/merch/warehouse
-	name = "Cheapskate - Merchant Warehouse"
+	req_access = list(access_castelnau_cheapskate_shop)
 
 /area/shuttle/castelnau/cheapskate/cargo
 	icon_state = "cheap_sup"
 	name = "Cheapskate - Supply Office"
+	req_access = list(access_castelnau_cheapskate_cargo)
 
 /area/shuttle/castelnau/cheapskate/cargo/war
 	name = "Cheapskate - Supply Warehouse"
@@ -318,6 +328,7 @@ CREATE_CST_AREA(supply/teleporter)
 	name = "Teleporter"
 	icon_state = "teleporter"
 	sound_env = SMALL_ENCLOSED
+	req_access = list(access_castelnau_teleporter)
 
 CREATE_CST_AREA(storage/cargo)
 	name = "Cargo Storage"
@@ -340,13 +351,13 @@ CREATE_CST_AREA(supply/smelter)
 CREATE_CST_AREA(supply/office)
 	name = "Supply Office"
 	icon_state = "quartoffice"
-	req_access = list(access_castelnau_supply)
+	req_access = list(access_castelnau_cheapskate_cargo)
 
 CREATE_CST_AREA(supply/storage)
 	name = "Warehouse"
 	icon_state = "quartstorage"
 	sound_env = LARGE_ENCLOSED
-	req_access = list(access_castelnau_supply)
+	req_access = list(access_castelnau_cheapskate_cargo)
 
 CREATE_CST_AREA(maintenance/seconddeck/forestarboard)
 	name = "Second Deck Fore Starboard Maintenance"
@@ -497,7 +508,7 @@ CREATE_CST_AREA(security/detective)
 	req_access = list(access_castelnau_brig)
 
 CREATE_CST_AREA(command/fo)
-	name = "Command - First Officer's Quarters"
+	name = "Command - First Mate's Quarters"
 	icon_state = "captain"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_castelnau_comoffice)
@@ -632,7 +643,7 @@ CREATE_CST_AREA(command/captain)
 	name = "Command - Main Office"
 	icon_state = "captain"
 	sound_env = MEDIUM_SOFTFLOOR
-	req_access = list(access_castelnau_comoffice)
+	req_access = list(access_castelnau_captain)
 
 CREATE_CST_AREA(command/captainquarts)
 	name = "Command - Captain's Quarters"

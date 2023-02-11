@@ -55,6 +55,7 @@
 	#include "job/jobs_engineering.dm"
 	#include "job/jobs_evaguys.dm"
 	#include "job/jobs_medical.dm"
+	#include "job/jobs_merchants.dm"
 	#include "job/jobs_misc.dm"
 	#include "job/jobs_security.dm"
 	#include "job/jobs_service.dm"
