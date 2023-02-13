@@ -75,6 +75,23 @@
 	threaten_sound = 'sound/weapons/TargetOn.ogg'
 	stand_down_sound = 'sound/weapons/TargetOff.ogg'
 
+/datum/say_list/sol
+	speak = list("Ну буфета сдесь нет наверное...",
+				"Ща к барыгам короче, а потом по бабам...",
+				"ХУЙ!")
+	emote_see = list("насвистывает песенку", "дергает предохранитель", "перепроверяет магазин")
+
+	say_understood = list("Так точно!", "Принято!")
+	say_cannot = list("Никак нет!")
+	say_maybe_target = list("СТОЯТЬ, СТРЕЛЯТЬ БУДУ!")
+	say_got_target = list("КОНТАКТ!!")
+	say_threaten = list("Эй служивый! Это наша точка!", "КОНТАКТ!!")
+	say_stand_down = list("Хорошая девочка.")
+	say_escalate = list("Этого минусанул!", "Этот двухсотый!")
+
+	threaten_sound = 'sound/weapons/TargetOn.ogg'
+	stand_down_sound = 'sound/weapons/TargetOff.ogg'
+
 /datum/say_list/crab
 	emote_hear = list("clicks")
 	emote_see = list("clacks")
