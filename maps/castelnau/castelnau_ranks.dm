@@ -85,6 +85,7 @@
 	rank_types = list(
 		/datum/mil_rank/ftu,
 		/datum/mil_rank/ftu/qm,
+		/datum/mil_rank/ftu/sec
 	)
 
 	spawn_rank_types = list(
