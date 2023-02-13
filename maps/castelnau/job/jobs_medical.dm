@@ -10,7 +10,7 @@
 	supervisors = "the Coordinator"
 	selection_color = "#013d3b"
 	economic_power = 8
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/medical/senior
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/med/surgeon
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(
 		/datum/mil_rank/reg
@@ -59,7 +59,7 @@
 		"Paramedic",
 		"Chemist")
 
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/medical/doctor
+//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/medical/doctor
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par)

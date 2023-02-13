@@ -13,6 +13,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/ftu/qm
 	)
+	outfit_type = /decl/hierarchy/outfit/job/cheapskate/chief
 	latejoin_at_spawnpoints = 1
 	access = list()
 	min_skill = list(   SKILL_FINANCE = SKILL_ADEPT,
@@ -50,6 +51,7 @@
 	selection_color = "#755c48"
 	alt_titles = list(
 		"Shipside Merchant")
+	outfit_type = /decl/hierarchy/outfit/job/cheapskate/merchant
 	allowed_branches = list(
 		/datum/mil_branch/ftu
 	)
@@ -81,6 +83,7 @@
 	supervisors = "the FTU merchants"
 	minimal_player_age = 0
 	selection_color = "#755c48"
+	outfit_type = /decl/hierarchy/outfit/job/cheapskate/security
 	allowed_branches = list(
 		/datum/mil_branch/ftu
 	)

@@ -8,9 +8,9 @@
 	economic_power = 8
 	minimal_player_age = 14
 	ideal_character_age = 35
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/security/warden
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/com/sheriff
 	allowed_branches = list(/datum/mil_branch/reg)
-	allowed_ranks = list(/datum/mil_rank/reg)
+	allowed_ranks = list(/datum/mil_rank/reg/com)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_HAULING	  = SKILL_ADEPT,
@@ -58,7 +58,7 @@
 
 	skill_points = 20
 
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/security/officer
+//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/security/officer
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par)
@@ -108,7 +108,7 @@
 
 	skill_points = 20
 
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/security/officer
+//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/security/officer
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par)

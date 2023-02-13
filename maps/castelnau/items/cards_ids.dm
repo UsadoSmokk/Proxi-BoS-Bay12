@@ -16,10 +16,10 @@
 	color = "#d4c780"
 	extra_details = list("goldstripe")
 
-/obj/item/card/id/castelnau/crew/adjutant
-	desc = "An identification card belonging to the Second Officer of MOTV Castelnau."
-	job_access_type = /datum/job/adjutant
-	detail_color = COLOR_COMMAND_BLUE
+///obj/item/card/id/castelnau/crew/adjutant
+//	desc = "An identification card belonging to the Second Officer of MOTV Castelnau."
+//	job_access_type = /datum/job/adjutant
+//	detail_color = COLOR_COMMAND_BLUE
 
 /obj/item/card/id/castelnau/crewman
 	desc = "An identification card issued to Crewman of the MOTV Castelnau."

@@ -9,7 +9,7 @@
 	selection_color = "#515151"
 	economic_power = 6
 	announced = FALSE
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crewman
+	outfit_type = /decl/hierarchy/outfit/job/castelnau
 	allowed_branches = list(
 							/datum/mil_branch/par,
 							/datum/mil_branch/other)

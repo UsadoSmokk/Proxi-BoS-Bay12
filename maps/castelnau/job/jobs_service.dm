@@ -8,7 +8,7 @@
 	selection_color = "#3caa57"
 	supervisors = "the Captain, the First Mate and the Coordinator"
 	ideal_character_age = 20
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/service/janitor
+//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/service/janitor
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par,
@@ -36,7 +36,7 @@
 		"Cook",
 		"Culinary Specialist"
 		)
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/service/cook
+//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/service/cook
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par,
@@ -61,7 +61,7 @@
 	spawn_positions = 1
 	supervisors = "the Captain, the First Mate and the Coordinator"
 	ideal_character_age = 30
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/service/bartender
+//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/service/bartender
 	allowed_branches = list(
 							/datum/mil_branch/par,
 							/datum/mil_branch/other)

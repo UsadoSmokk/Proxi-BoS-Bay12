@@ -7,7 +7,7 @@
 	minimal_player_age = 21
 	economic_power = 20
 	ideal_character_age = 50
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/command/captain
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/com/captain
 	total_positions = 1
 	spawn_positions = 1
 	req_admin_notify = 1
@@ -65,7 +65,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/hop
-	title = "First Mate"
+	title = "Coordinator"
 	supervisors = "the Captain"
 	department = "Command"
 	department_flag = COM
@@ -76,7 +76,7 @@
 	minimal_player_age = 21
 	economic_power = 12
 	ideal_character_age = 45
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/command/hop
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/com/hop
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(/datum/mil_rank/reg/com)
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -121,64 +121,3 @@
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
-
-/datum/job/adjutant
-	title = "Coordinator"
-	department = "Command"
-	department_flag = COM
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Captain and the First Mate"
-	selection_color = "#2f2f7f"
-	minimal_player_age = 18
-	economic_power = 7
-	ideal_character_age = 24
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/command/adjutant
-	allowed_branches = list(/datum/mil_branch/reg)
-	allowed_ranks = list(/datum/mil_rank/reg/com)
-	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
-						SKILL_PILOT       = SKILL_ADEPT)
-
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
-
-	skill_points = 20
-
-
-	access = list(
-	access_castelnau_command,
-	access_castelnau_bridge,
-	access_castelnau_eva,
-	access_castelnau_tcoms,
-
-	access_castelnau_engineering,
-	access_castelnau_engine,
-	access_castelnau_atmospherics,
-	access_castelnau_thrusters,
-	access_castelnau_englab,
-	access_castelnau_maint_tunnels,
-	access_castelnau_external_airlocks,
-
-	access_castelnau_security,
-	access_castelnau_brig,
-
-	access_castelnau_medical,
-	access_castelnau_morgue,
-
-	access_castelnau_bixie,
-	access_castelnau_bixie_helm,
-	access_castelnau_perseus,
-	access_castelnau_perseus_helm,
-	access_castelnau_janitor,
-	access_castelnau_bar,
-	access_castelnau_kitchen,
-	access_castelnau_hangar,
-	access_castelnau_teleporter
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/comm,
-							 /datum/computer_file/program/suit_sensors,
-							 /datum/computer_file/program/power_monitor,
-							 /datum/computer_file/program/alarm_monitor,
-							 /datum/computer_file/program/shields_monitor,
-							 /datum/computer_file/program/reports,
-							 /datum/computer_file/program/deck_management)

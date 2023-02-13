@@ -60,18 +60,14 @@
 	#include "job/jobs_security.dm"
 	#include "job/jobs_service.dm"
 
-	#include "job/outfits/castelnau_outfits.dm"
-	#include "job/outfits/command_outfits.dm"
-	#include "job/outfits/engineering_outfits.dm"
-	#include "job/outfits/medical_outfits.dm"
-	#include "job/outfits/misc_outfits.dm"
-	#include "job/outfits/research_outfits.dm"
-	#include "job/outfits/security_outfits.dm"
-	#include "job/outfits/service_outfits.dm"
-	#include "job/outfits/supply_outfits.dm"
-
 	#include "machinery/lighting.dm"
 	#include "machinery/other.dm"
+
+	#include "outfits/command/reg.dm"
+	#include "outfits/engineer/reg.dm"
+	#include "outfits/ftu/cheapskate_crew.dm"
+	#include "outfits/med/reg.dm"
+	#include "outfits/misc/misc.dm"
 
 	#include "structures/bedsheet_bin.dm"
 	#include "structures/fake_stairs.dm"

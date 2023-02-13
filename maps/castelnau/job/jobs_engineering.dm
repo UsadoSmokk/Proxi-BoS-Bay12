@@ -10,8 +10,7 @@
 	economic_power = 7
 	minimal_player_age = 14
 	ideal_character_age = 34
-
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/engineering/senior_engineer
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/senior_eng
 	allowed_branches = list(/datum/mil_branch/reg,
 							/datum/mil_branch/mil)
 	allowed_ranks = list(/datum/mil_rank/reg,
@@ -72,11 +71,11 @@
 	economic_power = 6
 
 	alt_titles = list(
-		"Electrician" = /decl/hierarchy/outfit/job/castelnau/crew/engineering/engineer/electr,
-		"Atmospheric Technician" = /decl/hierarchy/outfit/job/castelnau/crew/engineering/engineer/atmos,
+		"Electrician",
+		"Atmospheric Technician",
 		"Engineering Trainee")
 
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/engineering/engineer
+//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/engineering/engineer
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par)
@@ -132,7 +131,7 @@
 	economic_power = 6
 	give_psionic_implant_on_join = FALSE
 
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/engineering/engineer
+//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/engineering/engineer
 	allowed_branches = list(
 							/datum/mil_branch/par)
 	allowed_ranks = list(
@@ -191,7 +190,7 @@
 	max_skill = list(   SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/research/scientist
+//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/research/scientist
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par,
