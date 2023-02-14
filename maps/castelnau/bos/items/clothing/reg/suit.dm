@@ -10,7 +10,6 @@
 	item_state = "sheriff"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
-	flags_inv = HIDEJUMPSUIT
 
 /obj/item/clothing/suit/storage/regulator/captain
 	name = "regulators captain coat"
