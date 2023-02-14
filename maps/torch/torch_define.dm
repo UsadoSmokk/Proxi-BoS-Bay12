@@ -34,10 +34,12 @@
 	evac_controller_type = /datum/evacuation_controller/starship
 
 	default_law_type = /datum/ai_laws/lordania
+//final_event edit//
+/*
 	use_overmap = 1
 	num_exoplanets = 1
 
-	away_site_budget = 5
+	away_site_budget = 5 */
 	//id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'
 	id_hud_icons = 'maps/torch/icons/assignment_hud_boh.dmi'
 

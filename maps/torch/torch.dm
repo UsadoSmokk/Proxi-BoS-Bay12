@@ -1,5 +1,6 @@
 #if !defined(using_map_DATUM)
 
+	#warn This is a version for the Earth event, the lobby description may not match the map
 	#include "torch_announcements.dm"
 	#include "torch_antagonism.dm"
 	#include "torch_areas.dm"

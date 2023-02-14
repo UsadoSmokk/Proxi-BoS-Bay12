@@ -95,7 +95,8 @@ GLOBAL_VAR(href_logfile)
 	if (debug_server)
 		call(debug_server, "auxtools_init")()
 		enable_debugging()
-
+//original//
+/*
 	var/list/name_titles = list(
 		"Дуализм человечества",
 		"Игра ва-банк",
@@ -121,7 +122,11 @@ GLOBAL_VAR(href_logfile)
 		"На дне социального рейтинга",
 		"48 лет спустя"
 	)
-
+*/
+//final_event//
+	var/list/name_titles = list(
+		"Слепой патриотизм"
+	)
 	name = "[server_name] - [pick(name_titles)]"
 
 	//logs
