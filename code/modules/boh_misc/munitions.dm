@@ -265,7 +265,25 @@
 	projectile_type = /obj/item/projectile/missile
 	caliber = CALIBER_ROCKET
 
+//Idk what is this why is it in rocket category i don't know bay shitcode goddamn it
 /obj/item/ammo_magazine/speedloader/xo
 	labels = list("magnum")
 	caliber = CALIBER_PISTOL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/pistol/magnum
+
+// BOS ROCKETS NEXT //
+
+/obj/item/ammo_casing/rocket/point_rocket
+	name = "point rocket shell"
+	desc = "A high explosive designed to be fired from a launcher. This one has a smaller damage radius, but an stronger explosion. Good for destruction of fortifications."
+	projectile_type = /obj/item/projectile/missile/point_missile
+
+/obj/item/ammo_casing/rocket/smoke_rocket
+	name = "smoke rocket shell"
+	desc = "A rocket designed to create smoke-clouds. Good for enemy distraction."
+	projectile_type = /obj/item/projectile/missile/smoke_missile
+
+/obj/item/ammo_casing/rocket/shrapnel_rocket
+	name = "shrapnel rocket shell"
+	desc = "A rocket designed to violate the Moon Convention."
+	projectile_type = /obj/item/projectile/missile/shrapnel_missile
