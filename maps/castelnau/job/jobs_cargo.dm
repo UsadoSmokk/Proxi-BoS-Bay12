@@ -9,7 +9,7 @@
 	minimal_player_age = 7
 	ideal_character_age = 35
 	selection_color = "#755c48"
-	outfit_type = /decl/hierarchy/outfit/job/cheapskate
+	outfit_type = /decl/hierarchy/outfit/job/cheapskate/cargo
 	allowed_branches = list(
 		/datum/mil_branch/ftu
 	)

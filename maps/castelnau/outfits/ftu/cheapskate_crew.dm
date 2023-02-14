@@ -5,6 +5,13 @@
 	suit = /obj/item/clothing/suit/storage/ftu
 	head = /obj/item/clothing/head/ftu
 
+/decl/hierarchy/outfit/job/cheapskate/cargo
+	name = OUTFIT_JOB_NAME("FTU Cargo Outfit")
+	hierarchy_type = /decl/hierarchy/outfit/job/cheapskate
+	uniform = /obj/item/clothing/under/ftu
+	suit = /obj/item/clothing/suit/storage/ftu
+	head = /obj/item/clothing/head/ftu
+
 /decl/hierarchy/outfit/job/cheapskate/security
 	name = OUTFIT_JOB_NAME("FTU Security Outfit")
 	uniform = /obj/item/clothing/under/ftu/security
