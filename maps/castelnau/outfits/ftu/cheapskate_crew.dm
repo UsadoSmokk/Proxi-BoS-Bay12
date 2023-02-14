@@ -4,6 +4,7 @@
 	uniform = /obj/item/clothing/under/ftu
 	suit = /obj/item/clothing/suit/storage/ftu
 	head = /obj/item/clothing/head/ftu
+	shoes = /obj/item/clothing/shoes/dress
 
 /decl/hierarchy/outfit/job/cheapskate/cargo
 	name = OUTFIT_JOB_NAME("FTU Cargo Outfit")

@@ -4,3 +4,4 @@
 	pda_type = /obj/item/modular_computer/pda/medical
 	pda_slot = slot_l_store
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/blue
+	uniform = /obj/item/clothing/under/regulator/medic

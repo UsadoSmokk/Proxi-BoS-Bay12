@@ -65,6 +65,7 @@
 
 	#include "outfits/command/reg.dm"
 	#include "outfits/engineer/reg.dm"
+	#include "outfits/engineer/par.dm"
 	#include "outfits/ftu/cheapskate_crew.dm"
 	#include "outfits/med/reg.dm"
 	#include "outfits/misc/misc.dm"

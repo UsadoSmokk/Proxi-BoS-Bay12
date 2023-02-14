@@ -21,3 +21,4 @@
 	pda_slot = slot_l_store
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/storage/regulator/sheriff
+	head = /obj/item/clothing/head/regulator/sheriff

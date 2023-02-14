@@ -35,7 +35,7 @@ Weapons
 ******/
 
 /obj/item/gun/projectile/revolver/webley/captain
-	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. Uses .44 magnum rounds. This one has 'To the Captain of MOTV Castelnau' engraved."
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. Uses .44 magnum rounds. This one has 'To the Captain of RMV Castelnau' engraved."
 
 /obj/item/gun/projectile/pistol/liaison
 	magazine_type = /obj/item/ammo_magazine/mc9mm/oneway

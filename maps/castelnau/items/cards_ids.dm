@@ -49,6 +49,9 @@
 /obj/item/card/id/castelnau/crew/engineering
 	job_access_type = /datum/job/engineer
 
+/obj/item/card/id/castelnau/crew/engineering/reverse
+	job_access_type = /datum/job/scientist
+
 /obj/item/card/id/castelnau/crew/engineering/senior
 	job_access_type = /datum/job/senior_engineer
 
@@ -66,12 +69,3 @@
 
 /obj/item/card/id/castelnau/crew/service/bartender
 	job_access_type = /datum/job/bartender
-
-/obj/item/card/id/castelnau/crew/research
-	job_access_type = /datum/job/scientist
-
-/obj/item/card/id/castelnau/crew/research/scientist
-	job_access_type = /datum/job/scientist
-
-/obj/item/card/id/castelnau/crew/research/roboticist
-	job_access_type = /datum/job/roboticist
