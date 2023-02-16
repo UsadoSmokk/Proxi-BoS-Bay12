@@ -136,3 +136,4 @@
 	source = 'sound/music/bos/outfromunder.ogg'
 	license = /decl/license/grandfathered //pls don't sue me
 	url = "https://youtu.be/gLKKc3gxk20"
+	volume = 60
