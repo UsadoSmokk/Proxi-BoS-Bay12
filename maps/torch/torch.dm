@@ -1,6 +1,5 @@
 #if !defined(using_map_DATUM)
 
-	#warn This is a version for the Earth event, the lobby description may not match the map
 	#include "torch_announcements.dm"
 	#include "torch_antagonism.dm"
 	#include "torch_areas.dm"
@@ -191,12 +190,8 @@
 
 	#include "loadout/~defines.dm"
 
-	#include "torch1_deck5.dmm"
-	#include "torch2_deck4.dmm"
-	#include "torch3_deck3.dmm"
-	#include "torch4_deck2.dmm"
-	#include "torch5_deck1.dmm"
-	#include "torch6_bridge.dmm"
+	#include "voronezh/voronezh.dmm"
+	#include "voronezh/voronezh_areas.dm"
 	#include "z1_admin.dmm"
 	#include "z2_transit.dmm"
 
