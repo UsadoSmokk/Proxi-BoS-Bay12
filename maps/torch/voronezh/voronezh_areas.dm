@@ -1,6 +1,6 @@
 /datum/map/voronezh
 
-	base_floor_type = /turf/simulated/floor/reinforced/airless
+	base_floor_type = /turf/unsimulated/floor/snow/permafrost
 
 /area/voronezh
 	name = "Charon"
@@ -62,6 +62,7 @@
 	luminosity = 1
 	lighting_tone = AREA_LIGHTING_WARM
 	sound_env = LARGE_ENCLOSED
+	area_flags = AREA_FLAG_EXTERNAL
 
 /area/voronez/outside/atmosalert()
 	return
