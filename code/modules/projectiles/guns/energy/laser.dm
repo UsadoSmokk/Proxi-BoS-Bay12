@@ -14,6 +14,11 @@
 	projectile_type = /obj/item/projectile/beam/midlaser
 	wielded_item_state = "laser-wielded"
 
+/obj/item/gun/energy/laser/bad //bos
+	name = "Old Hephaestus G40E" //boh
+	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. This one hasn't been maintained for a while."
+	projectile_type = /obj/item/projectile/beam/bad
+
 /obj/item/gun/energy/laser/mounted
 	self_recharge = 1
 	use_external_power = 1

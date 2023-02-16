@@ -98,6 +98,11 @@
 	scoped_accuracy = 0
 	wielded_item_state = "boltaction-wielded"
 
+/obj/item/gun/projectile/heavysniper/boltaction/bad //bos
+	name = "Ancient-Pattern Russ, sol modification"
+	desc = "An ancient weapon. This one was modified to use different rifle ammo"
+	ammo_type = /obj/item/ammo_casing/rifle/bad
+
 /obj/item/gun/projectile/hornetsniper //boh
 	name = "Nanotrasen Z9R Houndmaster"
 	desc = "The Z9R Houndmaster, is Nanotrasens custom-built weapon for SDF special-forces. Features a onboard targeting suite, upscaled 12mm round and modern materials!"

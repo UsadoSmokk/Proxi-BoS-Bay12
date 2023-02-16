@@ -221,6 +221,14 @@
 	penetrating = 1
 	distance_falloff = 1.5
 
+/obj/item/projectile/bullet/rifle/bad //bos
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	damage = 10
+	armor_penetration = 45
+	penetration_modifier = 1.5
+	penetrating = 2
+	distance_falloff = 1.5
+
 /obj/item/projectile/bullet/rifle/military
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 40

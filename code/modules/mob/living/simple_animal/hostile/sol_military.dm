@@ -5,26 +5,27 @@
 	projectile_type = /obj/item/projectile/plasma/for_ai
 
 /mob/living/simple_animal/hostile/sol_military
-	name = "SOL military solder"
-	desc = "Disgusting creature!"
-	icon_state = "russianmelee"
-	icon_living = "russianmelee"
-	icon_dead = "russianmelee_dead"
-	icon_gib = "syndicate_gib"
+	name = "SCG Army soldier"
+	desc = "Your enemy."
+	icon = 'icons/mob/simple_animal/sol_military.dmi'
+	icon_state = "solmil"
+	icon_living = "solmil"
+	icon_dead = "solmil_dead"
+	icon_gib = "solmil_gib"
 	turns_per_move = 5
 	ranged = 1
 	response_help = "pokes"
 	response_disarm = "shoves"
-	response_harm = "hits"
+	response_harm = "stabs"
 	speed = 4
 	maxHealth = 100
 	health = 100
-	harm_intent_damage = 5
+	harm_intent_damage = 10
 	can_escape = TRUE
 	a_intent = I_HURT
-	var/corpse = /obj/effect/landmark/corpse/sol_military
-	var/list/dropped_weapon = list(/obj/item/gun/projectile/automatic/l6_saw, /obj/item/gun/energy/xray, /obj/item/gun/energy/k342/prereg/for_ai)
-	var/obj/item/gun/choosen_weapon = /obj/item/gun/projectile/pistol/military
+//	var/corpse = /obj/effect/landmark/corpse/sol_military
+	var/list/dropped_weapon = list(/obj/item/gun/projectile/heavysniper/boltaction/bad)
+	var/obj/item/gun/choosen_weapon = /obj/item/gun/projectile/heavysniper/boltaction/bad
 	unsuitable_atmos_damage = 15
 	faction = "sol"
 	status_flags = CANPUSH
@@ -57,9 +58,19 @@
 
 /mob/living/simple_animal/hostile/sol_military/death(gibbed, deathmessage, show_dead_message)
 	..(gibbed, deathmessage, show_dead_message)
-	if(corpse)
-		new corpse (src.loc)
+//	if(corpse)
+//		new corpse (src.loc)
 	if(dropped_weapon)
 		new choosen_weapon (src.loc)
-	qdel(src)
+//	qdel(src)
 	return
+
+/mob/living/simple_animal/hostile/sol_military/elite
+	icon_state = "solelite"
+	icon_living = "solelite"
+	icon_dead = "solelite_dead"
+	icon_gib = "solelite_dead"
+	dropped_weapon = list(/obj/item/gun/energy/laser/bad)
+	choosen_weapon = /obj/item/gun/energy/laser/bad
+	maxHealth = 150
+	health = 150
