@@ -6,6 +6,7 @@
 	name = "Charon"
 	icon = 'maps/torch/voronezh/voronezh_icons.dmi'
 	icon_state = "charon"
+	base_turf = /turf/unsimulated/floor/snow/permafrost
 
 /area/voronezh/acquilla
 	name = "Acquilla"
@@ -59,7 +60,6 @@
 	name = "Outside"
 	icon_state = "outside"
 	ambience = list('sound/ambience/bos/warambient1.ogg','sound/ambience/bos/warambient2.ogg','sound/ambience/bos/warambient3.ogg','sound/ambience/bos/warambient4.ogg')
-	luminosity = 1
 	lighting_tone = AREA_LIGHTING_WARM
 	sound_env = LARGE_ENCLOSED
 	area_flags = AREA_FLAG_EXTERNAL
