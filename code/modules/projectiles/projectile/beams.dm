@@ -25,10 +25,6 @@
 	tracer_type = /obj/effect/projectile/laser/tracer
 	impact_type = /obj/effect/projectile/laser/impact
 
-/obj/item/projectile/beam/bad //bos
-	damage = 15
-	penetration_modifier = 2
-
 /obj/item/projectile/beam/practice
 	fire_sound = 'sound/weapons/Taser.ogg'
 	damage = 0

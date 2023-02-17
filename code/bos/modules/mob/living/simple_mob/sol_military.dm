@@ -1,8 +1,25 @@
-/obj/item/projectile/plasma/for_ai
-	color = COLOR_BLUE_LIGHT
+/obj/item/projectile/beam/bad
+	damage = 15
+	armor_penetration = 45
+	penetration_modifier = 2
 
-/obj/item/gun/energy/k342/prereg/for_ai
-	projectile_type = /obj/item/projectile/plasma/for_ai
+/obj/item/projectile/bullet/rifle/bad
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	damage = 10
+	armor_penetration = 45
+	penetration_modifier = 1.5
+	penetrating = 2
+	distance_falloff = 1.5
+
+/obj/item/gun/energy/laser/bad
+	name = "Old Hephaestus G40E" //boh
+	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. This one hasn't been maintained for a while."
+	projectile_type = /obj/item/projectile/beam/bad
+
+/obj/item/gun/projectile/heavysniper/boltaction/bad
+	name = "Ancient-Pattern Russ, sol modification"
+	desc = "An ancient weapon. This one was modified to use different rifle ammo"
+	ammo_type = /obj/item/ammo_casing/rifle/bad
 
 /mob/living/simple_animal/hostile/sol_military
 	name = "SCG Army soldier"
