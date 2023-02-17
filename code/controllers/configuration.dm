@@ -345,6 +345,8 @@
 
 	var/static/aooc_allowed = TRUE
 
+	var/static/observers_allowed = TRUE
+
 	/// Whether space turfs have ambient light or not
 	var/static/starlight = 0
 
@@ -793,6 +795,9 @@
 				error_silence_time = text2num(value)
 			if ("error_msg_delay")
 				error_msg_delay = text2num(value)
+			//[INF]
+			if ("disable_observers")
+				config.observers_allowed = FALSE
 			if ("max_gear_cost")
 				max_gear_cost = text2num(value)
 				if (max_gear_cost < 0)

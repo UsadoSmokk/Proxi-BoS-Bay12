@@ -206,6 +206,7 @@
 #include "code\bos\game\turfs\flooring\inaks_decals.dm"
 #include "code\bos\game\turfs\unsimulated\inaks_turfs.dm"
 #include "code\bos\game\verbs\emote.dm"
+#include "code\bos\modules\admin\infinity_verbs.dm"
 #include "code\bos\modules\ascent\_ascent.dm"
 #include "code\bos\modules\ascent\ascent_atmos.dm"
 #include "code\bos\modules\ascent\ascent_atoms.dm"
