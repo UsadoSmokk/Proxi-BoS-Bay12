@@ -1,6 +1,6 @@
 /datum/computer_file/program/ntnetdownload
-	filename = "ntndownloader"
-	filedesc = "NTNet Software Download Tool"
+	filename = "lordownloader"
+	filedesc = "LORnet Software Download Tool"
 	program_icon_state = "generic"
 	program_key_state = "generic_key"
 	program_menu_icon = "arrowthickstop-1-s"
@@ -67,7 +67,7 @@
 	return TRUE
 
 /datum/computer_file/program/ntnetdownload/proc/hide_file_info(datum/computer_file/file, skill)
-	server = (file in ntnet_global.available_station_software) ? "NTNet Software Repository" : "unspecified server"
+	server = (file in ntnet_global.available_station_software) ? "LORnet Software Repository" : "unspecified server"
 	if(!hacked_download)
 		return "[file.filename].[file.filetype]"
 	var/stealth_chance = max(skill - SKILL_BASIC, 0) * 30
@@ -197,7 +197,7 @@
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
-		ui = new(user, src, ui_key, "ntnet_downloader.tmpl", "NTNet Download Program", 575, 700, state = state)
+		ui = new(user, src, ui_key, "ntnet_downloader.tmpl", "LORnet Download Program", 575, 700, state = state)
 		ui.auto_update_layout = 1
 		ui.set_initial_data(data)
 		ui.open()

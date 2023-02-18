@@ -181,6 +181,9 @@ SUBSYSTEM_DEF(ticker)
 		for (var/mob/new_player/player in GLOB.player_list)
 			player.new_player_panel()
 
+		generate_contracts(min(6 + round(minds.len / 5), 12)) //BoS
+		addtimer(CALLBACK(src, .proc/contract_tick), 15 MINUTES)
+
 	if(!GLOB.admins.len)
 		send2adminirc("Round has started with no admins online.")
 
@@ -397,6 +400,27 @@ Helpers
 	for(var/mob/living/player in GLOB.player_list)
 		if(player.mind)
 			minds += player.mind
+
+/datum/controller/subsystem/ticker/proc/generate_contracts(count) //BoS
+	var/list/candidates = subtypesof(/datum/antag_contract)
+	while(count--)
+		while(candidates.len)
+			var/contract_type = pick(candidates)
+			var/datum/antag_contract/C = new contract_type
+			if(!C.can_place())
+				candidates -= contract_type
+				qdel(C)
+				continue
+			C.place()
+			if(C.unique)
+				candidates -= contract_type
+			break
+
+/datum/controller/subsystem/ticker/proc/contract_tick() //Also BoS
+	generate_contracts(1)
+	addtimer(CALLBACK(src, .proc/contract_tick), 15 MINUTES)
+
+
 
 /datum/controller/subsystem/ticker/proc/equip_characters()
 	var/captainless=1

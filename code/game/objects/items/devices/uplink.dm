@@ -24,6 +24,7 @@
 	var/list/nanoui_items				// List of items for NanoUI use
 	var/nanoui_menu = 0					// The current menu we are in
 	var/list/nanoui_data = new 			// Additional data for NanoUI use
+	var/reputation = 0					// BoS, reputation for contractor
 
 	var/datum/mind/uplink_owner = null
 	var/used_TC = 0
@@ -103,7 +104,7 @@
 	interact(user)
 
 // Checks to see if the value meets the target. Like a frequency being a traitor_frequency, in order to unlock a headset.
-// If true, it accesses trigger() and returns 1. If it fails, it returns false. Use this to see if you need to close the
+// If true, it accesses trigger() and returns 1. If it fails, it returns false. Use this to see if you need to close thedatreput
 // current item's menu.
 /obj/item/device/uplink/proc/check_trigger(mob/user as mob, var/value, var/target)
 	if(value == target)
@@ -121,6 +122,8 @@
 	data["welcome"] = welcome
 	data["crystals"] = uses
 	data["menu"] = nanoui_menu
+	data["has_contracts"] = uplink_owner //No way, BoS code
+	data["reputation"] = reputation //Also BoS
 	data["discount_category"] = discount_item ? discount_item.category.name : ""
 	data["discount_name"] = discount_item ? discount_item.name : ""
 	data["discount_amount"] = (1-discount_amount)*100
@@ -173,6 +176,7 @@
 		update_nano_data()
 
 /obj/item/device/uplink/proc/update_nano_data()
+	nanoui_data["menu"] = nanoui_menu //BoS
 	if(nanoui_menu == 0)
 		var/categories[0]
 		for(var/datum/uplink_category/category in uplink.categories)
@@ -184,8 +188,9 @@
 		for(var/datum/uplink_item/item in category.items)
 			if(item.can_view(src))
 				var/cost = item.cost(uses, src)
-				if(!cost) cost = "???"
-				items[++items.len] = list("name" = item.name(), "description" = replacetext_char(item.description(), "\n", "<br>"), "can_buy" = item.can_buy(src), "cost" = cost, "ref" = "\ref[item]")
+				if(!cost)
+					cost = "???"
+				items[++items.len] = list("name" = item.name(), "description" = replacetext_char(item.description(), "\n", "<br>"), "can_buy" = item.can_buy(src), "cost" = cost, "currency" = item.currency(), "ref" = "\ref[item]")
 		nanoui_data["items"] = items
 	else if(nanoui_menu == 2)
 		var/permanentData[0]
@@ -200,6 +205,23 @@
 				nanoui_data["exploit"] = L.generate_nano_data()
 				nanoui_data["exploit_exists"] = 1
 				break
+	else if((nanoui_menu == 3) && (MODE_TRAITOR)) //BoS
+		var/list/available_contracts = list()
+		var/list/completed_contracts = list()
+		for(var/datum/antag_contract/C in GLOB.all_antag_contracts)
+			var/list/entry = list(list(
+				"name" = C.name,
+				"desc" = C.desc,
+				"reward" = C.reward,
+				"reputation_reward" = C.reputation_reward,
+				"status" = C.completed ? "Completed" : "Available"
+			))
+			if(!C.completed)
+				available_contracts.Add(entry)
+			else
+				completed_contracts.Add(entry)
+		nanoui_data["available_contracts"] = available_contracts
+		nanoui_data["completed_contracts"] = completed_contracts
 
 // I placed this here because of how relevant it is.
 // You place this in your uplinkable item to check if an uplink is active or not.
