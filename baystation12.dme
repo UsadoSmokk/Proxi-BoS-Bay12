@@ -200,6 +200,7 @@
 #include "code\bos\game\objects\random\random.dm"
 #include "code\bos\game\objects\structures\barrier.dm"
 #include "code\bos\game\objects\structures\flora.dm"
+#include "code\bos\game\objects\structures\inaks_decorations.dm"
 #include "code\bos\game\objects\structures\ruins.dm"
 #include "code\bos\game\objects\structures\sealgen.dm"
 #include "code\bos\game\objects\structures\target_stake.dm"
