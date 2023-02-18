@@ -20,6 +20,7 @@
 	name = "Ancient-Pattern Russ, sol modification"
 	desc = "An ancient weapon. This one was modified to use different rifle ammo"
 	ammo_type = /obj/item/ammo_casing/rifle/bad
+	handle_casings = CLEAR_CASINGS
 
 /mob/living/simple_animal/hostile/sol_military
 	name = "SCG Army soldier"
