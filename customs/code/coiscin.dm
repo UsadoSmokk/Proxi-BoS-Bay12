@@ -193,3 +193,109 @@
 	new /obj/item/clothing/accessory/katana_coiscin(src)
 	new /obj/item/music_player/boombox/coiscin(src)
 	new /obj/item/notebook_coiscin(src)
+
+/obj/item/mech_component/chassis/bike
+	name = "motorcycle frame"
+	desc = ".."
+	on_mech_icon = 'customs/icons/mob/mech_bike_coiscin_custom.dmi'
+	icon_state = "bike_body"
+	pilot_coverage = 20
+	max_damage = 30
+	power_use = 0
+	has_hardpoints = null
+	climb_time = 5
+
+/obj/item/mech_component/chassis/bike/prebuild()
+	. = ..()
+	m_armour = new /obj/item/robot_parts/robot_component/armour/exosuit(src)
+
+/obj/item/mech_component/chassis/bike/Initialize()
+	pilot_positions = list(
+		list(
+			"[NORTH]" = list("x" = 10,  "y" = 6),
+			"[SOUTH]" = list("x" = 9,  "y" = 6),
+			"[EAST]"  = list("x" = 10,  "y" = 6),
+			"[WEST]"  = list("x" = 6,  "y" = 6)
+		),
+		list(
+			"[NORTH]" = list("x" = 10,  "y" = 6),
+			"[SOUTH]" = list("x" = 9,  "y" = 6),
+			"[EAST]"  = list("x" = 1,  "y" = 6),
+			"[WEST]"  = list("x" = 15,  "y" = 6)
+		)
+	)
+	. = ..()
+
+/obj/item/robot_parts/robot_component/armour/exosuit/bike
+	name = "exosuit armour plating"
+	desc = "A pair of flexible armor plates, used to protect the internals of exosuits and its pilot."
+	armor = list("melee" = 30, "bullet" = 15, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 10)
+	origin_tech = list(TECH_MATERIAL = 1)
+
+/obj/item/mech_component/sensors/bike
+	name = "exosuit sensors"
+	gender = PLURAL
+	exosuit_desc_string = "simple collision detection sensors"
+	desc = "A primitive set of sensors designed to work in tandem with most MKI Eyeball platforms."
+	on_mech_icon = 'customs/icons/mob/mech_bike_coiscin_custom.dmi'
+	icon_state = "bike_head"
+	max_damage = 20
+	power_use = 0
+	has_hardpoints = list(HARDPOINT_HEAD)
+
+///obj/item/mech_component/sensors/bike/prebuild()
+	//..()
+	//software = new(src)
+	//software.installed_software = null
+
+/obj/item/mech_component/propulsion/bike
+	name = "exosuit legs"
+	exosuit_desc_string = "reinforced hydraulic legs"
+	desc = "Wide and stable but not particularly fast."
+	on_mech_icon = 'customs/icons/mob/mech_bike_coiscin_custom.dmi'
+	icon_state = "bike_legs"
+	max_damage = 20
+	move_delay = 0.5
+	turn_delay = 2
+	power_use = 10
+
+/obj/item/mech_component/manipulators/bike
+	name = "light arms"
+	exosuit_desc_string = "lightweight, segmented manipulators"
+	on_mech_icon = 'customs/icons/mob/mech_bike_coiscin_custom.dmi'
+	icon_state = "bike_arms"
+	melee_damage = 0
+	action_delay = 15
+	max_damage = 15
+	power_use = 10
+	has_hardpoints = 0
+	desc = "As flexible as they are fragile, these Vey-Med manipulators can follow a pilot's movements in close to real time."
+
+/obj/item/mech_equipment/light/bike
+	name = "floodlight"
+	desc = "An exosuit-mounted light."
+	icon_state = "biker_light"
+
+/mob/living/exosuit/premade/bike
+	name = "bike"
+	desc = "An ancient, but well-liked cargo handling exosuit."
+	wreckage_path = /obj/structure/mech_wreckage
+	mech_turn_sound = 'customs/sound/bike_TU_engine.ogg'
+	mech_step_sound = 'customs/sound/bike_MO_engine.ogg'
+	mech_powerup_sound = 'customs/sound/bike_ST_engine.ogg'
+	mech_shutdown_sound = 'customs/sound/bike_SH_engine.ogg'
+
+
+/mob/living/exosuit/premade/bike/Initialize()
+	if(!legs)
+		legs = new /obj/item/mech_component/propulsion/bike(src)
+	if(!head)
+		head = new /obj/item/mech_component/sensors/bike(src)
+	if(!body)
+		body = new /obj/item/mech_component/chassis/bike(src)
+	if(!arms)
+		arms = new /obj/item/mech_component/manipulators/bike(src)
+	. = ..()
+
+/mob/living/exosuit/premade/bike/spawn_mech_equipment()
+	install_system(new /obj/item/mech_equipment/light/bike(src), HARDPOINT_HEAD)
