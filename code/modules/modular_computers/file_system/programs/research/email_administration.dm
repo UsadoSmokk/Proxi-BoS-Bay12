@@ -1,7 +1,7 @@
 /datum/computer_file/program/email_administration
 	filename = "emailadmin"
 	filedesc = "Email Administration Utility"
-	extended_desc = "This program may be used to administrate NTNet's emailing service."
+	extended_desc = "This program may be used to administrate LORnet's emailing service."
 	program_icon_state = "comm_monitor"
 	program_key_state = "generic_key"
 	program_menu_icon = "mail-open"
@@ -22,7 +22,7 @@
 /datum/nano_module/program/email_administration/proc/get_ntos()
 	var/datum/extension/interactive/ntos/os = get_extension(nano_host(), /datum/extension/interactive/ntos)
 	if(!istype(os))
-		error = "Error accessing system. Are you using a functional and NTOSv2-compliant device?"
+		error = "Error accessing system. Are you using a functional and LOROSv2-compliant device?"
 		return
 	return os
 

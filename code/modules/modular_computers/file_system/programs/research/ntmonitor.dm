@@ -1,10 +1,10 @@
 /datum/computer_file/program/ntnetmonitor
-	filename = "ntmonitor"
-	filedesc = "NTNet Diagnostics and Monitoring"
+	filename = "lornmonitor"
+	filedesc = "LORnet Diagnostics and Monitoring"
 	program_icon_state = "comm_monitor"
 	program_key_state = "generic_key"
 	program_menu_icon = "wrench"
-	extended_desc = "This program monitors the local NTNet network, provides access to logging systems, and allows for configuration changes"
+	extended_desc = "This program monitors the local LORnet network, provides access to logging systems, and allows for configuration changes"
 	size = 12
 	requires_ntnet = TRUE
 	required_access = access_network_admin
@@ -14,7 +14,7 @@
 	category = PROG_ADMIN
 
 /datum/nano_module/program/computer_ntnetmonitor
-	name = "NTNet Diagnostics and Monitoring"
+	name = "LORnet Diagnostics and Monitoring"
 	available_to_ai = TRUE
 
 /datum/nano_module/program/computer_ntnetmonitor/ui_interact(mob/user, ui_key = "main", datum/nanoui/ui = null, force_open = 1, datum/topic_state/state = GLOB.default_state)
@@ -45,7 +45,7 @@
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
-		ui = new(user, src, ui_key, "ntnet_monitor.tmpl", "NTNet Diagnostics and Monitoring Tool", 575, 700, state = state)
+		ui = new(user, src, ui_key, "ntnet_monitor.tmpl", "LORnet Diagnostics and Monitoring Tool", 575, 700, state = state)
 		if(host.update_layout())
 			ui.auto_update_layout = 1
 		ui.set_initial_data(data)
@@ -80,7 +80,7 @@
 		// NTNet is enabled and user is about to shut it down. Let's ask them if they really want to do it, as wirelessly connected computers won't connect without NTNet being enabled (which may prevent people from turning it back on)
 		if(!user)
 			return TOPIC_HANDLED
-		var/response = alert(user, "Really disable NTNet wireless? If your computer is connected wirelessly you won't be able to turn it back on! This will affect all connected wireless devices.", "NTNet shutdown", "Yes", "No")
+		var/response = alert(user, "Really disable LORnet wireless? If your computer is connected wirelessly you won't be able to turn it back on! This will affect all connected wireless devices.", "LORnet shutdown", "Yes", "No")
 		if(response == "Yes")
 			ntnet_global.setting_disabled = TRUE
 		return TOPIC_HANDLED

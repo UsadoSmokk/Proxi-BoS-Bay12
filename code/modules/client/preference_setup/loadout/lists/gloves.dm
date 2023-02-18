@@ -9,7 +9,7 @@
 	flags = GEAR_HAS_COLOR_SELECTION
 	path = /obj/item/clothing/gloves/color
 
-/datum/gear/gloves/colored
+/datum/gear/gloves/biker
 	display_name = "biker gloves"
 	path = /obj/item/clothing/gloves/biker
 

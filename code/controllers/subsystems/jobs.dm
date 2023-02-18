@@ -575,7 +575,8 @@ SUBSYSTEM_DEF(jobs)
 
 	var/style = "font-family: 'Fixedsys'; -dm-text-outline: 1 black; font-size: 11px;"
 //	var/area/A = get_area(C.mob)
-	var/text = "[stationdate2text()], [stationtime2text()]\nShip: [station_name()]\nObjective: Recon and Sabotage\nFinal Destination: The Solar System frontier"	//bos
+//	var/text = "[stationdate2text()], [stationtime2text()]\nShip: [station_name()]\nObjective: Recon and Sabotage\nFinal Destination: The Solar System frontier"	//bos (original)
+	var/text = "[stationdate2text()], [stationtime2text()]\nLocation:the Earth, Outskirts of Bosnia arcology\nObjective:Break through the gate\n-GLORY TO SOVEREIGN LORDANIA-"	//bos (final_event)
 	text = uppertext(text)
 
 	var/obj/effect/overlay/T = new()

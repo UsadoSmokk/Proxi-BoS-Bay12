@@ -50,11 +50,12 @@
 	output += "<a href='byond://?src=\ref[client.prefs];load=1;details=1'>[client.prefs.real_name || "(Random)"]</a><br>"
 	output += client.prefs.job_high ? "[client.prefs.job_high]" : null
 	output += "<hr>"
-	output += "<a href='byond://?src=\ref[src];observe=1'>Join As Observer</a>"
 	if (GAME_STATE > RUNLEVEL_LOBBY)
 		output += "<a href='byond://?src=\ref[src];late_join=1'>Join As Selected</a>"
 	else
 		output += "<a [ready?"class='linkOn'":""] href='byond://?src=\ref[src];ready=[!ready]'>Round Start Join</a>"
+	if(config.observers_allowed || check_rights(R_INVESTIGATE|R_DEBUG, 0, src)) //inf
+		output += "<p><a href='byond://?src=\ref[src];observe=1'>Join As Observer</A></p>"
 	output += "<hr>"
 	output += "<i>[GLOB.using_map.get_map_info()||"No information available for the current map."]</i>"
 	output += "</div>"
@@ -137,8 +138,19 @@
 			to_chat(src, "<span class='warning'>Пожалуйста, подождите загрузки сервера.</span>")
 			return
 
+		if(!check_rights(R_INVESTIGATE|R_DEBUG, 0, src)) //inf
+			if(!config.observers_allowed)
+				to_chat(src, SPAN_WARNING("Вы не можете зайти в раунд за призрака, поскольку это было запрещено настройками сервера."))
+				return
+
 		if(!config.respawn_delay || client.holder || alert(src,"Вы уверены, что хотите наблюдать? Вам придется ждать [OBSERV_SPAWN_DELAY] минут прежде чем получить возможность респавна.","Player Setup","Да","Нет") == "Да")
 			if(!client) return 1
+
+			// eckff-inf@dev: Safety checks
+			if(!check_rights(R_INVESTIGATE|R_DEBUG, 0, src))
+				if(!config.observers_allowed)
+					to_chat(src, SPAN_WARNING("Вы не можете зайти в раунд за призрака, поскольку это было запрещено настройками сервера."))
+					return 1
 
 			var/mob/observer/ghost/observer = new()
 
