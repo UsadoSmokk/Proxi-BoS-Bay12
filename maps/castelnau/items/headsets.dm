@@ -11,7 +11,7 @@
 	item_state = "com_headset_alt"
 
 /obj/item/device/radio/headset/heads/hop/alt
-	name = "first officer's bowman headset"
+	name = "coordinator's bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 

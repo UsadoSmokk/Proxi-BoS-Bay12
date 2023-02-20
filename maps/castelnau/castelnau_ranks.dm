@@ -166,8 +166,8 @@
 	name_short = "SCG"
 
 /datum/mil_rank/mil/lss
-	name = "LSS Military"
-	name_short = "LSS"
+	name = "ICL Military"
+	name_short = "ICL"
 
 /datum/mil_rank/mil/iccg
 	name = "ICCG Military"

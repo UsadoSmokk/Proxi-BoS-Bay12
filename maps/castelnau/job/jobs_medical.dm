@@ -59,16 +59,13 @@
 		"Paramedic",
 		"Chemist")
 
-//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/medical/doctor
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/scg,
-						/datum/mil_rank/mil/lss,
-						/datum/mil_rank/mil/iccg,
-						/datum/mil_rank/par,
-						/datum/mil_rank/par/yak)
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/med,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/med,
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/med/doctor)
 	min_skill = list(   SKILL_MEDICAL   = SKILL_BASIC,
 		                SKILL_CHEMISTRY = SKILL_BASIC,
 	                    SKILL_ANATOMY   = SKILL_BASIC)
@@ -110,8 +107,8 @@
 							/datum/mil_branch/par,
 							/datum/mil_branch/other)
 	allowed_ranks = list(
-						/datum/mil_rank/par,
-						/datum/mil_rank/other/free)
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/med/doctor,
+						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/med/doctor)
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_BASIC,
 		SKILL_MEDICAL     = SKILL_BASIC

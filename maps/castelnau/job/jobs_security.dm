@@ -58,17 +58,11 @@
 
 	skill_points = 20
 
-//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/security/officer
 	allowed_branches = list(
-							/datum/mil_branch/mil,
-							/datum/mil_branch/par)
+							/datum/mil_branch/mil)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/scg,
-						/datum/mil_rank/mil/lss,
-						/datum/mil_rank/mil/iccg,
-						/datum/mil_rank/par,
-						/datum/mil_rank/par/yak,
-						/datum/mil_rank/other/merc)
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/security,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/security)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -104,20 +98,15 @@
 	ideal_character_age = 25
 	give_psionic_implant_on_join = FALSE
 	alt_titles = list(
-		"Psi-Interrogator")
+		"Psi-Interrogator" = /decl/hierarchy/outfit/job/castelnau/sec/psi)
 
 	skill_points = 20
 
-//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/security/officer
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/sec/detective
 	allowed_branches = list(
-							/datum/mil_branch/mil,
-							/datum/mil_branch/par)
+							/datum/mil_branch/other)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/lss,
-						/datum/mil_rank/mil/iccg,
-						/datum/mil_rank/par,
-						/datum/mil_rank/par/yak,
-						/datum/mil_rank/other/merc)
+						/datum/mil_rank/other/free)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,

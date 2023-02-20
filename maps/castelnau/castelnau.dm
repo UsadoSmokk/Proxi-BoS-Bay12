@@ -63,12 +63,31 @@
 	#include "machinery/lighting.dm"
 	#include "machinery/other.dm"
 
+	#include "outfits/cargo/mil.dm"
+	#include "outfits/cargo/other.dm"
+	#include "outfits/cargo/par.dm"
+
 	#include "outfits/command/reg.dm"
-	#include "outfits/engineer/reg.dm"
+
+	#include "outfits/engineer/mil.dm"
 	#include "outfits/engineer/par.dm"
+	#include "outfits/engineer/reg.dm"
+
 	#include "outfits/ftu/cheapskate_crew.dm"
+
+	#include "outfits/med/mil.dm"
+	#include "outfits/med/other.dm"
+	#include "outfits/med/par.dm"
 	#include "outfits/med/reg.dm"
+
 	#include "outfits/misc/misc.dm"
+
+	#include "outfits/security/mil.dm"
+	#include "outfits/security/other.dm"
+
+	#include "outfits/service/mil.dm"
+	#include "outfits/service/other.dm"
+	#include "outfits/service/par.dm"
 
 	#include "structures/bedsheet_bin.dm"
 	#include "structures/fake_stairs.dm"

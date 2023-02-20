@@ -19,6 +19,7 @@
 	#include "bos/items/clothing/mil/iccg/terran-suit.dm"
 	#include "bos/items/clothing/mil/iccg/terran-under.dm"
 
+	#include "bos/items/clothing/reg/accessory.dm"
 	#include "bos/items/clothing/reg/under.dm"
 	#include "bos/items/clothing/reg/suit.dm"
 	#include "bos/items/clothing/reg/head.dm"

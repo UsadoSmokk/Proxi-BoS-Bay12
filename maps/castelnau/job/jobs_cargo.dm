@@ -46,12 +46,9 @@
 	alt_titles = list(
 		"Field Constructor")
 	allowed_branches = list(
-							/datum/mil_branch/par,
-							/datum/mil_branch/other)
+							/datum/mil_branch/par)
 	allowed_ranks = list(
-						/datum/mil_rank/par,
-						/datum/mil_rank/other/merc,
-						/datum/mil_rank/other/free)
+						/datum/mil_rank/par)
 	min_skill = list(   SKILL_MECH    = SKILL_BASIC,
 	                    SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_EVA     = SKILL_ADEPT)
@@ -59,14 +56,6 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
 //	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/supply/prospector
-	allowed_branches = list(
-							/datum/mil_branch/par,
-							/datum/mil_branch/other)
-	allowed_ranks = list(
-						/datum/mil_rank/par,
-						/datum/mil_rank/par/yak,
-						/datum/mil_rank/other/merc,
-						/datum/mil_rank/other/free)
 
 	access = list(
 

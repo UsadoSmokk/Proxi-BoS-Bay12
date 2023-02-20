@@ -10,12 +10,11 @@
 	economic_power = 7
 	minimal_player_age = 14
 	ideal_character_age = 34
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/senior_eng
 	allowed_branches = list(/datum/mil_branch/reg,
 							/datum/mil_branch/mil)
-	allowed_ranks = list(/datum/mil_rank/reg,
-						/datum/mil_rank/mil/lss,
-						/datum/mil_rank/mil/iccg)
+	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/senior_eng,
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/senior_eng,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/senior_eng)
 
 	skill_points = 24
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
@@ -75,15 +74,14 @@
 		"Atmospheric Technician",
 		"Engineering Trainee")
 
-//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/engineering/engineer
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/lss,
-						/datum/mil_rank/mil/iccg,
-						/datum/mil_rank/par,
-						/datum/mil_rank/par/yak)
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/eng,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/eng,
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng,
+						/datum/mil_rank/par/yak = /decl/hierarchy/outfit/job/castelnau/yak/eng)
 
 	skill_points = 20
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
@@ -135,7 +133,7 @@
 	allowed_branches = list(
 							/datum/mil_branch/par)
 	allowed_ranks = list(
-						/datum/mil_rank/par)
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/psi)
 
 	skill_points = 20
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
@@ -193,13 +191,11 @@
 //	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/research/scientist
 	allowed_branches = list(
 							/datum/mil_branch/mil,
-							/datum/mil_branch/par,
-							/datum/mil_branch/other)
+							/datum/mil_branch/par)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/lss,
-						/datum/mil_rank/mil/iccg,
-						/datum/mil_rank/par,
-						/datum/mil_rank/other/free)
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/eng/rev,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/eng/rev,
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/rev)
 
 	access = list(
 	access_castelnau_eva,

@@ -5,6 +5,7 @@
 	l_ear = /obj/item/device/radio/headset
 	shoes = /obj/item/clothing/shoes/dress
 	pda_type = /obj/item/modular_computer/pda
+	id_types = list(/obj/item/card/id/castelnau/crewman)
 
 /decl/hierarchy/outfit/job/castelnau/reg
 	name = OUTFIT_JOB_NAME("Castelnau Regulator Outfit")
@@ -27,3 +28,18 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/yak
 	uniform = /obj/item/clothing/under/par/yak
 	suit = /obj/item/clothing/suit/storage/par/yak
+
+/decl/hierarchy/outfit/job/castelnau/terran
+	name = OUTFIT_JOB_NAME("Independent Navy - Utility")
+	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/terran
+	head = /obj/item/clothing/head/terran/navy/utility
+	uniform = /obj/item/clothing/under/terran/navy/utility
+	shoes = /obj/item/clothing/shoes/terran
+	pda_type = /obj/item/modular_computer/pda
+	pda_slot = slot_l_store
+
+/decl/hierarchy/outfit/job/castelnau/lss
+	name = OUTFIT_JOB_NAME("Independant Confederation of Lordania Fleet - Utility")
+	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/lss
+	uniform = /obj/item/clothing/under/lordan/utility/fleet
+	shoes = /obj/item/clothing/shoes/lordan

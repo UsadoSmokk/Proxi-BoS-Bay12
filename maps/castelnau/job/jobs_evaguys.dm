@@ -14,10 +14,10 @@
 							/datum/mil_branch/par,
 							/datum/mil_branch/other)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/lss,
-						/datum/mil_rank/mil/iccg,
-						/datum/mil_rank/par,
-						/datum/mil_rank/other/free)
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/crew/lss/pilot,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/crew/terran/pilot,
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/crew/par/pilot,
+						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/crew/pilot)
 
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
 						SKILL_PILOT = SKILL_ADEPT)
