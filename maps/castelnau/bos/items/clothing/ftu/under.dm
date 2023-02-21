@@ -18,7 +18,7 @@
 		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_SMALL,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_PADDED)
 
 /obj/item/clothing/under/ftu/trd
 	name = "FTU merchant uniform"
