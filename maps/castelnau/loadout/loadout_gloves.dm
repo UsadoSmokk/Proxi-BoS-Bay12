@@ -1,8 +1,8 @@
 /datum/gear/gloves/latex
-	allowed_roles = STERILE_ROLES
+	allowed_roles = MED_ROLES
 
 /datum/gear/gloves/nitrile
-	allowed_roles = STERILE_ROLES
+	allowed_roles = MED_ROLES
 
 /datum/gear/gloves/dress
 	display_name = "gloves, dress"

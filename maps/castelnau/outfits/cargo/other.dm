@@ -1,4 +1,4 @@
-/decl/hierarchy/outfit/job/castelnau/crew/pilot
+/decl/hierarchy/outfit/job/castelnau/pilot
 	uniform = /obj/item/clothing/under/solgov/utility
 	shoes = /obj/item/clothing/shoes/dutyboots
 	pda_type = /obj/item/modular_computer/pda

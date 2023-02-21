@@ -9,6 +9,7 @@
 		/datum/mil_branch/par,
 //		/datum/mil_branch/cult,
 		/datum/mil_branch/ftu,
+		/datum/mil_branch/syndi,
 		/datum/mil_branch/other
 	)
 
@@ -18,6 +19,7 @@
 		/datum/mil_branch/par,
 //		/datum/mil_branch/cult,
 		/datum/mil_branch/ftu,
+		/datum/mil_branch/syndi,
 		/datum/mil_branch/other
 	)
 
@@ -55,11 +57,8 @@
 	)
 
 	spawn_rank_types = list(
-		/datum/mil_rank/mil,
-		/datum/mil_rank/mil/scg,
 		/datum/mil_rank/mil/lss,
 		/datum/mil_rank/mil/iccg,
-		/datum/mil_rank/mil/mir
 	)
 
 /datum/mil_branch/par
@@ -109,6 +108,24 @@
 		/datum/mil_rank/reg/com
 	)
 */
+
+/datum/mil_branch/syndi
+	name = "Consortium of Trans-Star Corporations"
+	name_short = "SYNDI"
+	email_domain = "syndicate.net"
+
+	rank_types = list(
+		/datum/mil_rank/syndi,
+		/datum/mil_rank/syndi/arbites,
+		/datum/mil_rank/syndi/army
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/syndi,
+		/datum/mil_rank/syndi/arbites,
+		/datum/mil_rank/syndi/army
+	)
+
 /datum/mil_branch/other
 	name = "Other"
 	name_short = "Other"
@@ -218,6 +235,23 @@
 /datum/mil_rank/ftu/sec
 	name = "FTU Security"
 	name_short = "SEC"
+
+/*
+ *  Syndicate
+ *  =========
+ */
+
+/datum/mil_rank/syndi
+	name = "Syndicate Corporate Contractor"
+	name_short = "SYND"
+
+/datum/mil_rank/syndi/arbites
+	name = "Arbiter"
+	name_short = "ARB"
+
+/datum/mil_rank/syndi/army
+	name = "Corporate Army"
+	name_short = "CARM"
 
 
 /*

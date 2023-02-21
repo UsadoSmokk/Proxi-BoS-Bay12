@@ -12,12 +12,15 @@
 	allowed_branches = list(
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par,
+							/datum/mil_branch/syndi,
 							/datum/mil_branch/other)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/crew/lss/pilot,
-						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/crew/terran/pilot,
-						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/crew/par/pilot,
-						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/crew/pilot)
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/pilot,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/pilot,
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/pilot,
+						/datum/mil_rank/par/yak = /decl/hierarchy/outfit/job/castelnau/yak/pilot,
+						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/pilot,
+						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/pilot)
 
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
 						SKILL_PILOT = SKILL_ADEPT)
@@ -38,7 +41,7 @@
 	)
 
 /datum/job/outleader
-	title = "Outpost Team Leader"
+	title = "Outpost Leader"
 	department = "Command"
 	department_flag = COM
 	total_positions = 1
@@ -48,9 +51,8 @@
 	minimal_player_age = 18
 	economic_power = 7
 	ideal_character_age = 24
-	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg
 	allowed_branches = list(/datum/mil_branch/reg)
-	allowed_ranks = list(/datum/mil_rank/reg)
+	allowed_ranks = list(/datum/mil_rank/reg= /decl/hierarchy/outfit/job/castelnau/reg/outlead)
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
 						SKILL_PILOT       = SKILL_ADEPT)
 
@@ -97,6 +99,108 @@
 							 /datum/computer_file/program/shields_monitor,
 							 /datum/computer_file/program/reports,
 							 /datum/computer_file/program/deck_management)
+
+/datum/job/outsec
+	title = "Outpost Security"
+	department = "Security"
+	department_flag = SEC
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Outpost Leader"
+	selection_color = "#9e2e2e"
+	minimal_player_age = 18
+	economic_power = 7
+	ideal_character_age = 24
+	allowed_branches = list(/datum/mil_branch/reg)
+	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/outsec)
+	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
+						SKILL_PILOT       = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+
+	skill_points = 20
+
+
+	access = list(
+	access_castelnau_eva,
+
+	access_castelnau_security,
+	access_castelnau_brig,
+
+	access_castelnau_medical,
+
+	access_castelnau_perseus,
+	access_castelnau_perseus_helm,
+	access_castelnau_hangar,
+	access_castelnau_teleporter
+	)
+
+/datum/job/outeng
+	title = "Outpost Engineer"
+	department = "Engineering"
+	department_flag = ENG
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Outpost Leader"
+	selection_color = "#978035"
+	minimal_player_age = 18
+	economic_power = 7
+	ideal_character_age = 24
+	allowed_branches = list(/datum/mil_branch/reg)
+	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/outeng)
+	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
+						SKILL_PILOT       = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+
+	skill_points = 20
+
+
+	access = list(
+	access_castelnau_eva,
+
+	access_castelnau_engineering,
+	access_castelnau_atmospherics,
+	access_castelnau_thrusters,
+
+	access_castelnau_perseus,
+	access_castelnau_perseus_helm,
+	access_castelnau_hangar,
+	access_castelnau_teleporter
+	)
+
+/datum/job/outmed
+	title = "Outpost Medic"
+	department = "Medical"
+	department_flag = MED
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Outpost Leader"
+	selection_color = "#029b97"
+	minimal_player_age = 18
+	economic_power = 7
+	ideal_character_age = 24
+	allowed_branches = list(/datum/mil_branch/reg)
+	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/outmed)
+	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
+						SKILL_PILOT       = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+
+	skill_points = 20
+
+
+	access = list(
+	access_castelnau_eva,
+
+	access_castelnau_medical,
+	access_castelnau_morgue,
+
+	access_castelnau_perseus,
+	access_castelnau_perseus_helm,
+	access_castelnau_hangar,
+	access_castelnau_teleporter
+	)
 
 /*
 /datum/job/inflead

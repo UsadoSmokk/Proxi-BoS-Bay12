@@ -84,3 +84,18 @@
 
 /obj/item/card/id/castelnau/crew/cheapskate/chief
 	job_access_type = /datum/job/chiefmerchant
+
+//outpost
+
+/obj/item/card/id/castelnau/crew/outpost
+	job_access_type = /datum/job/outleader
+	desc = "An identification card issued to the Castelnau Outpost team."
+
+/obj/item/card/id/castelnau/crew/outpost/sec
+	job_access_type = /datum/job/outsec
+
+/obj/item/card/id/castelnau/crew/outpost/eng
+	job_access_type = /datum/job/outeng
+
+/obj/item/card/id/castelnau/crew/outpost/med
+	job_access_type = /datum/job/outmed

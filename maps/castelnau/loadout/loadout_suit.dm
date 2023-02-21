@@ -6,7 +6,7 @@
 	path = /obj/item/clothing/suit/armor/pcarrier
 	cost = 1
 	slot = slot_wear_suit
-	allowed_roles = ARMORED_ROLES
+	allowed_roles = ARMED
 
 /datum/gear/tactical/pcarrier/navy
 	display_name = "navy blue plate carrier"
@@ -14,8 +14,7 @@
 
 /datum/gear/tactical/pcarrier/misc
 	display_name = "miscellaneous plate carrier selection"
-	allowed_roles = ARMORED_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_roles = ARMED
 
 /datum/gear/tactical/pcarrier/misc/New()
 	..()

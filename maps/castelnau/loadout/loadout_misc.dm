@@ -34,19 +34,20 @@
 
 /datum/gear/brush
 	display_name = "hairbrush"
-	path = /obj/item/weapon/haircomb/brush
+	path = /obj/item/haircomb/brush
 	sort_category = "Cosmetics"
 
 /datum/gear/deodorant
 	display_name = "deodorant"
-	path = /obj/item/weapon/reagent_containers/spray/cleaner/deodorant
+	path = /obj/item/reagent_containers/spray/cleaner/deodorant
 	sort_category = "Cosmetics"
 
 /datum/gear/watch
 	display_name = "watch"
 	path = /obj/item/clothing/ring/watch
 	sort_category = "General"
-
+/*
 /datum/gear/music_tapes
 	display_name = "custom music tapes"
 	path = /obj/item/weapon/storage/box/tapes
+*/

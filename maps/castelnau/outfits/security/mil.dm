@@ -5,6 +5,8 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	pda_type = /obj/item/modular_computer/pda/security
 	pda_slot = slot_l_store
+	l_pocket = /obj/item/device/flash
+	r_pocket = /obj/item/handcuffs
 
 /decl/hierarchy/outfit/job/castelnau/lss/security
 	name = OUTFIT_JOB_NAME("Lordanian Security Officer - Castelnau")
@@ -14,3 +16,5 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	pda_type = /obj/item/modular_computer/pda/security
 	pda_slot = slot_l_store
+	l_pocket = /obj/item/device/flash
+	r_pocket = /obj/item/handcuffs

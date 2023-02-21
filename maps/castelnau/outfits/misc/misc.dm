@@ -22,12 +22,15 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/par
 	uniform = /obj/item/clothing/under/par
 	suit = /obj/item/clothing/suit/storage/par
+	l_hand = /obj/item/clothingbag/paroled
 
 /decl/hierarchy/outfit/job/castelnau/yak
 	name = OUTFIT_JOB_NAME("Castelnau Yakuza Outfit")
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/yak
 	uniform = /obj/item/clothing/under/par/yak
 	suit = /obj/item/clothing/suit/storage/par/yak
+	belt = /obj/item/storage/belt/holster/sheath/yakuza
+	l_hand = /obj/item/clothingbag/yakuza
 
 /decl/hierarchy/outfit/job/castelnau/terran
 	name = OUTFIT_JOB_NAME("Independent Navy - Utility")
@@ -43,3 +46,24 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/lss
 	uniform = /obj/item/clothing/under/lordan/utility/fleet
 	shoes = /obj/item/clothing/shoes/lordan
+
+/decl/hierarchy/outfit/job/castelnau/syndi
+	name = OUTFIT_JOB_NAME("Syndicate Outfit")
+	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/syndi
+	uniform = /obj/item/clothing/under/syndicate
+	shoes = /obj/item/clothing/shoes/dutyboots
+	l_hand = /obj/item/card/id/syndipass
+
+/decl/hierarchy/outfit/job/castelnau/syndi/arbites
+	name = OUTFIT_JOB_NAME("Arbites Outfit")
+	uniform = /obj/item/clothing/under/rank/security
+	glasses = /obj/item/clothing/glasses/hud/security/prot
+	l_pocket = /obj/item/device/flash
+	r_pocket = /obj/item/handcuffs
+
+/decl/hierarchy/outfit/job/castelnau/syndi/army
+	name = OUTFIT_JOB_NAME("Corporate Army Outfit")
+	uniform = /obj/item/clothing/under/syndicate/tacticool
+	glasses = /obj/item/clothing/glasses/hud/security/prot
+	l_pocket = /obj/item/device/flash
+	r_pocket = /obj/item/handcuffs

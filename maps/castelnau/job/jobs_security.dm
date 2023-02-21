@@ -59,10 +59,13 @@
 	skill_points = 20
 
 	allowed_branches = list(
-							/datum/mil_branch/mil)
+							/datum/mil_branch/mil,
+							/datum/mil_branch/syndi)
 	allowed_ranks = list(
 						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/security,
-						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/security)
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/security,
+						/datum/mil_rank/syndi/army = /decl/hierarchy/outfit/job/castelnau/syndi/army/security,
+						/datum/mil_rank/syndi/arbites = /decl/hierarchy/outfit/job/castelnau/syndi/arbites/security)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -86,7 +89,7 @@
 	)
 
 /datum/job/specialist
-	title = "Investigator"
+	title = "Psi-Interrogator"
 	department = "Security"
 	department_flag = SEC
 	total_positions = 1
@@ -97,16 +100,13 @@
 	minimal_player_age = 10
 	ideal_character_age = 25
 	give_psionic_implant_on_join = FALSE
-	alt_titles = list(
-		"Psi-Interrogator" = /decl/hierarchy/outfit/job/castelnau/sec/psi)
-
 	skill_points = 20
 
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/sec/detective
-	allowed_branches = list(
-							/datum/mil_branch/other)
-	allowed_ranks = list(
-						/datum/mil_rank/other/free)
+	allowed_branches = list(/datum/mil_branch/other,
+							/datum/mil_branch/syndi)
+	allowed_ranks = list(/datum/mil_branch/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/detective,
+						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/sec/detective)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,

@@ -76,12 +76,14 @@
 
 	allowed_branches = list(
 							/datum/mil_branch/mil,
-							/datum/mil_branch/par)
+							/datum/mil_branch/par,
+							/datum/mil_branch/syndi)
 	allowed_ranks = list(
 						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/eng,
 						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/eng,
 						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng,
-						/datum/mil_rank/par/yak = /decl/hierarchy/outfit/job/castelnau/yak/eng)
+						/datum/mil_rank/par/yak = /decl/hierarchy/outfit/job/castelnau/yak/eng,
+						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/eng)
 
 	skill_points = 20
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
@@ -131,9 +133,10 @@
 
 //	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/engineering/engineer
 	allowed_branches = list(
-							/datum/mil_branch/par)
+							/datum/mil_branch/par, /datum/mil_branch/syndi)
 	allowed_ranks = list(
-						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/psi)
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/psi,
+						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/eng)
 
 	skill_points = 20
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
@@ -168,6 +171,11 @@
 							 /datum/computer_file/program/rcon_console,
 							 /datum/computer_file/program/shields_monitor)
 
+/datum/job/psiengineer/equip(var/mob/living/carbon/human/H)
+	if(H.mind.role_alt_title == "Psi-Engineer")
+		psi_faculties = list("[PSI_PSYCHOKINESIS]" = PSI_RANK_OPERANT)
+	return ..()
+
 /datum/job/scientist
 	title = "Reverse Engineer"
 	department = "Engineering"
@@ -191,11 +199,13 @@
 //	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/research/scientist
 	allowed_branches = list(
 							/datum/mil_branch/mil,
-							/datum/mil_branch/par)
+							/datum/mil_branch/par,
+							/datum/mil_branch/syndi)
 	allowed_ranks = list(
 						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/eng/rev,
 						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/eng/rev,
-						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/rev)
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/rev,
+						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/eng/rev)
 
 	access = list(
 	access_castelnau_eva,

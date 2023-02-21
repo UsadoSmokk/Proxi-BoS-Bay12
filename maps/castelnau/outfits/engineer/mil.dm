@@ -13,6 +13,7 @@
 /decl/hierarchy/outfit/job/castelnau/terran/eng/rev
 	name = OUTFIT_JOB_NAME("Terran RevEngineer - Castelnau")
 	id_types = list(/obj/item/card/id/castelnau/crew/engineering/rev)
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 
 /decl/hierarchy/outfit/job/castelnau/lss/senior_eng
 	name = OUTFIT_JOB_NAME("Lordanian Senior Engineer - Castelnau")
@@ -29,3 +30,4 @@
 /decl/hierarchy/outfit/job/castelnau/lss/eng/rev
 	name = OUTFIT_JOB_NAME("Lordanian RevEngineer - Castelnau")
 	id_types = list(/obj/item/card/id/castelnau/crew/engineering/rev)
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat

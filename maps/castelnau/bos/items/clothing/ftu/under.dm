@@ -9,11 +9,16 @@
 
 /obj/item/clothing/under/ftu/security
 	name = "FTU security uniform"
-	desc = "Standard uniform of the Free Trade Union security personnel"
+	desc = "Standard uniform of the Free Trade Union security personnel. It protects like a medium armor plate."
 	icon_state = "sec"
 	item_state = "sec"
 	worn_state = "sec"
-	armor = list(melee = 10, bullet = 10, laser = 10,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_SMALL,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_PADDED
 
 /obj/item/clothing/under/ftu/trd
 	name = "FTU merchant uniform"

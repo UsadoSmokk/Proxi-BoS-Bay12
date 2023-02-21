@@ -15,7 +15,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	accessible_z_levels = list("1"=1,"2"=1,"3"=1, "6" = 30)
 	overmap_size = 15
 	overmap_event_areas = 14
-	usable_email_tlds = list("reg.net", "mil.gov", "freemail.net")
+	usable_email_tlds = list("reg.net", "mil.gov", "syndicate.net", "freemail.net")
 
 	allowed_spawns = list("Cryogenic Storage", "Prometeus Cryogenic Storage")
 	default_spawn = "Cryogenic Storage"
@@ -34,7 +34,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 
 	default_law_type = /datum/ai_laws/nanotrasen
 	use_overmap = 1
-	num_exoplanets = 2
+	num_exoplanets = 1
 	planet_size = list(200,200)
 
 	away_site_budget = 4

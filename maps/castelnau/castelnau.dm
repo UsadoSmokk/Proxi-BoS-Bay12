@@ -28,6 +28,7 @@
 	#include "datums/hairs.dm"
 
 	#include "items/cards_ids.dm"
+	#include "items/faction_items.dm"
 	#include "items/headsets.dm"
 	#include "items/encryption_keys.dm"
 	#include "items/drinks.dm"
@@ -60,18 +61,35 @@
 	#include "job/jobs_security.dm"
 	#include "job/jobs_service.dm"
 
+	#include "loadout/_defines.dm"
+	#include "loadout/loadout_accessories.dm"
+	#include "loadout/loadout_eyes.dm"
+	#include "loadout/loadout_gloves.dm"
+	#include "loadout/loadout_head.dm"
+	#include "loadout/factions/military.dm"
+	#include "loadout/factions/paroled.dm"
+	#include "loadout/loadout_misc.dm"
+	#include "loadout/loadout_shoes.dm"
+	#include "loadout/loadout_suit.dm"
+	#include "loadout/loadout_uniform.dm"
+	#include "loadout/loadout_utility.dm"
+	#include "loadout/loadout_xeno.dm"
+	#include "loadout/~defines.dm"
+
 	#include "machinery/lighting.dm"
 	#include "machinery/other.dm"
 
 	#include "outfits/cargo/mil.dm"
 	#include "outfits/cargo/other.dm"
 	#include "outfits/cargo/par.dm"
+	#include "outfits/cargo/syndi.dm"
 
 	#include "outfits/command/reg.dm"
 
 	#include "outfits/engineer/mil.dm"
 	#include "outfits/engineer/par.dm"
 	#include "outfits/engineer/reg.dm"
+	#include "outfits/engineer/syndi.dm"
 
 	#include "outfits/ftu/cheapskate_crew.dm"
 
@@ -79,11 +97,14 @@
 	#include "outfits/med/other.dm"
 	#include "outfits/med/par.dm"
 	#include "outfits/med/reg.dm"
+	#include "outfits/med/syndi.dm"
 
 	#include "outfits/misc/misc.dm"
+	#include "outfits/misc/evaguys.dm"
 
 	#include "outfits/security/mil.dm"
 	#include "outfits/security/other.dm"
+	#include "outfits/security/syndi.dm"
 
 	#include "outfits/service/mil.dm"
 	#include "outfits/service/other.dm"

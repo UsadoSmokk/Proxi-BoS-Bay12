@@ -1,14 +1,14 @@
 /datum/gear/eyes/sciencegoggles
-	allowed_roles = RESEARCH_ROLES
+	allowed_roles = ENG_ROLES
 
 /datum/gear/eyes/security
-	allowed_roles = SECURITY_ROLES
+	allowed_roles = SEC_ROLES
 
 /datum/gear/eyes/medical
-	allowed_roles = MEDICAL_ROLES
+	allowed_roles = MED_ROLES
 
 /datum/gear/eyes/meson
-	allowed_roles = list(/datum/job/senior_engineer, /datum/job/engineer, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/senior_scientist)
+	allowed_roles = ENG_ROLES
 
 /datum/gear/eyes/material
-	allowed_roles = list(/datum/job/senior_engineer, /datum/job/engineer, /datum/job/mining, /datum/job/scientist_assistant)
+	allowed_roles = ENG_ROLES

@@ -1,5 +1,5 @@
 /datum/gear/suit/lab_xyn_machine
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = NOUNIFORM
 
 /datum/gear/gloves/dress/modified
 	display_name = "modified gloves, dress"
@@ -14,10 +14,10 @@
 	whitelisted = list(SPECIES_UNATHI)
 
 /datum/gear/suit/unathi/savage_hunter
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = NOUNIFORM
 
 /datum/gear/head/skrell_helmet
-	allowed_roles = ARMORED_ROLES
+	allowed_roles = ARMED
 
 /datum/gear/uniform/harness
 	allowed_branches = null

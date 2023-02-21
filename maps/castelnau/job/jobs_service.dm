@@ -14,10 +14,10 @@
 							/datum/mil_branch/par,
 							/datum/mil_branch/other)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/crew/lss/service/janitor,
-						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/crew/terran/service/janitor,
-						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/crew/par/service/janitor,
-						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/crew/service/janitor)
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/service/janitor,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/service/janitor,
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/service/janitor,
+						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/service/janitor)
 
 	access = list(access_castelnau_janitor,
 			      access_castelnau_maint_tunnels,
@@ -42,10 +42,10 @@
 							/datum/mil_branch/par,
 							/datum/mil_branch/other)
 	allowed_ranks = list(
-						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/crew/lss/service/cook,
-						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/crew/terran/service/cook,
-						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/crew/par/service/cook,
-						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/crew/service/cook)
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/service/cook,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/service/cook,
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/service/cook,
+						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/service/cook)
 	min_skill = list(	SKILL_COOKING   = SKILL_ADEPT,
 						SKILL_BOTANY    = SKILL_BASIC,
 						SKILL_CHEMISTRY = SKILL_BASIC)
@@ -66,8 +66,8 @@
 							/datum/mil_branch/par,
 							/datum/mil_branch/other)
 	allowed_ranks = list(
-						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/crew/par/service/bartender,
-						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/crew/service/bartender)
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/service/bartender,
+						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/service/bartender)
 
 	access = list(access_castelnau_bar, access_castelnau_perseus)
 

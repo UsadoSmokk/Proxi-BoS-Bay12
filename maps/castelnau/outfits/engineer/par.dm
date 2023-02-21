@@ -9,6 +9,7 @@
 /decl/hierarchy/outfit/job/castelnau/par/eng/rev
 	name = OUTFIT_JOB_NAME("Paroled RevEngineer - Castelnau")
 	id_types = list(/obj/item/card/id/castelnau/crew/engineering/rev)
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 
 /decl/hierarchy/outfit/job/castelnau/par/eng/psi
 	name = OUTFIT_JOB_NAME("Paroled PsiEngineer - Castelnau")

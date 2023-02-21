@@ -1,35 +1,33 @@
-//The following is the list of undefs for the Torch loadout.
+//The following is the list of undefs for the Castelnau loadout.
 
-#undef FORMAL_ROLES
+#undef ALTH
 
-#undef SEMIFORMAL_ROLES
+#undef YAK
 
-#undef SEMIANDFORMAL_ROLES
+#undef FTU
 
-#undef RESTRICTED_ROLES
+#undef SYN
 
-#undef MEDICAL_ROLES
+#undef MIL
 
-#undef STERILE_ROLES
+#undef ICCG
 
-#undef ENGINEERING_ROLES
+#undef LORD
 
-#undef TECHNICAL_ROLES
+#undef REG
 
-#undef SECURITY_ROLES
+#undef REGCOM
 
-#undef SUPPLY_ROLES
+#undef NOUNIFORM
 
-#undef SERVICE_ROLES
+#undef SEC_ROLES
 
-#undef RESEARCH_ROLES
+#undef MED_ROLES
 
-#undef ARMED_ROLES
+#undef ENG_ROLES
 
-#undef ARMORED_ROLES
+#undef SRV_ROLES
 
-#undef UNIFORMED_BRANCHES
+#undef CMD_ROLES
 
-#undef CIVILIAN_BRANCHES
-
-#undef SOLGOV_BRANCHES
+#undef SUP_ROLES

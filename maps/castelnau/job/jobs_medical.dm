@@ -61,11 +61,13 @@
 
 	allowed_branches = list(
 							/datum/mil_branch/mil,
-							/datum/mil_branch/par)
+							/datum/mil_branch/par,
+							/datum/mil_branch/syndi)
 	allowed_ranks = list(
 						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/med,
 						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/med,
-						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/med/doctor)
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/med/doctor,
+						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/med)
 	min_skill = list(   SKILL_MEDICAL   = SKILL_BASIC,
 		                SKILL_CHEMISTRY = SKILL_BASIC,
 	                    SKILL_ANATOMY   = SKILL_BASIC)
@@ -105,10 +107,12 @@
 
 	allowed_branches = list(
 							/datum/mil_branch/par,
+							/datum/mil_branch/syndi,
 							/datum/mil_branch/other)
 	allowed_ranks = list(
 						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/med/doctor,
-						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/med/doctor)
+						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/med/doctor,
+						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/med)
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_BASIC,
 		SKILL_MEDICAL     = SKILL_BASIC
@@ -133,5 +137,5 @@
 	)
 
 /datum/job/redactor/equip(var/mob/living/carbon/human/H)
-	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT)
+	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_GRANDMASTER)
 	return ..()
