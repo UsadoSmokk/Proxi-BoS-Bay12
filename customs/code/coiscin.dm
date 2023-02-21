@@ -33,6 +33,16 @@
 	sprite_sheets = list(
 		SPECIES_VOX = 'customs/icons/mob/custom_items_mob.dmi')
 
+/obj/item/clothing/head/helmet/biker/cross/coiscin
+	name = "cross helmet"
+	desc = "a cross motorcycle helmet, the package includes glasses and a can of Space Bull"
+	icon = 'customs/icons/obj/custom_items_obj.dmi'
+	icon_state = "motohelmet"
+	icon_state_open = "motohelmet_open"
+	item_icons = list(slot_head_str = 'customs/icons/mob/custom_items_mob.dmi')
+	item_flags = 0
+	flags_inv = 0
+
 /obj/item/music_player/boombox/coiscin
 	name = "electric guitar"
 	desc = "black electronic guitar with synthesizer module, on the back wall you can see the mark «From B.S. to Yaka»."
@@ -179,6 +189,128 @@
 	info = "\nName: Yakahakichaki-Tikiyahitika\nPassport number: 213-321-124\nPurpose: work\nDuration: 4 years\nDate: 2346.23.06"
 	doc_type = "lordaniavisa"
 
+/obj/item/mech_component/chassis/bike
+	name = "motorcycle frame"
+	desc = "The frame of the old bike, all serial numbers have long been lost and it is unclear what kind of Frankenstein is in front of you"
+	on_mech_icon = 'customs/icons/mob/mech_bike_coiscin_custom.dmi'
+	icon_state = "bike_body"
+	pilot_coverage = 20
+	max_damage = 30
+	power_use = 0
+	has_hardpoints = null
+	climb_time = 5
+
+/obj/item/mech_component/chassis/bike/prebuild()
+	. = ..()
+	m_armour = new /obj/item/robot_parts/robot_component/armour/exosuit(src)
+
+/obj/item/mech_component/chassis/bike/Initialize()
+	pilot_positions = list(
+		list(
+			"[NORTH]" = list("x" = 10,  "y" = 6),
+			"[SOUTH]" = list("x" = 9,  "y" = 6),
+			"[EAST]"  = list("x" = 10,  "y" = 6),
+			"[WEST]"  = list("x" = 6,  "y" = 6)
+		),
+		list(
+			"[NORTH]" = list("x" = 10,  "y" = 6),
+			"[SOUTH]" = list("x" = 9,  "y" = 6),
+			"[EAST]"  = list("x" = 1,  "y" = 6),
+			"[WEST]"  = list("x" = 15,  "y" = 6)
+		)
+	)
+	. = ..()
+
+/obj/item/robot_parts/robot_component/armour/exosuit/bike
+	name = "plastic for motorcycle"
+	desc = "Nothing that could protect the engine from shooting or grenades, but flying stones, falls and branches can quite reflect themselves."
+	armor = list("melee" = 30, "bullet" = 15, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 10)
+	origin_tech = list(TECH_MATERIAL = 1)
+
+/obj/item/mech_component/sensors/bike
+	name = "dashboard"
+	gender = PLURAL
+	exosuit_desc_string = "dashboard removed from the new exosuit"
+	desc = "A primitive set of sensors designed to work in tandem with most MKI Eyeball platforms."
+	on_mech_icon = 'customs/icons/mob/mech_bike_coiscin_custom.dmi'
+	icon_state = "bike_head"
+	max_damage = 20
+	power_use = 0
+	has_hardpoints = list(HARDPOINT_HEAD)
+
+/obj/item/mech_component/propulsion/bike
+	name = "wheels with spikes"
+	exosuit_desc_string = "old shabby wheels with randomly sticking spikes, such a wheel will not really cause damage to the enemy, but it looks cool and the grip is not bad"
+	desc = "Old wheels removed from somewhere, you can't even imagine who else rides on wheeled vehicles, savages"
+	on_mech_icon = 'customs/icons/mob/mech_bike_coiscin_custom.dmi'
+	icon_state = "bike_legs"
+	max_damage = 20
+	move_delay = 0.5
+	turn_delay = 2
+	power_use = 10
+
+/obj/item/mech_component/manipulators/bike
+	name = "bike steering wheel"
+	exosuit_desc_string = "the steering wheel is the most important thing in a motorcycle, it is connected to the guide wheel and the pilot directs it to the side.....why did you remember that"
+	desc = "What do you want to know after seeing this? This is some kind of stick... horror...."
+	on_mech_icon = 'customs/icons/mob/mech_bike_coiscin_custom.dmi'
+	icon_state = "bike_arms"
+	melee_damage = 0
+	action_delay = 15
+	max_damage = 15
+	power_use = 10
+	has_hardpoints = 0
+
+/obj/item/mech_equipment/light/bike
+	name = "headlight"
+	desc = "it's just a headlight, an ordinary one..."
+	icon_state = "biker_light"
+
+/mob/living/exosuit/premade/bike
+	name = "nomad's dirt bike"
+	desc = "Transportation of the old world of humanity. A battered bike of Ash Dust - vox nomad, which expels the most repulsed deliveries. There are a lot of stickers and inscriptions on the shields and plastic, but alas, many of them have either lost color in the sun or worn out under the influence of adverse weather."
+	wreckage_path = /obj/structure/mech_wreckage
+	mech_turn_sound = 'customs/sound/bike_TU_engine.ogg'
+	mech_step_sound = 'customs/sound/bike_MO_engine.ogg'
+	mech_powerup_sound = 'customs/sound/bike_ST_engine.ogg'
+	mech_shutdown_sound = 'customs/sound/bike_SH_engine.ogg'
+
+
+/mob/living/exosuit/premade/bike/Initialize()
+	if(!legs)
+		legs = new /obj/item/mech_component/propulsion/bike(src)
+	if(!head)
+		head = new /obj/item/mech_component/sensors/bike(src)
+	if(!body)
+		body = new /obj/item/mech_component/chassis/bike(src)
+	if(!arms)
+		arms = new /obj/item/mech_component/manipulators/bike(src)
+	. = ..()
+
+/mob/living/exosuit/premade/bike/spawn_mech_equipment()
+	install_system(new /obj/item/mech_equipment/light/bike(src), HARDPOINT_HEAD)
+
+/mob/living/exosuit/premade/bike/attackby(var/obj/item/thing, var/mob/user)
+    if(istype(thing, /obj/item/stack/material/phoron))
+        if(body.cell.charge <= body.cell.maxcharge - 100)
+            body.cell.charge = body.cell.charge + 100
+            to_chat(user, "You add a little phoron to your fuel tank. Don't even think about smoking now!")
+        else
+            body.cell.charge = body.cell.maxcharge
+            to_chat(user, "The tank is filled with a slide, no more phoron is needed.")
+        var/obj/item/stack/material/phoron/fuel = thing
+        fuel.use(1)
+    . = ..()
+
+/obj/item/coiscin/teleport
+	name = "bike teleporter"
+	icon = 'customs/icons/obj/custom_items_obj.dmi'
+	icon_state = "teleporter"
+
+/obj/item/coiscin/teleport/attack_self(mob/user)
+	new /mob/living/exosuit/premade/bike(get_turf(src))
+	qdel(src)
+
 /obj/item/clothingbag/coiscin
 	name = "clothing bag"
 	desc = "Roar's property"
@@ -193,3 +325,5 @@
 	new /obj/item/clothing/accessory/katana_coiscin(src)
 	new /obj/item/music_player/boombox/coiscin(src)
 	new /obj/item/notebook_coiscin(src)
+	new /obj/item/clothing/head/helmet/biker/cross/coiscin(src)
+	new /obj/item/coiscin/teleport(src)

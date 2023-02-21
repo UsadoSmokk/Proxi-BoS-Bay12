@@ -142,6 +142,11 @@
 	icon_state = "riflecasing"
 	spent_icon = "riflecasing-spent"
 
+/obj/item/ammo_casing/rifle/bad //bos
+	desc = "A sol rifle bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/bad
+	leaves_residue = FALSE
+
 /obj/item/ammo_casing/shell
 	name = "shell casing"
 	desc = "An antimaterial shell casing."
