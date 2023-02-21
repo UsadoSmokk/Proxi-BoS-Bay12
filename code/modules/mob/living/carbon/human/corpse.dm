@@ -174,11 +174,6 @@
 /obj/effect/landmark/corpse/russian/ranged
 	corpse_outfits = list(/decl/hierarchy/outfit/soviet_soldier)
 
-/obj/effect/landmark/corpse/sol_military
-	name = "SOL military solder"
-	corpse_outfits = list(/decl/hierarchy/outfit/sol_military)
-	spawn_flags = CORPSE_SPAWNER_NO_RANDOMIZATION
-
 /obj/effect/landmark/corpse/syndicate
 	name = "Syndicate Operative"
 	corpse_outfits = list(/decl/hierarchy/outfit/mercenary/syndicate)
