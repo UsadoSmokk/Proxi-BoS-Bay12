@@ -1,6 +1,5 @@
 /datum/job/assistant
 	title = "Assistant"
-	alt_titles = list()
 	total_positions = 4
 	spawn_positions = 4
 	department = "Civilian"

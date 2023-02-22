@@ -9,7 +9,7 @@
 
 /obj/item/clothing/under/ftu/security
 	name = "FTU security uniform"
-	desc = "Standard uniform of the Free Trade Union security personnel. It protects like a medium armor plate."
+	desc = "Standard uniform of the Free Trade Union security personnel. It has rigged armor plate. This one looks like a medium one."
 	icon_state = "sec"
 	item_state = "sec"
 	worn_state = "sec"

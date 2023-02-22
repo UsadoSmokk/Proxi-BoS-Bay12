@@ -113,7 +113,7 @@
 
 /obj/item/card/id/syndipass
 	name = "Syndi-Pass"
-	desc = "This card gives you access to our special shuttle at the Outpost and airdrops"
+	desc = "This card provides additional access to the syndicate equipment, be it some local shuttle or airdrops"
 	registered_name = "Our beloved employee"
 	assignment = "Syndi-pass Subscriber"
 	access = list(access_castelnau_syndipass)

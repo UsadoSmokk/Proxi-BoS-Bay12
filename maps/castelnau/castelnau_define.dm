@@ -17,7 +17,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	overmap_event_areas = 14
 	usable_email_tlds = list("reg.net", "mil.gov", "syndicate.net", "freemail.net")
 
-	allowed_spawns = list("Cryogenic Storage", "Prometeus Cryogenic Storage")
+	allowed_spawns = list("Cryogenic Storage")
 	default_spawn = "Cryogenic Storage"
 
 	station_name  = "RMV Castelnau"
@@ -55,9 +55,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 /datum/map/castelnau/send_welcome()
 	var/welcome_text = "<center><br /><font size = 3><b>FTV Cheapskate</b> Показания Сенсоров:</font><hr />"
 	welcome_text += "Отчет сгенерирован [stationdate2text()] в [stationtime2text()]</center><br /><br />"
-	welcome_text += "Текущая система: <b>Я НЕ ПОМНЮ</b><br />"
-	welcome_text += "Следующая система для прыжка: <b>[generate_system_name()]</b><br />"
-	welcome_text += "Дней до ближайшей подконтрольной правительству системы: <b>[rand(1,5)]</b><br />"
+	welcome_text += "Текущая система: <b>Мьолнир</b><br />"
 	welcome_text += "Дней с последнего визита в порт: <b>[rand(30,90)]</b><br />"
 	welcome_text += "Результаты сканирования показали следующие потенциальные объекты для проверки:<br />"
 	var/list/space_things = list()

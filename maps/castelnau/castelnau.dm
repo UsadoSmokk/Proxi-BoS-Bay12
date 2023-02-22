@@ -28,7 +28,6 @@
 	#include "datums/hairs.dm"
 
 	#include "items/cards_ids.dm"
-	#include "items/faction_items.dm"
 	#include "items/headsets.dm"
 	#include "items/encryption_keys.dm"
 	#include "items/drinks.dm"

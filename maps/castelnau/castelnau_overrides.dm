@@ -30,3 +30,22 @@
 
 ///decl/cultural_info/culture/nabber/b
 //	valid_jobs = list(/datum/job/canworker)
+
+/datum/language/spacer
+	warning = "Automatically given if spawning on the Castelnau or with no languages"
+	key = "0"
+	colour = " "
+
+/datum/language/human/lord
+	key = "6"
+	colour = "spacer"
+
+/datum/language/human/euro
+	warning = "Automatically given if spawning on the Big Iron."
+	key = "1"
+	colour = "solcom"
+
+/datum/language/machine
+	key = "8"
+
+

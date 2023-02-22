@@ -57,3 +57,6 @@
 /decl/cultural_info/culture/nabber/a/plus/New()
 	LAZYADD(valid_jobs, /datum/job/doctor)
 	..()
+
+/datum/job
+	required_language = LANGUAGE_SPACER
