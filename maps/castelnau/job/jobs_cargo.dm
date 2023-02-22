@@ -46,7 +46,7 @@
 	alt_titles = list(
 		"Field Constructor")
 	allowed_branches = list(
-							/datum/mil_branch/par)
+							/datum/mil_branch/par = /decl/hierarchy/outfit/job/castelnau/par/miner)
 	allowed_ranks = list(
 						/datum/mil_rank/par)
 	min_skill = list(   SKILL_MECH    = SKILL_BASIC,
@@ -55,7 +55,6 @@
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
-//	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/supply/prospector
 
 	access = list(
 
