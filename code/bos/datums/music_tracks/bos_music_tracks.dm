@@ -137,3 +137,11 @@
 	license = /decl/license/grandfathered //pls don't sue me
 	url = "https://youtu.be/gLKKc3gxk20"
 	volume = 60
+
+/decl/audio/track/shortchangehero
+	title = "Short Change Hero (Instrumental)"
+	author = "The Heavy"
+	source = 'sound/music/bos/shortchangehero.ogg'
+	license = /decl/license/grandfathered //no
+	url = "https://youtu.be/GjTTB6yII4o"
+	volume = 30
