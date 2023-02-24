@@ -41,16 +41,14 @@
 
 
 /datum/job/ftumerchant
-	title = "Planetside Merchant"
+	title = "Merchant"
 	department = "Auxiliary"
 	department_flag = SUP
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Chief Merchant"
 	minimal_player_age = 0
 	selection_color = "#755c48"
-	alt_titles = list(
-		"Shipside Merchant")
 	outfit_type = /decl/hierarchy/outfit/job/cheapskate/merchant
 	allowed_branches = list(
 		/datum/mil_branch/ftu
@@ -100,5 +98,6 @@
 
 	access = list(
 					access_castelnau_cheapskate,
+					access_castelnau_cheapskate_security,
 
 					access_castelnau_bixie)

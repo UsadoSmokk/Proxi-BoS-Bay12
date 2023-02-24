@@ -10,3 +10,4 @@
 /obj/effect/bump_teleporter/fasttravel/end
 	name = "previous location"
 	icon_state = "end"
+	density = FALSE

@@ -91,7 +91,7 @@
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
-
+	latejoin_at_spawnpoints = 1
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/power_monitor,
@@ -134,7 +134,7 @@
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
-
+	latejoin_at_spawnpoints = 1
 /datum/job/outeng
 	title = "Outpost Engineer"
 	department = "Engineering"
@@ -168,7 +168,7 @@
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
-
+	latejoin_at_spawnpoints = 1
 /datum/job/outmed
 	title = "Outpost Medic"
 	department = "Medical"
@@ -201,7 +201,7 @@
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
-
+	latejoin_at_spawnpoints = 1
 /*
 /datum/job/inflead
 	title = "Infantry Captain"

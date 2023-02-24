@@ -34,7 +34,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 
 	default_law_type = /datum/ai_laws/nanotrasen
 	use_overmap = 1
-	num_exoplanets = 1
+	num_exoplanets = 0
 	planet_size = list(200,200)
 
 	away_site_budget = 4
