@@ -79,3 +79,8 @@
 
 /area/voronez/outside/partyalert()
 	return
+
+/area/shuttle/escapeevent
+	name = "Transport Shuttle"
+	icon_state = "shuttlered"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED

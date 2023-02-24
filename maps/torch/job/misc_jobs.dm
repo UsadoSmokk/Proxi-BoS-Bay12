@@ -99,6 +99,6 @@ Civilian
 		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/alien
 	)
-	latejoin_at_spawnpoints = 1
+//	latejoin_at_spawnpoints = 1
 	announced = FALSE
 	access = list(access_maint_tunnels, access_emergency_storage)
