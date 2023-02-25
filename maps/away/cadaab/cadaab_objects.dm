@@ -67,3 +67,60 @@
 	desc = "There's probably still fuel left in it."
 	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "fuel"
+	anchored = 1
+
+/obj/machinery/vending/syndipass
+	name = "\improper Exclusive for Syndi-Pass Owners"
+	desc = "Vending machine with products exclusively for syndi-pass owners."
+	product_slogans = "Fuck Nanotra-.. Oh, wait.'.;\
+		Only the best for the best."
+	vend_delay = 21
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	icon_state = "syndi"
+	icon_vend = "syndi-vend"
+	icon_deny = "syndi-deny"
+	base_type = /obj/machinery/vending/syndipass
+	products = list(
+					/obj/item/storage/mre = 2,
+					/obj/item/clothing/accessory/armor_plate/ceramic = 3,
+					/obj/item/gun/energy/ionrifle/small = 1,
+					/obj/item/gun/projectile/revolver/psirevolver = 2,
+					/obj/item/ammo_magazine/speedloader/magnum/nullglass = 3,
+					/obj/item/storage/toolbox/syndicate = 2,
+					/obj/item/rcd = 2,
+					/obj/item/rcd_ammo = 5,
+					/obj/item/bodybag/cryobag = 2,
+					/obj/item/storage/firstaid/light = 1,
+					/obj/item/storage/firstaid/regular = 1,
+					/obj/item/storage/firstaid/trauma = 1,
+					/obj/item/storage/firstaid/fire = 1,
+					/obj/item/storage/firstaid/toxin = 1,
+					/obj/item/storage/firstaid/stab = 1,
+					/obj/item/storage/firstaid/adv = 1,
+					/obj/item/device/radio/intercept = 1,
+					/obj/item/card/id/syndicate = 3,
+					/obj/item/stack/telecrystal = 20)
+	premium = list(/obj/item/storage/firstaid/combat = 1, /obj/item/gun/energy/plasmarifle = 1)
+
+	prices = list(
+					/obj/item/storage/mre = 300,
+					/obj/item/clothing/accessory/armor_plate/ceramic = 1500,
+					/obj/item/gun/energy/ionrifle/small = 2500,
+					/obj/item/gun/projectile/revolver/psirevolver = 2000,
+					/obj/item/ammo_magazine/speedloader/magnum/nullglass = 500,
+					/obj/item/storage/toolbox/syndicate = 800,
+					/obj/item/rcd = 1000,
+					/obj/item/rcd_ammo = 300,
+					/obj/item/bodybag/cryobag = 500,
+					/obj/item/storage/firstaid/light = 200,
+					/obj/item/storage/firstaid/regular = 500,
+					/obj/item/storage/firstaid/trauma = 500,
+					/obj/item/storage/firstaid/fire = 500,
+					/obj/item/storage/firstaid/toxin = 500,
+					/obj/item/storage/firstaid/stab = 800,
+					/obj/item/storage/firstaid/adv = 1000,
+					/obj/item/device/radio/intercept = 1000,
+					/obj/item/card/id/syndicate = 3000,
+					/obj/item/stack/telecrystal = 500,
+					/obj/item/storage/firstaid/combat = 4000,
+					/obj/item/gun/energy/plasmarifle = 5000)
