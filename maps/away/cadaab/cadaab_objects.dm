@@ -1,13 +1,13 @@
 /obj/structure/flora/tree/cadaab
 	name = "tree"
-	icon = 'maps/castelnau/locations/cadaab/icons/objects_48x48.dmi'
+	icon = 'maps/away/cadaab/icons/objects_48x48.dmi'
 	icon_state = "tree"
 	pixel_x = 0
 
 /obj/structure/cadaab
 	name = "stone"
 	desc = "You will surely burn your hand if you touch it."
-	icon = 'maps/castelnau/locations/cadaab/icons/objects.dmi'
+	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "stone0"
 	anchored = TRUE
 	density = TRUE

@@ -352,7 +352,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 #else
 	report_progress("Loading away sites...")
 
-	var/list/guaranteed = list()
+	var/list/guaranteed = list(/datum/map_template/ruin/away_site/cadaab) //bos, because I'm fucking tired and don't want to think
 	var/list/selected = list()
 	var/list/available = list()
 	var/list/unavailable = list()

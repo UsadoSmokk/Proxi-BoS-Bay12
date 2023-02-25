@@ -7,14 +7,14 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 
 	load_legacy_saves = TRUE
 
-	station_levels = list(1,2,3,4,5,6)
-	contact_levels = list(1,2,3,4,5,6)
-	player_levels = list(1,2,3,4,5,6)
-	admin_levels = list(7,8)
-	empty_levels = list(9)
-	accessible_z_levels = list("1"=1,"2"=1,"3"=1, "4"=1,"5"=1,"6"=1, "9" = 30)
-	overmap_size = 30
-	overmap_event_areas = 31
+	station_levels = list(1,2,3)
+	contact_levels = list(1,2,3)
+	player_levels = list(1,2,3)
+	admin_levels = list(4,5)
+	empty_levels = list(6)
+	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"6" = 30)
+	overmap_size = 35
+	overmap_event_areas = 15
 	usable_email_tlds = list("reg.net", "mil.gov", "syndicate.net", "freemail.net")
 
 	allowed_spawns = list("Cryogenic Storage")

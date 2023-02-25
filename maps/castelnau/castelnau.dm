@@ -137,10 +137,7 @@
 
 	#include "../away/empty.dmm"
 	#include "../away/cadaab/cadaab.dm"
-	#include "../away/casino/casino.dm"
-	#include "../away/skrellscoutship/skrellscoutship.dm"
-	#include "../away/smugglers/smugglers.dm"
-/*	#include "../away/rawl/rawl.dm"
+	#include "../away/rawl/rawl.dm"
 //	#include "../away/solship/solship.dm"
 	#include "../away/mining/mining.dm"
 	#include "../away/derelict/derelict.dm"
@@ -164,7 +161,7 @@
 	#include "../away/mininghome/mininghome.dm"
 	#include "../away/scavver/scavver_gantry.dm"
 	#include "../away/raidership/raider_vessel.dm"
-	#include "../away/spystation/spy_station.dm"*/
+	#include "../away/spystation/spy_station.dm"
 
 	#define using_map_DATUM /datum/map/castelnau
 

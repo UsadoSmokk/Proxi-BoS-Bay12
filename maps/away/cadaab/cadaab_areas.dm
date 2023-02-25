@@ -2,7 +2,7 @@
 
 /area/cadaab
 	name = "Cadaab"
-	icon = 'maps/castelnau/locations/cadaab/icons/areas.dmi'
+	icon = 'maps/away/cadaab/icons/areas.dmi'
 	icon_state = "where"
 	base_turf = /turf/simulated/floor/exoplanet/desert/cadaab
 	planetary_surface = TRUE
@@ -58,7 +58,7 @@
 	name = "Cadaab - Caves"
 	icon_state = "desert"
 	base_turf = /turf/simulated/floor/exoplanet/cadaab
-	dynamic_lighting = 1
+//	dynamic_lighting = 1
 
 /area/cadaab/caves/bunker
 	name = "Vault - Security Checkpoint"
