@@ -61,3 +61,9 @@
 	close_sound = 'sound/effects/footstep/carpet5.ogg'
 	setup = 0
 	closet_appearance = null
+
+/obj/structure/reagent_dispensers/fueltank/cadaab
+	name = "gas station"
+	desc = "There's probably still fuel left in it."
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	icon_state = "fuel"
