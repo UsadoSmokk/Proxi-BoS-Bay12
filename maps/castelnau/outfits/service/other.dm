@@ -1,5 +1,5 @@
 /decl/hierarchy/outfit/job/castelnau/service
-	l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_service
 	shoes = /obj/item/clothing/shoes/black
 	pda_type = /obj/item/modular_computer/pda
 

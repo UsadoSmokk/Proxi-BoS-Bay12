@@ -19,7 +19,7 @@
 /datum/map_template/ruin/away_site/cadaab
 	name = "Cadaab"
 	id = "awaysite_cadaab"
-	spawn_cost = 0.1
+	spawn_cost = 0
 	description = "The hot desert Moon of Inax. A recent landslide caused many roads to be blocked."
 	suffixes = list("cadaab/cadaab.dmm")
 	generate_mining_by_z = 1

@@ -55,7 +55,7 @@
 
 /obj/structure/closet/secure_closet/zavhoz_ebat/WillContain()
 	return list(
-/obj/item/device/radio/headset/castelnau_quartermaster/alt,
+///obj/item/device/radio/headset/castelnau_quartermaster/alt,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/clothing/glasses/meson,
 		/obj/item/clothing/glasses/sunglasses,
