@@ -7,14 +7,14 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 
 	load_legacy_saves = TRUE
 
-	station_levels = list(1,2,3)
-	contact_levels = list(1,2,3)
-	player_levels = list(1,2,3)
-	admin_levels = list(4,5)
-	empty_levels = list(6)
-	accessible_z_levels = list("1"=1,"2"=1,"3"=1, "6" = 30)
-	overmap_size = 15
-	overmap_event_areas = 14
+	station_levels = list(1,2,3,4,5,6)
+	contact_levels = list(1,2,3,4,5,6)
+	player_levels = list(1,2,3,4,5,6)
+	admin_levels = list(7,8)
+	empty_levels = list(9)
+	accessible_z_levels = list("1"=1,"2"=1,"3"=1, "4"=1,"5"=1,"6"=1, "9" = 30)
+	overmap_size = 30
+	overmap_event_areas = 31
 	usable_email_tlds = list("reg.net", "mil.gov", "syndicate.net", "freemail.net")
 
 	allowed_spawns = list("Cryogenic Storage")
@@ -34,17 +34,18 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 
 	default_law_type = /datum/ai_laws/nanotrasen
 	use_overmap = 1
-	num_exoplanets = 0
-	planet_size = list(200,200)
+	num_exoplanets = 1
+	planet_size = list(150,150)
 
-	away_site_budget = 4
+	away_site_budget = 3
 	id_hud_icons = 'maps/castelnau/icons/assignment_hud.dmi'
 
 	starting_money = 30000
 
 /datum/map/castelnau/setup_map()
 	..()
-	system_name = generate_system_name()
+//	system_name = generate_system_name()
+	system_name = "Mjolnir"
 	minor_announcement = new(new_sound = sound('sound/AI/torch/commandreport.ogg', volume = 45))
 
 /datum/map/castelnau/get_map_info()
@@ -85,4 +86,4 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	welcome_text += "<hr>"
 
 	post_comm_message("FTV Cheapskate Sensor Readings", welcome_text)
-	minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")
+	minor_announcement.Announce(message = "Новое сообщение от [GLOB.using_map.company_name] доступно Командованию Регуляторов на всех терминалах.")

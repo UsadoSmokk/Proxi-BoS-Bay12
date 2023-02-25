@@ -6,7 +6,7 @@
 	icon_state = "where"
 	base_turf = /turf/simulated/floor/exoplanet/desert/cadaab
 	planetary_surface = TRUE
-	dynamic_lighting = 0
+//	dynamic_lighting = 0
 
 /area/cadaab/desert
 	name = "Cadaab Desert"
@@ -49,5 +49,52 @@
 	icon_state = "landing"
 
 /area/cadaab/outpost/syndishuttle
-	name = "Outpost - Syndicate Shuttle"
+	name = "SSS PrettyBoy"
 	icon_state = "syndipass"
+
+//CAVES - NEAR THE OUTPOST//
+
+/area/cadaab/caves
+	name = "Cadaab - Caves"
+	icon_state = "desert"
+	base_turf = /turf/simulated/floor/exoplanet/cadaab
+	dynamic_lighting = 1
+
+/area/cadaab/caves/bunker
+	name = "Vault - Security Checkpoint"
+	icon_state = "security"
+
+/area/cadaab/caves/bunker/living
+	name = "Vault - Living Area"
+	icon_state = "living"
+
+/area/cadaab/caves/bunker/living/can
+	name = "Vault - Canteen"
+
+/area/cadaab/caves/bunker/living/bunk
+	name = "Vault - Bunks"
+
+/area/cadaab/caves/bunker/medsci
+	name = "Vault - MedScience"
+	icon_state = "medbay"
+
+/area/cadaab/caves/bunker/engi
+	name = "Vault - Engineering"
+	icon_state = "engineering"
+
+//SHAHTINSK - START//
+
+/area/cadaab/shahtinsk
+	name = "Cadaab - Shahtinsk"
+
+/area/cadaab/shahtinsk/canteen
+	name = "Shahtinsk - Canteen"
+	icon_state = "living"
+
+/area/cadaab/shahtinsk/gas
+	name = "Shahtinsk - Gas Station"
+	icon_state = "engineering"
+
+/area/cadaab/shahtinsk/med
+	name = "Shahtinsk - Medic"
+	icon_state = "medbay"

@@ -56,6 +56,10 @@
 "l" = (
 /turf/space/bluespace,
 /area/space)
+"p" = (
+/obj/effect/shuttle_landmark/castelnau/transit/syndi,
+/turf/space,
+/area/space)
 "q" = (
 /obj/effect/step_trigger/thrower{
 	affect_ghosts = 1;
@@ -23603,7 +23607,7 @@ X
 X
 X
 X
-X
+p
 X
 X
 X

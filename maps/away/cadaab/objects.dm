@@ -19,7 +19,7 @@
 
 /obj/structure/gravemarker/cadaab
 	name = "grave stone"
-	icon = 'maps/castelnau/locations/cadaab/icons/objects.dmi'
+	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "gravestone"
 	pixel_x = 0
 	pixel_y = 0
@@ -29,25 +29,34 @@
 
 /obj/structure/pit/closed/cadaab
 	name = "grave"
-	icon = 'maps/castelnau/locations/cadaab/icons/objects.dmi'
+	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "grave"
 
-/obj/structure/grille/cadaab
+/obj/structure/steelfence
 	name = "steel fence"
 	desc = "A flimsy lattice of metal rods, with screws to secure it to the floor."
-	icon = 'maps/castelnau/locations/cadaab/icons/objects.dmi'
-	icon_state = "fence"
-	color = null
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	icon_state = "steelfence"
+	anchored = TRUE
+	density = TRUE
+
+/obj/structure/steelfence/attackby(obj/item/W as obj, mob/user as mob)
+	if(isWirecutter(W))
+		playsound(loc, 'sound/items/Wirecutter.ogg', 100, 1)
+		new /obj/item/stack/material/rods(get_turf(src))
+		qdel(src)
+	return
 
 /obj/machinery/door/unpowered/simple/cadaab
 	name = "steel fence door"
-	icon = 'maps/castelnau/locations/cadaab/icons/objects.dmi'
+	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "fencedoor"
+	icon_base = "fencedoor"
 
 /obj/structure/closet/tent
 	name = "tent"
 	desc = "A pretty big green tent."
-	icon = 'maps/castelnau/locations/cadaab/icons/tent.dmi'
+	icon = 'maps/away/cadaab/icons/tent.dmi'
 	open_sound = 'sound/effects/footstep/carpet5.ogg'
 	close_sound = 'sound/effects/footstep/carpet5.ogg'
 	setup = 0
