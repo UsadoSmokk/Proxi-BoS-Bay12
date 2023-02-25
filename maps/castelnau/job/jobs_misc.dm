@@ -1,6 +1,7 @@
 /datum/job/assistant
 	title = "Assistant"
 	total_positions = 4
+	alt_titles = list()
 	spawn_positions = 4
 	department = "Civilian"
 	department_flag = CIV

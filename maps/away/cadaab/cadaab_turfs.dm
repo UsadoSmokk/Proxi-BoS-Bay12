@@ -35,7 +35,7 @@
 
 /turf/unsimulated/wall/cadaab
 	name = "distant area"
-	desc = "You'll get there someday.."
+	desc = "You'll get there someday."
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
 	icon_state = "nah"
 	density = TRUE

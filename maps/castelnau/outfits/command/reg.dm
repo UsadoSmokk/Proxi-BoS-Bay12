@@ -9,13 +9,13 @@
 /decl/hierarchy/outfit/job/castelnau/reg/com/hop
 	name = OUTFIT_JOB_NAME("Coordinator - Castelnau")
 	glasses = /obj/item/clothing/glasses/sunglasses
-	l_ear = /obj/item/device/radio/headset/heads/hop
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_coordinator
 	id_types = list(/obj/item/card/id/castelnau/silver)
 	pda_type = /obj/item/modular_computer/pda/heads/hop
 
 /decl/hierarchy/outfit/job/castelnau/reg/com/sheriff
 	name = OUTFIT_JOB_NAME("Sheriff - Castelnau")
-	l_ear = /obj/item/device/radio/headset/headset_sec
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_sheriff
 	pda_type = /obj/item/modular_computer/pda/security
 	glasses = /obj/item/clothing/glasses/hud/security/prot/aviators
 	pda_slot = slot_l_store

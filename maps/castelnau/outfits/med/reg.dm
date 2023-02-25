@@ -1,5 +1,5 @@
 /decl/hierarchy/outfit/job/castelnau/reg/med/surgeon
-	l_ear = /obj/item/device/radio/headset/headset_med
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_surgeon/reg
 	shoes = /obj/item/clothing/shoes/white
 	pda_type = /obj/item/modular_computer/pda/medical
 	pda_slot = slot_l_store
