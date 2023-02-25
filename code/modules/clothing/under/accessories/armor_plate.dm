@@ -82,7 +82,7 @@
 		bomb = ARMOR_BOMB_PADDED
 	)
 
-/obj/item/clothing/accessory/armor_plate/ceramic
+/obj/item/clothing/accessory/armor_plate/ceramic //bos
 	name = "ceramic armor plate"
 	desc = "A heavier armor plate with additional ablative coating. Attaches to a plate carrier."
 	icon_state = "armor_tactical"

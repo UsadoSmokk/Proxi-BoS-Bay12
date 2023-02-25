@@ -5,6 +5,7 @@
 #include "solship_areas.dm"
 #include "solship_crew.dm"
 #include "solship_items.dm"
+#include "solship_ranks.dm"
 #include "solship_presets.dm"
 #include "solship_shuttle.dm"
 #include "solship_structures.dm"

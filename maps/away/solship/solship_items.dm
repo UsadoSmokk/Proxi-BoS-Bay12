@@ -80,3 +80,22 @@
 		bio = ARMOR_BIO_SMALL,
 		rad = ARMOR_RAD_MINOR
 		)
+
+/decl/hierarchy/outfit/sol_military
+	name = "SOL military solder"
+
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/away_solship
+	head = /obj/item/clothing/head/solgov/utility/fleet
+	shoes = /obj/item/clothing/shoes/dutyboots
+	l_ear = /obj/item/device/radio/headset/gunship
+	back = /obj/item/rig/military/sol
+
+	id_types= list(/obj/item/card/id/solship)
+	id_slot = slot_wear_id
+
+	id_pda_assignment = "Soldier"
+
+/obj/effect/landmark/corpse/sol_military
+	name = "SOL military solder"
+	corpse_outfits = list(/decl/hierarchy/outfit/sol_military)
+	spawn_flags = CORPSE_SPAWNER_NO_RANDOMIZATION

@@ -10,11 +10,26 @@
 	use_sound = null
 	abstract_type = /decl/psionic_power/psychokinesis
 
+/decl/psionic_power/psychokinesis/tinker
+	name =            "Tinker"
+	cost =            5
+	cooldown =        10
+	min_rank =        PSI_RANK_OPERANT //BOS, was MASTER
+	use_description = "Click on or otherwise activate an empty hand while on help intent to manifest a psychokinetic tool. Use it in-hand to switch between tool types."
+	admin_log = FALSE
+
+/decl/psionic_power/psychokinesis/tinker/invoke(var/mob/living/user, var/mob/living/target)
+	if((target && user != target) || user.a_intent != I_HELP)
+		return FALSE
+	. = ..()
+	if(.)
+		return new /obj/item/psychic_power/tinker(user)
+
 /decl/psionic_power/psychokinesis/psiblade
 	name =            "Psiblade"
 	cost =            10
 	cooldown =        30
-	min_rank =        PSI_RANK_OPERANT
+	min_rank =        PSI_RANK_MASTER //BOS, was OPERANT
 	use_description = "Click on or otherwise activate an empty hand while on harm intent to manifest a psychokinetic cutting blade. The power the blade will vary based on your mastery of the faculty."
 	admin_log = FALSE
 
@@ -32,21 +47,6 @@
 				return new /obj/item/psychic_power/psiblade/master(user, user)
 			else
 				return new /obj/item/psychic_power/psiblade(user, user)
-
-/decl/psionic_power/psychokinesis/tinker
-	name =            "Tinker"
-	cost =            5
-	cooldown =        10
-	min_rank =        PSI_RANK_MASTER
-	use_description = "Click on or otherwise activate an empty hand while on help intent to manifest a psychokinetic tool. Use it in-hand to switch between tool types."
-	admin_log = FALSE
-
-/decl/psionic_power/psychokinesis/tinker/invoke(var/mob/living/user, var/mob/living/target)
-	if((target && user != target) || user.a_intent != I_HELP)
-		return FALSE
-	. = ..()
-	if(.)
-		return new /obj/item/psychic_power/tinker(user)
 
 /decl/psionic_power/psychokinesis/telekinesis
 	name =            "Telekinesis"

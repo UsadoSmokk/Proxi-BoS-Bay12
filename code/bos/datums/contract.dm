@@ -159,7 +159,7 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 		"the captain's pinpointer" = /obj/item/pinpointer,
 		"an ablative armor vest" = /obj/item/clothing/suit/armor/laserproof,
 		"the marine squad leader RIG" = /obj/item/rig/infantry/sl/equipped,
-		"the captain's secret documents" = /obj/item/folder/envelope/captain
+//		"the captain's secret documents" = /obj/item/folder/envelope/captain
 	)
 
 /datum/antag_contract/item/steal/New()
