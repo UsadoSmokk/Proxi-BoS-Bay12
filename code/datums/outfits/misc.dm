@@ -28,20 +28,6 @@
 	id_types = list(/obj/item/card/id/centcom/station)
 	id_pda_assignment = "Admiral"
 
-/decl/hierarchy/outfit/sol_military
-	name = "SOL military solder"
-
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/away_solship
-	head = /obj/item/clothing/head/solgov/utility/fleet
-	shoes = /obj/item/clothing/shoes/dutyboots
-	l_ear = /obj/item/device/radio/headset/gunship
-	back = /obj/item/rig/military/sol
-
-	id_types= list(/obj/item/card/id/solship)
-	id_slot = slot_wear_id
-
-	id_pda_assignment = "Soldier"
-
 /decl/hierarchy/outfit/merchant
 	name = "Merchant"
 	shoes = /obj/item/clothing/shoes/black

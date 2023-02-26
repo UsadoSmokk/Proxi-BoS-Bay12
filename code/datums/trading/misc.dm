@@ -2,9 +2,9 @@
 	name = "Pet Shop Owner"
 	name_language = LANGUAGE_SKRELLIAN
 	origin = "Pet Shop"
-	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY
+	trade_flags = TRADER_MONEY //BoS, was "trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY"
 	possible_origins = list("Paws-Out", "Pets-R-Smart", "Tentacle Companions", "Xeno-Pets and Assorted Goods", "Barks and Drools")
-	speech = list(TRADER_HAIL_GENERIC    = "Welcome to my xeno-pet shop! Here you will find many wonderful companions. Some a bit more... aggressive than others. But companions none the less. I also buy pets, or trade them.",
+	speech = list(TRADER_HAIL_GENERIC    = "Welcome to my xeno-pet shop! Here you will find many wonderful companions. Some a bit more... aggressive than others. But companions none the less.",
 				TRADER_HAIL_DENY         = "I no longer wish to speak to you.",
 
 				TRADER_TRADE_COMPLETE    = "Remember to give them attention and food. They are living beings, and you should treat them like so.",
