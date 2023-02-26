@@ -5,7 +5,7 @@
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
-	economic_power = 10
+	economic_power = 6
 	minimal_player_age = 0
 	selection_color = "#4f3230"
 	minimum_character_age = list(SPECIES_HUMAN = 24)
@@ -49,7 +49,7 @@
 	supervisors = "the Captain and the Coordinator"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 18
-	economic_power = 7
+	economic_power = 9
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(/datum/mil_rank/reg= /decl/hierarchy/outfit/job/castelnau/reg/outlead)
@@ -109,7 +109,7 @@
 	supervisors = "the Outpost Leader"
 	selection_color = "#9e2e2e"
 	minimal_player_age = 18
-	economic_power = 7
+	economic_power = 5
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/outsec)
@@ -144,7 +144,7 @@
 	supervisors = "the Outpost Leader"
 	selection_color = "#978035"
 	minimal_player_age = 18
-	economic_power = 7
+	economic_power = 5
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/outeng)
@@ -178,7 +178,7 @@
 	supervisors = "the Outpost Leader"
 	selection_color = "#029b97"
 	minimal_player_age = 18
-	economic_power = 7
+	economic_power = 4
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/outmed)

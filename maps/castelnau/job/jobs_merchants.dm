@@ -5,7 +5,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the invisible hand of the market"
-	minimal_player_age = 0
+	minimal_player_age = 21
+	economic_power = 18
 	selection_color = "#4f3e30"
 	allowed_branches = list(
 		/datum/mil_branch/ftu
@@ -47,7 +48,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief Merchant"
-	minimal_player_age = 0
+	minimal_player_age = 21
+	economic_power = 10
 	selection_color = "#755c48"
 	outfit_type = /decl/hierarchy/outfit/job/cheapskate/merchant
 	allowed_branches = list(
@@ -79,7 +81,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the FTU merchants"
-	minimal_player_age = 0
+	minimal_player_age = 22
+	economic_power = 6
 	selection_color = "#755c48"
 	outfit_type = /decl/hierarchy/outfit/job/cheapskate/security
 	allowed_branches = list(
