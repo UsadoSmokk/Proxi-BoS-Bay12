@@ -99,16 +99,14 @@
 	)
 
 
-/obj/structure/closet/secure_closet/forensics
+/obj/structure/closet/secure_closet/forensics_castelnau
 	name = "investigator's locker"
-	req_access = list(access_brig)
+	req_access = list(access_castelnau_detective)
 	closet_appearance = /decl/closet_appearance/secure_closet/castelnau/security/forensics
 
-/obj/structure/closet/secure_closet/forensics/WillContain()
+/obj/structure/closet/secure_closet/forensics_castelnau/WillContain()
 	return list(
 		/obj/item/clothing/gloves/forensic,
-		/obj/item/device/radio/headset/headset_sec,
-		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/clothing/head/helmet,
 		/obj/item/clothing/suit/armor/pcarrier/medium/security,
 		/obj/item/gunbox,

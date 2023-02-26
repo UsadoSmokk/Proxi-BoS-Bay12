@@ -124,8 +124,8 @@
 	supervisors = "the Senior Engineer"
 	selection_color = "#978035"
 
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_age = 7
 	ideal_character_age = 25
 	economic_power = 6

@@ -2,8 +2,8 @@
 	title = "Cargo Technician"
 	department = "Auxiliary"
 	department_flag = SUP
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Chief Merchant"
 	economic_power = 8
 	minimal_player_age = 7

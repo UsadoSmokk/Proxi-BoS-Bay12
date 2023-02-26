@@ -50,8 +50,8 @@
 	department_flag = MED
 	selection_color = "#029b97"
 
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Surgeon and the Coordinator"
 	economic_power = 7
 	ideal_character_age = 40

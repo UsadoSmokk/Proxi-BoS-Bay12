@@ -49,3 +49,162 @@
 	key = "8"
 
 
+/datum/nano_module/supply
+	admin_access = list(access_castelnau_cheapskate_cargo)
+
+///
+//SUIT STORAGE
+///
+
+/obj/machinery/suit_storage_unit/standard_unit/castelnau
+	suit= /obj/item/clothing/suit/space
+	helmet = /obj/item/clothing/head/helmet/space/fishbowl
+	tank = /obj/item/tank/oxygen
+	mask = /obj/item/clothing/mask/breath
+	req_access = list(access_castelnau_eva)
+
+/obj/machinery/suit_storage_unit/atmos/castelnau
+	name = "Atmospherics Voidsuit Storage Unit"
+	suit= /obj/item/clothing/suit/space/void/atmos
+	helmet = /obj/item/clothing/head/helmet/space/void/atmos
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/tank/oxygen
+	mask = /obj/item/clothing/mask/breath
+	req_access = list(access_castelnau_atmospherics)
+	islocked = 1
+
+/obj/machinery/suit_storage_unit/atmos/castelnau/alt
+	suit= /obj/item/clothing/suit/space/void/atmos/alt
+	helmet = /obj/item/clothing/head/helmet/space/void/atmos/alt
+
+/obj/machinery/suit_storage_unit/engineering/castelnau
+	name = "Engineering Voidsuit Storage Unit"
+	suit= /obj/item/clothing/suit/space/void/engineering
+	helmet = /obj/item/clothing/head/helmet/space/void/engineering
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/tank/oxygen
+	mask = /obj/item/clothing/mask/breath
+	req_access = list(access_castelnau_engineering)
+	islocked = 1
+
+/obj/machinery/suit_storage_unit/engineering/castelnau/alt
+	suit= /obj/item/clothing/suit/space/void/engineering/alt
+	helmet = /obj/item/clothing/head/helmet/space/void/engineering/alt
+	mask = /obj/item/clothing/mask/breath
+
+/obj/machinery/suit_storage_unit/engineering/castelnau/salvage
+	suit= /obj/item/clothing/suit/space/void/engineering/salvage
+	helmet = /obj/item/clothing/head/helmet/space/void/engineering/salvage
+	mask = /obj/item/clothing/mask/breath
+
+/obj/machinery/suit_storage_unit/medical/castelnau
+	name = "Medical Voidsuit Storage Unit"
+	suit= /obj/item/clothing/suit/space/void/medical
+	helmet = /obj/item/clothing/head/helmet/space/void/medical
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/tank/oxygen
+	mask = /obj/item/clothing/mask/breath
+	req_access = list(access_castelnau/medical)
+	islocked = 1
+
+/obj/machinery/suit_storage_unit/medical/castelnau/alt
+	suit= /obj/item/clothing/suit/space/void/medical/alt
+	helmet = /obj/item/clothing/head/helmet/space/void/medical/alt
+	mask = /obj/item/clothing/mask/breath
+
+/obj/machinery/suit_storage_unit/mining/castelnau
+	name = "Mining Voidsuit Storage Unit"
+	suit= /obj/item/clothing/suit/space/void/mining
+	helmet = /obj/item/clothing/head/helmet/space/void/mining
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/tank/oxygen
+	mask = /obj/item/clothing/mask/breath
+	req_access = list(access_castelnau_hangar)
+	islocked = 1
+
+/obj/machinery/suit_storage_unit/mining/castelnau/alt
+	suit= /obj/item/clothing/suit/space/void/mining/alt
+	helmet = /obj/item/clothing/head/helmet/space/void/mining/alt
+	mask = /obj/item/clothing/mask/breath
+
+/obj/machinery/suit_storage_unit/castelnau/security
+	name = "Security Voidsuit Storage Unit"
+	suit= /obj/item/clothing/suit/space/void/security
+	helmet = /obj/item/clothing/head/helmet/space/void/security
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/tank/oxygen
+	mask = /obj/item/clothing/mask/breath
+	req_access = list(access_castelnau_brig)
+	islocked = 1
+
+/obj/machinery/suit_storage_unit/security/castelnau/alt
+	suit= /obj/item/clothing/suit/space/void/security/alt
+	helmet = /obj/item/clothing/head/helmet/space/void/security/alt
+	mask = /obj/item/clothing/mask/breath
+
+///
+//SUIT CYCLERS
+///
+
+/obj/machinery/suit_cycler/engineering/castelnau
+	name = "Engineering suit cycler"
+	model_text = "Engineering"
+	req_access = list(access_castelnau_engineering)
+	available_modifications = list(/decl/item_modifier/space_suit/engineering, /decl/item_modifier/space_suit/atmos)
+	species = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_UNATHI) //Add Unathi when sprites exist for their suits.
+
+/obj/machinery/suit_cycler/engineering/castelnau/alt
+	available_modifications = list(
+		/decl/item_modifier/space_suit/engineering/alt,
+		/decl/item_modifier/space_suit/atmos/alt,
+		/decl/item_modifier/space_suit/hazard
+	)
+
+/obj/machinery/suit_cycler/mining/castelnau
+	name = "Mining suit cycler"
+	model_text = "Mining"
+	req_access = list(access_castelnau_hangar)
+	available_modifications = list(/decl/item_modifier/space_suit/mining)
+	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
+
+
+/obj/machinery/suit_cycler/salvage/castelnau
+	name = "Salvage suit cycler"
+	model_text = "Salvage"
+	req_access = list()
+	available_modifications = list(/decl/item_modifier/space_suit/salvage)
+	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
+
+/obj/machinery/suit_cycler/security/castelnau
+	name = "Security suit cycler"
+	model_text = "Security"
+	req_access = list(access_castelnau_brig)
+	available_modifications = list(/decl/item_modifier/space_suit/security, /decl/item_modifier/space_suit/security/alt)
+	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
+
+/obj/machinery/suit_cycler/security/castelnau/alt
+	available_modifications = list(/decl/item_modifier/space_suit/security/alt)
+
+/obj/machinery/suit_cycler/medical/castelnau
+	name = "Medical suit cycler"
+	model_text = "Medical"
+	req_access = list(access_castelnau_medical)
+	available_modifications = list(/decl/item_modifier/space_suit/medical)
+	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
+
+/obj/machinery/suit_cycler/medical/castelnau/alt
+	available_modifications = list(/decl/item_modifier/space_suit/medical/alt)
+
+/obj/machinery/suit_cycler/pilot/castelnau
+	name = "Pilot suit cycler"
+	model_text = "Pilot"
+	req_access = list()
+	available_modifications = list(/decl/item_modifier/space_suit/pilot)
+	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
+
+/obj/machinery/suit_cycler/command/castelnau
+	name = "Command suit cycler"
+	model_text = "Command"
+	req_access = list(access_castelnau_bridge)
+	available_modifications = list(/decl/item_modifier/space_suit/command)
+	species = list(SPECIES_HUMAN,SPECIES_SKRELL)

@@ -52,18 +52,16 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/syndi
 	uniform = /obj/item/clothing/under/syndicorp
 	shoes = /obj/item/clothing/shoes/dutyboots
-	l_hand = /obj/item/card/id/syndipass
+	r_pocket = /obj/item/card/id/syndipass
 
 /decl/hierarchy/outfit/job/castelnau/syndi/arbites
 	name = OUTFIT_JOB_NAME("Arbites Outfit")
 	uniform = /obj/item/clothing/under/syndicorp/arbites
 	glasses = /obj/item/clothing/glasses/hud/security/prot
 	l_pocket = /obj/item/device/flash
-	r_pocket = /obj/item/handcuffs
 
 /decl/hierarchy/outfit/job/castelnau/syndi/army
 	name = OUTFIT_JOB_NAME("Corporate Army Outfit")
 	uniform = /obj/item/clothing/under/syndicorp/army
 	glasses = /obj/item/clothing/glasses/hud/security/prot
 	l_pocket = /obj/item/device/flash
-	r_pocket = /obj/item/handcuffs

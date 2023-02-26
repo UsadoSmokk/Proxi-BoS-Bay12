@@ -2498,17 +2498,13 @@
 	name = "plating"
 	},
 /area/centcom/living)
-"auo" = (
-/obj/effect/paint/silver,
-/turf/simulated/wall/r_titanium,
-/area/supply/dock)
 "auq" = (
-/obj/structure/shuttle/engine/heater{
-	dir = 1
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id_tag = "supply_shuttle";
+	name = "Supply Drone Shutters"
 	},
-/obj/structure/window/reinforced,
-/obj/effect/paint/silver,
-/turf/simulated/wall/r_titanium,
+/turf/simulated/floor/plating,
 /area/supply/dock)
 "aus" = (
 /obj/effect/decal/cleanable/blood,
@@ -2527,19 +2523,14 @@
 	},
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/administration/centcom)
-"auw" = (
+"auy" = (
+/obj/effect/paint/silver,
+/obj/effect/paint_stripe/brown,
 /obj/machinery/button/blast_door{
 	id_tag = "supply_shuttle";
 	name = "Supply Drone Shutter Control"
 	},
-/obj/effect/paint/silver,
 /turf/simulated/wall/r_titanium,
-/area/supply/dock)
-"auy" = (
-/obj/machinery/light/spot{
-	dir = 1
-	},
-/turf/simulated/floor/plating,
 /area/supply/dock)
 "auz" = (
 /turf/simulated/floor/plating,
@@ -2614,15 +2605,6 @@
 	icon_state = "freezerfloor"
 	},
 /area/centcom/living)
-"auQ" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/door/blast/shutters{
-	dir = 4;
-	id_tag = "supply_shuttle";
-	name = "Supply Drone Shutters"
-	},
-/turf/simulated/floor/plating,
-/area/supply/dock)
 "auR" = (
 /obj/machinery/light{
 	dir = 8
@@ -2836,17 +2818,6 @@
 	icon_state = "white"
 	},
 /area/centcom/living)
-"avB" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/showcase{
-	desc = "A self-contained autopilot that controls supply drones.";
-	icon_state = "comm_server";
-	name = "Supply Drone Virtual Intelligence"
-	},
-/turf/simulated/floor/plating,
-/area/supply/dock)
 "avD" = (
 /obj/structure/lattice,
 /turf/space,
@@ -11193,6 +11164,10 @@
 	},
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"dZg" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/simulated/floor/plating,
+/area/supply/dock)
 "dZC" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
@@ -11229,6 +11204,12 @@
 /obj/machinery/vending/engineering,
 /turf/unsimulated/floor/plating,
 /area/centcom/evac)
+"eNJ" = (
+/obj/machinery/light/spot{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/supply/dock)
 "eRk" = (
 /obj/structure/table/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
@@ -11289,6 +11270,26 @@
 	icon_state = "wood_broken4"
 	},
 /area/holodeck/source_temple)
+"gGx" = (
+/obj/structure/showcase{
+	desc = "A self-contained autopilot that controls supply drones.";
+	icon_state = "comm_server";
+	name = "Supply Drone Virtual Intelligence"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/supply/dock)
+"gJD" = (
+/obj/structure/shuttle/engine/heater,
+/obj/effect/paint/silver,
+/obj/effect/paint_stripe/brown,
+/turf/simulated/wall/r_titanium,
+/area/supply/dock)
 "hzB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -11374,7 +11375,9 @@
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
 "jlA" = (
-/obj/machinery/light/spot,
+/obj/machinery/light/spot{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/supply/dock)
 "joZ" = (
@@ -11763,10 +11766,9 @@
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
 "rxE" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 1
-	},
-/turf/simulated/floor/plating,
+/obj/effect/paint/silver,
+/obj/effect/paint_stripe/brown,
+/turf/simulated/wall/r_titanium,
 /area/supply/dock)
 "rIb" = (
 /obj/structure/table/rack/holorack,
@@ -26416,14 +26418,14 @@ aab
 aab
 atx
 atR
-atR
-auo
-auw
-auQ
-auQ
-auQ
-auw
-auo
+rxE
+rxE
+rxE
+rxE
+rxE
+rxE
+rxE
+rxE
 atR
 atR
 atx
@@ -26619,14 +26621,14 @@ aab
 atx
 atR
 rxE
-auo
 auz
 auz
+jlA
 auz
 auz
-auz
-auo
-auo
+gGx
+gJD
+dZg
 atR
 atx
 aab
@@ -26820,15 +26822,15 @@ aab
 aab
 atx
 atR
-rxE
 auq
-auy
 auz
 auz
 auz
-jlA
-auo
-auo
+auz
+auz
+auz
+rxE
+auz
 atR
 atx
 aab
@@ -27022,15 +27024,15 @@ aab
 aab
 atx
 atR
-rxE
 auq
+auz
 auz
 auz
 auX
 auz
 auz
-avB
-auo
+rxE
+auz
 atR
 atx
 aab
@@ -27224,15 +27226,15 @@ aab
 aab
 atx
 atR
-rxE
-auo
+auy
+auz
+auz
+eNJ
 auz
 auz
 auz
-auz
-auz
-auo
-auo
+gJD
+dZg
 atR
 atx
 aab
@@ -27426,14 +27428,14 @@ aab
 aab
 atx
 atR
-atR
-auo
-auw
-auQ
-auQ
-auQ
-auw
-auo
+rxE
+rxE
+rxE
+rxE
+rxE
+rxE
+rxE
+rxE
 atR
 atR
 atx
