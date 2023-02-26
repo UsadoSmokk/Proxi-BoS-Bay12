@@ -114,8 +114,8 @@
 	                    SKILL_WEAPONS     = SKILL_BASIC,
 	                    SKILL_FORENSICS   = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
+	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
+	                    SKILL_WEAPONS     = SKILL_EXPERT,
 	                    SKILL_FORENSICS   = SKILL_MAX)
 	access = list(
 	access_castelnau_command,

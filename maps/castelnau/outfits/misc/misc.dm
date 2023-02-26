@@ -31,6 +31,7 @@
 	suit = /obj/item/clothing/suit/storage/par/yak
 	belt = /obj/item/storage/belt/holster/sheath/yakuza
 	l_hand = /obj/item/clothingbag/yakuza
+	l_pocket = /obj/item/paper/yakuza
 
 /decl/hierarchy/outfit/job/castelnau/terran
 	name = OUTFIT_JOB_NAME("Independent Navy - Utility")
@@ -65,3 +66,13 @@
 	uniform = /obj/item/clothing/under/syndicorp/army
 	glasses = /obj/item/clothing/glasses/hud/security/prot
 	l_pocket = /obj/item/device/flash
+
+/decl/hierarchy/outfit/job/castelnau/wanderer
+	name = OUTFIT_JOB_NAME("Wanderer Outfit")
+	uniform = /obj/item/clothing/under/frontier
+	head = /obj/item/clothing/head/cowboy_hat
+	shoes = /obj/item/clothing/shoes/dress
+	pda_type = /obj/item/modular_computer/pda
+	id_types = list()
+	l_ear = null
+	r_pocket = /obj/item/device/flashlight

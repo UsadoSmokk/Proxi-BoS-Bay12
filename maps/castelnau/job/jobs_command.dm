@@ -19,7 +19,7 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
 
-	skill_points = 25
+	skill_points = 30
 
 
 	access = list(

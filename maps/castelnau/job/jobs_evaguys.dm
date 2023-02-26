@@ -53,10 +53,13 @@
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(/datum/mil_rank/reg= /decl/hierarchy/outfit/job/castelnau/reg/outlead)
-	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
-						SKILL_PILOT       = SKILL_ADEPT)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+						SKILL_EVA	     = SKILL_ADEPT,
+						SKILL_PILOT       = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+						SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT)
 
 	skill_points = 20
 
@@ -113,10 +116,15 @@
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/outsec)
-	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
-						SKILL_PILOT       = SKILL_ADEPT)
+	min_skill = list(
+						SKILL_EVA	     = SKILL_ADEPT,
+						SKILL_COMBAT      = SKILL_BASIC,
+						SKILL_WEAPONS     = SKILL_BASIC,
+	                    SKILL_HAULING     = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+						SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT)
 
 	skill_points = 20
 
@@ -148,10 +156,24 @@
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/outeng)
-	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
-						SKILL_PILOT       = SKILL_ADEPT)
+	min_skill = list(
+						SKILL_EVA	     = SKILL_ADEPT,
+						SKILL_COMBAT      = SKILL_BASIC,
+						SKILL_WEAPONS     = SKILL_BASIC,
+						SKILL_COMPUTER     = SKILL_BASIC,
+	                    SKILL_EVA          = SKILL_BASIC,
+	                    SKILL_CONSTRUCTION = SKILL_ADEPT,
+	                    SKILL_ELECTRICAL   = SKILL_BASIC,
+	                    SKILL_ATMOS        = SKILL_BASIC,
+	                    SKILL_ENGINES      = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+						SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT,
+						SKILL_CONSTRUCTION = SKILL_EXPERT,
+	                    SKILL_ELECTRICAL   = SKILL_EXPERT,
+	                    SKILL_ATMOS        = SKILL_EXPERT,
+	                    SKILL_ENGINES      = SKILL_EXPERT)
 
 	skill_points = 20
 
@@ -182,12 +204,19 @@
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(/datum/mil_rank/reg = /decl/hierarchy/outfit/job/castelnau/reg/outmed)
-	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
-						SKILL_PILOT       = SKILL_ADEPT)
+	min_skill = list(	SKILL_EVA	     = SKILL_ADEPT,
+	                    SKILL_MEDICAL = SKILL_BASIC,
+	                    SKILL_ANATOMY = SKILL_BASIC,
+	                    SKILL_CHEMISTRY = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+						SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT,
+	                    SKILL_MEDICAL = SKILL_MAX,
+	                    SKILL_ANATOMY = SKILL_MAX,
+	                    SKILL_CHEMISTRY = SKILL_MAX)
 
-	skill_points = 20
+	skill_points = 15
 
 
 	access = list(

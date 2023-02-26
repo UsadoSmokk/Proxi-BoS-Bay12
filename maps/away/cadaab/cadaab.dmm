@@ -6,10 +6,11 @@
 "ap" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/gas)
 "aq" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
 "ar" = (/obj/effect/paint/silver,/turf/simulated/wall/concrete,/area/cadaab/shahtinsk/med)
+"at" = (/obj/effect/landmark/start{name = "Wanderer"},/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "aw" = (/obj/structure/closet/tent,/obj/item/reagent_containers/food/drinks/cans/waterbottle,/obj/item/reagent_containers/food/drinks/cans/waterbottle,/obj/item/gun/projectile/pistol/holdout,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/desert)
 "ax" = (/obj/effect/floor_decal/inaks/road_border{dir = 10},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
 "aB" = (/obj/random/tool,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/gas)
-"aH" = (/obj/machinery/door/airlock/multi_tile/medical{name = "Surgery"},/obj/effect/floor_decal/corner/paleblue/mono,/turf/simulated/floor/tiled/white/monotile,/area/cadaab/outpost/med)
+"aH" = (/obj/machinery/door/airlock/multi_tile/medical{dir = 8; name = "Surgery"},/obj/effect/floor_decal/corner/paleblue/mono,/turf/simulated/floor/tiled/white/monotile,/area/cadaab/outpost/med)
 "aN" = (/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/effect/floor_decal/corner/red/diagonal,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/sec)
 "aP" = (/obj/effect/floor_decal/corner/black/diagonal,/turf/simulated/floor/tiled/freezer,/area/cadaab/shahtinsk/canteen)
 "aS" = (/obj/machinery/recharger/wallcharger{dir = 4; pixel_x = -24},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/sec/armory)
@@ -35,7 +36,7 @@
 "bX" = (/obj/random/obstruction,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "bZ" = (/obj/machinery/light/small/red{dir = 4},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/cadaab/outpost/eng)
 "cb" = (/obj/structure/table/rack,/obj/item/rcd_ammo,/obj/item/rcd_ammo,/obj/item/rcd/disprcd,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/sec)
-"ce" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/effect/floor_decal/carpet/blue,/turf/simulated/floor/wood,/area/cadaab/caves)
+"ce" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/effect/floor_decal/carpet/blue,/obj/random/biggun,/obj/item/spacecash/bundle/c1000,/obj/item/spacecash/bundle/c200,/turf/simulated/floor/wood,/area/cadaab/caves)
 "ck" = (/obj/structure/table/glass,/obj/effect/floor_decal/corner/black/diagonal,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/item/trash/tray,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
 "cl" = (/obj/structure/table/reinforced,/obj/item/clothing/head/cowboy_hat/wide/black,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/gas)
 "cm" = (/obj/structure/curtain/black{pixel_x = 32},/obj/structure/bed/chair/wood/walnut{dir = 1},/turf/simulated/floor/wood/walnut,/area/cadaab/outpost/living)
@@ -70,6 +71,7 @@
 "dI" = (/obj/structure/bed/chair/office/dark{dir = 1},/obj/effect/floor_decal/corner/red/diagonal,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/sec)
 "dJ" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/random/single/playing_cards,/turf/simulated/floor/tiled/freezer,/area/cadaab/shahtinsk/canteen)
 "dK" = (/obj/structure/curtain/black{pixel_y = -32},/obj/structure/table/standard,/obj/item/tableflag/antar/iccg,/turf/simulated/floor/wood/walnut,/area/cadaab/outpost/living)
+"dM" = (/obj/structure/table/woodentable,/obj/item/spacecash/bundle/c1000,/turf/simulated/floor/carpet,/area/cadaab/caves/bunker/living/bunk)
 "dQ" = (/obj/structure/curtain/open{pixel_y = 32},/obj/effect/floor_decal/corner/paleblue/diagonal,/obj/structure/bed/roller,/turf/simulated/floor/tiled/white,/area/cadaab/outpost/med)
 "dZ" = (/obj/effect/floor_decal/borderfloorblack,/obj/effect/floor_decal/industrial/warning,/obj/structure/railing/mapped,/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/caves)
 "ea" = (/obj/structure/hygiene/shower,/obj/structure/curtain/open/shower,/turf/simulated/floor/tiled/freezer,/area/cadaab/outpost/living)
@@ -131,11 +133,10 @@
 "gA" = (/obj/effect/floor_decal/industrial/warning{dir = 4},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
 "gC" = (/obj/machinery/door/unpowered/simple/walnut{dir = 8},/turf/simulated/floor/lino,/area/cadaab/shahtinsk/med)
 "gD" = (/obj/structure/table/marble,/obj/machinery/chemical_dispenser/bar_alc/full{dir = 4},/obj/effect/floor_decal/industrial/warning/corner{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/syndishuttle)
-"gI" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/effect/floor_decal/inaks,/obj/structure/table/steel,/obj/item/pizzabox/meat,/obj/item/pizzabox/meat,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
+"gI" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/effect/floor_decal/inaks,/obj/structure/table/steel,/obj/item/pizzabox/meat,/obj/item/pizzabox/meat,/obj/effect/decal/cleanable/dirt,/obj/item/spacecash/bundle/c20,/obj/item/spacecash/bundle/c100,/obj/item/spacecash/bundle/c100,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "gL" = (/obj/effect/floor_decal/corner/paleblue/border{dir = 9},/obj/structure/virology/incubator_off,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
 "gM" = (/obj/structure/curtain/medical,/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
 "gO" = (/obj/structure/table/marble,/obj/item/material/knife/hook,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/can)
-"gQ" = (/obj/machinery/telecomms/bus/preset_one,/obj/effect/floor_decal/industrial/warning/fulltile,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "gR" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/ore_box,/obj/effect/floor_decal/industrial/outline,/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/caves)
 "gX" = (/obj/effect/floor_decal/corner/lightgrey/diagonal,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "gZ" = (/obj/structure/hygiene/toilet{dir = 1},/turf/simulated/floor/tiled/freezer,/area/cadaab/outpost/living)
@@ -150,6 +151,7 @@
 "hw" = (/mob/living/simple_animal/hostile/meat/horrorminer,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "hy" = (/obj/effect/floor_decal/corner/lightgrey/diagonal,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/landmark/corpse/doctor,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "hz" = (/obj/structure/noose,/obj/effect/landmark/corpse/doctor,/turf/simulated/floor/tiled/dark,/area/cadaab/desert)
+"hC" = (/obj/item/pickaxe/hammer,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "hP" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/syndishuttle)
 "hQ" = (/obj/structure/closet/crate/trashcart,/obj/random/contraband,/obj/random/bomb_supply,/obj/machinery/light/small{dir = 1},/turf/simulated/floor/exoplanet/concrete,/area/cadaab/shahtinsk/gas)
 "hR" = (/obj/structure/cadaab,/obj/effect/floor_decal/inaks/road_border,/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
@@ -196,7 +198,7 @@
 "ki" = (/obj/machinery/door/airlock/external/bolted_open{frequency = 1984; id_tag = "syndi_ext"},/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/outpost/syndishuttle)
 "kj" = (/obj/effect/floor_decal/borderfloor,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "kl" = (/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/cadaab/caves/bunker)
-"km" = (/obj/structure/table/reinforced,/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
+"km" = (/obj/structure/table/reinforced,/obj/item/spacecash/bundle/c100,/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
 "kn" = (/obj/structure/table/standard,/obj/machinery/recharger,/turf/simulated/floor/wood/walnut,/area/cadaab/outpost/living)
 "ko" = (/obj/effect/floor_decal/inaks{dir = 8},/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "kp" = (/obj/structure/inaks_decor/lamppost,/obj/structure/sign/double/barsign{pixel_y = 30},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
@@ -210,8 +212,8 @@
 "kG" = (/obj/item/stool/padded,/obj/item/clothing/suit/storage/hooded/wintercoat/miner,/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
 "kH" = (/obj/effect/floor_decal/inaks/road_border{dir = 4},/obj/structure/reagent_dispensers/fueltank/cadaab{pixel_x = -7},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
 "kI" = (/obj/structure/bed/chair/wood/walnut,/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
-"kJ" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/carpet,/area/cadaab/caves/bunker/living/bunk)
-"kL" = (/obj/structure/closet/crate,/obj/random/firstaid,/obj/random/firstaid,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/med)
+"kJ" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/mob/living/simple_animal/hostile/meat/strippedhuman,/turf/simulated/floor/carpet,/area/cadaab/caves/bunker/living/bunk)
+"kL" = (/obj/structure/closet/crate,/obj/random/firstaid,/obj/random/firstaid,/obj/item/spacecash/bundle/c500,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/med)
 "kM" = (/obj/effect/floor_decal/borderfloorblack{dir = 8},/obj/effect/floor_decal/industrial/warning{dir = 8},/obj/structure/railing/mapped{dir = 8},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/caves)
 "kO" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/floor_decal/industrial/warning{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/syndishuttle)
 "kQ" = (/obj/effect/landmark/start{name = "Outpost Leader"},/turf/simulated/floor/tiled/techmaint,/area/cadaab/outpost/teleport)
@@ -290,20 +292,19 @@
 "nP" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/structure/fitness/punchingbag,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "nQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/carpet/red,/area/cadaab/outpost/syndishuttle)
 "nT" = (/obj/effect/floor_decal/corner/red/half,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
-"nX" = (/obj/structure/table/marble,/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
+"nX" = (/obj/structure/table/marble,/obj/item/spacecash/bundle/c500,/obj/item/spacecash/bundle/c500,/obj/item/spacecash/bundle/c500,/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
 "ob" = (/obj/effect/floor_decal/borderfloor{dir = 8},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "of" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "oi" = (/obj/machinery/washing_machine,/turf/simulated/floor/tiled/dark,/area/cadaab/desert)
 "on" = (/obj/effect/paint/merc,/turf/simulated/wall/concrete,/area/cadaab/shahtinsk/canteen)
-"oq" = (/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/telecomms/processor/preset_four,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "os" = (/obj/structure/bookcase/manuals/medical,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/med)
 "ow" = (/obj/structure/fake_stairs/single{dir = 8},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "ox" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/effect/floor_decal/inaks,/obj/machinery/portable_atmospherics/reagent_sublimator,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "oy" = (/obj/effect/paint/merc,/obj/effect/paint_stripe/yellow,/turf/simulated/wall,/area/cadaab/caves)
-"oA" = (/obj/structure/table/reinforced,/obj/item/reagent_containers/glass/bucket/wood,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/gas)
+"oA" = (/obj/structure/table/reinforced,/obj/item/reagent_containers/glass/bucket/wood,/obj/item/spacecash/bundle/c200,/obj/item/spacecash/bundle/c200,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/gas)
 "oF" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
 "oH" = (/turf/simulated/wall/concrete,/area/cadaab/shahtinsk/gas)
-"oL" = (/obj/structure/closet/secure_closet/guncabinet,/turf/simulated/floor/tiled/dark,/area/cadaab/shahtinsk/gas)
+"oL" = (/obj/structure/closet/secure_closet/guncabinet,/obj/item/spacecash/bundle/c200,/obj/item/spacecash/bundle/c200,/obj/item/gun/projectile/pistol/military/alt/solar/cabinet,/turf/simulated/floor/tiled/dark,/area/cadaab/shahtinsk/gas)
 "oP" = (/obj/item/trash/weebonuts,/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "oR" = (/obj/structure/table/woodentable,/turf/simulated/floor/carpet,/area/cadaab/caves/bunker/living/bunk)
 "oS" = (/obj/structure/closet/crate/trashcart,/obj/effect/decal/cleanable/dirt,/obj/item/organ/external/leg/right,/obj/item/organ/external/leg,/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
@@ -324,7 +325,7 @@
 "py" = (/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "pC" = (/obj/structure/fake_stairs/single{dir = 8},/turf/simulated/floor/inaks/dark_cafel,/area/cadaab/desert)
 "pE" = (/obj/item/remains/human,/obj/item/reagent_containers/spray/waterflower,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
-"pF" = (/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/telecomms/broadcaster/preset_right,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
+"pF" = (/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/telecomms/receiver/preset_right,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "pI" = (/obj/machinery/power/port_gen/pacman,/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "pJ" = (/obj/structure/table/reinforced,/obj/item/reagent_containers/food/condiment/small/packet/coffee,/obj/item/reagent_containers/food/condiment/small/packet/coffee,/obj/effect/floor_decal/corner/red/diagonal,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/sec)
 "pM" = (/obj/structure/table/reinforced,/obj/machinery/reagent_temperature{density = 0},/obj/machinery/light/small{dir = 4; icon_state = "bulb1"},/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
@@ -351,13 +352,13 @@
 "qw" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/item/trash/cigbutt,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "qC" = (/turf/simulated/wall/r_wall,/area/cadaab/caves/bunker)
 "qD" = (/turf/simulated/wall/r_wall,/area/cadaab/caves/bunker/living/can)
-"qF" = (/obj/structure/closet/crate,/obj/item/cell/standard,/obj/item/cell/standard,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/outpost/eng)
+"qF" = (/obj/structure/closet/crate,/obj/item/cell/standard,/obj/item/cell/standard,/obj/item/stock_parts/circuitboard/telecomms/server,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/outpost/eng)
 "qG" = (/obj/machinery/cooker/grill,/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/can)
 "qH" = (/obj/structure/bed/chair/wood/walnut{dir = 1},/obj/machinery/light/small,/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
 "qO" = (/obj/structure/hygiene/shower{dir = 4; pixel_x = -5},/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/caves/bunker)
-"qP" = (/obj/effect/floor_decal/corner/lightgrey/diagonal,/obj/machinery/power/apc{dir = 8; locked = 0; name = "south bump"; pixel_x = -24; req_access = list()},/obj/structure/cable/cyan{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
+"qP" = (/obj/effect/floor_decal/corner/lightgrey/diagonal,/obj/machinery/power/apc{dir = 8; locked = 0; name = "south bump"; pixel_x = -24; req_access = list()},/obj/structure/cable/cyan{d2 = 4; icon_state = "0-4"},/mob/living/simple_animal/hostile/meat/horrorsmall,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "qR" = (/obj/random/lootable_mgsbox,/obj/item/storage/mgsbox,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/outpost/eng)
-"qS" = (/obj/structure/closet/crate,/obj/random/maintenance,/obj/random/maintenance,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/outpost/eng)
+"qS" = (/obj/structure/closet/crate,/obj/random/maintenance,/obj/random/maintenance,/obj/item/stock_parts/circuitboard/telecomms/receiver,/obj/item/stock_parts/circuitboard/telecomms/broadcaster,/obj/item/stock_parts/circuitboard/telecomms/hub,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/outpost/eng)
 "qV" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/structure/closet/crate,/obj/item/reagent_containers/chem_disp_cartridge/ale,/obj/item/reagent_containers/chem_disp_cartridge/cafe_latte,/obj/item/reagent_containers/chem_disp_cartridge/chai_tea,/obj/item/reagent_containers/chem_disp_cartridge/cognac,/obj/item/reagent_containers/chem_disp_cartridge/lemon_lime,/obj/item/reagent_containers/chem_disp_cartridge/tequila,/obj/item/reagent_containers/chem_disp_cartridge/vermouth,/obj/item/reagent_containers/chem_disp_cartridge/vodka,/obj/item/reagent_containers/chem_disp_cartridge/mead,/obj/item/reagent_containers/chem_disp_cartridge/gin,/turf/simulated/floor/tiled/freezer,/area/cadaab/shahtinsk/canteen)
 "qZ" = (/obj/structure/bed,/obj/structure/curtain/black{pixel_x = 32},/obj/item/bedsheet/blue,/turf/simulated/floor/lino,/area/cadaab/outpost/living)
 "ra" = (/obj/effect/floor_decal/carpet/blue{dir = 1},/obj/structure/displaycase,/turf/simulated/floor/wood,/area/cadaab/caves)
@@ -366,7 +367,7 @@
 "rn" = (/obj/structure/closet/crate/secure/biohazard,/obj/effect/floor_decal/industrial/warning{dir = 4; icon_state = "danger"},/mob/living/simple_animal/slime,/turf/simulated/floor/plating,/area/cadaab/caves/bunker)
 "ro" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
 "rs" = (/obj/effect/decal/cleanable/flour,/turf/simulated/floor/tiled/freezer,/area/cadaab/caves/bunker/living/can)
-"ry" = (/obj/structure/closet/gimmick/tacticool,/obj/effect/floor_decal/corner/red/three_quarters{dir = 8},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
+"ry" = (/obj/effect/floor_decal/corner/red/three_quarters{dir = 8},/obj/structure/closet/secure_closet/guncabinet,/obj/random/lilgun,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "rA" = (/obj/machinery/jukebox,/turf/simulated/floor/carpet/red,/area/cadaab/outpost/syndishuttle)
 "rB" = (/obj/structure/table/reinforced,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/syndishuttle)
 "rC" = (/obj/structure/table/woodentable/walnut,/obj/item/storage/box/matches,/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
@@ -397,9 +398,10 @@
 "sC" = (/obj/item/toy/plushie/masyunya/sima,/turf/simulated/floor/inaks,/area/cadaab/shahtinsk/gas)
 "sD" = (/obj/effect/floor_decal/corner/paleblue/border{dir = 10},/obj/structure/reagent_dispensers/watertank,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
 "sG" = (/obj/effect/floor_decal/inaks/road_border,/obj/effect/decal/cleanable/antar/gaia{pixel_y = 32},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
-"sI" = (/obj/structure/bed,/obj/item/bedsheet/mime,/obj/structure/curtain/open/bed,/obj/effect/floor_decal/carpet/red{dir = 4},/obj/effect/floor_decal/carpet/red,/obj/effect/floor_decal/carpet/red{dir = 6},/obj/machinery/light/small{dir = 4; icon_state = "bulb1"},/turf/simulated/floor/carpet/red,/area/cadaab/caves/bunker/living/bunk)
+"sI" = (/obj/structure/bed,/obj/item/bedsheet/mime,/obj/structure/curtain/open/bed,/obj/effect/floor_decal/carpet/red{dir = 4},/obj/effect/floor_decal/carpet/red,/obj/effect/floor_decal/carpet/red{dir = 6},/obj/machinery/light/small{dir = 4; icon_state = "bulb1"},/obj/item/spacecash/bundle/c1000,/obj/item/spacecash/bundle/c1000,/turf/simulated/floor/carpet/red,/area/cadaab/caves/bunker/living/bunk)
 "sL" = (/obj/structure/closet/tent,/obj/item/storage/mrebag,/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/desert)
 "sM" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/steelfence,/turf/simulated/floor/tiled/techfloor,/area/cadaab/desert)
+"sN" = (/obj/structure/closet/tent,/obj/item/storage/mrebag/dessert,/obj/item/reagent_containers/food/drinks/cans/waterbottle,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/desert)
 "sP" = (/obj/item/reagent_containers/glass/bucket,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "sS" = (/obj/structure/fuel_port{pixel_y = 32},/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/desert)
 "sT" = (/obj/machinery/light/small,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
@@ -410,14 +412,13 @@
 "ta" = (/obj/effect/floor_decal/inaks/asphalt_hole{dir = 1},/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "tb" = (/obj/item/toy/plushie/masyunya,/turf/simulated/floor/inaks,/area/cadaab/shahtinsk/gas)
 "te" = (/obj/structure/bedsheetbin,/obj/structure/table/reinforced,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/bunk)
-"th" = (/obj/effect/floor_decal/corner_techfloor_grid{dir = 5},/obj/machinery/telecomms/bus/preset_four,/obj/effect/floor_decal/industrial/warning/fulltile,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "ti" = (/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/wood,/area/cadaab/caves)
 "tk" = (/obj/structure/table/glass,/obj/structure/flora/pottedplant/deskfern,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/med)
 "to" = (/obj/item/clothing/head/helmet/space/void/mining/alt,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/desert)
 "tq" = (/obj/effect/spider/stickyweb,/obj/effect/spider/cocoon,/obj/item/archaeological_find/material/exotic,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "tu" = (/obj/effect/floor_decal/corner/paleblue/border{dir = 8},/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
 "tv" = (/obj/machinery/computer/teleporter{dir = 1},/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techmaint,/area/cadaab/outpost/teleport)
-"tx" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/lino,/area/cadaab/outpost/living)
+"tx" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/button/blast_door{dir = 4; id_tag = "sec_outpost"; name = "Security"; pixel_x = -25},/turf/simulated/floor/lino,/area/cadaab/outpost/living)
 "tK" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/blast/regular/open{id_tag = "tp_outpost"; name = "Teleporter"},/turf/simulated/wall,/area/cadaab/caves/bunker)
 "tP" = (/obj/machinery/door/airlock/highsecurity{name = "Armory"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/outpost/sec/armory)
 "tQ" = (/obj/effect/floor_decal/industrial/warning,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/tiled/techfloor,/area/cadaab/caves)
@@ -427,7 +428,6 @@
 "tW" = (/obj/effect/floor_decal/corner/paleblue/diagonal,/obj/machinery/chem_master,/turf/simulated/floor/tiled/white,/area/cadaab/outpost/med)
 "tY" = (/obj/effect/floor_decal/corner/paleblue/bordercorner,/obj/machinery/smartfridge/secure/virology,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
 "tZ" = (/obj/effect/decal/cleanable/filth,/obj/machinery/light/small{dir = 4; icon_state = "bulb1"},/turf/simulated/floor/tiled/dark,/area/cadaab/shahtinsk/gas)
-"ua" = (/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/telecomms/processor/preset_two,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "ue" = (/obj/effect/floor_decal/corner/paleblue/border{dir = 4},/obj/structure/virology/centrifuge,/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
 "um" = (/obj/effect/floor_decal/industrial/warning{dir = 4; icon_state = "danger"},/turf/simulated/floor/plating,/area/cadaab/caves/bunker)
 "un" = (/obj/structure/bed/chair/wood,/obj/effect/floor_decal/carpet,/turf/simulated/floor/wood,/area/cadaab/caves/bunker/living/bunk)
@@ -478,13 +478,14 @@
 "wn" = (/obj/effect/paint/merc,/obj/effect/paint_stripe/red,/turf/simulated/wall/concrete,/area/cadaab/outpost/sec/armory)
 "wp" = (/obj/structure/bed/chair/armchair,/obj/effect/floor_decal/corner/black/diagonal,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
 "wq" = (/obj/structure/table/glass,/obj/effect/floor_decal/corner/black/diagonal,/obj/item/trash/plate,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
+"wr" = (/mob/living/simple_animal/hostile/meat/strippedhuman,/turf/simulated/floor/tiled/freezer,/area/cadaab/caves/bunker/living/can)
 "ws" = (/obj/machinery/cooker/oven,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/can)
 "wt" = (/obj/effect/floor_decal/corner/red/full,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "wy" = (/obj/structure/railing/mapped{dir = 1},/obj/structure/sign/warning/engineering_access{dir = 4; pixel_x = -38},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "wz" = (/obj/structure/table/gamblingtable,/obj/effect/decal/cleanable/cobweb2,/obj/random/single/playing_cards,/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
 "wA" = (/obj/structure/curtain/open/shower,/obj/structure/hygiene/shower{dir = 8; pixel_x = 3},/obj/random/soap,/turf/simulated/floor/tiled/freezer,/area/cadaab/caves/bunker/living/bunk)
 "wB" = (/obj/item/storage/mgsbox,/obj/random/lootable_mgsbox,/turf/simulated/floor/lino,/area/cadaab/outpost/living)
-"wD" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/outpost/sec)
+"wD" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "sec_outpost"; name = "Security"},/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/outpost/sec)
 "wK" = (/obj/structure/steelfence{dir = 4},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
 "wP" = (/turf/space,/area/space)
 "wQ" = (/obj/effect/floor_decal/inaks/road_border,/obj/structure/inaks_decor/lamppost{dir = 4},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
@@ -505,7 +506,7 @@
 "xp" = (/obj/machinery/door/unpowered/simple/walnut,/turf/simulated/floor/tiled/dark,/area/cadaab/shahtinsk/gas)
 "xq" = (/obj/machinery/camera,/obj/machinery/icecream_vat,/turf/simulated/floor/tiled/freezer,/area/cadaab/caves/bunker/living/can)
 "xs" = (/obj/effect/wallframe_spawn/reinforced,/obj/effect/paint/merc,/turf/simulated/floor/tiled/techfloor,/area/cadaab/shahtinsk/gas)
-"xu" = (/obj/machinery/door/airlock/multi_tile/civilian{dir = 8; name = "Security"},/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/outpost/sec)
+"xu" = (/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "sec_outpost"; name = "Security"},/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/outpost/sec)
 "xy" = (/obj/effect/wallframe_spawn/no_grille,/obj/effect/paint/merc,/turf/simulated/floor/wood/yew,/area/cadaab/outpost/living)
 "xA" = (/obj/structure/bed/sofa/beige/right,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/med)
 "xD" = (/obj/structure/cryofeed,/turf/simulated/floor/plating,/area/cadaab/caves/bunker/engi)
@@ -528,7 +529,7 @@
 "yx" = (/obj/effect/floor_decal/inaks/road_border{dir = 9},/obj/structure/inaks_decor/lamppost{dir = 8},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
 "yB" = (/turf/simulated/wall/r_wall,/area/cadaab/caves/bunker/engi)
 "yC" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/catwalk,/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/plating,/area/cadaab/outpost/eng)
-"yF" = (/obj/structure/table/steel,/obj/item/gun/projectile/pistol/military/alt/solar/cabinet,/turf/simulated/floor/tiled/dark,/area/cadaab/shahtinsk/gas)
+"yF" = (/obj/structure/table/steel,/turf/simulated/floor/tiled/dark,/area/cadaab/shahtinsk/gas)
 "yG" = (/obj/structure/table/reinforced,/obj/machinery/recharger,/turf/simulated/floor/tiled/techmaint,/area/cadaab/outpost/teleport)
 "yK" = (/obj/machinery/light/small{dir = 4; icon_state = "bulb1"},/obj/effect/floor_decal/corner/paleblue/border{dir = 4},/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
 "yN" = (/obj/effect/floor_decal/corner/paleblue/mono,/obj/machinery/door/airlock/virology{name = "Cemetery"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white/monotile,/area/cadaab/outpost/med)
@@ -536,7 +537,7 @@
 "yQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/syndishuttle)
 "yS" = (/obj/effect/floor_decal/inaks/road_border{dir = 1},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
 "yV" = (/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 1},/obj/machinery/recharge_station,/obj/effect/floor_decal/industrial/outline/grey,/turf/simulated/floor/tiled/techmaint,/area/cadaab/outpost/teleport)
-"yY" = (/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/telecomms/processor/preset_one,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
+"yZ" = (/obj/structure/closet/tent,/obj/item/reagent_containers/food/drinks/cans/waterbottle,/obj/item/storage/mrebag/menu4,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "za" = (/obj/item/storage/mgsbox/loot_engineering,/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/caves)
 "zd" = (/obj/machinery/vending/medical{dir = 4},/obj/effect/floor_decal/corner/paleblue/diagonal,/obj/effect/floor_decal/industrial/outline/blue,/obj/machinery/light_switch{dir = 4; pixel_x = -24; pixel_y = 6},/turf/simulated/floor/tiled/white,/area/cadaab/outpost/med)
 "ze" = (/obj/structure/bed/chair/comfy,/obj/effect/decal/cleanable/generic,/turf/simulated/floor/tiled/dark,/area/cadaab/shahtinsk/gas)
@@ -556,6 +557,7 @@
 "zO" = (/obj/structure/curtain/black{pixel_x = 32},/obj/structure/table/standard,/obj/structure/flora/pottedplant/deskfern,/turf/simulated/floor/wood/walnut,/area/cadaab/outpost/living)
 "zS" = (/obj/effect/floor_decal/inaks,/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "zU" = (/obj/structure/table/woodentable,/obj/machinery/photocopier/faxmachine,/turf/simulated/floor/carpet,/area/cadaab/caves/bunker/living/bunk)
+"zX" = (/obj/effect/decal/cleanable/flour,/mob/living/simple_animal/hostile/meat/strippedhuman,/turf/simulated/floor/tiled/freezer,/area/cadaab/caves/bunker/living/can)
 "zY" = (/obj/effect/paint_stripe/red,/turf/simulated/wall,/area/cadaab/desert)
 "Af" = (/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/desert)
 "Ah" = (/obj/structure/filingcabinet/chestdrawer,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
@@ -611,7 +613,7 @@
 "Cr" = (/obj/structure/cadaab,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/desert)
 "Cx" = (/obj/effect/floor_decal/inaks{dir = 8},/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "Cz" = (/obj/effect/floor_decal/corner/paleblue/border{dir = 8},/obj/machinery/power/apc{dir = 8; locked = 0; name = "south bump"; pixel_x = -24; req_access = list()},/obj/structure/cable/cyan,/obj/structure/table/glass,/obj/item/virusdish/random,/obj/item/virusdish/random,/obj/item/virusdish/random,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
-"CB" = (/obj/structure/table/woodentable,/obj/machinery/light{dir = 8},/turf/simulated/floor/carpet,/area/cadaab/caves/bunker/living/bunk)
+"CB" = (/obj/structure/table/woodentable,/obj/machinery/light{dir = 8},/obj/item/spacecash/bundle/c100,/turf/simulated/floor/carpet,/area/cadaab/caves/bunker/living/bunk)
 "CD" = (/obj/effect/floor_decal/inaks{dir = 8},/obj/structure/closet/crate,/obj/item/reagent_containers/food/snacks/canned/beans,/obj/item/reagent_containers/food/snacks/canned/beans,/obj/item/reagent_containers/food/snacks/canned/caviar,/obj/item/reagent_containers/food/snacks/canned/caviar,/obj/item/reagent_containers/food/snacks/canned/tomato,/obj/item/reagent_containers/food/snacks/canned/tomato,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "CJ" = (/obj/structure/dogbed,/mob/living/simple_animal/hostile/retaliate/goose/doctor,/turf/simulated/floor/wood/maple,/area/cadaab/outpost/living)
 "CR" = (/obj/random/lootable_mgsbox,/turf/simulated/floor/lino,/area/cadaab/outpost/living)
@@ -667,6 +669,7 @@
 "Fo" = (/obj/effect/paint/merc,/obj/effect/paint_stripe/yellow,/turf/simulated/wall/concrete,/area/cadaab/outpost/eng)
 "Fq" = (/obj/structure/synthesized_instrument/synthesizer,/turf/simulated/floor/wood/walnut,/area/cadaab/outpost/living)
 "Fr" = (/obj/effect/floor_decal/inaks{dir = 8},/obj/effect/floor_decal/corner/white/border{dir = 4; pixel_x = -9},/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
+"Ft" = (/obj/effect/landmark/start{name = "Wanderer"},/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/desert)
 "Fv" = (/obj/effect/decal/cleanable/antar/text3{desc = "'Ну и на что ты надеялся?'"},/turf/simulated/floor/tiled/dark,/area/cadaab/desert)
 "Fw" = (/obj/structure/table/glass,/turf/simulated/floor/carpet/red,/area/cadaab/outpost/syndishuttle)
 "Fy" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/structure/flora/pottedplant/flower,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
@@ -742,16 +745,15 @@
 "IY" = (/obj/structure/table/gamblingtable,/obj/machinery/light/small{dir = 4; icon_state = "bulb1"},/obj/item/gun/projectile/revolver/improvised_revolver,/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
 "Jc" = (/obj/item/reagent_containers/glass/paint/white,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "Jf" = (/turf/simulated/mineral/cadaab,/area/cadaab/desert)
-"Jg" = (/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/telecomms/processor/preset_three,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "Jl" = (/obj/structure/flora/tree/cadaab,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/desert)
 "Jq" = (/obj/structure/ruins,/turf/simulated/floor/exoplanet/concrete,/area/cadaab/shahtinsk/gas)
 "Js" = (/obj/structure/railing/mapped{dir = 4; tag = "icon-railing0 (EAST)"},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "Jx" = (/obj/structure/table/rack,/obj/random/firstaid,/obj/machinery/light,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
 "Jy" = (/obj/structure/steelfence{pixel_x = -3},/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "JA" = (/obj/structure/ore_box,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
-"JB" = (/obj/effect/floor_decal/carpet{dir = 1},/obj/machinery/light{dir = 4},/turf/simulated/floor/wood,/area/cadaab/caves/bunker/living/bunk)
+"JB" = (/obj/effect/floor_decal/carpet{dir = 1},/obj/machinery/light{dir = 4},/obj/machinery/photocopier,/turf/simulated/floor/wood,/area/cadaab/caves/bunker/living/bunk)
 "JD" = (/obj/effect/bump_teleporter/fasttravel{id_target = "outpost_right"},/obj/effect/floor_decal/inaks/road_border{dir = 1},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
-"JH" = (/obj/structure/hygiene/toilet{dir = 1},/mob/living/simple_animal/hostile/retaliate/snake,/turf/simulated/floor/wood,/area/cadaab/desert)
+"JH" = (/obj/structure/hygiene/toilet{dir = 1},/turf/simulated/floor/wood,/area/cadaab/desert)
 "JK" = (/obj/machinery/door/blast/shutters{id_tag = "cargo_war"; name = "Cargo Warehouse"},/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "JM" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/lino,/area/cadaab/outpost/living)
 "JO" = (/obj/structure/curtain/medical,/obj/effect/floor_decal/corner/paleblue/border{dir = 4},/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
@@ -759,8 +761,9 @@
 "JX" = (/obj/machinery/door/airlock/multi_tile/civilian{name = "Security"},/obj/effect/floor_decal/corner/red/diagonal,/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/outpost/sec)
 "JY" = (/obj/structure/bed/roller/ironingboard,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/bunk)
 "Ke" = (/obj/effect/floor_decal/industrial/warning{dir = 8},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
+"Kf" = (/obj/structure/closet/crate,/obj/random/firstaid,/obj/random/firstaid,/obj/item/spacecash/bundle/c200,/obj/item/spacecash/bundle/c500,/turf/simulated/floor/lino,/area/cadaab/shahtinsk/med)
 "Kk" = (/obj/effect/floor_decal/inaks/road_border{dir = 1},/obj/effect/shuttle_landmark/nearshahtinsk,/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
-"Kl" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/can)
+"Kl" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/mob/living/simple_animal/hostile/meat/strippedhuman,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/can)
 "Km" = (/obj/structure/bed/chair/wood/walnut{dir = 1},/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
 "Kn" = (/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/bunk)
 "Kr" = (/obj/machinery/atmospherics/unary/tank/air,/obj/effect/floor_decal/industrial/warning/full,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
@@ -770,6 +773,7 @@
 "KF" = (/obj/effect/floor_decal/inaks{dir = 1},/obj/effect/floor_decal/inaks{dir = 8},/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "KI" = (/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "KK" = (/obj/effect/floor_decal/inaks/road_border{dir = 8},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
+"KL" = (/obj/effect/floor_decal/corner/black/diagonal,/mob/living/simple_animal/hostile/meat/horrorsmall,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
 "KM" = (/obj/effect/floor_decal/inaks{dir = 8},/obj/effect/floor_decal/inaks/asphalt_hole{dir = 8},/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "KV" = (/obj/effect/floor_decal/borderfloor{dir = 10},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "KX" = (/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/lino,/area/cadaab/outpost/living)
@@ -784,6 +788,7 @@
 "Lp" = (/obj/machinery/light/small{dir = 8; icon_state = "bulb1"},/obj/structure/ore_box,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "Lr" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/effect/decal/cleanable/ash,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "Lv" = (/obj/effect/bump_teleporter/fasttravel/end{id = "shahtinsk_left"},/obj/effect/floor_decal/inaks,/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
+"Lx" = (/obj/item/pickaxe/hammer,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/desert)
 "Ly" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/effect/floor_decal/inaks/asphalt_hole,/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "LC" = (/obj/effect/floor_decal/borderfloor{dir = 4},/obj/structure/bed/sofa/black/right{dir = 8},/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "LG" = (/obj/effect/landmark/start{name = "Outpost Engineer"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techmaint,/area/cadaab/outpost/teleport)
@@ -799,6 +804,7 @@
 "Mf" = (/obj/item/shovel,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "Mk" = (/obj/structure/curtain/open{pixel_y = -32},/obj/effect/floor_decal/corner/paleblue/diagonal,/turf/simulated/floor/tiled/white,/area/cadaab/outpost/med)
 "Ml" = (/obj/effect/floor_decal/industrial/warning/corner,/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
+"Mp" = (/mob/living/simple_animal/hostile/meat/horror,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
 "Mq" = (/obj/effect/paint/merc,/obj/effect/paint_stripe/blue,/turf/simulated/wall/r_wall,/area/cadaab/outpost/teleport)
 "Mr" = (/obj/effect/floor_decal/corner_techfloor_grid{dir = 5},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "Ms" = (/obj/machinery/door/airlock/hatch/maintenance,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
@@ -824,10 +830,12 @@
 "Ns" = (/obj/structure/bookcase/manuals/xenoarchaeology,/turf/simulated/floor/carpet,/area/cadaab/caves/bunker/living/bunk)
 "Nu" = (/turf/simulated/wall/r_wall,/area/cadaab/caves/bunker/medsci)
 "Nx" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/structure/table/marble,/obj/item/screwdriver,/obj/structure/hygiene/sink/modern,/turf/simulated/floor/tiled/freezer,/area/cadaab/shahtinsk/canteen)
-"Nz" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/item/storage/mgsbox/loot_accesory,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
+"Nz" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/item/storage/mgsbox/loot_accesory,/obj/item/spacecash/bundle/c100,/obj/item/spacecash/bundle/c100,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "NA" = (/obj/effect/floor_decal/industrial/warning/full,/obj/structure/navlight_shuttle/red{dir = 4},/turf/simulated/floor,/area/cadaab/desert)
 "ND" = (/obj/item/storage/mgsbox,/obj/item/storage/mgsbox,/turf/simulated/floor/lino,/area/cadaab/outpost/living)
+"NG" = (/obj/effect/floor_decal/corner/paleblue/mono,/mob/living/simple_animal/hostile/meat/abomination,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
 "NM" = (/obj/structure/table/woodentable,/obj/effect/floor_decal/carpet{dir = 1},/turf/simulated/floor/wood,/area/cadaab/caves/bunker/living/bunk)
+"NP" = (/obj/structure/table/steel_reinforced,/obj/item/spacecash/bundle/c500,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "NR" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/effect/floor_decal/inaks,/obj/structure/table/steel,/obj/random/toolbox,/obj/item/material/twohanded/baseballbat/platinum,/obj/effect/decal/cleanable/cobweb2{dir = 8},/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "NU" = (/obj/machinery/washing_machine,/obj/machinery/camera,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/bunk)
 "NX" = (/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
@@ -835,7 +843,7 @@
 "NZ" = (/obj/machinery/tele_projector{dir = 1},/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techmaint,/area/cadaab/outpost/teleport)
 "Oa" = (/obj/structure/curtain/medical,/obj/effect/floor_decal/corner/paleblue/border{dir = 8},/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
 "Oe" = (/obj/effect/floor_decal/inaks/road_border,/obj/effect/bump_teleporter/fasttravel{id_target = "shahtinsk_left"},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
-"Of" = (/obj/effect/landmark/corpse/miner,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/desert)
+"Of" = (/obj/effect/landmark/corpse/miner,/obj/item/spacecash/bundle/c500,/obj/item/spacecash/bundle/c200,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/desert)
 "Og" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/machinery/door/blast/shutters{id_tag = "cargo_war"; name = "Cargo Warehouse"},/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "Oj" = (/obj/item/trash/tomato,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/desert)
 "Om" = (/obj/effect/floor_decal/inaks/road_border{dir = 8},/obj/structure/inaks_decor/lamppost{dir = 1},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
@@ -849,7 +857,7 @@
 "OD" = (/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/desert)
 "OI" = (/turf/simulated/wall/wood,/area/cadaab/desert)
 "OJ" = (/obj/machinery/door/airlock/multi_tile/civilian{dir = 8; name = "Restroom"},/turf/simulated/floor/tiled/freezer,/area/cadaab/outpost/living)
-"OL" = (/obj/machinery/telecomms/bus/preset_two,/obj/effect/floor_decal/industrial/warning/fulltile,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
+"OL" = (/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/constructable_frame/machine_frame,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "ON" = (/obj/machinery/power/apc{name = "south bump"; pixel_y = -24},/obj/structure/cable/yellow,/turf/simulated/floor/plating,/area/cadaab/caves/bunker/engi)
 "OO" = (/obj/effect/paint/merc,/obj/effect/paint_stripe/paleblue,/turf/simulated/wall/concrete,/area/cadaab/outpost/med)
 "OQ" = (/obj/effect/floor_decal/corner/red/half{dir = 1},/obj/structure/sign/warning/smoking{pixel_y = 26},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
@@ -905,6 +913,7 @@
 "QW" = (/obj/machinery/door/airlock/multi_tile,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "QX" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/mob/living/simple_animal/hostile/viscerator,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/freezer,/area/cadaab/shahtinsk/canteen)
 "QY" = (/obj/structure/closet/crate/secure/biohazard,/mob/living/simple_animal/slime,/turf/simulated/floor/plating,/area/cadaab/caves/bunker)
+"QZ" = (/obj/effect/floor_decal/corner/red/full,/mob/living/simple_animal/hostile/meat/strippedhuman,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "Rg" = (/obj/effect/floor_decal/corner/paleblue/border{dir = 1},/obj/structure/sign/height_scale{pixel_x = -30},/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
 "Rp" = (/obj/machinery/portable_atmospherics/hydroponics,/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/living/can)
 "Rq" = (/obj/effect/floor_decal/inaks/road_border{dir = 1},/obj/structure/inaks_decor/lamppost{dir = 1},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
@@ -924,7 +933,7 @@
 "RW" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "Sf" = (/obj/structure/cadaab,/obj/effect/floor_decal/inaks/road_border{dir = 4},/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
 "Sg" = (/obj/effect/floor_decal/inaks,/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
-"Sk" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
+"Sk" = (/obj/machinery/light{dir = 4},/mob/living/simple_animal/hostile/meat/humansecurity,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "Sl" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/decal/cleanable/filth,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
 "Sn" = (/obj/effect/floor_decal/borderfloor,/obj/structure/bed/sofa/black{dir = 1},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/bunk)
 "Sq" = (/obj/item/device/flashlight/lamp,/obj/structure/table/standard,/turf/simulated/floor/lino,/area/cadaab/outpost/living)
@@ -961,7 +970,7 @@
 "Tw" = (/mob/living/simple_animal/hostile/retaliate/snake,/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
 "TA" = (/obj/machinery/door/airlock/civilian{name = "Shower"},/turf/simulated/floor/tiled/freezer,/area/cadaab/outpost/living)
 "TC" = (/obj/effect/floor_decal/corner/black/diagonal,/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/tiled/freezer,/area/cadaab/shahtinsk/canteen)
-"TD" = (/obj/effect/floor_decal/corner_techfloor_grid{dir = 5},/obj/machinery/telecomms/bus/preset_three,/obj/effect/floor_decal/industrial/warning/fulltile,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
+"TD" = (/obj/effect/floor_decal/corner_techfloor_grid{dir = 5},/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/constructable_frame/machine_frame,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "TE" = (/obj/structure/table/rack,/obj/machinery/light/small{dir = 4; pixel_y = 8},/obj/item/gun/projectile/automatic/sec_smg,/obj/item/gun/projectile/automatic/sec_smg,/obj/effect/floor_decal/industrial/outline/red,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/sec/armory)
 "TF" = (/obj/effect/floor_decal/inaks{dir = 4},/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "TH" = (/obj/structure/sign/poster/antar/corparmy{pixel_x = -32},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
@@ -1014,7 +1023,7 @@
 "VJ" = (/obj/machinery/seed_storage/garden,/turf/simulated/floor/lino,/area/cadaab/outpost/living)
 "VL" = (/obj/structure/table/rack,/obj/effect/floor_decal/industrial/outline/red,/obj/item/clothing/suit/armor/pcarrier/medium,/obj/item/clothing/suit/armor/pcarrier/medium,/obj/item/clothing/suit/armor/pcarrier/medium,/obj/item/clothing/suit/armor/pcarrier/medium,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/sec/armory)
 "VN" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/wood/walnut,/area/cadaab/outpost/living)
-"VP" = (/obj/effect/spider/stickyweb,/obj/effect/spider/cocoon,/obj/random/raider,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
+"VP" = (/obj/effect/spider/stickyweb,/obj/effect/spider/cocoon,/obj/random/raider,/obj/item/spacecash/bundle/c500,/obj/item/spacecash/bundle/c1000,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "VQ" = (/turf/simulated/wall,/area/cadaab/caves/bunker/medsci)
 "VR" = (/obj/structure/stasis_cage,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
 "VT" = (/obj/machinery/power/smes/buildable/preset,/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/caves)
@@ -1035,7 +1044,7 @@
 "WC" = (/obj/effect/floor_decal/inaks,/obj/effect/floor_decal/inaks{dir = 8},/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "WE" = (/turf/simulated/wall,/area/cadaab/caves/bunker/living/can)
 "WF" = (/obj/effect/floor_decal/inaks{dir = 8},/obj/machinery/door/blast/shutters{id_tag = "cargo_war"; name = "Cargo Warehouse"},/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
-"WG" = (/obj/structure/table/woodentable,/obj/effect/floor_decal/carpet/red,/obj/random/smokes,/turf/simulated/floor/carpet/red,/area/cadaab/caves/bunker/living/bunk)
+"WG" = (/obj/structure/table/woodentable,/obj/effect/floor_decal/carpet/red,/obj/random/smokes,/obj/item/spacecash/bundle/c1000,/turf/simulated/floor/carpet/red,/area/cadaab/caves/bunker/living/bunk)
 "WL" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/effect/decal/cleanable/flour,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
 "WN" = (/obj/structure/bed/chair/pew/left/mahogany{dir = 4},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "WP" = (/obj/machinery/door/unpowered/simple/cadaab{dir = 4},/obj/effect/floor_decal/inaks/road_border{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
@@ -1044,7 +1053,7 @@
 "WW" = (/obj/effect/floor_decal/corner/red/three_quarters{dir = 1},/obj/machinery/camera,/obj/structure/table/steel_reinforced,/obj/machinery/recharger,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "WY" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/syndishuttle)
 "Xf" = (/obj/structure/steelfence{pixel_x = -3},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
-"Xh" = (/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/telecomms/receiver/preset_right,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
+"Xh" = (/obj/effect/floor_decal/industrial/warning/fulltile,/obj/machinery/telecomms/broadcaster/preset_right,/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "Xk" = (/obj/effect/floor_decal/industrial/warning/dust,/obj/structure/fake_stairs/single{pixel_y = 8},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "Xn" = (/obj/structure/steelfence{dir = 4},/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "Xs" = (/obj/structure/cadaab,/turf/simulated/floor/inaks,/area/cadaab/shahtinsk/gas)
@@ -1052,7 +1061,7 @@
 "Xw" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/techfloor,/area/cadaab/outpost/eng)
 "Xy" = (/obj/machinery/door/blast/shutters{id_tag = "cargo_war"; name = "Cargo Warehouse"},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk/gas)
 "XD" = (/obj/effect/bump_teleporter/fasttravel/end{id = "shahtinsk_left"},/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/desert)
-"XJ" = (/obj/structure/closet/crate,/obj/random/maintenance,/obj/random/maintenance,/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/outpost/eng)
+"XJ" = (/obj/structure/closet/crate,/obj/random/maintenance,/obj/random/maintenance,/obj/item/stock_parts/circuitboard/telecomms/bus,/obj/item/stock_parts/circuitboard/telecomms/processor,/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/outpost/eng)
 "XQ" = (/obj/structure/fake_stairs/single{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/inaks/cubic_plate,/area/cadaab/desert)
 "XR" = (/obj/effect/floor_decal/inaks/road_border{dir = 1},/mob/living/simple_animal/hostile/viscerator,/obj/structure/inaks_decor,/turf/simulated/floor/inaks/plate,/area/cadaab/desert)
 "XT" = (/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/tiled/techfloor,/area/cadaab/caves)
@@ -1072,7 +1081,7 @@
 "YC" = (/obj/effect/floor_decal/corner/paleblue/border{dir = 4},/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
 "YF" = (/obj/machinery/door/unpowered/simple/wood,/turf/simulated/floor/wood,/area/cadaab/desert)
 "YG" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/tiled/freezer,/area/cadaab/outpost/living)
-"YI" = (/obj/structure/closet/gimmick/tacticool,/obj/effect/floor_decal/corner/red/three_quarters,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
+"YI" = (/obj/effect/floor_decal/corner/red/three_quarters,/obj/structure/closet/secure_closet/guncabinet,/obj/random/energy,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "YL" = (/obj/structure/table/marble,/obj/item/reagent_containers/food/drinks/bottle/specialwhiskey,/turf/simulated/floor/wood/walnut,/area/cadaab/shahtinsk/canteen)
 "YM" = (/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/desert)
 "YN" = (/obj/effect/floor_decal/corner/black/diagonal,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
@@ -1085,7 +1094,7 @@
 "YX" = (/obj/machinery/door/airlock/external/bolted_open{frequency = 1984; id_tag = "syndi_int"; name = "Internal Airlock"},/obj/machinery/door/blast/regular{dir = 4; id_tag = "syndi-shut"; name = "Syndi-Pass blast door"},/turf/simulated/floor/tiled/techfloor/grid,/area/cadaab/outpost/syndishuttle)
 "YZ" = (/obj/effect/bump_teleporter/fasttravel/end{id = "shahtinsk_left"},/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "Ze" = (/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/outpost/eng)
-"Zf" = (/obj/structure/table/glass,/obj/effect/floor_decal/corner/black/diagonal,/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
+"Zf" = (/obj/structure/table/glass,/obj/effect/floor_decal/corner/black/diagonal,/obj/machinery/light{dir = 8},/obj/item/spacecash/bundle/c1000,/obj/item/spacecash/bundle/c1000,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker/living/can)
 "Zg" = (/obj/structure/bed,/obj/item/bedsheet/mime,/obj/structure/curtain/open/bed,/obj/effect/floor_decal/carpet/red{dir = 8},/obj/effect/floor_decal/carpet/red,/obj/effect/floor_decal/carpet/red{dir = 10},/turf/simulated/floor/carpet/red,/area/cadaab/caves/bunker/living/bunk)
 "Zh" = (/obj/machinery/door/unpowered/simple/cadaab{dir = 4},/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/desert)
 "Zi" = (/obj/structure/crematorium{dir = 1},/obj/effect/floor_decal/corner/paleblue/border{dir = 6},/turf/simulated/floor/tiled/white,/area/cadaab/outpost/med)
@@ -1095,14 +1104,14 @@
 "Zp" = (/obj/effect/floor_decal/inaks/asphalt_hole,/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "Zq" = (/obj/structure/table/steel_reinforced,/obj/machinery/recharger,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "Zs" = (/obj/structure/gravemarker/cadaab,/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/desert)
-"Zt" = (/obj/structure/closet/gimmick/tacticool,/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
+"Zt" = (/obj/machinery/light{dir = 8},/obj/structure/closet/secure_closet/guncabinet,/obj/random/lilgun,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "Zu" = (/obj/effect/floor_decal/corner/paleblue/mono,/turf/simulated/floor/tiled/white,/area/cadaab/caves/bunker/medsci)
 "Zx" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/item/storage/mgsbox/clear,/turf/simulated/floor/tiled/freezer,/area/cadaab/shahtinsk/canteen)
 "Zy" = (/obj/structure/bed/chair/wood/walnut{dir = 4},/turf/simulated/floor/wood/maple,/area/cadaab/outpost/living)
 "Zz" = (/obj/machinery/light/small,/obj/effect/floor_decal/corner/paleblue/border,/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
 "ZB" = (/mob/living/simple_animal/hostile/retaliate/snake/venom,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/desert)
 "ZF" = (/obj/structure/cadaab,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
-"ZG" = (/obj/structure/closet/gimmick/tacticool,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
+"ZG" = (/obj/structure/closet/secure_closet/guncabinet,/obj/random/energy,/turf/simulated/floor/tiled/dark,/area/cadaab/caves/bunker)
 "ZH" = (/obj/structure/table/reinforced,/obj/item/toy/desk/officetoy,/turf/simulated/floor/tiled/white,/area/cadaab/shahtinsk/med)
 "ZK" = (/obj/item/bedsheet/captain,/obj/structure/bed,/obj/effect/floor_decal/carpet/blue,/turf/simulated/floor/wood,/area/cadaab/caves)
 "ZM" = (/turf/simulated/wall,/area/cadaab/caves/bunker/living/bunk)
@@ -1213,7 +1222,7 @@ wPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 wPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 gigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigigiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVggiVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giVgJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfCrGgJfJfGgGgCrJfJfJfGgJfVggiVgJfGgGgJfGgJfJfCrGgGgJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfcEJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giVgJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfCrGgJfJfGgGgCrJfJfJfGgJfVggiVgJfFtsNJfGgJfJfCrGgGgJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfcEJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfJfehJfHpJfJfJfJfHpHpHpJfJfJfHpHpJfJfJfJfJfGgGgGgGgGgJfJfJfGgGgCrVggiVgGgCrGgbakqtoGgCrGgCrJfJfJfJfJfJfJfJfJfJfJfJfTSKBJfKKJfJfJfJfcEkfJfJfkfJfJfJfJfJfJfJfJfJfJfJfJfJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfJfJfJfHpHpHpHpdmHpHpHpHpHpHpHpUeMlititititititititititititititititCgJfJfJfJfCrGgGgCrGgGgJfJfVggiVgGgGgGgGgmCGgGgGgGgJfJfJfoicEkfkfJfJfkfcEqsJfImKBlqCqcErRJfJfcExVkfJfXtcEJfJfJfJfJfJfJfJfJfJfJfcEVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfJfJfHpHpLnHpHpHpHpPaUyHpLnHpHpZhgAYQYQYQYQYQYQYQYQYQYQYQYQYQYQYQYQKeHpJfJfJfJfJfGgGgGgGgGgCrVggiVgJfGgyuGgGgGgJfJfJfJfkfhzXtsvXtXtkfXtXtcESfADTSjppWCqcEXtXtXtsVvwvwvwvwcEJfJfJfJfJfJfJfcEJfJfJfcEVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
@@ -1229,7 +1238,7 @@ giVgJfJfHpBoBoBoBoRvviBozxEMEMBoBoBoBoBogAYQYQYQYQYQYQYQYQYQYQYQYQYQYQYQYQKeHpHp
 giVgJfJfHpBoYGvikFviviviEMEMEMVJefElBoBogAYQYQYQYQYQYQYQYQYQYQYQYQYQYQYQYQKeHpHpHpHpPaHpMCHpHpMCRSnvHpgiVgJfGgJfJfarsiscaraaPOxAYgVrGRarnlVAVAVAVAPgkoTSiFTFPSFRynFRFRWwkoTFBFySUEkoTFKKEXoHoHoHoHxexexexeVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfHpBogZgZBoviviOJEMWkKXEMEMEMmpBohpVEVEVEVEVEVEVEVEVEVEmXmXmXmXmXmXIXHpHpuYHpHpHpMCLnHpMCRSnvHpgiVgJfGgJfJfarbLBjgCscscscscscDyarICKFEIEIEIEIiFiFiFTFYBHpHpHpPaHgkoTFKKSLICkoTFKKMJoHhQpuoHtbxexexeVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfHpgjgjgjgjgjgjgjgjgjaTEMEMEMmpBoBoBoBoBoBoBoBoBoVAVASUEIEIEIEIEIVYKKHpHpHpHpHpHpMCHpHpMCRSnvHpgiVgJfGgGgHparghzlaryjmJscscscemarICVeUTUTiFiFiFTSiFTFYBPaLnHpHpHgkoTFzCcEkHkoTFKKMJoHhlLdoHXsadxeSAVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giVgJfzYpnEHhtZQBrEHcbcPAWEHtxwBvVEMDqBoFkITsgmlanVNLWBoiFiFiFiFiFiFiFiFTFGLutVAVAVAVAVAVAVAVAVAHkOeVAgiVgJfGgGgHparoszlartkxcYVsckLkLarICkoiFiFiFiFiFiFiFTFYBHpuYHpHpHgkoTFKKSLICkoTFKKMJvghlDIoHsCxexexeVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giVgJfzYpnEHhtZQBrEHcbcPAWEHtxwBvVEMDqBoFkITsgmlanVNLWBoiFiFiFiFiFiFiFiFTFGLutVAVAVAVAVAVAVAVAVAHkOeVAgiVgJfGgGgHparoszlartkxcYVsckLKfarICkoiFiFiFiFiFiFiFTFYBHpuYHpHpHgkoTFKKSLICkoTFKKMJvghlDIoHsCxexexeVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfHpEHPwNcaNDnLesZLewDJMNDCREMEMTsngTsngTsngZyzOxyUTUTUTiFiFtaiFiFiFEIEIEIEIEIEIEIEIEIEIEIqnloEIgiVgJfJfGgJfararvbarararararararardeVeUTUTiFiFiFTSiFTFDxoToToToTPgkoTFIQVAPFkoTFKKMJvghlxboHoHxeJqJqVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfHpEHNcNcAUEHfoSODgxuEMCRvVEMEMszTsngTsFqTsngmZxyiFiFiFiFiFiFiFiFiFeGiFeGiFeGiFeGiFeGiFeGeeQOiFgiVgJfJfGgJfbeWqeETYTYTYJcTYTYpQoSbEkoiFiFiFiFiFiFiFiFEIEIEIEIEIEIiFiFEIEIEIiFTFKKMJhlhlxbhlhlhlJqhlVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfHpEHIEPMwYwnwntPwnwnleEMEMEMEMBongTsngTsngTsPkBoUTUTUTiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFtaiFeedriFgiVgJfJfGgJfbedaKITYTYTYTYTYTYTYTYWPWCzSzSzSzSiFTSiFiFiFiFtaiFiFiFiFiFiFiFiFiFTFOmMJhlhlxbhlLdDXxexeVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
@@ -1243,12 +1252,12 @@ giVgJfJfHpABOnWhnbZeCknckZICkoiFiFiFiFZpiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFPVTFKKHpHp
 giVgJfJfHpABOnqRnbZeZeMJdoMXWCiFiFiFzSzSzSzSzSzSzSzSzSzSzSvdzSzSzSzSzSzSuAKKPaHpkekekeTdkekekeHpHpJfVggiHpzwXDHpHpwKUsACUsongbgbgbgbkGgbeQFMwzonMJICkoTSiFiFzSzSiFiFiFzSiFiFiFzSiFiFTFKKrKxsCoIzjToHJfGgCrVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfHpABfEvjnbZeZeMJdorKWwkoiFTFsoySySySySySySySySRqySySySySySySySySySrKHpNAkePqkOfVDpQmkeGGJfJfVggiHpzwXDPaHpwKMJACMJonlmeQBmeQeQeQDweQIYonMJICkoiFiFTFsooHWFJKOgoHPAXywXoHWFJKOgoHrKoHoHxpoHoHGgGgJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfHpFoFoGinkFoFoFoFoMJICkotaTFKKMJOOOOTMTMTMTMOOOOOOOOOOOOOOHpKKMJICHpkekekepVslhPtUTckekekeJfVggiHpzwXDHpHpwKMJlVpIoneQkIkIeQeQkIkIeQKmonTHICKMTSiFTFKKoHUKnzLroHUVggvWoHCxnzSPoHrKTwrKrKrKJfJfGgJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giVgJfQkpnFoffkvDiDGRIQsFoMJICkoiFTFQThYOOFeZWdQeWjaaWOOZSqlvvuIOOHpKKMJICLnkeORmnQlrQvyDNARrAkekeJfVggiHpzwXDLnHpwKoPMJMJonKvrCfIljjkHnInljeQonMJICkoiFiFTFKKoHlfnzSPoHfgggvWoHCDFDNzoHrKHpHpHpOyJfCrGgGgVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giVgJfJfHpFokDyCSQSQSQbZForIICkoiFTFKKPGOOzdxExExExExEOOGNevevQxOOHpKKMJICPakeplrhrhGOFlDNARAREnkeJfVggiHpzwXDHpHpwKMJMJMJonfaKmqHeQeQKmqHeQIRonMJqvkoTSiFTFKKoHFCnzjnoHhuggIyoHXWnznPoHrKHpHpLnOyJfGgGgCrVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giVgJfHpHpFoXhnDTDthMrMrpwowICFryklsKKBYAAxExExExExExEAAeveveviqOOHpKKMJICHpkennHQkegDWYyQnQfOFwkeJfVggiHpzwXDHpPawmmPncmPononononondfonononononMJICkoiFiFTFKKoHMEduoxoHEcSggIoHHmduNRoHrKuYHpJfJfJfJfGgJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giVgJfPaHpFopFRWOLgQRzRzkRowICFryklsKKXQfWlRxExExExExEaHevevevQdOOHpKKMJrKySkeAQVkkeNkTQDNARrdivkeJfVggiHpzwXDHpHprKMJMJMJMJMJkpqcFnFnFnTgiAMJMJMJICkoTSiFTFKKoHoHoHoHoHoHoHoHoHoHoHoHoHrKHpHpHpPaJfJfJfJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giVgJfQkpnFoffkvDiDGRIQsFoMJICkoiFTFQThYOOFeZWdQeWjaaWOOZSqlvvuIOOHpKKMJICLnkeORmnQlrQvyDNARrAkekeJfVggiHpzwXDLnHpwKoPMJMJonKvrCfIljjkHnInljeQonMJICkoiFiFTFKKoHlfnzSPoHfgggvWoHCDFDNzoHrKHpHpHpOyJfCrLxsNVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giVgJfJfHpFokDyCSQSQSQbZForIICkoiFTFKKPGOOzdxExExExExEOOGNevevQxOOHpKKMJICPakeplrhrhGOFlDNARAREnkeJfVggiHpzwXDHpHpwKMJMJMJonfaKmqHeQeQKmqHeQIRonMJqvkoTSiFTFKKoHFCnzjnoHhuggIyoHXWnznPoHrKHpHpLnOyJfFtGgCrVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giVgJfHpHpFoXhnDTDTDMrMrpwowICFryklsKKBYAAxExExExExExEAAeveveviqOOHpKKMJICHpkennHQkegDWYyQnQfOFwkeJfVggiHpzwXDHpPawmmPncmPononononondfonononononMJICkoiFiFTFKKoHMEduoxoHEcSggIoHHmduNRoHrKuYHpJfJfJfJfGgJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giVgJfPaHpFopFRWOLOLRzRzkRowICFryklsKKXQfWlRxExExExExEaHevevevQdOOHpKKMJrKySkeAQVkkeNkTQDNARrdivkeJfVggiHpzwXDHpHprKMJMJMJMJMJkpqcFnFnFnTgiAMJMJMJICkoTSiFTFKKoHoHoHoHoHoHoHoHoHoHoHoHoHrKHpHpHpPaJfJfJfJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfqbOoofXwRzRzRzwjFowyICkoiFTFqhNXOOjCNpvFxExEjHOOimBnBnCXOOHpKKMJMJMJkiDNDNYXDNDNDNARxkqmkeJfVggiVAiiHNVAVAVAVAVAVAVAVAVAVAMOMOMOVAVAVAVAVAQQkoiFiFTFaxVAVAVAVAVAsGVAVAVAVAVAwQVAVAVAVAVAVAVAVAhRJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giVgJfQkIqFooqJguayYgnHZFoMJICKMiFTFKKMJOOtWiVfAMkMkgoOOoXjcjcZiOOHpKKMJMJMJkiDNDNYXsBxjBUMuQqGBkeJfVggiEIBVqtEIrYEIEIEIEIEIEIEIEISZSZSZEIEIEIEIEIEIiFiFiFiFeFEIEIEIEIEIEIEIEIEIrYEIEIEIEIEIEIEIrYsasasaEIVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giVgJfQkIqFoOLOLOLOLgnHZFoMJICKMiFTFKKMJOOtWiVfAMkMkgoOOoXjcjcZiOOHpKKMJMJMJkiDNDNYXsBxjBUMuQqGBkeJfVggiEIBVqtEIrYEIEIEIEIEIEIEIEISZSZSZEIEIEIEIEIEIiFiFiFiFeFEIEIEIEIEIEIEIEIEIrYEIEIEIEIEIEIEIrYsasasaEIVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfsXFoFoFoFoFoFoFoFoMJICkoiFTFrXncOOOOTMTMTMTMOOOOyNOOOOOOOOHpKKMJrKVAkekXkXkekekekekekejDkeJfVggiiFGvYZeGiFeGiFeGiFeGiFeGiFELELELiFeGiFeGiFeGiFeGiFeGiFeGiFeGiFeGiFeGiFeGiFeGiFeGiFeGiFeGKBeGPVJfJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfsXHpHpHpHpHpJfJfJfrKrKySySySwKrKrKLcHpZsHpXUHpUeEKJfJfJfJfHpKKMJICHpkexmPBTqTqTqTqTqkejDkeJfVggiiFSFYZiFiFiFiFiFiFiFiFiFPVELELELiFiFiFiFiFiFiFiFiFiFiFiFiFiFPViFiFiFiFiFiFiFiFiFZpiFiFKBPVKBtaiFJfVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giVgJfJfsXPaHpLnHpPaHpJfJfJfTRXkXkXkuPMJMJMCMCMCMCMCMCMCEKJfJfJfJfHpKKMJICHpBqypHpHpHpHpHpdmsSPfBqJfVggizSpsLvzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSzSmqSNmqmqvdVggiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
@@ -1286,29 +1295,29 @@ giZOZOiRiRiRiRiRiRZOZOZZZZZZZZZOZOZOZOZOZOZOZOZZZZZZZZZOZZZZZZZZZORyZOZZZZZZZZZZ
 giZOZOiRTJiRLkVPZOZOZZBNPpPpZOZOZOZOZOZOZOZOZZZZZZZZZOZOZOZZZZZZZZQDZZZFZZZZZZZZZZZZZZZZZZZZZZZZZZZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZOZOQyiRjviRZOZOZOZOqCMHMHqCqCqCqCqCqCqCZOZZZFZOZOZOZOZZZZZZZZZORyZOZOZZZZhwZZZZZZZFZFZZZZZZZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZOZOZOtqiRRHZOZOZOZOqCcFvJMwQFUSqCmrAhqCZOZZZOZOZOZFZZZZZOZZZOZOZOZOZOZOZZZFZZZZZZZZZZZZZFZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giZOZOZOiRUmiRZOZOZOZOqCqOwSMwfSeqjyBszLqCZOZOZOZOZOZOZOZOZOZZZZZOZOZOZOZOZOZOZZZZZZZOZOZZZOZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giZOZOZOiRUmiRZOZOZOZOqCqOwSMwNPeqjyBszLqCZOZOZOZOZOZOZOZOZOZZZZZOZOZOZOZOZOZOZZZZZZZOZOZZZOZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZOZOZOZOiRZOZOZOZOZOqClHRrMwfSSkqCBsrOqCZOZOZOZOZOZOZOZOZOZOZZZZZOZOZOZOZOZOZZZZZZZOZOZZZOZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZOZOZOZOZOZOZOZOZOZOqCtKnrqCqCpyqCnIqCqCqCqCqCqCmxmxmxmxZOZOZOZZZZZOZOZOZOZZZZZOZOZOZOZZZZZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONuNuNuNuNuqCqCqCqCqCKrBsqCryBsOQiaZqWWqCuKdnqCZKdpcemxZOZOZOZZZZlaZZZZZZZZZOZOZOZOZOZOZZZOZOZFZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONuQrTIwhHbUcQYZlrnUcpmBsqCZtwtwtwtwtBspyBsfbqCAqAqAqmxZOZOZOZOZFZZZZZZZZZZZOZOZOZOZOZOZZZZZZZZZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giZONuHbTITICnUceSeSumklBsYeqCZGwtwtQBpPCeqCBsfbqCvIIANYmxZOZOZOZOZOZOZOZZZZZZZOZOZOZOZOZOZFZZZZZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giZONuHbTIMpCnUceSeSumklBsYeqCZGwtQZQBpPCeqCBsfbqCvIIANYmxZOZOZOZOZOZOZOZZZZZZZOZOZOZOZOZOZFZZZZZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONuFVbsTIcOUclZTZumUczDIMqCYIBsnTDldHveqCBsfbqCraPQPQmxZOZOZOZOZOZOZOZZZZZZZOZOZOZOZOZOZOZZZZZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONuVQVQHjVQUcUcUcUcUcAzBsqCqCqCkVYsqCqCqCqCqCqCmxtimxmxZOZOZOZOZOZORyRyfrfrRyRyZOZOZOZOZFZZZZZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONugLHEZnWtVQHKwpYNwpYNYNWEcSjoYwillKbfjElrunBBWzmvjEZOZOZOZOZOZOZORyPbTvTvPbRyZOZOZOZFZZZZZZZZZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giZONuWUZuGaBJVQZfwqYNVBYNHxWELoMQBAqweTRQjECBoRrMYTNsjEZOZOZOZOZOZOZORyUiTvTvUiRyZOZORyZZZZZZZFZZRyZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giZONuWUZuGaBJVQZfwqYNVBYNHxWELoMQBAqweTRQjECBdMrMYTNsjEZOZOZOZOZOZOZORyUiTvTvUiRyZOZORyZZZZZZZFZZRyZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONuiPGxDOsAbgaqSlPsWcroaqMssbvYmWUBmWQztSvlvlvlkJpZjEZOZOZOZOZOZOZORyUiTvTvsfRyZOZORyZFZZZZZZZZRyZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giZONuCzZuqjdEVQNawqYNYNckxiWEobBkSJuOMQLCjEzUoRrMRMEAjEZOZOZOpEZFZOZORyjITvTvjIRyZOZOZOZOZFUZZZZZZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giZONuLUZuZuueVQprpbrUYNBbxiWEKVkjjRGdSnuRjENMUpBTBTJBjEZOZOZFZZZZZOZORyRyAuAuRyRyZOZOZOZOZFZZZFZZZFZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giZONuCzZuqjdEVQNawqKLYNckxiWEobBkSJuOMQLCjEzUoRrMRMEAjEZOZOZOpEZFZOZORyjITvTvjIRyZOZOZOZOZFUZZZZZZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giZONuLUNGZuueVQprpbrUYNBbxiWEKVkjjRGdSnuRjENMUpBTBTJBjEZOZOZFZZZZZOZORyRyAuAuRyRyZOZOZOZOZFZZZFZZZFZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONuDAZuZutYVQYNYNYNWLoFzkWEQWSyZMZMZMZMjEjEjEjEjEjEjEZOZOZZZZZOZOZOXnpRZZZZpRXnZOZOZOZOZOZZZZZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONusDxOUjuWVQYNWLYNuqoFFyWEfJgXVjoUIvWuOzCdSDjEZOZOZOZORyOpEiRyZOZOXnJAZZZZJAXnZZZOZOZOZOZFZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONuVQxKTIVQVQeJkuSYWEIsWEWEfJgXZMZgWGeuZMfQnKjEZOZOZOZFZZZZZZZOZOZZlhEiZZZZJyQcZZZOZOZOZOZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giZONuVRTITIUhVQgOlplpDSxdwsWEjPvmZMZMZMZMZMZMZMjEZOZOZFZZZZZZZZZOZZZZZZZZZZlaZZZZZZZZZOZOZOZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giZONuTITITITIVQRplpnJvLxdqGWEqPhoVjifIvWuOzxfUFjEZOZOZOZZZZZZZZZZZZZZZZZFZZZZZZZZZZZZZZZOZOZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giZONuLMJxYupOVQLflpzfPUKlRRWEfJhyZMSBSHeuZMfQeljEZOZORyhkZZZZfKZZZZZFZORyRDRDRyZOGDZZZZZZZOZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giZONuVRTITIUhVQgOlplpDSxdwsWEjPvmZMZMZMZMZMZMZMjEZOZOZFZZZZZZZZZOZZZZZZZZZZlaZZZZZZZZZOZOZOZZZFZZyZZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giZONuTITITITIVQRplpnJvLxdqGWEqPhoVjifIvWuOzxfUFjEZOZOZOZZZZZZZZZZZZZZZZZFZZZZZZZZZZZZZZZOZOZZZZatZFZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giZONuLMJxYupOVQLflpzfPUKlRRWEfJhyZMSBSHeuZMfQeljEZOZORyhkZZZZfKZZZZZFZORyRDRDRyZOGDZZZZZZZOZOhCZZZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZONuVQVQVQVQVQWEWdWEWEWEWEWEfJGpZMZMZMZMZMZMZMjEZOZORyZFZZZOZZZZZOZOZOkMTvTvWnZOmwZZmKsTZZZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZOqDfufufufuxqvXvXWErDNUteZMfJgXVjoUIvWuOzCdwAjEZOZOZOZOZOZObXZZZOZOZOLaTvTvIuZOZOZZZZRyZZZZZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZOqDmDvXvXrsvXvXBIWEKnKnKnVjfJgXZMZgiosIZMfQfRjEZOZOZOZOZOZObXbXZOZOZORydZdZRyZOZOZZZZighwZZZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
-giZOqDnwvXvXvXvXvXrsWEMeKnSRIWIWgyIWIWIWIWyBjEjEjEZOZOZOZOZOZZZZZOZOZOZOZOZOZOZOZOZOZOZZZZZZZZZZZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
+giZOqDnwvXvXvXwrvXzXWEMeKnSRIWIWgyIWIWIWIWyBjEjEjEZOZOZOZOZOZZZZZOZOZOZOZOZOZOZOZOZOZOZZZZZZZZZZZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZOqDlXlXlXlXmDmDmDWEJYSRSRIWYPTuMTYduCxDyBZOZOZOZOZOZOZOZFZZhwZZZZZOZOZOZOZOZFZZZZZZZZZZZOZZZFZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZOqDqDqDqDqDqDqDqDqDjEjEjEyBediQONQfEjxDyBZOZOZOZOZOZFMdZZZZZZZZZFZOZOZOZOZFZZZZZZZZZZZOZOZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP
 giZOZOZOZOZOZOZOZOZOZOZOZOZOyByByByByByByByBZOZOZOZOZOZOZOZOZFZZZZZOZOZOZOZOZOZOZOZOZOZOZOZOZOZOZOZOZOgiwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwPwP

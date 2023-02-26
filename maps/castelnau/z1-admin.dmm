@@ -7749,9 +7749,6 @@
 "aMu" = (
 /obj/structure/bed,
 /obj/item/bedsheet/hop,
-/obj/effect/landmark/start{
-	name = "Merchant"
-	},
 /turf/simulated/floor/carpet,
 /area/merchant_station)
 "aMz" = (
@@ -7801,9 +7798,6 @@
 "aMG" = (
 /obj/structure/bed,
 /obj/item/bedsheet/rd,
-/obj/effect/landmark/start{
-	name = "Merchant"
-	},
 /turf/simulated/floor/carpet/blue,
 /area/merchant_station)
 "aMH" = (

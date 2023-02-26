@@ -104,7 +104,7 @@
 	boots = /obj/item/clothing/shoes/magboots
 	tank = /obj/item/tank/oxygen
 	mask = /obj/item/clothing/mask/breath
-	req_access = list(access_castelnau/medical)
+	req_access = list(access_castelnau_medical)
 	islocked = 1
 
 /obj/machinery/suit_storage_unit/medical/castelnau/alt

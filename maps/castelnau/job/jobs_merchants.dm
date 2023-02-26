@@ -21,7 +21,7 @@
 						SKILL_PILOT	  = SKILL_BASIC)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
-	skill_points = 24
+	skill_points = 30
 
 	access = list(
 					access_castelnau_cheapskate_chief,
@@ -64,7 +64,7 @@
 						SKILL_PILOT	  = SKILL_BASIC)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
-	skill_points = 24
+	skill_points = 25
 
 	access = list(
 					access_castelnau_cheapskate,
@@ -94,9 +94,15 @@
 	latejoin_at_spawnpoints = 1
 	access = list()
 	min_skill = list(   SKILL_FINANCE = SKILL_ADEPT,
-						SKILL_PILOT	  = SKILL_BASIC)
+						SKILL_PILOT	  = SKILL_BASIC,
+						SKILL_COMBAT      = SKILL_BASIC,
+						SKILL_WEAPONS     = SKILL_BASIC,
+	                    SKILL_HAULING     = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+						SKILL_COMBAT      = SKILL_EXPERT,
+						SKILL_WEAPONS     = SKILL_EXPERT,
+	                    SKILL_HAULING     = SKILL_MAX)
 	skill_points = 24
 
 	access = list(
