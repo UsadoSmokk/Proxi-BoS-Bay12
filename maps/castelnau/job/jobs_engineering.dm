@@ -7,7 +7,7 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	economic_power = 7
+	economic_power = 6
 	minimal_player_age = 14
 	ideal_character_age = 34
 	allowed_branches = list(/datum/mil_branch/reg,
@@ -67,7 +67,7 @@
 	spawn_positions = 2
 	minimal_player_age = 7
 	ideal_character_age = 25
-	economic_power = 6
+	economic_power = 4
 
 	alt_titles = list(
 		"Electrician",
@@ -124,11 +124,11 @@
 	supervisors = "the Senior Engineer"
 	selection_color = "#978035"
 
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_age = 7
 	ideal_character_age = 25
-	economic_power = 6
+	economic_power = 4
 	give_psionic_implant_on_join = FALSE
 
 //	outfit_type = /decl/hierarchy/outfit/job/castelnau/crew/engineering/engineer
@@ -185,7 +185,7 @@
 	supervisors = "the Senior Engineer"
 	alt_titles = list(
 		"Biomechanical Engineer")
-	economic_power = 10
+	economic_power = 4
 	ideal_character_age = 45
 	selection_color = "#978035"
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,

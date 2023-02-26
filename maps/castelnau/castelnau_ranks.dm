@@ -23,6 +23,19 @@
 		/datum/mil_branch/other
 	)
 
+	species_to_branch_blacklist = list(
+		/datum/species/human   = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
+		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/mil),
+		/datum/species/machine/shell = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
+		/datum/species/unathi = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/mil),
+		/datum/species/unathi/yeosa = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/mil),
+		/datum/species/skrell = list(/datum/mil_branch/alien),
+		/datum/species/diona = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/mil, datum/mil_branch/reg),
+		/datum/species/adherent = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/mil, datum/mil_branch/reg),
+		/datum/species/shapeshifter/promethean = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/mil, datum/mil_branch/reg),
+		/datum/species/vox = list(/datum/mil_branch/skrell_fleet, /datum/mil_branch/mil, /datum/mil_branch/syndi, datum/mil_branch/reg)
+		)
+
 /*
  *  ==Branches==
  *  ============
@@ -165,9 +178,11 @@
 
 /datum/mil_rank/reg
 	name = "Regulators"
+	name_short = "Reg"
 
 /datum/mil_rank/reg/com
 	name = "Regulators Command"
+	name_short = "RegCom"
 
 /*
  *  Military
@@ -203,7 +218,8 @@
 	name = "Paroled"
 
 /datum/mil_rank/par/yak
-	name = "Yakuza"	//vremennoe nazvanie
+	name = "Yangui Scolopendras"
+	name_short = "Yang"
 
 /*
  *  Cultists

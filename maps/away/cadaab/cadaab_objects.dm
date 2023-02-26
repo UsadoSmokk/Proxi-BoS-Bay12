@@ -80,6 +80,7 @@
 	icon_vend = "syndi-vend"
 	icon_deny = "syndi-deny"
 	base_type = /obj/machinery/vending/syndipass
+	req_access = list(access_castelnau_syndipass)
 	products = list(
 					/obj/item/storage/mre = 2,
 					/obj/item/clothing/accessory/armor_plate/ceramic = 3,

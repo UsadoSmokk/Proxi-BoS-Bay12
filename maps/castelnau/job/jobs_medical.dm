@@ -9,7 +9,7 @@
 	spawn_positions = 1
 	supervisors = "the Coordinator"
 	selection_color = "#013d3b"
-	economic_power = 8
+	economic_power = 6
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/med/surgeon
 	allowed_branches = list(/datum/mil_branch/reg)
 	allowed_ranks = list(
@@ -50,10 +50,10 @@
 	department_flag = MED
 	selection_color = "#029b97"
 
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Surgeon and the Coordinator"
-	economic_power = 7
+	economic_power = 5
 	ideal_character_age = 40
 	alt_titles = list(
 		"Paramedic",
@@ -97,7 +97,7 @@
 	title = "Redactor"
 	total_positions = 1
 	spawn_positions = 1
-	economic_power = 5
+	economic_power = 4
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	minimal_player_age = 0
 	selection_color = "#029b97"

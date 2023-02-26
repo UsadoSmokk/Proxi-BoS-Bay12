@@ -439,7 +439,7 @@ CASTELNAU_ESCAPE_POD(9)
 /obj/effect/shuttle_landmark/supply/station
 	name = "Hangar"
 	landmark_tag = "nav_cargo_station"
-//LATER		base_area =
-	base_turf = /turf/simulated/floor/plating
+	base_area = /area/shuttle/castelnau/cheapskate/cargo/outer
+	base_turf = /turf/space
 
 

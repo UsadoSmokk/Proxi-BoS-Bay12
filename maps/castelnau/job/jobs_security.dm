@@ -6,7 +6,7 @@
 	spawn_positions = 1
 	supervisors = "the Captain, the First Mate and the Coordinator"
 	economic_power = 8
-	minimal_player_age = 14
+	minimal_player_age = 22
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/com/sheriff
 	allowed_branches = list(/datum/mil_branch/reg)
@@ -53,7 +53,7 @@
 	supervisors = "the Sheriff"
 	selection_color = "#9e2e2e"
 	economic_power = 6
-	minimal_player_age = 10
+	minimal_player_age = 20
 	ideal_character_age = 25
 
 	skill_points = 20
@@ -97,7 +97,7 @@
 	supervisors = "the Sheriff"
 	selection_color = "#9e2e2e"
 	economic_power = 6
-	minimal_player_age = 10
+	minimal_player_age = 20
 	ideal_character_age = 25
 	give_psionic_implant_on_join = FALSE
 	skill_points = 20

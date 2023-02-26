@@ -164,7 +164,7 @@
 /area/shuttle/castelnau
 	icon = 'maps/castelnau/icons/areas.dmi'
 	base_turf = /turf/space
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 	requires_power = 1
 
 //Cheapskate
@@ -172,6 +172,7 @@
 /area/shuttle/castelnau/cheapskate
 	name = "Cheapskate - Hallway"
 	icon_state = "invi"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
 /area/shuttle/castelnau/cheapskate/cockpit
 	icon_state = "cheap_com"
@@ -252,6 +253,10 @@
 /area/shuttle/castelnau/cheapskate/cargo/extwar
 	name = "Cheapskate - Supply External Warehouse"
 
+/area/shuttle/castelnau/cheapskate/cargo/outer
+	name = "Cheapskate - Docking Area"
+	area_flags = AREA_FLAG_EXTERNAL
+
 //Perseus
 /area/shuttle/castelnau/perseus
 	req_access = list(access_castelnau_perseus)
@@ -260,6 +265,7 @@
 	icon_state = "per_helm"
 	name = "Perseus - cockpit"
 	req_access = list(access_castelnau_perseus_helm)
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
 /area/shuttle/castelnau/perseus/power
 	icon_state = "per_eng"
@@ -272,6 +278,7 @@
 //Bixie
 /area/shuttle/castelnau/bixie
 	req_access = list(access_castelnau_bixie)
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
 /area/shuttle/castelnau/bixie/cockpit
 	icon_state = "bix_helm"
@@ -436,11 +443,13 @@ CREATE_CST_AREA(engineering/lab)
 	name = "Reverse Engineering Lab"
 	icon_state = "research"
 	sound_env = SMALL_ENCLOSED
+	req_access = list(access_castelnau_englab)
 
 CREATE_CST_AREA(engineering/robotics)
 	name = "Engineering Robotics Lab"
 	icon_state = "robotics"
 	sound_env = SMALL_ENCLOSED
+	req_access = list(access_castelnau_englab)
 
 CREATE_CST_AREA(storage/tech)
 	name = "Technical Storage"

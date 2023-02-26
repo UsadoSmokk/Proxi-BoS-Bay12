@@ -21,10 +21,12 @@
 /area/cadaab/outpost/teleport
 	name = "Outpost - Teleport"
 	icon_state = "command"
+	req_access = list(access_castelnau_teleporter)
 
 /area/cadaab/outpost/med
 	name = "Outpost - Medical Bay"
 	icon_state = "medbay"
+	req_access = list(access_castelnau_medical)
 
 /area/cadaab/outpost/med/surgery
 	name = "Outpost - Surgery"
@@ -32,10 +34,12 @@
 /area/cadaab/outpost/eng
 	name = "Outpost - Engineering"
 	icon_state = "engineering"
+	req_access = list(access_castelnau_engineering)
 
 /area/cadaab/outpost/sec
 	name = "Outpost - Security"
 	icon_state = "security"
+	req_access = list(access_castelnau_brig)
 
 /area/cadaab/outpost/sec/armory
 	name = "Outpost - Armory"
@@ -51,6 +55,8 @@
 /area/cadaab/outpost/syndishuttle
 	name = "SSS PrettyBoy"
 	icon_state = "syndipass"
+	req_access = list(access_castelnau_syndipass)
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
 //CAVES - NEAR THE OUTPOST//
 
