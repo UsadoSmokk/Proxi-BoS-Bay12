@@ -32,6 +32,8 @@
 	#include "bos/items/clothing/par/under.dm"
 	#include "bos/items/clothing/par/suit.dm"
 
+	#include "bos/items/clothing/syn/under.dm"
+
 	#include "bos/structures/lordbanner.dm"
 	#include "bos/structures/memorial.dm"
 	#include "bos/structures/signs.dm"
