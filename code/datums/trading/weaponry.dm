@@ -144,7 +144,7 @@
 
 /datum/trader/ship/inaks_guns
 	name = "Weapons Workshop"
-	origin = "Inaks Jungle"
+	origin = "Inax Jungle"
 	speech = list(TRADER_HAIL_GENERIC    = "You are talking with the best weapons workshop in the world - I create best guns, all from natural materials!",
 				TRADER_HAIL_DENY         = "I have better things to do than talk to you, like killing a giant hedgehog.",
 
@@ -161,6 +161,8 @@
 				)
 	compliment_increase = 5
 	insult_drop = 5
+	margin = 1.1
+	price_rng = 5
 
 	possible_trading_items = list(
 								/obj/item/gun/projectile/pirate							= TRADER_THIS_TYPE,

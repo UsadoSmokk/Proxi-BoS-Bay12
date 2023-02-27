@@ -108,6 +108,18 @@
 	else
 		usr.put_in_active_hand(src)
 
+/obj/item/storage/mgsbox/verb/quick_empty()
+	if(is_open())
+		. = ..()
+	else
+		return
+
+/obj/item/storage/mgsbox/verb/toggle_gathering_mode()
+	if(is_open())
+		. = ..()
+	else
+		return
+
 /obj/item/storage/mgsbox/examine(mob/user, distance)
 	. = ..(user)
 	if(distance <= 2)
