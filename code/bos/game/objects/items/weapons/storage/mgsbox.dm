@@ -108,13 +108,13 @@
 	else
 		usr.put_in_active_hand(src)
 
-/obj/item/storage/mgsbox/verb/quick_empty()
+/obj/item/storage/mgsbox/quick_empty()
 	if(is_open())
 		. = ..()
 	else
 		return
 
-/obj/item/storage/mgsbox/verb/toggle_gathering_mode()
+/obj/item/storage/mgsbox/toggle_gathering_mode()
 	if(is_open())
 		. = ..()
 	else
