@@ -24,7 +24,7 @@
 	if(active_record)
 		send_rsc(user, active_record.photo_front, "front_[active_record.uid].png")
 		send_rsc(user, active_record.photo_side, "side_[active_record.uid].png")
-		data["pic_edit"] = check_access(user, access_bridge) || check_access(user, access_security)
+		data["pic_edit"] = check_access(user, access_castelnau_bridge) || check_access(user, access_castelnau_security) //bos, was without castelnau
 		data += active_record.generate_nano_data(user_access)
 	else
 		var/list/all_records = list()
@@ -37,9 +37,9 @@
 				"id" = R.uid
 			)))
 		data["all_records"] = all_records
-		data["creation"] = check_access(user, access_bridge)
-		data["dnasearch"] = check_access(user, access_medical) || check_access(user, access_forensics_lockers)
-		data["fingersearch"] = check_access(user, access_security)
+		data["creation"] = check_access(user, access_castelnau_bridge) //bos
+		data["dnasearch"] = check_access(user, access_castelnau_medical) || check_access(user, access_castelnau_detective) //bos
+		data["fingersearch"] = check_access(user, access_castelnau_security) //bos
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
@@ -89,7 +89,7 @@
 				break
 		return 1
 	if(href_list["new_record"])
-		if(!check_access(usr, access_bridge))
+		if(!check_access(usr, access_castelnau_bridge)) //bos
 			to_chat(usr, "Access Denied.")
 			return
 		active_record = new/datum/computer_file/report/crew_record()

@@ -48,8 +48,8 @@
 	title = "Security Operative"
 	department = "Security"
 	department_flag = SEC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Sheriff"
 	selection_color = "#9e2e2e"
 	economic_power = 6

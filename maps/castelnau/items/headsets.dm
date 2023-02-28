@@ -50,7 +50,7 @@
 
 /obj/item/device/radio/headset/heads/castelnau_pilot/syn
 	name = "syndicate pilot's headset"
-	icon_state = "sindie_headset"
+	icon_state = "syndie_headset"
 	item_state = "par_headset_alt"
 	ks1type = /obj/item/device/encryptionkey/heads/castelnau_pilot/syn
 
@@ -98,7 +98,7 @@
 
 /obj/item/device/radio/headset/heads/castelnau_med/syn
 	name = "syndicate medical headset"
-	icon_state = "sindie_headset"
+	icon_state = "syndie_headset"
 	item_state = "par_headset_alt"
 	ks1type = /obj/item/device/encryptionkey/heads/castelnau_med/syn
 
@@ -134,7 +134,7 @@
 
 /obj/item/device/radio/headset/heads/castelnau_security/syn
 	name = "syndicate security headset"
-	icon_state = "sindie_headset"
+	icon_state = "syndie_headset"
 	item_state = "par_headset_alt"
 	ks1type = /obj/item/device/encryptionkey/heads/castelnau_security/syn
 
