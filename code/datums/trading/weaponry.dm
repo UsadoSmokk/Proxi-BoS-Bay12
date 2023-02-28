@@ -97,8 +97,8 @@
 								/obj/item/gun/energy/laser/dogan                 = TRADER_THIS_TYPE,
 								/obj/item/gun/projectile/automatic/machine_pistol/usi  = TRADER_THIS_TYPE,
 								/obj/item/clothing/accessory/storage/holster                    = TRADER_ALL)
-/NOBODY CALL BAY TRADERS/
-/   BOS TRADERS BEGIN  */
+/ NOBODY CALL BAY TRADERS /
+/   BOS TRADERS BEGIN    */
 
 /datum/trader/heltek
 	name = "HelTek Arms"
