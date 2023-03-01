@@ -41,7 +41,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	id_hud_icons = 'maps/castelnau/icons/assignment_hud.dmi'
 
 	starting_money = 30000
-	salary_modifier = 0.4
+	salary_modifier = 0.5
 	supply_currency_name = "Cargo credits"
 	supply_currency_name_short = "CaCr."
 	local_currency_name = "credits"
