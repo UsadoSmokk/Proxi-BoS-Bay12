@@ -5,10 +5,10 @@
 	name = "Контрабанда"
 	chance = 15
 	weight = ASPECT_WEIGHT_CONTRABAND
-	announce_text = "<span class=\"info\">Недавно была получена информация о большом схроне контрабанды на Антарес - но на месте ничего не нашли. Вероятно контрабандисты всё уже перепрятали, но делали они это, наверняка, в спешке...</span>"
+	announce_text = "<span class=\"info\">Недавно была получена информация о большом схроне контрабанды - но на месте ничего не нашли. Вероятно контрабандисты всё уже перепрятали, но делали они это, наверняка, в спешке...</span>"
 
 /datum/round_aspect/contraband/get_desc_msg()
-	return SPAN_WARNING("Тоннели стали более интересными...")
+	return SPAN_WARNING("Пустыня стала более интересной...")
 
 /datum/round_aspect/contraband/do_preload_thing()
 	. = ..()

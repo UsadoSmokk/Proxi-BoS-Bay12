@@ -10,9 +10,9 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 	var/reputation_reward
 	var/hirer
 	//Lists of possible hirers for differents contracts types
-	var/list/spy_hirers = list("Astro Media-Journalism", "Lordanian Patriots Association", "Syndicate", "ICCG", "Skrellian Defence Task Forces", "Mirania", "United Stations Of Star AED-1918", "Cult of Ascension")
-	var/list/thief_hirers = list("Lordanian Patriots Association", "Syndicate", "Mirania", "Space Travelers", "Private Face", "Empire Of Asteroid D-451", "Tajarans Vendetta Community", "Tribune of Lorriman Independence", "Cult of Ascension")
-	var/list/sabotage_hirers = list("Lordanian Patriots Association", "Mirania", "Space Travelers", "Lordanian Miners Conglomerate Radicals", "Private Face", "Haliphate Of Black Hole ALLH-1453", "Tajarans Vendetta Community", "Tribune of Lorriman Independence", "Cult of Ascension")
+	var/list/spy_hirers = list("Astro Media-Journalism", "Lordanian Patriots Association", "Syndicate", "ICCG", "Skrellian Defence Task Forces", "United Stations Of Star AED-1918", "Cult of Ascension", "Gestalt", "Boris Booker's Army")
+	var/list/thief_hirers = list("Lordanian Patriots Association", "Space Travelers", "Private Face", "Empire Of Asteroid D-451", "Tajarans Vendetta Community", "Tribune of Lorriman Independence", "Cult of Ascension", "Gestalt", "Boris Booker's Army")
+	var/list/sabotage_hirers = list("Lordanian Patriots Association", "Space Travelers", "Lordanian Miners Conglomerate Radicals", "Private Face", "Haliphate Of Black Hole ALLH-1453", "Tajarans Vendetta Community", "Tribune of Lorriman Independence", "Cult of Ascension", "Gestalt", "Boris Booker's Army")
 
 /datum/antag_contract/proc/can_place()
 	if(unique)
@@ -159,7 +159,7 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 		"the captain's pinpointer" = /obj/item/pinpointer,
 		"an ablative armor vest" = /obj/item/clothing/suit/armor/laserproof,
 		"the marine squad leader RIG" = /obj/item/rig/infantry/sl/equipped,
-		"the captain's secret documents" = /obj/item/folder/envelope/captain
+//		"the captain's secret documents" = /obj/item/folder/envelope/captain
 	)
 
 /datum/antag_contract/item/steal/New()
@@ -194,8 +194,8 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 	reward = rand(10,15)
 	reputation_reward = 16
 	reputation_reward -= reward
-	sum = rand(30, 40) * 500
-	desc = "Hirer: [hirer].<br>Collect a sum of [sum] thalers and send it [pick("via", "in")] SNB."
+	sum = rand(15, 25) * 500
+	desc = "Hirer: [hirer].<br>Collect a sum of [sum] credits and send it [pick("via", "in")] SNB."
 
 /datum/antag_contract/item/dump/check(obj/item/storage/container)
 	var/received = 0
