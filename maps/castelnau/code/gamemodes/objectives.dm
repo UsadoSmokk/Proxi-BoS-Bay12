@@ -1,4 +1,4 @@
-datum/objective/steal/New()
+/datum/objective/steal/New()
 	..()
 	possible_items = list (
 			"the captain's antique laser gun" = /obj/item/gun/energy/captain,
