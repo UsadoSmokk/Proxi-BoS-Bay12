@@ -3,9 +3,9 @@
 
 /datum/job/assistant
 	title = "Off-Duty"
-	total_positions = -1
+	total_positions = 0
 	alt_titles = list("Assistant")
-	spawn_positions = -1
+	spawn_positions = 0
 	department = "Civilian"
 	department_flag = CIV
 	supervisors = "the Captain and the Coordinator"
@@ -21,8 +21,24 @@
 						/datum/mil_rank/par,
 						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi,
 						/datum/mil_rank/par/yak = /decl/hierarchy/outfit/job/castelnau/yak,
-					/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau)
+						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau)
 
-	access = list(
-	access_castelnau_perseus
-	)
+	access = list(access_castelnau_perseus)
+
+/datum/job/wanderer
+	title = "Wanderer"
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "your conscience"
+	selection_color = "#515151"
+	department = "Civilian"
+	department_flag = CIV
+	economic_power = 0
+	announced = FALSE
+	create_record = 0
+	latejoin_at_spawnpoints = 1
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/wanderer
+	allowed_branches = list(/datum/mil_branch/other)
+	allowed_ranks = list(/datum/mil_rank/other)
+	required_language = null
+	give_psionic_implant_on_join = FALSE

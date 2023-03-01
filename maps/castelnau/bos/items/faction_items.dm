@@ -64,7 +64,7 @@
 	new /obj/random/cash(src)
 
 /obj/item/material/sword/katana/yakuza
-	name = "yakuza katana"
+	name = "scolopendras katana"
 	desc = "Your tool of justice"
 	icon = 'maps/castelnau/bos/icons/obj/items/weapons.dmi'
 	item_icons = list(
@@ -98,9 +98,38 @@
 
 /obj/item/storage/shurikens
 	name = "shurikens box"
+	icon_state = "box"
+	item_state = "syringe_kit"
 	desc = "It has holes in it."
 	startswith = list(
 	/obj/item/material/star=4)
+
+/obj/item/paper/yakuza
+	name = "Yangui Scolopendras Codex"
+	desc = "A brief overview of Scolopendras Codex."
+	icon = 'icons/obj/paper.dmi'
+	icon_state = "paper_talisman"
+	info = {"
+	<center>
+
+<large><b>КОДЕКС
+
+</b></large>
+<hr>
+<b>Безопасность Клана превыше всего.
+
+Находи достойных последователей.
+
+Не бойся смерти, рискуй.
+
+Никогда не отказывайся от долга, если принял его на себя.
+
+Помогай нуждающимся.
+
+Слово Мастера - закон.
+
+Щади сдавшихся противников.</center></b>
+	"}
 
 
 ///SYNDICATE

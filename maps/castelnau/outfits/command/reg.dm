@@ -15,6 +15,7 @@
 
 /decl/hierarchy/outfit/job/castelnau/reg/com/sheriff
 	name = OUTFIT_JOB_NAME("Sheriff - Castelnau")
+	id_types = list(/obj/item/card/id/castelnau/crew/security/warden)
 	l_ear = /obj/item/device/radio/headset/heads/castelnau_sheriff
 	pda_type = /obj/item/modular_computer/pda/security
 	glasses = /obj/item/clothing/glasses/hud/security/prot/aviators

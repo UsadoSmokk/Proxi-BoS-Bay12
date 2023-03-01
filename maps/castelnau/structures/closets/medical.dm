@@ -90,7 +90,7 @@
 
 /obj/structure/closet/secure_closet/medical_castelnausenior
 	name = "surgeon's locker"
-	req_access = list(access_castelnau_medical)
+	req_access = list(access_castelnau_medical, access_castelnau_bridge)
 	closet_appearance = /decl/closet_appearance/secure_closet/castelnau/medical/physician
 
 /obj/structure/closet/secure_closet/medical_castelnausenior/WillContain()

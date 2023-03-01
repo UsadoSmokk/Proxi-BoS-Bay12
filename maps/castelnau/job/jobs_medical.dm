@@ -113,6 +113,7 @@
 						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/med/doctor,
 						/datum/mil_rank/other/free = /decl/hierarchy/outfit/job/castelnau/med/doctor,
 						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/med)
+	skill_points = 30
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_BASIC,
 		SKILL_MEDICAL     = SKILL_BASIC

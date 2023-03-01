@@ -38,6 +38,8 @@
 #define FACTION_SYNDI			"Syndicate"
 #define FACTION_NONE			"Independent"
 
+#define FACTION_REGS			"Regulators"
+
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"
 #define HOME_SYSTEM_MARS       "Mars"

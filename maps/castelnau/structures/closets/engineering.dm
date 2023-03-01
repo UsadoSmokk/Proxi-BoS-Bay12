@@ -25,11 +25,11 @@
 
 /obj/structure/closet/secure_closet/engineering_senior_castelnau
 	name = "senior engineer's locker"
-	req_access = list(access_ce)
+	req_access = list(access_castelnau_bridge, access_castelnau_engineering)
 	closet_appearance = /decl/closet_appearance/secure_closet/castelnau/engineering/ce
 	storage_capacity = 45
 
-/obj/structure/closet/secure_closet/engineering_chief_castelnau/WillContain()
+/obj/structure/closet/secure_closet/engineering_senior_castelnau/WillContain()
 	return list(
 		/obj/item/clothing/accessory/storage/brown_vest,
 		/obj/item/blueprints,

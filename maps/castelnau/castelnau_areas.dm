@@ -4,10 +4,10 @@
 	post_round_safe_areas = list (
 		/area/centcom,
 		/area/shuttle/escape/centcom,
-		/area/shuttle/escape_pod6/station,
-		/area/shuttle/escape_pod7/station,
-		/area/shuttle/escape_pod8/station,
-		/area/shuttle/escape_pod9/station,
+		/area/shuttle/escape_pod1/station,
+		/area/shuttle/escape_pod2/station,
+		/area/shuttle/escape_pod3/station,
+		/area/shuttle/escape_pod4/station,
 		/area/shuttle/administration/centcom,
 		/area/shuttle/specops/centcom
 	)
@@ -19,19 +19,19 @@
 /area/castelnau/
 	icon = 'maps/castelnau/icons/areas.dmi'
 
-/area/shuttle/escape_pod6/station
+/area/shuttle/escape_pod1/station
 	name = "Escape Pod One"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod7/station
+/area/shuttle/escape_pod2/station
 	name = "Escape Pod Two"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod8/station
+/area/shuttle/escape_pod3/station
 	name = "Escape Pod Three"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod9/station
+/area/shuttle/escape_pod4/station
 	name = "Escape Pod Four"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
@@ -514,7 +514,7 @@ CREATE_CST_AREA(security/sheriff)
 CREATE_CST_AREA(security/detective)
 	name = "Security - Investigator Office"
 	icon_state = "detective"
-	req_access = list(access_castelnau_brig)
+	req_access = list(access_castelnau_detective)
 
 CREATE_CST_AREA(command/fo)
 	name = "Command - First Mate's Quarters"
