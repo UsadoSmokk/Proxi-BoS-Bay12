@@ -1,3 +1,10 @@
+///
+//MISC THINGS
+///
+
+/obj/item/paper
+	language = LANGUAGE_SPACER
+
 /obj/item/storage/secure/briefcase/nukedisk
 	startswith = list(
 		/obj/item/disk/nuclear,
@@ -208,3 +215,64 @@
 	req_access = list(access_castelnau_bridge)
 	available_modifications = list(/decl/item_modifier/space_suit/command)
 	species = list(SPECIES_HUMAN,SPECIES_SKRELL)
+
+///
+//ACCESS OVERRIDES
+///
+
+/obj/machinery/vending/boozeomat
+	req_access = list(access_castelnau_bar)
+
+/obj/machinery/vending/dinnerware
+	req_access = list(access_castelnau_kitchen)
+
+/obj/machinery/vending/engivend
+	req_access = list(access_castelnau_engineering)
+
+/obj/machinery/vending/engineering
+	req_access = list(access_castelnau_engineering)
+
+/obj/machinery/vending/robotics
+	req_access = list(access_castelnau_englab)
+
+/obj/machinery/vending/security
+	req_access = list(access_castelnau_security)
+
+/obj/machinery/vending/medical
+	req_access = list(access_castelnau_medical)
+
+/datum/nano_module/program/comm
+	admin_access = list(access_castelnau_bridge)
+
+/datum/computer_file/program/atmos_control
+	required_access = access_castelnau_atmospherics
+
+/datum/computer_file/program/power_monitor
+	required_access = access_castelnau_engineering
+
+/datum/computer_file/program/rcon_console
+	required_access = access_castelnau_engineering
+
+/datum/computer_file/program/shields_monitor
+	required_access = access_castelnau_engineering
+
+/datum/computer_file/program/supermatter_monitor
+	required_access = access_castelnau_engineering
+
+/datum/nano_module/deck_management
+	default_access = access_castelnau_bridge
+
+/datum/computer_file/program/docking
+	required_access = access_castelnau_bridge
+
+/datum/nano_module/supply
+	admin_access = access_castelnau_cheapskate_cargo
+
+/datum/computer_file/program/suit_sensors
+	required_access = access_castelnau_medical
+
+/datum/computer_file/program/digitalwarrant
+	required_access = access_castelnau_security
+
+/datum/computer_file/program/forceauthorization
+	required_access = access_castelnau_sheriff

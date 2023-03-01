@@ -38,6 +38,7 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/terran
 	head = /obj/item/clothing/head/terran/navy/utility
 	uniform = /obj/item/clothing/under/terran/navy/utility
+	suit = /obj/item/clothing/suit/storage/terran/service/navy
 	shoes = /obj/item/clothing/shoes/terran
 	pda_type = /obj/item/modular_computer/pda
 	pda_slot = slot_l_store
@@ -46,6 +47,8 @@
 	name = OUTFIT_JOB_NAME("Independant Confederation of Lordania Fleet - Utility")
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/lss
 	uniform = /obj/item/clothing/under/lordan/utility/fleet
+	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet
+	head = /obj/item/clothing/head/beret/lordan/fleet
 	shoes = /obj/item/clothing/shoes/lordan
 
 /decl/hierarchy/outfit/job/castelnau/syndi

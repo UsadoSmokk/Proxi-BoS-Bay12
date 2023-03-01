@@ -31,11 +31,6 @@
 	path = /obj/item/gun/projectile/pistol/sec
 	cost = 6
 
-/datum/gear/fr_military/holdout
-	display_name = "Lumoco Whisper concealable pistol"
-	path = /obj/item/gun/projectile/pistol/holdout
-	cost = 5
-
 /datum/gear/fr_military/revolvermedium
 	display_name = "MA-Blacklist revolver"
 	path = /obj/item/gun/projectile/revolver/medium
@@ -49,4 +44,4 @@
 /datum/gear/fr_military/rocketlauncher
 	display_name = "rocket launcher"
 	path = /obj/item/gun/projectile/rocket/recoilless/sec
-	cost = 21
+	cost = 26

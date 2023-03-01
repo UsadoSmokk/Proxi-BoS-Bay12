@@ -48,62 +48,6 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	local_currency_name_singular = "credit"
 	local_currency_name_short = "Cr"
 
-/datum/map/castelnau/setup_map()
-	..()
-//	system_name = generate_system_name()
-	system_name = "Mjolnir"
-	minor_announcement = new(new_sound = sound('sound/AI/torch/commandreport.ogg', volume = 45))
-
-/datum/map/castelnau/get_map_info()
-	. = list()
-	. += "И так, вы попали на борт этого богом забытого, созданного на скорую руку из случайно собранного металлолома корабля - РМК Кастельнау."
-	. += "Стоим мы в этом заполненном крысами и тараканами помещении только потому, что вы решили продать своё тело и душу регуляторам - ведомые жаждой наживы, свободы или пистолетом у вашего виска, а может сотней других возможных причин, ежедневно порождаемых этим проклятым миром."
-	. += ""
-	. += "Мы находимся в системе Мьёльнир. Она не менее забыта, чем наши проданные души. Мьёльнир наполнен дикими племенами, коммунистами, сошедшими с ума старыми адмиралами, пиратами, нелегальными торговцами и остальным отребьем - и именно за их головами послан РМК Кастельнау."
-	. += "Пока участники самопровозглашённого 'Альянса человечества' обстреливает миром планеты бывшего ЦПСС, регуляторы, и в том числе вы, направляйтесь по воле сильных мира сего на задачи меньшего масштаба."
-	. += "Им не важно как вы выполните свою цель. Грабьте, убивайте, сжигайте - главное достигнуть поставленного и получить награду, наверняка столь желанную вами."
-	. += ""
-	. += "И даже не думайте, что вы одни во вселенной. Воксы и Восхождение, видя слабости грызущихся меж собой людей, продолжают свои походы, захватывая себе всё больше новых систем. Кто знает, может это забытое место станет следующим?"
-	. += "Как бы то не было, вы знаете для чего вы тут. Вы знаете, за что продали свою душу."
-	. += ""
-	. += "А теперь вперёд, как говорят в Альянсе, за человечество!"
-	return jointext(., "<br>")
-
-/datum/map/castelnau/send_welcome()
-	var/welcome_text = "<center><br /><font size = 3><b>FTV Cheapskate</b> Показания Сенсоров:</font><hr />"
-	welcome_text += "Отчет сгенерирован [stationdate2text()] в [stationtime2text()]</center><br /><br />"
-	welcome_text += "Текущая система: <b>Мьолнир</b><br />"
-	welcome_text += "Дней с последнего визита в порт: <b>[rand(30,90)]</b><br />"
-	welcome_text += "Результаты сканирования показали следующие потенциальные объекты для проверки:<br />"
-	var/list/space_things = list()
-	var/obj/effect/overmap/visitable/castelnau = map_sectors["1"]
-	for(var/zlevel in map_sectors)
-		var/obj/effect/overmap/visitable/O = map_sectors[zlevel]
-		if(O.name == castelnau.name)
-			continue
-		space_things |= O
-
-	var/list/distress_calls
-	for(var/obj/effect/overmap/visitable/O in space_things)
-		var/location_desc = " на текущем квадрате."
-		if(O.loc != castelnau.loc)
-			var/bearing = round(90 - Atan2(O.x - castelnau.x, O.y - castelnau.y),5) //fucking triangles how do they work
-			if(bearing < 0)
-				bearing += 360
-			location_desc = ", по азимуту [bearing]."
-		if(O.has_distress_beacon)
-			LAZYADD(distress_calls, "[O.has_distress_beacon][location_desc]")
-		welcome_text += "<li>\A <b>[O.name]</b>[location_desc]</li>"
-
-	if(LAZYLEN(distress_calls))
-		welcome_text += "<br><b>Обнаружены сигналы бедствия:</b><br>[jointext(distress_calls, "<br>")]<br>"
-	else
-		welcome_text += "<br>Сигналов бедствия не обнаружено.<br />"
-	welcome_text += "<hr>"
-
-	post_comm_message("FTV Cheapskate Sensor Readings", welcome_text)
-	minor_announcement.Announce(message = "Новое сообщение от [GLOB.using_map.company_name] доступно Командованию Регуляторов на всех терминалах.")
-
 	available_cultural_info = list(
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_LORDANIA,
@@ -128,15 +72,15 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 		),
 		TAG_FACTION = list(
 			FACTION_REGS,
-			FACTION_SOVLORDANIA,
+//			FACTION_SOVLORDANIA,
 			FACTION_LARFLEET,
-			FACTION_LARMARINES,
-			FACTION_KGB,
+//			FACTION_LARMARINES,
+//			FACTION_KGB,
 			FACTION_INDIE_CONFED,
 			FACTION_SYNDI,
-			FACTION_LRA,
-			FACTION_SOL_CENTRAL,
-			FACTION_FLEET,
+//			FACTION_LRA,
+//			FACTION_SOL_CENTRAL,
+//			FACTION_FLEET,
 //			FACTION_CORPORATE,
 //			FACTION_NANOTRASEN,
 			FACTION_FREETRADE,
@@ -199,3 +143,60 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 		TAG_CULTURE =   CULTURE_HUMAN_SPACER,
 		TAG_RELIGION =  RELIGION_ATHEISM
 	)
+
+/datum/map/castelnau/setup_map()
+	..()
+//	system_name = generate_system_name()
+	system_name = "Mjolnir"
+	minor_announcement = new(new_sound = sound('sound/AI/torch/commandreport.ogg', volume = 45))
+
+/datum/map/castelnau/get_map_info()
+	. = list()
+	. += "И так, вы попали на борт этого богом забытого, созданного на скорую руку из случайно собранного металлолома корабля - РМК Кастельнау."
+	. += "Стоим мы в этом заполненном крысами и тараканами помещении только потому, что вы решили продать своё тело и душу регуляторам - ведомые жаждой наживы, свободы или пистолетом у вашего виска, а может сотней других возможных причин, ежедневно порождаемых этим проклятым миром."
+	. += ""
+	. += "Мы находимся в системе Мьёльнир. Она не менее забыта, чем наши проданные души. Мьёльнир наполнен дикими племенами, коммунистами, сошедшими с ума старыми адмиралами, пиратами, нелегальными торговцами и остальным отребьем - и именно за их головами послан РМК Кастельнау."
+	. += "Пока участники самопровозглашённого 'Альянса человечества' обстреливает миром планеты бывшего ЦПСС, регуляторы, и в том числе вы, направляйтесь по воле сильных мира сего на задачи меньшего масштаба."
+	. += "Им не важно как вы выполните свою цель. Грабьте, убивайте, сжигайте - главное достигнуть поставленного и получить награду, наверняка столь желанную вами."
+	. += ""
+	. += "И даже не думайте, что вы одни во вселенной. Воксы и Восхождение, видя слабости грызущихся меж собой людей, продолжают свои походы, захватывая себе всё больше новых систем. Кто знает, может это забытое место станет следующим?"
+	. += "Как бы то не было, вы знаете для чего вы тут. Вы знаете, за что продали свою душу."
+	. += ""
+	. += "А теперь вперёд, как говорят в Альянсе, за человечество!"
+	return jointext(., "<br>")
+
+/datum/map/castelnau/send_welcome()
+	var/welcome_text = "<center><br /><font size = 3><b>FTV Cheapskate</b> Показания Сенсоров:</font><hr />"
+	welcome_text += "Отчет сгенерирован [stationdate2text()] в [stationtime2text()]</center><br /><br />"
+	welcome_text += "Текущая система: <b>Мьолнир</b><br />"
+	welcome_text += "Дней с последнего визита в порт: <b>[rand(30,90)]</b><br />"
+	welcome_text += "Результаты сканирования показали следующие потенциальные объекты для проверки:<br />"
+	var/list/space_things = list()
+	var/obj/effect/overmap/visitable/castelnau = map_sectors["1"]
+	for(var/zlevel in map_sectors)
+		var/obj/effect/overmap/visitable/O = map_sectors[zlevel]
+		if(O.name == castelnau.name)
+			continue
+		space_things |= O
+
+	var/list/distress_calls
+	for(var/obj/effect/overmap/visitable/O in space_things)
+		var/location_desc = " на текущем квадрате."
+		if(O.loc != castelnau.loc)
+			var/bearing = round(90 - Atan2(O.x - castelnau.x, O.y - castelnau.y),5) //fucking triangles how do they work
+			if(bearing < 0)
+				bearing += 360
+			location_desc = ", по азимуту [bearing]."
+		if(O.has_distress_beacon)
+			LAZYADD(distress_calls, "[O.has_distress_beacon][location_desc]")
+		welcome_text += "<li>\A <b>[O.name]</b>[location_desc]</li>"
+
+	if(LAZYLEN(distress_calls))
+		welcome_text += "<br><b>Обнаружены сигналы бедствия:</b><br>[jointext(distress_calls, "<br>")]<br>"
+	else
+		welcome_text += "<br>Сигналов бедствия не обнаружено.<br />"
+	welcome_text += "<hr>"
+
+	post_comm_message("FTV Cheapskate Sensor Readings", welcome_text)
+	minor_announcement.Announce(message = "Новое сообщение от [GLOB.using_map.company_name] доступно Командованию Регуляторов на всех терминалах.")
+

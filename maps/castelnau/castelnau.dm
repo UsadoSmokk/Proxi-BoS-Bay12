@@ -67,6 +67,7 @@
 	#include "loadout/loadout_head.dm"
 	#include "loadout/factions/military.dm"
 	#include "loadout/factions/paroled.dm"
+	#include "loadout/factions/syndi.dm"
 	#include "loadout/loadout_misc.dm"
 	#include "loadout/loadout_shoes.dm"
 	#include "loadout/loadout_suit.dm"

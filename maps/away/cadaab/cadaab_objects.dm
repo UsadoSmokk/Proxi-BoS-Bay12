@@ -3,6 +3,7 @@
 	icon = 'maps/away/cadaab/icons/objects_48x48.dmi'
 	icon_state = "tree"
 	pixel_x = 0
+	health_max = 50
 
 /obj/structure/cadaab
 	name = "stone"
@@ -12,6 +13,7 @@
 	anchored = TRUE
 	density = TRUE
 	layer = ABOVE_HUMAN_LAYER
+	health_max = 40
 
 /obj/structure/cadaab/Initialize()
 	. = ..()
@@ -39,6 +41,7 @@
 	icon_state = "steelfence"
 	anchored = TRUE
 	density = TRUE
+	health_max = 30
 
 /obj/structure/steelfence/attackby(obj/item/W as obj, mob/user as mob)
 	if(isWirecutter(W))
@@ -52,6 +55,7 @@
 	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "fencedoor"
 	icon_base = "fencedoor"
+	health_max = 30
 
 /obj/structure/closet/tent
 	name = "tent"
@@ -61,6 +65,7 @@
 	close_sound = 'sound/effects/footstep/carpet5.ogg'
 	setup = 0
 	closet_appearance = null
+	health_max = 10
 
 /obj/structure/reagent_dispensers/fueltank/cadaab
 	name = "gas station"
