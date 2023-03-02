@@ -15,6 +15,14 @@
 	name = "road border"
 	icon_state = "road_border_surrounded"
 
+/obj/effect/floor_decal/inaks/road_sewer
+	name = "road sewer"
+	icon_state = "road_sewer"
+
+/obj/effect/floor_decal/inaks/sand_dust
+	name = "sand dust"
+	icon_state = "sand_dust"
+
 /obj/effect/floor_decal/inaks/cafel_hole
 	name = "hole in cafel"
 	icon_state = "cafel_hole"
