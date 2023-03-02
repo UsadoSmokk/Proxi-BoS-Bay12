@@ -53,3 +53,34 @@
 	item_icons = list(
 		slot_l_hand_str = 'customs/icons/mob/custom_items_lhand.dmi',
 		slot_r_hand_str = 'customs/icons/mob/custom_items_rhand.dmi')
+
+/obj/item/clothing/head/outhood
+	name = "outcast hood"
+	icon_state = "outhood"
+	icon = 'customs/icons/obj/custom_items_obj.dmi'
+	item_icons = list(slot_head_str = 'customs/icons/mob/custom_items_mob.dmi')
+	desc = "You certainly wouldn't wear it if you were loved."
+	armor = list(
+		bio = ARMOR_BIO_MINOR,
+		)
+	flags_inv = HIDEEARS|HIDEEYES|BLOCKHAIR
+	item_flags = ITEM_FLAG_THICKMATERIAL
+	body_parts_covered = HEAD|FACE|EYES
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/suit/storage/hooded/outcast
+	name = "outcast cloak"
+	icon = 'customs/icons/obj/custom_items_obj.dmi'
+	item_icons = list(slot_wear_suit_str = 'customs/icons/mob/custom_items_mob.dmi')
+	desc = "You certainly wouldn't wear it if you were loved"
+	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND,ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_INSIGNIA,ACCESSORY_SLOT_RANK,ACCESSORY_SLOT_DEPT)
+	icon_state = "outcast"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(
+		bio = ARMOR_BIO_MINOR
+		)
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/outhood
+	siemens_coefficient = 0.6
