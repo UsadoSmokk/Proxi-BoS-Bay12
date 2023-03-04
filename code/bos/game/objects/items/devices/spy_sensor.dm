@@ -1,6 +1,7 @@
 /obj/item/device/spy_sensor
 	name = "spying sensor"
-	icon_state = "motion0" //placeholder
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "floor_beacon" //placeholder
 	desc = "Looks like some sort of sensor."
 	w_class = ITEM_SIZE_SMALL
 

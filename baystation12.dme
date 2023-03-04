@@ -163,6 +163,7 @@
 #include "code\_onclick\hud\skybox.dm"
 #include "code\bos\datums\ai_law_sets.dm"
 #include "code\bos\datums\contract.dm"
+#include "code\bos\datums\footsteps.dm"
 #include "code\bos\datums\shackle_law_sets.dm"
 #include "code\bos\datums\music_tracks\bos_music_tracks.dm"
 #include "code\bos\datums\underwear\top.dm"
