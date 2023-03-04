@@ -883,10 +883,12 @@
 		vomit(vomit_score, vomit_score/25)
 
 	//0.1% chance of playing a scary sound to someone who's in complete darkness
+	/* WTF, THIS IS JUST FPS EATER. WE HATE YOU, BAYCODERS(from BoS with love)
 	if(isturf(loc) && rand(1,1000) == 1)
 		var/turf/T = loc
 		if(T.get_lumcount() <= LIGHTING_SOFT_THRESHOLD)
 			playsound_local(src,pick(GLOB.scarySounds),50, 1, -1)
+	*/
 
 	var/area/A = get_area(src)
 	if(client && world.time >= client.next_ambience_time + 5 MINUTES)

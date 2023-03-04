@@ -32,5 +32,5 @@
 		item.attackby(id, H)
 	if(item.tesla_link && !istype(H, /mob/living/carbon/human/dummy))	//PDA in loadout shouldn't work
 		item.turn_on()
-	if(H.equip_to_slot_if_possible(item, slot, del_on_fail = 1))
+	if(H.equip_to_slot_if_possible(item, slot, TRYEQUIP_DESTROY))
 		. = item
