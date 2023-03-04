@@ -571,6 +571,10 @@ CREATE_CST_AREA(engineering/shield)
 	icon_state = "engineering"
 	sound_env = SMALL_ENCLOSED
 
+CREATE_CST_AREA(engineering/substation/third)
+	name = "Third Desk Substation "
+	icon_state = "engineering"
+	sound_env = SMALL_ENCLOSED
 CREATE_CST_AREA(medical/maintenance_equipstorage)
 	name = "Infirmary Maintenance Storage"
 	icon_state = "medbay4"
