@@ -1,7 +1,7 @@
 /datum/job/warden
 	title = "Sheriff"
 	department = "Security"
-	department_flag = SEC
+	department_flag = COM|SEC
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Captain, the First Mate and the Coordinator"

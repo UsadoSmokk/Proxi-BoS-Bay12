@@ -1,7 +1,7 @@
 /datum/job/chiefmerchant
 	title = "Chief Merchant"
 	department = "Auxiliary"
-	department_flag = SUP
+	department_flag = COM|SUP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the invisible hand of the market"
