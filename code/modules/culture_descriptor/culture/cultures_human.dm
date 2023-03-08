@@ -49,7 +49,7 @@
 	Luna's upper class isn't equal; generally divided between new, corporate money and old, dynastic money; many members of the old dynasties look down on the newly wealthy. \
 	Much of the elite of Luna is embroiled in 'The Game' a state of political manoeuvring and intrigue among various factions and persons of influence and power \
 	with implications far beyond the squabbles of the prefectures."
-	economic_power = 1.3
+	economic_power = 1.1
 	language = LANGUAGE_HUMAN_SELENIAN
 
 /decl/cultural_info/culture/human/venusian_upper
@@ -57,7 +57,7 @@
 	description = "You are from one of the many zones of Venus. Floating high above the ground of the planet on massive platforms, you are one of the many who live on one of the most decadent locations in the \
 	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
 	Those above are exceptionally wealthy, being hotel, casino, resort owners, politicians, bankers or rich retirees."
-	economic_power = 1.4
+	economic_power = 1.1
 
 /decl/cultural_info/culture/human/venusian_surfacer
 	name = CULTURE_HUMAN_VENUSLOW

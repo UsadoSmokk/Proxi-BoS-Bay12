@@ -28,7 +28,7 @@
 	собирая многих беженцев с других планет."
 	distance = "1а.е"
 	capital = "Женева"
-	economic_power = 1.1
+	economic_power = 1.0
 
 /decl/cultural_info/location/human/luna
 	name = HOME_SYSTEM_LUNA
@@ -50,7 +50,7 @@
 	Однако, не всё так однозначно - многие из жителей префектуры Нью-Вегас находятся за чертой бедности, \
 	постоянно вкалывая, дабы обеспечить богатых господ, что вызывает недовольство у нижних слоёв населения."
 	capital = "Селена"
-	economic_power = 1.2
+	economic_power = 1.1
 	secondary_langs = list(LANGUAGE_HUMAN_SELENIAN)
 
 /decl/cultural_info/location/human/venus
@@ -71,7 +71,7 @@
 	которые живут там только на время их занятости. Вторая группа - это выносливые рабочие, трудящиеся в больших \
 	промышленных центрах, жизнь которых полностью отличается от богачей. Они часто возмущаются и конфликтуют с первой группой"
 	capital = "Центральная Администрационная Зона"
-	economic_power = 1.3
+	economic_power = 1.1
 
 /decl/cultural_info/location/human/ceres
 	name = HOME_SYSTEM_CERES
@@ -102,7 +102,7 @@
 	очень грубы, трусливы, закалены годами нищеты или преступности. Те, кому посчастливилось покинуть это место, \
 	очень редко хотят вернуться обратно."
 	capital = "Нью Санто-Доминго"
-	economic_power = 0.6
+	economic_power = 0.9
 	secondary_langs = list(LANGUAGE_GUTTER)
 
 /decl/cultural_info/location/human/cetiepsilon
@@ -121,7 +121,7 @@
 	значительной степени застроенного мира с акцентом на самые передовые технологии, большинство эпсилонианов имеют \
 	отличное образование. Они заработали Эпсилон Кита репутацию одной из лучших планет ЦПСС."
 	capital = "Верлиз"
-	economic_power = 1.3
+	economic_power = 1.1
 
 /decl/cultural_info/location/human/eos
 	name = HOME_SYSTEM_HELIOS
@@ -133,7 +133,7 @@
 	SCG. This process was hindered during the Gaia conflict, when the Helios Gateway was destroyed in a suicide action of the Fourth Fleet to stop the GCC advance. It has recovered rapidly \
 	since the occupation, though the memories of that event carry in the collective consciousness of those who remained through it."
 	capital = "Surya"
-	economic_power = 1.3
+	economic_power = 1.1
 	distance = "10 light years"
 
 /decl/cultural_info/location/human/terra
@@ -149,7 +149,7 @@
 	Кроме того, все они говорят на официальном языке Конфедерации - Пан-Славянском."
 	capital = "Амарант"
 	distance = "22.5 световых лет."
-	economic_power = 1.3
+	economic_power = 1.1
 	ruling_body = "Независимая Колониальная Конфедерация Гильгамеша"
 	language = LANGUAGE_HUMAN_RUSSIAN
 
@@ -188,7 +188,7 @@
 	местного штаба левой крайне радикальной организации \"Космических Путников\" в аналог космических пиратов."
 	capital = "Аль-Мулар"
 	ruling_body = "Лорданианские Суверенные Системы"	//bos
-	economic_power = 0.8
+	economic_power = 0.9
 
 /decl/cultural_info/location/human/yuklid
 	name = HOME_SYSTEM_YUKLID
@@ -297,4 +297,4 @@
 	cooperative. The colonists who brave the planet have flourished in spite of the planet's \
 	hostile weather, exporting seafood and hosting tourists eager to experience the alien planet."
 	capital = "Foster's Landing"
-	economic_power = 1.2
+	economic_power = 1.0

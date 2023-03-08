@@ -9,7 +9,7 @@
 	capital = "None"
 	ruling_body = "None"
 	distance = "67 light years"
-	economic_power = 1.5
+	economic_power = 1.1
 
 /decl/cultural_info/location/talamira
 	name = HOME_SYSTEM_TALAMIRA
@@ -22,7 +22,7 @@
 	capital = "None"
 	ruling_body = "None"
 	distance = "300 light years"
-	economic_power = 2.5
+	economic_power = 1.15
 
 /decl/cultural_info/location/roasora
 	name = HOME_SYSTEM_ROASORA
@@ -36,7 +36,7 @@
 	capital = "None"
 	ruling_body = "None"
 	distance = "350 light years"
-	economic_power = 1.2
+	economic_power = 1.1
 
 /decl/cultural_info/location/mitorqi
 	name = HOME_SYSTEM_MITORQI
@@ -48,7 +48,7 @@
 	capital = "None"
 	ruling_body = "None"
 	distance = "32 light years"
-	economic_power = 1.9
+	economic_power = 1.1
 
 /decl/cultural_info/location/skrellspace
 	name = HOME_SYSTEM_SKRELLSPACE
@@ -59,4 +59,4 @@
 	capital = "None"
 	ruling_body = "Your local SDTF"
 	distance = "None"
-	economic_power = 1.9
+	economic_power = 1.1

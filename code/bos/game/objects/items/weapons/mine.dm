@@ -27,22 +27,22 @@
 				update_icon()
 			else
 				visible_message(SPAN_WARNING("[user] MAKES MISTAKE!!!"))
-				detonate()
+				detonate(usr, 1)
 		else if(prob(50))
 			visible_message(SPAN_WARNING("[user] MAKES MISTAKE!!!"))
-			detonate()
+			detonate(usr, 1)
 	else
 		visible_message(SPAN_WARNING("[user] MAKES MISTAKE!!!"))
-		detonate()
+		detonate(usr, 1)
 
 /obj/item/mine/equipped(mob/user, slot)
 	. = ..()
 	if(active && prob(90))
-		detonate()
+		detonate(usr, 1)
 
 /obj/item/mine/Move()
 	if(active)
-		detonate()
+		detonate(usr, 1)
 	else
 		. = ..()
 
@@ -56,28 +56,36 @@
 	active = 1
 	update_icon()
 
-/obj/item/mine/proc/detonate()
+/obj/item/mine/proc/detonate(var/mob/living/carbon/human/activator, cut_arms)
 	var/turf/T = get_turf(src)
-	visible_message(SPAN_INFO("Click-Click..."))
+	visible_message(SPAN_DANGER("Clack!"))
 	if(T)
-		explosion(T, -1, -1, 1, 2)
+		explosion(T, -1, 1, 2, 2)
 
-	var/list/target_turfs = getcircle(loc, 3)
-	var/fragments_per_projectile = round(5/target_turfs.len)
+	if(activator)
+		if(cut_arms == 1)	//Damage arms to man who try to deactivate mine
+			activator.apply_damage(300, DAMAGE_BRUTE, pick(BP_L_ARM, BP_R_ARM))
+		else	//Damage foots to man who step away from mine
+			activator.apply_damage(250, DAMAGE_BRUTE, pick(BP_L_FOOT, BP_R_FOOT))
 
-	for(var/turf/O in target_turfs)
-		sleep(0)
-		var/fragment_type = /obj/item/projectile/bullet/pellet/fragment
-		var/obj/item/projectile/bullet/pellet/fragment/P = new fragment_type(T)
-		P.pellets = fragments_per_projectile
-		P.shot_from = src.name
-		P.hitchance_mod = 50
+		for(var/mob/living/carbon/human/victim in src.loc)	//And damage foots for whom still stay/lay on mine
+			victim.apply_damage(250, DAMAGE_BRUTE, pick(BP_L_FOOT, BP_R_FOOT))
 
-		P.launch(O)
 	qdel(src)
 
 
-/obj/item/mine/Crossed(AM as mob|obj)
-	if(!istype(AM, /mob/observer))
-		if(active)
-			detonate()
+/obj/item/mine/Crossed(var/mob/living/mob)
+	if((!istype(mob, /mob/observer)) && (active))
+		visible_message(SPAN_DANGER("Click..."))
+		playsound(src, 'sound/effects/bos/step_on_mine.ogg', 100)
+		if(prob(65))
+			check_step(mob)
+		else
+			detonate(mob)
+
+/obj/item/mine/proc/check_step(var/mob/living/mob)	//Checking when mob step away from mine
+	while(mob.loc == src.loc)
+		sleep(1)	//Just waiting
+
+	if((mob.loc != src.loc) && (active))
+		detonate(mob)
