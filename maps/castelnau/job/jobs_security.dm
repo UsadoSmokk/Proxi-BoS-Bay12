@@ -84,9 +84,7 @@
 	access_castelnau_external_airlocks,
 
 	access_castelnau_security,
-	access_castelnau_brig,
-
-	access_castelnau_perseus
+	access_castelnau_brig
 	)
 
 /datum/job/specialist
@@ -129,9 +127,7 @@
 	access_castelnau_brig,
 	access_castelnau_detective,
 
-	access_castelnau_morgue,
-
-	access_castelnau_perseus
+	access_castelnau_morgue
 	)
 
 /datum/job/detective/equip(var/mob/living/carbon/human/H)

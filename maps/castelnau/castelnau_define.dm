@@ -38,7 +38,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 //	planet_size = list(150,150)
 
 	away_site_budget = 3
-	id_hud_icons = 'maps/castelnau/icons/assignment_hud.dmi'
+	id_hud_icons = 'maps/castelnau/icons/assignment_hud_new.dmi'
 
 	starting_money = 30000
 	salary_modifier = 0.5

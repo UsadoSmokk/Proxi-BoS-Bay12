@@ -1,5 +1,7 @@
 #include "cadaab_areas.dm"
+#include "cadaab_jobs.dm"
 #include "cadaab_objects.dm"
+#include "cadaab_shahti.dm"
 #include "cadaab_turfs.dm"
 
 /obj/effect/overmap/visitable/sector/cadaab
@@ -58,7 +60,7 @@
 /obj/effect/shuttle_landmark/nearoutpost
 	name = "Place near the Outpost"
 	landmark_tag = "nav_prettyboy_dock"
-	docking_controller = "prettyboy_shuttle_dock"
+//	docking_controller = "prettyboy_shuttle_dock"
 	base_area = /area/cadaab/outpost/landing
 	base_turf = /turf/simulated/floor
 

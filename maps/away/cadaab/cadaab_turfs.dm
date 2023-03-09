@@ -51,3 +51,32 @@
 	opacity = 1
 	density = TRUE
 	blocks_air = 1
+
+/decl/flooring/cadaab_wood
+	name = "wooden floor"
+	desc = "Polished wood planks."
+	icon = 'maps/away/cadaab/icons/turfs.dmi'
+	icon_base = "wooden0"
+	has_damage_range = 6
+	damage_temperature = T0C+200
+	descriptor = "planks"
+	build_type = /obj/item/stack/tile/cadaab_wood
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_REMOVE_SCREWDRIVER
+	footstep_type = /decl/footsteps/wood
+
+/turf/simulated/floor/cadaab_wood
+	name = "wooden floor"
+	icon = 'maps/away/cadaab/icons/turfs.dmi'
+	icon_state = "wooden0"
+	initial_flooring = /decl/flooring/cadaab_wood
+
+/turf/simulated/floor/cadaab_wood/Initialize()
+	.=..()
+	icon_state = "wooden[rand(0,3)]"
+
+/obj/item/stack/tile/cadaab_wood
+	name = "wood floor tile"
+	singular_name = "wood floor tile"
+	desc = "An easy to fit wooden floor tile."
+	icon_state = "tile-wood"
+	matter = list(MATERIAL_WOOD = 450)

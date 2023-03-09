@@ -14,6 +14,12 @@
 	always_unpowered = TRUE
 	ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
 	forced_ambience = list('sound/ambience/bos/desert_light_wind1.ogg')
+
+/area/cadaab/outpost/syndivault
+	name = "Syndipass Vault"
+	icon_state = "syndipass"
+	req_access = list(access_castelnau_syndipass)
+
 ///OUTPOST///
 
 /area/cadaab/outpost
@@ -48,6 +54,10 @@
 /area/cadaab/outpost/living
 	name = "Outpost - Living Area"
 	icon_state = "living"
+
+/area/cadaab/outpost/leader
+	name = "Outpost - Leader Quarters"
+	icon_state = "command"
 
 /area/cadaab/outpost/landing
 	name = "Outpost - Landing Zone"
@@ -107,3 +117,11 @@
 /area/cadaab/shahtinsk/med
 	name = "Shahtinsk - Medic"
 	icon_state = "medbay"
+
+//SHAHTINSK - TRIBE//
+
+/area/cadaab/shahtinsk/tribe
+	name = "Shahtinsk - Unknown Territory"
+
+/area/cadaab/shahtinsk/tribe/cave
+	name = "Shahtinsk - Unknown Cave"

@@ -2,13 +2,13 @@
 	name = "captain's encryption key"
 	icon_state = "cap_cypherkey"
 //	channels = list("Regulators" =1, "Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
-	channels = list("Regulators" =1, "Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
+	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
 
 /obj/item/device/encryptionkey/heads/castelnau_coordinator
 	name = "coordinator's encryption key"
 	icon_state = "hop_cypherkey"
 //	channels = list("Regulators" =1, "Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
-	channels = list("Regulators" =1, "Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
+	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
 
 /obj/item/device/encryptionkey/heads/castelnau_seniorengi
 	name = "senior engineer's encryption key"
@@ -18,7 +18,7 @@
 /obj/item/device/encryptionkey/heads/castelnau_seniorengi/reg
 	name = "regulators senior engineer's encryption key"
 //	channels = list("Regulators" =1, "Command" = 1, "Engineering" = 1)
-	channels = list("Regulators" =1, "Command" = 1, "Engineering" = 1)
+	channels = list("Command" = 1, "Engineering" = 1)
 
 //dalshe idut ne glavi no mne uzhe pohui voobshe//
 
@@ -107,7 +107,7 @@
 /obj/item/device/encryptionkey/heads/castelnau_sheriff
 	name = "sheriff's encryption key"
 	icon_state = "hos_cypherkey"
-	channels = list("Regulators"=1,"Command"=1, "Security" = 1)
+	channels = list("Command"=1, "Security" = 1)
 
 /obj/item/device/encryptionkey/heads/castelnau_security
 	name = "security encryption key"
@@ -134,3 +134,23 @@
 /obj/item/storage/box/radiokeys/Initialize()
 	. = ..()
 	make_exact_fit()
+
+/obj/item/device/encryptionkey/heads/castelnau_raidlead
+	name = "raid unit leader encryption key"
+	icon_state = "hos_cypherkey"
+	channels = list("Command"=1, "Security" = 1)
+
+/obj/item/device/encryptionkey/heads/castelnau_raidlead/syn
+	name = "raid unit leader encryption key"
+	icon_state = "syn_cypherkey"
+	channels = list("Command"=1, "Security" = 1)
+
+/obj/item/device/encryptionkey/heads/castelnau_raidparty
+	name = "raid unit encryption key"
+	icon_state = "hos_cypherkey"
+	channels = list("Security" = 1)
+
+/obj/item/device/encryptionkey/heads/castelnau_raidparty/syn
+	name = "syndicate raid unit encryption key"
+	icon_state = "syn_cypherkey"
+	channels = list("Security" = 1)

@@ -10,5 +10,7 @@
 	icon = 'maps/castelnau/icons/ark/obj/structures.dmi'
 	icon_state = "strairs_single"
 
-/obj/structure/fake_stairs/single/beton
-	icon_state = "strairs_single_beton"
+/obj/structure/fake_stairs/beton
+	desc = "It's short section of stairs."
+	icon = 'maps/castelnau/icons/ark/obj/structures.dmi'
+	icon_state = "beton_stairs"
