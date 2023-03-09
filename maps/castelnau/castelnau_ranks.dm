@@ -259,7 +259,7 @@
 
 /datum/mil_rank/syndi
 	name = "Syndicate Corporate Contractor"
-	name_short = "SYND"
+	name_short = "CORP"
 
 /datum/mil_rank/syndi/arbites
 	name = "Arbiter"

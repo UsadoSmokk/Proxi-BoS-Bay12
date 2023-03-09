@@ -184,6 +184,7 @@
 #include "code\bos\game\objects\effects\decals\posters\posters.dm"
 #include "code\bos\game\objects\items\shooting_range.dm"
 #include "code\bos\game\objects\items\toys.dm"
+#include "code\bos\game\objects\items\wallet.dm"
 #include "code\bos\game\objects\items\devices\spy_sensor.dm"
 #include "code\bos\game\objects\items\devices\syndietele.dm"
 #include "code\bos\game\objects\items\devices\virus_sampler.dm"

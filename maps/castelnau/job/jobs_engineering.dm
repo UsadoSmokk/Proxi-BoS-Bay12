@@ -45,8 +45,6 @@
 	access_castelnau_maint_tunnels,
 	access_castelnau_external_airlocks,
 
-	access_castelnau_perseus,
-	access_castelnau_perseus_helm,
 	access_castelnau_teleporter
 	)
 
@@ -107,9 +105,7 @@
 	access_castelnau_engine,
 	access_castelnau_thrusters,
 	access_castelnau_maint_tunnels,
-	access_castelnau_external_airlocks,
-
-	access_castelnau_perseus
+	access_castelnau_external_airlocks
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
@@ -160,9 +156,7 @@
 	access_castelnau_engine,
 	access_castelnau_thrusters,
 	access_castelnau_maint_tunnels,
-	access_castelnau_external_airlocks,
-
-	access_castelnau_perseus
+	access_castelnau_external_airlocks
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
@@ -213,9 +207,7 @@
 	access_castelnau_engineering,
 	access_castelnau_englab,
 	access_castelnau_maint_tunnels,
-	access_castelnau_external_airlocks,
-
-	access_castelnau_perseus
+	access_castelnau_external_airlocks
 	)
 
 	skill_points = 25

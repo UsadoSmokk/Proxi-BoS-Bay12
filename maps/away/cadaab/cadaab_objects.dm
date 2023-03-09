@@ -1,3 +1,16 @@
+/obj/item/remains/cadaab
+	name = "head on a spike"
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	icon_state = "spikehead"
+
+/obj/item/remains/cadaab/chest
+	name = "remains"
+	icon_state = "remains"
+
+/obj/item/remains/cadaab/chesthead
+	name = "remains"
+	icon_state = "remains2"
+
 /obj/structure/flora/tree/cadaab
 	name = "tree"
 	icon = 'maps/away/cadaab/icons/objects_48x48.dmi'
@@ -5,19 +18,8 @@
 	pixel_x = 0
 	health_max = 50
 
-/obj/structure/cadaab
-	name = "stone"
-	desc = "You will surely burn your hand if you touch it."
-	icon = 'maps/away/cadaab/icons/objects.dmi'
-	icon_state = "stone0"
-	anchored = TRUE
-	density = TRUE
-	layer = ABOVE_HUMAN_LAYER
-	health_max = 40
-
-/obj/structure/cadaab/Initialize()
-	. = ..()
-	icon_state = "stone[rand(0,6)]"
+/obj/structure/flora/tree/cadaab/on_death()
+	qdel(src)
 
 /obj/structure/gravemarker/cadaab
 	name = "grave stone"
@@ -48,7 +50,13 @@
 		playsound(loc, 'sound/items/Wirecutter.ogg', 100, 1)
 		new /obj/item/stack/material/rods(get_turf(src))
 		qdel(src)
-	return
+		return
+	else
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		damage_health(W.force, W.damtype)
+		..()
+/obj/structure/steelfence/on_death()
+	qdel(src)
 
 /obj/machinery/door/unpowered/simple/cadaab
 	name = "steel fence door"
@@ -130,3 +138,34 @@
 					/obj/item/stack/telecrystal = 500,
 					/obj/item/storage/firstaid/combat = 4000,
 					/obj/item/gun/energy/plasmarifle = 5000)
+
+
+/obj/structure/ads
+	name = "IPCRUNNER 2320"
+	desc = "They try to make you watch stupid movies even on the forgotten moon."
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	icon_state = "ipcrunner"
+	anchored = TRUE
+	density = TRUE
+	health_max = 30
+
+/obj/structure/ads/attackby(obj/item/W as obj, mob/user as mob)
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	damage_health(W.force, W.damtype)
+	..()
+/obj/structure/ads/on_death()
+	qdel(src)
+
+/obj/structure/ads/propaganda
+	name = "Terran propaganda"
+	icon_state = "tovarisch"
+	desc = "'A TI ZAPISALSYA V DOBROVOLCI?'."
+
+/obj/structure/ads/retro
+	name = "CYBER KILLER RETRO advertising panel"
+	icon_state = "retro"
+
+/obj/effect/floor_decal/holecadaab
+	name = "hole"
+	icon = 'maps/away/cadaab/icons/turfs.dmi'
+	icon_state = "holedecal"
