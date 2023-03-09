@@ -110,8 +110,7 @@
 	access_castelnau_atmospherics,
 	access_castelnau_external_airlocks,
 	access_atmospherics,
-	access_engine_equip,
-	access_castelnau_perseus
+	access_engine_equip
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
@@ -162,9 +161,10 @@
 	access_castelnau_engine,
 	access_castelnau_thrusters,
 	access_castelnau_maint_tunnels,
+	access_castelnau_atmospherics,
 	access_castelnau_external_airlocks,
-
-	access_castelnau_perseus
+	access_atmospherics,
+	access_engine_equip
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
