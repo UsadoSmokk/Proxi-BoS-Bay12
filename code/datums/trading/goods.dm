@@ -279,6 +279,7 @@ Sells devices, odds and ends, and medical stuff
 	..()
 	speech[TRADER_HAIL_START + "silicon"] = "Welcome to ORIGIN! Let- oh, you're a synth! Well, your money is good anyway. Welcome, welcome!"
 
+/* BoS. We already have pet shop, so why we need this frog?
 /datum/trader/xeno_shop
 	name = "Xenolife Collector"
 	origin = "CSV Not a Poacher"
@@ -312,6 +313,7 @@ Sells devices, odds and ends, and medical stuff
 								/obj/item/device/dociler              = TRADER_THIS_TYPE,
 								/obj/item/beartrap			  = TRADER_THIS_TYPE,
 								/obj/item/device/scanner/xenobio = TRADER_THIS_TYPE)
+*/
 
 /datum/trader/medical
 	name = "Medical Supplier"
@@ -368,6 +370,7 @@ Sells devices, odds and ends, and medical stuff
 								  /obj/item/sign/medipolma = TRADER_THIS_TYPE
 								)
 
+/* BoS replace this with ward-takahashi trader(see in misc)
 /datum/trader/mining
 	name = "Rock'n'Drill Mining Inc"
 	origin = "Automated Smelter AH-532"
@@ -405,3 +408,4 @@ Sells devices, odds and ends, and medical stuff
 								  /obj/item/stack/material/plasteel/fifty = TRADER_THIS_TYPE,
 								  /obj/item/stack/material/steel/fifty = TRADER_THIS_TYPE
 								)
+*/

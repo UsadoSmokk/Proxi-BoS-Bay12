@@ -164,3 +164,51 @@
 /datum/trader/ship/pet_shop/New()
 	..()
 	speech[TRADER_HAIL_START + SPECIES_UNATHI] = "Ah, you've the look of a lizard who knows his way around martial combat. Come in! We can only hope our steel meets the formidable Moghedi standards."
+
+// BOS TRADERS //
+//    NEXT     //
+/datum/trader/gmb
+	name = "Ward-Takahashi GMB"
+	origin = "Automated Manufacturing Station"
+	trade_flags = TRADER_MONEY
+	speech = list(TRADER_HAIL_GENERIC		= "Greetings! It's so nice to talk to a human instead of a robot... Ah, would you like to order some machine?",
+				TRADER_HAIL_DENY			= "I'm sorry, but the main AI has forbidden me to communicate with you...",
+
+				TRADER_TRADE_COMPLETE		= "Oh, lovely!",
+				TRADER_NO_BLACKLISTED		= "Whoa whoa, this one is too bad, put it away.",
+				TRADER_NO_GOODS   			= "Sorry, but we take only in money.",
+				TRADER_NOT_ENOUGH			= "Sorry, but there's not enough here for this order.",
+				TRADER_HOW_MUCH				= "AI say that for one entry of ITEM the price would be VALUE CURRENCY.",
+
+				TRADER_COMPLEMENT_FAILURE	= "I am afraid this is beyond my competency.",
+				TRADER_COMPLEMENT_SUCCESS	= "Thank you!",
+				TRADER_INSULT_GOOD			= "Alright, I transfer this to AI...",
+				TRADER_INSULT_BAD			= "AI probably will be mad..."
+				)
+
+	possible_trading_items = list(/obj/machinery/mining/drill							= TRADER_THIS_TYPE,
+								  /obj/machinery/mining/brace							= TRADER_THIS_TYPE,
+								  /obj/machinery/floodlight								= TRADER_THIS_TYPE,
+								  /obj/item/storage/box/greenglowsticks					= TRADER_THIS_TYPE,
+								  /obj/item/stack/material/uranium/ten					= TRADER_THIS_TYPE,
+								  /obj/item/airlock_brace								= TRADER_THIS_TYPE,
+								  /obj/machinery/jukebox								= TRADER_THIS_TYPE,
+								  /obj/machinery/microwave								= TRADER_THIS_TYPE,
+								  /obj/machinery/power/port_gen/pacman/super			= TRADER_THIS_TYPE,
+								  /obj/machinery/power/port_gen/pacman					= TRADER_THIS_TYPE,
+								  /obj/machinery/power/rad_collector					= TRADER_THIS_TYPE,
+								  /obj/machinery/power/solar							= TRADER_THIS_TYPE,
+								  /obj/machinery/power/tracker							= TRADER_THIS_TYPE,
+								  /obj/machinery/power/emitter							= TRADER_THIS_TYPE,
+								  /obj/item/device/integrated_circuit_printer/upgraded	= TRADER_THIS_TYPE,
+								  /obj/item/device/integrated_electronics/wirer			= TRADER_THIS_TYPE,
+								  /obj/item/device/integrated_electronics/debugger		= TRADER_THIS_TYPE,
+								  /obj/item/device/integrated_electronics/analyzer		= TRADER_THIS_TYPE,
+								  /obj/item/stock_parts/circuitboard/solar_control		= TRADER_THIS_TYPE,
+								  /obj/item/stock_parts/circuitboard/weaponsfab			= TRADER_THIS_TYPE,
+								  /obj/item/stock_parts/circuitboard/autolathe			= TRADER_THIS_TYPE,
+								  /obj/item/stock_parts/circuitboard/protolathe			= TRADER_THIS_TYPE,
+								  /obj/item/stock_parts/circuitboard/smes				= TRADER_THIS_TYPE,
+								  /obj/item/stock_parts/circuitboard/shield_generator	= TRADER_THIS_TYPE,
+								  /obj/item/stock_parts/circuitboard/mechfab			= TRADER_THIS_TYPE
+								)

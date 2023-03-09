@@ -12,7 +12,8 @@
 	name = "Cadaab Desert"
 	icon_state = "desert"
 	always_unpowered = TRUE
-	ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg')
+	ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
+	forced_ambience = list('sound/ambience/bos/desert_light_wind1.ogg')
 
 /area/cadaab/outpost/syndivault
 	name = "Syndipass Vault"
