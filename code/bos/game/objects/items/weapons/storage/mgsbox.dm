@@ -19,6 +19,9 @@
 	var/image/overlay
 
 /obj/item/storage/mgsbox/AltClick(mob/usr)
+	if(!(src in view(1, usr)))
+		return
+
 	if(stealth_mode == 1)
 		to_chat(usr, SPAN_WARNING("You can't do it while in box!"))
 		return

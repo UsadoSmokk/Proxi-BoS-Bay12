@@ -48,7 +48,6 @@
 	spawn_positions = 1
 	supervisors = "the Captain and the Coordinator"
 	selection_color = "#2f2f7f"
-	minimal_player_age = 18
 	economic_power = 9
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
@@ -111,7 +110,6 @@
 	spawn_positions = 1
 	supervisors = "the Outpost Leader"
 	selection_color = "#9e2e2e"
-	minimal_player_age = 18
 	economic_power = 5
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
@@ -137,8 +135,6 @@
 
 	access_castelnau_medical,
 
-	access_castelnau_perseus,
-	access_castelnau_perseus_helm,
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
@@ -151,7 +147,6 @@
 	spawn_positions = 1
 	supervisors = "the Outpost Leader"
 	selection_color = "#978035"
-	minimal_player_age = 18
 	economic_power = 5
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
@@ -185,8 +180,6 @@
 	access_castelnau_atmospherics,
 	access_castelnau_thrusters,
 
-	access_castelnau_perseus,
-	access_castelnau_perseus_helm,
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
@@ -199,7 +192,6 @@
 	spawn_positions = 1
 	supervisors = "the Outpost Leader"
 	selection_color = "#029b97"
-	minimal_player_age = 18
 	economic_power = 4
 	ideal_character_age = 24
 	allowed_branches = list(/datum/mil_branch/reg)
@@ -225,68 +217,85 @@
 	access_castelnau_medical,
 	access_castelnau_morgue,
 
-	access_castelnau_perseus,
-	access_castelnau_perseus_helm,
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
 	latejoin_at_spawnpoints = 1
-/*
-/datum/job/inflead
-	title = "Infantry Captain"
-	department = "Infantry"
-	department_flag = INF
-	total_positions = 2
-	spawn_positions = 2
-	minimal_player_age = 6
+
+/datum/job/raidlead
+	title = "Raid Unit Captain"
+	department = "Raiding"
+	department_flag = SEC
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Coordinator"
-	selection_color = "#d43157"
-	skill_points = 18
-	minimum_character_age = list(SPECIES_HUMAN = 18)
-//	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
-	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
-						SKILL_WEAPONS      = SKILL_ADEPT,
-						SKILL_EVA          = SKILL_BASIC)
+	selection_color = "#c63939"
+	skill_points = 20
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+						SKILL_EVA         = SKILL_ADEPT,
+						SKILL_COMBAT      = SKILL_ADEPT,
+						SKILL_WEAPONS     = SKILL_ADEPT)
 
 	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
 						SKILL_WEAPONS     = SKILL_MAX,
 						SKILL_EVA		  = SKILL_MAX)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
-	allowed_branches = list(/datum/mil_branch/reg)
-	allowed_ranks = list(
-		/datum/mil_rank/reg
-	)
-
-/datum/job/infantry
-	title = "Infantry"
-	department = "Infantry"
-	department_flag = INF
-	total_positions = 2
-	spawn_positions = 2
-	minimal_player_age = 6
-	supervisors = "the Infantry Captain"
-	selection_color = "#d43157"
-	skill_points = 18
-	minimum_character_age = list(SPECIES_HUMAN = 18)
-	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
-						SKILL_WEAPONS      = SKILL_ADEPT,
-						SKILL_EVA          = SKILL_BASIC)
-
-	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
-						SKILL_WEAPONS     = SKILL_MAX,
-						SKILL_EVA		  = SKILL_MAX)
-
-	software_on_spawn = list(/datum/computer_file/program/deck_management)
-	allowed_branches = list(
+	allowed_branches = list(/datum/mil_branch/syndi,
 							/datum/mil_branch/mil,
 							/datum/mil_branch/par,
 							/datum/mil_branch/other)
-	allowed_ranks = list(
-						/datum/mil_rank/mil/scg,
-						/datum/mil_rank/mil/lss,
-						/datum/mil_rank/mil/iccg,
-						/datum/mil_rank/par,
-						/datum/mil_rank/par/yak,
-						/datum/mil_rank/other/merc)
-*/
+	allowed_ranks = list(/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/raidlead,
+						/datum/mil_rank/syndi/army = /decl/hierarchy/outfit/job/castelnau/syndi/army/raidlead,
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/raidlead,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/raidlead,
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/raidlead,
+						/datum/mil_rank/par/yak = /decl/hierarchy/outfit/job/castelnau/yak/raidlead)
+	access = list(
+	access_castelnau_command,
+	access_castelnau_bridge,
+	access_castelnau_eva,
+
+	access_castelnau_maint_tunnels,
+	access_castelnau_external_airlocks,
+
+	access_castelnau_perseus,
+	access_castelnau_perseus_helm)
+
+/datum/job/raidparty
+	title = "Raid Unit"
+	department = "Raiding"
+	department_flag = SEC
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Raid Unit Captain"
+	selection_color = "#c63939"
+	skill_points = 18
+	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
+						SKILL_WEAPONS      = SKILL_ADEPT,
+						SKILL_EVA          = SKILL_BASIC)
+
+	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX,
+						SKILL_EVA		  = SKILL_MAX)
+
+	software_on_spawn = list(/datum/computer_file/program/deck_management)
+	allowed_branches = list(/datum/mil_branch/syndi,
+							/datum/mil_branch/mil,
+							/datum/mil_branch/par,
+							/datum/mil_branch/other)
+	allowed_ranks = list(/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/raidparty,
+						/datum/mil_rank/syndi/army = /decl/hierarchy/outfit/job/castelnau/syndi/army/raidparty,
+						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/raidparty,
+						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/raidparty,
+						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/raidparty,
+						/datum/mil_rank/par/yak = /decl/hierarchy/outfit/job/castelnau/yak/raidparty)
+
+	access = list(
+	access_castelnau_eva,
+
+	access_castelnau_maint_tunnels,
+	access_castelnau_external_airlocks,
+
+	access_castelnau_perseus,
+	access_castelnau_perseus_helm)

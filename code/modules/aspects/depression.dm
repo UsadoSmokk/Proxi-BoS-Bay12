@@ -2,7 +2,7 @@
 	name = "Экономический Кризис"
 	chance = 15
 	weight = ASPECT_WEIGHT_DEPRESSION
-	announce_text = "<span class=\"info\">Из-за действий Лорд-Регента и Терранской Канцелярии экономика буквально рухнула! Тут бы на еду хотя бы нашкребсти...</span>"
+	announce_text = "<span class=\"info\">Из-за действий Лорд-Регента и Терранской Канцелярии экономика буквально рухнула! Тут бы на еду хотя бы наскребсти...</span>"
 
 /datum/round_aspect/economy_depression/get_desc_msg()
 	return SPAN_WARNING("Все цены были увеличены.")

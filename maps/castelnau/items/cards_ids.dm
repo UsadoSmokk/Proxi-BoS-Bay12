@@ -73,6 +73,14 @@
 /obj/item/card/id/castelnau/crew/service/bartender
 	job_access_type = /datum/job/bartender
 
+/obj/item/card/id/castelnau/crew/raidparty
+	desc = "An identification card issued to raiding party aboard the RMV Castelnau."
+	job_access_type = /datum/job/raidparty
+
+/obj/item/card/id/castelnau/crew/raidlead
+	desc = "An identification card issued to raiding party leader aboard the RMV Castelnau."
+	job_access_type = /datum/job/raidlead
+
 //ftu
 
 /obj/item/card/id/castelnau/crew/cheapskate

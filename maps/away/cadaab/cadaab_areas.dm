@@ -11,7 +11,14 @@
 /area/cadaab/desert
 	name = "Cadaab Desert"
 	icon_state = "desert"
-	ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg')
+	always_unpowered = TRUE
+	ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
+	forced_ambience = list('sound/ambience/bos/desert_light_wind1.ogg')
+
+/area/cadaab/outpost/syndivault
+	name = "Syndipass Vault"
+	icon_state = "syndipass"
+	req_access = list(access_castelnau_syndipass)
 
 ///OUTPOST///
 
@@ -48,6 +55,10 @@
 	name = "Outpost - Living Area"
 	icon_state = "living"
 
+/area/cadaab/outpost/leader
+	name = "Outpost - Leader Quarters"
+	icon_state = "command"
+
 /area/cadaab/outpost/landing
 	name = "Outpost - Landing Zone"
 	icon_state = "landing"
@@ -64,6 +75,8 @@
 	name = "Cadaab - Caves"
 	icon_state = "desert"
 	base_turf = /turf/simulated/floor/exoplanet/cadaab
+	sound_env = LARGE_ENCLOSED
+	ambience = list('sound/ambience/bos/cave1.ogg', 'sound/ambience/bos/cave2.ogg', 'sound/ambience/bos/cave3.ogg', 'sound/ambience/bos/cave4.ogg', 'sound/ambience/bos/cave5.ogg', 'sound/ambience/bos/cave6.ogg', 'sound/ambience/bos/cave7.ogg', 'sound/ambience/bos/cave8.ogg')
 //	dynamic_lighting = 1
 
 /area/cadaab/caves/bunker
@@ -104,3 +117,11 @@
 /area/cadaab/shahtinsk/med
 	name = "Shahtinsk - Medic"
 	icon_state = "medbay"
+
+//SHAHTINSK - TRIBE//
+
+/area/cadaab/shahtinsk/tribe
+	name = "Shahtinsk - Unknown Territory"
+
+/area/cadaab/shahtinsk/tribe/cave
+	name = "Shahtinsk - Unknown Cave"

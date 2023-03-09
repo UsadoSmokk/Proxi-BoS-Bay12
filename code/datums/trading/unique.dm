@@ -135,24 +135,24 @@
 /  VIRGIN BAY TRADERS END  /
 /  CHAD BOS TRADERS START */
 
-/* OKAY CHAD TRADERS SLEEP NOW /
 /datum/trader/ship/mevir
 	name = "MeVir"
 	origin = "Small Hidden Ship"
-	trade_flags = TRADER_GOODS|TRADER_WANTED_ALL
-	margin = 1
-	price_rng = 1
+	trade_flags = TRADER_MONEY|TRADER_GOODS|TRADER_WANTED_ONLY|TRADER_WANTED_ALL
+	want_multiplier = 1
+	margin = 1.1
+	price_rng = 3
 	mob_transfer_message = "<span class='danger'>You have been teleported somewhere and have lost consciousness. When you come to, you find yourself in a clean white room attached to an operating table, surrounded by people in white coats. After the words: 'Commence surgery', you were taken apart piece by piece without anaesthesia for over an hour. Only death brought you salvation.</span>"
 
 	speech = list(TRADER_HAIL_GENERIC		= "Ah, greetings. We looking for some things for our corporation... All for the sake of science and human race.",
 				TRADER_HAIL_DENY			= "We don't do business with inferiors.",
 
-				TRADER_TRADE_COMPLETE		= "Such a good sample...",
-				TRADER_NO_MONEY				= "No, no... We don't need the money...",
+				TRADER_TRADE_COMPLETE		= "This is a good sample...",
+				TRADER_NO_BLACKLISTED		= "This will not help us in our research...",
 				TRADER_NOT_ENOUGH			= "Here... Not enough...",
 				TRADER_FOUND_UNWANTED		= "This will not help us in our research...",
 				TRADER_HOW_MUCH				= "We estimate this at around VALUE.",
-				TRADER_WHAT_WANT			= "Organs and xenos.",
+				TRADER_WHAT_WANT			= "For our research we need xenos and organs like",
 
 				TRADER_COMPLEMENT_FAILURE	= "Don't pretend to understand our ideas.",
 				TRADER_COMPLEMENT_SUCCESS	= "How nice to talk to a like-minded friend!",
@@ -163,7 +163,9 @@
 	wanted_items  = list(
 						/mob/living/carbon/human									= TRADER_ALL,
 						/obj/item/organ/internal									= TRADER_ALL,
-						/mob/living/carbon/human/machine							= TRADER_BLACKLIST_ALL
+						/mob/living/carbon/human/machine							= TRADER_BLACKLIST_ALL,
+						/obj/item/organ/internal/posibrain							= TRADER_BLACKLIST_ALL,
+						/obj/item/organ/internal/augment							= TRADER_BLACKLIST_ALL
 						)
 
 	possible_trading_items = list(
@@ -175,4 +177,3 @@
 								/obj/item/reagent_containers/glass/bottle/pacid									= TRADER_THIS_TYPE,
 								/obj/item/reagent_containers/glass/bottle/chloralhydrate						= TRADER_THIS_TYPE
 								)
-*/

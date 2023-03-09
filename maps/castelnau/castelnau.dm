@@ -102,6 +102,10 @@
 	#include "outfits/misc/misc.dm"
 	#include "outfits/misc/evaguys.dm"
 
+	#include "outfits/raiding/mil.dm"
+	#include "outfits/raiding/par.dm"
+	#include "outfits/raiding/syndi.dm"
+
 	#include "outfits/security/mil.dm"
 	#include "outfits/security/other.dm"
 	#include "outfits/security/syndi.dm"

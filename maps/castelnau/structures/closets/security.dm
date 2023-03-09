@@ -125,3 +125,60 @@
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/security, /obj/item/storage/backpack/satchel/sec)),
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag/sec, /obj/item/storage/backpack/messenger/sec))
 	)
+
+
+/obj/structure/closet/secure_closet/raidcap_castelnau
+	name = "raid unit captain locker"
+	req_access = list(access_castelnau_perseus_helm, access_castelnau_bridge)
+	closet_appearance = /decl/closet_appearance/secure_closet/castelnau/security/hos
+
+/obj/structure/closet/secure_closet/raidcap_castelnau/WillContain()
+	return list(
+		/obj/item/clothing/head/helmet,
+		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/gunbox/sidearm/infantry,
+		/obj/item/device/radio,
+		/obj/item/device/tape/random,
+		/obj/item/device/gps,
+		/obj/item/pinpointer/radio,
+//		/obj/item/device/radio/beacon,
+		/obj/item/taperoll/research,
+		/obj/item/material/hatchet/machete/deluxe,
+		/obj/item/storage/belt/holster/machete,
+		/obj/item/device/spaceflare,
+		/obj/item/clothing/accessory/storage/webbing_large,
+		/obj/item/device/taperecorder,
+		/obj/item/device/scanner/gas,
+		/obj/item/device/flash,
+		/obj/item/device/binoculars,
+		/obj/item/material/knife/folding/swiss,
+		/obj/item/clothing/accessory/buddy_tag,
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel/grey)),
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag, /obj/item/storage/backpack/messenger)),
+		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
+	)
+
+/obj/structure/closet/secure_closet/raider_castelnau
+	name = "raid unit locker"
+	req_access = list(access_castelnau_perseus_helm)
+	closet_appearance = /decl/closet_appearance/secure_closet/castelnau/security
+
+/obj/structure/closet/secure_closet/raider_castelnau/WillContain()
+	return list(
+		/obj/item/clothing/head/helmet,
+		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/gunbox/sidearm/infantry,
+		/obj/item/device/radio,
+		/obj/item/device/gps,
+		/obj/item/taperoll/research,
+		/obj/item/storage/belt/holster/machete,
+		/obj/item/device/spaceflare,
+		/obj/item/clothing/accessory/storage/webbing_large,
+		/obj/item/device/scanner/gas,
+		/obj/item/device/binoculars,
+		/obj/item/clothing/accessory/buddy_tag,
+		/obj/item/material/knife/folding/swiss,
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel/grey)),
+		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag, /obj/item/storage/backpack/messenger)),
+		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
+	)

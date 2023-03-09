@@ -34,6 +34,7 @@
 	department = "Civilian"
 	department_flag = CIV
 	economic_power = 0
+	skill_points = 25
 	announced = FALSE
 	create_record = 0
 	latejoin_at_spawnpoints = 1

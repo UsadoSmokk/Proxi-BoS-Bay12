@@ -79,3 +79,4 @@
 	id_types = list()
 	l_ear = null
 	r_pocket = /obj/item/device/flashlight
+	l_pocket = /obj/item/storage/wallet/poly/wanderer

@@ -6,6 +6,8 @@
 	#include "bos/items/underwear.dm"
 	#include "bos/items/faction_items.dm"
 
+	#include "bos/items/clothing/spacesuit.dm"
+
 	#include "bos/items/clothing/mil/lss/lordania-feet.dm"
 	#include "bos/items/clothing/mil/lss/lordania-hands.dm"
 	#include "bos/items/clothing/mil/lss/lordania-head.dm"

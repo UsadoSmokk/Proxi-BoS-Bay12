@@ -37,8 +37,6 @@
 	access_castelnau_medical,
 	access_castelnau_morgue,
 
-	access_castelnau_perseus,
-	access_castelnau_perseus_helm,
 	access_castelnau_teleporter
 	)
 
@@ -87,9 +85,7 @@
 	access_castelnau_external_airlocks,
 
 	access_castelnau_medical,
-	access_castelnau_morgue,
-
-	access_castelnau_perseus
+	access_castelnau_morgue
 	)
 
 
@@ -132,9 +128,7 @@
 	access_castelnau_external_airlocks,
 
 	access_castelnau_medical,
-	access_castelnau_morgue,
-
-	access_castelnau_perseus
+	access_castelnau_morgue
 	)
 
 /datum/job/redactor/equip(var/mob/living/carbon/human/H)

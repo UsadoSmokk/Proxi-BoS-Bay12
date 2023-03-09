@@ -143,3 +143,27 @@
 	icon_state = "srv_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/castelnau_service
+
+/obj/item/device/radio/headset/heads/castelnau_raidlead
+	name = "raid unit leader's headset"
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/heads/castelnau_raidlead
+
+/obj/item/device/radio/headset/heads/castelnau_raidlead/syn
+	name = "syndicate raid unit leader's headset"
+	icon_state = "syndie_headset"
+	item_state = "par_headset_alt"
+	ks1type = /obj/item/device/encryptionkey/heads/castelnau_raidlead/syn
+
+/obj/item/device/radio/headset/heads/castelnau_raidparty
+	name = "raid unit headset"
+	icon_state = "sec_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/heads/castelnau_raidparty
+
+/obj/item/device/radio/headset/heads/castelnau_raidparty/syn
+	name = "syndicate raid unit security headset"
+	icon_state = "syndie_headset"
+	item_state = "par_headset_alt"
+	ks1type = /obj/item/device/encryptionkey/heads/castelnau_raidparty/syn

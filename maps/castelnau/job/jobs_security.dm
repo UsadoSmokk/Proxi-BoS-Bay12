@@ -1,7 +1,7 @@
 /datum/job/warden
 	title = "Sheriff"
 	department = "Security"
-	department_flag = SEC
+	department_flag = COM|SEC
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Captain, the First Mate and the Coordinator"
@@ -35,6 +35,7 @@
 	access_castelnau_brig,
 	access_castelnau_armory,
 	access_castelnau_detective,
+	access_castelnau_sheriff,
 
 	access_castelnau_morgue,
 
@@ -83,9 +84,7 @@
 	access_castelnau_external_airlocks,
 
 	access_castelnau_security,
-	access_castelnau_brig,
-
-	access_castelnau_perseus
+	access_castelnau_brig
 	)
 
 /datum/job/specialist
@@ -128,9 +127,7 @@
 	access_castelnau_brig,
 	access_castelnau_detective,
 
-	access_castelnau_morgue,
-
-	access_castelnau_perseus
+	access_castelnau_morgue
 	)
 
 /datum/job/detective/equip(var/mob/living/carbon/human/H)
