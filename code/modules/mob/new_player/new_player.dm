@@ -81,6 +81,7 @@
 
 		if(GAME_STATE <= RUNLEVEL_LOBBY)
 			stat("Time To Start:", "[round(SSticker.pregame_timeleft/10)][SSticker.round_progressing ? "" : " (DELAYED)"]")
+			stat("Players needed to start: [SSticker.players_to_start]", totalPlayers >= SSticker.players_to_start ? "" : "Not enough players to start")
 			stat("Players: [totalPlayers]", "Players Ready: [totalPlayersReady]")
 			totalPlayers = 0
 			totalPlayersReady = 0

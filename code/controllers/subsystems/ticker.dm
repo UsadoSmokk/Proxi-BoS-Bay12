@@ -14,6 +14,7 @@ SUBSYSTEM_DEF(ticker)
 	var/master_mode = "extended"    //The underlying game mode (so "secret" or the voted mode). Saved to default back to previous round's mode in case the vote failed. This is a config_tag.
 	var/datum/game_mode/mode        //The actual gamemode, if selected.
 	var/round_progressing = 1       //Whether the lobby clock is ticking down.
+	var/players_to_start = 15       // how much players we should have to start round
 
 	var/list/bad_modes = list()     //Holds modes we tried to start and failed to.
 	var/revotes_allowed = 0         //How many times a game mode revote might be attempted before giving up.
@@ -110,7 +111,8 @@ SUBSYSTEM_DEF(ticker)
 	if(start_ASAP)
 		start_now()
 		return
-	if(round_progressing && last_fire)
+	var/list/lobby = lobby_players()
+	if(round_progressing && last_fire && length(lobby) >= players_to_start)
 		pregame_timeleft -= world.time - last_fire
 	if(pregame_timeleft <= 0)
 		Master.SetRunLevel(RUNLEVEL_SETUP)
@@ -118,7 +120,6 @@ SUBSYSTEM_DEF(ticker)
 
 	if(!bypass_gamemode_vote && (pregame_timeleft <= config.vote_autogamemode_timeleft SECONDS) && !gamemode_vote_results)
 #ifndef UNIT_TEST
-		var/list/lobby = lobby_players()
 		if (!length(lobby))
 			pregame_timeleft = config.vote_period + 60 SECONDS
 			return
