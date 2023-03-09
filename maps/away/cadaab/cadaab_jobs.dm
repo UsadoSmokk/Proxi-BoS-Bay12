@@ -15,8 +15,10 @@
 	total_positions = 4
 	outfit_type = /decl/hierarchy/outfit/job/cadaab/barbar
 	supervisors = "The Tech-barbarian Warlord and the Tech-barbarian Shaman"
-	info = "Find technology. Take it apart.  \
-	A ship showed up here nearby, a great opportunity."
+	info = "Жестокие члены варварской цивилизации Кадааба восхваляют механизмы и силу, \
+	постоянно находясь в поисках затерянной технологии и тех, у кого её можно отобрать. \
+	Подчиняясь говорящему с духами машин Шаману, эти племенные отбросы должны отстоять землю Кадааба за собой, \
+	принеся чужаков в жертву своим механических божествам."
 	loadout_allowed = FALSE
 	allowed_branches = list(/datum/mil_branch/other)
 	allowed_ranks = list(/datum/mil_rank/other)
@@ -38,6 +40,10 @@
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/cadaab/barbar/lead
 	supervisors = "The Tech-barbarian Warlord"
+	info = "После того, как вождь ушёл на восток в поисках священных артефактов, оставшихся после смерти железных богов, \
+	власть над общиной перешла в руки к наделённому магией и просветлением старцу. \
+	Обладая авторитетом и благословением синтетических духов, Шаман должен координировать рейдерский отряд, \
+	чтобы дать отпор чужакам и разобрать их стальных птиц на священные болтики и заклёпочки."
 	skill_points = 22
 
 /datum/job/submap/barbar/lead/equip(var/mob/living/carbon/human/H)

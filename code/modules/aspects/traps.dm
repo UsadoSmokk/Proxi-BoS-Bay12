@@ -8,7 +8,7 @@
 	announce_text = "<span class=\"info\">Ночью чёртовы пираты расставили вокруг и внутри аванпоста около сотни мин. Смотрите под ноги на Кадаабе!</span>"
 
 /datum/round_aspect/traps/get_desc_msg()
-	return SPAN_WARNING("Пустыня стааи более опаснымой...")
+	return SPAN_WARNING("Пустыня стала более опасной...")
 
 /datum/round_aspect/traps/do_preload_thing()
 	. = ..()
