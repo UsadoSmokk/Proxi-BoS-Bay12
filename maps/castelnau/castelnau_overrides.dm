@@ -83,6 +83,10 @@
 /obj/machinery/suit_storage_unit/atmos/castelnau/alt
 	suit= /obj/item/clothing/suit/space/void/atmos/alt
 	helmet = /obj/item/clothing/head/helmet/space/void/atmos/alt
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/tank/oxygen
+	mask = /obj/item/clothing/mask/breath
+	req_access = list(access_castelnau_security)
 
 /obj/machinery/suit_storage_unit/engineering/castelnau
 	name = "Engineering Voidsuit Storage Unit"

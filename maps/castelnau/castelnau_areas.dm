@@ -198,6 +198,7 @@
 	icon_state = "cheap_maint"
 	name = "Cheapskate - Maintenance"
 	req_access = list(access_castelnau_cheapskate)
+	area_flags = AREA_FLAG_RAD_SHIELDED
 
 /area/shuttle/castelnau/cheapskate/maint/storage
 	name = "Cheapskate - Maintenance Storage"
@@ -296,6 +297,7 @@
 //Access base
 CREATE_CST_AREA(maintenance)
 	req_access = list(access_castelnau_maint_tunnels)
+	area_flags = AREA_FLAG_RAD_SHIELDED
 
 CREATE_CST_AREA(engineering)
 	req_access = list(access_castelnau_engineering)
@@ -509,7 +511,7 @@ CREATE_CST_AREA(security/aux)
 CREATE_CST_AREA(security/sheriff)
 	name = "Security - Sheriff Office"
 	icon_state = "warden"
-	req_access = list(access_castelnau_brig)
+	req_access = list(access_castelnau_sheriff)
 
 CREATE_CST_AREA(security/detective)
 	name = "Security - Investigator Office"
@@ -569,6 +571,10 @@ CREATE_CST_AREA(engineering/shield)
 	icon_state = "engineering"
 	sound_env = SMALL_ENCLOSED
 
+CREATE_CST_AREA(engineering/substation/third)
+	name = "Third Desk Substation "
+	icon_state = "engineering"
+	sound_env = SMALL_ENCLOSED
 CREATE_CST_AREA(medical/maintenance_equipstorage)
 	name = "Infirmary Maintenance Storage"
 	icon_state = "medbay4"
@@ -682,6 +688,7 @@ CREATE_CST_AREA(storage/primary)
 CREATE_CST_AREA(security/ivestigation)
 	name = "Laboratory"
 	icon_state = "security_inv"
+	req_access = list(list(access_castelnau_security, access_castelnau_detective))
 
 CREATE_CST_AREA(security/observation)
 	name = "Brig Observation"

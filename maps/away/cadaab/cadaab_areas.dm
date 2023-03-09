@@ -11,7 +11,8 @@
 /area/cadaab/desert
 	name = "Cadaab Desert"
 	icon_state = "desert"
-	ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg')
+	always_unpowered = TRUE
+	ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg')
 
 /area/cadaab/outpost/syndivault
 	name = "Syndipass Vault"
@@ -73,6 +74,8 @@
 	name = "Cadaab - Caves"
 	icon_state = "desert"
 	base_turf = /turf/simulated/floor/exoplanet/cadaab
+	sound_env = LARGE_ENCLOSED
+	ambience = list('sound/ambience/bos/cave1.ogg', 'sound/ambience/bos/cave2.ogg', 'sound/ambience/bos/cave3.ogg', 'sound/ambience/bos/cave4.ogg', 'sound/ambience/bos/cave5.ogg', 'sound/ambience/bos/cave6.ogg', 'sound/ambience/bos/cave7.ogg', 'sound/ambience/bos/cave8.ogg')
 //	dynamic_lighting = 1
 
 /area/cadaab/caves/bunker

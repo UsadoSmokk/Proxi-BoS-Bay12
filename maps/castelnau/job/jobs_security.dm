@@ -35,6 +35,7 @@
 	access_castelnau_brig,
 	access_castelnau_armory,
 	access_castelnau_detective,
+	access_castelnau_sheriff,
 
 	access_castelnau_morgue,
 

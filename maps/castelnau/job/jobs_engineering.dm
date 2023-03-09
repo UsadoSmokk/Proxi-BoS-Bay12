@@ -1,7 +1,7 @@
 /datum/job/senior_engineer
 	title = "Senior Engineer"
 	department = "Engineering"
-	department_flag = ENG
+	department_flag = COM|ENG
 	supervisors = "the Captain, the First Mate and the Coordinator"
 	selection_color = "#5b4d20"
 
@@ -44,6 +44,8 @@
 	access_castelnau_englab,
 	access_castelnau_maint_tunnels,
 	access_castelnau_external_airlocks,
+	access_atmospherics,
+	access_engine_equip,
 
 	access_castelnau_teleporter
 	)
@@ -105,7 +107,11 @@
 	access_castelnau_engine,
 	access_castelnau_thrusters,
 	access_castelnau_maint_tunnels,
-	access_castelnau_external_airlocks
+	access_castelnau_atmospherics,
+	access_castelnau_external_airlocks,
+	access_atmospherics,
+	access_engine_equip,
+	access_castelnau_perseus
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
@@ -156,7 +162,9 @@
 	access_castelnau_engine,
 	access_castelnau_thrusters,
 	access_castelnau_maint_tunnels,
-	access_castelnau_external_airlocks
+	access_castelnau_external_airlocks,
+
+	access_castelnau_perseus
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
