@@ -23,3 +23,9 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/storage/regulator/sheriff
 	head = /obj/item/clothing/head/regulator/sheriff
+
+/decl/hierarchy/outfit/job/castelnau/reg/com/adjutant
+	name = OUTFIT_JOB_NAME("Bridge Assistant - Castelnau")
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_adjutant
+	id_types = list(/obj/item/card/id/castelnau/crew/adjutant)
+	pda_type = /obj/item/modular_computer/pda/heads/hop

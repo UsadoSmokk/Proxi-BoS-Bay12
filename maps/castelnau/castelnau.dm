@@ -123,6 +123,7 @@
 	#include "structures/wood.dm"
 
 	#include "structures/closets/closet.dm"
+	#include "structures/closets/command.dm"
 	#include "structures/closets/engineering.dm"
 	#include "structures/closets/medical.dm"
 	#include "structures/closets/misc.dm"
