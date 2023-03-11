@@ -98,7 +98,7 @@
 	req_access = list(access_castelnau_hangar)
 	closet_appearance = /decl/closet_appearance/secure_closet/castelnau/cargo
 
-/obj/structure/closet/secure_closet/prospector/WillContain()
+/obj/structure/closet/secure_closet/prospector_castelnau/WillContain()
 	return list(
 		/obj/item/clothing/accessory/storage/brown_vest,
 		/obj/item/clothing/mask/gas/half,
