@@ -27,3 +27,14 @@
 
 /obj/effect/decal/cleanable/antar/text5
 	icon_state = "text5"
+
+/obj/effect/floor_decal/outpostsign
+	name = "outpost"
+	icon = 'maps/castelnau/bos/icons/effects/outpost.dmi'
+	icon_state = "outpost"
+	alpha = 230
+
+/obj/effect/floor_decal/ftu
+	name = "ftu"
+	icon = 'maps/castelnau/bos/icons/effects/ftu.dmi'
+	icon_state = "ftu"

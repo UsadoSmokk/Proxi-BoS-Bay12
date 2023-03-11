@@ -121,3 +121,48 @@
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
+
+/datum/job/adjutant
+	title = "Bridge Assistant"
+	supervisors = "the Command"
+	department = "Command"
+	department_flag = COM
+	head_position = 1
+	total_positions = 2
+	spawn_positions = 2
+	economic_power = 8
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/com/adjutant
+	selection_color = "#2f2f7f"
+	allowed_branches = list(/datum/mil_branch/reg)
+	allowed_ranks = list(/datum/mil_rank/reg/com)
+	min_skill = list(	SKILL_BUREAUCRACY = SKILL_ADEPT,
+						SKILL_PILOT       = SKILL_BASIC)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+
+	skill_points = 20
+
+	access = list(
+	access_castelnau_command,
+	access_castelnau_bridge,
+	access_castelnau_eva,
+	access_castelnau_tcoms,
+
+	access_castelnau_engineering,
+	access_castelnau_maint_tunnels,
+	access_castelnau_external_airlocks,
+
+	access_castelnau_security,
+
+	access_castelnau_medical,
+
+	access_castelnau_bixie,
+	access_castelnau_bixie_helm,
+	access_castelnau_perseus,
+	access_castelnau_perseus_helm,
+	access_castelnau_janitor,
+	access_castelnau_bar,
+	access_castelnau_kitchen,
+	access_castelnau_hangar,
+	access_castelnau_teleporter
+	)
