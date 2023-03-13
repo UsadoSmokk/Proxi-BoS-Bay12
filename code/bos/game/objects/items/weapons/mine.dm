@@ -32,8 +32,9 @@
 			visible_message(SPAN_WARNING("[user] MAKES MISTAKE!!!"))
 			detonate(usr, 1)
 	else
-		visible_message(SPAN_WARNING("[user] MAKES MISTAKE!!!"))
-		detonate(usr, 1)
+		if(active)
+			visible_message(SPAN_WARNING("[user] MAKES MISTAKE!!!"))
+			detonate(usr, 1)
 
 /obj/item/mine/equipped(mob/user, slot)
 	. = ..()
