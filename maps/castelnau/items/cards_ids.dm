@@ -16,7 +16,7 @@
 	color = "#d4c780"
 	extra_details = list("goldstripe")
 
-obj/item/card/id/castelnau/crew/adjutant
+/obj/item/card/id/castelnau/crew/adjutant
 	desc = "An identification card belonging to the Bridge Assistant of RMV Castelnau."
 	job_access_type = /datum/job/adjutant
 	detail_color = COLOR_COMMAND_BLUE
