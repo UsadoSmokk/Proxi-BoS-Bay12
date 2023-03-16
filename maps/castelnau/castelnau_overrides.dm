@@ -280,3 +280,6 @@
 
 /datum/computer_file/program/forceauthorization
 	required_access = access_castelnau_sheriff
+
+/obj/machinery/barrier
+	req_access = list(access_castelnau_security)
