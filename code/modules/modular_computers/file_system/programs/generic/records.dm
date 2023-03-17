@@ -29,7 +29,7 @@
 	if(active_record)
 		send_rsc(user, active_record.photo_front, "front_[active_record.uid].png")
 		send_rsc(user, active_record.photo_side, "side_[active_record.uid].png")
-		data["pic_edit"] = check_access(user, access_castelnau_bridge) || check_access(user, security) //bos, was access_security
+		data["pic_edit"] = check_access(user, bridge) || check_access(user, security) //bos, was access_security
 		data += active_record.generate_nano_data(user_access)
 	else
 		var/list/all_records = list()
@@ -43,7 +43,7 @@
 			)))
 		data["all_records"] = all_records
 		data["creation"] = check_access(user, bridge) //bos
-		data["dnasearch"] = check_access(user, access_castelnau_medical) || check_access(user, detective) //bos
+		data["dnasearch"] = check_access(user, medical) || check_access(user, detective) //bos
 		data["fingersearch"] = check_access(user, security) //bos
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
