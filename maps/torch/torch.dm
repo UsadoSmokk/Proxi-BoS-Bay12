@@ -191,8 +191,8 @@
 	#include "loadout/~defines.dm"
 
 	#include "voronezh/bigbooker.dm"
-	//#include "z1_admin.dmm"
-	//#include "z2_transit.dmm"
+	#include "z1_admin.dmm"
+	#include "z2_transit.dmm"
 
 	#include "../away/empty.dmm"
 	#include "../away/rawl/rawl.dm"
