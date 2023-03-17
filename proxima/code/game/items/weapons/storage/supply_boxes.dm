@@ -4,8 +4,8 @@
 	name = "MRE box"
 	desc = "A box for a certain type of item."
 	storage_slots = 5
-	max_w_class = ITEM_SIZE_NORMAL
-	w_class = ITEM_SIZE_NORMAL
+	max_w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_LARGE
 
 	key_type = /obj/item/storage/mre
 	can_hold = list(/obj/item/storage/mre)
