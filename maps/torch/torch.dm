@@ -190,11 +190,7 @@
 
 	#include "loadout/~defines.dm"
 
-	#include "voronezh/voronezh.dmm"
-	#include "voronezh/voronezh_areas.dm"
 	#include "voronezh/bigbooker.dm"
-	#include "voronezh/docs.dm"
-	#include "voronezh/things.dm"
 	#include "z1_admin.dmm"
 	#include "z2_transit.dmm"
 
