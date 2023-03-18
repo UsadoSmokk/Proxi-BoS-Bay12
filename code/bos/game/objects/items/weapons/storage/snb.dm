@@ -3,7 +3,8 @@
 	desc = "A strange box with a button."
 	icon_state = "box_of_doom" // placeholder
 	w_class = ITEM_SIZE_LARGE
-	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	max_w_class = ITEM_SIZE_HUGE
+	storage_slots = 1
 	var/datum/mind/owner
 
 /obj/item/storage/snb/attack_self(mob/user)
@@ -12,11 +13,18 @@
 	owner = user.mind
 	to_chat(user, "You claim \the [src].")
 
+/obj/item/storage/snb/AltClick(mob/usr)
+	. = ..()
+	launch()
+
 /obj/item/storage/snb/verb/activate()
 	set name = "Launch"
 	set category = "Object"
 	set src in oview(1)
 
+	launch()
+
+/obj/item/storage/snb/proc/launch()
 	if(usr.incapacitated())
 		return
 
