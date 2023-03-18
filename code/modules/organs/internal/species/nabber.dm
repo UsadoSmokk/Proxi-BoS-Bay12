@@ -1,6 +1,6 @@
 /obj/item/organ/internal/voicebox/nabber
 	name = "vocal synthesiser"
-	assists_languages = list(LANGUAGE_HUMAN_RUSSIAN, LANGUAGE_GUTTER, LANGUAGE_HUMAN_EURO, LANGUAGE_EAL)
+	assists_languages = list(LANGUAGE_HUMAN_RUSSIAN, LANGUAGE_GUTTER, LANGUAGE_EAL, LANGUAGE_SPACER)
 
 /obj/item/organ/internal/voicebox/nabber/Initialize()
 	. = ..()
@@ -8,7 +8,7 @@
 
 /obj/item/organ/internal/voicebox/nabber/ascent //boh
 	name = "mantid vocal synthesiser"
-	assists_languages = list(LANGUAGE_SKRELLIAN, LANGUAGE_HUMAN_LORD, LANGUAGE_HUMAN_RUSSIAN, LANGUAGE_GUTTER, LANGUAGE_HUMAN_EURO, LANGUAGE_EAL)
+	assists_languages = list(LANGUAGE_SKRELLIAN, LANGUAGE_HUMAN_LORD, LANGUAGE_HUMAN_RUSSIAN, LANGUAGE_GUTTER, LANGUAGE_HUMAN_EURO, LANGUAGE_EAL, LANGUAGE_SPACER)
 
 /obj/item/organ/internal/eyes/insectoid/nabber
 	name = "compound eyes"
