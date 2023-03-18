@@ -70,7 +70,7 @@ CASTELNAU_ESCAPE_POD(4)
 	current_location = "nav_cheapskate_dock"
 	landmark_transition = "nav_cheapskate_transit"
 	range = 1
-	fuel_consumption = 4
+	fuel_consumption = 0
 	logging_home_tag = "nav_cheapskate_dock"
 	//logging_access = access_castelnau_prometeus_helm
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling

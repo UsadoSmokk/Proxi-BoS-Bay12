@@ -8,12 +8,15 @@
 	planetary_surface = TRUE
 //	dynamic_lighting = 0
 
+/area/cadaab/noise
+	name = "Noise"
+	forced_ambience = list('sound/ambience/bos/noise.ogg', 'sound/ambience/bos/noise2.ogg','sound/ambience/bos/noise3.ogg')
+
 /area/cadaab/desert
 	name = "Cadaab Desert"
 	icon_state = "desert"
 	always_unpowered = TRUE
-	ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
-	forced_ambience = list('sound/ambience/bos/desert_light_wind1.ogg')
+	forced_ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
 
 /area/cadaab/outpost/syndivault
 	name = "Syndipass Vault"
@@ -104,7 +107,15 @@
 //SHAHTINSK - START//
 
 /area/cadaab/shahtinsk
-	name = "Cadaab - Shahtinsk"
+	name = "Cadaab - Shahtinsk - Near Outpost"
+	icon_state = "desert"
+
+/area/cadaab/shahtinsk/second
+	name = "Cadaab - Shahtinsk - Near Tribe"
+
+/area/cadaab/shahtinsk/third
+	name = "Cadaab - Shahtinsk - City-like"
+	forced_ambience = list('sound/ambience/bos/clot1.ogg', 'sound/ambience/bos/clot2.ogg')
 
 /area/cadaab/shahtinsk/canteen
 	name = "Shahtinsk - Canteen"

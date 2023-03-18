@@ -28,7 +28,7 @@
 
 /turf/simulated/floor/inaks/Initialize() //for cadaab
 	.=..()
-	set_light(1, 1, 5, l_color = "#ff8c66")
+	set_light(1, 1, 5, l_color = "#FF9D8E")
 
 /turf/simulated/floor/inaks/asphalt
 	name = "asphalt"

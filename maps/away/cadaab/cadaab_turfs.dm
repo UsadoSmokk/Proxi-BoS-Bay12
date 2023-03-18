@@ -24,7 +24,7 @@
 /turf/simulated/floor/exoplanet/desert/cadaab/Initialize()
 	.=..()
 	icon_state = "sand[rand(0,6)]"
-	set_light(1, 1, 5, l_color = "#ff8c66")
+	set_light(1, 1, 5, l_color = "#FF9D8E")
 
 /turf/simulated/mineral/cadaab
 	name = "rock"
@@ -34,14 +34,18 @@
 	mined_turf = /turf/simulated/floor/exoplanet/cadaab
 
 /turf/unsimulated/wall/cadaab
-	name = "distant area"
-	desc = "You'll get there someday."
+	name = "distant noise"
+	desc = "In these days, electrical noise follows people everywhere. Not always intelligible, but always unstoppable. It is like radio interference. It seems to intensify as it approaches the boundary of known space. Sometimes you can make out words in the noise. A strange whisper that makes no sense."
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
-	icon_state = "nah"
+	icon_state = "noise1"
 	density = TRUE
 	layer = ABOVE_HUMAN_LAYER
 	opacity = 1
 	blocks_air = 1
+
+/turf/simulated/wall/cadaab/Initialize()
+	.=..()
+	icon_state = "noise[rand(1,3)]"
 
 /turf/unsimulated/cadaab/rock
 	name = "impassable rock"
@@ -80,3 +84,9 @@
 	desc = "An easy to fit wooden floor tile."
 	icon_state = "tile-wood"
 	matter = list(MATERIAL_WOOD = 450)
+
+/turf/simulated/floor/grass/cadaab
+
+/turf/simulated/floor/grass/cadaab/Initialize()
+	.=..()
+	set_light(1, 1, 5, l_color = "#FF9D8E")
