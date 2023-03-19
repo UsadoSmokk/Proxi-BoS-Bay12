@@ -72,6 +72,12 @@
 	icon_state = "cyberpunksleek_long_white"
 	item_state = "cyberpunksleek_long_white"
 
+/obj/item/clothing/suit/storage/cyberpunksleek_long/iccg
+	name = "Terran warcoat"
+	desc = "A burgundy overcoat with a bulletproof vest. Vot eto da!"
+	icon_state = "iccg_warcoat"
+	item_state = "iccg_warcoat"
+
 /obj/item/clothing/suit/storage/davidjacket
 	name = "blade hunter jacket"
 	desc = "A jacket for a real blade hunter. It once belonged to David Martinez, and before that to his mother, Gloria"
