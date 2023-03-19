@@ -44,7 +44,7 @@
 	pda_slot = slot_l_store
 
 /decl/hierarchy/outfit/job/castelnau/lss
-	name = OUTFIT_JOB_NAME("Independant Confederation of Lordania Fleet - Utility")
+	name = OUTFIT_JOB_NAME("Lordanian Sovereign Systems Fleet - Utility")
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/lss
 	uniform = /obj/item/clothing/under/lordan/utility/fleet
 	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet
