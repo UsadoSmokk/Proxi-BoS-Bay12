@@ -61,7 +61,7 @@
 	var/turf/T = get_turf(src)
 	visible_message(SPAN_DANGER("Clack!"))
 	if(T)
-		explosion(T, -1, 1, 2, 2)
+		explosion(T, -1, -1, 2, 2)
 
 	if(activator)
 		if(cut_arms == 1)	//Damage arms to man who try to deactivate mine
