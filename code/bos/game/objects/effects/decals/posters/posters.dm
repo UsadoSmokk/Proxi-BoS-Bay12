@@ -13,6 +13,11 @@
 	name = "Corporate Army"
 	desc = "An old poster asking for investment in the Corporate Army. Even in wartime, corporations extorted money."
 
+/decl/poster/antar/corparmy_teared
+	icon_state="corparmy_teared"
+	name = "Corporate Army"
+	desc = "An old torn poster asking for investment in the Corporate Army or whatever."
+
 /decl/poster/antar/atlas
 	icon_state="atlas"
 	name = "Atlas"
@@ -82,3 +87,28 @@
 	icon_state="pioneers"
 	name = "Pioneers"
 	desc = "'Sovereign Lordania Salutes our Pioneers of Science Graduating Class, Feb 2321.'"
+
+/decl/poster/antar/anatomy
+	icon_state="anatomy_s_erisa"
+	name = "Human anatomy"
+	desc = "Man in the cross section. Brutal."
+
+/decl/poster/antar/kadaab
+	icon_state="kadaab"
+	name = "Kadaab"
+	desc = "Kadaab, a moon of Inax."
+
+/decl/poster/antar/gkkarmy
+	icon_state="armii_gkk_slava"
+	name = "Militaristic poster"
+	desc = "ARMII GKK SLAVA!"
+
+/decl/poster/antar/smertpss
+	icon_state="smert_pss"
+	name = "Death to Sol"
+	desc = "'Smert Marsy! Smert dictaty democratov!'"
+
+/decl/poster/antar/mine
+	icon_state="opasno"
+	name = "Opasno"
+	desc = "'Alarm! Mines ahead'"
