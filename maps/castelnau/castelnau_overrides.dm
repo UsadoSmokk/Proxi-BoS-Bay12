@@ -293,6 +293,9 @@
 /obj/machinery/barrier
 	req_access = list(access_castelnau_security)
 
+/obj/machinery/computer/account_database
+	needed_access = list(list(access_castelnau_captain, access_castelnau_comoffice))
+
 ////
 // ASPECTS OVERRIDE
 ///
