@@ -1,7 +1,9 @@
 #include "cadaab_areas.dm"
 #include "cadaab_jobs.dm"
+#include "cadaab_noise.dm"
 #include "cadaab_objects.dm"
 #include "cadaab_shahti.dm"
+#include "cadaab_text.dm"
 #include "cadaab_turfs.dm"
 
 /obj/effect/overmap/visitable/sector/cadaab

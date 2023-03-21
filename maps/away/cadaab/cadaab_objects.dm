@@ -169,3 +169,15 @@
 	name = "hole"
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
 	icon_state = "holedecal"
+
+/obj/effect/decal/cleanable/cadaab
+	name = "graffiti"
+	desc = "'BOOKER ZHIV'"
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	icon_state = "alive"
+	anchored = 1
+
+/obj/effect/decal/cleanable/cadaab/booker
+	name = "graffiti"
+	desc = "Our mighty Lord"
+	icon_state = "booker"

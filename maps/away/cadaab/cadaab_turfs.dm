@@ -33,20 +33,6 @@
 	color = null
 	mined_turf = /turf/simulated/floor/exoplanet/cadaab
 
-/turf/unsimulated/wall/cadaab
-	name = "distant noise"
-	desc = "In these days, electrical noise follows people everywhere. Not always intelligible, but always unstoppable. It is like radio interference. It seems to intensify as it approaches the boundary of known space. Sometimes you can make out words in the noise. A strange whisper that makes no sense."
-	icon = 'maps/away/cadaab/icons/turfs.dmi'
-	icon_state = "noise1"
-	density = TRUE
-	layer = ABOVE_HUMAN_LAYER
-	opacity = 1
-	blocks_air = 1
-
-/turf/simulated/wall/cadaab/Initialize()
-	.=..()
-	icon_state = "noise[rand(1,3)]"
-
 /turf/unsimulated/cadaab/rock
 	name = "impassable rock"
 	desc = "It's a particularly tough rock here."
