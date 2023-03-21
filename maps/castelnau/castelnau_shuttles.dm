@@ -46,7 +46,7 @@ CASTELNAU_ESCAPE_POD(4)
 	name = "Cheapskate"
 	move_time = 90
 	shuttle_area = list(
-	/area/shuttle/castelnau/cheapskate,
+	/area/shuttle/castelnau/cheapskate/hallway,
 	/area/shuttle/castelnau/cheapskate/cockpit,
 	/area/shuttle/castelnau/cheapskate/conference,
 	/area/shuttle/castelnau/cheapskate/eva,
