@@ -32,7 +32,7 @@
 /obj/machinery/noisetv/proc/endnoise()
 	if(on)
 		audible_message(SPAN_WARNING("[src] makes a terrible noise! You don't think it will go away until the broadcast is over."))
-		playsound(src, 'sound/music/bos/redsucker.ogg', 100, 1, 5)
+		playsound(src, 'sound/music/bos/redsucker.ogg', 100, 1)
 		update_icon()
 	else
 		audible_message(SPAN_WARNING("Everything went quiet."))
