@@ -43,6 +43,6 @@
 	icon_state = "tvnoise2"
 
 /obj/machinery/noisetv/old
-	name = "old "
+	name = "old TV"
 	desc = "An old TV. You doubt that it still works."
 	icon_state = "tvnoise3"

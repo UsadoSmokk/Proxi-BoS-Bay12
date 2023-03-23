@@ -23,6 +23,12 @@
 	icon_state = "syndipass"
 	req_access = list(access_castelnau_syndipass)
 
+/area/cadaab/oasis
+	name = "Oasis"
+	forced_ambience = list(
+		'sound/ambience/jungle.ogg'
+	)
+
 ///OUTPOST///
 
 /area/cadaab/outpost
@@ -104,7 +110,7 @@
 	name = "Vault - Engineering"
 	icon_state = "engineering"
 
-//SHAHTINSK - START//
+//SHAHTINSK//
 
 /area/cadaab/shahtinsk
 	name = "Cadaab - Shahtinsk - Near Outpost"
@@ -117,18 +123,6 @@
 	name = "Cadaab - Shahtinsk - City-like"
 	forced_ambience = list('sound/ambience/bos/clot1.ogg', 'sound/ambience/bos/clot2.ogg')
 
-/area/cadaab/shahtinsk/canteen
-	name = "Shahtinsk - Canteen"
-	icon_state = "living"
-
-/area/cadaab/shahtinsk/gas
-	name = "Shahtinsk - Gas Station"
-	icon_state = "engineering"
-
-/area/cadaab/shahtinsk/med
-	name = "Shahtinsk - Medic"
-	icon_state = "medbay"
-
 //SHAHTINSK - TRIBE//
 
 /area/cadaab/shahtinsk/tribe
@@ -136,3 +130,10 @@
 
 /area/cadaab/shahtinsk/tribe/cave
 	name = "Shahtinsk - Unknown Cave"
+
+//SHAHTINSK - BOOKERISTI//
+/area/cadaab/shahtinsk/booker
+	name = "Shahtinsk - Occupied Complex"
+
+/area/cadaab/shahtinsk/booker/start
+	name = "Shahtinsk - Occupied Complex Dorms"
