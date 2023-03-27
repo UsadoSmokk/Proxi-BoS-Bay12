@@ -28,6 +28,8 @@
 	forced_ambience = list(
 		'sound/ambience/jungle.ogg'
 	)
+/area/cadaab/lab
+	name = "Cadaab - Underground Lab"
 
 ///OUTPOST///
 
