@@ -36,7 +36,7 @@
 	say_list = /datum/say_list/meat
 
 /obj/item/natural_weapon/meatbits
-	force = 10 //was 30
+	force = 20 //was 30
 	sharp = TRUE
 	edge = TRUE
 	attack_cooldown = 1.5 SECONDS
