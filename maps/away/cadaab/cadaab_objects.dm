@@ -21,6 +21,10 @@
 /obj/structure/flora/tree/cadaab/on_death()
 	qdel(src)
 
+/obj/structure/flora/tree/cadaab/cacti
+	name = "cactus"
+	icon_state = "cacti"
+
 /obj/structure/gravemarker/cadaab
 	name = "grave stone"
 	icon = 'maps/away/cadaab/icons/objects.dmi'
@@ -181,3 +185,95 @@
 	name = "graffiti"
 	desc = "Our mighty Lord"
 	icon_state = "booker"
+
+/obj/effect/floor_decal/cadaab
+	icon = 'maps/away/cadaab/icons/turfs.dmi'
+
+/obj/effect/floor_decal/cadaab/grass_0
+	name = "grass"
+	icon_state = "grass0"
+
+/obj/effect/floor_decal/cadaab/grass_1
+	name = "grass"
+	icon_state = "grass1"
+
+/obj/effect/floor_decal/cadaab/grass_2
+	name = "grass"
+	icon_state = "grass2"
+
+/obj/effect/floor_decal/cadaab/grass_3
+	name = "grass"
+	icon_state = "grass3"
+
+/obj/effect/floor_decal/cadaab/grass_4
+	name = "grass"
+	icon_state = "grass4"
+
+/obj/effect/floor_decal/cadaab/grass_5
+	name = "grass"
+	icon_state = "grass5"
+
+/obj/effect/floor_decal/cadaab/grass_6
+	name = "grass"
+	icon_state = "grass6"
+
+/obj/effect/floor_decal/cadaab/grass_7
+	name = "grass"
+	icon_state = "grass7"
+
+/obj/effect/floor_decal/cadaab/grass_8
+	name = "grass"
+	icon_state = "grass8"
+
+/obj/effect/floor_decal/cadaab/grass_9
+	name = "grass"
+	icon_state = "grass9"
+
+/obj/effect/floor_decal/cadaab/grass_10
+	name = "grass"
+	icon_state = "grass10"
+
+/obj/effect/floor_decal/cadaab/grass_11
+	name = "grass"
+	icon_state = "grass11"
+
+/obj/effect/floor_decal/cadaab/grass_12
+	name = "grass"
+	icon_state = "grass12"
+
+/obj/effect/floor_decal/cadaab/grass_13
+	name = "grass"
+	icon_state = "grass13"
+
+/obj/effect/floor_decal/cadaab/grass_14
+	name = "grass"
+	icon_state = "grass14"
+
+/obj/effect/floor_decal/cadaab/grass_15
+	name = "grass"
+	icon_state = "grass15"
+
+/obj/random/cadaab_grass
+	name = "random cadaab grass"
+	desc = "This is a random cadaab grass."
+	icon = 'maps/away/cadaab/icons/turfs.dmi'
+	icon_state = "grass0"
+	spawn_nothing_percentage = 5
+
+/obj/random/cadaab_grass/spawn_choices()
+	return list(/obj/effect/floor_decal/cadaab/grass_0,
+				/obj/effect/floor_decal/cadaab/grass_1,
+				/obj/effect/floor_decal/cadaab/grass_2,
+				/obj/effect/floor_decal/cadaab/grass_3,
+				/obj/effect/floor_decal/cadaab/grass_4,
+				/obj/effect/floor_decal/cadaab/grass_5,
+				/obj/effect/floor_decal/cadaab/grass_6,
+				/obj/effect/floor_decal/cadaab/grass_7,
+				/obj/effect/floor_decal/cadaab/grass_8,
+				/obj/effect/floor_decal/cadaab/grass_9,
+				/obj/effect/floor_decal/cadaab/grass_10,
+				/obj/effect/floor_decal/cadaab/grass_11,
+				/obj/effect/floor_decal/cadaab/grass_12,
+				/obj/effect/floor_decal/cadaab/grass_13,
+				/obj/effect/floor_decal/cadaab/grass_14,
+				/obj/effect/floor_decal/cadaab/grass_15)

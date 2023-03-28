@@ -51,6 +51,14 @@
 	LAZYADD(valid_jobs, /datum/job/engineer)
 	..()
 
+/decl/cultural_info/culture/nabber/b/New()
+	LAZYADD(valid_jobs, /datum/job/chef)
+	..()
+
+/decl/cultural_info/culture/nabber/b/New()
+	LAZYADD(valid_jobs, /datum/job/bartender)
+	..()
+
 /decl/cultural_info/culture/nabber/a/New()
 	LAZYADD(valid_jobs, /datum/job/scientist)
 	..()

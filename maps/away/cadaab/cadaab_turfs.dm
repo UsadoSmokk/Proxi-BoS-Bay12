@@ -76,3 +76,6 @@
 /turf/simulated/floor/grass/cadaab/Initialize()
 	.=..()
 	set_light(1, 1, 5, l_color = "#FF9D8E")
+
+/obj/structure/quicksand/cadaab
+	icon = 'maps/away/cadaab/icons/quicksand.dmi'

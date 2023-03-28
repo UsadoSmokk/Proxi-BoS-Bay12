@@ -36,12 +36,12 @@
 /obj/item/natural_weapon/claws
 	name = "claws"
 	attack_verb = list("mauled", "clawed", "slashed")
-	force = 15
+	force = 5 //was 15
 	sharp = TRUE
 	edge = TRUE
 
 /obj/item/natural_weapon/claws/strong
-	force = 25
+	force = 10 //was 25
 
 /obj/item/natural_weapon/claws/weak
 	force = 5

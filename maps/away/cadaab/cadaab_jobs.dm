@@ -3,7 +3,8 @@
 	map = "Cadaab"
 	crew_jobs = list(
 		/datum/job/submap/barbar,
-		/datum/job/submap/barbar/lead
+		/datum/job/submap/barbar/lead,
+		/datum/job/submap/bookerist
 	)
 
 /obj/effect/submap_landmark/joinable_submap/cadaab
@@ -12,7 +13,7 @@
 
 /datum/job/submap/barbar
 	title = "Tech-barbarian"
-	total_positions = 4
+	total_positions = 2
 	outfit_type = /decl/hierarchy/outfit/job/cadaab/barbar
 	supervisors = "The Tech-barbarian Warlord and the Tech-barbarian Shaman"
 	info = "Жестокие члены варварской цивилизации Кадааба восхваляют механизмы и силу, \
@@ -116,4 +117,34 @@
 
 /obj/effect/submap_landmark/spawnpoint/cadaab_barbarlead
 	name = "Tech-barbarian Shaman"
+	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+
+/datum/job/submap/bookerist
+	title = "Lord-Protectorism Cultist"
+	total_positions = 4
+	outfit_type = /decl/hierarchy/outfit/job/cadaab/bookerist
+	supervisors = "Lord-Protector Boris Booker"
+	info = "Вы служите верой и правдой истинному лидеру Суверенной Лордании - Лорд-протектору Борису Букеру.\
+	Хотя грязные терранские предатели и объявили его погибшим, вы в это не верите.\
+	Докажите заблудшим лорданианцам и глупым терранцам, что единственный Бог - Борис Букер, а вы никакой не безумец попавший под влияние культа личности пропагандистского символа."
+	loadout_allowed = FALSE
+	allowed_branches = list(/datum/mil_branch/other)
+	allowed_ranks = list(/datum/mil_rank/other)
+	required_language = LANGUAGE_HUMAN_LORD
+	is_semi_antagonist = TRUE
+	min_skill = list(	SKILL_COMBAT      = SKILL_ADEPT,
+						SKILL_WEAPONS     = SKILL_ADEPT)
+
+	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX)
+
+/decl/hierarchy/outfit/job/cadaab/bookerist
+	name = OUTFIT_JOB_NAME("Bookerist")
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/combat
+	head = /obj/item/clothing/head/beret/lordan/fleet
+	shoes = /obj/item/clothing/shoes/lordan
+	id_types = list()
+
+/obj/effect/submap_landmark/spawnpoint/cadaab_bookerist
+	name = "Lord-Protectorism Cultist"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
