@@ -305,3 +305,13 @@
 
 /datum/round_aspect/traps
 	spawn_area = /area/cadaab
+
+////
+// EVAC OVERRIDE(for sandstorm)
+////
+
+/datum/evacuation_controller/call_evacuation(var/mob/user, var/_emergency_evac, var/forced, var/skip_announce, var/autotransfer)
+	. = ..()
+	var/datum/sandstorm/storm = new /datum/sandstorm
+	storm.is_coming()
+	log_and_message_admins("Amogus")

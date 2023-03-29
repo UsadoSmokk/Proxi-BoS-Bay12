@@ -22,6 +22,7 @@
 	#include "code/_global_vars/lists/locations.dm"
 	#include "code/game/objects/effects/landmarks.dm"
 	#include "code/gamemodes/objectives.dm"
+	#include "code/modules/sandstorm.dm"
 	#include "code/modules/client/preferences_spawnpoints.dm"
 	#include "flooring/flooring_premade.dm"
 

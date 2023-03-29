@@ -40,6 +40,7 @@
 	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "grave"
 
+
 /obj/structure/steelfence
 	name = "steel fence"
 	desc = "A flimsy lattice of metal rods, with screws to secure it to the floor."
@@ -59,8 +60,37 @@
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		damage_health(W.force, W.damtype)
 		..()
+
 /obj/structure/steelfence/on_death()
+	if(prob(60))
+		new /obj/item/stack/material/rods(get_turf(src))
+
 	qdel(src)
+
+/obj/structure/steelfence/door
+	name = "steel fence door"
+	icon_state = "fencedoor"
+
+/obj/structure/steelfence/door/Click(location, control, params)
+	. = ..()
+	if((usr.a_intent != I_HURT) && (src in view(1, usr)) && (istype(usr, /mob/living/carbon/human)) && (!usr.incapacitated()))
+		usr.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		close_open()
+
+/obj/structure/steelfence/door/Bumped(atom/AM)
+	close_open()
+	. = ..()
+
+/obj/structure/steelfence/door/proc/close_open()
+	if(icon_state == "fencedoor")
+		icon_state = "fencedooropen"
+		playsound(src, 'sound/effects/bos/fence_door.ogg', 50)
+		density = FALSE
+	else
+		icon_state = "fencedoor"
+		playsound(src, 'sound/effects/bos/fence_door.ogg', 50)
+		density = TRUE
+
 
 /obj/machinery/door/unpowered/simple/cadaab
 	name = "steel fence door"
