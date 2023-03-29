@@ -29,11 +29,17 @@
 	else
 		icon_state = "[initial(icon_state)]"
 
+/obj/machinery/noisetv/proc/playnoise()
+	playsound(src, pick('sound/ambience/bos/noise.ogg', 'sound/ambience/bos/noise2.ogg','sound/ambience/bos/noise3.ogg'), 50)
+	if(on)
+		addtimer(CALLBACK(src, .proc/playnoise), 5 SECONDS)
+
 /obj/machinery/noisetv/proc/endnoise()
 	on = !on
 	if(on)
 		audible_message(SPAN_WARNING("[src] makes a terrible noise! You don't think it will go away until the broadcast is over."))
 		update_icon()
+		playnoise()
 	else
 		audible_message(SPAN_WARNING("Everything went quiet."))
 		sound_to(usr, sound(null))

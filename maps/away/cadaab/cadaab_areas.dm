@@ -6,17 +6,21 @@
 	icon_state = "where"
 	base_turf = /turf/simulated/floor/exoplanet/desert/cadaab
 	planetary_surface = TRUE
+	var/outside = FALSE //Mostly for sandstorm proper work
+	var/datum/sandstorm/sandstorm_container //Container for sandstorm datum
 //	dynamic_lighting = 0
 
 /area/cadaab/noise
 	name = "Noise"
 	forced_ambience = list('sound/ambience/bos/noise.ogg', 'sound/ambience/bos/noise2.ogg','sound/ambience/bos/noise3.ogg')
+	outside = TRUE
 
 /area/cadaab/desert
 	name = "Cadaab Desert"
 	icon_state = "desert"
 	always_unpowered = TRUE
 	forced_ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
+	outside = TRUE
 
 /area/cadaab/outpost/syndivault
 	name = "Syndipass Vault"
@@ -25,9 +29,18 @@
 
 /area/cadaab/oasis
 	name = "Oasis"
+	icon_state = "desert"
 	forced_ambience = list(
 		'sound/ambience/jungle.ogg'
 	)
+	outside = TRUE
+
+/area/cadaab/oasis_farm
+	name = "Lone Home"
+	forced_ambience = list(
+		'sound/ambience/jungle.ogg'
+	)
+
 /area/cadaab/lab
 	name = "Cadaab - Underground Lab"
 
@@ -121,9 +134,14 @@
 /area/cadaab/shahtinsk/second
 	name = "Cadaab - Shahtinsk - Near Tribe"
 
-/area/cadaab/shahtinsk/third
-	name = "Cadaab - Shahtinsk - City-like"
+/area/cadaab/shahtinsk/city_streets
+	name = "Cadaab - Shahtinsk - City-like Streets"
 	forced_ambience = list('sound/ambience/bos/clot1.ogg', 'sound/ambience/bos/clot2.ogg')
+	outside = TRUE
+
+/area/cadaab/shahtinsk/city_streets/third
+	name = "Cadaab - Shahtinsk - City-like"
+	outside = FALSE
 
 //SHAHTINSK - TRIBE//
 
