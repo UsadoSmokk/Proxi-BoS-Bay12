@@ -39,6 +39,7 @@
 	if(on)
 		audible_message(SPAN_WARNING("[src] makes a terrible noise! You don't think it will go away until the broadcast is over."))
 		update_icon()
+		set_light(1, 1, 1, l_color = "#cdcbd6")
 		playnoise()
 	else
 		audible_message(SPAN_WARNING("Everything went quiet."))

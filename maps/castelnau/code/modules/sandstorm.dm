@@ -14,7 +14,6 @@
 		return FALSE
 
 /datum/sandstorm/proc/is_coming()
-	log_and_message_admins("Amogus2")
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
 		if(check_loc(unlucky))
 			to_chat(unlucky, SPAN_WARNING("In the distance you see huge clouds of sand coming towards you... Less than ten minutes and they'll be here."))
@@ -24,7 +23,7 @@
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
 		if(check_loc(unlucky))
 			to_chat(unlucky, SPAN_WARNING("Large clouds of sand, illuminated by flashes of lightning, get closer and closer to your location..."))
-			playsound(unlucky, 'sound/effects/bos/lighting.ogg', 40)
+			sound_to(unlucky, sound('sound/effects/bos/lighting.ogg', volume = 40))
 
 	sleep(5 MINUTES)
 
@@ -58,8 +57,8 @@
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
 		if(check_loc(unlucky))
 			to_chat(unlucky, "<font size='4' color='red'><b>Another bolt of lightning flashes and the sandstorm, already blocking the entire horizon and the sun, is just a ten seconds away... Nothing seemed to be able to save from it...</b></font>")
-			playsound(unlucky, 'sound/effects/bos/lighting.ogg', 100)
-			playsound(unlucky, 'sound/effects/bos/sandstorm_coming.ogg', 100)
+			sound_to(unlucky, sound('sound/effects/bos/lighting.ogg', volume = 100))
+			sound_to(unlucky, sound('sound/effects/bos/sandstorm_coming.ogg', volume = 100))
 
 	sleep(10 SECONDS)
 
