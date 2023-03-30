@@ -314,4 +314,3 @@
 	. = ..()
 	var/datum/sandstorm/storm = new /datum/sandstorm
 	storm.is_coming()
-	log_and_message_admins("Amogus")

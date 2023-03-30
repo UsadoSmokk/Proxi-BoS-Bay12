@@ -40,6 +40,11 @@
 	forced_ambience = list(
 		'sound/ambience/jungle.ogg'
 	)
+/area/cadaab/city_streets
+	name = "Cadaab - Shahtinsk - City-like Streets"
+	icon_state = "desert"
+	forced_ambience = list('sound/ambience/bos/clot1.ogg', 'sound/ambience/bos/clot2.ogg')
+	outside = TRUE
 
 /area/cadaab/lab
 	name = "Cadaab - Underground Lab"
@@ -134,14 +139,8 @@
 /area/cadaab/shahtinsk/second
 	name = "Cadaab - Shahtinsk - Near Tribe"
 
-/area/cadaab/shahtinsk/city_streets
-	name = "Cadaab - Shahtinsk - City-like Streets"
-	forced_ambience = list('sound/ambience/bos/clot1.ogg', 'sound/ambience/bos/clot2.ogg')
-	outside = TRUE
-
-/area/cadaab/shahtinsk/city_streets/third
+/area/cadaab/shahtinsk/city_like
 	name = "Cadaab - Shahtinsk - City-like"
-	outside = FALSE
 
 //SHAHTINSK - TRIBE//
 
