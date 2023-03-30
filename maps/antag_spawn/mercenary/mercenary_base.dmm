@@ -2669,6 +2669,8 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
+/obj/machinery/nuclearbomb,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/map_template/merc_shuttle)
 "Jc" = (

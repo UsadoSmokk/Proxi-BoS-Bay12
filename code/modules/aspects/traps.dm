@@ -6,15 +6,15 @@
 	chance = 25
 	weight = ASPECT_WEIGHT_TRAPS
 	announce_text = "<span class=\"info\">Ночью чёртовы пираты расставили вокруг и внутри аванпоста около сотни мин. Смотрите под ноги на Кадаабе!</span>"
+	var/area/spawn_area = /area/maintenance
 
 /datum/round_aspect/traps/get_desc_msg()
 	return SPAN_WARNING("Пустыня стала более опасной...")
 
 /datum/round_aspect/traps/do_preload_thing()
 	. = ..()
-	var/area/cadaab = /area/cadaab
 	var/turf/T
-	var/list/turf/avalible_turfs = get_subarea_turfs(cadaab, list(/proc/is_turf_no_mines_and_walls))
+	var/list/turf/avalible_turfs = get_subarea_turfs(spawn_area, list(/proc/is_turf_no_mines_and_walls))
 	for(var/j in 1 to rand(MINES_MIN, MINES_MAX))
 		T = pick(avalible_turfs)
 		var/obj/item/mine/mine = new(T)

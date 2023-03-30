@@ -15,6 +15,11 @@
 	name = "Crew Records"
 	var/datum/computer_file/report/crew_record/active_record
 	var/message = null
+	//BOS, add this vars for good git checks
+	var/bridge = access_bridge
+	var/medical = access_medical
+	var/security = access_security
+	var/detective = access_forensics_lockers
 
 /datum/nano_module/records/ui_interact(mob/user, ui_key = "main", datum/nanoui/ui = null, force_open = 1, state = GLOB.default_state)
 	var/list/data = host.initial_data()
@@ -24,7 +29,7 @@
 	if(active_record)
 		send_rsc(user, active_record.photo_front, "front_[active_record.uid].png")
 		send_rsc(user, active_record.photo_side, "side_[active_record.uid].png")
-		data["pic_edit"] = check_access(user, access_castelnau_bridge) || check_access(user, access_castelnau_security) //bos, was without castelnau
+		data["pic_edit"] = check_access(user, bridge) || check_access(user, security) //bos, was access_security
 		data += active_record.generate_nano_data(user_access)
 	else
 		var/list/all_records = list()
@@ -37,9 +42,9 @@
 				"id" = R.uid
 			)))
 		data["all_records"] = all_records
-		data["creation"] = check_access(user, access_castelnau_bridge) //bos
-		data["dnasearch"] = check_access(user, access_castelnau_medical) || check_access(user, access_castelnau_detective) //bos
-		data["fingersearch"] = check_access(user, access_castelnau_security) //bos
+		data["creation"] = check_access(user, bridge) //bos
+		data["dnasearch"] = check_access(user, medical) || check_access(user, detective) //bos
+		data["fingersearch"] = check_access(user, security) //bos
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
@@ -89,7 +94,7 @@
 				break
 		return 1
 	if(href_list["new_record"])
-		if(!check_access(usr, access_castelnau_bridge)) //bos
+		if(!check_access(usr, bridge)) //bos
 			to_chat(usr, "Access Denied.")
 			return
 		active_record = new/datum/computer_file/report/crew_record()

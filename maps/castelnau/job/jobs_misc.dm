@@ -41,5 +41,5 @@
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/wanderer
 	allowed_branches = list(/datum/mil_branch/other)
 	allowed_ranks = list(/datum/mil_rank/other)
-	required_language = null
 	give_psionic_implant_on_join = FALSE
+	required_language = LANGUAGE_HUMAN_LORD

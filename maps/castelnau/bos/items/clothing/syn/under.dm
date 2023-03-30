@@ -6,6 +6,9 @@
 	icon_state = "regular"
 	item_state = "regular"
 	worn_state = "regular"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/castelnau/bos/icons/mob/clothing/syn/unathi/under.dmi'
+		)
 
 /obj/item/clothing/under/syndicorp/army
 	name = "syndicate corporate army uniform"

@@ -16,6 +16,12 @@
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/castelnau_coordinator
 
+/obj/item/device/radio/headset/heads/castelnau_adjutant
+	name = "bridge assistant's headset"
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/heads/castelnau_adjutant
+
 /obj/item/device/radio/headset/heads/castelnau_seniorengi
 	name = "senior engineer's headset"
 	icon_state = "com_headset"

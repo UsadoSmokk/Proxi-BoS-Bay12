@@ -24,7 +24,7 @@
 /turf/simulated/floor/exoplanet/desert/cadaab/Initialize()
 	.=..()
 	icon_state = "sand[rand(0,6)]"
-	set_light(1, 1, 5, l_color = "#ff8c66")
+	set_light(1, 1, 5, l_color = "#FF9D8E")
 
 /turf/simulated/mineral/cadaab
 	name = "rock"
@@ -32,16 +32,6 @@
 	icon_state = "rock"
 	color = null
 	mined_turf = /turf/simulated/floor/exoplanet/cadaab
-
-/turf/unsimulated/wall/cadaab
-	name = "distant area"
-	desc = "You'll get there someday."
-	icon = 'maps/away/cadaab/icons/turfs.dmi'
-	icon_state = "nah"
-	density = TRUE
-	layer = ABOVE_HUMAN_LAYER
-	opacity = 1
-	blocks_air = 1
 
 /turf/unsimulated/cadaab/rock
 	name = "impassable rock"
@@ -80,3 +70,12 @@
 	desc = "An easy to fit wooden floor tile."
 	icon_state = "tile-wood"
 	matter = list(MATERIAL_WOOD = 450)
+
+/turf/simulated/floor/grass/cadaab
+
+/turf/simulated/floor/grass/cadaab/Initialize()
+	.=..()
+	set_light(1, 1, 5, l_color = "#FF9D8E")
+
+/obj/structure/quicksand/cadaab
+	icon = 'maps/away/cadaab/icons/quicksand.dmi'

@@ -53,3 +53,21 @@
 
 /obj/structure/sign/poster/antar/pioneers
 	poster_type = /decl/poster/antar/pioneers
+
+/obj/structure/sign/poster/antar/mine
+	poster_type = /decl/poster/antar/mine
+
+/obj/structure/sign/poster/antar/smertpss
+	poster_type = /decl/poster/antar/smertpss
+
+/obj/structure/sign/poster/antar/gkkarmy
+	poster_type = /decl/poster/antar/gkkarmy
+
+/obj/structure/sign/poster/antar/kadaab
+	poster_type = /decl/poster/antar/kadaab
+
+/obj/structure/sign/poster/antar/anatomy
+	poster_type = /decl/poster/antar/anatomy
+
+/obj/structure/sign/poster/antar/corparmy_teared
+	poster_type = /decl/poster/antar/corparmy_teared

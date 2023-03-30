@@ -10,6 +10,12 @@
 //	channels = list("Regulators" =1, "Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
 	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
 
+/obj/item/device/encryptionkey/heads/castelnau_adjutant
+	name = "bridge assistant's encryption key"
+	icon_state = "hop_cypherkey"
+//	channels = list("Regulators" =1, "Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
+	channels = list("Command" = 1, "Engineering" = 1, "Medical" = 1, "Service" = 1)
+
 /obj/item/device/encryptionkey/heads/castelnau_seniorengi
 	name = "senior engineer's encryption key"
 	icon_state = "ce_cypherkey"

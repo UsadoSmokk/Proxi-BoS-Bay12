@@ -272,6 +272,12 @@
 /datum/nano_module/supply
 	admin_access = access_castelnau_cheapskate_cargo
 
+/datum/nano_module/records
+	bridge = access_castelnau_bridge
+	medical = access_castelnau_medical
+	security = access_castelnau_security
+	detective = access_castelnau_detective
+
 /datum/computer_file/program/suit_sensors
 	required_access = access_castelnau_medical
 
@@ -279,4 +285,23 @@
 	required_access = access_castelnau_security
 
 /datum/computer_file/program/forceauthorization
-	required_access = access_castelnau_sheriff
+	required_access = access_castelnau_armory
+
+/datum/computer_file/program/merchant
+	required_access = access_castelnau_cheapskate_shop
+
+/obj/machinery/barrier
+	req_access = list(access_castelnau_security)
+
+/obj/machinery/computer/account_database
+	needed_access = list(list(access_castelnau_captain, access_castelnau_comoffice))
+
+////
+// ASPECTS OVERRIDE
+///
+
+/datum/round_aspect/contraband
+	spawn_area = /area/cadaab
+
+/datum/round_aspect/traps
+	spawn_area = /area/cadaab

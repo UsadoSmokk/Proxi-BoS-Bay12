@@ -42,3 +42,24 @@
 	icon_state = "cap_santa"
 	item_icons = list(slot_head_str = 'icons/bos/mob/onmob/onmob_head.dmi')
 	flags_inv = BLOCKHAIR
+
+/obj/item/clothing/head/white_turban
+	name = "white turban"
+	desc = "Glory to Allah!"
+	icon = 'icons/bos/obj/clothing/obj_head.dmi'
+	icon_state = "white_turban"
+	item_icons = list(slot_head_str = 'icons/bos/mob/onmob/onmob_head.dmi')
+	flags_inv = BLOCKHAIR
+	item_state = "white_turban"
+
+/obj/item/clothing/head/ushanka/commie
+	name = "kommunyatskaya ushanka"
+	desc = "Slava Politburo!"
+	icon = 'icons/bos/obj/clothing/obj_head.dmi'
+	icon_state = "commie_ushanka"
+	item_icons = list(slot_head_str = 'icons/bos/mob/onmob/onmob_head.dmi')
+	item_state = "commie_ushanka"
+
+//I haven't got any down sprites, so we do this
+/obj/item/clothing/head/ushanka/commie/attack_self(mob/user as mob)
+	return

@@ -145,3 +145,19 @@
 	license = /decl/license/grandfathered //no
 	url = "https://youtu.be/GjTTB6yII4o"
 	volume = 30
+
+/decl/audio/track/shortchangehero2
+	title = "Short Change Hero"
+	author = "The Heavy"
+	source = 'sound/music/bos/shortchangehero2.ogg'
+	license = /decl/license/grandfathered //no
+	url = "https://youtu.be/GjTTB6yII4o"
+	volume = 30
+
+/decl/audio/track/bigbluff
+	title = "BIG BLUFF"
+	author = "Tsuneo Imahori"
+	source = 'sound/music/bos/bigbluff.ogg'
+	license = /decl/license/grandfathered //ee
+	url = "https://youtu.be/tUvyqfNvPXY"
+	volume = 30

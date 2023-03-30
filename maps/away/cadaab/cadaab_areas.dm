@@ -8,17 +8,28 @@
 	planetary_surface = TRUE
 //	dynamic_lighting = 0
 
+/area/cadaab/noise
+	name = "Noise"
+	forced_ambience = list('sound/ambience/bos/noise.ogg', 'sound/ambience/bos/noise2.ogg','sound/ambience/bos/noise3.ogg')
+
 /area/cadaab/desert
 	name = "Cadaab Desert"
 	icon_state = "desert"
 	always_unpowered = TRUE
-	ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
-	forced_ambience = list('sound/ambience/bos/desert_light_wind1.ogg')
+	forced_ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
 
 /area/cadaab/outpost/syndivault
 	name = "Syndipass Vault"
 	icon_state = "syndipass"
 	req_access = list(access_castelnau_syndipass)
+
+/area/cadaab/oasis
+	name = "Oasis"
+	forced_ambience = list(
+		'sound/ambience/jungle.ogg'
+	)
+/area/cadaab/lab
+	name = "Cadaab - Underground Lab"
 
 ///OUTPOST///
 
@@ -101,22 +112,18 @@
 	name = "Vault - Engineering"
 	icon_state = "engineering"
 
-//SHAHTINSK - START//
+//SHAHTINSK//
 
 /area/cadaab/shahtinsk
-	name = "Cadaab - Shahtinsk"
+	name = "Cadaab - Shahtinsk - Near Outpost"
+	icon_state = "desert"
 
-/area/cadaab/shahtinsk/canteen
-	name = "Shahtinsk - Canteen"
-	icon_state = "living"
+/area/cadaab/shahtinsk/second
+	name = "Cadaab - Shahtinsk - Near Tribe"
 
-/area/cadaab/shahtinsk/gas
-	name = "Shahtinsk - Gas Station"
-	icon_state = "engineering"
-
-/area/cadaab/shahtinsk/med
-	name = "Shahtinsk - Medic"
-	icon_state = "medbay"
+/area/cadaab/shahtinsk/third
+	name = "Cadaab - Shahtinsk - City-like"
+	forced_ambience = list('sound/ambience/bos/clot1.ogg', 'sound/ambience/bos/clot2.ogg')
 
 //SHAHTINSK - TRIBE//
 
@@ -125,3 +132,10 @@
 
 /area/cadaab/shahtinsk/tribe/cave
 	name = "Shahtinsk - Unknown Cave"
+
+//SHAHTINSK - BOOKERISTI//
+/area/cadaab/shahtinsk/booker
+	name = "Shahtinsk - Occupied Complex"
+
+/area/cadaab/shahtinsk/booker/start
+	name = "Shahtinsk - Occupied Complex Dorms"

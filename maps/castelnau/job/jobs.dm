@@ -18,7 +18,7 @@
 
 #undef HUMAN_NOVOX_JOBS
 
-	allowed_jobs = list(/datum/job/captain,/datum/job/hop, /datum/job/outleader,
+	allowed_jobs = list(/datum/job/captain,/datum/job/hop,/datum/job/adjutant, /datum/job/outleader,
 						/datum/job/warden, /datum/job/officer, /datum/job/specialist, /datum/job/outsec, /datum/job/raidlead, /datum/job/raidparty,
 						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/psiengineer, /datum/job/scientist, /datum/job/outeng,
 						/datum/job/senior_doctor, /datum/job/doctor, /datum/job/redactor, /datum/job/outmed,
@@ -49,6 +49,14 @@
 
 /decl/cultural_info/culture/nabber/a/New()
 	LAZYADD(valid_jobs, /datum/job/engineer)
+	..()
+
+/decl/cultural_info/culture/nabber/b/New()
+	LAZYADD(valid_jobs, /datum/job/chef)
+	..()
+
+/decl/cultural_info/culture/nabber/b/New()
+	LAZYADD(valid_jobs, /datum/job/bartender)
 	..()
 
 /decl/cultural_info/culture/nabber/a/New()

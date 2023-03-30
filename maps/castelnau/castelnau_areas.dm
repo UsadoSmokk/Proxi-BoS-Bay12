@@ -170,9 +170,12 @@
 //Cheapskate
 
 /area/shuttle/castelnau/cheapskate
-	name = "Cheapskate - Hallway"
+	name = "Cheapskate"
 	icon_state = "invi"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
+
+/area/shuttle/castelnau/cheapskate/hallway
+	name = "Cheapskate - Hallway"
 
 /area/shuttle/castelnau/cheapskate/cockpit
 	icon_state = "cheap_com"

@@ -12,8 +12,7 @@
 		/area/shuttle/escape_pod5/centcom,
 		/area/shuttle/transport1/centcom,
 		/area/shuttle/administration/centcom,
-		/area/shuttle/specops/centcom,
-		/area/shuttle/escapeevent
+		/area/shuttle/specops/centcom
 	)
 
 //Fifth Deck (Z-0)

@@ -1,7 +1,9 @@
 #include "cadaab_areas.dm"
 #include "cadaab_jobs.dm"
+#include "cadaab_noise.dm"
 #include "cadaab_objects.dm"
 #include "cadaab_shahti.dm"
+#include "cadaab_text.dm"
 #include "cadaab_turfs.dm"
 
 /obj/effect/overmap/visitable/sector/cadaab
@@ -36,7 +38,7 @@
 
 /obj/effect/overmap/visitable/sector/inax
 	name = "Inax"
-	desc = "Inax is a dark jungle planet, in a place where the Independent Confederation of Lordania has no serious influence. Thus, it is inhabited by pirates and other undesirables who live in small settlements on nitrogen-rich land."
+	desc = "Inax is a dark jungle planet, in a place where the Lordanian Sovereign Systems has no serious influence. Thus, it is inhabited by pirates and other undesirables who live in small settlements on nitrogen-rich land."
 	icon_state = "globe"
 	color = "#00cc66"
 	start_x = 5
