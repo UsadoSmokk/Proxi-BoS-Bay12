@@ -140,7 +140,7 @@ var/const/access_castelnau_detective = "ACCESS_CASTELNAU_DETECTIVE"
 /datum/access/castelnau/captain
 	id = access_castelnau_captain
 	desc = "Castelnau Captain"
-	region = ACCESS_REGION_NONE
+	region = ACCESS_REGION_COMMAND
 
 /var/const/access_castelnau_comoffice = "ACCESS_CASTELNAU_COM_OFFICE"
 /datum/access/castelnau/comoffice
