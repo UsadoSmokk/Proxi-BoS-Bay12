@@ -4,7 +4,6 @@
 	minor_announcement = new(new_sound = sound('sound/AI/torch/commandreport.ogg', volume = 45))
 
 //original//
-/*
 /datum/map/torch/get_map_info()
 	. = list()
 	. += "Добро пожаловать на борт этого прекрасного, величественного и недавно освобожденного от грязных, подлых и несчастных предателей Великой Лордании - ЛРК Антарес. "
@@ -20,9 +19,9 @@
 	. += ""
 	. += "А теперь вперёд, во славу Лордании!"
 	return jointext(., "<br>")
-*/
 
 //final_event//
+/*
 /datum/map/torch/get_map_info()
 	. = list()
 	. += "<b>Вы покидаете</b> борт этого прекрасного, величественного и давно освобожденного от грязных, подлых и несчастных предателей Великой Лордании - ЛРК Антарес."
@@ -37,7 +36,7 @@
 	. += ""
 	. += "Крысы спрятались в здании Суда, так будьте же им судьями!"
 	return jointext(., "<br>")
-
+*/
 
 /datum/map/torch/send_welcome()
 	var/obj/effect/overmap/visitable/torch = map_sectors["1"]
