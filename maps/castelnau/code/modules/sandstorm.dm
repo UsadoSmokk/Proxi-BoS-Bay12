@@ -1,3 +1,6 @@
+#define CADAAB_INDOORS 3
+#define CADAAB_OUTSIDE 4
+
 /datum/sandstorm
 	var/list/storm_areas = list() //Areas where sandstorm will damage peoples
 
@@ -9,38 +12,43 @@
 /datum/sandstorm/proc/check_loc(var/mob/living/carbon/human/unlucky)
 	var/checking_area = get_area(unlucky)
 	if(is_type_in_list(checking_area, storm_areas))
-		return TRUE
+		return CADAAB_OUTSIDE
+	else if(istype(checking_area, /area/cadaab))
+		return CADAAB_INDOORS
 	else
 		return FALSE
 
 /datum/sandstorm/proc/is_coming()
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
-		if(check_loc(unlucky))
+		if(check_loc(unlucky) == CADAAB_OUTSIDE)
 			to_chat(unlucky, SPAN_WARNING("In the distance you see huge clouds of sand coming towards you... Less than ten minutes and they'll be here."))
 
 	sleep(5 MINUTES)
 
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
-		if(check_loc(unlucky))
+		if(check_loc(unlucky) == CADAAB_OUTSIDE)
 			to_chat(unlucky, SPAN_WARNING("Large clouds of sand, illuminated by flashes of lightning, get closer and closer to your location..."))
 			sound_to(unlucky, sound('sound/effects/bos/lighting.ogg', volume = 40))
+		else if(check_loc(unlucky) == CADAAB_INDOORS)
+			to_chat(unlucky, SPAN_WARNING("You can hear lighting somewhere outside... Something is coming..."))
+			sound_to(unlucky, sound('sound/effects/bos/lighting.ogg', volume = 30))
 
 	sleep(5 MINUTES)
 
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
-		if(check_loc(unlucky))
+		if(check_loc(unlucky) == CADAAB_OUTSIDE)
 			to_chat(unlucky, SPAN_WARNING("Many grains of sand are already reaching you. A couple of minutes more and a huge cloud of sand will cover everything around you."))
 
 	sleep(2 MINUTES)
 
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
-		if(check_loc(unlucky))
+		if(check_loc(unlucky) == CADAAB_OUTSIDE)
 			to_chat(unlucky, SPAN_WARNING("A sandstorm slowly absorbs the entire horizon, getting closer..."))
 
 	sleep(30 SECONDS)
 
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
-		if(check_loc(unlucky))
+		if(check_loc(unlucky) == CADAAB_OUTSIDE)
 			to_chat(unlucky, SPAN_WARNING("Along with the horizon, the sand swallows up the sun, bringing darkness and death."))
 
 	for(var/turf/simulated/floor/exoplanet/desert/cadaab/target_turf in world) //Off light everwhere in Cadaab
@@ -55,10 +63,14 @@
 	sleep(15 SECONDS)
 
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
-		if(check_loc(unlucky))
+		if(check_loc(unlucky) == CADAAB_OUTSIDE)
 			to_chat(unlucky, "<font size='4' color='red'><b>Another bolt of lightning flashes and the sandstorm, already blocking the entire horizon and the sun, is just a ten seconds away... Nothing seemed to be able to save from it...</b></font>")
 			sound_to(unlucky, sound('sound/effects/bos/lighting.ogg', volume = 100))
 			sound_to(unlucky, sound('sound/effects/bos/sandstorm_coming.ogg', volume = 100))
+		else if(check_loc(unlucky) == CADAAB_INDOORS)
+			to_chat(unlucky, SPAN_WARNING("You can hear lighting somewhere very close to you. Wild wind blows from every crevice..."))
+			sound_to(unlucky, sound('sound/effects/bos/lighting.ogg', volume = 70))
+			sound_to(unlucky, sound('sound/effects/bos/sandstorm_coming.ogg', volume = 40))
 
 	sleep(10 SECONDS)
 
@@ -71,23 +83,25 @@
 			areas.forced_ambience = list('sound/ambience/bos/super_sandstorm_indoor.ogg')
 			areas.ambience = list('sound/effects/bos/lighting.ogg')
 
+	for(var/obj/machinery/noisetv/broadcast in world)
+		broadcast.endnoise()
 
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
-		if(check_loc(unlucky))
+		if(check_loc(unlucky) == CADAAB_OUTSIDE)
 			to_chat(unlucky, "<font size='15' color='red'><b>It has begun.</b></font>")
 			to_chat(unlucky, SPAN_DANGER("A sudden strong rush of wind knocks you down!"))
 			unlucky.Weaken(Floor(2))
-			sound_to(unlucky, sound('sound/ambience/bos/super_sandstorm.ogg', volume = 50))
+			sound_to(unlucky, sound('sound/ambience/bos/super_sandstorm.ogg', volume = 50, channel = GLOB.ambience_channel_forced))
 			personal_hell(unlucky)
-
-	for(var/obj/machinery/noisetv/broadcast in world)
-		broadcast.endnoise()
+		else if(check_loc(unlucky) == CADAAB_INDOORS)
+			to_chat(unlucky, "<font size='4' color='red'><b>You feel it. The storm is here.</b></font>")
+			sound_to(unlucky, sound('sound/ambience/bos/super_sandstorm_indoor.ogg', volume = 30, channel = GLOB.ambience_channel_forced))
 
 /datum/sandstorm/proc/personal_hell(var/mob/living/carbon/human/unlucky)
 	unlucky.overlay_fullscreen("sand", /obj/screen/fullscreen/sandstorm)
 	unlucky.overlay_fullscreen("sand2", /obj/screen/fullscreen/sandstorm/second)
 
-	while(check_loc(unlucky))
+	while(check_loc(unlucky) == CADAAB_OUTSIDE)
 		unlucky.apply_damage(3, DAMAGE_BRUTE, pick(BP_L_LEG, BP_R_LEG, BP_L_HAND, BP_R_HAND, BP_HEAD, BP_CHEST))
 		if(prob(20))
 			to_chat(unlucky, SPAN_DANGER(pick("Sand particles fly into your body in large masses, causing noticeable damage.", "The wind blows so hard that you can barely stand on your feet.")))
@@ -100,6 +114,9 @@
 
 	unlucky.clear_fullscreen("sand")
 	unlucky.clear_fullscreen("sand2")
+
+#undef CADAAB_INDOORS
+#undef CADAAB_OUTSIDE
 
 // FULLSCREENS //
 //   EFFECTS   //
