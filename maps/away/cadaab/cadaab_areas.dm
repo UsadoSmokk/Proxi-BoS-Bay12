@@ -91,6 +91,7 @@
 /area/cadaab/outpost/landing
 	name = "Outpost - Landing Zone"
 	icon_state = "landing"
+	outside = TRUE
 
 /area/cadaab/outpost/syndishuttle
 	name = "SSS PrettyBoy"
