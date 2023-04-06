@@ -154,9 +154,14 @@
 //     AREAS     //
 // SPECIAL PROCS //
 
-/area/cadaab/Entered(var/mob/living/carbon/human/unlucky)
+/area/cadaab/Entered(something)
 	. = ..()
 	if(sandstorm_container != null)
-		sandstorm_container.personal_hell(unlucky)
+		if(istype(something, /mob/living/carbon/human))
+			sandstorm_container.personal_hell(something)
+		if(istype(something, /obj/effect/dummy/box))
+			var/obj/effect/dummy/box/borziu = something
+			borziu.attack_hand()
+			qdel(borziu)
 	else
 		return

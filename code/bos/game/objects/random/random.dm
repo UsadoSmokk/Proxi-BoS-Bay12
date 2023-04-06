@@ -134,7 +134,7 @@
 
 /obj/random/simple_mob/bot/spawn_choices()
 	return list(/mob/living/simple_animal/hostile/hivebot = 10,
-				/mob/living/simple_animal/hostile/hivebot/tank/armored = 3,
+				/mob/living/simple_animal/hostile/hivebot/tank/armored = 2,
 				/mob/living/simple_animal/hostile/hivebot/ranged_damage/ion = 2,
 				/mob/living/simple_animal/hostile/hivebot/ranged_damage/dot = 4,
 				/mob/living/simple_animal/hostile/hivebot/range = 7,
