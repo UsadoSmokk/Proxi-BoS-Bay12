@@ -9,15 +9,13 @@
 		icon_state = "mine_act"
 	else
 		icon_state = "mine_not_act"
-	. = ..()
 
 /obj/item/mine/attackby(obj/item/W, mob/user)
 	. = ..()
 	if(isScrewdriver(W))
 		var/mob/living/carbon/human/H = user
 		if(!active)
-			active = TRUE
-			visible_message(SPAN_WARNING("[user] activated [src]!"))
+			activate()
 			return
 		if(H.skill_check(SKILL_ELECTRICAL, SKILL_ADEPT) && prob(20*H.get_skill_value(SKILL_HAULING)))
 			visible_message(SPAN_WARNING("[user] started to deactivate [src]..."))
@@ -48,13 +46,20 @@
 		. = ..()
 
 /obj/item/mine/proc/activate(mob/user)
-	if(active)
+	for(var/obj/item/mine/mine in view(0, src))
+		if(mine.active)
+			to_chat(usr, SPAN_WARNING("There is already an active mine on this spot!"))
+			return
+
+	if(locate(/obj/machinery/tele_beacon) in src.loc)
+		to_chat(usr, SPAN_WARNING("You activate the mine, but the beacon underneath starts blinking strangely. You hope it doesn't cause the mine to expl-..."))
+		detonate(usr, 1)
 		return
 
+	visible_message(SPAN_WARNING("[user] activated [src]!"))
+	active = TRUE
 	if(user)
 		msg_admin_attack("[user.name] ([user.ckey]) primed \a [src] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)")
-
-	active = 1
 	update_icon()
 
 /obj/item/mine/proc/detonate(var/mob/living/carbon/human/activator, cut_arms)
