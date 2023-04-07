@@ -1,4 +1,4 @@
-/datum/job/castelnau_captain
+/datum/job/captain
 	title = "Captain"
 	department = "Command"
 	supervisors = "the Regulator High Command and the God (He didn't answer last time)"
