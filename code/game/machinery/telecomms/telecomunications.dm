@@ -301,6 +301,13 @@ var/global/list/obj/machinery/telecomms/telecomms_list = list()
 /obj/machinery/telecomms/receiver/proc/check_receive_level(datum/signal/signal)
 
 	if(!(signal.data["level"] in listening_levels))
+		for(var/obj/machinery/telecomms/hub/H in links)
+			var/list/connected_levels = list()
+			for(var/obj/machinery/telecomms/relay/R in H.links)
+				if(R.can_receive(signal))
+					connected_levels |= R.listening_levels
+			if(signal.data["level"] in connected_levels)
+				return 1
 		return 0
 	return 1
 
@@ -339,6 +346,85 @@ var/global/list/obj/machinery/telecomms/telecomms_list = list()
 			relay_information(signal, /obj/machinery/telecomms/bus, 1) // ideally relay the copied information to bus units
 		else
 			relay_information(signal, /obj/machinery/telecomms/broadcaster, 1) // Send it to a broadcaster.
+
+//BOS
+	/*
+		The relay idles until it receives information. It then passes on that information
+		depending on where it came from.
+
+		The relay is needed in order to send information pass Z levels. It must be linked
+		with a HUB, the only other machine that can send/receive pass Z levels.
+	*/
+
+/obj/machinery/telecomms/relay
+	name = "Telecommunication Relay"
+	icon = 'icons/obj/stationobjs.dmi'
+	icon_state = "relay"
+	desc = "A mighty piece of hardware used to send massive amounts of data far away."
+	density = TRUE
+	anchored = TRUE
+	machinetype = 8
+	produces_heat = 0
+	circuitboard = /obj/item/stock_parts/circuitboard/telecomms/relay
+	base_type = /obj/machinery/telecomms/relay
+	netspeed = 5
+	long_range_link = 1
+	var/broadcasting = 1
+	var/receiving = 1
+	var/usage_offise = 10 KILOWATTS
+
+/obj/item/stock_parts/circuitboard/telecomms/relay
+	name = T_BOARD("relay mainframe")
+	build_path = /obj/machinery/telecomms/relay
+	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 4, TECH_BLUESPACE = 3)
+	req_components =	list(
+								/obj/item/stock_parts/manipulator = 2,
+								/obj/item/stock_parts/subspace/filter = 2
+							)
+// Relays on ship's Z levels use less power as they don't have to transmit over such large distances.
+/obj/machinery/telecomms/relay/update_power()
+	..()
+	if(z in GLOB.using_map.station_levels)
+		change_power_consumption(2.5 KILOWATTS, POWER_USE_IDLE)
+	else
+		change_power_consumption(usage_offise, POWER_USE_IDLE) //inf, was change_power_consumption(100 KILOWATTS, POWER_USE_IDLE)
+
+/obj/machinery/telecomms/relay/receive_information(datum/signal/signal, obj/machinery/telecomms/machine_from)
+
+	// Add our level and send it back
+	if(can_send(signal))
+		signal.data["level"] |= listening_levels
+
+// Checks to see if it can send/receive.
+
+/obj/machinery/telecomms/relay/proc/can(datum/signal/signal)
+	if(!on)
+		return 0
+	if(!is_freq_listening(signal))
+		return 0
+	return 1
+
+/obj/machinery/telecomms/relay/proc/can_send(datum/signal/signal)
+	if(!can(signal))
+		return 0
+	return broadcasting
+
+/obj/machinery/telecomms/relay/proc/can_receive(datum/signal/signal)
+	if(!can(signal))
+		return 0
+	return receiving
+
+/obj/machinery/telecomms/relay/preset
+	network = "tcommsat"
+/obj/machinery/telecomms/relay/preset/centcom
+	id = "Centcom Relay"
+	hide = 1
+	toggled = 1
+	produces_heat = 0
+	autolinkers = list("c_relay")
+	construct_state = /decl/machine_construction/tcomms/panel_closed/cannot_print //INF
+
+//BOS
 
 /*
 	The bus mainframe idles and waits for hubs to relay them signals. They act

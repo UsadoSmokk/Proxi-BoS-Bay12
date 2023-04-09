@@ -39,6 +39,7 @@
 	#include "items/random.dm"
 	#include "items/mobile_ladders.dm"
 	#include "items/nightstand.dm"
+	#include "items/papers.dm"
 
 	#include "items/devices/flashlight.dm"
 

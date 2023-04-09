@@ -88,3 +88,9 @@
 /obj/effect/shuttle_landmark/nearshahtinsk
 	name = "Place near Shahtinsk"
 	landmark_tag = "nav_shahtinsk"
+
+/obj/machinery/telecomms/relay/preset/planetside
+	id = "Planetside Relay"
+	autolinkers = list("cadaab_relay")
+	usage_offise = 5 KILOWATTS
+	outage_probability = 100

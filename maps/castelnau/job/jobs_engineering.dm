@@ -42,6 +42,7 @@
 	access_castelnau_atmospherics,
 	access_castelnau_thrusters,
 	access_castelnau_englab,
+	access_castelnau_seneng,
 	access_castelnau_maint_tunnels,
 	access_castelnau_external_airlocks,
 	access_atmospherics,

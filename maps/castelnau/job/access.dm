@@ -214,6 +214,12 @@ var/const/access_castelnau_detective = "ACCESS_CASTELNAU_DETECTIVE"
 	desc = "Castelnau Thrusters"
 	region = ACCESS_REGION_ENGINEERING
 
+/var/const/access_castelnau_seneng = "ACCESS_CASTELNAU_SENENG"
+/datum/access/castelnau/englab
+	id = access_castelnau_seneng
+	desc = "Castelnau Senior Engineer"
+	region = ACCESS_REGION_ENGINEERING
+
 /var/const/access_castelnau_englab = "ACCESS_CASTELNAU_ENGLAB"
 /datum/access/castelnau/englab
 	id = access_castelnau_englab
