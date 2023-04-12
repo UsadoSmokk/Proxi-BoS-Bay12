@@ -1035,7 +1035,7 @@
 "UJ" = (/obj/structure/table/glass,/obj/item/modular_computer/telescreen/preset/generic{pixel_x = -32},/obj/effect/floor_decal/corner/brown{dir = 9},/obj/item/device/flashlight/lamp,/turf/simulated/floor/tiled/techfloor,/area/shuttle/castelnau/cheapskate/cargo)
 "UK" = (/obj/machinery/door/firedoor,/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "tp"; name = "Teleporter"},/turf/simulated/floor/tiled/techmaint,/area/castelnau/supply/teleporter)
 "UL" = (/obj/machinery/firealarm{dir = 1; pixel_y = -28},/obj/item/storage/toolbox/mechanical,/obj/machinery/meter,/obj/machinery/atmospherics/pipe/simple/visible/fuel{dir = 9},/turf/simulated/floor/plating,/area/shuttle/castelnau/bixie/power)
-"UP" = (/obj/structure/extinguisher_cabinet{pixel_x = -28},/obj/effect/floor_decal/corner/brown{dir = 9},/obj/machinery/noisetv,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techfloor,/area/shuttle/castelnau/cheapskate/cargo)
+"UP" = (/obj/structure/extinguisher_cabinet{pixel_x = -28},/obj/effect/floor_decal/corner/brown{dir = 9},/turf/simulated/floor/tiled/techfloor,/area/shuttle/castelnau/cheapskate/cargo)
 "Vd" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/shuttle/castelnau/cheapskate/cargo/war)
 "Ve" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "cheap_shut"; name = "Cockpit"},/obj/effect/paint/merc,/turf/simulated/floor/plating,/area/shuttle/castelnau/cheapskate/cockpit)
 "Vm" = (/obj/effect/floor_decal/corner/red{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/fuel,/turf/simulated/floor/tiled/techmaint,/area/shuttle/castelnau/cheapskate/sec)
