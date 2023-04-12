@@ -67,6 +67,7 @@
 	visible_message(SPAN_DANGER("Clack!"))
 	if(T)
 		explosion(T, -1, -1, 2, 2)
+		qdel(src)
 
 	if(activator)
 		if(cut_arms == 1)	//Damage arms to man who try to deactivate mine
@@ -74,11 +75,9 @@
 		else	//Damage foots to man who step away from mine
 			activator.apply_damage(250, DAMAGE_BRUTE, pick(BP_L_FOOT, BP_R_FOOT))
 
+	if(locate(/mob/living/carbon/human) in src.loc)
 		for(var/mob/living/carbon/human/victim in src.loc)	//And damage foots for whom still stay/lay on mine
 			victim.apply_damage(250, DAMAGE_BRUTE, pick(BP_L_FOOT, BP_R_FOOT))
-
-	qdel(src)
-
 
 /obj/item/mine/Crossed(var/mob/living/mob)
 	if((!istype(mob, /mob/observer)) && (active))

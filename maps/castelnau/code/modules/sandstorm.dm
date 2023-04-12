@@ -51,15 +51,6 @@
 		if(check_loc(unlucky) == CADAAB_OUTSIDE)
 			to_chat(unlucky, SPAN_WARNING("Along with the horizon, the sand swallows up the sun, bringing darkness and death."))
 
-	for(var/turf/simulated/floor/exoplanet/desert/cadaab/target_turf in world) //Off light everwhere in Cadaab
-		target_turf.set_light(0, 0, 0)
-
-	for(var/turf/simulated/floor/inaks/target_turf in world)
-		target_turf.set_light(0, 0, 0)
-
-	for(var/turf/simulated/floor/grass/cadaab/target_turf in world)
-		target_turf.set_light(0, 0, 0)
-
 	sleep(15 SECONDS)
 
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
@@ -71,6 +62,15 @@
 			to_chat(unlucky, SPAN_WARNING("You can hear lighting somewhere very close to you. Wild wind blows from every crevice..."))
 			sound_to(unlucky, sound('sound/effects/bos/lighting.ogg', volume = 70))
 			sound_to(unlucky, sound('sound/effects/bos/sandstorm_coming.ogg', volume = 40))
+
+	for(var/turf/simulated/floor/exoplanet/desert/cadaab/target_turf in world) //Off light everwhere in Cadaab
+		target_turf.set_light(0, 0, 0)
+
+	for(var/turf/simulated/floor/inaks/target_turf in world)
+		target_turf.set_light(0, 0, 0)
+
+	for(var/turf/simulated/floor/grass/cadaab/target_turf in world)
+		target_turf.set_light(0, 0, 0)
 
 	sleep(10 SECONDS)
 

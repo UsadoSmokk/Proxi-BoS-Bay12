@@ -143,3 +143,18 @@
 
 /mob/living/simple_animal/hostile/retaliate/malf_drone/hive
 	faction = "hivebot"
+
+////
+// No way, turf random generation?7?
+////
+
+/obj/random/syndivault
+	name = "syndivault door"
+	desc = "Here can spawn airlock or wall turf"
+	icon = 'icons/obj/doors/vault/door.dmi'
+	icon_state = "preview"
+	spawn_nothing_percentage = 0
+
+/obj/random/syndivault/spawn_choices()
+	return list(/obj/machinery/door/airlock/vault,
+				/turf/unsimulated/cadaab/rock)
