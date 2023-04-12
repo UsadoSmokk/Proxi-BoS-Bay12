@@ -208,7 +208,7 @@
 	                    SKILL_ANATOMY = SKILL_MAX,
 	                    SKILL_CHEMISTRY = SKILL_MAX)
 
-	skill_points = 15
+	skill_points = 20
 
 
 	access = list(
