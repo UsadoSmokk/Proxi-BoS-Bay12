@@ -84,3 +84,13 @@
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/outhood
 	siemens_coefficient = 0.6
+
+/obj/item/cane/staff
+	name = "wooden staff"
+	desc = "You're either crippled or a wizard."
+	icon_state = "staff"
+	item_state = "staff"
+	icon = 'customs/icons/obj/custom_items_obj.dmi'
+	item_icons = list(
+		slot_l_hand_str = 'customs/icons/mob/custom_items_lhand.dmi',
+		slot_r_hand_str = 'customs/icons/mob/custom_items_rhand.dmi')
