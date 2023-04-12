@@ -11701,6 +11701,11 @@
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"qtj" = (
+/obj/effect/paint/silver,
+/obj/effect/paint_stripe/brown,
+/turf/simulated/wall/r_titanium,
+/area/centcom/suppy)
 "quq" = (
 /obj/structure/table/holo_woodentable,
 /obj/item/reagent_containers/food/drinks/teapot{
@@ -11752,6 +11757,12 @@
 	icon_state = "desert2"
 	},
 /area/holodeck/source_volleyball)
+"rnw" = (
+/turf/unsimulated/floor{
+	icon_state = "plating";
+	name = "plating"
+	},
+/area/supply/dock)
 "rpk" = (
 /turf/simulated/wall/r_titanium,
 /area/syndicate_elite_squad)
@@ -26420,7 +26431,7 @@ rxE
 rxE
 rxE
 rxE
-atR
+qtj
 atR
 atx
 aab
@@ -26824,7 +26835,7 @@ auz
 auz
 auz
 rxE
-auz
+rnw
 atR
 atx
 aab
@@ -27026,7 +27037,7 @@ auX
 auz
 auz
 rxE
-auz
+rnw
 atR
 atx
 aab
@@ -27430,7 +27441,7 @@ rxE
 rxE
 rxE
 rxE
-atR
+qtj
 atR
 atx
 aab
