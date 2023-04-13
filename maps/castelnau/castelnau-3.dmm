@@ -270,7 +270,7 @@
 "fo" = (/obj/structure/bed/chair/comfy/blue{dir = 1},/obj/effect/floor_decal/corner_techfloor_grid/full{dir = 8},/obj/effect/floor_decal/corner/blue/three_quarters{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/castelnau/command/bridge)
 "fp" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/firealarm{dir = 4; pixel_x = 26},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/floor_decal/corner_techfloor_grid{dir = 6},/obj/effect/floor_decal/corner/blue{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/castelnau/command/bridge)
 "fq" = (/obj/machinery/telecomms/hub/preset,/obj/machinery/firealarm{dir = 8; pixel_x = -24; pixel_y = 6},/turf/simulated/floor/bluegrid,/area/castelnau/command/tcoms)
-"fr" = (/obj/machinery/telecomms/broadcaster/preset_right,/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_y = 24},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/bluegrid,/area/castelnau/command/tcoms)
+"fr" = (/obj/machinery/telecomms/broadcaster/preset_right,/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc/critical{dir = 1; pixel_y = 20},/turf/simulated/floor/bluegrid,/area/castelnau/command/tcoms)
 "fs" = (/obj/machinery/telecomms/processor/preset_three,/obj/machinery/light{dir = 1},/turf/simulated/floor/bluegrid,/area/castelnau/command/tcoms)
 "ft" = (/obj/machinery/telecomms/processor/preset_two,/turf/simulated/floor/bluegrid,/area/castelnau/command/tcoms)
 "fu" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled/techfloor/grid,/area/castelnau/command/tcoms)
