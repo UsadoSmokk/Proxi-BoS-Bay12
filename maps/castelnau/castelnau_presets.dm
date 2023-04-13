@@ -149,7 +149,8 @@ var/const/NETWORK_PROMETEUS   = "Prometeus"
 /obj/machinery/power/smes/buildable/preset/castelnau/engine_main
 	uncreated_component_parts = list(
 		/obj/item/stock_parts/smes_coil/super_io = 2,
-		/obj/item/stock_parts/smes_coil/super_capacity = 2)
+		/obj/item/stock_parts/smes_coil/super_capacity = 2,
+		/obj/item/stock_parts/smes_coil = 1)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 	_input_on = TRUE
@@ -158,7 +159,9 @@ var/const/NETWORK_PROMETEUS   = "Prometeus"
 
 // Shuttle SMES
 /obj/machinery/power/smes/buildable/preset/castelnau/shuttle
-	uncreated_component_parts = list(/obj/item/stock_parts/smes_coil = 2)
+	uncreated_component_parts = list(
+		/obj/item/stock_parts/smes_coil = 1,
+		/obj/item/stock_parts/smes_coil/super_capacity = 1)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 	_input_on = TRUE
@@ -182,9 +185,13 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 /datum/map/proc/get_shared_network_access(var/network)
 	switch(network)
 		if(NETWORK_COMMAND)
-			return access_heads
-		if(NETWORK_ENGINE, NETWORK_ENGINEERING_OUTPOST)
-			return access_engine
+			return access_castelnau_bridge
+		if(NETWORK_ENGINEERING, NETWORK_ALARM_ATMOS, NETWORK_ALARM_CAMERA, NETWORK_ALARM_FIRE, NETWORK_ALARM_POWER, NETWORK_ENGINE, NETWORK_ENGINEERING_OUTPOST)
+			return access_castelnau_engine
+		if(NETWORK_MEDICAL)
+			return access_castelnau_medical
+
+	return access_castelnau_security // Default for all other networks
 
 /datum/map/castelnau/default_internal_channels()
 	return list(
