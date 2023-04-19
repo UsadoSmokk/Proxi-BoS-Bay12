@@ -161,3 +161,11 @@
 	license = /decl/license/grandfathered //ee
 	url = "https://youtu.be/tUvyqfNvPXY"
 	volume = 30
+
+/decl/audio/track/divina
+	title = "Divina"
+	author = "Toro y Moi"
+	source = 'sound/music/bos/divina.ogg'
+	license = /decl/license/grandfathered //ee
+	url = "https://youtu.be/zTppgotPyGA"
+	volume = 30

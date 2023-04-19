@@ -38,3 +38,4 @@
 	name = "ftu"
 	icon = 'maps/castelnau/bos/icons/effects/ftu.dmi'
 	icon_state = "ftu"
+	alpha = 200
