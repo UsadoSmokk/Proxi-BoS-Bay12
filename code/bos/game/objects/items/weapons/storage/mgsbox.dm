@@ -9,6 +9,7 @@
 	max_storage_space = 40
 	allow_quick_empty = 1
 	allow_quick_gather = 1
+	randpixel = 2
 
 	var/open = 0
 	var/stealth_mode = 0

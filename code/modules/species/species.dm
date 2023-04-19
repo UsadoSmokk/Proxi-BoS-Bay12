@@ -63,6 +63,7 @@
 	var/thirst_factor = DEFAULT_THIRST_FACTOR // Multiplier for thirst.
 	var/taste_sensitivity = TASTE_NORMAL      // How sensitive the species is to minute tastes.
 	var/silent_steps
+	var/datum_usefov = 1 //BoS
 
 	var/min_age = 17
 	var/max_age = 70
@@ -476,6 +477,7 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 	H.mob_swap_flags = swap_flags
 	H.mob_push_flags = push_flags
 	H.pass_flags = pass_flags
+	H.usefov = datum_usefov //BoS
 	handle_limbs_setup(H)
 
 /datum/species/proc/handle_pre_spawn(var/mob/living/carbon/human/H)

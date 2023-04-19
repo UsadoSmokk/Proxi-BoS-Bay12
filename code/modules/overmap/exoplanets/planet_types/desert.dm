@@ -126,7 +126,7 @@
 	icon_state = "open"
 	overlays.Cut()
 	if(buckled_mob)
-		overlays += image(icon,icon_state="overlay",layer=ABOVE_HUMAN_LAYER)
+		overlays += image(icon,icon_state="overlay",layer=ABOVE_HUMAN_LAYER,plane=GAME_PLANE_FOV_HIDDEN)
 
 /obj/effect/quicksand/proc/expose()
 	if(exposed)

@@ -28,7 +28,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	company_name  = "Regulators"
 	company_short = "Regs"
 
-	map_admin_faxes = list("Regulators Center")
+	map_admin_faxes = list("Regulators Center", "Frau Martha's Cabinet", "FTU Trade Council", "LSS Representative Office", "Alliance Of Humanity Assembly", "Syndicate's Representative Department")
 
 	evac_controller_type = /datum/evacuation_controller
 
@@ -40,7 +40,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	away_site_budget = 3
 	id_hud_icons = 'maps/castelnau/icons/assignment_hud_new.dmi'
 
-	starting_money = 30000
+	starting_money = 20000
 	salary_modifier = 0.5
 	supply_currency_name = "Cargo credits"
 	supply_currency_name_short = "CaCr."
@@ -199,4 +199,3 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 
 	post_comm_message("FTV Cheapskate Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "Новое сообщение от [GLOB.using_map.company_name] доступно Командованию Регуляторов на всех терминалах.")
-

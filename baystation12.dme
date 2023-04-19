@@ -245,6 +245,7 @@
 #include "code\bos\modules\clothing\suit\suit.dm"
 #include "code\bos\modules\clothing\suit\supreme.dm"
 #include "code\bos\modules\clothing\suit\uniform.dm"
+#include "code\bos\modules\clothing\under\accessories\helmcover.dm"
 #include "code\bos\modules\clothing\vox\vox_head.dm"
 #include "code\bos\modules\clothing\vox\vox_rig.dm"
 #include "code\bos\modules\clothing\vox\vox_suit.dm"
