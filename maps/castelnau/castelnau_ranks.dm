@@ -178,11 +178,10 @@
 
 /datum/mil_rank/reg
 	name = "Regulators"
-	name_short = "Reg"
 
 /datum/mil_rank/reg/com
 	name = "Regulators Command"
-	name_short = "RegCom"
+	name_short = "COM"
 
 /*
  *  Military
