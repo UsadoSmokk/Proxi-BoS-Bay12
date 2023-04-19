@@ -20,6 +20,7 @@
 	skin_amount = 0
 	bone_material = null
 	bone_amount = 0
+	usefov = 0
 
 	can_be_buckled = FALSE
 

@@ -18,7 +18,7 @@
 	var/turf/selected_turf = pick_area_and_turf(GLOB.is_station_but_not_space_or_shuttle_area)
 	var/turf/target_turf
 	if(prob(50))
-		target_turf = pick_area_and_turf(list(/proc/always_true))
+		target_turf = pick_area_and_turf(list(/proc/is_turf_no_mines_and_walls))
 	else
 		target_turf = pick_area_and_turf(GLOB.is_station_but_not_space_or_shuttle_area)
 

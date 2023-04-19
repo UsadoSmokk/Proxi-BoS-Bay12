@@ -48,6 +48,7 @@
 	icon_state = "steelfence"
 	anchored = TRUE
 	density = TRUE
+	plane = DECORATIONS_PLANE
 	health_max = 30
 
 /obj/structure/steelfence/attackby(obj/item/W as obj, mob/user as mob)
@@ -182,6 +183,7 @@
 	anchored = TRUE
 	density = TRUE
 	health_max = 30
+	plane = DECORATIONS_PLANE
 
 /obj/structure/ads/attackby(obj/item/W as obj, mob/user as mob)
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)

@@ -26,6 +26,21 @@
 	icon_state = "sand[rand(0,6)]"
 	set_light(1, 1, 5, l_color = "#FF9D8E")
 
+/turf/simulated/floor/exoplanet/desert/attackby(obj/item/stack/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/stack/sandbag_empty))
+		to_chat(usr, SPAN_NOTICE("You started to fill one of the bags with sand..."))
+		playsound(usr.loc, 'sound/effects/bos/sandbags_filling.ogg', 80, 1)
+		if(do_after(usr, rand(3, 4) SECONDS, src, DO_BAR_OVER_USER | DO_SHOW_PROGRESS | DO_USER_SAME_HAND))
+			to_chat(usr, SPAN_NOTICE("You have successfully filled the bag with sand."))
+			W.amount -= 1
+			W.update_icon()
+			if(W.amount == 0)
+				qdel(W)
+			if(usr.put_in_any_hand_if_possible(new /obj/item/stack/sandbag_full()))
+				return
+			else
+				new /obj/item/stack/sandbag_full(usr.loc)
+
 /turf/simulated/mineral/cadaab
 	name = "rock"
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
@@ -72,6 +87,7 @@
 	matter = list(MATERIAL_WOOD = 450)
 
 /turf/simulated/floor/grass/cadaab
+	footstep_type = /decl/footsteps/grass
 
 /turf/simulated/floor/grass/cadaab/Initialize()
 	.=..()
@@ -79,3 +95,9 @@
 
 /obj/structure/quicksand/cadaab
 	icon = 'maps/away/cadaab/icons/quicksand.dmi'
+
+/turf/simulated/floor/exoplanet/water/shallow/cadaab
+
+/turf/simulated/floor/exoplanet/water/shallow/cadaab/Initialize()
+	. = ..()
+	set_light(1, 1, 5, l_color = "#FF9D8E")
