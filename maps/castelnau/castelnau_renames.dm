@@ -11,4 +11,4 @@
 	name = "deck"
 
 /obj/item/weapon/stamp/hop
-	name = "First Officer's Stamp"
+	name = "Coordinator's Stamp"
