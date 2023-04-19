@@ -79,3 +79,17 @@
 	l_ear = null
 	r_pocket = /obj/item/device/flashlight
 	l_pocket = /obj/item/storage/wallet/poly/wanderer
+
+/decl/hierarchy/outfit/job/castelnau/ert
+	name = OUTFIT_JOB_NAME("ERT - Castelnau")
+	uniform = /obj/item/clothing/under/solgov/utility
+	head = /obj/item/clothing/head/panama
+	gloves = /obj/item/clothing/gloves/thick
+	id_types = list(/obj/item/card/id/centcom/ERT)
+	pda_type = /obj/item/modular_computer/pda/ert
+	l_ear = /obj/item/device/radio/headset/ert
+	shoes = /obj/item/clothing/shoes/dutyboots
+
+/decl/hierarchy/outfit/job/castelnau/ert/leader
+	name = OUTFIT_JOB_NAME("ERT Leader - Castelnau")
+	head = /obj/item/clothing/head/beret/sec/navy/hos
