@@ -52,3 +52,7 @@
 	ert_outfit.equip(player)
 
 	return 1
+
+/datum/map_template/ruin/antag_spawn/ert
+	name = "ERT Base"
+	suffixes = list("ert/ert_base_merc.dmm")
