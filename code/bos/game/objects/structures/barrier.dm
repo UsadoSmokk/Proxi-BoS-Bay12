@@ -326,7 +326,7 @@
 			to_chat(usr, SPAN_WARNING("You can't make up more sandbags on this fortification."))
 		else
 			visible_message(SPAN_NOTICE("[usr] have started to put in a new line of sandbags."))
-			if(do_after(usr, 6 SECONDS, src, DO_BOTH_CAN_TURN | DO_PUBLIC_PROGRESS | DO_SHOW_PROGRESS))
+			if(do_after(usr, 6 SECONDS, src, DO_BOTH_CAN_TURN | DO_PUBLIC_UNIQUE | DO_SHOW_PROGRESS))
 				fort_level += 1
 				maxhealth += 40
 				health += 40
@@ -339,7 +339,7 @@
 
 	if((istype(W, /obj/item/stack/sandbag_full)) && (health != maxhealth))
 		visible_message(SPAN_NOTICE("[usr] start to change the pierced bag in line of sanbags..."))
-		if(do_after(usr, 3 SECONDS, src, DO_BAR_OVER_USER | DO_PUBLIC_PROGRESS | DO_USER_SAME_HAND | DO_SHOW_PROGRESS))
+		if(do_after(usr, 3 SECONDS, src, DO_BAR_OVER_USER | DO_PUBLIC_UNIQUE | DO_USER_SAME_HAND | DO_SHOW_PROGRESS))
 			to_chat(usr, SPAN_NOTICE("You have completed the replacement of the bag."))
 			health += 70
 			if(health > maxhealth)
@@ -398,7 +398,7 @@
 	. = ..()
 	if(!H.resting)
 		visible_message(SPAN_WARNING("[usr] starts taking sandbags apart!"))
-		if(do_after(usr, 6 SECONDS, src, DO_SHOW_PROGRESS | DO_PUBLIC_PROGRESS))
+		if(do_after(usr, 6 SECONDS, src, DO_SHOW_PROGRESS | DO_PUBLIC_UNIQUE))
 			new /obj/item/stack/sandbag_full(src.loc)
 			new /obj/item/stack/sandbag_full(src.loc)
 			new /obj/item/stack/sandbag_full(src.loc)
@@ -449,7 +449,7 @@
 		return
 
 	visible_message(SPAN_NOTICE("[usr] have started to create a fortification from sandbags."))
-	if(do_after(user, rand(3, 4) SECONDS, src, DO_BAR_OVER_USER | DO_PUBLIC_PROGRESS | DO_BOTH_CAN_TURN | DO_SHOW_PROGRESS))
+	if(do_after(user, rand(3, 4) SECONDS, src, DO_BAR_OVER_USER | DO_PUBLIC_UNIQUE | DO_BOTH_CAN_TURN | DO_SHOW_PROGRESS))
 		var/obj/structure/barrier/sandbags/bags = new(user.loc)
 		bags.set_dir(user.dir)
 		bags.update_layers()
