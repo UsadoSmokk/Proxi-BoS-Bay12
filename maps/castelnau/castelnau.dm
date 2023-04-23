@@ -136,9 +136,7 @@
 	#include "structures/stool_bed_chair_nest/bed.dm"	//FUCK YOU
 	#include "structures/stool_bed_chair_nest/chairs.dm"
 
-	#include "castelnau-1.dmm"
-	#include "castelnau-2.dmm"
-	#include "castelnau-3.dmm"
+	#include "techbarb-event/event.dmm"
 	#include "z1-admin.dmm"
 	#include "z2-transit.dmm"
 
