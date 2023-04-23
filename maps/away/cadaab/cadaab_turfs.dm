@@ -30,7 +30,7 @@
 	if(istype(W, /obj/item/stack/sandbag_empty))
 		to_chat(usr, SPAN_NOTICE("You started to fill one of the bags with sand..."))
 		playsound(usr.loc, 'sound/effects/bos/sandbags_filling.ogg', 80, 1)
-		if(do_after(usr, rand(3, 4) SECONDS, src, DO_BAR_OVER_USER | DO_SHOW_PROGRESS | DO_USER_SAME_HAND))
+		if(do_after(usr, rand(3, 4) SECONDS, src, DO_BAR_OVER_USER | DO_SHOW_PROGRESS | DO_USER_SAME_HAND | DO_BOTH_UNIQUE_ACT))
 			to_chat(usr, SPAN_NOTICE("You have successfully filled the bag with sand."))
 			W.amount -= 1
 			W.update_icon()
