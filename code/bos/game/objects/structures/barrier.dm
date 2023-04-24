@@ -313,6 +313,8 @@
 
 /obj/structure/barrier/sandbags/examine(var/user)
 	..()
+	to_chat(user, "<span class='notice'>There [fort_level] lines of the sandbags.</span>")
+
 	if(health>=maxhealth)
 		to_chat(user, "<span class='notice'>It looks undamaged.</span>")
 	if(health>=50 && health<maxhealth)
