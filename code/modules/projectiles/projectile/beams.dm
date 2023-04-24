@@ -41,7 +41,7 @@
 
 /obj/item/projectile/beam/midlaser
 	damage = 40
-	armor_penetration = 20 //was 10
+	armor_penetration = 10
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(4, 0.96),
@@ -148,16 +148,16 @@
 
 /obj/item/projectile/beam/pulse/skrell
 	icon_state = "pu_laser"
-	damage = 30 //was 20
+	damage = 20
 	muzzle_type = /obj/effect/projectile/laser/pulse/skrell/muzzle
 	tracer_type = /obj/effect/projectile/laser/pulse/skrell/tracer
 	impact_type = /obj/effect/projectile/laser/pulse/skrell/impact
 
 /obj/item/projectile/beam/pulse/skrell/heavy
-	damage = 40 //was 30
+	damage = 30
 
 /obj/item/projectile/beam/pulse/skrell/single
-	damage = 60 //was 50
+	damage = 50
 
 /obj/item/projectile/beam/pulse/skrell/single/lance //boh
 	distance_falloff = 0.50
@@ -273,7 +273,7 @@
 
 /obj/item/projectile/beam/stun/heavy
 	name = "heavy stun beam"
-	damage = 10 //was 2
+	damage = 2
 	agony = 40 //was 60
 	distance_falloff = 1
 	damage_falloff_list = list(
@@ -305,7 +305,7 @@
 
 /obj/item/projectile/beam/stun/shock/heavy
 	name = "heavy shock beam"
-	damage = 40 //was 30
+	damage = 30
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(5, 0.97),
@@ -317,7 +317,7 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 35 //was 20
+	damage = 20
 	armor_penetration = 30
 	edge = TRUE
 	damage_type = DAMAGE_BURN
