@@ -23,11 +23,11 @@
 /datum/map_template/ruin/away_site/cadaab
 	name = "Cadaab"
 	id = "awaysite_cadaab"
-	spawn_cost = 30 //was 0
+	spawn_cost = 0
 	description = "The hot desert Moon of Inax. A recent landslide caused many roads to be blocked."
 	suffixes = list("cadaab/cadaab.dmm")
 	generate_mining_by_z = 1
-//	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
+	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
 	shuttles_to_initialise = list(/datum/shuttle/autodock/ferry/lift)
 	area_usage_test_exempted_root_areas = list(/area/cadaab)
 	apc_test_exempt_areas = list(
