@@ -101,3 +101,37 @@
 /turf/simulated/floor/exoplanet/water/shallow/cadaab/Initialize()
 	. = ..()
 	set_light(1, 1, 5, l_color = "#FF9D8E")
+
+/obj/item/lazy
+	name = "Smolergo can't code staff buttons"
+	desc = "What"
+	icon = 'icons/bos/obj/barrier.dmi'
+	icon_state = "barrier_rised"
+	var/on = 0
+
+/obj/item/lazy/Click(location, control, params)
+	. = ..()
+	if(on)
+		on = !on
+
+		for(var/turf/simulated/floor/exoplanet/desert/cadaab/target_turf in world)
+			target_turf.set_light(1, 1, 5, l_color = "#FF9D8E")
+
+		for(var/turf/simulated/floor/inaks/target_turf in world)
+			target_turf.set_light(1, 1, 5, l_color = "#FF9D8E")
+
+		for(var/turf/simulated/floor/grass/cadaab/target_turf in world)
+			target_turf.set_light(1, 1, 5, l_color = "#FF9D8E")
+	else
+		on = !on
+
+		for(var/turf/simulated/floor/exoplanet/desert/cadaab/target_turf in world)
+			target_turf.set_light(0, 0, 0)
+
+		for(var/turf/simulated/floor/inaks/target_turf in world)
+			target_turf.set_light(0, 0, 0)
+
+		for(var/turf/simulated/floor/grass/cadaab/target_turf in world)
+			target_turf.set_light(0, 0, 0)
+
+	visible_message("Niggers is coming")
