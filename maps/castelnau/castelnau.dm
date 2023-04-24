@@ -137,6 +137,10 @@
 	#include "structures/stool_bed_chair_nest/chairs.dm"
 
 	#include "techbarb-event/event.dmm"
+	#warn USING EVENT MAP, SNIZU ZAKOMENCHENA OSNOVNAYA
+	//#include "castelnau-1.dmm"
+	//#include "castelnau-2.dmm"
+	//#include "castelnau-3.dmm"
 	#include "z1-admin.dmm"
 	#include "z2-transit.dmm"
 
