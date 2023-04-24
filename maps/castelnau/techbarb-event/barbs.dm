@@ -17,7 +17,7 @@
 
 /obj/item/gun/energy/k342/barb
 	name = "old K342 Barrakuda"
-	desc = "K342 Barrakuda is the latest plasma weapon created by NanoTrasen. It can fire several types of charges: stunning, incendiary and lethal. This one is pretty old."
+	desc = "K342 Barrakuda is the latest plasma weapon created by NanoTrasen. It can fire several types of projectiles: stunning, incendiary and lethal. This one is pretty old."
 	init_firemodes = list(
 		list(mode_name="stun charge", projectile_type=/obj/item/projectile/plasma/stun/barb, charge_cost=20, fire_delay=4, projectile_color=COLOR_YELLOW),
 		list(mode_name="plasma charge", projectile_type=/obj/item/projectile/plasma/barb, charge_cost=20, fire_delay=4, projectile_color=COLOR_BLUE_LIGHT),
@@ -25,18 +25,18 @@
 	)
 
 /datum/say_list/techbarb
-	speak = list("Отец-Атом, освети наш путь!",
-				"Недавно видел большую железную птицу в небе.",
-				"Вот бы тостер починили...")
-	emote_see = list("издает непонятное горлотание", "гладит оружие", "молится Духам Машины")
+	speak = list("РћС‚РµС†-РђС‚РѕРј, РѕСЃРІРµС‚Рё РЅР°Рј РїСѓС‚СЊ!",
+				"РќРµРґР°РІРЅРѕ РІРёРґРµР» Р±РѕР»СЊС€СѓСЋ Р¶РµР»РµР·РЅСѓСЋ РїС‚РёС†Сѓ РІ РЅРµР±Рµ.",
+				"Р’РѕС‚ Р±С‹ С‚РѕСЃС‚РµСЂ РїРѕС‡РёРЅРёР»Рё...")
+	emote_see = list("РёР·РґР°С‘С‚ РЅРµРїРѕРЅСЏС‚РЅРѕРµ РіРѕСЂР»РѕС‚Р°РЅРёРµ", "РіР»Р°РґРёС‚ РѕСЂСѓР¶РёРµ", "РјРѕР»РёС‚СЃСЏ")
 
-	say_understood = list("Понял!")
-	say_cannot = list("Не смею!")
-	say_maybe_target = list("Остановись, чужак!")
-	say_got_target = list("МЫ - ВОИНЫ ПОЛУРАСПАДА, СДАВАЙСЯ!")
-	say_threaten = list("СЛАВА ДУХУ МАШИНЫ!")
-	say_stand_down = list("Вот так.")
-	say_escalate = list("Да примет твою плоть машина...", "Ещё одно подношение большой машине!")
+	say_understood = list("РџРѕРЅСЏР»!")
+	say_cannot = list("РќРµ СЃРјРµСЋ!")
+	say_maybe_target = list("РћСЃС‚Р°РЅРѕРІРёСЃСЊ, С‡СѓР¶Р°Рє!")
+	say_got_target = list("РњР« - Р’РћРРќР« РџРћР›РЈР РђРЎРџРђР”Рђ, РЎР”РђР’РђР™РЎРЇ!")
+	say_threaten = list("Р”РЈРҐ РњРђРЁРРќР« РўР•Р‘РЇ РЈРќРР§РўРћР–РРў!")
+	say_stand_down = list("Р’РѕС‚ С‚Р°Рє.")
+	say_escalate = list("Р”Р° РїСЂРёРјРµС‚ С‚РІРѕСЋ РїР»РѕС‚СЊ РјР°С€РёРЅР°...", "Р•С‰С‘ РѕРґРЅРѕ РїРѕРґРЅРѕС€РµРЅРёРµ!", "РќРµ С‚СЂРѕРіР°Р№ РјРѕРё Р±Р»РµСЃС‚СЏС€РєРё!")
 
 	threaten_sound = 'sound/weapons/TargetOn.ogg'
 	stand_down_sound = 'sound/weapons/TargetOff.ogg'
