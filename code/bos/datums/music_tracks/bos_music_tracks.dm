@@ -169,3 +169,11 @@
 	license = /decl/license/grandfathered //ee
 	url = "https://youtu.be/zTppgotPyGA"
 	volume = 30
+
+/decl/audio/track/fightforpower
+	title = "Fight for Power"
+	author = "Frank Klepacki"
+	source = 'sound/music/bos/fightforpower.ogg'
+	license = /decl/license/grandfathered //ee
+	url = "https://youtu.be/5sTjwrK7lbY"
+	volume = 30
