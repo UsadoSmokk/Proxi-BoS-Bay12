@@ -17,7 +17,7 @@
 
 /obj/item/gun/energy/k342/barb
 	name = "old K342 Barrakuda"
-	desc = "K342 Barrakuda is the latest plasma weapon created by NanoTrasen. It can fire several types of charges: stunning, incendiary and lethal. This one is pretty old."
+	desc = "K342 Barrakuda is the latest plasma weapon created by NanoTrasen. It can fire several types of projectiles: stunning, incendiary and lethal. This one is pretty old."
 	init_firemodes = list(
 		list(mode_name="stun charge", projectile_type=/obj/item/projectile/plasma/stun/barb, charge_cost=20, fire_delay=4, projectile_color=COLOR_YELLOW),
 		list(mode_name="plasma charge", projectile_type=/obj/item/projectile/plasma/barb, charge_cost=20, fire_delay=4, projectile_color=COLOR_BLUE_LIGHT),
