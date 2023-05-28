@@ -37,6 +37,9 @@
 	var/list/all_antag_types = GLOB.all_antag_types_
 	for(var/antag_type in all_antag_types)
 		var/datum/antagonist/antag = all_antag_types[antag_type]
+		if(antag.id == MODE_MINI_ROLES) //BoS
+			continue
+
 		. += "<tr><td>[antag.role_text]: </td><td>"
 		if(jobban_isbanned(preference_mob(), antag.id) || (antag.id == MODE_MALFUNCTION && jobban_isbanned(preference_mob(), "AI")))
 			. += "<span class='danger'>\[BANNED\]</span><br>"
@@ -55,6 +58,12 @@
 		. += "<td><span class='linkOn'>Yes</span> <a href='?src=\ref[src];del_special=[BE_PAI]'>No</a></br></td></tr>"
 	else
 		. += "<td><a href='?src=\ref[src];add_special=[BE_PAI]'>Yes</a> <span class='linkOn'>No</span></br></td></tr>"
+	for(var/antag_type in all_antag_types) //BoS
+		var/datum/antagonist/antag = all_antag_types[antag_type]
+		if(antag.id == MODE_MINI_ROLES)
+			. += "<tr><td>[antag.role_text]: </td><td>"
+			. += "<span class='linkOn'>Always</span>"
+			pref.be_special_role |= MODE_MINI_ROLES
 	. += "</table>"
 	. = jointext(.,null)
 
