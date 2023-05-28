@@ -53,6 +53,7 @@
 #define MODE_MISC_AGITATOR "provocateur"
 #define MODE_HUNTER        "hunter"
 #define MODE_VOXRAIDER     "vox raider"
+#define MODE_MINI_ROLES    "mini roles" //BoS
 
 #define DEFAULT_TELECRYSTAL_AMOUNT 130
 #define TEAM_TELECRYSTAL_AMOUNT 780 //DEFAULT_TELECRYSTAL_AMOUNT*6 //proxima
