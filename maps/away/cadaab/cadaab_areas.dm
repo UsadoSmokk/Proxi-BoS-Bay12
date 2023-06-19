@@ -5,10 +5,9 @@
 	icon = 'maps/away/cadaab/icons/areas.dmi'
 	icon_state = "where"
 	base_turf = /turf/simulated/floor/exoplanet/desert/cadaab
-	planetary_surface = TRUE
+//	planetary_surface = TRUE
 	var/outside = FALSE //Mostly for sandstorm proper work
 	var/datum/sandstorm/sandstorm_container //Container for sandstorm datum
-//	dynamic_lighting = 0
 
 /area/cadaab/noise
 	name = "Noise"

@@ -2,15 +2,15 @@
 	descriptor = "Cadaab"
 	map = "Cadaab"
 	crew_jobs = list(
-		/datum/job/submap/barbar,
-		/datum/job/submap/barbar/lead,
+//		/datum/job/submap/barbar,
+//		/datum/job/submap/barbar/lead,
 		/datum/job/submap/bookerist
 	)
 
 /obj/effect/submap_landmark/joinable_submap/cadaab
 	name = "Cadaab"
 	archetype = /decl/submap_archetype/cadaab
-
+/*
 /datum/job/submap/barbar
 	title = "Tech-barbarian"
 	total_positions = 2
@@ -50,7 +50,7 @@
 /datum/job/submap/barbar/lead/equip(var/mob/living/carbon/human/H)
 	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_GRANDMASTER)
 	return ..()
-
+*/
 /obj/item/clothing/under/techbarbarian
 	name = "tech-barbarian clothes"
 	desc = "Techno-barbarians have access to reverse engineering, but can't get normal clothes?"
@@ -110,7 +110,7 @@
 	name = "Tech-barbarian Shaman"
 	uniform = /obj/item/clothing/under/techbarbarian/lead
 	head = 	/obj/item/clothing/head/techbarbarian/lead
-
+/*
 /obj/effect/submap_landmark/spawnpoint/cadaab_barbar
 	name = "Tech-barbarian"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
@@ -118,6 +118,7 @@
 /obj/effect/submap_landmark/spawnpoint/cadaab_barbarlead
 	name = "Tech-barbarian Shaman"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+*/
 
 /datum/job/submap/bookerist
 	title = "Lord-Protectorism Cultist"
@@ -142,9 +143,11 @@
 	name = OUTFIT_JOB_NAME("Bookerist")
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/combat
 	head = /obj/item/clothing/head/beret/lordan/fleet
+	mask = /obj/item/clothing/mask/gas/swat/booker
 	shoes = /obj/item/clothing/shoes/lordan
 	id_types = list()
 
 /obj/effect/submap_landmark/spawnpoint/cadaab_bookerist
 	name = "Lord-Protectorism Cultist"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+

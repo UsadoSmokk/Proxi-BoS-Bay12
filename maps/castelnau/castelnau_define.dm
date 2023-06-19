@@ -32,7 +32,6 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 
 	evac_controller_type = /datum/evacuation_controller
 
-	default_law_type = /datum/ai_laws/nanotrasen
 	use_overmap = 1
 	num_exoplanets = 0
 //	planet_size = list(150,150)
@@ -44,8 +43,8 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	salary_modifier = 0.5
 	supply_currency_name = "Cargo credits"
 	supply_currency_name_short = "CaCr."
-	local_currency_name = "credits"
-	local_currency_name_singular = "credit"
+	local_currency_name = "terran credits"
+	local_currency_name_singular = "terran credit"
 	local_currency_name_short = "Cr"
 
 	available_cultural_info = list(
