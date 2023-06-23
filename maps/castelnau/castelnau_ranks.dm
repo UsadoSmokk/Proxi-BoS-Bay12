@@ -5,6 +5,7 @@
 /datum/map/castelnau
 	branch_types = list(
 		/datum/mil_branch/reg,
+		/datum/mil_branch/gov,
 		/datum/mil_branch/mil,
 		/datum/mil_branch/par,
 //		/datum/mil_branch/cult,
@@ -15,6 +16,7 @@
 
 	spawn_branch_types = list(
 		/datum/mil_branch/reg,
+		/datum/mil_branch/gov,
 		/datum/mil_branch/mil,
 		/datum/mil_branch/par,
 //		/datum/mil_branch/cult,
@@ -81,12 +83,14 @@
 
 	rank_types = list(
 		/datum/mil_rank/par,
-		/datum/mil_rank/par/yak
+		/datum/mil_rank/par/yak,
+		/datum/mil_rank/par/barb
 	)
 
 	spawn_rank_types = list(
 		/datum/mil_rank/par,
-		/datum/mil_rank/par/yak
+		/datum/mil_rank/par/yak,
+		/datum/mil_rank/par/barb
 	)
 
 /datum/mil_branch/ftu
@@ -139,6 +143,21 @@
 		/datum/mil_rank/syndi/army
 	)
 
+/datum/mil_branch/gov
+	name = "Government"
+	name_short = "GOV"
+	email_domain = "gov.net"
+
+	rank_types = list(
+		/datum/mil_rank/gov,
+		/datum/mil_rank/gov/kgb
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/gov,
+		/datum/mil_rank/gov/kgb
+	)
+
 /datum/mil_branch/other
 	name = "Other"
 	name_short = "Other"
@@ -155,6 +174,7 @@
 		/datum/mil_rank/other/free,
 		/datum/mil_rank/other/merc
 	)
+
 
 /*
  *  ==Ranks==
@@ -220,6 +240,9 @@
 	name = "Yangui Scolopendras"
 	name_short = "Yang"
 
+/datum/mil_rank/par/barb
+	name = "Tech-Barbarian"
+	name_short = "TechB"
 /*
  *  Cultists
  *  =========
@@ -268,6 +291,19 @@
 	name = "Corporate Army"
 	name_short = "CARM"
 
+
+/*
+ *  Alliance, Lordanians, Terrans and other otshipenci
+ *  =========
+ */
+
+/datum/mil_rank/gov
+	name = "Alliance"
+	name_short = "ALI"
+
+/datum/mil_rank/gov/kgb
+	name = "Galactic Security Corps"
+	name_short = "GSC"
 
 /*
  *  Other

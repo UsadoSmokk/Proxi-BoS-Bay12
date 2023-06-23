@@ -1,7 +1,7 @@
 /datum/job/senior_engineer
 	title = "Senior Engineer"
 	department = "Engineering"
-	department_flag = COM|ENG
+	department_flag = ENG
 	supervisors = "the Captain, the First Mate and the Coordinator"
 	selection_color = "#5b4d20"
 
@@ -84,6 +84,7 @@
 						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/eng,
 						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng,
 						/datum/mil_rank/par/yak = /decl/hierarchy/outfit/job/castelnau/yak/eng,
+						/datum/mil_rank/par/barb = /decl/hierarchy/outfit/job/castelnau/barb/eng,
 						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/eng)
 
 	skill_points = 20
@@ -120,7 +121,7 @@
 							 /datum/computer_file/program/rcon_console,
 							 /datum/computer_file/program/shields_monitor)
 /datum/job/psiengineer
-	title = "Psi-Engineer"
+	title = "P-Engineer"
 	department = "Engineering"
 	department_flag = ENG
 	supervisors = "the Senior Engineer"
@@ -138,6 +139,7 @@
 							/datum/mil_branch/par, /datum/mil_branch/syndi)
 	allowed_ranks = list(
 						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/psi,
+						/datum/mil_rank/par/barb = /decl/hierarchy/outfit/job/castelnau/barb/eng/psi,
 						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/eng)
 
 	skill_points = 20
@@ -175,7 +177,7 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/psiengineer/equip(var/mob/living/carbon/human/H)
-	if(H.mind.role_alt_title == "Psi-Engineer")
+	if(H.mind.role_alt_title == "P-Engineer")
 		psi_faculties = list("[PSI_PSYCHOKINESIS]" = PSI_RANK_OPERANT)
 	return ..()
 
@@ -208,6 +210,7 @@
 						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/eng/rev,
 						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/eng/rev,
 						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/rev,
+						/datum/mil_rank/par/barb = /decl/hierarchy/outfit/job/castelnau/barb/eng/rev,
 						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/eng/rev)
 
 	access = list(

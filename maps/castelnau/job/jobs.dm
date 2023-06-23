@@ -18,7 +18,7 @@
 
 #undef HUMAN_NOVOX_JOBS
 
-	allowed_jobs = list(/datum/job/captain,/datum/job/hop,/datum/job/adjutant, /datum/job/outleader,
+	allowed_jobs = list(/datum/job/captain,/datum/job/hop,/datum/job/adjutant, /datum/job/outleader, /datum/job/emissary, /datum/job/commissary,
 						/datum/job/warden, /datum/job/officer, /datum/job/specialist, /datum/job/outsec, /datum/job/raidlead, /datum/job/raidparty,
 						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/psiengineer, /datum/job/scientist, /datum/job/outeng,
 						/datum/job/senior_doctor, /datum/job/doctor, /datum/job/redactor, /datum/job/outmed,

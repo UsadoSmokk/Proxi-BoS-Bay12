@@ -34,3 +34,22 @@
 	name = OUTFIT_JOB_NAME("Yakuza PsiEngineer - Castelnau")
 	id_types = list(/obj/item/card/id/castelnau/crew/engineering)
 	l_ear = /obj/item/device/radio/headset/heads/castelnau_engi
+
+/decl/hierarchy/outfit/job/castelnau/barb/eng
+	name = OUTFIT_JOB_NAME("TechB Engineer - Castelnau")
+	id_types = list(/obj/item/card/id/castelnau/crew/engineering)
+	pda_type = /obj/item/modular_computer/pda/engineering
+	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_engi
+
+/decl/hierarchy/outfit/job/castelnau/barb/eng/rev
+	name = OUTFIT_JOB_NAME("TechB RevEngineer - Castelnau")
+	id_types = list(/obj/item/card/id/castelnau/crew/engineering/rev)
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_engi
+
+/decl/hierarchy/outfit/job/castelnau/barb/eng/psi
+	name = OUTFIT_JOB_NAME("TechB PsiEngineer - Castelnau")
+	id_types = list(/obj/item/card/id/castelnau/crew/engineering)
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_engi
+	uniform = /obj/item/clothing/under/techbarbarian/lead
+	head = 	/obj/item/clothing/head/techbarbarian/lead

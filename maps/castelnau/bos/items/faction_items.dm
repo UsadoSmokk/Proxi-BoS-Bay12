@@ -34,6 +34,21 @@
 				/obj/item/melee/baton/loaded = 9,
 				/obj/item/device/radio/headset/syndicate = 6)
 
+/obj/random/loot/paroled/barb
+	name = "random tech-barb loot"
+
+/obj/random/loot/paroled/barb/spawn_choices()
+	return list(/obj/random/energy = 10,
+				/obj/random/hardsuit = 10,
+				/obj/item/clothing/mask/gas/syndicate = 10,
+				/obj/item/clothing/glasses/night = 3,
+				/obj/item/clothing/glasses/thermal = 1,
+				/obj/item/clothing/glasses/welding/superior = 7,,
+				/obj/item/storage/firstaid/combat = 4,
+				/obj/item/cell/infinite = 1,
+				/obj/item/device/multitool/hacktool = 2,
+				/obj/item/melee/baton/loaded = 9)
+
 ///ALT-HIRED
 ////////////
 
@@ -131,6 +146,16 @@
 Щади сдавшихся противников.</center></b>
 	"}
 
+
+///TECH-BARBARIAN
+////////////
+/obj/item/clothingbag/barb
+	name = "clothing bag"
+	desc = "Certainly not contraband"
+
+/obj/item/clothingbag/barb/Initialize()
+	. = ..()
+	new /obj/random/loot/paroled(src)
 
 ///SYNDICATE
 ////////////

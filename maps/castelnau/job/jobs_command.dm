@@ -123,10 +123,10 @@
 	)
 
 /datum/job/adjutant
-	title = "Bridge Assistant"
+	title = "Command Psionic"
 	supervisors = "the Command"
-	department = "Command"
-	department_flag = COM
+	department = "Support"
+	department_flag = SPT
 	head_position = 1
 	total_positions = 2
 	spawn_positions = 2
@@ -138,7 +138,10 @@
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_ADEPT,
 						SKILL_PILOT       = SKILL_BASIC)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+						SKILL_COMBAT      = SKILL_NONE,
+						SKILL_WEAPONS      = SKILL_NONE,
+						SKILL_HAULING      = SKILL_NONE)
 
 	skill_points = 20
 
@@ -166,3 +169,116 @@
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
+
+/datum/job/adjutant/equip(var/mob/living/carbon/human/H)
+	if(H.mind.role_alt_title == "Command Psionic")
+		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
+		H.mutations.Add(mRemotetalk)
+		H.verbs += /mob/living/carbon/human/proc/psisay
+	return ..()
+
+/datum/job/emissary
+	title = "Emissary"
+	supervisors = "the Alliance Command"
+	department = "Command"
+	department_flag = COM
+	head_position = 1
+	total_positions = 1
+	spawn_positions = 1
+	economic_power = 8
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/gov/com/emissary
+	selection_color = "#304582"
+	allowed_branches = list(/datum/mil_branch/gov)
+	allowed_ranks = list(/datum/mil_rank/gov)
+	min_skill = list(	SKILL_BUREAUCRACY = SKILL_ADEPT)
+
+	skill_points = 25
+
+	access = list(
+	access_castelnau_command,
+	access_castelnau_emissary,
+	access_castelnau_bridge,
+	access_castelnau_eva,
+	access_castelnau_tcoms,
+
+	access_castelnau_engineering,
+	access_castelnau_maint_tunnels,
+	access_castelnau_external_airlocks,
+
+	access_castelnau_security,
+
+	access_castelnau_medical,
+
+	access_castelnau_bixie,
+	access_castelnau_bixie_helm,
+	access_castelnau_perseus,
+	access_castelnau_perseus_helm,
+	access_castelnau_janitor,
+	access_castelnau_bar,
+	access_castelnau_kitchen,
+	access_castelnau_hangar,
+	access_castelnau_teleporter
+	)
+
+/datum/job/commissary
+	title = "Commissary"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Galactic Security Corps"
+	selection_color = "#304582"
+	economic_power = 8
+	minimum_character_age = list(SPECIES_HUMAN = 35)
+	outfit_type = /decl/hierarchy/outfit/job/castelnau/gov/com/commissary
+	allowed_branches = list(
+		/datum/mil_branch/gov
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/gov/kgb
+	)
+	min_skill = list(   SKILL_EVA        = SKILL_BASIC,
+	                    SKILL_COMBAT     = SKILL_BASIC,
+	                    SKILL_WEAPONS    = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_COMBAT       = SKILL_MAX,
+	                    SKILL_WEAPONS      = SKILL_MAX,
+	                    SKILL_PILOT        = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ENGINES      = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_MAX)
+	skill_points = 24
+
+
+	access = list(
+	access_castelnau_command,
+	access_castelnau_commissary,
+	access_castelnau_bridge,
+	access_castelnau_eva,
+	access_castelnau_tcoms,
+
+	access_castelnau_engineering,
+	access_castelnau_maint_tunnels,
+	access_castelnau_external_airlocks,
+
+	access_castelnau_security,
+
+	access_castelnau_medical,
+
+	access_castelnau_bixie,
+	access_castelnau_bixie_helm,
+	access_castelnau_perseus,
+	access_castelnau_perseus_helm,
+	access_castelnau_janitor,
+	access_castelnau_bar,
+	access_castelnau_kitchen,
+	access_castelnau_hangar,
+	access_castelnau_teleporter
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/reports)
+
+/datum/job/sea/get_description_blurb()
+	return "-"

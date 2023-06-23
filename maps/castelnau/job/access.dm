@@ -154,6 +154,18 @@ var/const/access_castelnau_detective = "ACCESS_CASTELNAU_DETECTIVE"
 	desc = "Castelnau Command"
 	region = ACCESS_REGION_COMMAND
 
+/var/const/access_castelnau_emissary = "ACCESS_CASTELNAU_EMISSARY"
+/datum/access/castelnau/emissary
+	id = access_castelnau_emissary
+	desc = "Alliance Emissary"
+	region = ACCESS_REGION_COMMAND
+
+/var/const/access_castelnau_commissary = "ACCESS_CASTELNAU_COMMISSARY"
+/datum/access/castelnau/commissary
+	id = access_castelnau_commissary
+	desc = "Galactic Security Corps Commissary"
+	region = ACCESS_REGION_COMMAND
+
 /var/const/access_castelnau_medical = "ACCESS_CASTELNAU_MED"
 /datum/access/castelnau/medical
 	id = access_castelnau_medical

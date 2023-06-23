@@ -86,6 +86,7 @@
 	#include "outfits/cargo/syndi.dm"
 
 	#include "outfits/command/reg.dm"
+	#include "outfits/command/gov.dm"
 
 	#include "outfits/engineer/mil.dm"
 	#include "outfits/engineer/par.dm"
