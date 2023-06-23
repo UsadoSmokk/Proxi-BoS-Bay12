@@ -71,6 +71,7 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 		),
 		TAG_FACTION = list(
 			FACTION_REGS,
+			FACTION_ALI,
 //			FACTION_SOVLORDANIA,
 			FACTION_LARFLEET,
 //			FACTION_LARMARINES,
