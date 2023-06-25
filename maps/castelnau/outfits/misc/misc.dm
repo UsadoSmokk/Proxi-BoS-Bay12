@@ -2,7 +2,8 @@
 	name = OUTFIT_JOB_NAME("Castelnau Outfit")
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau
 	uniform = /obj/item/clothing/under/color/grey
-	l_ear = /obj/item/device/radio/headset
+//	l_ear = /obj/item/device/radio/headset
+	l_pocket = /obj/item/device/radio/utility
 	shoes = /obj/item/clothing/shoes/dress
 	pda_type = /obj/item/modular_computer/pda
 	id_types = list(/obj/item/card/id/castelnau/crewman)
@@ -39,7 +40,7 @@
 	suit = /obj/item/clothing/suit/storage/par/yak
 	belt = /obj/item/storage/belt/holster/sheath/yakuza
 	l_hand = /obj/item/clothingbag/yakuza
-	l_pocket = /obj/item/paper/yakuza
+	r_pocket = /obj/item/paper/yakuza
 
 /decl/hierarchy/outfit/job/castelnau/terran
 	name = OUTFIT_JOB_NAME("Independent Navy - Utility")
@@ -69,13 +70,13 @@
 	name = OUTFIT_JOB_NAME("Arbites Outfit")
 	uniform = /obj/item/clothing/under/syndicorp/arbites
 	glasses = /obj/item/clothing/glasses/hud/security/prot
-	l_pocket = /obj/item/device/flash
+	r_pocket = /obj/item/device/flash
 
 /decl/hierarchy/outfit/job/castelnau/syndi/army
 	name = OUTFIT_JOB_NAME("Corporate Army Outfit")
 	uniform = /obj/item/clothing/under/syndicorp/army
 	glasses = /obj/item/clothing/glasses/hud/security/prot
-	l_pocket = /obj/item/device/flash
+	r_pocket = /obj/item/device/flash
 
 /decl/hierarchy/outfit/job/castelnau/wanderer
 	name = OUTFIT_JOB_NAME("Wanderer Outfit")
@@ -85,8 +86,8 @@
 	pda_type = /obj/item/modular_computer/pda
 	id_types = list()
 	l_ear = null
-	r_pocket = /obj/item/device/flashlight
-	l_pocket = /obj/item/storage/wallet/poly/wanderer
+	belt = /obj/item/device/flashlight
+	r_pocket = /obj/item/storage/wallet/poly/wanderer
 
 /decl/hierarchy/outfit/job/castelnau/ert
 	name = OUTFIT_JOB_NAME("ERT - Castelnau")

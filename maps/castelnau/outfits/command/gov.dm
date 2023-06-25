@@ -6,6 +6,7 @@
 	suit = /obj/item/clothing/suit/leathercoat
 	id_types = list(/obj/item/card/id/castelnau/crew/emissary)
 	pda_type = /obj/item/modular_computer/pda/heads
+	l_pocket = /obj/item/device/radio/utility/com
 
 /decl/hierarchy/outfit/job/castelnau/gov/com/commissary
 	name = OUTFIT_JOB_NAME("Commissary - Castelnau")
@@ -15,3 +16,4 @@
 	shoes = /obj/item/clothing/shoes/lordan/service
 	id_types = list(/obj/item/card/id/castelnau/crew/commissary)
 	pda_type = /obj/item/modular_computer/pda/heads
+	l_pocket = /obj/item/device/radio/utility/com

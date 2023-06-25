@@ -2,7 +2,8 @@
 	name = OUTFIT_JOB_NAME("Terran Security Officer - Castelnau")
 	id_types = list(/obj/item/card/id/castelnau/crew/security)
 	suit = /obj/item/clothing/suit/storage/cyberpunksleek_long/iccg
-	l_ear = /obj/item/device/radio/headset/heads/castelnau_security
+//	l_ear = /obj/item/device/radio/headset/heads/castelnau_security
+	l_pocket = /obj/item/device/radio/utility/sec
 	pda_type = /obj/item/modular_computer/pda/security
 	pda_slot = slot_l_store
 	l_pocket = /obj/item/device/flash
@@ -13,7 +14,8 @@
 	uniform = /obj/item/clothing/under/lordan/utility/fleet/combat/security
 	suit = /obj/item/clothing/suit/armor/pcarrier/medium
 	id_types = list(/obj/item/card/id/castelnau/crew/security)
-	l_ear = /obj/item/device/radio/headset/heads/castelnau_security
+//	l_ear = /obj/item/device/radio/headset/heads/castelnau_security
+	l_pocket = /obj/item/device/radio/utility/sec
 	pda_type = /obj/item/modular_computer/pda/security
 	pda_slot = slot_l_store
 	l_pocket = /obj/item/device/flash

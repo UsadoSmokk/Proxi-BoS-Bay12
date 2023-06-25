@@ -2,7 +2,8 @@
 	name = OUTFIT_JOB_NAME("Arbites Security Officer - Castelnau")
 	id_types = list(/obj/item/card/id/castelnau/crew/security)
 	suit = /obj/item/clothing/suit/armor/pcarrier/medium
-	l_ear = /obj/item/device/radio/headset/heads/castelnau_security/syn
+//	l_ear = /obj/item/device/radio/headset/heads/castelnau_security/syn
+	l_pocket = /obj/item/device/radio/utility/sec
 	pda_type = /obj/item/modular_computer/pda/security
 	pda_slot = slot_l_store
 
@@ -10,7 +11,8 @@
 	name = OUTFIT_JOB_NAME("Corporate Army Security Officer - Castelnau")
 	id_types = list(/obj/item/card/id/castelnau/crew/security)
 	suit = /obj/item/clothing/suit/armor/pcarrier/medium
-	l_ear = /obj/item/device/radio/headset/heads/castelnau_security/syn
+//	l_ear = /obj/item/device/radio/headset/heads/castelnau_security/syn
+	l_pocket = /obj/item/device/radio/utility/sec
 	pda_type = /obj/item/modular_computer/pda/security
 	pda_slot = slot_l_store
 
@@ -20,4 +22,5 @@
 	suit = /obj/item/clothing/suit/storage/det_trench/grey
 	shoes = /obj/item/clothing/shoes/laceup
 	id_types = list(/obj/item/card/id/castelnau/crew/security/specialist)
-	l_ear = /obj/item/device/radio/headset/heads/castelnau_security/syn
+//	l_ear = /obj/item/device/radio/headset/heads/castelnau_security/syn
+	l_pocket = /obj/item/device/radio/utility/sec

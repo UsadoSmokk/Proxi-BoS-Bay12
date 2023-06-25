@@ -1,6 +1,7 @@
 /decl/hierarchy/outfit/job/castelnau/reg/com/captain
 	name = OUTFIT_JOB_NAME("Captain - Castelnau")
-	l_ear = /obj/item/device/radio/headset/heads/castelnau_captain
+//	l_ear = /obj/item/device/radio/headset/heads/castelnau_captain
+	l_pocket = /obj/item/device/radio/utility/com
 	suit = /obj/item/clothing/suit/storage/regulator/captain
 	head = /obj/item/clothing/head/regulator/captain
 	id_types = list(/obj/item/card/id/castelnau/gold)
@@ -9,14 +10,16 @@
 /decl/hierarchy/outfit/job/castelnau/reg/com/hop
 	name = OUTFIT_JOB_NAME("Coordinator - Castelnau")
 	glasses = /obj/item/clothing/glasses/sunglasses
-	l_ear = /obj/item/device/radio/headset/heads/castelnau_coordinator
+//	l_ear = /obj/item/device/radio/headset/heads/castelnau_coordinator
+	l_pocket = /obj/item/device/radio/utility/com
 	id_types = list(/obj/item/card/id/castelnau/silver)
 	pda_type = /obj/item/modular_computer/pda/heads/hop
 
 /decl/hierarchy/outfit/job/castelnau/reg/com/sheriff
 	name = OUTFIT_JOB_NAME("Sheriff - Castelnau")
 	id_types = list(/obj/item/card/id/castelnau/crew/security/warden)
-	l_ear = /obj/item/device/radio/headset/heads/castelnau_sheriff
+//	l_ear = /obj/item/device/radio/headset/heads/castelnau_sheriff
+	l_pocket = /obj/item/device/radio/utility/com
 	pda_type = /obj/item/modular_computer/pda/security
 	glasses = /obj/item/clothing/glasses/hud/security/prot/aviators
 	pda_slot = slot_l_store
@@ -26,6 +29,7 @@
 
 /decl/hierarchy/outfit/job/castelnau/reg/com/adjutant
 	name = OUTFIT_JOB_NAME("Bridge Assistant - Castelnau")
-	l_ear = /obj/item/device/radio/headset/heads/castelnau_adjutant
+//	l_ear = /obj/item/device/radio/headset/heads/castelnau_adjutant
+	l_pocket = /obj/item/device/radio/utility/com
 	id_types = list(/obj/item/card/id/castelnau/crew/adjutant)
 	pda_type = /obj/item/modular_computer/pda/heads/hop
