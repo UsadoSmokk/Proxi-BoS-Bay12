@@ -5,16 +5,14 @@
 	suit = /obj/item/clothing/suit/storage/ftu
 	head = /obj/item/clothing/head/ftu
 	shoes = /obj/item/clothing/shoes/dress
-//	l_ear = /obj/item/device/radio/headset/heads/cheapskate_supply
-	l_pocket = /obj/item/device/radio/utility/sup
+	l_ear = /obj/item/device/radio/headset/heads/cheapskate_supply
 
 /decl/hierarchy/outfit/job/cheapskate/cargo
 	name = OUTFIT_JOB_NAME("FTU Cargo Outfit")
 	uniform = /obj/item/clothing/under/ftu
 	suit = /obj/item/clothing/suit/storage/ftu
 	head = /obj/item/clothing/head/ftu
-//	id_types = list(/obj/item/card/id/castelnau/crew/supply)
-	l_pocket = /obj/item/device/radio/utility/sup
+	id_types = list(/obj/item/card/id/castelnau/crew/supply)
 
 /decl/hierarchy/outfit/job/cheapskate/security
 	name = OUTFIT_JOB_NAME("FTU Security Outfit")
@@ -22,15 +20,13 @@
 	suit = null
 	head = /obj/item/clothing/head/ftu
 	id_types = list(/obj/item/card/id/castelnau/crew/cheapskate/sec)
-//	l_ear = /obj/item/device/radio/headset/heads/cheapskate_sec
-	l_pocket = /obj/item/device/radio/utility/sec
+	l_ear = /obj/item/device/radio/headset/heads/cheapskate_sec
 
 /decl/hierarchy/outfit/job/cheapskate/merchant
 	name = OUTFIT_JOB_NAME("FTU Merchant Outfit")
 	uniform = /obj/item/clothing/under/ftu/trd
 	head = /obj/item/clothing/head/ftu/beret
-//	id_types = list(/obj/item/card/id/castelnau/crew/cheapskate)
-	l_pocket = /obj/item/device/radio/utility/sup
+	id_types = list(/obj/item/card/id/castelnau/crew/cheapskate)
 
 /decl/hierarchy/outfit/job/cheapskate/chief
 	name = OUTFIT_JOB_NAME("FTU Chief Merchant Outfit")
@@ -38,5 +34,4 @@
 	suit = /obj/item/clothing/suit/storage/ftu/chief
 	head = /obj/item/clothing/head/ftu/chief
 	id_types = list(/obj/item/card/id/castelnau/crew/cheapskate/chief)
-//	l_ear = /obj/item/device/radio/headset/heads/cheapskate_chief
-	l_pocket = /obj/item/device/radio/utility/com
+	l_ear = /obj/item/device/radio/headset/heads/cheapskate_chief

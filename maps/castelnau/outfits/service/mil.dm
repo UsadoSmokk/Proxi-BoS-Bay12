@@ -1,6 +1,5 @@
 /decl/hierarchy/outfit/job/castelnau/terran/service
-//	l_ear = /obj/item/device/radio/headset/heads/castelnau_service
-	l_pocket = /obj/item/device/radio/utility
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_service
 	uniform = /obj/item/clothing/under/terran/navy/service
 	pda_type = /obj/item/modular_computer/pda
 
@@ -13,8 +12,7 @@
 	id_types = list(/obj/item/card/id/castelnau/crew/service/chef)
 
 /decl/hierarchy/outfit/job/castelnau/lss/service
-//	l_ear = /obj/item/device/radio/headset/heads/castelnau_service
-	l_pocket = /obj/item/device/radio/utility
+	l_ear = /obj/item/device/radio/headset/heads/castelnau_service
 	uniform = /obj/item/clothing/under/lordan/service/fleet
 	pda_type = /obj/item/modular_computer/pda
 
