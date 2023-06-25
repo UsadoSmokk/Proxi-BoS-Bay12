@@ -196,6 +196,7 @@
 #include "code\bos\game\objects\items\weapons\implants\implants\emp.dm"
 #include "code\bos\game\objects\items\weapons\implants\implants\fake_death.dm"
 #include "code\bos\game\objects\items\weapons\implants\implants\spying.dm"
+#include "code\bos\game\objects\items\weapons\storage\boxes.dm"
 #include "code\bos\game\objects\items\weapons\storage\mgsbox.dm"
 #include "code\bos\game\objects\items\weapons\storage\snb.dm"
 #include "code\bos\game\objects\items\weapons\storage\uplink_kits.dm"
