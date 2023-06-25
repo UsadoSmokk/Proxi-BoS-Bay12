@@ -1,42 +1,44 @@
 /obj/item/device/radio/utility
-	name = "utility walkie-talkie"
+	name = "silenced walkie-talkie"
+	desc = "A silenced radio can only be heard by the person holding it, and it uses three times less power"
 	icon = 'icons/bos/obj/radio.dmi'
 	icon_state = "utility"
 	item_state = "utility"
 	power_usage = 5
+	canhear_range = 0
 
 /obj/item/device/radio/utility/sec
-	name = "security walkie-talkie"
+	name = "silenced security walkie-talkie"
 	icon_state = "utility_sec"
 	item_state = "utility_sec"
 	frequency = SEC_FREQ
 
 /obj/item/device/radio/utility/eng
-	name = "engineering walkie-talkie"
+	name = "silenced engineering walkie-talkie"
 	icon_state = "utility_eng"
 	item_state = "utility_eng"
 	frequency = ENG_FREQ
 
 /obj/item/device/radio/utility/com
-	name = "command walkie-talkie"
+	name = "silenced command walkie-talkie"
 	icon_state = "utility_com"
 	item_state = "utility_com"
 	frequency = COMM_FREQ
 
 /obj/item/device/radio/utility/sup
-	name = "supply walkie-talkie"
+	name = "silenced supply walkie-talkie"
 	icon_state = "utility_sup"
 	item_state = "utility_sup"
 	frequency = SUP_FREQ
 
 /obj/item/device/radio/utility/srv
-	name = "service walkie-talkie"
+	name = "silenced service walkie-talkie"
 	icon_state = "utility_srv"
 	item_state = "utility_srv"
 	frequency = SRV_FREQ
 
 /obj/item/device/radio/utility/med
-	name = "medical walkie-talkie"
+	name = "silenced medical walkie-talkie"
 	icon_state = "utility_med"
 	item_state = "utility_med"
 	frequency = MED_FREQ
