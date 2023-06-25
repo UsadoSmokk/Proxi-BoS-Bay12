@@ -231,13 +231,13 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 		num2text(COMM_FREQ)  = list(access_castelnau_command),
 		num2text(ENG_FREQ)   = list(access_castelnau_engineering),
 		num2text(MED_FREQ)   = list(access_castelnau_medical),
-		num2text(MED_I_FREQ) = list(access_castelnau_medical),
+		num2text(MED_I_FREQ) = list(access_cent_specops),
 		num2text(SEC_FREQ)   = list(access_castelnau_security),
-		num2text(SEC_I_FREQ) = list(access_castelnau_security),
-		num2text(SCI_FREQ)   = list(access_castelnau_cheapskate),
+		num2text(SEC_I_FREQ) = list(access_cent_specops),
+		num2text(SCI_FREQ)   = list(access_cent_specops),
 		num2text(SUP_FREQ)   = list(access_castelnau_cheapskate),
-		num2text(SRV_FREQ)   = list(list(access_castelnau_janitor, access_castelnau_bar, access_castelnau_kitchen)),
-		num2text(EXP_FREQ)   = list() //DEBUG
+		num2text(SRV_FREQ)   = list(access_cent_specops),
+		num2text(EXP_FREQ)   = list(access_cent_specops)
 	)
 
 /obj/machinery/shield_diffuser/preset/castelnau
