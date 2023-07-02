@@ -30,8 +30,20 @@
 
 /obj/effect/floor_decal/outpostsign
 	name = "outpost"
-	icon = 'maps/castelnau/bos/icons/effects/outpost.dmi'
+	icon = 'maps/castelnau/bos/icons/effects/text.dmi'
 	icon_state = "outpost"
+	alpha = 230
+
+/obj/effect/floor_decal/outops
+	name = "outops"
+	icon = 'maps/castelnau/bos/icons/effects/text.dmi'
+	icon_state = "outops"
+	alpha = 230
+
+/obj/effect/floor_decal/cadbio
+	name = "bio"
+	icon = 'maps/castelnau/bos/icons/effects/text.dmi'
+	icon_state = "bio"
 	alpha = 230
 
 /obj/effect/floor_decal/ftu

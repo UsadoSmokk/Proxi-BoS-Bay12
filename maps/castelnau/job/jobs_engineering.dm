@@ -121,7 +121,7 @@
 							 /datum/computer_file/program/rcon_console,
 							 /datum/computer_file/program/shields_monitor)
 /datum/job/psiengineer
-	title = "P-Engineer"
+	title = "Psi-Engineer"
 	department = "Engineering"
 	department_flag = ENG
 	supervisors = "the Senior Engineer"

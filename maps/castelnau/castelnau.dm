@@ -6,7 +6,6 @@
 	#include "castelnau_announcements.dm"
 	#include "castelnau_antagonism.dm"
 	#include "castelnau_define.dm"
-	#include "castelnau_areas.dm"
 	#include "castelnau_lobby.dm"
 	#include "castelnau_overmap.dm"
 	#include "castelnau_overrides.dm"
@@ -150,6 +149,7 @@
 //	#include "castelnau-2.dmm"
 //	#include "castelnau-3.dmm"
 //	#include "castelnau_shuttles.dm"
+//	#include "castelnau_areas.dm"
 
 	#include "z1-admin.dmm"
 	#include "z2-transit.dmm"

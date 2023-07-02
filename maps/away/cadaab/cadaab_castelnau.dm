@@ -7,6 +7,7 @@
 #include "cadaab_shahti.dm"
 #include "cadaab_text.dm"
 #include "cadaab_turfs.dm"
+#include "castelnau_areas.dm"
 
 //Include cadaab.dm instead if you don't want planetside Castelnau
 

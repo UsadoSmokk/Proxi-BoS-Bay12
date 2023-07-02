@@ -156,6 +156,10 @@
 /obj/item/clothingbag/barb/Initialize()
 	. = ..()
 	new /obj/random/loot/paroled(src)
+	new /obj/random/good_tools(src)
+	new /obj/random/good_tools(src)
+	new /obj/random/good_tools(src)
+	new /obj/random/good_tools(src)
 
 ///SYNDICATE
 ////////////

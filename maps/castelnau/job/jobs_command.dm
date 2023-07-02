@@ -123,7 +123,7 @@
 	)
 
 /datum/job/adjutant
-	title = "Command Psionic"
+	title = "Psi-Navigator"
 	supervisors = "the Command"
 	department = "Support"
 	department_flag = SPT
@@ -171,7 +171,7 @@
 	)
 
 /datum/job/adjutant/equip(var/mob/living/carbon/human/H)
-	if(H.mind.role_alt_title == "Command Psionic")
+	if(H.mind.role_alt_title == "Psi-Navigator")
 		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
 		H.mutations.Add(mRemotetalk)
 		H.verbs += /mob/living/carbon/human/proc/psisay

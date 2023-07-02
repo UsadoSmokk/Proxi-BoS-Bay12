@@ -4,36 +4,42 @@
 	id = access_castelnau_cheapskate
 	desc = "Cheapskate General"
 	region = ACCESS_REGION_GENERAL
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_helm = "ACCESS_CHEAPSKATE_HELM"
 /datum/access/castelnau/cheapskate_helm
 	id = access_castelnau_cheapskate_helm
 	desc = "Cheapskate Helm"
 	region = ACCESS_REGION_GENERAL
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_cargo = "ACCESS_CHEAPSKATE_CARGO"
 /datum/access/castelnau/cheapskate_cargo
 	id = access_castelnau_cheapskate_cargo
 	desc = "Cheapskate Supply"
 	region = ACCESS_REGION_SUPPLY
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_shop = "ACCESS_CHEAPSKATE_SHOP"
 /datum/access/castelnau/cheapskate_shop
 	id = access_castelnau_cheapskate_shop
 	desc = "Cheapskate Shop"
 	region = ACCESS_REGION_SUPPLY
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_security = "ACCESS_CHEAPSKATE_SECURITY"
 /datum/access/castelnau/cheapskate_security
 	id = access_castelnau_cheapskate_security
 	desc = "Cheapskate Security"
 	region = ACCESS_REGION_SECURITY
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_chief = "ACCESS_CHEAPSKATE_CHIEF"
 /datum/access/castelnau/cheapskate_chief
 	id = access_castelnau_cheapskate_chief
 	desc = "Cheapskate Chief Merchant"
 	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE
 
 //Shuttles
 /var/const/access_castelnau_bixie = "ACCESS_BIXIE"
@@ -159,12 +165,14 @@ var/const/access_castelnau_detective = "ACCESS_CASTELNAU_DETECTIVE"
 	id = access_castelnau_emissary
 	desc = "Alliance Emissary"
 	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_commissary = "ACCESS_CASTELNAU_COMMISSARY"
 /datum/access/castelnau/commissary
 	id = access_castelnau_commissary
 	desc = "Galactic Security Corps Commissary"
 	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_medical = "ACCESS_CASTELNAU_MED"
 /datum/access/castelnau/medical

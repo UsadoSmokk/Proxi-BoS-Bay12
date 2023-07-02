@@ -46,7 +46,7 @@
 	)
 
 /datum/job/officer
-	title = "Security Operative"
+	title = "Security Contractor"
 	department = "Security"
 	department_flag = SEC
 	total_positions = 2
@@ -88,7 +88,7 @@
 	)
 
 /datum/job/specialist
-	title = "P-Interrogator"
+	title = "Psi-Interrogator"
 	department = "Security"
 	department_flag = SEC
 	total_positions = 1
@@ -131,6 +131,6 @@
 	)
 
 /datum/job/detective/equip(var/mob/living/carbon/human/H)
-	if(H.mind.role_alt_title == "P-Interrogator")
+	if(H.mind.role_alt_title == "Psi-Interrogator")
 		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
 	return ..()

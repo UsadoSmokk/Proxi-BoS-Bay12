@@ -69,6 +69,22 @@
 				/obj/item/storage/fancy/supply_box/grenade,
 				/obj/item/storage/fancy/supply_box/flashlight)
 
+/obj/random/good_tools
+	name = "random tools and tech"
+	desc = "This is a random tool."
+	icon = 'icons/obj/tools.dmi'
+	icon_state = "welder"
+
+/obj/random/good_tools/spawn_choices()
+	return list(/obj/item/weldingtool/largetank,
+				/obj/item/device/flashlight/upgraded,
+				/obj/item/cell/high,
+				/obj/item/cell/super,
+				/obj/item/cell/hyper,
+				/obj/item/storage/toolbox/syndicate,
+				/obj/item/stack/telecrystal,
+				/obj/item/gun/energy/retro)
+
 
 ////
 // MOBS

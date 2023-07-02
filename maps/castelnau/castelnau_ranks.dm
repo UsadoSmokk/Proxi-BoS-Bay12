@@ -1,6 +1,9 @@
 /datum/job/submap
 	branch = /datum/mil_branch/other
 	rank =   /datum/mil_rank/other
+	allowed_branches = list(/datum/mil_branch/other)
+	allowed_ranks = list(/datum/mil_rank/other)
+	required_language = null
 
 /datum/map/castelnau
 	branch_types = list(
@@ -11,7 +14,9 @@
 //		/datum/mil_branch/cult,
 		/datum/mil_branch/ftu,
 		/datum/mil_branch/syndi,
-		/datum/mil_branch/other
+		/datum/mil_branch/other,
+		/datum/mil_branch/alien,
+		/datum/mil_branch/skrell_fleet
 	)
 
 	spawn_branch_types = list(
@@ -22,7 +27,9 @@
 //		/datum/mil_branch/cult,
 		/datum/mil_branch/ftu,
 		/datum/mil_branch/syndi,
-		/datum/mil_branch/other
+		/datum/mil_branch/other,
+		/datum/mil_branch/alien,
+		/datum/mil_branch/skrell_fleet,
 	)
 
 	species_to_branch_blacklist = list(
@@ -321,3 +328,17 @@
 /datum/mil_rank/other/free
 	name = "Freelancer"
 	name_short = "Free"
+
+/*
+ *  Vox/foreign alien branch.
+ *  =========
+ */
+
+/datum/mil_branch/alien
+	name = "Alien"
+	name_short = "Alien"
+	rank_types = list(/datum/mil_rank/alien)
+	spawn_rank_types = list(/datum/mil_rank/alien)
+
+/datum/mil_rank/alien
+	name = "Alien"

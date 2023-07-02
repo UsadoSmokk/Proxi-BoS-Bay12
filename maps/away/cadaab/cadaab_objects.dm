@@ -218,6 +218,11 @@
 	desc = "Our mighty Lord"
 	icon_state = "booker"
 
+/obj/effect/decal/cleanable/cadaab/bio
+	name = "biohazard graffiti"
+	desc = "You probably shouldn't go here."
+	icon_state = "bio"
+
 /obj/effect/floor_decal/cadaab
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
 
