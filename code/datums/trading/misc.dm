@@ -170,21 +170,27 @@
 /datum/trader/gmb
 	name = "Ward-Takahashi GMB"
 	origin = "Automated Manufacturing Station"
-	trade_flags = TRADER_MONEY
+	trade_flags = TRADER_MONEY|TRADER_GOODS|TRADER_WANTED_ONLY|TRADER_WANTED_ALL
+	want_multiplier = 1
 	speech = list(TRADER_HAIL_GENERIC		= "Greetings! It's so nice to talk to a human instead of a robot... Ah, would you like to order some machine?",
 				TRADER_HAIL_DENY			= "I'm sorry, but the main AI has forbidden me to communicate with you...",
 
 				TRADER_TRADE_COMPLETE		= "Oh, lovely!",
-				TRADER_NO_BLACKLISTED		= "Whoa whoa, this one is too bad, put it away.",
-				TRADER_NO_GOODS   			= "Sorry, but we take only in money.",
 				TRADER_NOT_ENOUGH			= "Sorry, but there's not enough here for this order.",
+				TRADER_FOUND_UNWANTED		= "No-no, AI don't need this...",
 				TRADER_HOW_MUCH				= "AI say that for one entry of ITEM the price would be VALUE CURRENCY.",
+				TRADER_WHAT_WANT			= "Oh, for our industry we need some stock parts of machinery and powercells.",
 
 				TRADER_COMPLEMENT_FAILURE	= "I am afraid this is beyond my competency.",
 				TRADER_COMPLEMENT_SUCCESS	= "Thank you!",
 				TRADER_INSULT_GOOD			= "Alright, I transfer this to AI...",
 				TRADER_INSULT_BAD			= "AI probably will be mad..."
 				)
+
+	wanted_items  = list(
+						/obj/item/cell													= TRADER_ALL,
+						/obj/item/stock_parts											= TRADER_ALL
+						)
 
 	possible_trading_items = list(/obj/machinery/mining/drill							= TRADER_THIS_TYPE,
 								  /obj/machinery/mining/brace							= TRADER_THIS_TYPE,

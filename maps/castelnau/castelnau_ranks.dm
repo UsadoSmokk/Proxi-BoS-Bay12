@@ -14,9 +14,9 @@
 //		/datum/mil_branch/cult,
 		/datum/mil_branch/ftu,
 		/datum/mil_branch/syndi,
-		/datum/mil_branch/other,
-		/datum/mil_branch/alien,
-		/datum/mil_branch/skrell_fleet
+		/datum/mil_branch/larfleet,
+		/datum/mil_branch/larmarine,
+		/datum/mil_branch/other
 	)
 
 	spawn_branch_types = list(
@@ -27,9 +27,9 @@
 //		/datum/mil_branch/cult,
 		/datum/mil_branch/ftu,
 		/datum/mil_branch/syndi,
-		/datum/mil_branch/other,
-		/datum/mil_branch/alien,
-		/datum/mil_branch/skrell_fleet,
+		/datum/mil_rank/larfleet,
+		/datum/mil_branch/larmarine,
+		/datum/mil_branch/other
 	)
 
 	species_to_branch_blacklist = list(

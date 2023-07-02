@@ -39,7 +39,6 @@
 		var/datum/antagonist/antag = all_antag_types[antag_type]
 		if(antag.id == MODE_MINI_ROLES) //BoS
 			continue
-
 		. += "<tr><td>[antag.role_text]: </td><td>"
 		if(jobban_isbanned(preference_mob(), antag.id) || (antag.id == MODE_MALFUNCTION && jobban_isbanned(preference_mob(), "AI")))
 			. += "<span class='danger'>\[BANNED\]</span><br>"

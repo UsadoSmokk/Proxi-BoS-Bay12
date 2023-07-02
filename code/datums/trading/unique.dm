@@ -141,7 +141,7 @@
 	trade_flags = TRADER_MONEY|TRADER_GOODS|TRADER_WANTED_ONLY|TRADER_WANTED_ALL
 	want_multiplier = 1
 	margin = 1.1
-	price_rng = 3
+	price_rng = 5
 	mob_transfer_message = "<span class='danger'>You have been teleported somewhere and have lost consciousness. When you come to, you find yourself in a clean white room attached to an operating table, surrounded by people in white coats. After the words: 'Commence surgery', you were taken apart piece by piece without anaesthesia for over an hour. Only death brought you salvation.</span>"
 
 	speech = list(TRADER_HAIL_GENERIC		= "Ah, greetings. We looking for some things for our corporation... All for the sake of science and human race.",
@@ -161,11 +161,11 @@
 				)
 
 	wanted_items  = list(
-						/mob/living/carbon/human									= TRADER_ALL,
-						/obj/item/organ/internal									= TRADER_ALL,
 						/mob/living/carbon/human/machine							= TRADER_BLACKLIST_ALL,
 						/obj/item/organ/internal/posibrain							= TRADER_BLACKLIST_ALL,
-						/obj/item/organ/internal/augment							= TRADER_BLACKLIST_ALL
+						/obj/item/organ/internal/augment							= TRADER_BLACKLIST_ALL,
+						/mob/living/carbon/human									= TRADER_ALL,
+						/obj/item/organ/internal									= TRADER_ALL
 						)
 
 	possible_trading_items = list(
@@ -175,5 +175,8 @@
 								/obj/item/reagent_containers/syringe/zombie										= TRADER_THIS_TYPE,
 								/obj/item/reagent_containers/glass/bottle/mutagen								= TRADER_THIS_TYPE,
 								/obj/item/reagent_containers/glass/bottle/pacid									= TRADER_THIS_TYPE,
-								/obj/item/reagent_containers/glass/bottle/chloralhydrate						= TRADER_THIS_TYPE
+								/obj/item/reagent_containers/glass/bottle/chloralhydrate						= TRADER_THIS_TYPE,
+								/obj/item/storage/firstaid/combat												= TRADER_THIS_TYPE,
+								/obj/item/storage/firstaid/surgery												= TRADER_THIS_TYPE,
+								/obj/item/storage/backpack/dufflebag/syndie/med/full							= TRADER_THIS_TYPE
 								)

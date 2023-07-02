@@ -9,7 +9,7 @@
 	icon = 'maps/castelnau/icons/security_state.dmi'
 
 /decl/security_level/default/castelnaudept/code_green
-	name = "code green"
+	name = "РџСЂРѕС‚РѕРєРѕР»: Р”Р»Р°РЅСЊ"
 	icon = 'icons/misc/security_state.dmi'
 
 	light_max_bright = 0.25
@@ -24,11 +24,11 @@
 	var/static/datum/announcement/priority/security/security_announcement_green = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/notice2.ogg'))
 
 /decl/security_level/default/castelnaudept/code_green/switching_down_to()
-	security_announcement_green.Announce("Ситуация была разрешена. Персоналу разрешается вернуться к исполнению своих обязанностей.", "Внимание, уровень тревоги был снижен до зелёного.")
+	security_announcement_green.Announce("РЈРіСЂРѕР·С‹ РґР»СЏ РјРёСЃСЃРёРё РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‚, Р°РєС‚РёРІРёСЂРѕРІР°РЅ РїСЂРѕС‚РѕРєРѕР» 'Р”Р»Р°РЅСЊ'. Р’СЃРµРј С‡Р»РµРЅР°Рј РјРёСЃСЃРёРё РЅРµРѕР±С…РѕРґРёРјРѕ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ С€С‚Р°С‚РЅС‹Р№ СЂРµР¶РёРј СЂР°Р±РѕС‚С‹.")
 	notify_station()
 
 /decl/security_level/default/castelnaudept/code_violet
-	name = "code violet"
+	name = "РџСЂРѕС‚РѕРєРѕР»: РЎРєР°Р»СЊРїРµР»СЊ"
 
 	light_max_bright = 0.5
 	light_inner_range = 1
@@ -39,11 +39,11 @@
 	overlay_alarm = "alarm_violet"
 	overlay_status_display = "status_display_violet"
 
-	up_description = "Сложилась чрезвычайная ситуация медицинского характера. Медицинскому персоналу немедленно обратиться за инструкциями к управлению судна. Всем остальным следует подчиняться всем соответствующим указаниям медицинского персонала."
-	down_description = "Код тревоги изменён на оранжевый; Медицинскому персоналу немедленно обратиться за инструкциями к управлению судна. Всему остальному персоналу следует подчиняться всем соответствующим указаниям медицинского персонала."
+	up_description = "Р’ Р·РѕРЅРµ РґРµР№СЃС‚РІРёСЏ РјРёСЃСЃРёРё РѕР±РЅР°СЂСѓР¶РµРЅ РѕРїР°СЃРЅС‹Р№ РјРёРєСЂРѕРѕСЂРіР°РЅРёР·Рј. РћС‚ С‡Р»РµРЅРѕРІ РјРёСЃСЃРёРё С‚СЂРµР±СѓРµС‚СЃСЏ СЃРѕР±Р»СЋРґР°С‚СЊ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ СЃР°РЅРёС‚Р°СЂРЅС‹Рµ РЅРѕСЂРјР°. РљРѕСЂР°Р±Р»СЊ Р’РўРЎ 'РЎРєСЂСЏРіР°' РґРѕР»Р¶РµРЅ РїСЂРѕРёР·РІРµСЃС‚Рё РѕС‚СЃС‚С‹РєРѕРІРєСѓ."
+	down_description = "РњРёРєСЂРѕРѕСЂРіР°РЅРёР·Рј Р±С‹Р» СѓРЅРёС‡С‚РѕР¶РµРЅ РёР»Рё РёР·РѕР»РёСЂРѕРІР°РЅ. Р§Р»РµРЅС‹ РјРёСЃСЃРёРё РјРѕРіСѓС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЂР°Р±РѕС‚Сѓ РІ С€С‚Р°С‚РЅРѕРј СЂРµР¶РёРјРµ."
 
 /decl/security_level/default/castelnaudept/code_orange
-	name = "code orange"
+	name = "РџСЂРѕС‚РѕРєРѕР»: РњРµС‡"
 
 	light_max_bright = 0.5
 	light_inner_range = 1
@@ -53,12 +53,12 @@
 	overlay_alarm = "alarm_orange"
 	overlay_status_display = "status_display_orange"
 
-	up_description = "Сложилась чрезвычайная ситуация технического характера. Инженерному персоналу немедленно обратиться за инструкциями к управлению судна. Всем остальным следует срочно эвакуироваться из затронутых зон и подчиняться всем соответствующим указаниям инженерного персонала."
-	down_description = "Код тревоги изменён на оранжевый. Инженерному персоналу немедленно обратиться за инструкциями к управлению судна. Всем остальным следует срочно эвакуироваться из затронутых зон и подчиняться всем соответствующим указаниям инженерного персонала."
+	up_description = "РђРєС‚РёРІРёСЂРѕРІР°РЅ РїСЂРѕС‚РѕРєРѕР» 'РњРµС‡'. Р§Р»РµРЅР°Рј РјРёСЃСЃРёРё СЂР°Р·СЂРµС€Р°РµС‚СЃСЏ РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє РјР°СЃСЃРѕРІРѕРјСѓ РѕСЃРІРѕРµРЅРёСЋ Р±Р»РёР·Р»РµР¶Р°С‰РёС… Р·РµРјРµР»СЊ Рё Р±РµСЃРїРѕСЂСЏРґРѕС‡РЅРѕРјСѓ СѓРЅРёС‡С‚РѕР¶РµРЅРёСЋ РІСЃРµС… РїСЂРѕС‚РёРІРЅРёРєРѕРІ."
+	down_description = "РџСЂРѕС‚РѕРєРѕР» 'РњРµС‡' РґРµР°РєС‚РёРІРёСЂРѕРІР°РЅ. Р’СЃРµ С‡Р»РµРЅС‹ РјРёСЃСЃРёРё РґРѕР»Р¶РЅС‹ РІРµСЂРЅСѓС‚СЊСЃСЏ РЅР° С‚РµСЂСЂРёС‚РѕСЂРёСЋ Р°РІР°РЅРїРѕСЃС‚Р° РёР»Рё РљР°СЃС‚РµР»СЊРЅР°Сѓ."
 
 
 /decl/security_level/default/castelnaudept/code_blue
-	name = "code blue"
+	name = "РџСЂРѕС‚РѕРєРѕР»: РљРёРЅР¶Р°Р»"
 	icon = 'icons/misc/security_state.dmi'
 
 	light_max_bright = 0.5
@@ -69,11 +69,11 @@
 	overlay_alarm = "alarm_blue"
 	overlay_status_display = "status_display_blue"
 
-	up_description = "Сложилась опасная ситуация, затрагивающая безопасность судна. Охранному персоналу немедленно обратиться за инструкциями к управлению судна."
-	down_description = "Код тревоги изменён на синий. Охранному персоналу немедленно обратиться за инструкциями к управлению судна."
+	up_description = "Р’ Р·РѕРЅРµ РґРµР№СЃС‚РІРёСЏ РјРёСЃСЃРёРё РѕР±РЅР°СЂСѓР¶РµРЅР° РїРѕС‚РµРЅС†РёР°Р»СЊРЅР°СЏ СѓРіСЂРѕР·Р° РґР»СЏ С…РѕРґР° РјРёСЃСЃРёРё. Р§Р»РµРЅР°Рј РјРёСЃСЃРёРё СЂРµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ СЃРѕР±Р»СЋРґР°С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅРѕСЃС‚СЊ. РџРѕР»РЅРѕРјРѕС‡РёСЏ СЃР»СѓР¶Р±С‹ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё СЂР°СЃС€РёСЂРµРЅС‹."
+	down_description = "РЈРіСЂРѕР·Р° РґР»СЏ РјРёСЃСЃРёРё РІС‹С€Р»Р° РёР· СЃС‚Р°С‚СѓСЃР° РєСЂРёС‚РёС‡РµСЃРєРѕР№, РЅРѕ РїСЂРѕРґРѕР»Р¶Р°РµС‚ СЃСѓС‰РµСЃС‚РІРѕРІР°С‚СЊ. РџРѕР»РЅРѕРјРѕС‡РёСЏ СЃР»СѓР¶Р±С‹ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё РїРѕРЅРёР¶РµРЅС‹."
 
 /decl/security_level/default/castelnaudept/code_red
-	name = "code red"
+	name = "РџСЂРѕС‚РѕРєРѕР»: Р©РёС‚"
 	icon = 'icons/misc/security_state.dmi'
 
 	light_max_bright = 0.75
@@ -87,10 +87,10 @@
 	var/static/datum/announcement/priority/security/security_announcement_red = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/redalert1.ogg'))
 
 /decl/security_level/default/castelnaudept/code_red/switching_up_to()
-	security_announcement_red.Announce("Имеет место крайняя опасность судну. Всему персоналу ожидать инструкций и исполнять команды бесприкословно.", "Код тревоги изменён на красный.")
+	security_announcement_red.Announce("РћР±РЅР°СЂСѓР¶РµРЅР° РєСЂРёС‚РёС‡РµСЃРєР°СЏ СѓРіСЂРѕР·Р° РґР»СЏ С…РѕРґР° РјРёСЃСЃРёРё. РЎР»СѓР¶Р±Р° Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё РїРѕР»СѓС‡Р°РµС‚ РјР°РєСЃРёРјР°Р»СЊРЅС‹Рµ РїРѕР»РЅРѕРјРѕС‡РёСЏ РґРѕ РµС‘ СѓСЃС‚СЂР°РЅРµРЅРёСЏ.")
 	notify_station()
 	GLOB.using_map.unbolt_saferooms()
 
 /decl/security_level/default/castelnaudept/code_red/switching_down_to()
-	security_announcement_red.Announce("The self-destruct mechanism has been deactivated. All staff are to report to their supervisor for orders. All crew should obey orders from relevant emergency personnel. Security personnel are permitted to search staff and facilities, and may have weapons unholstered at any time.", "Attention! Code red alert procedures now in effect!")
+	security_announcement_red.Announce("Р Р°РєРµС‚РЅС‹Рµ Р±Р°Р·С‹ РќРѕРІР°-РљСѓР±С‹ РґРµР°РєС‚РёРІРёСЂРѕРІР°РЅС‹, СѓРіСЂРѕР·Р° СѓРЅРёС‡С‚РѕР¶РµРЅРёСЏ РєРѕСЂР°Р±Р»СЏ Р±РѕР»РµРµ РЅРµ СЂРµР»РµРІР°РЅС‚РЅР°.")
 	notify_station()

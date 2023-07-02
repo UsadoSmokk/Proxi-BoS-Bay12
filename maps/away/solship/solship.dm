@@ -8,7 +8,7 @@
 #include "solship_ranks.dm"
 #include "solship_presets.dm"
 #include "solship_shuttle.dm"
-#include "solship_structures.dm"
+//#include "solship_structures.dm"
 #include "solship_uniforms.dm"
 
 	///////////
@@ -16,7 +16,7 @@
 	///////////
 
 /datum/map_template/ruin/away_site/solship
-	name = "SCGG Big Iron"
+	name = "LPS Diablo"
 	id = "awaysite_solship"
 	description = "---."
 	suffixes = list("solship/solship.dmm")
@@ -30,20 +30,19 @@
 	hide_from_reports = TRUE
 
 /obj/effect/overmap/visitable/ship/solship
-	name = "SCGG Big Iron"
-	desc = "Medium gunship with SCG markings."
+	name = "LPS Diablo"
+	desc = "Medium gunship with LSS markings."
 	color = "#990000"
 	fore_dir = WEST
 	vessel_mass = 350
 	initial_restricted_waypoints = list(
-		"Texas Red" = list("nav_hangar_texas")
+		"Tersten Red" = list("nav_hangar_texas")
 	)
 
 /obj/effect/shuttle_landmark/solship/nav_northwest
-	name = "Northwest of Big Iron"
+	name = "Northwest of Diablo"
 	landmark_tag = "nav_solship_northwest"
 
 /obj/effect/shuttle_landmark/solship/nav_south
-	name = "South of Big Iron"
+	name = "South of Diablo"
 	landmark_tag = "nav_solship_south"
-
