@@ -5,10 +5,9 @@
 	icon = 'maps/away/cadaab/icons/areas.dmi'
 	icon_state = "where"
 	base_turf = /turf/simulated/floor/exoplanet/desert/cadaab
-	planetary_surface = TRUE
+//	planetary_surface = TRUE
 	var/outside = FALSE //Mostly for sandstorm proper work
 	var/datum/sandstorm/sandstorm_container //Container for sandstorm datum
-//	dynamic_lighting = 0
 
 /area/cadaab/noise
 	name = "Noise"
@@ -21,6 +20,9 @@
 	always_unpowered = TRUE
 	forced_ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
 	outside = TRUE
+
+/area/cadaab/ladder // shitcoded hell. use if base_turf is broken and you have no idea why
+	base_turf = /turf/space
 
 /area/cadaab/outpost/syndivault
 	name = "Syndipass Vault"
@@ -59,6 +61,16 @@
 	icon_state = "command"
 	req_access = list(access_castelnau_teleporter)
 
+/area/cadaab/outpost/storage
+	name = "Outpost - Storage"
+	icon_state = "command"
+	req_access = list(access_castelnau_bridge)
+
+/area/cadaab/outpost/trading
+	name = "Outpost - Trading Post"
+	icon_state = "engineering"
+	req_access = list(access_castelnau_cheapskate_shop)
+
 /area/cadaab/outpost/med
 	name = "Outpost - Medical Bay"
 	icon_state = "medbay"
@@ -87,6 +99,7 @@
 /area/cadaab/outpost/leader
 	name = "Outpost - Leader Quarters"
 	icon_state = "command"
+	req_access = list(access_castelnau_bridge)
 
 /area/cadaab/outpost/landing
 	name = "Outpost - Landing Zone"
@@ -108,6 +121,9 @@
 	sound_env = LARGE_ENCLOSED
 	ambience = list('sound/ambience/bos/cave1.ogg', 'sound/ambience/bos/cave2.ogg', 'sound/ambience/bos/cave3.ogg', 'sound/ambience/bos/cave4.ogg', 'sound/ambience/bos/cave5.ogg', 'sound/ambience/bos/cave6.ogg', 'sound/ambience/bos/cave7.ogg', 'sound/ambience/bos/cave8.ogg')
 //	dynamic_lighting = 1
+
+/area/cadaab/caves/basement
+	name = "Caves - Basement"
 
 /area/cadaab/caves/bunker
 	name = "Vault - Security Checkpoint"
@@ -157,3 +173,14 @@
 
 /area/cadaab/shahtinsk/booker/start
 	name = "Shahtinsk - Occupied Complex Dorms"
+
+//POLICE
+/area/cadaab/police
+	name = "Police"
+	icon_state = "command"
+	req_access = list(access_cadaab_prison)
+
+/area/cadaab/sputnik
+	name = "Sputnik - Telecommunications"
+	icon_state = "command"
+	req_access = list(access_castelnau_tcoms)

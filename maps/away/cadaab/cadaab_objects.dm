@@ -218,6 +218,11 @@
 	desc = "Our mighty Lord"
 	icon_state = "booker"
 
+/obj/effect/decal/cleanable/cadaab/bio
+	name = "biohazard graffiti"
+	desc = "You probably shouldn't go here."
+	icon_state = "bio"
+
 /obj/effect/floor_decal/cadaab
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
 
@@ -309,3 +314,23 @@
 				/obj/effect/floor_decal/cadaab/grass_13,
 				/obj/effect/floor_decal/cadaab/grass_14,
 				/obj/effect/floor_decal/cadaab/grass_15)
+
+/obj/machinery/locked_console
+	name = "console"
+	desc = "Robust flight console. Control of this one is blocked remotely."
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	density = 1
+	anchored = 1
+	icon_state = "console"
+	frame_type = /obj/machinery/constructable_frame/computerframe/deconstruct
+	construct_state = /decl/machine_construction/default/panel_closed/computer
+
+/obj/machinery/locked_console/attackby(obj/item/I, mob/user)
+	if (isScrewdriver(I) || isWrench(I) || isCrowbar(I))
+		return ..() // handled by construction
+	if (user.a_intent != I_HURT)
+		audible_message(SPAN_WARNING("Access denied under order of the High Regulator Command! Stated reason: Mission is not completed."))
+		return ..()
+
+/obj/machinery/telecomms/allinone/castelnau
+	listening_freqs = list(PUB_FREQ, HAIL_FREQ, SEC_FREQ, MED_FREQ, SUP_FREQ, SRV_FREQ, COMM_FREQ)

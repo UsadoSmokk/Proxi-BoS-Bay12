@@ -826,3 +826,7 @@ CREATE_CST_AREA(civ/kitchen_backroom)
 	icon_state = "shuttle3"
 	requires_power = 0
 	req_access = list(access_cent_storage)
+
+/area/reallyunknownthing
+	name = "Unknown"
+	forced_ambience = list('sound/ambience/bos/bob.ogg')

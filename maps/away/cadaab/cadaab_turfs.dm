@@ -79,6 +79,12 @@
 	.=..()
 	icon_state = "wooden[rand(0,3)]"
 
+/turf/simulated/floor/shuttle_ceiling/cadaab
+
+/turf/simulated/floor/shuttle_ceiling/cadaab/Initialize()
+	.=..()
+	set_light(1, 1, 5, l_color = "#FF9D8E")
+
 /obj/item/stack/tile/cadaab_wood
 	name = "wood floor tile"
 	singular_name = "wood floor tile"

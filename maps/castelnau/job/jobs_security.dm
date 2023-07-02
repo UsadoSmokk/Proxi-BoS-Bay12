@@ -46,7 +46,7 @@
 	)
 
 /datum/job/officer
-	title = "Security Operative"
+	title = "Security Contractor"
 	department = "Security"
 	department_flag = SEC
 	total_positions = 2

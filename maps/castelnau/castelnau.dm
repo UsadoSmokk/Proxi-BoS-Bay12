@@ -6,7 +6,6 @@
 	#include "castelnau_announcements.dm"
 	#include "castelnau_antagonism.dm"
 	#include "castelnau_define.dm"
-	#include "castelnau_areas.dm"
 	#include "castelnau_lobby.dm"
 	#include "castelnau_overmap.dm"
 	#include "castelnau_overrides.dm"
@@ -16,7 +15,6 @@
 	#include "castelnau_ranks.dm"
 	#include "castelnau_renames.dm"
 	#include "castelnau_security_state.dm"
-	#include "castelnau_shuttles.dm"
 	#include "castelnau_unit_testing.dm"
 
 	#include "code/_global_vars/lists/locations.dm"
@@ -87,6 +85,7 @@
 	#include "outfits/cargo/syndi.dm"
 
 	#include "outfits/command/reg.dm"
+	#include "outfits/command/gov.dm"
 
 	#include "outfits/engineer/mil.dm"
 	#include "outfits/engineer/par.dm"
@@ -136,15 +135,27 @@
 	#include "structures/stool_bed_chair_nest/bed.dm"	//FUCK YOU
 	#include "structures/stool_bed_chair_nest/chairs.dm"
 
-	#include "castelnau-1.dmm"
-	#include "castelnau-2.dmm"
-	#include "castelnau-3.dmm"
+
+///DON'T INCLUDE BOTH PLANETSIDE AND SPACE CASTELNAU AT THE SAME TIME OR I WILL EAT YOUR FACE///
+
+//PLANETSIDE CASTELNAU//
+	#include "../away/cadaab/cadaab_castelnau.dm"
+	#include "../away/cadaab/castelnau-1-cadaab.dmm"
+	#include "../away/cadaab/castelnau-2-cadaab.dmm"
+	#include "../away/cadaab/castelnau-3-cadaab.dmm"
+
+//SPACE CASTELNAU///
+//	#include "castelnau-1.dmm"
+//	#include "castelnau-2.dmm"
+//	#include "castelnau-3.dmm"
+//	#include "castelnau_shuttles.dm"
+//	#include "castelnau_areas.dm"
+
 	#include "z1-admin.dmm"
 	#include "z2-transit.dmm"
 
 
 	#include "../away/empty.dmm"
-	#include "../away/cadaab/cadaab.dm"
 	#include "../away/rawl/rawl.dm"
 //	#include "../away/solship/solship.dm"
 	#include "../away/mining/mining.dm"

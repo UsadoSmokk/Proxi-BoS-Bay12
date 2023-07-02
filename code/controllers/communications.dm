@@ -175,8 +175,8 @@ var/global/list/radiochannels = list(
 	"Medical (I)"	= MED_I_FREQ,
 	"Security (I)"	= SEC_I_FREQ,
 	"Recon"			= SKRELL_FREQ, //boh,
-	"Terran"		= TERR_FREQ,
-	"SCG Fleet"		= SOL_FREQ
+	"Terran"		= TERR_FREQ, //bos
+	"SCG Fleet"		= SOL_FREQ //bos
 )
 
 var/global/list/channel_color_presets = list(

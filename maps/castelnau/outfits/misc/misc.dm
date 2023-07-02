@@ -24,6 +24,14 @@
 	suit = /obj/item/clothing/suit/storage/par
 	l_hand = /obj/item/clothingbag/paroled
 
+/decl/hierarchy/outfit/job/castelnau/barb
+	name = OUTFIT_JOB_NAME("Castelnau Tech-barbarian Outfit")
+	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/barb
+	uniform = /obj/item/clothing/under/techbarbarian
+	head = 	/obj/item/clothing/head/techbarbarian
+	shoes = /obj/item/clothing/shoes/sandal
+	l_hand = /obj/item/clothingbag/barb
+
 /decl/hierarchy/outfit/job/castelnau/yak
 	name = OUTFIT_JOB_NAME("Castelnau Yakuza Outfit")
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/yak
