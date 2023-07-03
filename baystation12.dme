@@ -3453,6 +3453,8 @@
 #include "customs\code\letro02.dm"
 #include "customs\code\lodagn.dm"
 #include "customs\code\s1334.dm"
+#include "customs\code\timlv.dm"
+#include "customs\code\vlades.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\_maps.dm"

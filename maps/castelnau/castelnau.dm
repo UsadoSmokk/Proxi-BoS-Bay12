@@ -1,5 +1,7 @@
 #if !defined(using_map_DATUM)
 
+	#warn ZDAROVA. Obnova na repe esho ne zakonchennaya, tak chto rano bild skachal.
+
 	#include "castelnau_bos.dm"
 	#include "castelnau_bos_torch.dm"
 

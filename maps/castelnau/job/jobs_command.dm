@@ -175,7 +175,16 @@
 		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
 		H.mutations.Add(mRemotetalk)
 		H.verbs += /mob/living/carbon/human/proc/psisay
+
+	var/obj/item/organ/external/E = pick(H.organs)
+	if(!BP_IS_ROBOTIC(E))
+		E.mutate()
+		E.limb_flags |= ORGAN_FLAG_DEFORMED
+		E.status |= ORGAN_DISFIGURED
+		E.status |= ORGAN_MUTATED
 	return ..()
+
+
 
 /datum/job/emissary
 	title = "Emissary"
