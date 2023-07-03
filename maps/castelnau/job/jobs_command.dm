@@ -4,7 +4,7 @@
 	supervisors = "the Regulator High Command and the God (He didn't answer last time)"
 	department_flag = COM
 	head_position = 1
-	minimal_player_age = 21
+	minimal_player_age = 14
 	economic_power = 15
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/com/captain
@@ -73,7 +73,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	req_admin_notify = 1
-	minimal_player_age = 21
+	minimal_player_age = 14
 	economic_power = 8
 	ideal_character_age = 45
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/com/hop
@@ -194,6 +194,7 @@
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 1
+	minimal_player_age = 21
 	economic_power = 8
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/gov/com/emissary
 	selection_color = "#304582"
@@ -238,6 +239,7 @@
 	supervisors = "the Galactic Security Corps"
 	selection_color = "#304582"
 	economic_power = 8
+	minimal_player_age = 21
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/gov/com/commissary
 	allowed_branches = list(

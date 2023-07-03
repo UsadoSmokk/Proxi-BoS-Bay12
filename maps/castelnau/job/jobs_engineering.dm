@@ -8,7 +8,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	economic_power = 6
-	minimal_player_age = 14
+	minimal_player_age = 7
 	ideal_character_age = 34
 	allowed_branches = list(/datum/mil_branch/reg,
 							/datum/mil_branch/mil)
@@ -66,7 +66,6 @@
 
 	total_positions = 2
 	spawn_positions = 2
-	minimal_player_age = 7
 	ideal_character_age = 25
 	economic_power = 4
 
@@ -129,7 +128,6 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	minimal_player_age = 7
 	ideal_character_age = 25
 	economic_power = 4
 	give_psionic_implant_on_join = FALSE
@@ -187,6 +185,7 @@
 	department_flag = ENG
 	total_positions = 2
 	spawn_positions = 2
+	minimal_player_age = 7
 	supervisors = "the Senior Engineer"
 	alt_titles = list(
 		"Biomechanical Engineer")
