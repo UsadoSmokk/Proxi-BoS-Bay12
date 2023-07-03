@@ -441,8 +441,6 @@
 
 	var/static/hub_entry = "<b>$SERVER</b> by <b>$HOST</b> &#8212; $ACTIVES of $PLAYERS alive"
 
-	var/static/hub_banner_url = "https://i.imgur.com/n5i0D3V.png" //bos
-
 	var/static/run_empty_levels = FALSE
 
 
@@ -503,8 +501,6 @@
 				use_age_restriction_for_jobs = TRUE
 			if ("use_age_restriction_for_antags")
 				use_age_restriction_for_antags = TRUE
-			if ("hub_banner_url")
-				config.hub_banner_url = value	//bos
 			if ("use_recursive_explosions")
 				use_recursive_explosions = TRUE
 			if ("log_ooc")

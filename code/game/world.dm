@@ -570,9 +570,6 @@ GLOBAL_VAR_INIT(world_topic_last, world.timeofday)
 	if (!config?.hub_visible || !config.hub_entry)
 		return
 	status = config.generate_hub_entry()
-	var/s = ""
-	if (config.hub_banner_url) //bos
-		s += "<img src=\"https://i.imgur.com/n5i0D3V.png\"><br>"
 
 
 /world/proc/SetupLogs()
