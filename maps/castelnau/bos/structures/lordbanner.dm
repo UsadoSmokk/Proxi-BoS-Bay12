@@ -4,6 +4,7 @@
 	icon_state = "lordbanner"
 	desc = "A steel pole bearing a banner of Lordanian Sovereign Systems. Ave."
 	anchored = TRUE
+	plane = DECORATIONS_PLANE
 
 /obj/structure/lordbanner/ec
 	name = "exoplanet LSS banner"

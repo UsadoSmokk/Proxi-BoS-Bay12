@@ -22,6 +22,7 @@
 	#include "code/_global_vars/lists/locations.dm"
 	#include "code/game/objects/effects/landmarks.dm"
 	#include "code/gamemodes/objectives.dm"
+	#include "code/modules/aspects/night.dm"
 	#include "code/modules/sandstorm.dm"
 	#include "code/modules/client/preferences_spawnpoints.dm"
 	#include "flooring/flooring_premade.dm"
@@ -159,7 +160,7 @@
 
 	#include "../away/empty.dmm"
 	#include "../away/rawl/rawl.dm"
-//	#include "../away/solship/solship.dm"
+	#include "../away/solship/solship.dm"
 	#include "../away/mining/mining.dm"
 	#include "../away/derelict/derelict.dm"
 	#include "../away/bearcat/bearcat.dm"

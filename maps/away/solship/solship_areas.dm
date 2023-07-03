@@ -1,5 +1,5 @@
 /area/solship
-	name = "\improper SCG Vessel"
+	name = "\improper LPS Vessel"
 	icon = 'maps/away/solship/solship_sprites.dmi'
 	icon_state = "shuttle2"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
@@ -15,7 +15,7 @@
 	req_access = list(access_away_solship_main)
 
 /area/solship/bridge
-	name = "\improper Bridge"
+	name = "\improper LPS Diablo Bridge"
 	icon_state = "com"
 	req_access = list(access_away_solship_main)
 
@@ -35,7 +35,7 @@
 	req_access = list(access_away_solship_captain)
 
 /area/solship/capquarters
-	name = "\improper Solship Leader"
+	name = "\improper Diablo Leader"
 	icon_state = "com"
 	req_access = list(access_away_solship_captain)
 
@@ -98,24 +98,17 @@
 ///////////
 
 /area/exploration_shuttle/texas
-	name = "\improper Texas Cockpit"
-	icon_state = "texas"
-
-/area/exploration_shuttle/texas/cockpit
-	name = "\improper Texas Cockpit"
+	name = "\improper Tersten Cockpit"
 	icon_state = "texas"
 
 /area/exploration_shuttle/texas/pass
-	name = "\improper Texas Passengers"
+	name = "\improper Tersten Red - Main"
 
 /area/exploration_shuttle/texas/med
-	name = "\improper Texas Medical"
+	name = "\improper Tersten Medical"
 
 /area/exploration_shuttle/texas/can
-	name = "\improper Texas Canisters"
-
-/area/exploration_shuttle/texas/jail
-	name = "\improper Texas Jail"
+	name = "\improper Tersten Canisters"
 
 /area/exploration_shuttle/texas/airlock
-	name = "\improper Texas Airlock"
+	name = "\improper Tersten Airlock"

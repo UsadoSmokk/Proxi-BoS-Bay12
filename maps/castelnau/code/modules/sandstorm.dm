@@ -49,7 +49,7 @@
 
 	for(var/mob/living/carbon/human/unlucky in shuffle(GLOB.living_mob_list_))
 		if(check_loc(unlucky) == CADAAB_OUTSIDE)
-			to_chat(unlucky, SPAN_WARNING("Along with the horizon, the sand swallows up the sun, bringing darkness and death."))
+			to_chat(unlucky, SPAN_WARNING("Along with the horizon, the sand swallows up the sky, bringing darkness and death."))
 
 	sleep(15 SECONDS)
 
@@ -79,6 +79,11 @@
 			areas.forced_ambience = list('sound/ambience/bos/super_sandstorm.ogg')
 			areas.ambience = list('sound/effects/bos/lighting.ogg')
 			areas.sandstorm_container = src
+			for(var/turf/simulated/outside_turf in view(0, areas))
+				var/image/I = image(icon='maps/away/cadaab/icons/turfs.dmi',icon_state="sandstorm")
+				I.plane = DECORATIONS_PLANE
+				I.layer = 10 //Above everything
+				outside_turf.overlays += I
 		else
 			areas.forced_ambience = list('sound/ambience/bos/super_sandstorm_indoor.ogg')
 			areas.ambience = list('sound/effects/bos/lighting.ogg')
@@ -130,23 +135,6 @@
 /obj/screen/fullscreen/sandstorm/Initialize()
 	. = ..()
 	animate(src, alpha = rand(55, 70), time = rand(40, 60))
-
-/*
-/obj/screen/fullscreen/sandstorm/on_update_icon() Animation dont want work, idk why
-	. = ..()
-	animation()
-
-/obj/screen/fullscreen/sandstorm/proc/animation()
-	while(layer == DAMAGE_LAYER) //Always true. Below we create illusion of animation, randoming alpha
-		var/new_alpha
-		var/alpha_time
-		new_alpha = alpha + rand(-20, 20)
-		alpha_time = rand(7, 15)
-		if((new_alpha << 80) || (new_alpha >> 200)) //Dont give alpha up/fall too much
-			new_alpha = 140
-		animate(src, alpha = new_alpha, time = alpha_time)
-		sleep(alpha_time)
-*/
 
 /obj/screen/fullscreen/sandstorm/second
 	icon_state = "sandstorm2"
