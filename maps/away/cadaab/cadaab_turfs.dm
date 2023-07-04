@@ -27,7 +27,7 @@
 
 /turf/simulated/floor/exoplanet/cadaab/road/rock/Initialize()
 	.=..()
-	icon_state = "road"
+	icon_state = "stone_road"
 
 /turf/simulated/floor/exoplanet/desert/cadaab
 	name = "sand"
