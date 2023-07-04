@@ -142,9 +142,9 @@
 
 //PLANETSIDE CASTELNAU//
 	#include "../away/cadaab/cadaab_castelnau.dm"
-	#include "../away/cadaab/castelnau-1-cadaab.dmm"
-	#include "../away/cadaab/castelnau-2-cadaab.dmm"
-	#include "../away/cadaab/castelnau-3-cadaab.dmm"
+	#include "cadaab/castelnau-1-cadaab.dmm"
+	#include "cadaab/castelnau-2-cadaab.dmm"
+	#include "cadaab/castelnau-3-cadaab.dmm"
 
 //SPACE CASTELNAU///
 //	#include "castelnau-1.dmm"

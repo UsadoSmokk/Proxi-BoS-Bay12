@@ -194,6 +194,7 @@
 #include "code\bos\game\objects\items\weapons\chem_mine.dm"
 #include "code\bos\game\objects\items\weapons\improvised.dm"
 #include "code\bos\game\objects\items\weapons\mine.dm"
+#include "code\bos\game\objects\items\weapons\new_and_cool.dm"
 #include "code\bos\game\objects\items\weapons\implants\implants\emp.dm"
 #include "code\bos\game\objects\items\weapons\implants\implants\fake_death.dm"
 #include "code\bos\game\objects\items\weapons\implants\implants\spying.dm"

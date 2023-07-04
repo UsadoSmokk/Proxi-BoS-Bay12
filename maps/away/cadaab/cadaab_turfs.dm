@@ -2,9 +2,13 @@
 	name = "stone"
 	desc = "Guess you could call it a RED STONE."
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
-	icon_state = "stone"
+	icon_state = "stone0"
 	color = null
 	diggable = 0
+
+/turf/simulated/floor/exoplanet/cadaab/Initialize()
+	.=..()
+	icon_state = "stone[rand(0,1)]"
 
 /turf/simulated/floor/exoplanet/cadaab/road
 	name = "scorched sand" // I don't know what the fuck it's called
@@ -12,6 +16,18 @@
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
 	icon_state = "road"
 	diggable = 0
+
+/turf/simulated/floor/exoplanet/cadaab/road/Initialize()
+	.=..()
+	icon_state = "road"
+
+/turf/simulated/floor/exoplanet/cadaab/road/rock
+	name = "stone road"
+	icon_state = "stone_road"
+
+/turf/simulated/floor/exoplanet/cadaab/road/rock/Initialize()
+	.=..()
+	icon_state = "road"
 
 /turf/simulated/floor/exoplanet/desert/cadaab
 	name = "sand"
@@ -44,7 +60,7 @@
 /turf/simulated/mineral/cadaab
 	name = "rock"
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
-	icon_state = "rock"
+	icon_state = "rock0"
 	color = null
 	mined_turf = /turf/simulated/floor/exoplanet/cadaab
 
@@ -52,10 +68,14 @@
 	name = "impassable rock"
 	desc = "It's a particularly tough rock here."
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
-	icon_state = "rock"
+	icon_state = "rock0"
 	opacity = 1
 	density = TRUE
 	blocks_air = 1
+
+/turf/unsimulated/cadaab/rock/Initialize()
+	.=..()
+	icon_state = "rock[rand(0,1)]"
 
 /decl/flooring/cadaab_wood
 	name = "wooden floor"

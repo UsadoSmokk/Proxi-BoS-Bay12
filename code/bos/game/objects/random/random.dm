@@ -160,6 +160,23 @@
 /mob/living/simple_animal/hostile/retaliate/malf_drone/hive
 	faction = "hivebot"
 
+/obj/random/simple_mob/barbarian
+	name = "random tech-barbarian"
+	desc = "Here is a random ITshnik maker."
+	icon = 'maps/castelnau/techbarb-event/barbs.dmi'
+	icon_state = "barbmelee"
+
+/obj/random/simple_mob/barbarian/spawn_choices()
+	return list(/mob/living/simple_animal/hostile/russian/barbmelee/wild = 10,
+				/mob/living/simple_animal/hostile/sol_military/barbarian/wild = 4,
+				/mob/living/simple_animal/hostile/sol_military/barbarian/shield/wild = 2)
+
+/mob/living/simple_animal/hostile/russian/barbmelee/wild
+	faction = "tech-barbarians"
+
+/mob/living/simple_animal/hostile/sol_military/barbarian/wild
+	faction = "tech-barbarians"
+
 ////
 // No way, turf random generation?7?
 ////

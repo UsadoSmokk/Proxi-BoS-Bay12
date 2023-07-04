@@ -11,7 +11,7 @@
 /decl/hierarchy/outfit/job/castelnau/gov/com/commissary
 	name = OUTFIT_JOB_NAME("Commissary - Castelnau")
 	uniform = /obj/item/clothing/under/sl_suit
-	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po
+	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po/gsc
 	head = /obj/item/clothing/head/helmet/kgb
 	shoes = /obj/item/clothing/shoes/lordan/service
 	id_types = list(/obj/item/card/id/castelnau/crew/commissary)

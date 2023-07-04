@@ -106,3 +106,17 @@
 	..(gibbed, deathmessage, show_dead_message)
 	if(dropped_weapon)
 		new dropped_weapon (src.loc)
+
+//not for event
+/mob/living/simple_animal/hostile/russian/barbmelee/wild
+	name = "naked wild tech-barbarian"
+	desc = "This one completely lost his mind."
+
+
+/mob/living/simple_animal/hostile/sol_military/barbarian/wild
+	name = "armored wild tech-barbarian"
+	desc = "This one completely lost his mind."
+
+/mob/living/simple_animal/hostile/sol_military/barbarian/shield/wild
+	name = "tech-armored wild tech-barbarian"
+	desc = "This one completely lost his mind."

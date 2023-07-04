@@ -10,8 +10,6 @@
 
 /obj/structure/closet/secure_closet/castelnau_adjutant/WillContain()
 	return list(
-		/obj/item/gun/projectile/pistol/broomstick,
-
 		/obj/item/device/radio,
 		/obj/item/pen,
 		/obj/item/device/tape/random,
@@ -35,6 +33,10 @@
 
 /obj/structure/closet/secure_closet/commissary/WillContain()
 	return list(
+		/obj/item/gun/projectile/pistol/broomstick,
+		/obj/item/ammo_magazine/speedloader/hpclip,
+		/obj/item/ammo_magazine/speedloader/hpclip,
+		/obj/item/ammo_magazine/speedloader/hpclip,
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/device/radio/headset,
 		/obj/item/storage/belt/general,

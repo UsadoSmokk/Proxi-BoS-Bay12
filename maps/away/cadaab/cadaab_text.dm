@@ -45,13 +45,13 @@
 
 /obj/item/paper/cadaab/safety
 	name = "Safety"
-	icon = 'maps/away/cadaab/icons/objects.dmi'
+//	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "paper_blu"
 	info = {"
 Взываю ко всем благоразумным людям, коих осталось немного. На юге подземных пещер находится последнее прибежище адекватных людей. У нас есть вода и еда. Эти варвары туда не пробьются, а для доказательства своего благоразумия вам потребуется ответить на пару вопросов. Вы сможете определить это место по трём картонным коробкам у входа."}
 
 /obj/item/paper/cadaab/flowers
 	name = "FLOWERS"
-	icon = 'maps/away/cadaab/icons/objects.dmi'
+//	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "paper_sand"
 	info = {"<B>ПРИВЕТ.</B> МЫ МОГазиН ЦВЕТОВ, МЫ НА ЗАПАДЕ В ПЕЩЕХАВРАХ ПЕЩЕРАХ СНИЗУ, МЫ ПРОДАЕ  М ЦВЕТЫ. ЗАХОДИТЕ И ПОКУПАЙТЕ ЦВЕТЫ. МЫ ЛЮБИМ РАСТИТЕЛЬНОАВЫФАСТЬ И МЯСО."}

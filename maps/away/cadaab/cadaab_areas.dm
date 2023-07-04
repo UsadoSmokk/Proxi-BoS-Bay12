@@ -21,8 +21,14 @@
 	forced_ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg', 'sound/ambience/bos/desert_music1.ogg', 'sound/ambience/bos/desert_music2.ogg')
 	outside = TRUE
 
-/area/cadaab/ladder // shitcoded hell. use if base_turf is broken and you have no idea why
+/area/cadaab/ladder // shitcoded hell. use if base_turf is broken and you have no idea why 				UPD: found the reason, I'll delete this later
 	base_turf = /turf/space
+
+/area/cadaab/ladder/roof
+	name = "Shahtinsk - Rooftops"
+	icon_state = "desert"
+	forced_ambience = list('sound/effects/wind/desert0.ogg','sound/effects/wind/desert1.ogg','sound/effects/wind/desert2.ogg','sound/effects/wind/desert3.ogg','sound/effects/wind/desert4.ogg','sound/effects/wind/desert5.ogg')
+	outside = TRUE
 
 /area/cadaab/outpost/syndivault
 	name = "Syndipass Vault"
@@ -55,6 +61,7 @@
 
 /area/cadaab/outpost
 	name = "Regulators Outpost"
+	base_turf = /turf/space
 
 /area/cadaab/outpost/teleport
 	name = "Outpost - Teleport"
@@ -152,6 +159,7 @@
 /area/cadaab/shahtinsk
 	name = "Cadaab - Shahtinsk - Near Outpost"
 	icon_state = "desert"
+	base_turf = /turf/space
 
 /area/cadaab/shahtinsk/second
 	name = "Cadaab - Shahtinsk - Near Tribe"
@@ -179,6 +187,7 @@
 	name = "Police"
 	icon_state = "command"
 	req_access = list(access_cadaab_prison)
+	base_turf = /turf/space
 
 /area/cadaab/sputnik
 	name = "Sputnik - Telecommunications"

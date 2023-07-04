@@ -177,3 +177,8 @@
 	access = list(access_castelnau_syndipass)
 	color = COLOR_RED_GRAY
 	detail_color = COLOR_GRAY40
+
+
+/obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po/gsc
+	name = "GSC shinel"
+	desc = "A Galactic Security Corps terran-styled shinel with red accents."

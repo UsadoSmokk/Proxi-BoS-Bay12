@@ -201,6 +201,13 @@
 	name = "CYBER KILLER RETRO advertising panel"
 	icon_state = "retro"
 
+/obj/effect/decal/weeks
+	name = "status display"
+	desc = "It says, 'Decontamination in two weeks.'"
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	icon_state = "2weeks"
+	anchored = 1
+
 /obj/effect/floor_decal/holecadaab
 	name = "hole"
 	icon = 'maps/away/cadaab/icons/turfs.dmi'

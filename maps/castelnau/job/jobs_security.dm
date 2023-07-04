@@ -48,6 +48,7 @@
 /datum/job/officer
 	title = "Security Contractor"
 	department = "Security"
+	alt_titles = list() // This is a hack. Overriding a list var with null does not actually override it due to the particulars of dm list init. Do not "clean up" without testing.
 	department_flag = SEC
 	total_positions = 2
 	spawn_positions = 2
