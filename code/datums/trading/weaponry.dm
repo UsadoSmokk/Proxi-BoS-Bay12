@@ -233,22 +233,28 @@
 /datum/trader/ship/kaboom
 	name = "Unknown Primitive Signature"
 	origin = "Kadaab Deserts"
-	speech = list(TRADER_HAIL_GENERIC    = "Ka-boom? Funny paper give you, we give you ka-boom.",
-				TRADER_HAIL_DENY         = "No ka-boom for space demons.",
+	trade_flags = TRADER_MONEY|TRADER_GOODS|TRADER_WANTED_ONLY|TRADER_WANTED_ALL
+	want_multiplier = 1
+	speech = list(TRADER_HAIL_GENERIC		= "Ka-boom? Funny paper give you, we give you ka-boom.",
+				TRADER_HAIL_DENY			= "No ka-boom for space demons.",
 
-				TRADER_TRADE_COMPLETE    = "Make more kaboom with ka-boom.",
-				TRADER_NO_BLACKLISTED   = "Not funny and not kaboom.",
-				TRADER_NO_GOODS    = "Where funny paper.",
-				TRADER_NOT_ENOUGH  = "More paper!!",
-				TRADER_HOW_MUCH          = "Orgh... One, two... VALUE.",
+				TRADER_TRADE_COMPLETE		= "Make more kaboom with ka-boom.",
+				TRADER_FOUND_UNWANTED		= "This not funny and not meal - we not need.",
+				TRADER_WHAT_WANT			= "Ohm, we want eat meal. And drink wata. We not drink wata for... Orgh, many suns.",
+				TRADER_NOT_ENOUGH			= "More paper!!",
+				TRADER_HOW_MUCH				= "Orgh... One, two... VALUE.",
 
-				TRADER_COMPLEMENT_FAILURE   = "You stoopid.",
-				TRADER_COMPLEMENT_SUCCESS = "Great ka-boom!",
-				TRADER_INSULT_GOOD       = "My ka-boom is good, you bad space demon!!!",
-				TRADER_INSULT_BAD        = "Erght... What?"
+				TRADER_COMPLEMENT_FAILURE	= "You stoopid.",
+				TRADER_COMPLEMENT_SUCCESS	= "Great ka-boom!",
+				TRADER_INSULT_GOOD			= "My ka-boom is good, you bad space demon!!!",
+				TRADER_INSULT_BAD			= "Erght... What?"
 	)
 	compliment_increase = 5
 	insult_drop = 5
+
+	wanted_items  = list(
+						/obj/item/reagent_containers/food								= TRADER_ALL
+						)
 
 	possible_trading_items = list(
 								/obj/item/gun/launcher/grenade							= TRADER_THIS_TYPE,

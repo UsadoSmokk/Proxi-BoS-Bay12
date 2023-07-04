@@ -7,29 +7,33 @@
 /decl/hierarchy/outfit/job/solship/crew/fleet
 	name = OUTFIT_JOB_NAME("Solship Fleet Outfit")
 	hierarchy_type = /decl/hierarchy/outfit/job/solship/crew/fleet
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/away_solship
-	head = /obj/item/clothing/head/solgov/utility/fleet
-	shoes = /obj/item/clothing/shoes/dutyboots
+	uniform = /obj/item/clothing/under/lordan/utility/fleet
+	head = /obj/item/clothing/head/beret/lordan/fleet
+	shoes = /obj/item/clothing/shoes/lordan
 	l_ear = /obj/item/device/radio/headset/gunship
-	id_types= list(/obj/item/card/id/solship)
+	id_types = list(/obj/item/card/id/solship)
 
 /decl/hierarchy/outfit/job/solship/crew/fleet/troop
-	name = OUTFIT_JOB_NAME("Solship Trooper Fleet Outfit")
+	name = OUTFIT_JOB_NAME("Solship Marine Fleet Outfit")
+	uniform = /obj/item/clothing/under/lordan/utility/green/lss_ship_marine
+	head = /obj/item/clothing/head/beret/lordan/orbital
 
 /decl/hierarchy/outfit/job/solship/crew/fleet/medic
 	name = OUTFIT_JOB_NAME("Solship Med Fleet Outfit")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical/away_solship
-	id_types= list(/obj/item/card/id/solship/medic)
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/lss_ship_medick
+	id_types = list(/obj/item/card/id/solship/medic)
 
 /decl/hierarchy/outfit/job/solship/crew/fleet/engineer
 	name = OUTFIT_JOB_NAME("Solship Engi Fleet Outfit")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering/away_solship
-	id_types= list(/obj/item/card/id/solship/engineer)
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/lss_ship_engineer
+	id_types = list(/obj/item/card/id/solship/engineer)
 
 /decl/hierarchy/outfit/job/solship/crew/fleet/captain
 	name = OUTFIT_JOB_NAME("Solship Cap Fleet Outfit")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/command/captain
-	id_types= list(/obj/item/card/id/solship/captain)
+	uniform = /obj/item/clothing/under/lordan/utility/fleet/command
+	suit = /obj/item/clothing/suit/storage/toggle/lordan/service/fleet/officer/lss_ship_lead
+	head = /obj/item/clothing/head/lordan/fleet
+	id_types = list(/obj/item/card/id/solship/captain)
 /*
 /decl/hierarchy/mil_uniform/scgfleet
 	name = "Master scg fleet outfit"

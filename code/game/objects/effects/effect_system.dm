@@ -173,6 +173,8 @@ would spawn and follow the beaker, even if it is carried or thrown.
 	name = "smoke"
 	icon_state = "smoke"
 	opacity = 1
+	plane = DECORATIONS_PLANE //BoS
+	layer = 5 //BoS
 	anchored = FALSE
 	mouse_opacity = 0
 	var/amount = 6.0

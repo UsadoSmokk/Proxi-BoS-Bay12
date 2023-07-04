@@ -1,3 +1,4 @@
+/*
 /datum/mil_branch/army
 	name = "SCG Army"
 	name_short = "SCGA"
@@ -379,3 +380,203 @@
 	name_short = "FADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 20
+
+== Replace solship ranks with ranks from Antares             ==
+== Cut most of the high ranks because they not exist in game ==
+*/
+
+/datum/mil_branch/larmarine
+	name = "Lordanian Marine Corps"
+	name_short = "LMC"
+	email_domain = "lord.oorah.mil"
+
+	rank_types = list(
+		/datum/mil_rank/larmarine/e1,
+		/datum/mil_rank/larmarine/e2,
+		/datum/mil_rank/larmarine/e3,
+		/datum/mil_rank/larmarine/e4,
+		/datum/mil_rank/larmarine/e5,
+		/datum/mil_rank/larmarine/o1,
+		/datum/mil_rank/larmarine/o2,
+		/datum/mil_rank/larmarine/o3,
+		/datum/mil_rank/larmarine/o4,
+		/datum/mil_rank/larmarine/o5
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/larmarine/e2,
+		/datum/mil_rank/larmarine/e3,
+		/datum/mil_rank/larmarine/e4,
+		/datum/mil_rank/larmarine/e5,
+		/datum/mil_rank/larmarine/o1,
+		/datum/mil_rank/larmarine/o2,
+		/datum/mil_rank/larmarine/o3,
+		/datum/mil_rank/larmarine/o4,
+		/datum/mil_rank/larmarine/o5
+	)
+
+	min_skill = list(	SKILL_HAULING = SKILL_BASIC,
+						SKILL_WEAPONS = SKILL_BASIC,
+						SKILL_COMBAT  = SKILL_BASIC,
+						SKILL_EVA     = SKILL_BASIC)
+
+/datum/mil_branch/larfleet
+	name = "Lordanian Sovereign Systems Fleet"
+	name_short = "LSSF"
+	email_domain = "lss.fleet.mil"
+
+	rank_types = list(
+		/datum/mil_rank/larfleet/e1,
+		/datum/mil_rank/larfleet/e2,
+		/datum/mil_rank/larfleet/e3,
+		/datum/mil_rank/larfleet/e4,
+		/datum/mil_rank/larfleet/e5,
+		/datum/mil_rank/larfleet/o1,
+		/datum/mil_rank/larfleet/o2,
+		/datum/mil_rank/larfleet/o3,
+		/datum/mil_rank/larfleet/o4,
+		/datum/mil_rank/larfleet/o5
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/larfleet/e2,
+		/datum/mil_rank/larfleet/e3,
+		/datum/mil_rank/larfleet/e4,
+		/datum/mil_rank/larfleet/e5,
+		/datum/mil_rank/larfleet/o1,
+		/datum/mil_rank/larfleet/o2,
+		/datum/mil_rank/larfleet/o3,
+		/datum/mil_rank/larfleet/o4,
+		/datum/mil_rank/larfleet/o5
+	)
+
+	min_skill = list(	SKILL_HAULING = SKILL_BASIC,
+						SKILL_WEAPONS = SKILL_BASIC,
+						SKILL_EVA     = SKILL_ADEPT)
+
+// RANKS \\
+// Fleet \\
+
+/datum/mil_rank/larfleet/e1
+	name = "Crewman Recruit"
+	name_short = "CR"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/enlisted, /obj/item/clothing/accessory/lordan/specialty/enlisted)
+	sort_order = 1
+
+/datum/mil_rank/larfleet/e2
+	name = "Crewman Apprentice"
+	name_short = "CA"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/enlisted/e2, /obj/item/clothing/accessory/lordan/specialty/enlisted)
+	sort_order = 2
+
+/datum/mil_rank/larfleet/e3
+	name = "Crewman"
+	name_short = "CN"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/enlisted/e3, /obj/item/clothing/accessory/lordan/specialty/enlisted)
+	sort_order = 3
+
+/datum/mil_rank/larfleet/e4
+	name = "Petty Officer Third Class"
+	name_short = "PO3"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/lordan/specialty/enlisted)
+	sort_order = 4
+
+/datum/mil_rank/larfleet/e5
+	name = "Petty Officer Second Class"
+	name_short = "PO2"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/enlisted/e5, /obj/item/clothing/accessory/lordan/specialty/enlisted)
+	sort_order = 5
+
+
+/datum/mil_rank/larfleet/o1
+	name = "Ensign"
+	name_short = "ENS"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/officer, /obj/item/clothing/accessory/lordan/specialty/officer)
+	sort_order = 11
+
+/datum/mil_rank/larfleet/o2
+	name = "Sub-lieutenant"
+	name_short = "SLT"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/officer/o2, /obj/item/clothing/accessory/lordan/specialty/officer)
+	sort_order = 12
+
+/datum/mil_rank/larfleet/o3
+	name = "Lieutenant"
+	name_short = "LT"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/officer/o3, /obj/item/clothing/accessory/lordan/specialty/officer)
+	sort_order = 13
+
+/datum/mil_rank/larfleet/o4
+	name = "Lieutenant Commander"
+	name_short = "LCDR"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/officer/o4, /obj/item/clothing/accessory/lordan/specialty/officer)
+	sort_order = 14
+
+/datum/mil_rank/larfleet/o5
+	name = "Commander"
+	name_short = "CDR"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/fleet/officer/o5, /obj/item/clothing/accessory/lordan/specialty/officer)
+	sort_order = 15
+
+// Marines \\
+
+/datum/mil_rank/larmarine/e1
+	name = "Private"
+	name_short = "Pvt"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/enlisted)
+	sort_order = 1
+
+/datum/mil_rank/larmarine/e2
+	name = "Private First Class"
+	name_short = "PFC"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/enlisted/e2)
+	sort_order = 2
+
+/datum/mil_rank/larmarine/e3
+	name = "Lance Corporal"
+	name_short = "LCpl"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/enlisted/e3)
+	sort_order = 3
+
+/datum/mil_rank/larmarine/e4
+	name = "Corporal"
+	name_short = "Cpl"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/enlisted/e4)
+	sort_order = 4
+
+/datum/mil_rank/larmarine/e5
+	name = "Sergeant"
+	name_short = "Sgt"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/enlisted/e5)
+	sort_order = 5
+
+
+/datum/mil_rank/larmarine/o1
+	name = "Second Lieutenant"
+	name_short = "2ndLt"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/officer)
+	sort_order = 16
+
+/datum/mil_rank/larmarine/o2
+	name = "First Lieutenant"
+	name_short = "1stLt"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/officer/o2)
+	sort_order = 17
+
+/datum/mil_rank/larmarine/o3
+	name = "Marine Captain"
+	name_short = "CPT"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/officer/o3)
+	sort_order = 18
+
+/datum/mil_rank/larmarine/o4
+	name = "Major"
+	name_short = "Maj"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/officer/o4)
+	sort_order = 21
+
+/datum/mil_rank/larmarine/o5
+	name = "Lieutenant Colonel"
+	name_short = "LtCol"
+	accessory = list(/obj/item/clothing/accessory/lordan/rank/marine/officer/o5)
+	sort_order = 22

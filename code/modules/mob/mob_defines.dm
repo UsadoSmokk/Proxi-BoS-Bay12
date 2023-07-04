@@ -1,6 +1,6 @@
 /mob
 	density = TRUE
-	plane = GAME_PLANE_FOV_HIDDEN
+	plane = GAME_PLANE_FOV_HIDDEN //BoS
 	layer = MOB_LAYER
 
 	appearance_flags = PIXEL_SCALE | LONG_GLIDE
