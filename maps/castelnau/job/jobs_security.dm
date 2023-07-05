@@ -131,7 +131,7 @@
 	access_castelnau_morgue
 	)
 
-/datum/job/detective/equip(var/mob/living/carbon/human/H)
+/datum/job/specialist/equip(var/mob/living/carbon/human/H)
 	if(H.mind.role_alt_title == "Psi-Interrogator")
 		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
 	return ..()
