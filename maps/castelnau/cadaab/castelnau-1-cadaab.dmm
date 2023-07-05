@@ -1011,7 +1011,7 @@
 "tG" = (/turf/unsimulated/wall/cadaab,/area/space)
 "tH" = (/turf/simulated/wall/r_titanium,/area/cadaab/caves/basement)
 "tI" = (/obj/machinery/light/small{dir = 1},/obj/structure/ladder/up,/turf/simulated/floor/lino,/area/cadaab/caves/basement)
-"tJ" = (/obj/structure/ladder,/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/cadaab/shahtinsk/booker)
+"tJ" = (/obj/machinery/light{dir = 4},/obj/structure/ladder/up,/turf/simulated/floor/tiled/techfloor,/area/cadaab/shahtinsk/booker)
 "tK" = (/obj/structure/curtain/open/bed,/turf/simulated/floor/steel_dirty,/area/cadaab/caves/basement)
 "tL" = (/turf/simulated/floor/steel_dirty,/area/cadaab/caves/basement)
 "tM" = (/obj/structure/ladder/up,/turf/simulated/floor/steel_dirty,/area/cadaab/caves/basement)

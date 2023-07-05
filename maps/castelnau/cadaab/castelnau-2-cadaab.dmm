@@ -752,7 +752,7 @@
 "eKG" = (/obj/effect/floor_decal/inaks{dir = 8},/obj/structure/barrier/sandbags/maxlevel{dir = 8},/turf/simulated/floor/inaks/asphalt,/area/cadaab/desert)
 "eKK" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/turf/simulated/floor/inaks/asphalt,/area/cadaab/outpost/sec)
 "eLf" = (/obj/item/stack/material/gold/ten,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
-"eLV" = (/obj/effect/floor_decal/techfloor{dir = 8},/obj/effect/floor_decal/corner/yellow{dir = 6},/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/robotics_fabricator,/turf/simulated/floor/tiled/techfloor,/area/castelnau/engineering/robotics)
+"eLV" = (/obj/effect/floor_decal/techfloor{dir = 8},/obj/effect/floor_decal/corner/yellow{dir = 6},/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/robotics_fabricator{req_access = list()},/turf/simulated/floor/tiled/techfloor,/area/castelnau/engineering/robotics)
 "eLW" = (/obj/machinery/noisetv/old,/turf/simulated/floor/cadaab_wood,/area/cadaab/shahtinsk/city_like)
 "eLY" = (/obj/structure/table/rack,/obj/item/shield/buckler,/obj/item/shield/buckler,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/desert)
 "eMs" = (/obj/effect/floor_decal/inaks{dir = 1},/obj/item/remains/cadaab,/turf/simulated/floor/inaks/asphalt,/area/cadaab/city_streets)
