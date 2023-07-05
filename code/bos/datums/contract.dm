@@ -136,7 +136,7 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 /datum/antag_contract/item/punisment/can_place()
 	return ..() && target
 
-/datum/antag_contract/item/punisment/check(obj/item/weapon/storage/container)
+/datum/antag_contract/item/punisment/check(obj/item/storage/container)
 	return target in container
 
 
@@ -179,7 +179,7 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 /datum/antag_contract/item/steal/can_place()
 	return ..() && target_desc
 
-/datum/antag_contract/item/steal/check(obj/item/weapon/storage/container)
+/datum/antag_contract/item/steal/check(obj/item/storage/container)
 	return locate(target_type) in container
 
 

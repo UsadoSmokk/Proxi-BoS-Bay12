@@ -32,17 +32,6 @@
 	item_state = "explorer"
 	icon = 'customs/icons/obj/custom_items_obj.dmi'
 	item_icons = list(slot_w_uniform_str = 'customs/icons/mob/custom_items_mob.dmi')
-*/
-/obj/item/clothing/mask/gas/elloncake
-	name = "skrellian gas mask"
-	desc = "A face-covering mask that can be connected to an air supply. It was made in the Empire, and looks pretty new."
-	icon_state = "gasmask"
-	item_state = "gasmask"
-	icon = 'customs/icons/obj/custom_items_obj.dmi'
-	item_icons = list(slot_wear_mask_str = 'customs/icons/mob/custom_items_mob.dmi')
-	sprite_sheets = list(
-		SPECIES_SKRELL =  'customs/icons/mob/custom_items_mob_xenosheets.dmi')
-	siemens_coefficient = 0.7
 
 /obj/item/material/hatchet/machete/unbreakable/elloncake
 	name = "NanoTrasen short sword"
@@ -53,6 +42,18 @@
 	item_icons = list(
 		slot_l_hand_str = 'customs/icons/mob/custom_items_lhand.dmi',
 		slot_r_hand_str = 'customs/icons/mob/custom_items_rhand.dmi')
+*/
+
+/obj/item/clothing/mask/gas/elloncake
+	name = "skrellian gas mask"
+	desc = "A face-covering mask that can be connected to an air supply. It was made in the Empire, and looks pretty new."
+	icon_state = "gasmask"
+	item_state = "gasmask"
+	icon = 'customs/icons/obj/custom_items_obj.dmi'
+	item_icons = list(slot_wear_mask_str = 'customs/icons/mob/custom_items_mob.dmi')
+	sprite_sheets = list(
+		SPECIES_SKRELL =  'customs/icons/mob/custom_items_mob_xenosheets.dmi')
+	siemens_coefficient = 0.7
 
 /obj/item/clothing/head/outhood
 	name = "outcast hood"

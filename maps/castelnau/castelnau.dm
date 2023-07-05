@@ -1,7 +1,5 @@
 #if !defined(using_map_DATUM)
 
-	#warn ZDAROVA. Obnova na repe esho ne zakonchennaya, tak chto rano bild skachal.
-
 	#include "castelnau_bos.dm"
 	#include "castelnau_bos_torch.dm"
 
@@ -9,6 +7,7 @@
 	#include "castelnau_antagonism.dm"
 	#include "castelnau_define.dm"
 	#include "castelnau_lobby.dm"
+	#include "castelnau_lore.dm"
 	#include "castelnau_overmap.dm"
 	#include "castelnau_overrides.dm"
 	#include "castelnau_presets.dm"

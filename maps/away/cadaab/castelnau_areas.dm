@@ -204,6 +204,8 @@
 	req_access = list(access_castelnau_cheapskate)
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
+/area/shuttle/castelnau/cheapskate/maint/ton
+
 /area/shuttle/castelnau/cheapskate/maint/storage
 	name = "Cheapskate - Maintenance Storage"
 	req_access = list(access_castelnau_cheapskate)
@@ -248,6 +250,8 @@
 	icon_state = "cheap_sup"
 	name = "Cheapskate - Supply Office"
 	req_access = list(access_castelnau_cheapskate_cargo)
+
+/area/shuttle/castelnau/cheapskate/cargo/of
 
 /area/shuttle/castelnau/cheapskate/cargo/war
 	name = "Cheapskate - Supply Warehouse"

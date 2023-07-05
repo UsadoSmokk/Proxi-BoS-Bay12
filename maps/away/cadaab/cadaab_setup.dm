@@ -12,6 +12,15 @@
 		"nav_shahtinsk"
 	)
 
+/obj/effect/overmap/visitable/sector/sputnik
+	name = "Sputnik"
+	desc = "A small telecommunications satellite. Too small to be docked or shot down."
+	sector_flags = OVERMAP_SECTOR_KNOWN
+	icon_state = "object"
+	color = "#4287f5"
+	start_x = 3
+	start_y = 3
+
 /obj/effect/overmap/visitable/sector/inax
 	name = "Inax"
 	desc = "Inax is a dark jungle planet, in a place where the Lordanian Sovereign Systems has no serious influence. Thus, it is inhabited by pirates and other undesirables who live in small settlements on nitrogen-rich land."

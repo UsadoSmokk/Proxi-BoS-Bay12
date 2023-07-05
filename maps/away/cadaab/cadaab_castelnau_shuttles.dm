@@ -46,12 +46,14 @@ CASTELNAU_ESCAPE_POD(4)
 	name = "Cheapskate"
 	move_time = 90
 	shuttle_area = list(
+	/area/shuttle/castelnau/cheapskate,
 	/area/shuttle/castelnau/cheapskate/hallway,
 	/area/shuttle/castelnau/cheapskate/cockpit,
 	/area/shuttle/castelnau/cheapskate/conference,
 	/area/shuttle/castelnau/cheapskate/eva,
 	/area/shuttle/castelnau/cheapskate/med,
 	/area/shuttle/castelnau/cheapskate/maint,
+	/area/shuttle/castelnau/cheapskate/maint/ton,
 	/area/shuttle/castelnau/cheapskate/maint/storage,
 	/area/shuttle/castelnau/cheapskate/maint/dock,
 	/area/shuttle/castelnau/cheapskate/maint/airlock,
@@ -62,6 +64,7 @@ CASTELNAU_ESCAPE_POD(4)
 	/area/shuttle/castelnau/cheapskate/cryo,
 	/area/shuttle/castelnau/cheapskate/merch,
 	/area/shuttle/castelnau/cheapskate/cargo,
+	/area/shuttle/castelnau/cheapskate/cargo/of,
 	/area/shuttle/castelnau/cheapskate/cargo/war,
 	/area/shuttle/castelnau/cheapskate/cargo/smoking,
 	/area/shuttle/castelnau/cheapskate/cargo/extwar
@@ -79,7 +82,7 @@ CASTELNAU_ESCAPE_POD(4)
 	name = "Cheapskate Canyon LZ"
 	landmark_tag = "nav_cheapskate_dock"
 	docking_controller = "cheapskate_shuttle_dock"
-	base_area = /area/space
+	base_area = /area/cadaab/caves
 	base_turf = /turf/simulated/floor/exoplanet/cadaab
 
 

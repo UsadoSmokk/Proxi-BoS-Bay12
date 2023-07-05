@@ -141,7 +141,7 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 						SKILL_COMBAT      = SKILL_NONE,
 						SKILL_WEAPONS      = SKILL_NONE,
-						SKILL_HAULING      = SKILL_NONE)
+						SKILL_HAULING      = SKILL_NONE) //good at psionics, bad at usual combat
 
 	skill_points = 20
 
@@ -172,7 +172,7 @@
 
 /datum/job/adjutant/equip(var/mob/living/carbon/human/H)
 	if(H.mind.role_alt_title == "Psi-Navigator")
-		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
+		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_MASTER, "[PSI_REDACTION]" = PSI_RANK_OPERANT, "[PSI_PSYCHOKINESIS]" = PSI_RANK_OPERANT, "[PSI_ENERGISTICS]" = PSI_RANK_OPERANT)
 		H.mutations.Add(mRemotetalk)
 		H.verbs += /mob/living/carbon/human/proc/psisay
 
@@ -196,6 +196,7 @@
 	spawn_positions = 1
 	minimal_player_age = 21
 	economic_power = 8
+	latejoin_at_spawnpoints = 1
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/gov/com/emissary
 	selection_color = "#304582"
 	allowed_branches = list(/datum/mil_branch/gov)
@@ -240,7 +241,7 @@
 	selection_color = "#304582"
 	economic_power = 8
 	minimal_player_age = 21
-	minimum_character_age = list(SPECIES_HUMAN = 35)
+	latejoin_at_spawnpoints = 1
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/gov/com/commissary
 	allowed_branches = list(
 		/datum/mil_branch/gov

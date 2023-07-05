@@ -4514,6 +4514,7 @@
 /area/centcom/control)
 "aAM" = (
 /obj/structure/bed/chair,
+/obj/effect/landmark/corpse/bos_cent/alliance,
 /turf/unsimulated/floor{
 	icon_state = "steel"
 	},
@@ -11526,6 +11527,15 @@
 /obj/machinery/portable_atmospherics/powered/pump,
 /turf/unsimulated/floor/plating,
 /area/centcom/evac)
+"kXf" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/obj/effect/landmark/corpse/bos_cent/terra,
+/turf/unsimulated/floor{
+	icon_state = "steel"
+	},
+/area/centcom/control)
 "laS" = (
 /obj/effect/bump_teleporter/fasttravel/end{
 	id = "bob11"
@@ -11631,9 +11641,14 @@
 	},
 /area/syndicate_elite_squad)
 "mBz" = (
-/mob/living/simple_animal/passive/bob,
-/turf/unsimulated/floor/snow,
-/area/reallyunknownthing)
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/obj/effect/landmark/corpse/bos_cent,
+/turf/unsimulated/floor{
+	icon_state = "steel"
+	},
+/area/centcom/control)
 "mHx" = (
 /obj/effect/bump_teleporter/fasttravel/end{
 	id = "bob2"
@@ -11751,6 +11766,13 @@
 	},
 /turf/simulated/floor/holofloor/lino,
 /area/holodeck/source_meetinghall)
+"pdx" = (
+/obj/structure/bed/chair,
+/obj/effect/landmark/corpse/bos_cent/kgb,
+/turf/unsimulated/floor{
+	icon_state = "steel"
+	},
+/area/centcom/control)
 "pgJ" = (
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/tiled/stone,
@@ -23626,7 +23648,7 @@ awx
 awG
 azw
 awG
-azw
+mBz
 awG
 aBh
 awx
@@ -24233,7 +24255,7 @@ ayY
 azz
 azZ
 aAv
-aAM
+pdx
 aBj
 awx
 awC
@@ -24434,7 +24456,7 @@ awx
 awG
 azA
 awG
-azA
+kXf
 aAN
 aAL
 awx
@@ -28991,7 +29013,7 @@ aab
 buQ
 pCD
 pCD
-mBz
+tdd
 tdd
 tdd
 wpC
