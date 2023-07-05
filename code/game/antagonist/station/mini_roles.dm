@@ -21,8 +21,9 @@ GLOBAL_DATUM_INIT(mini_role, /datum/antagonist/mini_roles, new)
 	var/list/regcom_roles = list(/datum/mini_role/regcom_agent, /datum/mini_role/creditor, /datum/mini_role/pyroman)
 	var/list/gov_roles = list(/datum/mini_role/rat, /datum/mini_role/creditor, /datum/mini_role/pyroman, /datum/mini_role/treasure_hunter)
 	var/list/syndicate_roles = list(/datum/mini_role/syndicate_agent, /datum/mini_role/rat, /datum/mini_role/creditor, /datum/mini_role/pyroman, /datum/mini_role/treasure_hunter)
+	var/list/military_roles = list(/datum/mini_role/rat, /datum/mini_role/creditor, /datum/mini_role/cannibal, /datum/mini_role/pyroman, /datum/mini_role/torch, /datum/mini_role/treasure_hunter)
 	var/list/traders_roles = list(/datum/mini_role/contrabandist, /datum/mini_role/rat, /datum/mini_role/creditor, /datum/mini_role/link, /datum/mini_role/treasure_hunter)
-	var/list/scum_roles = list(/datum/mini_role/contrabandist, /datum/mini_role/contractor, /datum/mini_role/rat, /datum/mini_role/cannibal, /datum/mini_role/pyroman, /datum/mini_role/torch, /datum/mini_role/link, /datum/mini_role/mutant, /datum/mini_role/bluespace, /datum/mini_role/treasure_hunter) //Barbars and zeki
+	var/list/scum_roles = list(/datum/mini_role/contrabandist, /datum/mini_role/contractor, /datum/mini_role/rat, /datum/mini_role/cannibal, /datum/mini_role/pyroman, /datum/mini_role/torch, /datum/mini_role/link, /datum/mini_role/mutant, /datum/mini_role/bluespace, /datum/mini_role/treasure_hunter) //Criminals
 	var/list/other_roles = list(/datum/mini_role/contrabandist, /datum/mini_role/contractor, /datum/mini_role/pyroman, /datum/mini_role/torch, /datum/mini_role/link, /datum/mini_role/mutant, /datum/mini_role/bluespace, /datum/mini_role/treasure_hunter)
 
 /datum/antagonist/mini_roles/create_antagonist(var/datum/mind/target, var/move, var/gag_announcement, var/preserve_appearance)
@@ -40,9 +41,9 @@ GLOBAL_DATUM_INIT(mini_role, /datum/antagonist/mini_roles, new)
 				if("Regulators") choosen_role = pick(regcom_roles)
 				if("Government") choosen_role = pick(gov_roles)
 				if("Consortium of Trans-Star Corporations") choosen_role = pick(syndicate_roles)
+				if("Military") choosen_role = pick(military_roles)
 				if("Free Trade Union") choosen_role = pick(traders_roles)
 				if("Alternatively Hired") choosen_role = pick(scum_roles)
-				if("Military") choosen_role = pick(scum_roles)
 				else choosen_role = pick(other_roles)
 		else
 			choosen_role = pick(other_roles)
@@ -89,7 +90,7 @@ GLOBAL_DATUM_INIT(mini_role, /datum/antagonist/mini_roles, new)
 		to_chat(player.current, "<span class='antagdesc'>[get_leader_welcome_text(player.current)]</span>")
 	else
 		to_chat(player.current, "<span class='antagdesc'>[get_welcome_text(player.current)]</span>")
-	to_chat(player.current, SPAN_INFO("[desc]"))
+	to_chat(player.current, SPAN_NOTICE("[desc]"))
 
 	mini_role_datum.special_act(player.current)
 	create_objectives(player)
@@ -284,7 +285,7 @@ GLOBAL_DATUM_INIT(mini_role, /datum/antagonist/mini_roles, new)
 
 /datum/mini_role/torch
 	name = "Торчок"
-	desc = "Может в этом проклятом мире для отдыха просто не осталось других способов, а может Вы просто подумали, что эта была таблетка от головной боли. Как-бы то не было, Вы подсели на наркотики. Сильно подсели. Вам уже даже без разницы что принимать, лишь бы это могло помочь Вам отвлечься от этого мира."
+	desc = "Может в этом проклятом мире для отдыха не осталось других способов, а может Вы просто подумали, что эта была таблетка от головной боли. Как-бы то не было, Вы подсели на наркотики. Сильно подсели. Вам уже даже без разницы что принимать, лишь бы это могло помочь Вам отвлечься от этого мира."
 	objective = "Запасите несколько доз на будущее. Чем больше - тем лучше."
 	no_robots = TRUE
 	gear = list(/obj/item/seeds/ambrosiadeusseed, /obj/item/reagent_containers/hypospray/autoinjector/mindbreaker, /obj/item/storage/firstaid/toxin, /obj/item/storage/box/syringes, /obj/item/storage/pill_bottle/three_eye, /obj/random/handgun)
@@ -441,7 +442,7 @@ GLOBAL_DATUM_INIT(mini_role, /datum/antagonist/mini_roles, new)
 
 /datum/mini_role/bluespace
 	name = "Провидец"
-	desc = "Кажется, Вы нашли этот 'артефакт' во время блюспейс колебаний... Или после того как упали с лестницы - точно не вспомнить. Важно то, что артефакт приоткрыл для Вас завесу вселенной. Обычные люди даже не представляют, внутри чего они живут. Вы же увидели правду. Этот шум на окраинах, на который никто не обращает внимания; этот сектор, выходя из которого оказываешься в его противоположной стороне; это существо, которое все ищут и имя которого Вы стали бояться называть. Мир не таков, каков он кажется на первый взгляд."
+	desc = "Кажется, Вы нашли этот 'артефакт' во время блюспейс колебаний... Или после того как упали с лестницы - точно не вспомнить. Важно то, что артефакт приоткрыл для Вас завесу вселенной. Обычные люди даже не представляют, внутри чего они живут. Вы же увидели правду. Этот шум на окраинах, на который никто не обращает внимания; этот сектор, выходя из которого оказываешься в его противоположной стороне; это существо, которое все ищут и имя которого Вы стали бояться называть. Мир не такой, каким он кажется на первый взгляд."
 	objective = "Доживите до конца смены, сохранив свой артефакт и не предав свою роль широкой огласке."
 	second_objective = "Изучите свои спосбности и артефакт, попытайтесь найти таких же."
 	no_robots = TRUE
@@ -515,4 +516,7 @@ GLOBAL_DATUM_INIT(mini_role, /datum/antagonist/mini_roles, new)
 /datum/mini_role/authority/special_act(var/mob/living/carbon/human/target)
 	var/need_members_amount = rand(2,4)
 	second_objective = "Завербуйте в свою группировку как минимум [need_members_amount] лица."
+К этому мог присести несчастный случай...Или же отвращение к собственному телу. В любом случае, теперь вы - киборг. Вы всё ещё не машина, но органического осталось в вас мало. Не смотря на это, вы хотите ещё больше улучшить своё тело и пойдёте на всё, чтобы это сделать.
+
+Бывший босс семьи, авторитет в узких кругах или простой дар  убеждения...Так или иначе, вас уважают, и вам служат. Вы прилетели сюда, чтобы сколотить очередную банду для ваших собственных грязных целей. Главное не попасться законникам и не потерять остатки былой славы...
 */
