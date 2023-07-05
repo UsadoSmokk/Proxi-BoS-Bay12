@@ -165,6 +165,7 @@
 	allowed_branches = list(/datum/mil_branch/other)
 	allowed_ranks = list(/datum/mil_rank/other)
 	required_language = LANGUAGE_HUMAN_LORD
+	access = list(access_cadaab_constable, access_cadaab_prison)
 	is_semi_antagonist = TRUE
 	min_skill = list(	SKILL_COMBAT      = SKILL_BASIC,
 						SKILL_WEAPONS     = SKILL_BASIC,
@@ -204,6 +205,7 @@
 	allowed_ranks = list(/datum/mil_rank/other)
 	required_language = LANGUAGE_HUMAN_LORD
 	is_semi_antagonist = TRUE
+	access = list(access_cadaab_prison)
 	min_skill = list(	SKILL_COMBAT      = SKILL_BASIC,
 						SKILL_WEAPONS     = SKILL_BASIC,
 						SKILL_FORENSICS   = SKILL_BASIC)
