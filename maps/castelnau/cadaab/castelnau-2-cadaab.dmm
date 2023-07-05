@@ -2109,7 +2109,7 @@
 "nNP" = (/obj/structure/table/standard,/obj/structure/flora/pottedplant/deskfern,/obj/effect/floor_decal/spline/fancy/wood,/turf/simulated/floor/wood/ebony,/area/cadaab/shahtinsk)
 "nOh" = (/obj/random/trash,/obj/machinery/light/small,/turf/simulated/floor/cadaab_wood,/area/cadaab/shahtinsk/city_like)
 "nPa" = (/obj/structure/bed,/obj/item/bedsheet,/obj/random/trash,/turf/simulated/floor/steel_dirty,/area/cadaab/shahtinsk/city_like)
-"nPn" = (/obj/structure/table/rack,/obj/item/melee/baton/cattleprod,/obj/item/melee/baton/cattleprod,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/desert)
+"nPn" = (/obj/structure/table/rack,/obj/item/material/sword/bos/blunted,/obj/item/material/sword/bos/blunted,/turf/simulated/floor/exoplanet/cadaab/road,/area/cadaab/desert)
 "nPy" = (/obj/machinery/atmospherics/pipe/simple/hidden/black{dir = 4},/obj/effect/paint_stripe/yellow,/turf/simulated/wall/ocp_wall,/area/castelnau/thruster/d2starboard)
 "nPI" = (/turf/simulated/floor/steel_dirty,/area/cadaab/outpost/storage)
 "nPT" = (/obj/machinery/firealarm{dir = 1; pixel_y = -26},/turf/simulated/floor/tiled/techfloor,/area/castelnau/security/aux)

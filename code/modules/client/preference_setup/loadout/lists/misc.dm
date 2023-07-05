@@ -19,7 +19,7 @@
 	melee["hook"] = /obj/item/material/knife/bos/hook
 	gear_tweaks += new/datum/gear_tweak/path(melee)
 
-/*/datum/gear/swords //bos
+/datum/gear/swords //bos
 	display_name = "swords selection"
 	description = "A selection of swords"
 	path = /obj/item/material/sword/bos
@@ -32,7 +32,7 @@
 	swords["bastard sword"] = /obj/item/material/sword/bos/bastard
 	swords["zveinhander sword"] = /obj/item/material/sword/bos/zvein
 	gear_tweaks += new/datum/gear_tweak/path(swords)
-*/
+
 /datum/gear/cane
 	display_name = "cane"
 	path = /obj/item/cane
