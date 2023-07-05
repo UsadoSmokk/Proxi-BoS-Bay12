@@ -39,7 +39,16 @@
 
 /turf/simulated/open/Entered(var/atom/movable/mover, var/atom/oldloc)
 	..()
-	mover.fall(oldloc)
+	if(istype(mover, /obj/item/projectile))
+		var/obj/item/projectile/bullet = mover
+		if(istype(bullet.original, /atom/movable/openspace/mimic))
+			var/atom/movable/openspace/mimic/projection = bullet.original
+			var/obj/item/projectile/bullet_clone = new bullet.type(GetBelow(src))
+			bullet_clone.firer = bullet.firer
+			qdel(bullet)
+			bullet_clone.launch(projection.associated_atom, bullet_clone.firer.zone_sel.selecting, 0, 0, 0)
+	else
+		mover.fall(oldloc)
 
 // Called when thrown object lands on this turf.
 /turf/simulated/open/hitby(var/atom/movable/AM)
