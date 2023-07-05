@@ -64,6 +64,9 @@
 							 /datum/computer_file/program/card_mod,
 							 /datum/computer_file/program/reports)
 
+/datum/job/captain/get_description_blurb()
+	return "Вы занимаетесь координацией миссии."
+
 /datum/job/hop
 	title = "Coordinator"
 	supervisors = "the Captain"
@@ -122,6 +125,10 @@
 	access_castelnau_teleporter
 	)
 
+/datum/job/hop/get_description_blurb()
+	return "Вы занимаетесь координацией отдельных задач и важных поручений, а также заменяете Капитана в его отсутствие и можете взять под управление Охрану, если нет Шерифа."
+
+
 /datum/job/adjutant
 	title = "Psi-Navigator"
 	supervisors = "the Command"
@@ -170,6 +177,11 @@
 	access_castelnau_teleporter
 	)
 
+/datum/job/adjutant/get_description_blurb()
+	return " Вы содействуете командованию, выполняете мелкое координирование и своевременную передачу сообщений.\
+	Вы являетесь сильнейшим псиоником на борту, но совершенно бесполезны в дальнем и ближнем бою.\
+	Ваша способность к телепатии позволяет мгновенно передавать приказы командования издалека."
+
 /datum/job/adjutant/equip(var/mob/living/carbon/human/H)
 	if(H.mind.role_alt_title == "Psi-Navigator")
 		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_MASTER, "[PSI_REDACTION]" = PSI_RANK_OPERANT, "[PSI_PSYCHOKINESIS]" = PSI_RANK_OPERANT, "[PSI_ENERGISTICS]" = PSI_RANK_OPERANT)
@@ -183,8 +195,6 @@
 		E.status |= ORGAN_DISFIGURED
 		E.status |= ORGAN_MUTATED
 	return ..()
-
-
 
 /datum/job/emissary
 	title = "Emissary"
@@ -230,6 +240,10 @@
 	access_castelnau_hangar,
 	access_castelnau_teleporter
 	)
+
+/datum/job/captain/get_description_blurb()
+	return "Вы наблюдаете за тем, чтобы Лунная Конвенция работала, а интересы Альянса не нарушались.\
+	Используйте свою неприкосновенность по полной."
 
 /datum/job/commissary
 	title = "Commissary"
@@ -292,5 +306,6 @@
 	software_on_spawn = list(/datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-/datum/job/sea/get_description_blurb()
-	return "-"
+/datum/job/commissary/get_description_blurb()
+	return "Вы занимаетесь поддержанием морального духа лорданиан, подавлением антилорданианских настроений.\
+	 Не стесняйтесь доставать свой маузер, если какой-то отброс с улицы посчитал себя важнее вас."
