@@ -156,6 +156,7 @@
 /datum/job/submap/constable
 	title = "Constable"
 	total_positions = 1
+	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/cadaab/constable
 	supervisors = "Lordanian government, Comissary"
 	info = "В обстановке неразберихи Вы и Ваш подчиненный следите за сохранением закона в этой проклятой пустыне.\
@@ -196,6 +197,7 @@
 /datum/job/submap/deputy
 	title = "Deputy"
 	total_positions = 1
+	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/cadaab/deputy
 	supervisors = "Constable, Lordanian government, Comissary"
 	info = "Вы помогаете Констеблю и Комиссару расследовать преступления, снимать отпечатки и ловить преступников.\

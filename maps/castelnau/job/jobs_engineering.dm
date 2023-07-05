@@ -175,7 +175,7 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/psiengineer/equip(var/mob/living/carbon/human/H)
-	if(H.mind.role_alt_title == "P-Engineer")
+	if(H.mind.role_alt_title == "Psi-Engineer")
 		psi_faculties = list("[PSI_PSYCHOKINESIS]" = PSI_RANK_OPERANT)
 	return ..()
 
