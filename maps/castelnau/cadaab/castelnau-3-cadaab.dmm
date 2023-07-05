@@ -419,7 +419,7 @@
 "ghH" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/lino,/area/castelnau/command/bridge/bunk)
 "ghQ" = (/obj/structure/table/standard,/obj/item/device/radio/robust{pixel_y = 15},/obj/item/device/radio/robust/com{pixel_y = 7},/obj/item/device/radio/robust/sec,/turf/simulated/floor/lino,/area/castelnau/command/bridge/bunk)
 "giz" = (/obj/machinery/light,/obj/machinery/firealarm{dir = 8; pixel_x = -24},/obj/effect/floor_decal/spline/fancy/wood{dir = 4},/obj/machinery/computer/modular/preset/cardslot/command{dir = 1; icon_state = "computer"},/obj/item/paper/castelnau,/turf/simulated/floor/wood/walnut,/area/castelnau/command/captain)
-"gjc" = (/turf/simulated/wall/concrete,/area/cadaab/shahtinsk)
+"gjc" = (/obj/effect/paint/merc,/turf/simulated/wall/r_wall,/area/cadaab/shahtinsk)
 "gkC" = (/obj/structure/table/woodentable/walnut,/obj/item/paper_bin,/obj/item/stamp/captain,/obj/item/pen/multi/cmd/captain,/turf/simulated/floor/carpet/red,/area/castelnau/command/captain)
 "gkJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/turf/simulated/floor/carpet/red,/area/castelnau/command/captain)
 "gkZ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/machinery/light/small,/obj/structure/closet/cabinet,/obj/item/toy/plushie/lizard,/turf/simulated/floor/carpet/blue2,/area/castelnau/civ/bunk)
