@@ -6,6 +6,7 @@
 	start_y = 5
 	color = COLOR_PINK
 	icon = 'icons/obj/overmap.dmi'
+	icon_state = "nah"
 	initial_restricted_waypoints = list(
 		"Cheapskate" = list("nav_cheapskate_dock"),
 		"Bixie" = list("nav_bixie_dock"),
