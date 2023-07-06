@@ -7,7 +7,7 @@
 	name = "stab-sword"
 	desc = "Good at parrying and accuracy, worse at cutting and penetration"
 	icon = 'icons/bos/obj/NEW_AND_COOL.dmi'
-	hitsound = list('sound/weapons/bos/hit.ogg', 'sound/weapons/bos/slash.ogg', 'sound/weapons/bos/meatslash.ogg', 'sound/weapons/bos/woosh.ogg')
+	hitsound = list('sound/weapons/bos/woosh.ogg')
 	icon_state = "sword"
 	item_state = "sword"
 	slot_flags = SLOT_BELT
