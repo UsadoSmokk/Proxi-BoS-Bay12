@@ -303,6 +303,12 @@
 /datum/computer_file/program/merchant
 	required_access = access_castelnau_cheapskate_shop
 
+/datum/nano_module/records
+	bridge = access_castelnau_bridge
+	medical = access_castelnau_medical
+	security = access_castelnau_security
+	detective = access_castelnau_detective
+
 /obj/machinery/barrier
 	req_access = list(access_castelnau_security)
 
