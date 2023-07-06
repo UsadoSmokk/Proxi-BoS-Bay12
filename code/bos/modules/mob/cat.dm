@@ -42,3 +42,12 @@
 	item_state = "floppa_newyear"
 	icon_living = "floppa_newyear"
 	mob_size = MOB_LARGE
+
+mob/living/simple_animal/passive/cat/bolgarin
+	name = "Major Bolgarin"
+	desc = "A domesticated, upolnomochenniy ICCG officer. Has a tendency to kiss crewmembers."
+	icon = 'icons/bos/mob/cat.dmi'
+	icon_state = "bolgar"
+	item_state = "bolgar"
+	icon_living = "bolgar"
+	icon_dead = "bolgar_dead"
