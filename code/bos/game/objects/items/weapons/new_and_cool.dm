@@ -115,3 +115,14 @@
 	name = "razor"
 	desc = "Yeah, that's definetly a razor."
 	icon_state = "razor"
+
+/obj/item/material/knife/bos/kunai
+	name = "kunai"
+	desc = "Yeah, that's definetly a kunai."
+	icon_state = "kunai"
+	force = 20
+	force_multiplier = 0.1
+	thrown_force_multiplier = 1
+	throw_speed = 8
+	throw_range = 15
+	w_class = ITEM_SIZE_TINY
