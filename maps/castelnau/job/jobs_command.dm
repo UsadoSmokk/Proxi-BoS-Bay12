@@ -149,7 +149,7 @@
 						SKILL_COMBAT      = SKILL_NONE,
 						SKILL_WEAPONS      = SKILL_NONE,
 						SKILL_HAULING      = SKILL_NONE) //good at psionics, bad at usual combat
-
+	give_psionic_implant_on_join = FALSE
 	skill_points = 20
 
 	access = list(
