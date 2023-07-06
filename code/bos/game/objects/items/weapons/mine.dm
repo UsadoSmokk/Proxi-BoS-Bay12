@@ -94,3 +94,6 @@
 
 	if((mob.loc != src.loc) && (active))
 		detonate(mob)
+
+/obj/item/mine/active //for mapping
+	active = 1
