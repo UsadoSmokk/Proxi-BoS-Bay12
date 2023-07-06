@@ -94,7 +94,7 @@
 	var/chargedesc = "ODST"
 
 /obj/structure/ship_munition/disperser_charge/s2s/fire(turf/target, strength, range)
-	explosion(target, strength * range / 1)
+	explosion(target, 0, strength * range / 1, 2)
 
 /obj/structure/ship_munition/disperser_charge/vox
 	name = "Vox charge"

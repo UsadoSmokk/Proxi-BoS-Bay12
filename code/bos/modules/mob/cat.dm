@@ -43,7 +43,7 @@
 	icon_living = "floppa_newyear"
 	mob_size = MOB_LARGE
 
-mob/living/simple_animal/passive/cat/bolgarin
+/mob/living/simple_animal/passive/cat/bolgarin
 	name = "Major Bolgarin"
 	desc = "A domesticated, upolnomochenniy ICCG officer. Has a tendency to kiss crewmembers."
 	icon = 'icons/bos/mob/cat.dmi'

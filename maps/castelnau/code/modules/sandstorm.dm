@@ -13,7 +13,7 @@
 	var/checking_area = get_area(unlucky)
 	if(is_type_in_list(checking_area, storm_areas))
 		return CADAAB_OUTSIDE
-	else if(istype(checking_area, /area/cadaab))
+	else if((unlucky.z << 4) && (!istype(checking_area, /area/cadaab/sputnik)))
 		return CADAAB_INDOORS
 	else
 		return FALSE
@@ -69,7 +69,7 @@
 	for(var/turf/simulated/floor/inaks/target_turf in world)
 		target_turf.set_light(0, 0, 0)
 
-	for(var/turf/simulated/floor/grass/cadaab/target_turf in world)
+	for(var/turf/simulated/floor/shuttle_ceiling/cadaab/target_turf in world)
 		target_turf.set_light(0, 0, 0)
 
 	sleep(10 SECONDS)
@@ -87,6 +87,14 @@
 		else
 			areas.forced_ambience = list('sound/ambience/bos/super_sandstorm_indoor.ogg')
 			areas.ambience = list('sound/effects/bos/lighting.ogg')
+
+	for(var/area/castelnau/areas in world)
+		areas.forced_ambience = list('sound/ambience/bos/super_sandstorm_indoor.ogg')
+		areas.ambience = list('sound/effects/bos/lighting.ogg')
+
+	for(var/area/shuttle/castelnau/areas in world)
+		areas.forced_ambience = list('sound/ambience/bos/super_sandstorm_indoor.ogg')
+		areas.ambience = list('sound/effects/bos/lighting.ogg')
 
 	for(var/obj/machinery/noisetv/broadcast in world)
 		broadcast.endnoise()
