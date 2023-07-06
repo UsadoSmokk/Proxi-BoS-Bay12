@@ -36,6 +36,7 @@
 	icon_state = "sand0"
 	color = null
 	footstep_type = /decl/footsteps/sand
+	diggable = 1
 
 /turf/simulated/floor/exoplanet/desert/cadaab/Initialize()
 	.=..()

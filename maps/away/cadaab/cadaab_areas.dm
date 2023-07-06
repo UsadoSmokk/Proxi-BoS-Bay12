@@ -71,7 +71,7 @@
 /area/cadaab/outpost/storage
 	name = "Outpost - Storage"
 	icon_state = "command"
-	req_access = list(access_castelnau_bridge)
+	req_access = list(access_castelnau_teleporter)
 
 /area/cadaab/outpost/trading
 	name = "Outpost - Trading Post"
