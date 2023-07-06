@@ -46,6 +46,7 @@
 	desc = "A flimsy lattice of metal rods, with screws to secure it to the floor."
 	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "steelfence"
+	atom_flags = ATOM_FLAG_CLIMBABLE
 	anchored = TRUE
 	density = TRUE
 	plane = DECORATIONS_PLANE
