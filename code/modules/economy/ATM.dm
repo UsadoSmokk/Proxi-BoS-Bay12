@@ -45,7 +45,7 @@
 		if(ticks_left_locked_down <= 0)
 			number_incorrect_tries = 0
 
-	for(var/obj/item/spacecash/S in src)
+	for(var/obj/item/reagent_containers/food/snacks/spacecash/S in src)
 		S.dropInto(loc)
 		if(prob(50))
 			playsound(loc, 'sound/items/polaroid1.ogg', 50, 1)
@@ -87,8 +87,8 @@
 			attack_hand(user)
 
 	else if(authenticated_account)
-		if(istype(I,/obj/item/spacecash))
-			var/obj/item/spacecash/dolla = I
+		if(istype(I,/obj/item/reagent_containers/food/snacks/spacecash))
+			var/obj/item/reagent_containers/food/snacks/spacecash/dolla = I
 
 			//deposit the cash
 			if(authenticated_account.deposit(dolla.worth, "Credit deposit", machine_id))
@@ -444,7 +444,7 @@
 
 
 /obj/machinery/atm/proc/spawn_ewallet(var/sum, loc, mob/living/carbon/human/human_user as mob)
-	var/obj/item/spacecash/ewallet/E = new /obj/item/spacecash/ewallet(loc)
+	var/obj/item/reagent_containers/food/snacks/spacecash/ewallet/E = new /obj/item/reagent_containers/food/snacks/spacecash/ewallet(loc)
 	if(ishuman(human_user) && !human_user.get_active_hand())
 		human_user.put_in_hands(E)
 	E.worth = sum

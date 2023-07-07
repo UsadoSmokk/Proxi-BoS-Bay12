@@ -119,8 +119,8 @@
 			scan_card(I, O)
 		else
 			to_chat(usr, "[icon2html(src, usr)]<span class='warning'>Unable to connect to linked account.</span>")
-	else if (istype(O, /obj/item/spacecash/ewallet))
-		var/obj/item/spacecash/ewallet/E = O
+	else if (istype(O, /obj/item/reagent_containers/food/snacks/spacecash/ewallet))
+		var/obj/item/reagent_containers/food/snacks/spacecash/ewallet/E = O
 		if (linked_account)
 			if(transaction_locked && !transaction_paid)
 				if(transaction_amount <= E.worth)

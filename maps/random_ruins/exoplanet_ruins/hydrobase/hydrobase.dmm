@@ -2271,7 +2271,7 @@
 	},
 /obj/random/projectile,
 /obj/item/material/knife/combat,
-/obj/item/spacecash/bundle/c100,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c100,
 /obj/random/cash,
 /obj/random/cash,
 /obj/random/handgun,

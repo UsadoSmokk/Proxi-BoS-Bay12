@@ -1043,3 +1043,23 @@
 					W.bleed_timer = 0
 					W.clamped = TRUE
 					E.status &= ~ORGAN_BLEEDING
+
+/datum/reagent/tricordrazine/jew
+	name = "Jewrenium"
+	description = "Nobody really knows what the fuck that is and who the fuck are jews. People says only rich people can truely taste JEWRENIUM."
+	taste_description = "dirty dollar"
+	color = "#08641c"
+	scannable = 1 // Yes. Why not?
+	value = 20
+	glass_name = "liqufied money"
+	glass_desc = "It's a glass of... ripped money"
+
+/datum/reagent/tricordrazine/jew/affect_blood(mob/living/carbon/M, alien, removed)
+	if(!(ishuman(M)))
+		return
+	var/mob/living/carbon/human/H = M
+	//Let's get rid of those stupid pesky hobos
+	//Syndies are fine tho
+	if((H.char_branch.name != "Free Trade Union") && (H.char_branch.name != "Consortium of Trans-Star Corporations"))
+		return
+	M.heal_organ_damage(4 * removed, 4 * removed) //Slightly buffed tric. Might be Excessive.

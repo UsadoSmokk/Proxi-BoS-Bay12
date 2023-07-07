@@ -51,7 +51,7 @@
 /obj/item/material/Value()
 	return material.value * worth_multiplier
 
-/obj/item/spacecash/Value()
+/obj/item/reagent_containers/food/snacks/spacecash/Value()
 	return worth
 
 /mob/living/carbon/human/Value(var/base)
