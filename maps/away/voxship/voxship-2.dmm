@@ -580,8 +580,8 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/item/spacecash/bundle/c500,
-/obj/item/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/dorms)
 "hE" = (
@@ -1212,7 +1212,7 @@
 /obj/random/contraband,
 /obj/random/contraband,
 /obj/random/contraband,
-/obj/item/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
 /turf/simulated/floor/tiled/dark/vox,
 /area/voxship/dorms)
 "nA" = (
@@ -1467,9 +1467,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/item/spacecash/bundle/c500,
-/obj/item/spacecash/bundle/c500,
-/obj/item/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/voxship/dorms)
 "qi" = (
@@ -1546,9 +1546,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey,
-/obj/item/spacecash/bundle/c500,
-/obj/item/spacecash/bundle/c500,
-/obj/item/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -3887,7 +3887,7 @@
 "SG" = (
 /obj/structure/table/standard,
 /obj/item/modular_computer/tablet/preset/custom_loadout/advanced,
-/obj/item/spacecash/bundle/c500,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
@@ -4399,12 +4399,12 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/dock)
 "Xk" = (
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
 /obj/item/implanter/loyalty,
 /obj/item/device/powersink,
 /obj/item/portable_destructive_analyzer,

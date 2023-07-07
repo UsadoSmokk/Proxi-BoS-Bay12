@@ -246,7 +246,7 @@ GLOBAL_DATUM_INIT(mini_role, /datum/antagonist/mini_roles, new)
 	name = "Крыса"
 	desc = "Может они держат в плену всё что Вам дорого, а может Вы уже не в первый раз вставляете нож в спину своим хозяевам. Как-бы то не было, Вы согласились найти для кое-кого компрометирующую информацию на миссию Кастельнау. Ходите, смотрите и слушайте. Эти военные преступники наверняка не заставят Вас долго ждать."
 	objective = "Доживите до конца смены сохранив свою роль в секрете."
-	gear = list(/obj/item/storage/box/syndie_kit/spy, /obj/item/spacecash/bundle/c2000, /obj/item/storage/box/radiokeys, /obj/item/device/uv_light, /obj/item/device/camera, /obj/item/device/taperecorder)
+	gear = list(/obj/item/storage/box/syndie_kit/spy, /obj/item/reagent_containers/food/snacks/spacecash/bundle/c2000, /obj/item/storage/box/radiokeys, /obj/item/device/uv_light, /obj/item/device/camera, /obj/item/device/taperecorder)
 	random_gear = 2
 
 /datum/mini_role/rat/special_act(var/mob/living/carbon/human/target)
@@ -357,8 +357,8 @@ GLOBAL_DATUM_INIT(mini_role, /datum/antagonist/mini_roles, new)
 /datum/mini_role/regcom_agent
 	name = "Агент РегКома"
 	desc = "Краем уха Вы услышали о будущих приказах фрау Марты к Кастельнау. Если Вы сможете сделать приказ ещё до того, как он опубликуется, то Вас может ждать очень приятная награда. Конечно, лучше будет сделать вид что всё это вышло 'случайно'."
-	gear = list(/obj/item/storage/lockbox/loyalty, /obj/item/storage/box/syndie_kit/imp_explosive, /obj/item/storage/box/syndie_kit/imp_imprinting, /obj/item/spacecash/bundle/c2000,
-				/obj/item/spacecash/bundle/c2000, /obj/item/spacecash/bundle/c2000, /obj/item/spacecash/bundle/c1000, /obj/item/spacecash/bundle/c1000, /obj/item/spacecash/bundle/c1000)
+	gear = list(/obj/item/storage/lockbox/loyalty, /obj/item/storage/box/syndie_kit/imp_explosive, /obj/item/storage/box/syndie_kit/imp_imprinting, /obj/item/reagent_containers/food/snacks/spacecash/bundle/c2000,
+				/obj/item/reagent_containers/food/snacks/spacecash/bundle/c2000, /obj/item/reagent_containers/food/snacks/spacecash/bundle/c2000, /obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000, /obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000, /obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000)
 	random_gear = 3
 
 /datum/mini_role/regcom_agent/special_act(var/mob/living/carbon/human/target)
@@ -510,7 +510,7 @@ GLOBAL_DATUM_INIT(mini_role, /datum/antagonist/mini_roles, new)
 	name = "Авторитет"
 	desc = "Девяностые"
 	objective = "Доживите до конца смены вместе со всеми членами своей группировки."
-	gear = list(/obj/random/handgun, /obj/item/clothing/mask/balaclava, /obj/item/storage/box/syndie_kit/imp_imprinting, /obj/item/grenade/smokebomb, /obj/item/spacecash/bundle/c1000, /obj/item/melee/energy/knife)
+	gear = list(/obj/random/handgun, /obj/item/clothing/mask/balaclava, /obj/item/storage/box/syndie_kit/imp_imprinting, /obj/item/grenade/smokebomb, /obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000, /obj/item/melee/energy/knife)
 	random_gear = 2
 
 /datum/mini_role/authority/special_act(var/mob/living/carbon/human/target)

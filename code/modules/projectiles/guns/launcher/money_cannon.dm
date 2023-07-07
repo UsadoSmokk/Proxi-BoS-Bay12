@@ -31,7 +31,7 @@
 			nv++
 		if (!nv)
 			break
-		var/obj/item/spacecash/bundle/bling = new(T)
+		var/obj/item/reagent_containers/food/snacks/spacecash/bundle/bling = new(T)
 		bling.worth = nv
 		bling.update_icon()
 		if(projectile_vomit)
@@ -65,14 +65,14 @@
 		to_chat(user, "<span class='warning'>There's no money in [src].</span>")
 		return
 
-	var/obj/item/spacecash/bling = new /obj/item/spacecash/bundle()
+	var/obj/item/reagent_containers/food/snacks/spacecash/bling = new /obj/item/reagent_containers/food/snacks/spacecash/bundle()
 	bling.worth = receptacle_value
 	bling.update_icon()
 	user.put_in_hands(bling)
 	to_chat(user, "<span class='notice'>You eject [receptacle_value] [GLOB.using_map.local_currency_name_singular] from [src]'s receptacle.</span>")
 	receptacle_value = 0
 
-/obj/item/gun/launcher/money/proc/absorb_cash(var/obj/item/spacecash/bling, mob/user)
+/obj/item/gun/launcher/money/proc/absorb_cash(var/obj/item/reagent_containers/food/snacks/spacecash/bling, mob/user)
 	if(!istype(bling) || !bling.worth || bling.worth < 1)
 		to_chat(user, "<span class='warning'>[src] refuses to pick up [bling].</span>")
 		return
@@ -96,7 +96,7 @@
 	if(!receptacle_value || receptacle_value < 1)
 		return null
 
-	var/obj/item/spacecash/bling = new /obj/item/spacecash/bundle()
+	var/obj/item/reagent_containers/food/snacks/spacecash/bling = new /obj/item/reagent_containers/food/snacks/spacecash/bundle()
 	if(receptacle_value >= dispensing)
 		bling.worth = dispensing
 		receptacle_value -= dispensing
@@ -130,8 +130,8 @@
 		return ..()
 
 /obj/item/gun/launcher/money/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W, /obj/item/spacecash))
-		var/obj/item/spacecash/bling = W
+	if(istype(W, /obj/item/reagent_containers/food/snacks/spacecash))
+		var/obj/item/reagent_containers/food/snacks/spacecash/bling = W
 		if(bling.worth < 1)
 			to_chat(user, "<span class='warning'>You can't seem to get the bills to slide into the receptacle.</span>")
 			return

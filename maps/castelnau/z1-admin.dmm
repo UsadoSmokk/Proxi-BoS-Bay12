@@ -9162,11 +9162,11 @@
 /area/merchant_station)
 "aRI" = (
 /obj/structure/table/steel,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
-/obj/item/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
+/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000,
 /obj/item/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9

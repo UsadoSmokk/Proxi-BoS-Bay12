@@ -199,7 +199,7 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 
 /datum/antag_contract/item/dump/check(obj/item/storage/container)
 	var/received = 0
-	for(var/obj/item/spacecash/cash in container)
+	for(var/obj/item/reagent_containers/food/snacks/spacecash/cash in container)
 		received += cash.worth
 	return received >= sum
 
