@@ -150,7 +150,8 @@
 
 
 GLOBAL_LIST_INIT(jukebox_tracks, list(
-	/decl/audio/track/kabak,			//Bos starts,
+	/decl/audio/track/californiadreamin,			//Bos starts,
+	/decl/audio/track/kabak,
 	/decl/audio/track/drunkensailor,
 	/decl/audio/track/rain,
 	/decl/audio/track/endoftheworld,

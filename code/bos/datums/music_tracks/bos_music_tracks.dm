@@ -177,3 +177,11 @@
 	license = /decl/license/grandfathered //ee
 	url = "https://youtu.be/5sTjwrK7lbY"
 	volume = 30
+
+/decl/audio/track/californiadreamin
+	title = "California Dreamin"
+	author = "The Mamas and The Papas"
+	source = 'sound/music/bos/california.ogg'
+	license = /decl/license/grandfathered //ee
+	url = "https://youtu.be/oU6uUEwZ8FM"
+	volume = 30
