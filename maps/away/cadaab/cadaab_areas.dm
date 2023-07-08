@@ -91,6 +91,11 @@
 	icon_state = "engineering"
 	req_access = list(access_castelnau_engineering)
 
+/area/cadaab/outpost/eng/energy_storage
+	name = "Outpost - Energy Storage"
+	icon_state = "engineering"
+	req_access = list(access_castelnau_engineering)
+
 /area/cadaab/outpost/sec
 	name = "Outpost - Security"
 	icon_state = "security"
