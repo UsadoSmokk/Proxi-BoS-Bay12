@@ -1047,7 +1047,7 @@
 "Kg" = (/obj/effect/paint/merc,/obj/effect/paint_stripe/blue,/turf/simulated/wall/r_wall,/area/cadaab/outpost/teleport)
 "Kh" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/door/blast/shutters/open,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk)
 "Kk" = (/obj/effect/floor_decal/inaks{dir = 4},/obj/item/storage/mgsbox/loot_accesory,/turf/simulated/floor/inaks/asphalt,/area/cadaab/shahtinsk)
-"Km" = (/obj/effect/landmark/corpse/miner,/obj/item/spacecash/bundle/c500,/obj/item/spacecash/bundle/c200,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
+"Km" = (/obj/effect/landmark/corpse/miner,/obj/item/reagent_containers/food/snacks/spacecash/bundle/c500,/obj/item/reagent_containers/food/snacks/spacecash/bundle/c200,/turf/simulated/floor/exoplanet/cadaab,/area/cadaab/caves)
 "Kn" = (/obj/effect/floor_decal/corner/black/diagonal,/obj/item/storage/mgsbox/clear,/obj/machinery/light/small{dir = 1},/turf/simulated/floor/tiled/freezer,/area/cadaab/shahtinsk)
 "Ko" = (/obj/item/stack/cable_coil/yellow,/turf/simulated/floor/inaks/dark_cafel,/area/cadaab/desert)
 "Kp" = (/obj/structure/reagent_dispensers/beerkeg,/turf/simulated/floor/exoplanet/desert/cadaab,/area/cadaab/desert)

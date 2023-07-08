@@ -158,12 +158,12 @@
 		if (I) //for IDs and PDAs and wallets with IDs
 			paid = pay_with_card(I,W)
 			handled = 1
-		else if (istype(W, /obj/item/spacecash/ewallet))
-			var/obj/item/spacecash/ewallet/C = W
+		else if (istype(W, /obj/item/reagent_containers/food/snacks/spacecash/ewallet))
+			var/obj/item/reagent_containers/food/snacks/spacecash/ewallet/C = W
 			paid = pay_with_ewallet(C)
 			handled = 1
-		else if (istype(W, /obj/item/spacecash/bundle))
-			var/obj/item/spacecash/bundle/C = W
+		else if (istype(W, /obj/item/reagent_containers/food/snacks/spacecash/bundle))
+			var/obj/item/reagent_containers/food/snacks/spacecash/bundle/C = W
 			paid = pay_with_cash(C)
 			handled = 1
 
@@ -174,7 +174,7 @@
 			SSnano.update_uis(src)
 			return TRUE // don't smack that machine with your 2 thalers
 
-	if (I || istype(W, /obj/item/spacecash))
+	if (I || istype(W, /obj/item/reagent_containers/food/snacks/spacecash))
 		attack_hand(user)
 		return TRUE
 	if(isMultitool(W) || isWirecutter(W))
@@ -216,7 +216,7 @@
 /**
  *  Receive payment with cashmoney.
  */
-/obj/machinery/vending/proc/pay_with_cash(var/obj/item/spacecash/bundle/cashmoney)
+/obj/machinery/vending/proc/pay_with_cash(var/obj/item/reagent_containers/food/snacks/spacecash/bundle/cashmoney)
 	if(currently_vending.price > cashmoney.worth)
 		// This is not a status display message, since it's something the character
 		// themselves is meant to see BEFORE putting the money in
@@ -241,7 +241,7 @@
  * Takes payment for whatever is the currently_vending item. Returns 1 if
  * successful, 0 if failed.
  */
-/obj/machinery/vending/proc/pay_with_ewallet(var/obj/item/spacecash/ewallet/wallet)
+/obj/machinery/vending/proc/pay_with_ewallet(var/obj/item/reagent_containers/food/snacks/spacecash/ewallet/wallet)
 	visible_message("<span class='info'>\The [usr] swipes \the [wallet] through \the [src].</span>")
 	if(currently_vending.price > wallet.worth)
 		src.status_message = "Insufficient funds on chargecard."
