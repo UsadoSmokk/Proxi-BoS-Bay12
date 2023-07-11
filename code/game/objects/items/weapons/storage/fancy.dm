@@ -23,7 +23,7 @@
 
 /obj/item/storage/fancy/examine(mob/user, distance)
 	. = ..()
-	if(distance > 1)
+	if((distance > 1) || (!opened)) //BoS, was "if(distance > 1)"
 		return
 
 	var/key_name = initial(key_type.name)

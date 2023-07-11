@@ -34,11 +34,12 @@
 #define FACTION_LARMARINES		"Marine Corps"
 #define FACTION_KGB				"Galactic Security Corps"
 
+//OTHER BASTARDS (BOS)
 #define FACTION_LRA				"Patriot Association"
 #define FACTION_SYNDI			"Syndicate"
 #define FACTION_NONE			"Independent"
-
 #define FACTION_REGS			"Regulators"
+#define FACTION_ALI				"Alliance"
 
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"

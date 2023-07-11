@@ -173,6 +173,12 @@ GLOBAL_LIST_EMPTY(zmimic_renderers)
 	group = RENDER_GROUP_SCENE
 	plane = DEFAULT_PLANE
 
+//Draws decorations that higher than FOV and any objects/mobs/turfs, like trees. BoS
+/atom/movable/renderer/game
+	name = "Decorations"
+	group = RENDER_GROUP_SCENE
+	plane = DECORATIONS_PLANE
+
 /// Draws observers; ghosts, camera eyes, etc.
 /atom/movable/renderer/observers
 	name = "Observers"

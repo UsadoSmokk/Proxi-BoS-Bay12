@@ -873,6 +873,7 @@
 	randpixel = 0
 	listening = 1
 	name = "phone"
+	canhear_range = 2 //bos
 
 /obj/item/device/radio/phone/medbay
 	frequency = MED_I_FREQ

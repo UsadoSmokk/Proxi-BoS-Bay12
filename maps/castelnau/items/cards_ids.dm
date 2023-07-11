@@ -21,6 +21,16 @@
 	job_access_type = /datum/job/adjutant
 	detail_color = COLOR_COMMAND_BLUE
 
+/obj/item/card/id/castelnau/crew/emissary
+	desc = "An identification card belonging to the Emissary of the Alliance."
+	job_access_type = /datum/job/emissary
+	detail_color = COLOR_COMMAND_BLUE
+
+/obj/item/card/id/castelnau/crew/commissary
+	desc = "An identification card belonging to the Commissary of the Galactic Security Corps."
+	job_access_type = /datum/job/commissary
+	detail_color = COLOR_COMMAND_BLUE
+
 /obj/item/card/id/castelnau/crewman
 	desc = "An identification card issued to Crewman of the RMV Castelnau."
 	job_access_type = /datum/job/assistant

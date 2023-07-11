@@ -3,7 +3,7 @@
 
 /datum/round_aspect/traps
 	name = "Минное поле"
-	chance = 25
+	chance = 20
 	weight = ASPECT_WEIGHT_TRAPS
 	announce_text = "<span class=\"info\">Ночью чёртовы пираты расставили вокруг и внутри аванпоста около сотни мин. Смотрите под ноги на Кадаабе!</span>"
 	var/area/spawn_area = /area/maintenance

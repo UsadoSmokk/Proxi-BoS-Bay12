@@ -1,14 +1,14 @@
 /datum/job/senior_engineer
 	title = "Senior Engineer"
 	department = "Engineering"
-	department_flag = COM|ENG
+	department_flag = ENG
 	supervisors = "the Captain, the First Mate and the Coordinator"
 	selection_color = "#5b4d20"
 
 	total_positions = 1
 	spawn_positions = 1
 	economic_power = 6
-	minimal_player_age = 14
+	minimal_player_age = 7
 	ideal_character_age = 34
 	allowed_branches = list(/datum/mil_branch/reg,
 							/datum/mil_branch/mil)
@@ -42,6 +42,7 @@
 	access_castelnau_atmospherics,
 	access_castelnau_thrusters,
 	access_castelnau_englab,
+	access_castelnau_seneng,
 	access_castelnau_maint_tunnels,
 	access_castelnau_external_airlocks,
 	access_atmospherics,
@@ -65,7 +66,6 @@
 
 	total_positions = 2
 	spawn_positions = 2
-	minimal_player_age = 7
 	ideal_character_age = 25
 	economic_power = 4
 
@@ -83,6 +83,7 @@
 						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/eng,
 						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng,
 						/datum/mil_rank/par/yak = /decl/hierarchy/outfit/job/castelnau/yak/eng,
+						/datum/mil_rank/par/barb = /decl/hierarchy/outfit/job/castelnau/barb/eng,
 						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/eng)
 
 	skill_points = 20
@@ -127,7 +128,6 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	minimal_player_age = 7
 	ideal_character_age = 25
 	economic_power = 4
 	give_psionic_implant_on_join = FALSE
@@ -137,6 +137,7 @@
 							/datum/mil_branch/par, /datum/mil_branch/syndi)
 	allowed_ranks = list(
 						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/psi,
+						/datum/mil_rank/par/barb = /decl/hierarchy/outfit/job/castelnau/barb/eng/psi,
 						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/eng)
 
 	skill_points = 20
@@ -184,6 +185,7 @@
 	department_flag = ENG
 	total_positions = 2
 	spawn_positions = 2
+	minimal_player_age = 7
 	supervisors = "the Senior Engineer"
 	alt_titles = list(
 		"Biomechanical Engineer")
@@ -207,6 +209,7 @@
 						/datum/mil_rank/mil/lss = /decl/hierarchy/outfit/job/castelnau/lss/eng/rev,
 						/datum/mil_rank/mil/iccg = /decl/hierarchy/outfit/job/castelnau/terran/eng/rev,
 						/datum/mil_rank/par = /decl/hierarchy/outfit/job/castelnau/par/eng/rev,
+						/datum/mil_rank/par/barb = /decl/hierarchy/outfit/job/castelnau/barb/eng/rev,
 						/datum/mil_rank/syndi = /decl/hierarchy/outfit/job/castelnau/syndi/eng/rev)
 
 	access = list(

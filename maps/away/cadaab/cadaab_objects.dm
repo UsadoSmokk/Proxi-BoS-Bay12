@@ -40,13 +40,16 @@
 	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "grave"
 
+
 /obj/structure/steelfence
 	name = "steel fence"
 	desc = "A flimsy lattice of metal rods, with screws to secure it to the floor."
 	icon = 'maps/away/cadaab/icons/objects.dmi'
 	icon_state = "steelfence"
+	atom_flags = ATOM_FLAG_CLIMBABLE
 	anchored = TRUE
 	density = TRUE
+	plane = DECORATIONS_PLANE
 	health_max = 30
 
 /obj/structure/steelfence/attackby(obj/item/W as obj, mob/user as mob)
@@ -59,8 +62,37 @@
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		damage_health(W.force, W.damtype)
 		..()
+
 /obj/structure/steelfence/on_death()
+	if(prob(60))
+		new /obj/item/stack/material/rods(get_turf(src))
+
 	qdel(src)
+
+/obj/structure/steelfence/door
+	name = "steel fence door"
+	icon_state = "fencedoor"
+
+/obj/structure/steelfence/door/Click(location, control, params)
+	. = ..()
+	if((usr.a_intent != I_HURT) && (src in view(1, usr)) && (istype(usr, /mob/living/carbon/human)) && (!usr.incapacitated()))
+		usr.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		close_open()
+
+/obj/structure/steelfence/door/Bumped(atom/AM)
+	close_open()
+	. = ..()
+
+/obj/structure/steelfence/door/proc/close_open()
+	if(icon_state == "fencedoor")
+		icon_state = "fencedooropen"
+		playsound(src, 'sound/effects/bos/fence_door.ogg', 50)
+		density = FALSE
+	else
+		icon_state = "fencedoor"
+		playsound(src, 'sound/effects/bos/fence_door.ogg', 50)
+		density = TRUE
+
 
 /obj/machinery/door/unpowered/simple/cadaab
 	name = "steel fence door"
@@ -152,6 +184,7 @@
 	anchored = TRUE
 	density = TRUE
 	health_max = 30
+	plane = DECORATIONS_PLANE
 
 /obj/structure/ads/attackby(obj/item/W as obj, mob/user as mob)
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -169,6 +202,13 @@
 	name = "CYBER KILLER RETRO advertising panel"
 	icon_state = "retro"
 
+/obj/effect/decal/weeks
+	name = "status display"
+	desc = "It says, 'Decontamination in two weeks.'"
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	icon_state = "2weeks"
+	anchored = 1
+
 /obj/effect/floor_decal/holecadaab
 	name = "hole"
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
@@ -185,6 +225,11 @@
 	name = "graffiti"
 	desc = "Our mighty Lord"
 	icon_state = "booker"
+
+/obj/effect/decal/cleanable/cadaab/bio
+	name = "biohazard graffiti"
+	desc = "You probably shouldn't go here."
+	icon_state = "bio"
 
 /obj/effect/floor_decal/cadaab
 	icon = 'maps/away/cadaab/icons/turfs.dmi'
@@ -277,3 +322,23 @@
 				/obj/effect/floor_decal/cadaab/grass_13,
 				/obj/effect/floor_decal/cadaab/grass_14,
 				/obj/effect/floor_decal/cadaab/grass_15)
+
+/obj/machinery/locked_console
+	name = "console"
+	desc = "Robust flight console. Control of this one is blocked remotely."
+	icon = 'maps/away/cadaab/icons/objects.dmi'
+	density = 1
+	anchored = 1
+	icon_state = "console"
+	frame_type = /obj/machinery/constructable_frame/computerframe/deconstruct
+	construct_state = /decl/machine_construction/default/panel_closed/computer
+
+/obj/machinery/locked_console/attackby(obj/item/I, mob/user)
+	if (isScrewdriver(I) || isWrench(I) || isCrowbar(I))
+		return ..() // handled by construction
+	if (user.a_intent != I_HURT)
+		audible_message(SPAN_WARNING("Access denied under order of the High Regulator Command! Stated reason: Mission is not completed."))
+		return ..()
+
+/obj/machinery/telecomms/allinone/castelnau
+	listening_freqs = list(PUB_FREQ, HAIL_FREQ, SEC_FREQ, MED_FREQ, SUP_FREQ, SRV_FREQ, COMM_FREQ)

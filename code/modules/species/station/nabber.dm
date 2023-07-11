@@ -9,6 +9,7 @@
 	new environment."
 	hidden_from_codex = FALSE
 	silent_steps = TRUE
+	datum_usefov = 0 //BoS
 
 	antaghud_offset_y = 8
 

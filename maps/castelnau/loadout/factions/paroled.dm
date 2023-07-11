@@ -2,6 +2,12 @@
 	sort_category = "|F| Alt-Hired"
 	category = /datum/gear/fr_paroled
 
+/datum/gear/fr_paroled/razor
+	display_name = "razor"
+	path = /obj/item/material/knife/bos/razor
+	allowed_branches = ALTH
+	cost = 3
+
 /datum/gear/fr_paroled/balisong
 	display_name = "butterfly knife"
 	path = /obj/item/material/knife/folding/combat/balisong

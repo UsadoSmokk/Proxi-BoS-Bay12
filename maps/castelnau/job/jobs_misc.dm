@@ -27,8 +27,8 @@
 
 /datum/job/wanderer
 	title = "Wanderer"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "your conscience"
 	selection_color = "#515151"
 	department = "Civilian"
@@ -43,3 +43,6 @@
 	allowed_ranks = list(/datum/mil_rank/other)
 	give_psionic_implant_on_join = FALSE
 	required_language = LANGUAGE_HUMAN_LORD
+
+/datum/job/wanderer/get_description_blurb()
+	return "Вы являетесь жителем или временным посетителем Кадааба. Ваша предыстория и мотивы ограничиваются лишь вашей фантазией"

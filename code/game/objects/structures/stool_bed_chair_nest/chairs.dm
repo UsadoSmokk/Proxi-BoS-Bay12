@@ -9,6 +9,7 @@
 	obj_flags = OBJ_FLAG_ROTATABLE
 	var/propelled = 0 // Check for fire-extinguisher-driven chairs
 	buckle_movable = TRUE
+	plane = GAME_PLANE_FOV_HIDDEN //BoS
 
 /obj/structure/bed/chair/do_simple_ranged_interaction(var/mob/user)
 	if(!buckled_mob && user)

@@ -1,4 +1,4 @@
-# BoS-BAY - "We Broke Everything Again" Edition
+# BoS-BAY - "Less broken" Edition
 Модификация модификации, основывающаяся на модификации модификации, да. К этому моменту мне уже сложно называть билд модификацией.
 
 Оригинал - [Baystation12](https://github.com/baystation12/baystation12)

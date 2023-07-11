@@ -381,10 +381,10 @@
 		'html/images/torchlogo.png',
 		'html/images/sfplogo.png',
 		'html/images/sovlogo.png',
-		'customs/img/passport.png',
-		'customs/img/workpass.png',
-		'customs/img/lordaniavisa.png',
-		'customs/xri.png' //bos
+		'customs/img/passport.png', //bos
+		'customs/img/workpass.png', //bos
+		'customs/img/lordaniavisa.png', //bos
+		'customs/img/earth.png' //bos
 		)
 	addtimer(CALLBACK(src, .proc/after_send_resources), 1 SECOND)
 

@@ -136,6 +136,7 @@
 	return list(
 		/obj/item/clothing/head/helmet,
 		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/clothing/accessory/storage/holster/thigh,
 		/obj/item/gunbox/sidearm/infantry,
 		/obj/item/device/radio,
 		/obj/item/device/tape/random,
@@ -167,6 +168,7 @@
 	return list(
 		/obj/item/clothing/head/helmet,
 		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/clothing/accessory/storage/holster/thigh,
 		/obj/item/gunbox/sidearm/infantry,
 		/obj/item/device/radio,
 		/obj/item/device/gps,

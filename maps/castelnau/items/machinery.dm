@@ -1,5 +1,5 @@
 //castelnau telecommunications
-/obj/machinery/telecomms/hub/preset
+/*/obj/machinery/telecomms/hub/preset
 	id = "Hub"
 	network = "tcommsat"
 	autolinkers = list("hub", "relay", "c_relay", "s_relay", "m_relay", "r_relay", "b_relay", "1_relay", "2_relay", "3_relay", "4_relay", "5_relay", "s_relay", "science", "medical",
@@ -27,7 +27,7 @@
 	freq_listening = list(EXP_FREQ)
 	channel_tags = list(list(EXP_FREQ, "Exploration", COMMS_COLOR_EXPLORER))
 	autolinkers = list("Exploration")
-
+*/
 // Vending machines & dispensers
 /obj/machinery/vending/security
 	products = list(

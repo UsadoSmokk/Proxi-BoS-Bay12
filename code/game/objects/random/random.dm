@@ -923,12 +923,12 @@ GLOBAL_LIST_INIT(random_backpacks, list(
 	icon_state = "spacecash1"
 
 /obj/random/cash/spawn_choices()
-	return list(/obj/item/spacecash/bundle/c1 = 4,
-				/obj/item/spacecash/bundle/c10 = 3,
-				/obj/item/spacecash/bundle/c20 = 3,
-				/obj/item/spacecash/bundle/c50 = 2,
-				/obj/item/spacecash/bundle/c100 = 2,
-				/obj/item/spacecash/bundle/c1000 = 1)
+	return list(/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1 = 4,
+				/obj/item/reagent_containers/food/snacks/spacecash/bundle/c10 = 3,
+				/obj/item/reagent_containers/food/snacks/spacecash/bundle/c20 = 3,
+				/obj/item/reagent_containers/food/snacks/spacecash/bundle/c50 = 2,
+				/obj/item/reagent_containers/food/snacks/spacecash/bundle/c100 = 2,
+				/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000 = 1)
 
 /obj/random/documents // top secret documents for SCG eyes only
 	name = "random secret documents"

@@ -5,6 +5,7 @@
 	density = TRUE
 	pixel_x = -16
 	layer = ABOVE_HUMAN_LAYER
+	plane = DECORATIONS_PLANE //BoS
 
 /obj/structure/flora/tree/pine
 	name = "pine tree"

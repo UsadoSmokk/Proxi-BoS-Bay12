@@ -8,6 +8,24 @@
 	var/totalPlayersReady = 0
 	var/datum/browser/panel
 	var/show_invalid_jobs = 0
+	var/list/lobby_hints = list(
+		"Гибель может ожидать тебя на каждом шагу. Все смертны, смирись.",
+		"Бой - не всегда лучший выход. Истребление существ из плоти может привести к твоей гибели, так что попробуй уступить, перевести конфликт в другое русло или просто сбежать.",
+		"Вы можете нажать на коробку, чтобы залезть в неё.",
+		"Коробки - самые большие контейнеры в игре. Используйте их для переноса награбленного",
+		"Одеяло можно порезать на тряпки кусачками. Смоченные в топливе тряпки можно засунуть в бутылку.",
+		"У корабля и отделов есть свои банковские счета, доступ к которым можно получить через консоль на мостике. Можете достать оттуда дополнительное финансирование.",
+		"При помощи лома в бак унитаза можно прятать вещи. Используй это, если в дверь ломится налоговая.",
+		"Попробуйте использовать чат, а не левую кнопку мыши для общения с местными.",
+		"Ха! Если Марс падёт, то я откажусь от фамилии Гудман! - Цитата Джона Ракатански",
+		"Потрогайте траву.",
+		"Коробки можно заклеивать при помощи изоленты и ломать некоторыми инструментами",
+		"Солид Григорий не совершил не единого подтверждённого военного преступления",
+		"Не спрашивайте кто такой Боб.",
+		"Хорошего скафандра может быть достаточно, чтобы пережить песчаный шторм.",
+		"Мина может не сработать, когда ты наступил на неё. Но схождение с такой мины все равно вызовет взрыв"
+
+	)
 	universal_speak = TRUE
 
 	invisibility = 101
@@ -34,7 +52,7 @@
 	if (config.wiki_url || config.rules_url || config.lore_url)
 		var/player_age = client?.player_age
 		if (isnum(player_age) && player_age < 7)
-			output += "<b>Welcome! Please check out these links:</b><br>"
+			output += "<b>Рекомендуется к ознакомлению:</b><br>"
 		if (config.wiki_url)
 			output += "<a href='byond://?src=\ref[src];show_wiki=1'>Wiki</a>"
 		if (config.rules_url)
@@ -43,23 +61,23 @@
 			output += "<a href='byond://?src=\ref[src];show_lore=1'>Lore</a>"
 	output += "<hr>"
 	if (GAME_STATE > RUNLEVEL_LOBBY)
-		output += "<a href='byond://?src=\ref[src];manifest=1'>Manifest</a>"
-	output += "<a href='byond://?src=\ref[src];show_preferences=1'>Options</a>"
+		output += "<a href='byond://?src=\ref[src];manifest=1'>Экипаж</a>"
+	output += "<a href='byond://?src=\ref[src];show_preferences=1'>Настройки</a>"
 	output += "<hr>"
-	output += "<b>Playing As</b><br>"
+	output += "<b>Мой подопечный:</b><br>"
 	output += "<a href='byond://?src=\ref[client.prefs];load=1;details=1'>[client.prefs.real_name || "(Random)"]</a><br>"
 	output += client.prefs.job_high ? "[client.prefs.job_high]" : null
 	output += "<hr>"
 	if (GAME_STATE > RUNLEVEL_LOBBY)
-		output += "<a href='byond://?src=\ref[src];late_join=1'>Join As Selected</a>"
+		output += "<a href='byond://?src=\ref[src];late_join=1'>Зайти</a>"
 	else
-		output += "<a [ready?"class='linkOn'":""] href='byond://?src=\ref[src];ready=[!ready]'>Round Start Join</a>"
+		output += "<a [ready?"class='linkOn'":""] href='byond://?src=\ref[src];ready=[!ready]'>Подготовиться</a>"
 	if(config.observers_allowed || check_rights(R_INVESTIGATE|R_DEBUG, 0, src)) //inf
-		output += "<p><a href='byond://?src=\ref[src];observe=1'>Join As Observer</A></p>"
+		output += "<p><a href='byond://?src=\ref[src];observe=1'>Наблюдать</A></p>"
 	output += "<hr>"
-	output += "<i>[GLOB.using_map.get_map_info()||"No information available for the current map."]</i>"
+	output += "<i><b>[pick(lobby_hints)]</b></i>"
 	output += "</div>"
-	panel = new (src, "Welcome","Welcome to [GLOB.using_map.full_name]", 520, 340, src)
+	panel = new (src, "Добро пожаловать","Добро пожаловать на [GLOB.using_map.full_name]", 520, 340, src)
 	panel.set_window_options("can_close=0")
 	panel.set_content(output.Join())
 	panel.open()
@@ -70,19 +88,19 @@
 
 	if(statpanel("Lobby"))
 		if(check_rights(R_INVESTIGATE, 0, src))
-			stat("Game Mode:", "[SSticker.mode ? SSticker.mode.name : SSticker.master_mode] ([SSticker.master_mode])")
+			stat("Режим:", "[SSticker.mode ? SSticker.mode.name : SSticker.master_mode] ([SSticker.master_mode])")
 		else
-			stat("Game Mode:", PUBLIC_GAME_MODE)
+			stat("Режим:", PUBLIC_GAME_MODE)
 
 		var/extra_antags = list2params(additional_antag_types)
-		stat("Added Antagonists:", extra_antags ? extra_antags : "None")
-		stat("Initial Continue Vote:", "[round(config.vote_autotransfer_initial / 600, 1)] minutes")
-		stat("Additional Vote Every:", "[round(config.vote_autotransfer_interval / 600, 1)] minutes")
+		stat("Добавленные антагонисты:", extra_antags ? extra_antags : "None")
+		stat("Начальное голосование:", "[round(config.vote_autotransfer_initial / 600, 1)] minutes")
+		stat("Следующее голосование за продолжение:", "[round(config.vote_autotransfer_interval / 600, 1)] minutes")
 
 		if(GAME_STATE <= RUNLEVEL_LOBBY)
-			stat("Time To Start:", "[round(SSticker.pregame_timeleft/10)][SSticker.round_progressing ? "" : " (DELAYED)"]")
-			stat("Players needed to start: [SSticker.players_to_start]", totalPlayers >= SSticker.players_to_start ? "" : "Not enough players to start")
-			stat("Players: [totalPlayers]", "Players Ready: [totalPlayersReady]")
+			stat("До старта:", "[round(SSticker.pregame_timeleft/10)][SSticker.round_progressing ? "" : " (DELAYED)"]")
+			stat("Необходимо игроков: [SSticker.players_to_start]", totalPlayers >= SSticker.players_to_start ? "" : "Недостаточно игроков для старта")
+			stat("Игроков: [totalPlayers]", "Игроков готово: [totalPlayersReady]")
 			totalPlayers = 0
 			totalPlayersReady = 0
 			var/we_are_admin = isadmin(src)
@@ -93,7 +111,7 @@
 				if (player.client)
 					var/show_ready = player.client.get_preference_value(/datum/client_preference/show_ready) == GLOB.PREF_SHOW
 					if (player.client.prefs?.job_high)
-						highjob = " as [player.client.prefs.job_high]"
+						highjob = " в роли [player.client.prefs.job_high]"
 					if (!player.is_stealthed())
 						var/can_see_hidden = check_rights(R_INVESTIGATE, 0)
 						var/datum/game_mode/mode = SSticker.pick_mode(SSticker.master_mode)
@@ -316,8 +334,8 @@
 	var/name = client.prefs.real_name
 
 	var/list/header = list("<html><body><center>")
-	header += "<b>Welcome, [name].<br></b>"
-	header += "Round Duration: [roundduration2text()]<br>"
+	header += "<b>Привет, [name].<br></b>"
+	header += "С начала раунда: [roundduration2text()]<br>"
 
 	if(evacuation_controller.has_evacuated())
 		header += "<font color='red'><b>[station_name()] была эвакуирована.</b></font><br>"
@@ -325,7 +343,7 @@
 		if(evacuation_controller.emergency_evacuation) // Emergency shuttle is past the point of no recall
 			header += "<font color='red'>[station_name()] в текущий момент эвакуируется.</font><br>"
 		else                                           // Crew transfer initiated
-			header += "<font color='red'>[station_name()] в текущий момент перемещается в следующий сектор.</font><br>"
+			header += "<font color='red'>[station_name()] в текущий момент переживает трансляцию.</font><br>"
 
 	var/list/dat = list()
 	dat += "Выберите одну из доступных ролей:<br>"
@@ -384,18 +402,18 @@
 [/ORIG]*/
 //[INF]
 	var/list/categorizedJobs = list(
-		"Command" = list(jobs = list(), dep = COM, color = "#aac1ee"),
-		"Command Support" = list(jobs = list(), dep = SPT, color = "#aac1ee"),
-		"Engineering" = list(jobs = list(), dep = ENG, color = "#ffd699"),
-		"Security" = list(jobs = list(), dep = SEC, color = "#ff9999"),
-		"Miscellaneous" = list(jobs = list(), dep = CIV, color = "#ffffff", colBreak = 1),
-		"Synthetic" = list(jobs = list(), dep = MSC, color = "#ccffcc"),
-		"Service" = list(jobs = list(), dep = SRV, color = "#cccccc"),
-		"Medical" = list(jobs = list(), dep = MED, color = "#99ffe6"),
-		"Science" = list(jobs = list(), dep = SCI, color = "#e6b3e6", colBreak = 1),
-		"Auxiliary" = list(jobs = list(), dep = SUP, color = "#ead4ae"),
-		"Expedition" = list(jobs = list(), dep = EXP, color = "#ffd699"),
-		"Marines" = list(jobs = list(), dep = INF, color = "#557e38"),
+		"Главари" = list(jobs = list(), dep = COM, color = "#aac1ee"),
+		"Друзья главарей" = list(jobs = list(), dep = SPT, color = "#aac1ee"),
+		"Работяги" = list(jobs = list(), dep = ENG, color = "#ffd699"),
+		"Громилы" = list(jobs = list(), dep = SEC, color = "#ff9999"),
+		"Прочие" = list(jobs = list(), dep = CIV, color = "#ffffff", colBreak = 1),
+		"Роботы" = list(jobs = list(), dep = MSC, color = "#ccffcc"),
+		"Обслуга" = list(jobs = list(), dep = SRV, color = "#cccccc"),
+		"Врачеватели" = list(jobs = list(), dep = MED, color = "#99ffe6"),
+		"ВАС НЕ СУЩЕСТВУЕТ" = list(jobs = list(), dep = SCI, color = "#e6b3e6", colBreak = 1),
+		"Торгаши" = list(jobs = list(), dep = SUP, color = "#ead4ae"),
+		"ВАС ТОЖЕ" = list(jobs = list(), dep = EXP, color = "#ffd699"),
+		"КТО ВЫЫЫЫ" = list(jobs = list(), dep = INF, color = "#557e38"),
 		"ERROR" = list(jobs = list(), color = "#ffffff", colBreak = 1)
 		)
 
@@ -507,7 +525,7 @@
 		additional_dat += "<br>"
 		dat = additional_dat + dat
 	dat = header + dat
-	var/datum/browser/popup = new(src, "latechoices", "Choose Profession", 1050, 900)
+	var/datum/browser/popup = new(src, "latechoices", "Выбрать роль", 1050, 900)
 	popup.add_stylesheet("playeroptions", 'html/browser/playeroptions.css')
 	popup.set_content(jointext(dat, null))
 	popup.open(0) // 0 is passed to open so that it doesn't use the onclose() proc

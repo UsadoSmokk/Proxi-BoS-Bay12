@@ -177,7 +177,7 @@
 
 /obj/item/storage/secure/briefcase/money
 
-	startswith = list(/obj/item/spacecash/bundle/c1000 = 5) //BoS, was 10k
+	startswith = list(/obj/item/reagent_containers/food/snacks/spacecash/bundle/c1000 = 5) //BoS, was 10k
 
 /obj/item/storage/backpack/satchel/syndie_kit/armor
 	startswith = list(

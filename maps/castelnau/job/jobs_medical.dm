@@ -3,7 +3,7 @@
 	department = "Medical"
 	department_flag = MED
 
-	minimal_player_age = 14
+	minimal_player_age = 7
 	ideal_character_age = 45
 	total_positions = 1
 	spawn_positions = 1
@@ -92,9 +92,9 @@
 /datum/job/redactor
 	title = "Redactor"
 	total_positions = 1
+	department_flag = MED
 	spawn_positions = 1
 	economic_power = 4
-	minimum_character_age = list(SPECIES_HUMAN = 24)
 	minimal_player_age = 0
 	selection_color = "#029b97"
 	supervisors = "the Surgeon and the Coordinator"

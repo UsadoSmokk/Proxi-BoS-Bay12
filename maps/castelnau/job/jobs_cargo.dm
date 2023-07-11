@@ -6,7 +6,6 @@
 	spawn_positions = 2
 	supervisors = "the Chief Merchant"
 	economic_power = 8
-	minimal_player_age = 7
 	ideal_character_age = 35
 	selection_color = "#755c48"
 	outfit_type = /decl/hierarchy/outfit/job/cheapskate/cargo

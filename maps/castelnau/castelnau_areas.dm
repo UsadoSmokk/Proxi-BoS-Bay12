@@ -456,6 +456,27 @@ CREATE_CST_AREA(engineering/robotics)
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_castelnau_englab)
 
+
+CREATE_CST_AREA(maintenance/auxsolarport)
+	name = "Solar Maintenance - Port"
+	icon_state = "SolarcontrolP"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_castelnau_engine, access_castelnau_maint_tunnels)
+
+CREATE_CST_AREA(maintenance/auxsolarstarboard)
+	name = "Solar Maintenance - Starboard"
+	icon_state = "SolarcontrolS"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_castelnau_engine, access_castelnau_maint_tunnels)
+
+CREATE_CST_AREA(solar/auxstarboard)
+	name = "\improper Fore Starboard Solar Array"
+	icon_state = "panelsA"
+
+CREATE_CST_AREA(solar/port)
+	name = "\improper Port Auxiliary Solar Array"
+	icon_state = "panelsP"
+
 CREATE_CST_AREA(storage/tech)
 	name = "Technical Storage"
 	icon_state = "storage"
@@ -805,3 +826,7 @@ CREATE_CST_AREA(civ/kitchen_backroom)
 	icon_state = "shuttle3"
 	requires_power = 0
 	req_access = list(access_cent_storage)
+
+/area/reallyunknownthing
+	name = "Unknown"
+	forced_ambience = list('sound/ambience/bos/bob.ogg')

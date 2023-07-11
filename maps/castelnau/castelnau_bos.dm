@@ -1,3 +1,6 @@
+	#include "bos/navigator_powers.dm"
+
+	#include "bos/effects/cent_guys.dm"
 	#include "bos/effects/decal.dm"
 
 	#include "bos/items/choco.dm"

@@ -190,7 +190,12 @@
 
 	#include "loadout/~defines.dm"
 
-	#include "voronezh/bigbooker.dm"
+	#include "torch1_deck5.dmm"
+	#include "torch2_deck4.dmm"
+	#include "torch3_deck3.dmm"
+	#include "torch4_deck2.dmm"
+	#include "torch5_deck1.dmm"
+	#include "torch6_bridge.dmm"
 	#include "z1_admin.dmm"
 	#include "z2_transit.dmm"
 

@@ -29,14 +29,28 @@
 	else
 		icon_state = "[initial(icon_state)]"
 
+/obj/machinery/noisetv/proc/playnoise()
+	playsound(src, pick('sound/ambience/bos/noise.ogg', 'sound/ambience/bos/noise2.ogg','sound/ambience/bos/noise3.ogg'), 50)
+	if(prob(10))
+		var/phrase_1 = pick("A victorious day", "The Day of Mourning", "Great event", "The-e-e-e-e", "A new decision has been made", "A measure of necessity")
+		var/phrase_2 = pick("Boris Booker", "Gensek Goodman", "Lord-Regent", "Lord-Protector", "Hub Council", "Syndicate Dirrectors", "Alliance of Humanity High Consulate", "Frau Marta")
+		var/phrase_3 = pick("Name it Fiolet Danger", "Danger of rebuilding vox Empire", "Status of Mirania", "Last tajaras", "Strange fleet Ellipse", "Not repeat the era of Silence", "New warlord", "Recover of the Patriots", "Strange signals from deep space")
+		visible_message(SPAN_NOTICE("Noise-covered voices come from the [src]: '[phrase_1]... [phrase_2]... [phrase_3]'"))
+	if(on)
+		addtimer(CALLBACK(src, .proc/playnoise), 5 SECONDS)
+
 /obj/machinery/noisetv/proc/endnoise()
 	on = !on
 	if(on)
 		audible_message(SPAN_WARNING("[src] makes a terrible noise! You don't think it will go away until the broadcast is over."))
 		update_icon()
+		set_light(1, 1, 1, l_color = "#cdcbd6")
+		addtimer(CALLBACK(src, .proc/endnoise), 2 MINUTES)
+		playnoise()
 	else
 		audible_message(SPAN_WARNING("Everything went quiet."))
-		sound_to(usr, sound(null))
+		playsound(src, null, 0)
+		set_light(0, 0, 0)
 		update_icon()
 
 /obj/machinery/noisetv/bigger

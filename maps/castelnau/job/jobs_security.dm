@@ -6,7 +6,7 @@
 	spawn_positions = 1
 	supervisors = "the Captain, the First Mate and the Coordinator"
 	economic_power = 8
-	minimal_player_age = 22
+	minimal_player_age = 14
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/castelnau/reg/com/sheriff
 	allowed_branches = list(/datum/mil_branch/reg)
@@ -46,15 +46,16 @@
 	)
 
 /datum/job/officer
-	title = "Security Operative"
+	title = "Security Contractor"
 	department = "Security"
+	alt_titles = list() // This is a hack. Overriding a list var with null does not actually override it due to the particulars of dm list init. Do not "clean up" without testing.
 	department_flag = SEC
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Sheriff"
 	selection_color = "#9e2e2e"
 	economic_power = 6
-	minimal_player_age = 20
+	minimal_player_age = 7
 	ideal_character_age = 25
 
 	skill_points = 20
@@ -96,7 +97,7 @@
 	supervisors = "the Sheriff"
 	selection_color = "#9e2e2e"
 	economic_power = 6
-	minimal_player_age = 20
+	minimal_player_age = 7
 	ideal_character_age = 25
 	give_psionic_implant_on_join = FALSE
 	skill_points = 20
@@ -130,7 +131,7 @@
 	access_castelnau_morgue
 	)
 
-/datum/job/detective/equip(var/mob/living/carbon/human/H)
+/datum/job/specialist/equip(var/mob/living/carbon/human/H)
 	if(H.mind.role_alt_title == "Psi-Interrogator")
 		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
 	return ..()

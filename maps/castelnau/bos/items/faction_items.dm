@@ -34,6 +34,21 @@
 				/obj/item/melee/baton/loaded = 9,
 				/obj/item/device/radio/headset/syndicate = 6)
 
+/obj/random/loot/paroled/barb
+	name = "random tech-barb loot"
+
+/obj/random/loot/paroled/barb/spawn_choices()
+	return list(/obj/random/energy = 10,
+				/obj/random/hardsuit = 10,
+				/obj/item/clothing/mask/gas/syndicate = 10,
+				/obj/item/clothing/glasses/night = 3,
+				/obj/item/clothing/glasses/thermal = 1,
+				/obj/item/clothing/glasses/welding/superior = 7,,
+				/obj/item/storage/firstaid/combat = 4,
+				/obj/item/cell/infinite = 1,
+				/obj/item/device/multitool/hacktool = 2,
+				/obj/item/melee/baton/loaded = 9)
+
 ///ALT-HIRED
 ////////////
 
@@ -58,36 +73,42 @@
 /obj/item/clothingbag/yakuza/Initialize()
 	. = ..()
 	new /obj/random/loot/paroled(src)
-	new /obj/item/storage/shurikens(src)
+	new /obj/item/storage/box/kunai(src)
 	new /obj/random/cash(src)
 	new /obj/random/cash(src)
 	new /obj/random/cash(src)
 
-/obj/item/material/sword/katana/yakuza
+/obj/item/material/sword/katana/yakuza //stab-sword, but with more damage
 	name = "scolopendras katana"
 	desc = "Your tool of justice"
 	icon = 'maps/castelnau/bos/icons/obj/items/weapons.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'maps/castelnau/bos/icons/mob/items_lhand.dmi',
-		slot_r_hand_str = 'maps/castelnau/bos/icons/mob/items_rhand.dmi',
+		slot_r_hand_str = 'maps/castelnau/bos/icons/mob/items_rhand.dmi'
 		)
 	slot_flags = null
-	icon_state = "katana"
-	item_state = "katana"
+	force = 20
+	max_force = 10
+	force_multiplier = 0.5
+	armor_penetration = 5
+	base_parry_chance = 45
+	melee_accuracy_bonus = 30
+	applies_material_colour = FALSE
 
 /obj/item/storage/belt/holster/sheath/yakuza
 	name = "katana sneath"
 	icon = 'maps/castelnau/bos/icons/obj/items/weapons.dmi'
 	item_icons = list(
-		slot_s_store_str = 'maps/castelnau/bos/icons/mob/items_back.dmi'
+		slot_back_str = 'maps/castelnau/bos/icons/mob/items_back.dmi',
+		slot_belt_str = 'icons/mob/onmob/onmob_belt.dmi'
 		)
 	icon_state = "sheath"
-	item_state = "sheath"
+	item_state = "sword"
 	storage_slots = 1
 	w_class = 6
 	max_w_class = 6
 	max_storage_space = 16 // Swords are bulky, needs this to not erorr.
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_BELT | SLOT_BACK
 	sound_in = 'sound/effects/holster/sheathin.ogg'
 	sound_out = 'sound/effects/holster/blade_unsheath.ogg'
 	can_holster = list(/obj/item/material/sword/katana/yakuza)
@@ -96,13 +117,13 @@
 	..()
 	new /obj/item/material/sword/katana/yakuza(src)
 
-/obj/item/storage/shurikens
-	name = "shurikens box"
+/obj/item/storage/box/kunai
+	name = "kunai box"
 	icon_state = "box"
 	item_state = "syringe_kit"
 	desc = "It has holes in it."
 	startswith = list(
-	/obj/item/material/star=4)
+	/obj/item/material/knife/bos/kunai =6)
 
 /obj/item/paper/yakuza
 	name = "Yangui Scolopendras Codex"
@@ -132,6 +153,20 @@
 	"}
 
 
+///TECH-BARBARIAN
+////////////
+/obj/item/clothingbag/barb
+	name = "clothing bag"
+	desc = "Certainly not contraband"
+
+/obj/item/clothingbag/barb/Initialize()
+	. = ..()
+	new /obj/random/loot/paroled(src)
+	new /obj/random/good_tools(src)
+	new /obj/random/good_tools(src)
+	new /obj/random/good_tools(src)
+	new /obj/random/good_tools(src)
+
 ///SYNDICATE
 ////////////
 /var/const/access_castelnau_syndipass = "ACCESS_CASTELNAU_SYNDIPASS"
@@ -148,3 +183,8 @@
 	access = list(access_castelnau_syndipass)
 	color = COLOR_RED_GRAY
 	detail_color = COLOR_GRAY40
+
+
+/obj/item/clothing/suit/storage/toggle/lordan/service/fleet/po/gsc
+	name = "GSC shinel"
+	desc = "A Galactic Security Corps terran-styled shinel with red accents."

@@ -1,3 +1,38 @@
+/datum/gear/melee //bos
+	display_name = "melee selection"
+	description = "A selection of melee weapons"
+	path = /obj/item/material/knife/bos
+	cost = 4
+
+/datum/gear/melee/New()
+	..()
+	var/melee = list()
+	melee["hunting knife"] = /obj/item/material/knife/bos
+	melee["military knife"] = /obj/item/material/knife/bos/military
+	melee["bowie knife"] = /obj/item/material/knife/bos/bowie
+	melee["katar dagger"] = /obj/item/material/knife/bos/katar
+	melee["tanto knife"] = /obj/item/material/knife/bos/tanto
+	melee["spec-ops knife"] = /obj/item/material/knife/bos/specops
+	melee["dagger"] = /obj/item/material/knife/bos/dagger
+	melee["gator machete"] = /obj/item/material/knife/bos/gator
+	melee["kukri knife"] = /obj/item/material/knife/bos/kukri
+	melee["hook"] = /obj/item/material/knife/bos/hook
+	gear_tweaks += new/datum/gear_tweak/path(melee)
+
+/datum/gear/swords //bos
+	display_name = "swords selection"
+	description = "A selection of swords"
+	path = /obj/item/material/sword/bos
+	cost = 8
+
+/datum/gear/swords/New()
+	..()
+	var/swords = list()
+	swords["stab-sword"] = /obj/item/material/sword/bos
+	swords["bastard sword"] = /obj/item/material/sword/bos/bastard
+	swords["zveinhander sword"] = /obj/item/material/sword/bos/zvein
+	gear_tweaks += new/datum/gear_tweak/path(swords)
+
 /datum/gear/cane
 	display_name = "cane"
 	path = /obj/item/cane

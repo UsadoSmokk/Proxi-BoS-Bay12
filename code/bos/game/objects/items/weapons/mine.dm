@@ -9,15 +9,13 @@
 		icon_state = "mine_act"
 	else
 		icon_state = "mine_not_act"
-	. = ..()
 
 /obj/item/mine/attackby(obj/item/W, mob/user)
 	. = ..()
 	if(isScrewdriver(W))
 		var/mob/living/carbon/human/H = user
 		if(!active)
-			active = TRUE
-			visible_message(SPAN_WARNING("[user] activated [src]!"))
+			activate()
 			return
 		if(H.skill_check(SKILL_ELECTRICAL, SKILL_ADEPT) && prob(20*H.get_skill_value(SKILL_HAULING)))
 			visible_message(SPAN_WARNING("[user] started to deactivate [src]..."))
@@ -48,13 +46,20 @@
 		. = ..()
 
 /obj/item/mine/proc/activate(mob/user)
-	if(active)
+	for(var/obj/item/mine/mine in view(0, src))
+		if(mine.active)
+			to_chat(usr, SPAN_WARNING("There is already an active mine on this spot!"))
+			return
+
+	if(locate(/obj/machinery/tele_beacon) in src.loc)
+		to_chat(usr, SPAN_WARNING("You activate the mine, but the beacon underneath starts blinking strangely. You hope it doesn't cause the mine to expl-..."))
+		detonate(usr, 1)
 		return
 
+	visible_message(SPAN_WARNING("[user] activated [src]!"))
+	active = TRUE
 	if(user)
 		msg_admin_attack("[user.name] ([user.ckey]) primed \a [src] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)")
-
-	active = 1
 	update_icon()
 
 /obj/item/mine/proc/detonate(var/mob/living/carbon/human/activator, cut_arms)
@@ -62,6 +67,7 @@
 	visible_message(SPAN_DANGER("Clack!"))
 	if(T)
 		explosion(T, -1, -1, 2, 2)
+		qdel(src)
 
 	if(activator)
 		if(cut_arms == 1)	//Damage arms to man who try to deactivate mine
@@ -69,11 +75,9 @@
 		else	//Damage foots to man who step away from mine
 			activator.apply_damage(250, DAMAGE_BRUTE, pick(BP_L_FOOT, BP_R_FOOT))
 
+	if(locate(/mob/living/carbon/human) in src.loc)
 		for(var/mob/living/carbon/human/victim in src.loc)	//And damage foots for whom still stay/lay on mine
 			victim.apply_damage(250, DAMAGE_BRUTE, pick(BP_L_FOOT, BP_R_FOOT))
-
-	qdel(src)
-
 
 /obj/item/mine/Crossed(var/mob/living/mob)
 	if((!istype(mob, /mob/observer)) && (active))
@@ -90,3 +94,6 @@
 
 	if((mob.loc != src.loc) && (active))
 		detonate(mob)
+
+/obj/item/mine/active //for mapping
+	active = 1

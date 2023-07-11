@@ -128,6 +128,7 @@
 	if(buckled_mob)
 		overlays += buckled_mob
 		var/image/I = image(icon,icon_state="overlay")
+		I.plane = GAME_PLANE_FOV_HIDDEN
 		I.layer = ABOVE_HUMAN_LAYER
 		overlays += I
 

@@ -94,37 +94,66 @@ var/const/NETWORK_PROMETEUS   = "Prometeus"
 // T-Coms
 //
 
-/obj/machinery/telecomms/receiver/preset_prometeus
-	id = "Prometeus Receiver"
-	network = "prometeus"
-	autolinkers = list("receiverPrometeus")
-	freq_listening = list(SCI_FREQ)
+/obj/machinery/telecomms/allinone/cast
+	listening_freqs = list(MED_FREQ, SUP_FREQ, SRV_FREQ, COMM_FREQ, ENG_FREQ, SEC_FREQ, ENT_FREQ, HAIL_FREQ)
 
-/obj/machinery/telecomms/bus/preset_prometeus
-	id = "Prometeus Mainframe"
-	network = "prometeus"
-	autolinkers = list("receiverPrometeus", "processorPrometeus", "sciencePrometeus")
-	freq_listening = list(SCI_FREQ)
+/obj/machinery/telecomms/hub/preset_cast
+	id = "Castelnau Hub"
+	network = "tcommsat"
+	autolinkers = list("hub_cast", "c_relay", "s_relay", "m_relay", "r_relay",
+	 "cast", "receiverCast", "broadcasterCast")
 
-/obj/machinery/telecomms/processor/preset_prometeus
-	id = "Prometeus Processor"
-	network = "prometeus"
-	autolinkers = list("processorPrometeus")
-	freq_listening = list(SCI_FREQ)
+/obj/machinery/telecomms/receiver/preset_cast
+	id = "Castelnau Receiver"
+	network = "tcommsat"
+	autolinkers = list("receiverCast")
+	freq_listening = list(MED_FREQ, SUP_FREQ, SRV_FREQ, COMM_FREQ, ENG_FREQ, SEC_FREQ, ENT_FREQ, HAIL_FREQ)
 
-/obj/machinery/telecomms/server/presets/science_prometeus
-	id = "Prometeus Science Server"
-	network = "prometeus"
-	freq_listening = list(SCI_FREQ)
-	channel_tags = list(list(SCI_FREQ, "Science", COMMS_COLOR_SCIENCE))
-	autolinkers = list("sciencePrometeus", "broadcasterPrometeus")
+/obj/machinery/telecomms/bus/preset_cast
+	id = "Castelnau Bus"
+	network = "tcommsat"
+	freq_listening = list(MED_FREQ, SUP_FREQ, SRV_FREQ, COMM_FREQ, ENG_FREQ, SEC_FREQ, ENT_FREQ, HAIL_FREQ)
+	autolinkers = list("processorCast", "cast")
 
-/obj/machinery/telecomms/broadcaster/preset_prometeus
-	id = "Prometeus Broadcaster"
-	network = "prometeus"
-	autolinkers = list("broadcasterPrometeus")
-	freq_listening = list(SCI_FREQ)
+/obj/machinery/telecomms/processor/preset_cast
+	id = "Castelnau Processor"
+	network = "tcommsat"
+	autolinkers = list("processorCast")
 
+/obj/machinery/telecomms/server/presets/cast
+	id = "Castelnau Server"
+	freq_listening = list(MED_FREQ, SUP_FREQ, SRV_FREQ, COMM_FREQ, ENG_FREQ, SEC_FREQ, ENT_FREQ, HAIL_FREQ)
+	channel_tags = list(
+		list(PUB_FREQ, "Common", COMMS_COLOR_COMMON),
+		list(ENT_FREQ, "Entertainment", COMMS_COLOR_ENTERTAIN),
+		list(MED_I_FREQ, "Medical (I)", COMMS_COLOR_MEDICAL_I),
+		list(SEC_I_FREQ, "Security (I)", COMMS_COLOR_SECURITY_I),
+		list(HAIL_FREQ, "Hailing", COMMS_COLOR_HAILING),
+		list(COMM_FREQ, "Command", COMMS_COLOR_COMMAND),
+		list(ENG_FREQ, "Engineering", COMMS_COLOR_ENGINEER),
+		list(SEC_FREQ, "Security", COMMS_COLOR_SECURITY),
+		list(SUP_FREQ, "Auxiliary", COMMS_COLOR_SUPPLY),
+		list(MED_FREQ, "Medical", COMMS_COLOR_MEDICAL)
+		)
+	produces_heat = 0
+	autolinkers = list("cast")
+
+/obj/machinery/telecomms/server/presets/cast/New()
+	for(var/i = PUBLIC_LOW_FREQ, i < PUBLIC_HIGH_FREQ, i += 2)
+		if(i == AI_FREQ || i == PUB_FREQ || i == MED_I_FREQ || i == SEC_I_FREQ || i == HAIL_FREQ)
+			continue
+		freq_listening |= i
+	..()
+
+/obj/machinery/telecomms/broadcaster/preset_cast
+	id = "Castelnau Broadcaster"
+	network = "tcommsat"
+	autolinkers = list("broadcasterCast")
+
+/obj/machinery/telecomms/allinone/shitcode
+	listening_freqs = list(COMM_FREQ)
+	channel_color = COMMS_COLOR_COMMAND
+	channel_name = "Command"
 
 //
 // SMES units
@@ -149,7 +178,8 @@ var/const/NETWORK_PROMETEUS   = "Prometeus"
 /obj/machinery/power/smes/buildable/preset/castelnau/engine_main
 	uncreated_component_parts = list(
 		/obj/item/stock_parts/smes_coil/super_io = 2,
-		/obj/item/stock_parts/smes_coil/super_capacity = 2)
+		/obj/item/stock_parts/smes_coil/super_capacity = 2,
+		/obj/item/stock_parts/smes_coil = 1)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 	_input_on = TRUE
@@ -158,6 +188,9 @@ var/const/NETWORK_PROMETEUS   = "Prometeus"
 
 // Shuttle SMES
 /obj/machinery/power/smes/buildable/preset/castelnau/shuttle
+	uncreated_component_parts = list(
+		/obj/item/stock_parts/smes_coil = 1,
+		/obj/item/stock_parts/smes_coil/super_capacity = 1)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 	_input_on = TRUE
@@ -181,9 +214,13 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 /datum/map/proc/get_shared_network_access(var/network)
 	switch(network)
 		if(NETWORK_COMMAND)
-			return access_heads
-		if(NETWORK_ENGINE, NETWORK_ENGINEERING_OUTPOST)
-			return access_engine
+			return access_castelnau_bridge
+		if(NETWORK_ENGINEERING, NETWORK_ALARM_ATMOS, NETWORK_ALARM_CAMERA, NETWORK_ALARM_FIRE, NETWORK_ALARM_POWER, NETWORK_ENGINE, NETWORK_ENGINEERING_OUTPOST)
+			return access_castelnau_engine
+		if(NETWORK_MEDICAL)
+			return access_castelnau_medical
+
+	return access_castelnau_security // Default for all other networks
 
 /datum/map/castelnau/default_internal_channels()
 	return list(
@@ -194,13 +231,13 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 		num2text(COMM_FREQ)  = list(access_castelnau_command),
 		num2text(ENG_FREQ)   = list(access_castelnau_engineering),
 		num2text(MED_FREQ)   = list(access_castelnau_medical),
-		num2text(MED_I_FREQ) = list(access_castelnau_medical),
+		num2text(MED_I_FREQ) = list(access_cent_specops),
 		num2text(SEC_FREQ)   = list(access_castelnau_security),
-		num2text(SEC_I_FREQ) = list(access_castelnau_security),
-		num2text(SCI_FREQ)   = list(access_castelnau_cheapskate),
+		num2text(SEC_I_FREQ) = list(access_cent_specops),
+		num2text(SCI_FREQ)   = list(access_cent_specops),
 		num2text(SUP_FREQ)   = list(access_castelnau_cheapskate),
-		num2text(SRV_FREQ)   = list(list(access_castelnau_janitor, access_castelnau_bar, access_castelnau_kitchen)),
-		num2text(EXP_FREQ)   = list() //DEBUG
+		num2text(SRV_FREQ)   = list(access_cent_specops),
+		num2text(EXP_FREQ)   = list(access_cent_specops)
 	)
 
 /obj/machinery/shield_diffuser/preset/castelnau

@@ -46,7 +46,7 @@ em						{font-style: normal;font-weight: bold;}
 
 /* Radio Channels */
 .comradio				{color: #204090;}
-.syndradio				{color: #6d3f40;}
+.syndradio				{color: #008000;}
 .centradio				{color: #5c5c7c;}
 .airadio				{color: #ff00ff;}
 .entradio				{color: #666666;}

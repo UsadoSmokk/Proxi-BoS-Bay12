@@ -32,6 +32,7 @@
 	name = "tree stump"
 	desc = "There used to be a tree here apparently. It's a shame someone has cut it."
 	icon_state = "tree_stump"
+	plane = DEFAULT_PLANE
 
 // SMALL JUNGLE TREES
 
@@ -70,6 +71,7 @@
 
 /obj/structure/flora/jungle
 	icon = 'maps/castelnau/icons/ark/obj/flora/jungleflora.dmi'
+	anchored = TRUE
 
 /obj/structure/flora/jungle/rock
 	name = "rock"
@@ -218,6 +220,7 @@
 	name = "large bush"
 	desc = "It's a large living bush. It makes you feel in a tropical forest rather than in orbit."
 	icon_state = "bush"
+	plane = DECORATIONS_PLANE //You can hide in bushes
 
 /obj/structure/flora/jungle/large/bush/v_2
 	icon_state = "bush1"

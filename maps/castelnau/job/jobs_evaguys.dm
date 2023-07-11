@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	economic_power = 6
-	minimal_player_age = 0
+	minimal_player_age = 7
 	selection_color = "#4f3230"
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	allowed_branches = list(
@@ -46,6 +46,7 @@
 	department_flag = COM
 	total_positions = 1
 	spawn_positions = 1
+	minimal_player_age = 14
 	supervisors = "the Captain and the Coordinator"
 	selection_color = "#2f2f7f"
 	economic_power = 9
@@ -208,7 +209,7 @@
 	                    SKILL_ANATOMY = SKILL_MAX,
 	                    SKILL_CHEMISTRY = SKILL_MAX)
 
-	skill_points = 15
+	skill_points = 20
 
 
 	access = list(
@@ -228,6 +229,7 @@
 	department_flag = SEC
 	total_positions = 1
 	spawn_positions = 1
+	minimal_player_age = 14
 	supervisors = "the Coordinator"
 	selection_color = "#c63939"
 	skill_points = 20

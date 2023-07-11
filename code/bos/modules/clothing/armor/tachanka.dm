@@ -1,5 +1,5 @@
 /obj/item/clothing/head/helmet/tachanka
-	name = "combat helmet with a visor"
+	name = "combat helmet"
 	desc = "A heavily reinforced helmet. Feels like it could take a lot of punishment."
 	icon = 'icons/bos/obj/clothing/obj_head.dmi'
 	icon_state = "tachanka"
@@ -17,7 +17,7 @@
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/armor/tachanka
-	name = "riot vest"
+	name = "combat vest"
 	desc = "An armored vest with heavy plates to protect against ballistic projectiles."
 	icon = 'icons/bos/obj/clothing/obj_suit.dmi'
 	item_icons = list(slot_wear_suit_str = 'icons/bos/mob/onmob/onmob_suit.dmi')

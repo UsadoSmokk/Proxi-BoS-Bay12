@@ -136,7 +136,7 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 /datum/antag_contract/item/punisment/can_place()
 	return ..() && target
 
-/datum/antag_contract/item/punisment/check(obj/item/weapon/storage/container)
+/datum/antag_contract/item/punisment/check(obj/item/storage/container)
 	return target in container
 
 
@@ -147,18 +147,18 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 
 	var/static/list/possible_items = list(
 		"the captain's antique laser gun" = /obj/item/gun/energy/captain,
-		"the hand teleporter" = /obj/prefab/hand_teleporter,
+//		"the hand teleporter" = /obj/prefab/hand_teleporter,
 		"an RCD" = /obj/item/rcd,
 		"a captain's jumpsuit" = /obj/item/clothing/under/rank/captain,
-		"a intelicard" = /obj/item/aicard,
-		"the chief engineer RIG" = /obj/item/rig/ce,
+//		"a intelicard" = /obj/item/aicard,
+//		"the chief engineer RIG" = /obj/item/rig/ce,
 		"the ship blueprints" = /obj/item/blueprints,
 		"a piece of corgi meat" = /obj/item/reagent_containers/food/snacks/meat/corgi,
 		"the ship model" = /obj/item/toy/torchmodel,
 		"the hypospray" = /obj/item/reagent_containers/hypospray,
 		"the captain's pinpointer" = /obj/item/pinpointer,
-		"an ablative armor vest" = /obj/item/clothing/suit/armor/laserproof,
-		"the marine squad leader RIG" = /obj/item/rig/infantry/sl/equipped,
+		"an ablative armor vest" = /obj/item/clothing/suit/armor/laserproof
+//		"the marine squad leader RIG" = /obj/item/rig/infantry/sl/equipped,
 //		"the captain's secret documents" = /obj/item/folder/envelope/captain
 	)
 
@@ -179,7 +179,7 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 /datum/antag_contract/item/steal/can_place()
 	return ..() && target_desc
 
-/datum/antag_contract/item/steal/check(obj/item/weapon/storage/container)
+/datum/antag_contract/item/steal/check(obj/item/storage/container)
 	return locate(target_type) in container
 
 
@@ -199,7 +199,7 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 
 /datum/antag_contract/item/dump/check(obj/item/storage/container)
 	var/received = 0
-	for(var/obj/item/spacecash/cash in container)
+	for(var/obj/item/reagent_containers/food/snacks/spacecash/cash in container)
 		received += cash.worth
 	return received >= sum
 
@@ -212,12 +212,12 @@ GLOBAL_LIST_EMPTY(all_antag_contracts)
 	var/static/list/possible_targets = list(
 		"the main ship helm control console in bridge" = /obj/machinery/computer/ship/helm,
 		"a ship sensors" = /obj/machinery/shipsensors,
-		"the pointdefense control" = /obj/machinery/pointdefense_control,
+//		"the pointdefense control" = /obj/machinery/pointdefense_control,
 		"the R&D server control console" = /obj/machinery/computer/rdservercontrol,
 		"the teleporter control console" = /obj/machinery/computer/teleporter,
 		"the forensic electric microscope" = /obj/machinery/microscope,
 		"the bluespace emergency relay" = /obj/machinery/bluespacerelay,
-		"the AI upload console" = /obj/machinery/computer/upload/ai,
+//		"the AI upload console" = /obj/machinery/computer/upload/ai,
 		"the missilies control console" = /obj/machinery/computer/ship/missiles
 	)
 

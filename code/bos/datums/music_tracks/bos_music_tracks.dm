@@ -161,3 +161,27 @@
 	license = /decl/license/grandfathered //ee
 	url = "https://youtu.be/tUvyqfNvPXY"
 	volume = 30
+
+/decl/audio/track/divina
+	title = "Divina"
+	author = "Toro y Moi"
+	source = 'sound/music/bos/divina.ogg'
+	license = /decl/license/grandfathered //ee
+	url = "https://youtu.be/zTppgotPyGA"
+	volume = 30
+
+/decl/audio/track/fightforpower
+	title = "Fight for Power"
+	author = "Frank Klepacki"
+	source = 'sound/music/bos/fightforpower.ogg'
+	license = /decl/license/grandfathered //ee
+	url = "https://youtu.be/5sTjwrK7lbY"
+	volume = 30
+
+/decl/audio/track/californiadreamin
+	title = "California Dreamin"
+	author = "The Mamas and The Papas"
+	source = 'sound/music/bos/california.ogg'
+	license = /decl/license/grandfathered //ee
+	url = "https://youtu.be/oU6uUEwZ8FM"
+	volume = 30

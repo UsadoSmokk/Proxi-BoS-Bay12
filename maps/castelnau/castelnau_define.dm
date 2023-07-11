@@ -28,11 +28,10 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	company_name  = "Regulators"
 	company_short = "Regs"
 
-	map_admin_faxes = list("Regulators Center")
+	map_admin_faxes = list("Regulators Center", "Frau Martha's Cabinet", "FTU Trade Council", "LSS Representative Office", "Alliance Of Humanity Assembly", "Syndicate's Representative Department")
 
 	evac_controller_type = /datum/evacuation_controller
 
-	default_law_type = /datum/ai_laws/nanotrasen
 	use_overmap = 1
 	num_exoplanets = 0
 //	planet_size = list(150,150)
@@ -40,109 +39,13 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 	away_site_budget = 3
 	id_hud_icons = 'maps/castelnau/icons/assignment_hud_new.dmi'
 
-	starting_money = 30000
+	starting_money = 20000
 	salary_modifier = 0.5
 	supply_currency_name = "Cargo credits"
 	supply_currency_name_short = "CaCr."
-	local_currency_name = "credits"
-	local_currency_name_singular = "credit"
+	local_currency_name = "terran credits"
+	local_currency_name_singular = "terran credit"
 	local_currency_name_short = "Cr"
-
-	available_cultural_info = list(
-		TAG_HOMEWORLD = list(
-			HOME_SYSTEM_LORDANIA,
-			HOME_SYSTEM_TERRA,
-			HOME_SYSTEM_TERSTEN,
-			HOME_SYSTEM_LORRIMAN,
-			HOME_SYSTEM_CINU,
-			HOME_SYSTEM_YUKLID,
-			HOME_SYSTEM_KINGSTON,
-//			HOME_SYSTEM_GAIA,
-			HOME_SYSTEM_MAGNITKA,
-			HOME_SYSTEM_MARS,
-			HOME_SYSTEM_LUNA,
-			HOME_SYSTEM_EARTH,
-			HOME_SYSTEM_VENUS,
-			HOME_SYSTEM_CERES,
-			HOME_SYSTEM_PLUTO,
-			HOME_SYSTEM_TAU_CETI,
-//			HOME_SYSTEM_HELIOS,
-			HOME_SYSTEM_OTHER
-
-		),
-		TAG_FACTION = list(
-			FACTION_REGS,
-//			FACTION_SOVLORDANIA,
-			FACTION_LARFLEET,
-//			FACTION_LARMARINES,
-//			FACTION_KGB,
-			FACTION_INDIE_CONFED,
-			FACTION_SYNDI,
-//			FACTION_LRA,
-//			FACTION_SOL_CENTRAL,
-//			FACTION_FLEET,
-//			FACTION_CORPORATE,
-//			FACTION_NANOTRASEN,
-			FACTION_FREETRADE,
-//			FACTION_XYNERGY,
-//			FACTION_HEPHAESTUS,
-//			FACTION_DAIS,
-//			FACTION_EXPEDITIONARY,
-//			FACTION_FLEET,
-//			FACTION_MARINES,
-//			FACTION_PCRC,
-			FACTION_NONE,
-			FACTION_OTHER
-		),
-		TAG_CULTURE = list(
-			CULTURE_HUMAN_LORDANIAN_WEST,
-			CULTURE_HUMAN_LORDANIAN_EAST,
-			CULTURE_HUMAN_TERSTEN_UP,
-			CULTURE_HUMAN_TERSTEN_DW,
-			CULTURE_HUMAN_YUKLID,
-			CULTURE_HUMAN_LORRIMAN,
-			CULTURE_HUMAN_MARTIAN,
-			CULTURE_HUMAN_MARSTUN,
-			CULTURE_HUMAN_LUNAPOOR,
-			CULTURE_HUMAN_LUNARICH,
-			CULTURE_HUMAN_VENUSIAN,
-			CULTURE_HUMAN_VENUSLOW,
-			CULTURE_HUMAN_BELTER,
-			CULTURE_HUMAN_PLUTO,
-			CULTURE_HUMAN_EARTH,
-			CULTURE_HUMAN_CETI,
-			CULTURE_HUMAN_SPACER,
-			CULTURE_HUMAN_SPAFRO,
-			CULTURE_HUMAN_CONFED,
-			CULTURE_HUMAN_OTHER,
-			CULTURE_OTHER
-		),
-		TAG_RELIGION = list(
-			RELIGION_OTHER,
-			RELIGION_JUDAISM,
-			RELIGION_HINDUISM,
-			RELIGION_BUDDHISM,
-			RELIGION_SIKHISM,
-			RELIGION_JAINISM,
-			RELIGION_ISLAM,
-			RELIGION_CHRISTIANITY,
-			RELIGION_BAHAI_FAITH,
-			RELIGION_AGNOSTICISM,
-			RELIGION_DEISM,
-			RELIGION_ATHEISM,
-			RELIGION_THELEMA,
-			RELIGION_SPIRITUALISM,
-			RELIGION_SHINTO,
-			RELIGION_TAOISM
-		)
-	)
-
-	default_cultural_info = list(
-		TAG_HOMEWORLD = HOME_SYSTEM_OTHER,
-		TAG_FACTION =   FACTION_REGS,
-		TAG_CULTURE =   CULTURE_HUMAN_SPACER,
-		TAG_RELIGION =  RELIGION_ATHEISM
-	)
 
 /datum/map/castelnau/setup_map()
 	..()
@@ -199,4 +102,3 @@ GLOBAL_LIST_INIT(castelnay_command, list("Captain"))
 
 	post_comm_message("FTV Cheapskate Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "Новое сообщение от [GLOB.using_map.company_name] доступно Командованию Регуляторов на всех терминалах.")
-

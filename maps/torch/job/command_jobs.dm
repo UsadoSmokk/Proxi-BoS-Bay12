@@ -349,8 +349,8 @@
 	title = "ICCG Representative"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "Operational Headquarters and Terran Embassy Command"
 	selection_color = "#b00000"
 	minimal_player_age = 14
@@ -397,8 +397,8 @@
 	title = "ICCG Guard"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the ICCG Representative"
 	selection_color = "#b00000"
 	economic_power = 12

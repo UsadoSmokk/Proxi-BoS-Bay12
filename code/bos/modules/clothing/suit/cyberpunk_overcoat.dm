@@ -77,6 +77,13 @@
 	desc = "A burgundy overcoat with a bulletproof vest. Vot eto da!"
 	icon_state = "iccg_warcoat"
 	item_state = "iccg_warcoat"
+	armor = list(
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_SMALL,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_PADDED
+	)
 
 /obj/item/clothing/suit/storage/davidjacket
 	name = "blade hunter jacket"

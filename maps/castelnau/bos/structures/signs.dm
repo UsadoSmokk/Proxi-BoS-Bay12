@@ -28,3 +28,9 @@
 	desc = "Portrait of our bravest and smartest leader, Lord-Protector Boris Booker"
 	icon = 'maps/torch/bos/icons/obj/structures/kartini.dmi'
 	icon_state = "booker"
+
+/obj/structure/sign/booker/not_booker
+	name = "\improper Frau Martha portrait"
+	desc = "Portrait of the cruel leader of the Regulators - Frau Martha. Unlike Booker, she herself forced her subordinates to hang her portraits."
+	icon = 'maps/castelnau/bos/icons/obj/structures/kartini.dmi'
+	icon_state = "martha"

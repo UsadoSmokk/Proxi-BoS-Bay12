@@ -4,36 +4,42 @@
 	id = access_castelnau_cheapskate
 	desc = "Cheapskate General"
 	region = ACCESS_REGION_GENERAL
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_helm = "ACCESS_CHEAPSKATE_HELM"
 /datum/access/castelnau/cheapskate_helm
 	id = access_castelnau_cheapskate_helm
 	desc = "Cheapskate Helm"
 	region = ACCESS_REGION_GENERAL
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_cargo = "ACCESS_CHEAPSKATE_CARGO"
 /datum/access/castelnau/cheapskate_cargo
 	id = access_castelnau_cheapskate_cargo
 	desc = "Cheapskate Supply"
 	region = ACCESS_REGION_SUPPLY
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_shop = "ACCESS_CHEAPSKATE_SHOP"
 /datum/access/castelnau/cheapskate_shop
 	id = access_castelnau_cheapskate_shop
 	desc = "Cheapskate Shop"
 	region = ACCESS_REGION_SUPPLY
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_security = "ACCESS_CHEAPSKATE_SECURITY"
 /datum/access/castelnau/cheapskate_security
 	id = access_castelnau_cheapskate_security
 	desc = "Cheapskate Security"
 	region = ACCESS_REGION_SECURITY
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_cheapskate_chief = "ACCESS_CHEAPSKATE_CHIEF"
 /datum/access/castelnau/cheapskate_chief
 	id = access_castelnau_cheapskate_chief
 	desc = "Cheapskate Chief Merchant"
 	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE
 
 //Shuttles
 /var/const/access_castelnau_bixie = "ACCESS_BIXIE"
@@ -140,7 +146,7 @@ var/const/access_castelnau_detective = "ACCESS_CASTELNAU_DETECTIVE"
 /datum/access/castelnau/captain
 	id = access_castelnau_captain
 	desc = "Castelnau Captain"
-	region = ACCESS_REGION_NONE
+	region = ACCESS_REGION_COMMAND
 
 /var/const/access_castelnau_comoffice = "ACCESS_CASTELNAU_COM_OFFICE"
 /datum/access/castelnau/comoffice
@@ -153,6 +159,20 @@ var/const/access_castelnau_detective = "ACCESS_CASTELNAU_DETECTIVE"
 	id = access_castelnau_command
 	desc = "Castelnau Command"
 	region = ACCESS_REGION_COMMAND
+
+/var/const/access_castelnau_emissary = "ACCESS_CASTELNAU_EMISSARY"
+/datum/access/castelnau/emissary
+	id = access_castelnau_emissary
+	desc = "Alliance Emissary"
+	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE
+
+/var/const/access_castelnau_commissary = "ACCESS_CASTELNAU_COMMISSARY"
+/datum/access/castelnau/commissary
+	id = access_castelnau_commissary
+	desc = "Galactic Security Corps Commissary"
+	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE
 
 /var/const/access_castelnau_medical = "ACCESS_CASTELNAU_MED"
 /datum/access/castelnau/medical
@@ -212,6 +232,12 @@ var/const/access_castelnau_detective = "ACCESS_CASTELNAU_DETECTIVE"
 /datum/access/castelnau/thrusters
 	id = access_castelnau_thrusters
 	desc = "Castelnau Thrusters"
+	region = ACCESS_REGION_ENGINEERING
+
+/var/const/access_castelnau_seneng = "ACCESS_CASTELNAU_SENENG"
+/datum/access/castelnau/englab
+	id = access_castelnau_seneng
+	desc = "Castelnau Senior Engineer"
 	region = ACCESS_REGION_ENGINEERING
 
 /var/const/access_castelnau_englab = "ACCESS_CASTELNAU_ENGLAB"

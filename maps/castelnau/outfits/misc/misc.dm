@@ -24,6 +24,14 @@
 	suit = /obj/item/clothing/suit/storage/par
 	l_hand = /obj/item/clothingbag/paroled
 
+/decl/hierarchy/outfit/job/castelnau/barb
+	name = OUTFIT_JOB_NAME("Castelnau Tech-barbarian Outfit")
+	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/barb
+	uniform = /obj/item/clothing/under/techbarbarian
+	head = 	/obj/item/clothing/head/techbarbarian
+	shoes = /obj/item/clothing/shoes/sandal
+	l_hand = /obj/item/clothingbag/barb
+
 /decl/hierarchy/outfit/job/castelnau/yak
 	name = OUTFIT_JOB_NAME("Castelnau Yakuza Outfit")
 	hierarchy_type = /decl/hierarchy/outfit/job/castelnau/yak
@@ -79,3 +87,17 @@
 	l_ear = null
 	r_pocket = /obj/item/device/flashlight
 	l_pocket = /obj/item/storage/wallet/poly/wanderer
+
+/decl/hierarchy/outfit/job/castelnau/ert
+	name = OUTFIT_JOB_NAME("ERT - Castelnau")
+	uniform = /obj/item/clothing/under/solgov/utility
+	head = /obj/item/clothing/head/panama
+	gloves = /obj/item/clothing/gloves/thick
+	id_types = list(/obj/item/card/id/centcom/ERT)
+	pda_type = /obj/item/modular_computer/pda/ert
+	l_ear = /obj/item/device/radio/headset/ert
+	shoes = /obj/item/clothing/shoes/dutyboots
+
+/decl/hierarchy/outfit/job/castelnau/ert/leader
+	name = OUTFIT_JOB_NAME("ERT Leader - Castelnau")
+	head = /obj/item/clothing/head/beret/sec/navy/hos

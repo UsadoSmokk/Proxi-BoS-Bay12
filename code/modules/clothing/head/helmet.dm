@@ -25,6 +25,8 @@
 	siemens_coefficient = 0.7
 	w_class = ITEM_SIZE_NORMAL
 	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_ADHERENT)
+	sprite_sheets = list(SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi') //bos
+	sprite_sheets_obj = list(SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi')	//bos
 
 /obj/item/clothing/head/helmet/nt
 	name = "\improper corporate security helmet"

@@ -6,8 +6,8 @@
 	#include "castelnau_announcements.dm"
 	#include "castelnau_antagonism.dm"
 	#include "castelnau_define.dm"
-	#include "castelnau_areas.dm"
 	#include "castelnau_lobby.dm"
+	#include "castelnau_lore.dm"
 	#include "castelnau_overmap.dm"
 	#include "castelnau_overrides.dm"
 	#include "castelnau_presets.dm"
@@ -16,12 +16,13 @@
 	#include "castelnau_ranks.dm"
 	#include "castelnau_renames.dm"
 	#include "castelnau_security_state.dm"
-	#include "castelnau_shuttles.dm"
 	#include "castelnau_unit_testing.dm"
 
 	#include "code/_global_vars/lists/locations.dm"
 	#include "code/game/objects/effects/landmarks.dm"
 	#include "code/gamemodes/objectives.dm"
+	#include "code/modules/aspects/night.dm"
+	#include "code/modules/sandstorm.dm"
 	#include "code/modules/client/preferences_spawnpoints.dm"
 	#include "flooring/flooring_premade.dm"
 
@@ -38,6 +39,7 @@
 	#include "items/random.dm"
 	#include "items/mobile_ladders.dm"
 	#include "items/nightstand.dm"
+	#include "items/papers.dm"
 
 	#include "items/devices/flashlight.dm"
 
@@ -85,6 +87,7 @@
 	#include "outfits/cargo/syndi.dm"
 
 	#include "outfits/command/reg.dm"
+	#include "outfits/command/gov.dm"
 
 	#include "outfits/engineer/mil.dm"
 	#include "outfits/engineer/par.dm"
@@ -134,17 +137,29 @@
 	#include "structures/stool_bed_chair_nest/bed.dm"	//FUCK YOU
 	#include "structures/stool_bed_chair_nest/chairs.dm"
 
-	#include "castelnau-1.dmm"
-	#include "castelnau-2.dmm"
-	#include "castelnau-3.dmm"
+
+///DON'T INCLUDE BOTH PLANETSIDE AND SPACE CASTELNAU AT THE SAME TIME OR I WILL EAT YOUR FACE///
+
+//PLANETSIDE CASTELNAU//
+	#include "../away/cadaab/cadaab_castelnau.dm"
+	#include "cadaab/castelnau-1-cadaab.dmm"
+	#include "cadaab/castelnau-2-cadaab.dmm"
+	#include "cadaab/castelnau-3-cadaab.dmm"
+
+//SPACE CASTELNAU///
+//	#include "castelnau-1.dmm"
+//	#include "castelnau-2.dmm"
+//	#include "castelnau-3.dmm"
+//	#include "castelnau_shuttles.dm"
+//	#include "castelnau_areas.dm"
+
 	#include "z1-admin.dmm"
 	#include "z2-transit.dmm"
 
 
 	#include "../away/empty.dmm"
-	#include "../away/cadaab/cadaab.dm"
 	#include "../away/rawl/rawl.dm"
-//	#include "../away/solship/solship.dm"
+	#include "../away/solship/solship.dm"
 	#include "../away/mining/mining.dm"
 	#include "../away/derelict/derelict.dm"
 	#include "../away/bearcat/bearcat.dm"
